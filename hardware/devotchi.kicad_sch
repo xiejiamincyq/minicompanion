@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "d2bf821d-2b43-48c2-bd9f-23e5d37beff6")
 	(paper "A4")
 	(title_block
@@ -169,11 +169,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "70f3265f-7569-4b26-921c-951badfb2520")
 		(property "Sheetname" "feedback"
 			(at 190.5 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.81 3.81)
@@ -185,6 +187,8 @@
 		)
 		(property "Sheetfile" "feedback.kicad_sch"
 			(at 190.5 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -213,11 +217,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "98e7fe21-bddb-41d2-a56f-5f910350d952")
 		(property "Sheetname" "display"
 			(at 190.5 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.81 3.81)
@@ -229,6 +235,8 @@
 		)
 		(property "Sheetfile" "display.kicad_sch"
 			(at 190.5 90.7546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -257,11 +265,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "9c37a0e5-9ac1-4129-87e1-3e889a79a4b6")
 		(property "Sheetname" "power"
 			(at 50.8 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.81 3.81)
@@ -273,6 +283,8 @@
 		)
 		(property "Sheetfile" "power.kicad_sch"
 			(at 50.8 86.9446 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -301,11 +313,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "b2236c73-c7ac-47cb-a363-4ec62c6a982a")
 		(property "Sheetname" "user_input"
 			(at 50.8 100.8884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.81 3.81)
@@ -317,6 +331,8 @@
 		)
 		(property "Sheetfile" "user_input.kicad_sch"
 			(at 50.8 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -345,11 +361,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d501dd46-08d9-4743-b831-93de6bd7c7dd")
 		(property "Sheetname" "mcu"
 			(at 114.3 62.7884 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 3.81 3.81)
@@ -361,6 +379,8 @@
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
 			(at 114.3 114.8846 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)

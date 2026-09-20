@@ -1,0 +1,505 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-19T17:04:47",
+    "ignored_checks": [
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "Conflict problem between pins",
+            "key": "pin_to_pin"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Symbol doesn't match copy in library",
+            "key": "lib_symbol_mismatch"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6",
+            "violations": [
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q201 [FS8205A_C2830320]",
+                            "pos": {
+                                "x": 2.2098,
+                                "y": 0.8128
+                            },
+                            "uuid": "5272e9e8-ab04-4a9a-bd5c-7a5f8847fc54"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q201 [FS8205A_C2830320]",
+                            "pos": {
+                                "x": 2.2098,
+                                "y": 0.8128
+                            },
+                            "uuid": "5272e9e8-ab04-4a9a-bd5c-7a5f8847fc54"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 FPC301 [AFC01-S12FCA-00]",
+                            "pos": {
+                                "x": 0.4572,
+                                "y": 0.5334
+                            },
+                            "uuid": "36343d86-c92f-4496-a6ca-552611f5b4d1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 FPC301 [AFC01-S12FCA-00]",
+                            "pos": {
+                                "x": 0.4572,
+                                "y": 0.5334
+                            },
+                            "uuid": "36343d86-c92f-4496-a6ca-552611f5b4d1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q301 [AO3400A]",
+                            "pos": {
+                                "x": 1.2573,
+                                "y": 0.4445
+                            },
+                            "uuid": "f2e2f120-852f-4ad5-ae51-240f8fb7db34"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q301 [AO3400A]",
+                            "pos": {
+                                "x": 1.2573,
+                                "y": 0.4445
+                            },
+                            "uuid": "f2e2f120-852f-4ad5-ae51-240f8fb7db34"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 U301 [HS20HS072RX]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.4572
+                            },
+                            "uuid": "8fb0d6cb-d336-4951-a63c-7bb367aef00b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 U301 [HS20HS072RX]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.4572
+                            },
+                            "uuid": "8fb0d6cb-d336-4951-a63c-7bb367aef00b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 D401 [1N5819WS4_C42441798]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 0.3937
+                            },
+                            "uuid": "9dbbfe69-359b-460e-baef-c456dc3bddc1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 D401 [1N5819WS4_C42441798]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 0.3937
+                            },
+                            "uuid": "9dbbfe69-359b-460e-baef-c456dc3bddc1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q401 [AO3400A]",
+                            "pos": {
+                                "x": 0.5461,
+                                "y": 0.4953
+                            },
+                            "uuid": "cd5bc154-909c-4689-97a8-35f35e748ea6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 Q401 [AO3400A]",
+                            "pos": {
+                                "x": 0.5461,
+                                "y": 0.4953
+                            },
+                            "uuid": "cd5bc154-909c-4689-97a8-35f35e748ea6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                },
+                {
+                    "description": "当前配置中不包含封装库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 D402 [FC-1608G1-520]",
+                            "pos": {
+                                "x": 1.3843,
+                                "y": 0.4445
+                            },
+                            "uuid": "e2a3d959-4cd3-4ddf-9f47-1fe0cd7bd667"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "footprint_link_issues"
+                },
+                {
+                    "description": "当前配置不包含符号库 'easyeda'",
+                    "items": [
+                        {
+                            "description": "符号 D402 [FC-1608G1-520]",
+                            "pos": {
+                                "x": 1.3843,
+                                "y": 0.4445
+                            },
+                            "uuid": "e2a3d959-4cd3-4ddf-9f47-1fe0cd7bd667"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_issues"
+                }
+            ]
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/d501dd46-08d9-4743-b831-93de6bd7c7dd",
+            "violations": []
+        },
+        {
+            "path": "/power/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6",
+            "violations": [
+                {
+                    "description": "-BATT 和 MOFETS_S1 都连接到同一项上; 将使用 -BATT 作为网表中的网络名称",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0208 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.9685,
+                                "y": 0.4318
+                            },
+                            "uuid": "a9d2ce74-fffe-4524-a8a0-21c77ae87858"
+                        },
+                        {
+                            "description": "标签 'MOFETS_S1'",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 0.7874
+                            },
+                            "uuid": "9568c175-a563-4561-9999-838b048eb8c5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "GND 和 MOFETS_S2 都连接到同一项上; 将使用 GND 作为网表中的网络名称",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0205 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.651,
+                                "y": 0.3556
+                            },
+                            "uuid": "6ad282e5-0916-4090-b188-41ad29524115"
+                        },
+                        {
+                            "description": "标签 'MOFETS_S2'",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.5461
+                            },
+                            "uuid": "5546aaa8-f541-452f-b38b-3e39c3435c28"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        },
+        {
+            "path": "/display/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/98e7fe21-bddb-41d2-a56f-5f910350d952",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 1 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3175
+                            },
+                            "uuid": "fcfd46fc-ac78-4aab-8b64-237542bb4f1e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 2 [CS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3429
+                            },
+                            "uuid": "d0216e63-0820-4c0d-961d-4b298d29cbc1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 3 [RS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3683
+                            },
+                            "uuid": "5ded88a0-f078-4b36-945c-06942376418f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 4 [SCL, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3937
+                            },
+                            "uuid": "255bc9a2-0bbe-4e5e-9b65-4a5609810b91"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 5 [SDA, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4191
+                            },
+                            "uuid": "a8afbf03-ea90-4a86-b9ad-6002d2fd07fe"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 6 [RST, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4445
+                            },
+                            "uuid": "fc344a0d-d2ec-48bc-8e54-908f40eb1cb2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 7 [NC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4699
+                            },
+                            "uuid": "6a4c817f-3768-465c-af07-b52a940e77f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 8 [I/O-VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4953
+                            },
+                            "uuid": "66d461b6-f6d8-404e-a731-728cef886d83"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 9 [VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5207
+                            },
+                            "uuid": "6e539844-027e-4bfb-8728-53ab2ee4d1ae"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 10 [A, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5461
+                            },
+                            "uuid": "618edb22-6cb6-4867-824d-c42490cb4dc7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 11 [K, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5715
+                            },
+                            "uuid": "00b24625-29b7-4edd-b08d-87560cc31c7d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 12 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5969
+                            },
+                            "uuid": "c8da972e-86b0-4192-a995-e5e4c8463e00"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/feedback/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/70f3265f-7569-4b26-921c-951badfb2520",
+            "violations": []
+        },
+        {
+            "path": "/user_input/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b2236c73-c7ac-47cb-a363-4ec62c6a982a",
+            "violations": []
+        }
+    ],
+    "source": "devotchi.kicad_sch"
+}

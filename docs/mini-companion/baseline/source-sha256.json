@@ -1,0 +1,13 @@
+{
+  "hardware/devotchi.kicad_pcb": "ee1c0466ec35bf7368bcb7a4c3b88459078ea0631fda435bb8d78d0506e3b871",
+  "hardware/devotchi.kicad_pro": "570848f297296a7100de126bb762360323adfaa0432c2d191358d8ddc308ce80",
+  "hardware/devotchi.kicad_sch": "f9d6dbbc8e1cf2db38c1b7f4c215154ffbe8c3b1299328eea7b8752ea9b0cb6e",
+  "hardware/display.kicad_sch": "d668e1f11809a35f3bc761c16fd5613c31e65fb2ec1353824a692858d5e90112",
+  "hardware/feedback.kicad_sch": "97b3edd0f54505b30efc28a11aa8d3eb8ba05e5a35affc4876a48326f0367724",
+  "hardware/jlcpcb/production_files/BOM-devotchi.csv": "2e77b3d892718a48afc26473ee408882a2d9a295c1385323b6d3c36e4a954144",
+  "hardware/jlcpcb/production_files/CPL-devotchi.csv": "c5cccfb3fa04e02f2d5f2bf821222c3aff1f6616bc78d9b21dd9358692da002c",
+  "hardware/jlcpcb/production_files/GERBER-devotchi.zip": "bb5a4dab8c61b429ee2cb35fe9235739c89cf362793e6800ed56c1365c8522fc",
+  "hardware/mcu.kicad_sch": "ce148dbf4afab72cb4c7c43e5c2f82fd5b9d6c1a60f2a6ad260614c957565d39",
+  "hardware/power.kicad_sch": "aed1603f33002e0cd7817748825a366eba3588649745bfd9d9aeb77d6595f15e",
+  "hardware/user_input.kicad_sch": "ede01d99c78c6c3ef51b19612d874e3ac970cc8b8e1016b098dc00f9961ab612"
+}

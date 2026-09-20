@@ -7,7 +7,7 @@
 - [x] HW-BASE-001：Astra，Git/官方CLI/ERC/DRC/网表/PCB基线；报告与证据。
 - [x] HW-BASE-002：Luna，资产/BOM/CPL/许可证/机械清点；Astra纠正R402归属并确认第四键排除标志。
 - [x] PHASE 1产品范围记录；硬件参数未冻结。
-- [ ] HW-PWR-AUDIT-001：Terra报告、Astra二审、用户选择安全路线后才允许实施。
+- [ ] HW-PWR-AUDIT-001：Terra报告、Astra二审、用户已批准PowerPath+电芯NTC，进入具体设计。
 - [ ] HW-NFC-001：Terra比较、Astra复核；两设备验证前不能宣布方案可靠。
 
 ## 依赖和验收
@@ -27,4 +27,4 @@
 
 同一KiCad工程不并行写入；Terra设计与Luna机械操作不能同时修改PCB。每阶段开始git status，结束git diff/--stat、校验、Astra审阅、小提交；禁止reset --hard、覆盖未知修改、自动push/PR。
 
-当前阶段停止在可审查的架构选择处：优先解决电源路线，NFC研究可并行；没有电芯、RF样机或完整工具能力时不伪造制造验收。
+当前安全路线已批准：推进具体电源设计，NFC模块研究并行；没有电芯、RF样机或完整工具能力时不伪造制造验收。

@@ -1,0 +1,781 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-21T12:33:25",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C101",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 74.5
+                    },
+                    "uuid": "75bf3a41-d3a1-46fc-9e29-8cc62b89d0e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C102",
+                    "pos": {
+                        "x": 142.25,
+                        "y": 75.0
+                    },
+                    "uuid": "8976b57a-8fc0-4dca-95a8-3ef2c147f30d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C103",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 73.75
+                    },
+                    "uuid": "279483d0-3aff-4aae-a177-d4caffff6afd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 H101",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 99.5
+                    },
+                    "uuid": "7e627772-5e4b-4139-b599-bce566ff2e74"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R101",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 77.0
+                    },
+                    "uuid": "2af2b1e8-aeba-4daa-8d4f-1a79ae740927"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW101",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 95.875
+                    },
+                    "uuid": "4ab53563-db0e-4a09-9b82-a59abc613d14"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP101",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 72.75
+                    },
+                    "uuid": "e6a743d0-49b1-4c6d-ad5d-d8f59cf24533"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP102",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 86.0
+                    },
+                    "uuid": "2e32a85c-b27c-4070-9c40-c4173dd1b75a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP103",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 80.75
+                    },
+                    "uuid": "080c76cc-503f-4125-9915-a11ad3b810d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP105",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 73.75
+                    },
+                    "uuid": "d94f4013-0c91-432d-bede-bae4b47f6e82"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C201",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 111.75
+                    },
+                    "uuid": "f296f27e-fbbe-4e2c-ac74-6d9f60003ca5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C202",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 115.75
+                    },
+                    "uuid": "e2d221dd-b0ab-47b3-8886-dbc79ad3e6ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C203",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 112.5
+                    },
+                    "uuid": "3204d8f0-ee3f-4ab4-9bad-c502313ebeb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C204",
+                    "pos": {
+                        "x": 152.0,
+                        "y": 95.0
+                    },
+                    "uuid": "32175682-8aa1-4b9d-bf1e-3eb834c9481b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C205",
+                    "pos": {
+                        "x": 160.25,
+                        "y": 95.0
+                    },
+                    "uuid": "f5a924db-901f-4082-b3e0-9874b403880e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 J202",
+                    "pos": {
+                        "x": 162.25,
+                        "y": 108.0
+                    },
+                    "uuid": "9ab6f2b6-0bb0-4296-bea3-82e75875c1ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R201",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 116.5
+                    },
+                    "uuid": "9508f652-e7ab-4070-adc3-9def5abf3061"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R202",
+                    "pos": {
+                        "x": 159.75,
+                        "y": 116.5
+                    },
+                    "uuid": "e4faf654-8a9c-4897-8319-f749c956d6fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R203",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 108.5
+                    },
+                    "uuid": "f1df81b0-3775-4588-80bd-dde82923c9d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R204",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 108.5
+                    },
+                    "uuid": "a5524c74-17db-48fc-8f47-e89b3e80a83e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R205",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 116.25
+                    },
+                    "uuid": "12dc1d1c-4271-4d33-8eae-b8c2ab7d2baa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R206",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 112.5
+                    },
+                    "uuid": "f762bb60-bee8-4045-be98-b64fa50f38cc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R207",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 88.0
+                    },
+                    "uuid": "02bd01ff-c51e-4b87-b8c6-f64e6be9c490"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R208",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 88.0
+                    },
+                    "uuid": "a6521919-7085-4df4-8ef7-88c83a19f3be"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP201",
+                    "pos": {
+                        "x": 148.5,
+                        "y": 108.5
+                    },
+                    "uuid": "c02cebc1-98a1-4610-8a6b-88d3514d83c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP202",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 118.25
+                    },
+                    "uuid": "c2ab7ced-a3a3-4ad2-b7be-4e87f4736c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP203",
+                    "pos": {
+                        "x": 144.25,
+                        "y": 108.5
+                    },
+                    "uuid": "05e043c1-041f-4086-9bb0-d398e64cecb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP204",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 102.0
+                    },
+                    "uuid": "68409188-fc7c-420a-8ef9-55ef4d0760d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP205",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 90.25
+                    },
+                    "uuid": "a7246254-b799-4789-82e3-7cba8fe3b54e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP206",
+                    "pos": {
+                        "x": 161.5,
+                        "y": 90.25
+                    },
+                    "uuid": "c7a6232e-cee4-4764-a8b7-5128cd2ce5cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP207",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 114.75
+                    },
+                    "uuid": "6ed28886-cd26-4dd0-8884-856ebb5e4a17"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP208",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 84.75
+                    },
+                    "uuid": "abf66e9c-162a-4075-84bc-e6b36ddb8c3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C301",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 74.25
+                    },
+                    "uuid": "cda5d31e-ad8a-4df7-b9ad-9904d2764b29"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C302",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 74.25
+                    },
+                    "uuid": "e141a459-e798-42f5-ad73-cf75c49044e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R301",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 84.75
+                    },
+                    "uuid": "158a5e03-4ebd-44c2-84e8-218cbd57e3ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R302",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 87.75
+                    },
+                    "uuid": "7022b98a-8500-4b72-b15c-6bc4109d84e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 105.5
+                    },
+                    "uuid": "0726ed6a-7f8a-4b61-bf85-e63d964c5dd8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C502",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 105.5
+                    },
+                    "uuid": "0feafaee-6584-4eae-9ab5-ad286d215939"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C504",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 99.5
+                    },
+                    "uuid": "76ef882c-2514-4870-b22f-ad5ae439b94e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 102.5
+                    },
+                    "uuid": "594cd2d8-2aa4-4dd9-823a-2d354c4dd943"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R502",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 102.5
+                    },
+                    "uuid": "42b9b8bb-5154-4650-86fa-8840a487deab"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R504",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 96.5
+                    },
+                    "uuid": "f43aada3-0a6f-40e7-af82-073b3153a92c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW501",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 105.4
+                    },
+                    "uuid": "51331a37-695a-44fd-9924-0774c770ccad"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW502",
+                    "pos": {
+                        "x": 159.0,
+                        "y": 105.4
+                    },
+                    "uuid": "a26d3145-b10b-4712-8411-8f95315aa408"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW504",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 105.4
+                    },
+                    "uuid": "033e9ea7-c8f5-423a-8293-6a651ef84ea0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP501",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 98.0
+                    },
+                    "uuid": "07f502ec-710e-4785-abed-f0204d9b17b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP502",
+                    "pos": {
+                        "x": 155.75,
+                        "y": 100.5
+                    },
+                    "uuid": "a173ae36-c423-4b51-bfb5-e71a9e32654c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP504",
+                    "pos": {
+                        "x": 129.25,
+                        "y": 99.75
+                    },
+                    "uuid": "3f9bdbfb-90d6-46bd-86e1-83b2915db06e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "devotchi.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "封装 'USB_C_Receptacle_HRO_TYPE-C-31-M-12' 与库 'Connector_USB' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 J201",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 117.0
+                    },
+                    "uuid": "75423596-25f9-48ee-999c-3c4eac0a0058"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        }
+    ]
+}

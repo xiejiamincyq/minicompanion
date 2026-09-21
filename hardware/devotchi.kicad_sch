@@ -157,54 +157,6 @@
 		(uuid "b4846c17-f89d-4959-9dbe-595b2fd741fd")
 	)
 	(sheet
-		(at 190.5 101.6)
-		(size 50.8 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "70f3265f-7569-4b26-921c-951badfb2520")
-		(property "Sheetname" "feedback"
-			(at 190.5 100.8884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 3.81 3.81)
-					(thickness 0.762)
-					(bold yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "feedback.kicad_sch"
-			(at 190.5 114.8846 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "devotchi"
-				(path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 190.5 63.5)
 		(size 50.8 26.67)
 		(exclude_from_sim no)

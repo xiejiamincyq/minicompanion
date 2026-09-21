@@ -1,12 +1,14 @@
 # 硬件实施任务队列
 
-日期：2026-09-19。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。源设计保持未改。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
+更新：2026-09-21。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；电源仍是原电路，候选方案尚未实施。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
 
 ## 当前完成
 
 - [x] HW-BASE-001：Astra，Git/官方CLI/ERC/DRC/网表/PCB基线；报告与证据。
 - [x] HW-BASE-002：Luna，资产/BOM/CPL/许可证/机械清点；Astra纠正R402归属并确认第四键排除标志。
 - [x] PHASE 1产品范围记录；硬件参数未冻结。
+- [x] HW-LIB-001：恢复项目库表；已提交21a55fe。
+- [x] HW-FB-001：反馈六器件及TP104已移除，GPIO37/38释放；网表对比通过，官方CLI DRC零错误/零未连接，保留既有USB封装及Datasheet字段警告。详见FEEDBACK_REMOVAL.md。
 - [ ] HW-PWR-AUDIT-001：Terra报告、Astra二审、用户已批准PowerPath+电芯NTC，进入具体设计。
 - [ ] HW-NFC-001：Terra比较、Astra复核；两设备验证前不能宣布方案可靠。
 

@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "removed_nonzone_items": 64,
+  "old_teardrop_definitions_replaced_or_removed": 259,
+  "new_teardrop_definitions": 248,
+  "unchanged_remaining_nonzone_objects": true,
+  "unchanged_manual_zone_definitions": true,
+  "released_pads": {
+    "33": "unconnected-(U101-IO37-Pad33)",
+    "34": "unconnected-(U101-IO38-Pad34)"
+  }
+}

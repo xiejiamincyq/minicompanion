@@ -4,6 +4,8 @@
 
 ## 当前完成
 
+- [x] HW-PWR-006：TPS63802独立后级/机械POWER评审图；13器件、8网络、逐脚及开关故障校验通过，ERC零违规。未接入主板；生产封装、真实料号、动态电压、背光和USB/ADC反灌尚待落实。见hardware/candidates/system_power_review/README.md。
+
 - [x] HW-BASE-001：Astra，Git/官方CLI/ERC/DRC/网表/PCB基线；报告与证据。
 - [x] HW-BASE-002：Luna，资产/BOM/CPL/许可证/机械清点；Astra纠正R402归属并确认第四键排除标志。
 - [x] PHASE 1产品范围记录；硬件参数未冻结。

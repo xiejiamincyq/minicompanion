@@ -1,5 +1,7 @@
 # Power 状态表（HW-PWR-002R，待 Astra 二次审核）
 
+> 历史BQ25185候选状态表，非当前接线依据。当前BQ24072T与系统POWER评审图仍在集成中，USB状态边界见 [最新二审](validation/power-004/usb-resolution.md)，后级见 [HW-PWR-006](../../hardware/candidates/system_power_review/README.md)。不得将下表视作当前整机已实现行为。
+
 本表对应候选 `BQ25185DLHR + TPS63802DLAR`，硬件首配为 `RILIM/VSET=24.0 kΩ`、`RISET=3.00 kΩ`。因此，在所有 POR、OFF、MCU 崩溃和未枚举状态，输入限流保持 **USB 100 mA 档**；不得把软件配置当作安全前提。
 
 | 状态 | VBUS | 电池 | POWER | SYS / +3V3 | 充电 | 必须行为与验收 |

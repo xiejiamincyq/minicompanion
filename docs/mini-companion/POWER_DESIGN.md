@@ -1,5 +1,7 @@
 # V1 电源设计复审（HW-PWR-002R，待 Astra 二次审核）
 
+> 历史候选，已被后续审计替代，勿据本文接线或采购。当前实际评审图为 [BQ24072T核心](../../hardware/candidates/power_path_core_review/README.md) 与 [TPS63802后级/POWER](../../hardware/candidates/system_power_review/README.md)；二者尚未完成整板集成。旧BQ25185及3.3V参数不再是当前实施依据。
+
 **结论：撤销 BQ25601D + TPS63070 的“选定可落板”表述。** BQ25601D 的输入限流、充电电流、充电电压和 watchdog 行为须由 I²C 配置；在 MCU 未启动、真正关机或软件异常时，草案没有证明其 POR 默认值仍同时满足 USB 未枚举 100 mA、关机安全充电和电芯温窗。因此它不能作为本项目首版的默认安全闭环。
 
 本轮推荐一条**待原理图、热和采购审查后冻结**的硬件设定路线：`BQ25185DLHR`（TI，单节、线性 Power Path）+ `TPS63802DLAR`（TI，3.3 V buck-boost）+ 带保护板和 NTC 的三线电芯。它保留单节 4.2 V、USB-C 5 V、约 60 mm 外形和 USB 编程目标；不是已批准生产 BOM。

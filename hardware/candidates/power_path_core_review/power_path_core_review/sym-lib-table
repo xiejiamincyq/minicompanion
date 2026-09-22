@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MiniCompanionPower")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/BQ24072TRGTR.kicad_sym")(options "")(descr "Review-only voltage-based TS charger symbol"))
+)

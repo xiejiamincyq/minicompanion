@@ -4,6 +4,8 @@
 
 ## 当前完成
 
+- [x] HW-PWR-007：U1专用DLA封装、L1 DFE201612E真实料号及专用封装、SW1 PCM12SMTBR及标准封装已指派；POWER未用触点改NC，消除BBM依赖。焊盘数值、唯一网络差异和ERC校验通过；电容/背光/USB/NFC及整板集成仍未完成。
+
 - [x] HW-PWR-006：TPS63802独立后级/机械POWER评审图；13器件、8网络、逐脚及开关故障校验通过，ERC零违规。未接入主板；生产封装、真实料号、动态电压、背光和USB/ADC反灌尚待落实。见hardware/candidates/system_power_review/README.md。
 
 - [x] HW-BASE-001：Astra，Git/官方CLI/ERC/DRC/网表/PCB基线；报告与证据。

@@ -6,10 +6,10 @@
 	(paper "A4")
 	(title_block
 		(title "Mini Companion - SYSTEM POWER REVIEW ONLY")
-		(date "2026-09-22")
-		(rev "HW-PWR-006")
+		(date "2026-09-23")
+		(rev "HW-PWR-007")
 		(comment 1 "TPS63802 / 3.18V nominal / Mechanical POWER controls EN only")
-		(comment 2 "Not for fabrication: DLA footprint, switch and passive MPNs pending")
+		(comment 2 "Review only: U1/L1/SW1 footprints assigned; capacitors and full integration pending")
 		(comment 3 "SYS_RAW from charger OUT; PACK ground and charge path remain continuous")
 	)
 	(lib_symbols
@@ -1526,7 +1526,7 @@
 			(at 137.1600 46.9900 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MiniCompanionPower:TI_DLA0010A_VSON-HR-10_2x3mm_P0.5mm"
 			(at 124.46 64.77 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -1555,15 +1555,15 @@
 			(at 128.2700 30.4800 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
-		(property "Value" "0.47uH / MPN pending"
+		(property "Value" "DFE201612E-R47M=P2"
 			(at 128.2700 33.0200 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MiniCompanionPower:L_Murata_DFE201612E_2x1.6mm_H1.2mm"
 			(at 124.46 31.75 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://downloads.codico.com/misc/Newsletter_Passive/2016/Inductors/Murata_DFE_Serie/dfe201612e.pdf"
 			(at 124.46 31.75 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -1753,7 +1753,7 @@
 			(at 58.4200 118.1100 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
-		(property "Value" "100k"
+		(property "Value" "100k 1%"
 			(at 58.4200 120.6500 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
@@ -1852,15 +1852,15 @@
 			(at 115.57 111.887 0)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Value" "POWER / BBM"
+		(property "Value" "PCM12SMTBR"
 			(at 115.57 113.665 0)
 			(effects (font (size 1.27 1.27)))
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPDT_PCM12"
 			(at 115.57 119.38 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-pcm-series-datasheet?assetguid=d2f6a96c-7a9a-4c4e-a5aa-4fe3075dffe5"
 			(at 115.57 119.38 0)
 			(effects (font (size 1.27 1.27)) (hide yes))
 		)
@@ -2444,39 +2444,7 @@
 		(effects (font (size 1.0 1.0)) (justify right bottom))
 		(uuid "5162577e-125f-4f5a-a2e2-80bb45c5c766")
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 123.19 121.92 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6bd17e95-fd37-44ec-b185-8f4786f17038")
-		(property "Reference" "#PWR66"
-			(at 123.19 128.27 270)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Value" "GND"
-			(at 123.1900 125.2200 0)
-			(effects (font (size 1.0 1.0)))
-		)
-		(property "Footprint" ""
-			(at 123.19 121.92 270)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(property "Datasheet" "~"
-			(at 123.19 121.92 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
-		)
-		(instances
-			(project "system_power_review"
-				(path "/8ae17285-7fbe-4b11-863c-255bf064e9a1"
-					(reference "#PWR66") (unit 1)
-				)
-			)
-		)
-	)
+
 	(label "SYS_RAW"
 		(at 22.86 35.56 180)
 		(effects (font (size 1.0 1.0)) (justify right bottom))
@@ -2672,6 +2640,416 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(no_connect (at 120.65 121.92) (uuid "127e93d8-31a8-4f4c-8248-056cac64af3c"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	(wire
 		(pts (xy 124.46 27.94) (xy 127 27.94))
 		(stroke (width 0) (type solid))
@@ -2788,11 +3166,6 @@
 		(uuid "1a7de5a2-3130-4419-afc0-c07be696f54d")
 	)
 	(wire
-		(pts (xy 120.65 121.92) (xy 123.19 121.92))
-		(stroke (width 0) (type solid))
-		(uuid "a9595d19-bcfd-4446-8729-2eecee4108a0")
-	)
-	(wire
 		(pts (xy 54.61 123.19) (xy 57.15 123.19))
 		(stroke (width 0) (type solid))
 		(uuid "b058cf66-d288-42f2-b6fe-17a22cd61682")
@@ -2828,17 +3201,17 @@
 		(uuid "c24d01b9-4dc4-4c58-9e62-876e5d6b2f92")
 	)
 	(wire
-		(pts (xy 135.8900 172.72) (xy 138.4300 172.72))
+		(pts (xy 135.89 172.72) (xy 138.43 172.72))
 		(stroke (width 0) (type solid))
 		(uuid "51127514-9e85-4537-b1d7-d50b93553458")
 	)
 	(wire
-		(pts (xy 135.8900 175.26) (xy 138.4300 175.26))
+		(pts (xy 135.89 175.26) (xy 138.43 175.26))
 		(stroke (width 0) (type solid))
 		(uuid "f61b6488-cf8a-4286-a8fc-abf83ec328b5")
 	)
 	(wire
-		(pts (xy 135.8900 177.8) (xy 138.4300 177.8))
+		(pts (xy 135.89 177.8) (xy 138.43 177.8))
 		(stroke (width 0) (type solid))
 		(uuid "fe7b00e3-b36e-4f67-a3da-16cc841a7a95")
 	)

@@ -1,6 +1,6 @@
-# HW-PWR-006：系统稳压与 POWER 评审图
+# HW-PWR-007：系统稳压与 POWER 评审图
 
-2026-09-22。已实际绘制独立 KiCad 原理图；不是生产主板。打开同目录 `system_power_review.kicad_pro`。PDF：`../../../docs/mini-companion/validation/power-006/system-review.pdf`。
+更新2026-09-23。已实际绘制独立 KiCad 原理图；不是生产主板。打开同目录 `system_power_review.kicad_pro`。最新PDF：`../../../docs/mini-companion/validation/power-007/system-review.pdf`。HW-PWR-006证据保留作历史基线。
 
 TASK ID：HW-PWR-006；MODEL：Astra实施、独立子代理只读二审、Astra复核；OBJECTIVE：后级升降压和机械POWER接线；INPUTS：已提交BQ24072T核心、TI数据表、既定屏幕上限；MUST KEEP：充电和电芯保护连续；ALLOWED TO MODIFY：独立候选及验证资料；DO NOT MODIFY：主板、软件和外壳；TOOLS：KiCad MCP放置与连接、官方CLI、Python网表检查；VALIDATION：逐脚合约、开关错接故障注入、容差计算、ERC、PDF；OUTPUT：本目录及power-006证据；RISK：尚未完成整合、器件定型和动态验证。
 
@@ -9,7 +9,7 @@ TASK ID：HW-PWR-006；MODEL：Astra实施、独立子代理只读二审、Astra
 - J1.1 `SYS_RAW` 对接充电器 OUT；J1.2 接系统公共地。J1/J2仅是评审边界，不增加实物接口。
 - TPS63802DLAR：VIN接SYS_RAW，0.47µH电感连接L1/L2，输入10µF、输出两个22µF；MODE接地允许省电模式。AGND/功率地布局需按TI要求汇接。
 - 反馈53.6k/10k，均±0.1%，目标3.18V。PG经100k上拉到切换后的逻辑电源。
-- SW1为保持位置的机械SPDT，公共端2接EN，端1接SYS_RAW，端3接地；EN另有100k下拉。最终料号必须是先断后合BBM，不能在切换时短接电源和地。
+- SW1选PCM12SMTBR，公共端2接EN，端1接SYS_RAW，端3明确NC；EN另有100k、1%下拉。此接法无需依赖BBM，切换时没有直接短接电源与地的路径。按EN最大漏电0.2µA计算关机电平最高20.2mV，低于0.4V输入低电平界限。
 - POWER不接入PACK−、BAT或NTC，不影响充电核心。关机由转换器的负载断开功能实现；USB、ADC及背光等旁路尚待整合审查。
 - 输出100k泄放，避免仅靠未知负载放电；这不代表瞬间清零。44µF名义容量与100k并联63.6k估算时间常数约1.71秒，实际值随容量、负载和外部反灌变化。
 
@@ -23,8 +23,8 @@ KiCad 10.0.6官方CLI ERC：0错误、0警告。独立网表检查覆盖13个器
 
 ## 实物与布局待办
 
-1. DLA是非对称HotRod焊盘，未找到已核对的本地标准封装；本图故意不指派普通DFN代替。U1、L1、SW1尚无生产封装。
-2. 电感和电容需确定真实料号，核对电流/温升及直流偏压。推荐条件要求输入有效电容至少4µF、当前输出档至少7µF；标称容量不能代替此检查。
+1. 已建立并指派U1专用DLA0010A封装，10个铜焊盘，8脚两片独立锡膏开窗；数值校验和官方CLI预览通过。SW1已指派标准PCM12封装。仍需与实际装配工艺和外壳位置核对。
+2. L1选DFE201612E-R47M=P2，项目E系列封装匹配推荐焊盘，去掉错误的1.0mm高P系列3D模型；E系列高度上限1.2mm。电容仍需真实料号与偏压曲线，输入有效容量至少4µF、输出至少7µF。电感在峰值及温升下的实际表现仍待负载预算和布局验证。
 3. 背光不能直接由3.18V轨假定获得全部所需电压；其恒流方案仍独立设计。NFC尚未选定，完整峰值/持续电流和两天续航尚未验收。
 4. USB前端、系统掉电、ADC隔离、尺寸和完整BOM成本未完成。空白PCB仅是工具初始化文件，没有布板成果。
 
@@ -34,10 +34,11 @@ KiCad MCP创建、生成10脚符号、放置和连线。自动排版仍重叠，
 
 [TI TPS63802 Rev.D](https://www.ti.com/lit/ds/symlink/tps63802.pdf)：表7-1、8.3、8.5和第10/12节。独立二审复算与`verify_system.py`结果一致，允许保留候选草图，未作制造放行。
 
-验证命令（工作目录为仓库根）：
+最新验证命令（工作目录为仓库根；power-006脚本只用于旧版本）：
 
 ```powershell
-& 'C:/Program Files/KiCad/10.0/bin/kicad-cli.exe' sch export netlist --format kicadxml -o docs/mini-companion/validation/power-006/system-final.xml hardware/candidates/system_power_review/system_power_review.kicad_sch
-& 'C:/ProgramData/miniconda3/python.exe' docs/mini-companion/validation/power-006/verify_system.py
-& 'C:/Program Files/KiCad/10.0/bin/kicad-cli.exe' sch erc --format json --severity-all -o docs/mini-companion/validation/power-006/erc.json hardware/candidates/system_power_review/system_power_review.kicad_sch
+& 'C:/Program Files/KiCad/10.0/bin/kicad-cli.exe' sch export netlist --format kicadxml -o docs/mini-companion/validation/power-007/system-final.xml hardware/candidates/system_power_review/system_power_review.kicad_sch
+& 'C:/Program Files/KiCad/10.0/bin/kicad-cli.exe' sch erc --format json --severity-all -o docs/mini-companion/validation/power-007/erc.json hardware/candidates/system_power_review/system_power_review.kicad_sch
+& 'C:/ProgramData/miniconda3/python.exe' docs/mini-companion/validation/power-007/verify_revision.py
+& 'C:/Program Files/KiCad/10.0/bin/python.exe' docs/mini-companion/validation/power-007/verify_dla.py
 ```

@@ -1,4 +1,6 @@
-# HW-PWR-008：系统稳压、POWER 与背光评审图
+# HW-PWR-009：系统电源、背光与 USB CC 检测评审图
+
+最新：USB侧TPS70933独立稳压及TUSB320LAI检测子页已绘制；尚未连接充电授权逻辑。三页PDF：`../../../docs/mini-companion/validation/power-009/system-review.pdf`；限制与验证：`../../../docs/mini-companion/validation/power-009/REVIEW.md`。32个器件，ERC零违规，原22器件连接不变。以下为历史阶段记录。
 
 2026-09-24新增：背光子页已通过层次引脚接入切换后电源。最新两页PDF：`../../../docs/mini-companion/validation/power-008/system-review.pdf`；说明及验证：`../../../docs/mini-companion/validation/power-008/REVIEW.md`。当前22个器件，ERC 0错误/0警告，旧电源逐脚连接不变。背光名义58.06mA，电流全范围、元件定型及实测未完成。以下保留HW-PWR-007历史说明，其中“背光待设计”已由本次候选子页推进，仍未合入生产主板。
 

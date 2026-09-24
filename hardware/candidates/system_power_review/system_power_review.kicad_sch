@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mini Companion - SYSTEM POWER REVIEW ONLY")
 		(date "2026-09-23")
-		(rev "HW-PWR-008")
+		(rev "HW-PWR-009")
 	)
 	(lib_symbols
 	(symbol "power:GND"
@@ -3542,4 +3542,47 @@
 
 (wire (pts (xy 90.17 137.16) (xy 95.25 147.32)) (stroke (width 0) (type solid)) (uuid "79d231c8-9b72-4ff5-9929-7b3bbc9f054b"))
 (label "VLOGIC_SWITCHED" (at 90.17 137.16 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "a7ac05a8-331a-4768-97a5-d3629d1a208b"))
+
+(sheet
+		(at 30.48 175.26)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4ebee4bc-0d89-464d-8a4c-1dbc1a2f0d5f")
+		(property "Sheetname" "usb_cc"
+			(at 30.48 174.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_cc.kicad_sch"
+			(at 30.48 196.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "system_power_review"
+				(path "/8ae17285-7fbe-4b11-863c-255bf064e9a1"
+					(page "2")
+				)
+			)
+		)
+	)
 )

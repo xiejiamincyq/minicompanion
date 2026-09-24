@@ -16,6 +16,9 @@
 - [x] HW-DISP-001：移除孤立、排除贴板的U301占位符，屏幕本体列入OFF_BOARD_ASSEMBLY.csv；FPC逐脚核对、其余网表端点不变。恢复pin_to_pin与lib_symbol_mismatch检查后ERC为0错误、24警告；提交5ff8058。未改变PCB。
 - [x] HW-PWR-005-CORE：BQ24072T独立KiCad充电核心评审图，三线电池/NTC、Power Path、设定电阻及去耦；19器件15网络核对，候选ERC零违规。仅完成核心评审草图，USB控制、后级及整板集成仍未完成；见hardware/candidates/power_path_core_review/README.md。
 - [ ] HW-PWR-AUDIT-001：Terra报告、Astra二审、用户已批准PowerPath+电芯NTC，进入具体设计。
+- [x] HW-PWR-008：切换后系统电源及TPS60231背光候选子页；58mA名义值，ERC和独立逐脚检查通过；未集成主板，模拟全范围待验证。
+- [x] HW-PWR-009：TPS70933/TUSB320LAI USB检测前端已入候选工程，32器件ERC零违规；只完成检测，未实现充电许可。
+- [ ] HW-PWR-010：USB电源有效状态、充电许可组合及Default/BC1.2路径；核查旁路最大电流，随后整合充电核心与系统电源。
 - [ ] HW-NFC-001：Terra比较、Astra复核；两设备验证前不能宣布方案可靠。
 
 ## 依赖和验收

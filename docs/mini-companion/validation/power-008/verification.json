@@ -1,0 +1,20 @@
+{
+  "status": "review_only",
+  "components": 22,
+  "ERC_violations": 0,
+  "parent_pin_contract": "unchanged",
+  "backlight_pin_contract": "pass",
+  "LED_polarity_fault_detected": true,
+  "nominal_LED_mA": 58.064516129032256,
+  "conditional_LED_mA_range": [
+    49.16099550401689,
+    65.26806526806527
+  ],
+  "nominal_1p5x_rail_mA": 89.19677419354839,
+  "engineering_rail_reserve_mA": 110,
+  "limitations": [
+    "Current calculation uses datasheet table conditions; not a full voltage/temperature guarantee",
+    "Capacitor effective values, footprint mechanical audit, PWM/rail transient and shutdown behavior pending",
+    "No PCB routing or physical measurements"
+  ]
+}

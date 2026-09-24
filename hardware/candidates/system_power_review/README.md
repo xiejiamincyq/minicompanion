@@ -1,4 +1,6 @@
-# HW-PWR-007：系统稳压与 POWER 评审图
+# HW-PWR-008：系统稳压、POWER 与背光评审图
+
+2026-09-24新增：背光子页已通过层次引脚接入切换后电源。最新两页PDF：`../../../docs/mini-companion/validation/power-008/system-review.pdf`；说明及验证：`../../../docs/mini-companion/validation/power-008/REVIEW.md`。当前22个器件，ERC 0错误/0警告，旧电源逐脚连接不变。背光名义58.06mA，电流全范围、元件定型及实测未完成。以下保留HW-PWR-007历史说明，其中“背光待设计”已由本次候选子页推进，仍未合入生产主板。
 
 更新2026-09-23。已实际绘制独立 KiCad 原理图；不是生产主板。打开同目录 `system_power_review.kicad_pro`。最新PDF：`../../../docs/mini-companion/validation/power-007/system-review.pdf`。HW-PWR-006证据保留作历史基线。
 

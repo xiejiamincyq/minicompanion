@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "MiniCompanionSystem")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS63802DLAR.kicad_sym")(options "")(descr "Review-only TPS63802 pin contract"))
+  (lib (name "MiniCompanionBacklight")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS60231RGTR.kicad_sym")(options "")(descr "Review-only TPS60231 pin contract"))
 )

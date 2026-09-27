@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-27T20:17:48",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/8ae17285-7fbe-4b11-863c-255bf064e9a1",
+            "violations": []
+        },
+        {
+            "path": "/usb_qualify/",
+            "uuid_path": "/8ae17285-7fbe-4b11-863c-255bf064e9a1/304d469f-ccd8-44e5-b17f-e90116b450ed",
+            "violations": []
+        },
+        {
+            "path": "/usb_cc/",
+            "uuid_path": "/8ae17285-7fbe-4b11-863c-255bf064e9a1/4ebee4bc-0d89-464d-8a4c-1dbc1a2f0d5f",
+            "violations": []
+        },
+        {
+            "path": "/backlight/",
+            "uuid_path": "/8ae17285-7fbe-4b11-863c-255bf064e9a1/34b8a630-7c2e-484d-a867-c61a01b361ad",
+            "violations": []
+        }
+    ],
+    "source": "system_power_review.kicad_sch"
+}

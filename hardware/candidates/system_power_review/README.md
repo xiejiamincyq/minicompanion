@@ -1,4 +1,6 @@
-# HW-PWR-009：系统电源、背光与 USB CC 检测评审图
+# HW-PWR-010：系统电源、背光与 USB CC 条件组合评审图
+
+最新2026-09-27：新增TPS3808监控与SN74LVC1G97条件组合，R9改10k；当前40器件、四页、ERC零违规。输出尚未接充电EN，低压钳位和Default/BC1.2仍待完成。[最新说明](../../../docs/mini-companion/validation/power-010/REVIEW.md)，[PDF](../../../docs/mini-companion/validation/power-010/system-review.pdf)。以下为历史记录。
 
 最新：USB侧TPS70933独立稳压及TUSB320LAI检测子页已绘制；尚未连接充电授权逻辑。三页PDF：`../../../docs/mini-companion/validation/power-009/system-review.pdf`；限制与验证：`../../../docs/mini-companion/validation/power-009/REVIEW.md`。32个器件，ERC零违规，原22器件连接不变。以下为历史阶段记录。
 

@@ -1,3 +1,5 @@
+2026-09-29最新：HW-PWR-013新增HOST_USB_ALLOW候选接口，R105改3.65kΩ；六页74器件含11个评审接口，ERC零违规。主板集成、GPIO/普通USB、成本和独立审核仍未完成。最新[PDF](../../../docs/mini-companion/validation/power-013/system-review.pdf)与[审查记录](../../../docs/mini-companion/validation/power-013/REVIEW.md)。以下旧阶段记录保留作历史，器件数量以本段为准。
+
 # HW-PWR-012：增加USB输入保护的电源集成评审图
 
 最新2026-09-28：新增TPS259470L输入保护子页，原始VBUS与受保护VBUS已分开；六页71器件、ERC零违规，逐脚差分和三项故障注入通过。普通USB识别、瞬态保护、专用封装和完整成本仍未验收。[最新说明](../../../docs/mini-companion/validation/power-012/REVIEW.md)，[PDF](../../../docs/mini-companion/validation/power-012/system-review.pdf)。以下为历史记录。

@@ -4,7 +4,7 @@
 	(generator_version "10.0")
 	(uuid "d4a510f5-694b-49a9-bb66-37298cdbde8f")
 	(paper "A4")
-	(title_block (title "Mini Companion - INTEGRATED CHARGER REVIEW") (date "2026-09-27") (rev "HW-PWR-011") (comment 1 "CC high-current path connected; default USB and BC1.2 not implemented") (comment 2 "Cell-body NTC and protected 4.2V pack required; NOT FOR FABRICATION"))
+	(title_block (title "Mini Companion - INTEGRATED CHARGER REVIEW") (date "2026-09-28") (rev "HW-PWR-013") (comment 1 "CC or configured host permission; source-side auxiliary current reserved") (comment 2 "Cell-body NTC and protected pack required; OFF Default USB not resolved"))
 	(lib_symbols
 	(symbol "power:GND"
 		(power global)
@@ -1819,7 +1819,7 @@
 			(at 133.3500 123.1900 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
-		(property "Value" "3.48k 1%"
+		(property "Value" "3.65k 1%"
 			(at 133.3500 125.7300 0)
 			(effects (font (size 1.0 1.0)) (justify left))
 		)
@@ -2756,6 +2756,124 @@
 		)
 		(instances (project "system_power_review" (path "/8ae17285-7fbe-4b11-863c-255bf064e9a1/f5f84970-93a7-4c9b-aae0-eccbf9c78278" (reference "#PWR142485") (unit 1))))
 	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

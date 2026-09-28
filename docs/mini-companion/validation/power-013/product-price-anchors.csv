@@ -1,0 +1,13 @@
+checked_date,item,manufacturer_part,vendor,quantity_break,unit_price_usd,stock_snapshot,tax_status,shipping_status,url,notes
+2026-09-28,MCU,ESP32-S3-MINI-1-N4R2,LCSC,1,4.9949,294,not_verified,not_included,https://www.lcsc.com/product-detail/C3013941.html,Applies to 5 pieces; not a 5-piece discount
+2026-09-28,MCU,ESP32-S3-MINI-1-N4R2,LCSC,10,4.4912,294,not_verified,not_included,https://www.lcsc.com/product-detail/C3013941.html,10-piece tier
+2026-09-28,Display,HS20HS072RX,LCSC,1,3.4045,2209,not_verified,not_included,https://www.lcsc.com/product-detail/C5329582.html,Displayed promotional price; regular 3.6218
+2026-09-28,Display,HS20HS072RX,LCSC,10,2.8962,2209,not_verified,not_included,https://www.lcsc.com/product-detail/C5329582.html,Displayed promotional price; regular 3.0810
+2026-09-28,NFC_reference_module,NFC_PN7160_I2C,ELECHOUSE,1,21.80,2860,not_verified,not_included,https://www.elechouse.com/product/pn7160-nfc-rfid-module/,1-9 tier; not approved production selection
+2026-09-28,NFC_reference_module,NFC_PN7160_I2C,ELECHOUSE,10,18.80,2860,not_verified,not_included,https://www.elechouse.com/product/pn7160-nfc-rfid-module/,10-99 tier; budget conflict
+2026-09-28,Power_IC,BQ24072TRGTR,LCSC,1,2.2665,329,not_verified,not_included,https://www.lcsc.com/product-detail/C129319.html,Snapshot; not a domestic CNY quote
+2026-09-28,Power_IC,BQ24072TRGTR,LCSC,10,1.9158,329,not_verified,not_included,https://www.lcsc.com/product-detail/C129319.html,Snapshot; not a domestic CNY quote
+2026-09-28,Power_IC,TPS63802DLAR,LCSC,1,1.0095,17815,not_verified,not_included,https://www.lcsc.com/product-detail/C2845237.html,Snapshot; not a domestic CNY quote
+2026-09-28,Power_IC,TPS63802DLAR,LCSC,10,0.8535,17815,not_verified,not_included,https://www.lcsc.com/product-detail/C2845237.html,Snapshot; not a domestic CNY quote
+2026-09-28,Power_IC,TPS259470LRPWR,LCSC,1,1.4568,2745,not_verified,not_included,https://www.lcsc.com/product-detail/C3662793.html,Snapshot; not a domestic CNY quote
+2026-09-28,Power_IC,TPS259470LRPWR,LCSC,10,1.2039,2745,not_verified,not_included,https://www.lcsc.com/product-detail/C3662793.html,Snapshot; not a domestic CNY quote

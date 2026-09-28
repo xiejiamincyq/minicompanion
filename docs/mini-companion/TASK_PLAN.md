@@ -1,11 +1,12 @@
 # 硬件实施任务队列
 
-更新：2026-09-28。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；主板电源仍是原电路，独立候选已绘制并完成充电核心与后级连接。用户已接手软件，本任务只推进硬件及必要接口交付。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
+更新：2026-09-29。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；主板电源仍是原电路，独立候选已绘制并完成充电核心与后级连接。用户已接手软件，本任务只推进硬件及必要接口交付。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
 
 ## 当前完成
 
 - [x] HW-PWR-012：TPS259470L输入保护候选已串入，六页71器件，ERC零违规及网表/故障注入通过；仅候选连接验收，动态保护、封装、普通USB和成本仍待完成。见validation/power-012/REVIEW.md。
-- [ ] HW-PWR-013：电源方案与成本收敛，比较当前分立控制和集成替代；明确USB枚举软件接口与独立电芯安全硬件的边界，避免无依据扩大无固件约束；随后继续普通USB及主板集成。
+- [ ] HW-PWR-013：HOST许可候选接口和限流余量修改完成，74器件ERC零违规，网表及故障注入通过；完成部分价格核对，预算与独立审查未闭环。详见validation/power-013/REVIEW.md。
+- [ ] HW-PWR/NFC-014：参考NFC模块降为功能参考；继续NFC和电源成本收敛，完成HOST电平及普通USB启动/关机方案，再集成主板。
 
 - [x] HW-PWR-007：U1专用DLA封装、L1 DFE201612E真实料号及专用封装、SW1 PCM12SMTBR及标准封装已指派；POWER未用触点改NC，消除BBM依赖。焊盘数值、唯一网络差异和ERC校验通过；电容/背光/USB/NFC及整板集成仍未完成。
 

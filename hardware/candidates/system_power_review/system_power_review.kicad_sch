@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mini Companion - SYSTEM POWER REVIEW ONLY")
 		(date "2026-09-28")
-		(rev "HW-PWR-012")
+		(rev "HW-PWR-013")
 	)
 	(lib_symbols
 	(symbol "power:GND"

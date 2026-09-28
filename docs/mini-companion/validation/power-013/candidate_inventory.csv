@@ -1,0 +1,75 @@
+﻿reference,value,sheet,quantity,role,footprint,unit_price_usd,price_status
+C1,10uF 10V X7R,/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+C2,22uF 10V X7R,/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+C3,22uF 10V X7R,/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+J1,SYS_RAW input,/,1,review_interface,,,unquoted
+J2,LOGIC output,/,1,review_interface,,,unquoted
+L1,DFE201612E-R47M=P2,/,1,candidate_component,MiniCompanionPower:L_Murata_DFE201612E_2x1.6mm_H1.2mm,,unquoted
+R1,53.6k 0.1%,/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R2,10k 0.1%,/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R3,100k 1%,/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R4,100k,/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R5,100k BLEED,/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+SW1,PCM12SMTBR,/,1,candidate_component,Button_Switch_SMD:SW_SPDT_PCM12,,unquoted
+U1,TPS63802DLAR,/,1,candidate_component,MiniCompanionPower:TI_DLA0010A_VSON-HR-10_2x3mm_P0.5mm,,unquoted
+C11,100nF 10V X7R,/usb_qualify/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C12,100nF 10V X7R,/usb_qualify/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C13,180nF 5% 10V,/usb_qualify/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C14,100nF 10V X7R,/usb_qualify/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+J7,CC QUALIFIED / READY / GND,/usb_qualify/,1,review_interface,,,unquoted
+J8,HOST ALLOW / GND,/usb_qualify/,1,review_interface,,,unquoted
+R11,22k 1%,/usb_qualify/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R12,47k 1%,/usb_qualify/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R19,470R 1%,/usb_qualify/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R20,10k 1%,/usb_qualify/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+U5,TPS3808G33DBVR,/usb_qualify/,1,candidate_component,Package_TO_SOT_SMD:SOT-23-6,,unquoted
+U6,SN74LVC1G97DBVR,/usb_qualify/,1,candidate_component,Package_TO_SOT_SMD:SOT-23-6,,unquoted
+U7,TS5A23166DCUR,/usb_qualify/,1,candidate_component,Package_SO:VSSOP-8_2.3x2mm_P0.5mm,,unquoted
+C8,2.2uF 10V X7R,/usb_cc/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C9,4.7uF 10V X7R,/usb_cc/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C10,100nF 10V X7R,/usb_cc/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+J5,USB: VBUS CC1 CC2 GND,/usb_cc/,1,review_interface,,,unquoted
+J6,CC raw OUT1 OUT2 GND,/usb_cc/,1,review_interface,,,unquoted
+R8,887k 1%,/usb_cc/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R9,10k 1%,/usb_cc/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R10,200k 1%,/usb_cc/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+U3,TPS70933DBVR,/usb_cc/,1,candidate_component,Package_TO_SOT_SMD:SOT-23-5,,unquoted
+U4,TUSB320LAIRWBR,/usb_cc/,1,candidate_component,Package_DFN_QFN:Texas_X2QFN-12_1.6x1.6mm_P0.4mm,,unquoted
+C15,1uF 50V X7R,/usb_input/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C16,2.2uF 10V X7R,/usb_input/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C17,2.2nF 5% 50V C0G,/usb_input/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+R13,34.8k 0.1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R14,10k 0.1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R15,27.4k 0.1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R16,10k 0.1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R17,3.32k 0.1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R18,100k 1%,/usb_input/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+U8,TPS259470LRPWR,/usb_input/,1,candidate_component,,,unquoted
+C101,4.7u 10V X7R,/charger/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+C102,10u 10V X7R,/charger/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+C103,10u 10V X7R,/charger/,1,candidate_component,Capacitor_SMD:C_0805_2012Metric,,unquoted
+J101,USB_5V_INPUT,/charger/,1,review_interface,,,unquoted
+J102,PROTECTED_CELL_PACK_NTC,/charger/,1,battery_connector_unselected,,,unquoted
+J103,SYSTEM_POWER_OUT,/charger/,1,review_interface,,,unquoted
+J104,USB_CONTROL_REVIEW_PORT,/charger/,1,review_interface,,,unquoted
+R101,39.2k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R102,30.1k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R103,100k TS protection,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R104,2.94k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R105,3.65k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R106,71.5k 0.1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R107,10k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R108,10k 1%,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R109,100k,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R110,10k,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R111,10k,/charger/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+U101,BQ24072TRGTR,/charger/,1,candidate_component,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,,unquoted
+C4,1uF 10V X7R,/backlight/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C5,1uF 10V X7R,/backlight/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C6,0.47uF 10V X7R,/backlight/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+C7,0.47uF 10V X7R,/backlight/,1,candidate_component,Capacitor_SMD:C_0603_1608Metric,,unquoted
+J3,FPC LED_A / LED_K,/backlight/,1,review_interface,,,unquoted
+J4,MCU PWM / GND,/backlight/,1,review_interface,,,unquoted
+R6,8.06k 1%,/backlight/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+R7,10k,/backlight/,1,candidate_component,Resistor_SMD:R_0603_1608Metric,,unquoted
+U2,TPS60231RGTR,/backlight/,1,candidate_component,Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,,unquoted

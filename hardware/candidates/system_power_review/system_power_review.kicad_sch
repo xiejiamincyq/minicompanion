@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mini Companion - SYSTEM POWER REVIEW ONLY")
 		(date "2026-09-23")
-		(rev "HW-PWR-010")
+		(rev "HW-PWR-011")
 	)
 	(lib_symbols
 	(symbol "power:GND"
@@ -2219,60 +2219,7 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 30.48 154.94 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced no)
-		(uuid "056ac2d0-0c4a-4dc7-a8c7-d8427bf2fa9c")
-		(property "Reference" "#FLG01"
-			(at 30.48 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 30.48 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 30.48 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "system_power_review"
-				(path "/8ae17285-7fbe-4b11-863c-255bf064e9a1"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
-		)
-	)
+
 	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 69.85 154.94 0)
@@ -3042,8 +2989,8 @@
 		)
 		(uuid "eff4739d-5c58-44bc-9a96-f0b3fc61cf4d")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 134.62 62.23 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 134.62 62.23 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3072,8 +3019,8 @@
 		)
 		(uuid "130ad887-551a-4928-83ca-6aac2bc33084")
 	)
-	(label "SYS_RAW"
-		(at 114.3 62.23 180)
+	(global_label "SYS_RAW"
+		(shape passive) (at 114.3 62.23 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3102,8 +3049,8 @@
 		)
 		(uuid "76c69bdc-af05-462c-8096-08b394208042")
 	)
-	(label "SYS_RAW"
-		(at 57.15 60.96 0.0000)
+	(global_label "SYS_RAW"
+		(shape passive) (at 57.15 60.96 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3112,8 +3059,8 @@
 		)
 		(uuid "ee1c9a93-a062-41de-8ace-7f2a6c49cedd")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 207.01 50.8 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 207.01 50.8 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3122,8 +3069,8 @@
 		)
 		(uuid "21f84499-df31-459a-898c-b13d5d909b93")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 247.65 50.8 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 247.65 50.8 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3132,8 +3079,8 @@
 		)
 		(uuid "fced6cff-7939-406e-9f06-b29b4dda1f11")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 207.01 91.44 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 207.01 91.44 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3172,8 +3119,8 @@
 		)
 		(uuid "6ba8eb8a-f2cb-43b6-bc9b-6251b95975ae")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 207.01 130.81 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 207.01 130.81 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3192,8 +3139,8 @@
 		)
 		(uuid "f99c1c48-2af7-4824-ac16-5d77d994655f")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 247.65 130.81 0.0000)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 247.65 130.81 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3202,8 +3149,8 @@
 		)
 		(uuid "8f5a481a-40de-4b92-b100-0c3f78faedae")
 	)
-	(label "SYS_RAW"
-		(at 123.19 116.84 0.0000)
+	(global_label "SYS_RAW"
+		(shape passive) (at 123.19 116.84 0.0000)
 		(effects
 			(font
 				(size 1 1)
@@ -3222,8 +3169,8 @@
 		)
 		(uuid "5162577e-125f-4f5a-a2e2-80bb45c5c766")
 	)
-	(label "SYS_RAW"
-		(at 22.86 35.56 180)
+	(global_label "SYS_RAW"
+		(shape passive) (at 22.86 35.56 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3232,8 +3179,8 @@
 		)
 		(uuid "bcbf63df-6233-4c16-91cb-25bb0897c982")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 135.89 172.72 180)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 135.89 172.72 180)
 		(effects
 			(font
 				(size 1 1)
@@ -3252,16 +3199,7 @@
 		)
 		(uuid "a3493bfc-4dfc-46d1-9ec0-96c1178c0bc5")
 	)
-	(label "SYS_RAW"
-		(at 33.02 154.94 0.0000)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left bottom)
-		)
-		(uuid "e0a51d62-edb4-4164-a408-7a16ac61fbd4")
-	)
+
 	(no_connect
 		(at 120.65 121.92)
 		(uuid "127e93d8-31a8-4f4c-8248-056cac64af3c")
@@ -3489,11 +3427,7 @@
 		(stroke (width 0) (type solid))
 		(uuid "1caa917d-f187-4862-9e44-666ecfd10da2")
 	)
-	(wire
-		(pts (xy 30.48 154.94) (xy 33.02 154.94))
-		(stroke (width 0) (type solid))
-		(uuid "f5cc3593-3227-459c-bcb0-a36f083a6266")
-	)
+
 	(wire
 		(pts (xy 69.85 154.94) (xy 72.39 154.94))
 		(stroke (width 0) (type solid))
@@ -3541,7 +3475,7 @@
 	)
 
 (wire (pts (xy 90.17 137.16) (xy 95.25 147.32)) (stroke (width 0) (type solid)) (uuid "79d231c8-9b72-4ff5-9929-7b3bbc9f054b"))
-(label "VLOGIC_SWITCHED" (at 90.17 137.16 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "a7ac05a8-331a-4768-97a5-d3629d1a208b"))
+(global_label "VLOGIC_SWITCHED" (shape passive) (at 90.17 137.16 180) (effects (font (size 1 1)) (justify right bottom)) (uuid "a7ac05a8-331a-4768-97a5-d3629d1a208b"))
 
 (sheet
 		(at 30.48 175.26)
@@ -3613,6 +3547,49 @@
 		)
 		(property "Sheetfile" "usb_qualify.kicad_sch"
 			(at 30.4800 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "system_power_review"
+				(path "/8ae17285-7fbe-4b11-863c-255bf064e9a1"
+					(page "2")
+				)
+			)
+		)
+	)
+
+(sheet
+		(at 73.66 175.26)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f5f84970-93a7-4c9b-aae0-eccbf9c78278")
+		(property "Sheetname" "charger"
+			(at 73.66 174.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "charger.kicad_sch"
+			(at 73.66 196.1646 0)
 			(effects
 				(font
 					(size 1.27 1.27)

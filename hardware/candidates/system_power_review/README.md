@@ -1,4 +1,6 @@
-# HW-PWR-010：系统电源、背光与 USB CC 条件组合评审图
+# HW-PWR-011：充电核心、系统电源与 USB CC 许可集成评审图
+
+最新2026-09-28：BQ24072T核心已通过跨页网络接入TPS63802系统输入；新增VBUS供电的TS5A23166双通道串联许可控制，监控器供电改VBUS。当前61器件、五页、ERC零违规，逐脚合约和三项故障注入通过。Default USB/BC1.2、快速掉压及前端保护仍未完成，尚未替换主板或布板。[最新说明](../../../docs/mini-companion/validation/power-011/REVIEW.md)，[PDF](../../../docs/mini-companion/validation/power-011/system-review.pdf)。下面均为历史记录，以本段和power-011报告为准。
 
 最新2026-09-27：新增TPS3808监控与SN74LVC1G97条件组合，R9改10k；当前40器件、四页、ERC零违规。输出尚未接充电EN，低压钳位和Default/BC1.2仍待完成。[最新说明](../../../docs/mini-companion/validation/power-010/REVIEW.md)，[PDF](../../../docs/mini-companion/validation/power-010/system-review.pdf)。以下为历史记录。
 

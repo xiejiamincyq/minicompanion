@@ -1371,8 +1371,8 @@
 		(effects (font (size 1 1)) (justify left bottom))
 		(uuid "dfc360f8-f841-4dcd-8869-2b73f7641c58")
 	)
-	(label "VLOGIC_SWITCHED"
-		(at 113.03 74.93 180)
+	(global_label "VLOGIC_SWITCHED"
+		(shape passive) (at 113.03 74.93 180)
 		(effects (font (size 1 1)) (justify right bottom))
 		(uuid "a5196827-12c8-41a6-b58d-389b14ab6f75")
 	)

@@ -1,6 +1,6 @@
 # 硬件实施任务队列
 
-更新：2026-09-22。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；电源仍是原电路，候选方案尚未实施。用户已接手软件，本任务只推进硬件及必要接口交付。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
+更新：2026-09-28。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；主板电源仍是原电路，独立候选已绘制并完成充电核心与后级连接。用户已接手软件，本任务只推进硬件及必要接口交付。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。
 
 ## 当前完成
 
@@ -20,6 +20,8 @@
 - [x] HW-PWR-009：TPS70933/TUSB320LAI USB检测前端已入候选工程，32器件ERC零违规；只完成检测，未实现充电许可。
 - [ ] HW-PWR-010：USB电源有效状态、充电许可组合及Default/BC1.2路径；核查旁路最大电流，随后整合充电核心与系统电源。
   - 2026-09-27已绘制TPS3808及施密特门候选，40器件ERC零违规；只完成CC条件组合。最终低压钳位、充电EN及Default/BC1.2未完成，整项保持未勾选。
+  - 2026-09-28：HW-PWR-011已把CC许可接至实际充电EN；Default/BC1.2、快速掉压和前端保护仍待完成，HW-PWR-010保持未勾选。
+- [x] HW-PWR-011：独立五页集成候选，BQ24072T OUT连接TPS63802，新增双通道串联EN控制；61器件ERC零违规，逐脚合约和三项故障注入通过。此项仅验收候选连接，不代表主板、USB全来源、PCB或电池安全验收；见validation/power-011/REVIEW.md。
 - [ ] HW-NFC-001：Terra比较、Astra复核；两设备验证前不能宣布方案可靠。
 
 ## 依赖和验收

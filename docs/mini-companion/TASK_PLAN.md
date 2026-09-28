@@ -4,6 +4,8 @@
 
 ## 当前完成
 
+- [x] HW-NFC-015-CANDIDATE：独立TPS61023升压评审图完成，11器件/26引脚/ERC零违规及3项错接检查通过；仅候选连接验收。两级损耗已复算，触发体验、I²C掉电、器件定型及主板集成未完成。见validation/nfc-015/REVIEW.md。
+
 - [x] HW-PWR-012：TPS259470L输入保护候选已串入，六页71器件，ERC零违规及网表/故障注入通过；仅候选连接验收，动态保护、封装、普通USB和成本仍待完成。见validation/power-012/REVIEW.md。
 - [ ] HW-PWR-013：HOST许可候选接口和限流余量修改完成，74器件ERC零违规，网表及故障注入通过；完成部分价格核对，预算与独立审查未闭环。详见validation/power-013/REVIEW.md。
 - [ ] HW-PWR/NFC-014：已完成U216官方原理图、固定版本主机库和成本/续航敏感性审查，见validation/nfc-014/REVIEW.md；候选5V供电、无IRQ的待机/唤醒、国内5/10件报价，以及HOST电平与普通USB仍待完成。Type-2模拟交换可评估，不再强制Type-4。

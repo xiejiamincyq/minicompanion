@@ -1,6 +1,8 @@
 # Mini Companion V1：离线双机 NFC 相遇架构研究（HW-NFC-001）
 
-> 状态：研究结论，**不冻结器件或电路**。本文不涉及校园卡、门禁卡或任何卡片克隆。目标仅是两台同款 Mini Companion 贴近时，不经 Wi-Fi/BLE，让双方知道对方的应用设备 ID 并各自留下相遇记录。
+> 2026-09-29状态更正：本文早期“reader + dynamic tag首选”及“否则仅能PN7160 P2P”的结论已由后续单控制器读写/卡模拟研究替代。当前依据为[NFC_MODULE_SELECTION](NFC_MODULE_SELECTION.md)和[HW-NFC-014](validation/nfc-014/REVIEW.md)。Type-4/APDU不是用户强制要求，Type-2模拟页式交换也可评估；没有冻结生产模块。以下保留历史研究供追溯，不作为当前采购或固件要求。
+
+> 历史状态：研究结论，**不冻结器件或电路**。本文不涉及校园卡、门禁卡或任何卡片克隆。目标仅是两台同款 Mini Companion 贴近时，不经 Wi-Fi/BLE，让双方知道对方的应用设备 ID 并各自留下相遇记录。
 
 ## 0. 已知边界与先决条件
 

@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-29",
+  "status": "conditional_candidate_not_selected",
+  "library_revision": "63c4caac1a07018ef73027e4b098d4fefe56c6f6",
+  "schematic_sha256": "d0535fef7510b6b1771a85755c6d355b5afde6abdf0d05d2140c8bf11b630e58",
+  "module_price_USD": 7,
+  "domestic_quote_CNY": null,
+  "complete_unit_cost": null,
+  "fx_assumption_CNY_per_USD": 7,
+  "cost_scenarios": [
+    {
+      "quantity": 5,
+      "partial_with_U216_USD": 20.1322,
+      "partial_CNY_at_assumed_7": 140.9254
+    },
+    {
+      "quantity": 10,
+      "partial_with_U216_USD": 18.3606,
+      "partial_CNY_at_assumed_7": 128.5242
+    }
+  ],
+  "energy_assumptions": {
+    "active_hours_over_48h": 0.6666666666666666,
+    "standby_hours": 47.333333333333336,
+    "non_NFC_active_W": 0.6360000000000001,
+    "NFC_reading_example_W": 0.33825,
+    "conversion_efficiency": 0.85,
+    "battery_nominal_V": 3.7,
+    "usable_capacity_fraction": 0.8,
+    "active_battery_mAh": 206.51828298887122
+  },
+  "capacity_scenarios": [
+    {
+      "nominal_mAh": 500,
+      "max_standby_battery_mA_under_assumptions": 4.087641908685819
+    },
+    {
+      "nominal_mAh": 800,
+      "max_standby_battery_mA_under_assumptions": 9.158064443897088
+    },
+    {
+      "nominal_mAh": 1000,
+      "max_standby_battery_mA_under_assumptions": 12.538346134037932
+    }
+  ],
+  "limits": [
+    "Module current is vendor example, not maximum",
+    "Whole-system standby must include MCU polling and conversion losses",
+    "No 5V converter selected",
+    "No physical battery or RF test",
+    "No domestic quantity quote",
+    "Additional components and assembly excluded"
+  ]
+}

@@ -4,6 +4,9 @@
 
 ## 当前完成
 
+- [x] HW-PWR-012：TPS259470L输入保护候选已串入，六页71器件，ERC零违规及网表/故障注入通过；仅候选连接验收，动态保护、封装、普通USB和成本仍待完成。见validation/power-012/REVIEW.md。
+- [ ] HW-PWR-013：电源方案与成本收敛，比较当前分立控制和集成替代；明确USB枚举软件接口与独立电芯安全硬件的边界，避免无依据扩大无固件约束；随后继续普通USB及主板集成。
+
 - [x] HW-PWR-007：U1专用DLA封装、L1 DFE201612E真实料号及专用封装、SW1 PCM12SMTBR及标准封装已指派；POWER未用触点改NC，消除BBM依赖。焊盘数值、唯一网络差异和ERC校验通过；电容/背光/USB/NFC及整板集成仍未完成。
 
 - [x] HW-PWR-006：TPS63802独立后级/机械POWER评审图；13器件、8网络、逐脚及开关故障校验通过，ERC零违规。未接入主板；生产封装、真实料号、动态电压、背光和USB/ADC反灌尚待落实。见hardware/candidates/system_power_review/README.md。

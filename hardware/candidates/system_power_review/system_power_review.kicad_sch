@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Mini Companion - SYSTEM POWER REVIEW ONLY")
-		(date "2026-09-23")
-		(rev "HW-PWR-011")
+		(date "2026-09-28")
+		(rev "HW-PWR-012")
 	)
 	(lib_symbols
 	(symbol "power:GND"
@@ -3590,6 +3590,49 @@
 		)
 		(property "Sheetfile" "charger.kicad_sch"
 			(at 73.66 196.1646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "system_power_review"
+				(path "/8ae17285-7fbe-4b11-863c-255bf064e9a1"
+					(page "2")
+				)
+			)
+		)
+	)
+
+(sheet
+		(at 73.66 91.44)
+		(size 30.48 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "32f687ff-3a5a-4e1b-b863-d91a68c410fa")
+		(property "Sheetname" "usb_input"
+			(at 73.66 90.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb_input.kicad_sch"
+			(at 73.66 112.3446 0)
 			(effects
 				(font
 					(size 1.27 1.27)

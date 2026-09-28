@@ -1,0 +1,47 @@
+{
+  "status": "candidate_only",
+  "components": 71,
+  "ERC_violations": 0,
+  "old_pin_changes": {
+    "J5.1": [
+      "VBUS_IN",
+      "VBUS_RAW"
+    ]
+  },
+  "faults_detected": 3,
+  "OV_rising_V": [
+    5.288138025454546,
+    5.4910440806006005
+  ],
+  "OV_falling_V": [
+    4.809522001478522,
+    5.010938615135135
+  ],
+  "UV_rising_V": [
+    4.4152063763636376,
+    4.583471488748749
+  ],
+  "UV_falling_V": [
+    4.015612150589411,
+    4.182704541801802
+  ],
+  "ILIM_A_table_at_3320ohm": [
+    0.85,
+    1.15
+  ],
+  "ILIM_A_resistance_scaled_estimate": [
+    0.8491508491508493,
+    1.151151151151151
+  ],
+  "divider_current_5V_typ_A": 0.00024529698242933536,
+  "bleed_current_5V_typ_A": 5e-05,
+  "slew_5V_nominal_ms": 5.5,
+  "limitations": [
+    "DC thresholds are not transient voltage bounds",
+    "UV falling below 4.5V does not close gate brownout gap",
+    "OVLO recovery bypasses dVdt",
+    "No 28V or reverse-input system rating",
+    "No certified USB Default/BC1.2 path",
+    "Footprint, capacitor MPNs, surge/ESD, price and bench tests pending"
+  ]
+}

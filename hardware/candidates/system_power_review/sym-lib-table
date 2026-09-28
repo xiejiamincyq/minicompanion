@@ -1,5 +1,6 @@
 (sym_lib_table
   (version 7)
+  (lib (name "MiniCompanionInput")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS259470LRPWR.kicad_sym")(options "")(descr "Review input protection"))
   (lib (name "MiniCompanionSwitch")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TS5A23166DCUR.kicad_sym")(options "")(descr "USB EN series switch"))
   (lib (name "MiniCompanionPower")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/BQ24072TRGTR.kicad_sym")(options "")(descr "BQ24072T integrated core"))
   (lib (name "MiniCompanionUSB")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS70933DBVR.kicad_sym")(options "")(descr "TPS709 original DBV, not A/B variant"))

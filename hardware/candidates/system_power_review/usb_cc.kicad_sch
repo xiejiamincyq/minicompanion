@@ -2146,7 +2146,7 @@
 		(effects (font (size 1.524 1.524)) (justify left))
 		(uuid "33be1477-a1a2-4f32-a7ae-e6793159b02d")
 	)
-	(global_label "VBUS_IN"
+	(global_label "VBUS_RAW"
 		(shape bidirectional)
 		(at 27.94 170.18 180)
 		(effects (font (size 1.524 1.524)) (justify right))
@@ -2242,7 +2242,7 @@
 			)
 		)
 	)
-	(global_label "VBUS_IN"
+	(global_label "VBUS_RAW"
 		(shape bidirectional)
 		(at 218.44 137.16 0)
 		(effects (font (size 1.524 1.524)) (justify left))

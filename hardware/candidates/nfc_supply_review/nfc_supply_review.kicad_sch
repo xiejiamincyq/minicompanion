@@ -6,12 +6,197 @@
 	(paper "A3")
 	(title_block
 		(title "Mini Companion - NFC supply and bus disconnect candidate")
-		(date "2026-09-29")
-		(rev "HW-NFC-016")
-		(comment 1 "Bus must disconnect before NFC power-off. No autonomous rail-valid interlock.")
+		(date "2026-09-30")
+		(rev "HW-NFC-017")
+		(comment 1 "Bus must disconnect before NFC power-off. Static UV interlock only; transient response pending.")
 		(comment 2 "No mainboard integration; brownout, module tolerances and full BOM pending")
 	)
 	(lib_symbols
+	(symbol "MiniCompanionUV:TPS3780ADBVR"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS3780ADBVR"
+			(at 0 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 0 -5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3780.pdf"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual undervoltage detector; A hysteresis; DBV pinout"
+			(at 0 -10.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TPS3780ADBVR_1_1"
+			(rectangle
+				(start -5.08 3.81)
+				(end 5.08 -3.81)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at 0 6.35 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 1.27 180)
+				(length 2.54)
+				(name "OUT1"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin open_collector line
+				(at 7.62 -1.27 180)
+				(length 2.54)
+				(name "OUT2"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 1.27 0)
+				(length 2.54)
+				(name "SENSE2"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -6.35 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -1.27 0)
+				(length 2.54)
+				(name "SENSE1"
+					(effects
+						(font
+							(size 0.65 0.65)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "Connector_Generic:Conn_01x04"
 		(pin_names
 			(offset 1.016)
@@ -2870,7 +3055,7 @@
 			(at 281.94 194.31 0)
 			(effects (font (size 0.9 0.9)) (justify left))
 		)
-		(property "Value" "HOST SDA SCL CONNECT GND"
+		(property "Value" "HOST SDA SCL REQUEST GND"
 			(at 281.94 196.85000000000002 0)
 			(effects (font (size 0.9 0.9)) (justify left))
 		)
@@ -3418,7 +3603,7 @@
 		(effects (font (size 0.9 0.9)) (justify right))
 		(uuid "3a980f70-69d3-48ea-9653-9af2e08af6fc")
 	)
-	(global_label "NFC_BUS_CONNECT"
+	(global_label "HOST_NFC_BUS_REQ"
 		(shape bidirectional)
 		(at 269.24 198.12 180)
 		(effects (font (size 0.9 0.9)) (justify right))
@@ -3504,6 +3689,919 @@
 			(project "nfc_supply_review"
 				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
 					(reference "#PWR32387") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "MiniCompanionUV:TPS3780ADBVR")
+		(at 130.81 226.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3cf0a11a-c030-411c-8ef2-7c9c87919147")
+		(property "Reference" "U3"
+			(at 143.51 199.39 0)
+			(effects (font (size 1 1)) (justify left))
+		)
+		(property "Value" "TPS3780ADBVR"
+			(at 143.51 201.93 0)
+			(effects (font (size 1 1)) (justify left))
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+			(at 130.81 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 130.81 226.06 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "U3") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:R")
+		(at 260.35 234.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dac26548-b560-4dfc-b5b1-284357f3ec3a")
+		(property "Reference" "R8"
+			(at 255.27 233.67999999999998 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "10k 1%"
+			(at 255.27 236.22 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 260.35 234.95 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 260.35 234.95 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "R8") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5f444c59-acd0-4d32-8bad-ee4fea3933ca")
+		(property "Reference" "R9"
+			(at 35.56 208.28 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "15.8k 0.1%"
+			(at 35.56 210.82000000000002 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 40.64 209.55 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 40.64 209.55 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "R9") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:R")
+		(at 40.64 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b04379cb-05fb-4a19-83f0-cfc61d9b2d53")
+		(property "Reference" "R10"
+			(at 35.56 242.57 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "10k 0.1%"
+			(at 35.56 245.11 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 40.64 243.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 40.64 243.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "R10") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 209.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "37c1eaf3-3028-4872-9c17-31134a59de67")
+		(property "Reference" "R11"
+			(at 198.11999999999998 208.28 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "29.4k 0.1%"
+			(at 198.11999999999998 210.82000000000002 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 203.2 209.55 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 203.2 209.55 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "R11") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:R")
+		(at 203.2 243.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8c0ca5bd-1dbd-4d53-a44c-f3dfab4242a0")
+		(property "Reference" "R12"
+			(at 198.11999999999998 242.57 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "10k 0.1%"
+			(at 198.11999999999998 245.11 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 203.2 243.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 203.2 243.84 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "R12") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 259.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec436bf5-3d13-430e-9642-eed0a52c96a6")
+		(property "Reference" "C4"
+			(at 80.01 257.81 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Value" "100nF"
+			(at 80.01 260.34999999999997 0)
+			(effects (font (size 1 1)) (justify right))
+		)
+		(property "Footprint" ""
+			(at 85.09 259.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 85.09 259.08 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "C4") (unit 1)
+				)
+			)
+		)
+	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(global_label "VLOGIC_SWITCHED"
+		(shape bidirectional)
+		(at 130.81 209.55 90)
+		(effects (font (size 1 1)) (justify bottom))
+		(uuid "7424bc8e-956c-4160-abe5-0100c3c70860")
+	)
+	(global_label "NFC_BUS_CONNECT"
+		(shape bidirectional)
+		(at 143.51 224.79 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "80b4d1d3-73a8-400d-9acb-46a49f46310f")
+	)
+	(global_label "NFC_BUS_CONNECT"
+		(shape bidirectional)
+		(at 143.51 227.33 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "21973df4-843c-4ee4-951a-6efe6cb9b947")
+	)
+	(global_label "NFC_SENSE"
+		(shape bidirectional)
+		(at 118.11 224.79 180)
+		(effects (font (size 1 1)) (justify right))
+		(uuid "07d7a227-8c19-4ed7-9211-9096664da42f")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 130.81 242.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a7fa330c-aee1-445f-b87c-29eb29bdb9f5")
+		(property "Reference" "#PWR57017"
+			(at 130.81 248.92 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 130.81 247.65 0)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 130.81 242.57 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 130.81 242.57 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "#PWR57017") (unit 1)
+				)
+			)
+		)
+	)
+	(global_label "HOST_SENSE"
+		(shape bidirectional)
+		(at 118.11 227.33 180)
+		(effects (font (size 1 1)) (justify right))
+		(uuid "386f5c8e-e604-41d0-be8f-c678b8d28f94")
+	)
+	(global_label "HOST_NFC_BUS_REQ"
+		(shape bidirectional)
+		(at 265.43 231.14 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "c11ee584-a476-490a-b0de-e9d29c89cded")
+	)
+	(global_label "NFC_BUS_CONNECT"
+		(shape bidirectional)
+		(at 265.43 238.76 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "90b68618-efb7-4607-b41e-a013140b63b0")
+	)
+	(global_label "VLOGIC_SWITCHED"
+		(shape bidirectional)
+		(at 45.72 205.74 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "211e3012-1647-4751-896e-1324da5cbf40")
+	)
+	(global_label "HOST_SENSE"
+		(shape bidirectional)
+		(at 45.72 213.36 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "927f250e-2c74-43ae-a219-465e7f969f31")
+	)
+	(global_label "HOST_SENSE"
+		(shape bidirectional)
+		(at 45.72 240.03 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "a7f6b935-dd31-421a-a740-5edb3a9934e2")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 45.72 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b55e4bd6-fdff-47f1-9076-bf846d43b6e8")
+		(property "Reference" "#PWR36941"
+			(at 45.72 254 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 45.72 252.73 270)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 45.72 247.65 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 45.72 247.65 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "#PWR36941") (unit 1)
+				)
+			)
+		)
+	)
+	(global_label "NFC_5V"
+		(shape bidirectional)
+		(at 208.28 205.74 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "5d4e8e4b-3b18-4b61-8bd7-b19bca939800")
+	)
+	(global_label "NFC_SENSE"
+		(shape bidirectional)
+		(at 208.28 213.36 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "6b9afac3-a1fd-4f4c-a92f-c92a79bdf87f")
+	)
+	(global_label "NFC_SENSE"
+		(shape bidirectional)
+		(at 208.28 240.03 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "c318541b-b9df-4363-9cf4-c42292cad1e3")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 208.28 247.65 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22fcc410-110a-44e6-b728-fee9f35c5329")
+		(property "Reference" "#PWR65489"
+			(at 208.28 254 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 208.28 252.73 270)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 208.28 247.65 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 208.28 247.65 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "#PWR65489") (unit 1)
+				)
+			)
+		)
+	)
+	(global_label "VLOGIC_SWITCHED"
+		(shape bidirectional)
+		(at 90.17 255.27 0)
+		(effects (font (size 1 1)) (justify left))
+		(uuid "deaef945-69fd-43df-ae86-1b73b1954497")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 90.17 262.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e89c5cb-03a5-4300-8ebe-68d1fa46c13a")
+		(property "Reference" "#PWR43620"
+			(at 90.17 269.24 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Value" "GND"
+			(at 90.17 267.97 270)
+			(effects (font (size 1.27 1.27)))
+		)
+		(property "Footprint" ""
+			(at 90.17 262.89 270)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(property "Datasheet" "~"
+			(at 90.17 262.89 0)
+			(effects (font (size 1.27 1.27)) (hide yes))
+		)
+		(instances
+			(project "nfc_supply_review"
+				(path "/f3594c3e-8cf9-4c32-96c8-7b9a1b1723d7"
+					(reference "#PWR43620") (unit 1)
 				)
 			)
 		)
@@ -3787,6 +4885,96 @@
 		(pts (xy 345.44 200.66) (xy 350.52 200.66))
 		(stroke (width 0) (type solid))
 		(uuid "8442768f-5ada-4c1b-a16b-c515646bada0")
+	)
+	(wire
+		(pts (xy 130.81 209.55) (xy 130.81 219.71))
+		(stroke (width 0) (type solid))
+		(uuid "440fb80f-0a79-4a64-a2fc-7a71a9e79905")
+	)
+	(wire
+		(pts (xy 138.43 224.79) (xy 143.51 224.79))
+		(stroke (width 0) (type solid))
+		(uuid "5a74a088-6e46-4a79-8cf3-4960ef6e457b")
+	)
+	(wire
+		(pts (xy 138.43 227.33) (xy 143.51 227.33))
+		(stroke (width 0) (type solid))
+		(uuid "2a7ab6db-63a2-46b9-adf3-16a0c6b4093b")
+	)
+	(wire
+		(pts (xy 118.11 224.79) (xy 123.19 224.79))
+		(stroke (width 0) (type solid))
+		(uuid "13df3970-43f7-4f8a-b703-4eeca0e8846a")
+	)
+	(wire
+		(pts (xy 130.81 232.41) (xy 130.81 242.57))
+		(stroke (width 0) (type solid))
+		(uuid "c0913756-313f-4465-bb80-69ab60146c84")
+	)
+	(wire
+		(pts (xy 118.11 227.33) (xy 123.19 227.33))
+		(stroke (width 0) (type solid))
+		(uuid "da89710c-5def-47e2-bbe8-91ae2252ca73")
+	)
+	(wire
+		(pts (xy 260.35 231.14) (xy 265.43 231.14))
+		(stroke (width 0) (type solid))
+		(uuid "287adf24-b96c-4995-adde-8646ece85976")
+	)
+	(wire
+		(pts (xy 260.35 238.76) (xy 265.43 238.76))
+		(stroke (width 0) (type solid))
+		(uuid "f5324f55-4d10-4f10-b588-5c121b2dec5c")
+	)
+	(wire
+		(pts (xy 40.64 205.74) (xy 45.72 205.74))
+		(stroke (width 0) (type solid))
+		(uuid "e2754854-a846-4abe-9f48-85b3821c0aa3")
+	)
+	(wire
+		(pts (xy 40.64 213.36) (xy 45.72 213.36))
+		(stroke (width 0) (type solid))
+		(uuid "291be1ae-60b6-4c2c-af4b-da8540d22293")
+	)
+	(wire
+		(pts (xy 40.64 240.03) (xy 45.72 240.03))
+		(stroke (width 0) (type solid))
+		(uuid "d5173264-50ec-4dd0-b523-e792309e43c0")
+	)
+	(wire
+		(pts (xy 40.64 247.65) (xy 45.72 247.65))
+		(stroke (width 0) (type solid))
+		(uuid "bc8d6f0b-fc12-463e-af89-4f87f8e5bda7")
+	)
+	(wire
+		(pts (xy 203.2 205.74) (xy 208.28 205.74))
+		(stroke (width 0) (type solid))
+		(uuid "f7a2e671-87fa-4c26-b091-3c445e6baa0d")
+	)
+	(wire
+		(pts (xy 203.2 213.36) (xy 208.28 213.36))
+		(stroke (width 0) (type solid))
+		(uuid "e97c5191-9e2b-4e44-b1d7-d13c68b6bec5")
+	)
+	(wire
+		(pts (xy 203.2 240.03) (xy 208.28 240.03))
+		(stroke (width 0) (type solid))
+		(uuid "bd56c34f-5a51-493b-b535-245028e94c90")
+	)
+	(wire
+		(pts (xy 203.2 247.65) (xy 208.28 247.65))
+		(stroke (width 0) (type solid))
+		(uuid "5eec3c6d-c166-4ae8-9c0f-22cc852ce4c5")
+	)
+	(wire
+		(pts (xy 85.09 255.27) (xy 90.17 255.27))
+		(stroke (width 0) (type solid))
+		(uuid "46ffbe7a-a67d-4c1f-bd42-983458f385da")
+	)
+	(wire
+		(pts (xy 85.09 262.89) (xy 90.17 262.89))
+		(stroke (width 0) (type solid))
+		(uuid "70ed8241-47aa-4175-aa3a-5622cefb981a")
 	)
 	(sheet_instances
 		(path "/"

@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\21604\mini-companion-v1\hardware\candidates\nfc_supply_review\nfc_supply_review.kicad_sch</source>
+    <date>2026-09-30T01:33:16</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Mini Companion - NFC supply and bus disconnect candidate</title>
+        <company/>
+        <rev>HW-NFC-017</rev>
+        <date>2026-09-30</date>
+        <source>nfc_supply_review.kicad_sch</source>
+        <comment number="1" value="Bus must disconnect before NFC power-off. No autonomous rail-valid interlock."/>
+        <comment number="2" value="No mainboard integration; brownout, module tolerances and full BOM pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF 10V X7R</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a1723082-6495-489f-8b91-20a71e032f7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>22uF 10V X7R</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c0b8848-6f4d-4036-ba6a-2fc50289b3b9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C3">
+      <value>100nF 10V X7R</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11fd8d61-74e7-465c-9647-f4abce383099</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C4">
+      <value>100nF</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ec436bf5-3d13-430e-9642-eed0a52c96a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>SWITCHED INPUT / GND</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2009f947-1264-4f30-b04d-da7fbe4c5464</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J2">
+      <value>NFC ENABLE / GND</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d1a2320b-f524-47f3-bb84-ca2a68093d93</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J3">
+      <value>NFC 5V / GND</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2575c540-c758-4d6a-86ab-f3407bd17efc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J4">
+      <value>HOST SDA SCL CONNECT GND</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>554b7ced-c316-4a4d-96a3-74f98946993b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J5">
+      <value>U216 SCL SDA 5V GND</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x04" description="Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7cb9707b-a433-470c-9b42-11ab1662455b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>1uH - MPN pending</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="L" description="Inductor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <property name="ki_fp_filters" value="Choke_* *Coil* Inductor_* L_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>05dbb5f9-2db2-44cf-923e-9be321edda4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>75k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>af6247e4-0b93-415a-a6aa-78cd5bca0d1e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>10.2k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08dfb20a-0e16-4404-b7d0-51b9cee61c3f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R3">
+      <value>100k 1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d609fd5-27e8-422d-8259-8103b3a9f242</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R4">
+      <value>100k BLEED</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e2627c3-9ba4-4816-8e04-8eab6c8a9960</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R5">
+      <value>100k 1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d0f66fe-c610-4fe9-8f12-a9bb032e39a9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k 1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a067fd05-8da0-4540-9879-850a184f2ac2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R7">
+      <value>4.7k 1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8b7a4b0c-0efe-4543-a8ee-ee57dac483ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R8">
+      <value>10k 1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dac26548-b560-4dfc-b5b1-284357f3ec3a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R9">
+      <value>15.8k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5f444c59-acd0-4d32-8bad-ee4fea3933ca</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b04379cb-05fb-4a19-83f0-cfc61d9b2d53</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>29.4k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37c1eaf3-3028-4872-9c17-31134a59de67</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k 0.1%</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c0ca5bd-1dbd-4d53-a44c-f3dfab4242a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>TPS61023DRLR</value>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MiniCompanionNFC" part="TPS61023DRLR" description="TPS61023 boost converter; independent NFC supply candidate"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1117a846-deaa-43ce-9cd6-4c7de3187801</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="6"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>TMUX1511PWR</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MiniCompanionBus" part="TMUX1511PWR" description="TMUX1511 14-pin PW only; bus disconnect candidate"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b15c9e12-0258-4b0f-a206-36ed5648acf6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TPS3780ADBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">~</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="MiniCompanionUV" part="TPS3780ADBVR" description="Dual undervoltage detector; A hysteresis; DBV pinout"/>
+      <property name="Sheetname" value="nfc_supply_review"/>
+      <property name="Sheetfile" value="nfc_supply_review.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cf0a11a-c030-411c-8ef2-7c9c87919147</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="5"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MiniCompanionBus" part="TMUX1511PWR">
+      <description>TMUX1511 14-pin PW only; bus disconnect candidate</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tmux1511.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMUX1511PWR</field>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmux1511.pdf</field>
+        <field name="Description">TMUX1511 14-pin PW only; bus disconnect candidate</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SEL1" type="input"/>
+        <pin num="2" name="S1" type="passive"/>
+        <pin num="3" name="D1" type="passive"/>
+        <pin num="4" name="SEL2" type="input"/>
+        <pin num="5" name="S2" type="passive"/>
+        <pin num="6" name="D2" type="passive"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="D3" type="passive"/>
+        <pin num="9" name="S3" type="passive"/>
+        <pin num="10" name="SEL3" type="input"/>
+        <pin num="11" name="D4" type="passive"/>
+        <pin num="12" name="S4" type="passive"/>
+        <pin num="13" name="SEL4" type="input"/>
+        <pin num="14" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="MiniCompanionNFC" part="TPS61023DRLR">
+      <description>TPS61023 boost converter; independent NFC supply candidate</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps61023.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS61023DRLR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps61023.pdf</field>
+        <field name="Description">TPS61023 boost converter; independent NFC supply candidate</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FB" type="input"/>
+        <pin num="2" name="EN" type="input"/>
+        <pin num="3" name="VIN" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="SW" type="passive"/>
+        <pin num="6" name="VOUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="MiniCompanionUV" part="TPS3780ADBVR">
+      <description>Dual undervoltage detector; A hysteresis; DBV pinout</description>
+      <docs>https://www.ti.com/lit/ds/symlink/tps3780.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPS3780ADBVR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3780.pdf</field>
+        <field name="Description">Dual undervoltage detector; A hysteresis; DBV pinout</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="OUT1" type="open_collector"/>
+        <pin num="3" name="OUT2" type="open_collector"/>
+        <pin num="4" name="SENSE2" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="SENSE1" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="MiniCompanionBus">
+      <uri>${KIPRJMOD}/output/symbols/TMUX1511PWR.kicad_sym</uri>
+    </library>
+    <library logical="MiniCompanionNFC">
+      <uri>${KIPRJMOD}/output/symbols/TPS61023DRLR.kicad_sym</uri>
+    </library>
+    <library logical="MiniCompanionUV">
+      <uri>${KIPRJMOD}/output/symbols/TPS3780ADBVR.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J3" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="J4" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="J5" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="SEL3_10" pintype="input"/>
+      <node ref="U2" pin="11" pinfunction="D4_11" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="S4_12" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="SEL4_13" pintype="input"/>
+      <node ref="U2" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="D3_8" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="S3_9" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="GND_5" pintype="power_in"/>
+    </net>
+    <net code="2" name="HOST_NFC_BUS_REQ" class="Default">
+      <node ref="J4" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R8" pin="1" pintype="passive"/>
+    </net>
+    <net code="3" name="HOST_SCL" class="Default">
+      <node ref="J4" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="S2_5" pintype="passive"/>
+    </net>
+    <net code="4" name="HOST_SDA" class="Default">
+      <node ref="J4" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="S1_2" pintype="passive"/>
+    </net>
+    <net code="5" name="HOST_SENSE" class="Default">
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R9" pin="2" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="SENSE1_6" pintype="input"/>
+    </net>
+    <net code="6" name="NFC_5V" class="Default">
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J3" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="J5" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="VOUT_6" pintype="power_out"/>
+    </net>
+    <net code="7" name="NFC_BUS_CONNECT" class="Default">
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R8" pin="2" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SEL1_1" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="SEL2_4" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="OUT1_2" pintype="open_collector"/>
+      <node ref="U3" pin="3" pinfunction="OUT2_3" pintype="open_collector"/>
+    </net>
+    <net code="8" name="NFC_ENABLE" class="Default">
+      <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="EN_2" pintype="input"/>
+    </net>
+    <net code="9" name="NFC_FB" class="Default">
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="FB_1" pintype="input"/>
+    </net>
+    <net code="10" name="NFC_SCL" class="Default">
+      <node ref="J5" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="D2_6" pintype="passive"/>
+    </net>
+    <net code="11" name="NFC_SDA" class="Default">
+      <node ref="J5" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="D1_3" pintype="passive"/>
+    </net>
+    <net code="12" name="NFC_SENSE" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="U3" pin="4" pinfunction="SENSE2_4" pintype="input"/>
+    </net>
+    <net code="13" name="NFC_SW" class="Default">
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="SW_5" pintype="passive"/>
+    </net>
+    <net code="14" name="VLOGIC_SWITCHED" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="VIN_3" pintype="power_in"/>
+      <node ref="U2" pin="14" pinfunction="VDD_14" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+    </net>
+  </nets>
+</export>

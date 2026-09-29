@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "MiniCompanionBus")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TMUX1511PWR.kicad_sym")(options "")(descr "PW package bus switch candidate"))
   (lib (name "MiniCompanionNFC")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS61023DRLR.kicad_sym")(options "")(descr "Independent NFC supply review"))
+  (lib (name "MiniCompanionUV")(type "KiCad")(uri "${KIPRJMOD}/output/symbols/TPS3780ADBVR.kicad_sym")(options "")(descr "Dual UV detector DBV candidate"))
 )

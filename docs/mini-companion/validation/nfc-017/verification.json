@@ -1,0 +1,36 @@
+{
+  "components": 25,
+  "pins": 74,
+  "ERC_violations": 0,
+  "injected_faults_detected": 4,
+  "rails": {
+    "host": {
+      "rise_V": [
+        3.045746458978022,
+        3.1153770219849846
+      ],
+      "fall_V": [
+        3.0304400106263736,
+        3.099723053216216
+      ]
+    },
+    "nfc": {
+      "rise_V": [
+        4.649932271769231,
+        4.758943066225226
+      ],
+      "fall_V": [
+        4.626563564076923,
+        4.735030997756757
+      ]
+    }
+  },
+  "request_max_sink_mA": 0.32551353535353533,
+  "limits": [
+    "Threshold leakage uses +/-15nA specification at tested sense conditions; characterize intermediate bias",
+    "GPIO VOH and SEL VIH corners remain to be validated; GPIO pin not assigned",
+    "10us falling and 570us startup are typical, not guaranteed maxima",
+    "Module internal 3.3V not sensed; not a complete brownout/backfeed guarantee",
+    "No physical measurements, layout, mainboard integration or full cost approval"
+  ]
+}

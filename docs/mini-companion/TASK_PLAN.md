@@ -1,3 +1,5 @@
+> 2026-09-30 HW-NFC-017：NFC 独立候选加入双路欠压联锁；25 器件 / 74 引脚、ERC 零违规。下一优先项：模块与主控电平角落及棕断行为，未完成前不进入主板布局。见 [审查记录](validation/nfc-017/REVIEW.md)。以下旧状态按日期保留。
+
 # 硬件实施任务队列
 
 更新：2026-09-29。Astra负责集成和二审；已实际调用Terra进行电源/NFC审计、Luna进行资产清点。反馈支路已从原理图和PCB移除；主板电源仍是原电路，独立候选已绘制并完成充电核心与后级连接。用户已接手软件，本任务只推进硬件及必要接口交付。每次启动硬件子任务必须展开用户规定的TASK ID/MODEL/OBJECTIVE/INPUTS/MUST KEEP/ALLOWED TO MODIFY/DO NOT MODIFY/TOOLS/VALIDATION/OUTPUT/RISK模板。

@@ -1,3 +1,5 @@
+2026-09-30 最新 HW-NFC-018：R5 改为 47k；25 器件/74 引脚网表不变、ERC 零违规。电平角落仅得到 25℃条件结果，棕断余量不足以放行。见 [PDF](../../../docs/mini-companion/validation/nfc-018/review.pdf) 和 [审查](../../../docs/mini-companion/validation/nfc-018/REVIEW.md)。以下为历史。
+
 2026-09-30 最新 HW-NFC-017：加入 TPS3780 双路静态欠压联锁，25 器件 / 74 引脚，ERC 零违规。动态掉电、模块内部 3.3V、电平容差和成本仍未闭环。最新 [PDF](../../../docs/mini-companion/validation/nfc-017/review.pdf) 与 [审查记录](../../../docs/mini-companion/validation/nfc-017/REVIEW.md)。以下 016/015 内容为历史。
 
 2026-09-29最新HW-NFC-016：已扩展TMUX1511可控I2C通路，18器件/56引脚，ERC零违规。不是自动电源有效联锁；模块意外掉电风险仍待完成。最新[PDF](../../../docs/mini-companion/validation/nfc-016/review.pdf)与[审查记录](../../../docs/mini-companion/validation/nfc-016/REVIEW.md)。以下015说明保留作历史。

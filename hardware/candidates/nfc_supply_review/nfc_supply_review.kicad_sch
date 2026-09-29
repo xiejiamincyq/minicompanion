@@ -7,7 +7,7 @@
 	(title_block
 		(title "Mini Companion - NFC supply and bus disconnect candidate")
 		(date "2026-09-30")
-		(rev "HW-NFC-017")
+		(rev "HW-NFC-018")
 		(comment 1 "Bus must disconnect before NFC power-off. Static UV interlock only; transient response pending.")
 		(comment 2 "No mainboard integration; brownout, module tolerances and full BOM pending")
 	)
@@ -2878,7 +2878,7 @@
 			(at 259.08 123.19 0)
 			(effects (font (size 0.9 0.9)) (justify left))
 		)
-		(property "Value" "100k 1%"
+		(property "Value" "47k 1%"
 			(at 259.08 125.72999999999999 0)
 			(effects (font (size 0.9 0.9)) (justify left))
 		)
@@ -4606,6 +4606,80 @@
 			)
 		)
 	)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	(wire
 		(pts (xy 100.33 35.56) (xy 105.41 35.56))
 		(stroke (width 0) (type solid))

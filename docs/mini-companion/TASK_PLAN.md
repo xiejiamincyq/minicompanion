@@ -4,6 +4,8 @@
 
 ## 当前完成
 
+- [x] HW-NFC-016-CANDIDATE：既有升压图加入TMUX1511及模块I2C接口，18器件/56引脚，旧26引脚不变，ERC和3项错接检查通过。仅候选连接完成，异常掉电联锁/电平/独立二审未完成，见validation/nfc-016/REVIEW.md。
+
 - [x] HW-NFC-015-CANDIDATE：独立TPS61023升压评审图完成，11器件/26引脚/ERC零违规及3项错接检查通过；仅候选连接验收。两级损耗已复算，触发体验、I²C掉电、器件定型及主板集成未完成。见validation/nfc-015/REVIEW.md。
 
 - [x] HW-PWR-012：TPS259470L输入保护候选已串入，六页71器件，ERC零违规及网表/故障注入通过；仅候选连接验收，动态保护、封装、普通USB和成本仍待完成。见validation/power-012/REVIEW.md。

@@ -1,3 +1,5 @@
+2026-09-29最新HW-NFC-016：已扩展TMUX1511可控I2C通路，18器件/56引脚，ERC零违规。不是自动电源有效联锁；模块意外掉电风险仍待完成。最新[PDF](../../../docs/mini-companion/validation/nfc-016/review.pdf)与[审查记录](../../../docs/mini-companion/validation/nfc-016/REVIEW.md)。以下015说明保留作历史。
+
 # NFC 独立升压评审图
 
 2026-09-29，HW-NFC-015。用KiCad打开本目录nfc_supply_review.kicad_pro，或查看[PDF](../../../docs/mini-companion/validation/nfc-015/review.pdf)。本图尚未接入主板，工具生成的PCB为空白，不是布局成果。

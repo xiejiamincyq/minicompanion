@@ -1,3 +1,11 @@
+# Mini Companion 项目主页
+
+[打开项目总入口](00-项目入口/先读我.md)。当前两台 BLE 硬件样机、采购、外壳、验收资料与软件原型均从这里进入。
+
+以下为上游 Devotchi 的项目介绍。原板的订购和元件信息属于上游版本。
+
+---
+
 # Devotchi
 
 A Tamagotchi-style portable device that connects to AI coding agents (Claude Code, Cursor, etc.) via the Model Context Protocol (MCP). Your Devotchi shows what the agent is doing, handles approval requests via physical buttons, and its mood reflects the project's health.

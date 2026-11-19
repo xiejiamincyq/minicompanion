@@ -1,12 +1,12 @@
-# Mini Companion · BLE-A1
+# Mini Companion · 微雪 2 英寸 BLE-A2
 
-两台便携式电子宠物样机，采用 ESP32-S3、彩屏、三键和 BLE。当前硬件已完成图纸审查，可交给供应商询价；实物打样和测试待进行。
+两台便携电子宠物样机，各用一块微雪 ESP32-S3 带屏核心和一块三键电源小板。侧面有实体开关，日常充电时硬件停机，电芯测温独立于固件。
 
-**[打开最新 KiCad 工程](hardware/ble-review/project/mini_companion_integrated.kicad_pro)**　·　**[下载两台样机询价包（ZIP）](hardware/ble-review/quote/Mini-Companion-RFQ.zip?raw=true)**
+**[打开最新 KiCad 工程](hardware/ble-economy/project/mini_companion_a2.kicad_pro)**　·　**[下载两台样机询价包（ZIP）](hardware/ble-economy/quote/Mini-Companion-A2-RFQ.zip?raw=true)**
 
-- **在 KiCad 中编辑**　[下载完整仓库 ZIP](https://github.com/xiejiamincyq/minicompanion/archive/refs/heads/main.zip) 后解压，或克隆本仓库。用 KiCad 10 打开 `hardware/ble-review/project/mini_companion_integrated.kicad_pro`，同目录包含子图、PCB 和工程库。
-- **在线查看设计**　[完整原理图 PDF](hardware/ble-review/quote/Schematic.pdf) · [PCB 正面](hardware/ble-review/verification/pcb_front.pdf) · [PCB 背面](hardware/ble-review/verification/pcb_back.pdf)。
-- **查找采购、装配和验证资料**　[项目总入口](00-项目入口/先读我.md) · [硬件设计索引](hardware/ble-review/README.md)。
+- **编辑或看图**　解压询价包后，用 KiCad 10 打开 `project/mini_companion_a2.kicad_pro`。[原理图 PDF](hardware/ble-economy/verification/a2_schematic.pdf) · [顶面装配 PDF](hardware/ble-economy/verification/a2_top_assembly.pdf) · [外壳示意](hardware/ble-economy/mechanical/装配.md)
+- **核价与代装**　[两台费用与预算上限](hardware/ble-economy/两台费用.md) · [线束及代装范围](hardware/ble-economy/sourcing/外部询价与免焊线束要求.md) · [逐台实物验收](hardware/ble-economy/整机验收.md)
+- **开发与历史版本**　[蓝牙、USB 和按键接口](hardware/ble-economy/使用与软件接口.md) · [项目总入口](00-项目入口/先读我.md) · [上一版 BLE-A1](hardware/ble-review/README.md)
 
 <details>
 <summary>上游 Devotchi 项目说明（原版硬件、软件及文档）</summary>

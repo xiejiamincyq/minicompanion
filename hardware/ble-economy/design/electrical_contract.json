@@ -1,0 +1,614 @@
+{
+  "schema": 1,
+  "status": "DRAFT_NOT_RELEASED",
+  "components": [
+    {
+      "ref": "J1",
+      "part": "DC-050-2.0-BD",
+      "value": "5V DC / centre +",
+      "footprint": "A2_Candidate:DC-050-2.0-BD",
+      "mpn": "DC-050-2.0-BD",
+      "lcsc": "C51927418",
+      "manufacturer": "CAX",
+      "domain": "main",
+      "pins": {
+        "1": "DC_RAW",
+        "2": "GND",
+        "3": "PLUG_SENSE"
+      }
+    },
+    {
+      "ref": "Q3",
+      "part": "Q_PMOS_GSD",
+      "value": "AO3401A / reverse protection",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "AO3401A",
+      "lcsc": "C15127",
+      "manufacturer": "Alpha and Omega Semiconductor",
+      "domain": "main",
+      "pins": {
+        "1": "PMOS_GATE",
+        "2": "DC_PROTECTED",
+        "3": "DC_RAW"
+      }
+    },
+    {
+      "ref": "R15",
+      "part": "R",
+      "value": "100k gate bias",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "PMOS_GATE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "D3",
+      "part": "D_Zener",
+      "value": "10V gate clamp",
+      "footprint": "Diode_SMD:D_SOD-123",
+      "mpn": "BZT52C10",
+      "lcsc": "C2103",
+      "manufacturer": "Jiangsu Changjing Electronics",
+      "domain": "main",
+      "pins": {
+        "1": "DC_PROTECTED",
+        "2": "PMOS_GATE"
+      }
+    },
+    {
+      "ref": "C1",
+      "part": "C",
+      "value": "2.2uF 50V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KBYNNNE",
+      "lcsc": "C2762602",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "domain": "main",
+      "pins": {
+        "1": "DC_PROTECTED",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U1",
+      "part": "BQ25170DSGR",
+      "value": "BQ25170 / 4.1V 0.3A",
+      "footprint": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "mpn": "BQ25170DSGR",
+      "lcsc": "C5208201",
+      "manufacturer": "Texas Instruments",
+      "domain": "main",
+      "pins": {
+        "1": "DC_PROTECTED",
+        "2": "CHG_ISET",
+        "3": "NTC_TS",
+        "4": "GND",
+        "5": "CHG_STAT",
+        "6": null,
+        "7": "CHG_VSET",
+        "8": "PACK_POS",
+        "9": "GND"
+      }
+    },
+    {
+      "ref": "R1",
+      "part": "R",
+      "value": "36k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF3602T5E",
+      "lcsc": "C23147",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "CHG_VSET",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R2",
+      "part": "R",
+      "value": "1k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "CHG_ISET",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J2",
+      "part": "Conn_01x04",
+      "value": "PROTECTED BATTERY + NTC",
+      "footprint": "Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical",
+      "mpn": "B4B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C160354",
+      "manufacturer": "JST",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "GND",
+        "3": "NTC_TS",
+        "4": "GND"
+      }
+    },
+    {
+      "ref": "TH1",
+      "part": "Thermistor_NTC",
+      "value": "10k B3950 cell probe",
+      "footprint": "",
+      "mpn": "HNTC-103F3950FB-100B",
+      "lcsc": "C52204609",
+      "manufacturer": "HNTC",
+      "domain": "battery_probe",
+      "pins": {
+        "1": "NTC_TS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q2",
+      "part": "Q_NMOS_GSD",
+      "value": "AO3400A / inhibit charge",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "AO3400A",
+      "lcsc": "C20917",
+      "manufacturer": "Alpha and Omega Semiconductor",
+      "domain": "main",
+      "pins": {
+        "1": "CORE_SENSE_GATE",
+        "2": "GND",
+        "3": "NTC_TS"
+      }
+    },
+    {
+      "ref": "R3",
+      "part": "R",
+      "value": "1k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1001T5E",
+      "lcsc": "C21190",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "CORE_5V_SENSE",
+        "2": "CORE_SENSE_GATE"
+      }
+    },
+    {
+      "ref": "R4",
+      "part": "R",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "CORE_SENSE_GATE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R5",
+      "part": "R",
+      "value": "3.3k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF3301T5E",
+      "lcsc": "C22978",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "LED_ANODE"
+      }
+    },
+    {
+      "ref": "D2",
+      "part": "KT-0603R",
+      "value": "CHARGE red / 1A 2K",
+      "footprint": "A2_Candidate:KT-0603R",
+      "mpn": "KT-0603R",
+      "lcsc": "C2286",
+      "manufacturer": "KENTO",
+      "domain": "main",
+      "pins": {
+        "1": "LED_ANODE",
+        "2": "CHG_STAT"
+      }
+    },
+    {
+      "ref": "C2",
+      "part": "C",
+      "value": "22uF 25V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C3",
+      "part": "C",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "manufacturer": "YAGEO",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "L1",
+      "part": "L",
+      "value": "1uH high-current",
+      "footprint": "A2_Candidate:FTC404030S1R0MGCA",
+      "mpn": "FTC404030S1R0MGCA",
+      "lcsc": "C39676079",
+      "manufacturer": "cjiang (Changjiang)",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "BOOST_SW"
+      }
+    },
+    {
+      "ref": "U2",
+      "part": "TPS61023DRLR",
+      "value": "TPS61023 / true shutdown",
+      "footprint": "Package_TO_SOT_SMD:SOT-563",
+      "mpn": "TPS61023DRLR",
+      "lcsc": "C919459",
+      "manufacturer": "Texas Instruments",
+      "domain": "main",
+      "pins": {
+        "1": "BOOST_FB",
+        "2": "RUN_EN",
+        "3": "PACK_POS",
+        "4": "GND",
+        "5": "BOOST_SW",
+        "6": "RUN_5V"
+      }
+    },
+    {
+      "ref": "C4",
+      "part": "C",
+      "value": "22uF 25V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C5",
+      "part": "C",
+      "value": "22uF 25V",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J4",
+      "part": "Conn_01x02",
+      "value": "RUN USB-C power lead",
+      "footprint": "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical",
+      "mpn": "B2B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C160352",
+      "manufacturer": "JST",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R6",
+      "part": "R",
+      "value": "220k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF2203T5E",
+      "lcsc": "C22961",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "BOOST_FB"
+      }
+    },
+    {
+      "ref": "R7",
+      "part": "R",
+      "value": "30k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF3002T5E",
+      "lcsc": "C22984",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "BOOST_FB",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R8",
+      "part": "R",
+      "value": "10k bleed",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW4",
+      "part": "MSK12C02",
+      "value": "POWER RUN / OFF",
+      "footprint": "Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02",
+      "mpn": "MSK12C02",
+      "lcsc": "C431540",
+      "manufacturer": "SHOU HAN",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "RUN_REQUEST",
+        "3": null,
+        "SH": "GND"
+      }
+    },
+    {
+      "ref": "R9",
+      "part": "R",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_REQUEST",
+        "2": "RUN_EN"
+      }
+    },
+    {
+      "ref": "R10",
+      "part": "R",
+      "value": "100k default OFF",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_EN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "Q1",
+      "part": "Q_NMOS_GSD",
+      "value": "AO3400A / plug OFF",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "AO3400A",
+      "lcsc": "C20917",
+      "manufacturer": "Alpha and Omega Semiconductor",
+      "domain": "main",
+      "pins": {
+        "1": "PLUG_SENSE",
+        "2": "GND",
+        "3": "RUN_EN"
+      }
+    },
+    {
+      "ref": "R11",
+      "part": "R",
+      "value": "47k plug bias",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF4702T5E",
+      "lcsc": "C25819",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "PLUG_SENSE"
+      }
+    },
+    {
+      "ref": "R12",
+      "part": "R",
+      "value": "10k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "PACK_POS",
+        "2": "UVLO_VDD"
+      }
+    },
+    {
+      "ref": "R13",
+      "part": "R",
+      "value": "330k feedback",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF3303T5E",
+      "lcsc": "C23137",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "RUN_5V",
+        "2": "UVLO_VDD"
+      }
+    },
+    {
+      "ref": "R14",
+      "part": "R",
+      "value": "330k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF3303T5E",
+      "lcsc": "C23137",
+      "manufacturer": "UNI-ROYAL",
+      "domain": "main",
+      "pins": {
+        "1": "UVLO_VDD",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U3",
+      "part": "TLV803EA30DBZR",
+      "value": "3.08V / 200ms supervisor",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "TLV803EA30DBZR",
+      "lcsc": "C5218924",
+      "manufacturer": "Texas Instruments",
+      "domain": "main",
+      "pins": {
+        "1": "GND",
+        "2": "RUN_EN",
+        "3": "UVLO_VDD"
+      }
+    },
+    {
+      "ref": "C6",
+      "part": "C",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "manufacturer": "YAGEO",
+      "domain": "main",
+      "pins": {
+        "1": "UVLO_VDD",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "J5",
+      "part": "Conn_01x05",
+      "value": "CORE keys + 5V sense",
+      "footprint": "Connector_JST:JST_PH_B5B-PH-SM4-TB_1x05-1MP_P2.00mm_Vertical",
+      "mpn": "B5B-PH-SM4-TB(LF)(SN)",
+      "lcsc": "C265085",
+      "manufacturer": "JST",
+      "domain": "main",
+      "pins": {
+        "1": "GND",
+        "2": "KEY_A",
+        "3": "KEY_B",
+        "4": "KEY_C",
+        "5": "CORE_5V_SENSE"
+      }
+    },
+    {
+      "ref": "SW1",
+      "part": "SW_Push",
+      "value": "KEY_A / dry contact",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "TS-1187A-B-A-B",
+      "lcsc": "C318884",
+      "manufacturer": "XKB",
+      "domain": "main",
+      "pins": {
+        "1": "KEY_A",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW2",
+      "part": "SW_Push",
+      "value": "KEY_B / dry contact",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "TS-1187A-B-A-B",
+      "lcsc": "C318884",
+      "manufacturer": "XKB",
+      "domain": "main",
+      "pins": {
+        "1": "KEY_B",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "SW3",
+      "part": "SW_Push",
+      "value": "KEY_C / dry contact",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "TS-1187A-B-A-B",
+      "lcsc": "C318884",
+      "manufacturer": "XKB",
+      "domain": "main",
+      "pins": {
+        "1": "KEY_C",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "#FLG01",
+      "part": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "lcsc": "",
+      "manufacturer": "",
+      "domain": "annotation",
+      "pins": {
+        "1": "GND"
+      }
+    },
+    {
+      "ref": "#FLG02",
+      "part": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "lcsc": "",
+      "manufacturer": "",
+      "domain": "annotation",
+      "pins": {
+        "1": "DC_PROTECTED"
+      }
+    },
+    {
+      "ref": "#FLG03",
+      "part": "PWR_FLAG",
+      "value": "PWR_FLAG",
+      "footprint": "",
+      "mpn": "",
+      "lcsc": "",
+      "manufacturer": "",
+      "domain": "annotation",
+      "pins": {
+        "1": "UVLO_VDD"
+      }
+    }
+  ]
+}

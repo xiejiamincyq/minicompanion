@@ -1,0 +1,11 @@
+﻿id,mpn,lcsc,need,buy,moq,unit,total,stock,url,status
+BAT,FLY.103450.2000,C5154898,2,2,1,11.2994,22.5988,61,https://item.szlcsc.com/mro/5783015.html,2026-11-19公开9.8折，原厂PCM两线包，无插头/NTC
+TH1,HNTC-103F3950FB-100B,C52204609,2,5,5,1.3679,6.8395,1805,https://item.szlcsc.com/55044716.html,2026-11-19零售；板外探头，须端接与逐台2/42°C验收
+H1_HOUSING,PHR-4,C111514,2,50,50,0.1022,5.11,46700,https://item.szlcsc.com/112741.html,2026-11-19零售；与代装包料互斥计费
+H2_HOUSING,PHR-2,C157955,2,50,50,0.0822,4.11,166200,https://item.szlcsc.com/169303.html,2026-11-19零售；与代装包料互斥计费
+H3_HOUSING,PHR-5,C157953,2,20,20,0.1581,3.162,9820,https://item.szlcsc.com/169301.html,2026-11-19零售；与代装包料互斥计费
+PH_CONTACTS,SPH-002T-P0.5S,C111515,22,100,100,0.049,4.9,6000,https://item.szlcsc.com/112742.html,2026-11-19零售现货6000，另有在途；与代装包料互斥计费
+USB_RUN_AND_SERVICE,USB-A-TO-USB-C-Cable-1M / SKU35944,,4,4,1,4.95,19.8,公开现价，精确现货量未证实,https://www.waveshare.net/shop/USB-A-TO-USB-C-Cable-1M.htm,2026-11-19主任务核微雪new分类页4.95/条；USB2.0/1m；2条RUN原料+2条维护线；Rp/压降/线径/插头外形/卸力须验收
+CORE_HOUSING,1x14 2.54mm crimp housing for 0.64mm male square posts,,2,,,,,,https://cable.szlcsc.com/,供应商包料待报；不得使用仅间距相同而不匹配的2510壳
+CORE_CONTACTS,matching female crimp contacts,,10,,,,,,https://cable.szlcsc.com/,供应商包料待报；不使用MOQ150的C454669方案
+WIRE_INSULATION_LABOR,6 harnesses with suitable wire/insulation/test,,6,,,,,,https://cable.szlcsc.com/,无当前专案明示价；导线、绝缘、32个压接触点、最多8处预制线接续、2条USB改线、测试另报

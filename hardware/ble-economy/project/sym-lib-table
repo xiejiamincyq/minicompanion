@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "A2_Power") (type "KiCad") (uri "${KIPRJMOD}/A2_Power.kicad_sym") (options "") (descr "A2 exact pin contracts and vendored passives"))
+)

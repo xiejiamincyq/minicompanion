@@ -1,0 +1,43 @@
+{
+  "changed_component_fields": {
+    "R6": {
+      "value": [
+        "750k 1%",
+        "220k 1%"
+      ],
+      "mpn": [
+        "0603WAF7503T5E",
+        "0603WAF2203T5E"
+      ],
+      "lcsc": [
+        "C23240",
+        "C22961"
+      ]
+    },
+    "R7": {
+      "value": [
+        "102k 1%",
+        "30k 1%"
+      ],
+      "mpn": [
+        "0603WAF1023T5E",
+        "0603WAF3002T5E"
+      ],
+      "lcsc": [
+        "C22858",
+        "C22984"
+      ]
+    }
+  },
+  "component_pin_net_signature_unchanged": true,
+  "component_uuids_unchanged": true,
+  "erc_violations_including_exclusions": 0,
+  "hashes": {
+    "project/mini_companion_a2.kicad_sch": "6cc2321ac3082beaaedf36c9b45a90c9fe174cdba38e31683ab011c9a4782021",
+    "project/A2_Power.kicad_sym": "d5fdb36822c66d2c442b3e6dd21d3dce9970c3c635635d40583bcd230c9829e1",
+    "verification/a2_netlist.xml": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+    "verification/a2_erc.json": "af7008eabd8d3920a028194c42920ae4640ea3988877f1eab243b4b577ba7629",
+    "verification/a2_schematic.pdf": "7d7f67222ace8dc6bb0f1861bfdb1b139f5a8c4592c2d8c906d777c58ded8930",
+    "design/electrical_contract.json": "9203f22497c8893286acdab588fafcbb619fa067a87eee9df7a6af466f557a5b"
+  }
+}

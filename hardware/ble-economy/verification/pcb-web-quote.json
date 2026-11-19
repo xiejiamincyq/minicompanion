@@ -1,0 +1,188 @@
+{
+  "url": "https://www.jlc.com/newOrder/",
+  "sel": [
+    {
+      "text": "FR-4",
+      "id": "plate_1"
+    },
+    {
+      "text": "2",
+      "id": "pcbLayer_2"
+    },
+    {
+      "text": "无",
+      "id": ""
+    },
+    {
+      "text": "工业/消费/其他类电子产品",
+      "id": "productType0"
+    },
+    {
+      "text": "1.6",
+      "id": ""
+    },
+    {
+      "text": "",
+      "id": ""
+    },
+    {
+      "text": "1盎司",
+      "id": "cuprumThickness_0"
+    },
+    {
+      "text": "绿色",
+      "id": "adornColor_green"
+    },
+    {
+      "text": "白色",
+      "id": ""
+    },
+    {
+      "text": "过孔盖油",
+      "id": "adornBestrow_过孔盖油"
+    },
+    {
+      "text": "无铅OSP（免费）",
+      "id": "adornPut_osp"
+    },
+    {
+      "text": "0.3mm(免费)(外径0.4/0.45)",
+      "id": "zuixiaokongjingwaijing_0"
+    },
+    {
+      "text": "不需要",
+      "id": "goldFingerBevel_false"
+    },
+    {
+      "text": "AOI全测+飞针全测",
+      "id": ""
+    },
+    {
+      "text": "元器件移植全额赔付【赔偿PCB，含由嘉立创SMT移植PCBA及不能移植元器件所有费用|最高达300万元|收费10元】",
+      "id": "compensate2"
+    },
+    {
+      "text": "无要求",
+      "id": "lowResistanceTest_no"
+    },
+    {
+      "text": "接受打叉板",
+      "id": "bujieshoudachaban_0"
+    },
+    {
+      "text": "无要求",
+      "id": "QCshaoshuchulifangshi_0"
+    },
+    {
+      "text": "不需要",
+      "id": "jinshubaobian_0"
+    },
+    {
+      "text": "不需要",
+      "id": ""
+    },
+    {
+      "text": "不需要",
+      "id": "mangcao_0"
+    },
+    {
+      "text": "不指定",
+      "id": "guokongchentongfangshi_0"
+    },
+    {
+      "text": "不需要",
+      "id": "halfHoleNumber_0"
+    },
+    {
+      "text": "普锣±0.2mm",
+      "id": "luobianwaixinggongcha_0"
+    },
+    {
+      "text": "字符打印或网版印刷(免费)",
+      "id": "zifugongyi_0"
+    },
+    {
+      "text": "不隔纸",
+      "id": "gebaizhifuwu_0"
+    },
+    {
+      "text": "按IPC二级标准",
+      "id": "banmianwaiguanyaoqiu_0"
+    },
+    {
+      "text": "不需要",
+      "id": "shiduka_0"
+    },
+    {
+      "text": "嘉立创标识盒子",
+      "id": "packType_jlc"
+    },
+    {
+      "text": "不需要",
+      "id": ""
+    },
+    {
+      "text": "无要求",
+      "id": "zhidingshengchanjidi_0"
+    },
+    {
+      "text": "不需要",
+      "id": ""
+    },
+    {
+      "text": "不需要",
+      "id": "chuhuobaogao_0"
+    },
+    {
+      "text": "需要标签",
+      "id": "shengchantiaomawaifang_0"
+    },
+    {
+      "text": "无要求",
+      "id": "isProduceDatePCSNew_no"
+    },
+    {
+      "text": "",
+      "id": ""
+    },
+    {
+      "text": "需要",
+      "id": "isNeedOrderSMT_yes"
+    },
+    {
+      "text": "不需要",
+      "id": "isNeedOrderSteel_no"
+    },
+    {
+      "text": "PCBA明细（多项）",
+      "id": "fapiaoxiangmumingcheng_0"
+    },
+    {
+      "text": "电子收据/送货单",
+      "id": "shoujusonghuodan_0"
+    }
+  ],
+  "inputs": [
+    {
+      "placeholder": "长",
+      "id": "pcbLengthInput",
+      "v": "6.8"
+    },
+    {
+      "placeholder": "宽",
+      "id": "pcbWidthInput",
+      "v": "3.5"
+    },
+    {
+      "placeholder": "数量",
+      "id": "",
+      "v": "5"
+    },
+    {
+      "placeholder": "",
+      "id": "",
+      "v": "1"
+    }
+  ],
+  "summary": "交期&快递\n交期\n样板48小时免费加急\n快递\n发货时间\n以审核时间为准\n价格明细\n\n特价\n\n￥20.00\n\n品质赔付费\n\n￥10.00\n\n快递费\n\n总价\n预估支付总价(不含运费):\n¥30\n检查订单\n提交订单\n提交pcb订单，去下smt\n微信扫码下单\n 立享优惠\n 已填参数不会丢失\n我已知悉\n《免责声明》\n"
+}

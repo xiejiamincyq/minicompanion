@@ -1,0 +1,127 @@
+{
+  "currency": "CNY",
+  "as_of": "2026-11-19",
+  "quantity_complete_units": 2,
+  "cap": 1000,
+  "status": "conditional_budget_only_no_manufacturer_acceptance_or_checkout",
+  "parts": [
+    {
+      "item": "裸板",
+      "basis": "嘉立创 68×35 mm，5片，含品质赔付10元",
+      "cny": 30,
+      "type": "在线参数计价",
+      "source": "verification/pcb-web-quote.json"
+    },
+    {
+      "item": "经济型单面工程与换料",
+      "basis": "50元工程费，12种扩展料各20元",
+      "cny": 290,
+      "type": "官方费率模型",
+      "source": "sourcing/cost_model_receipt.json"
+    },
+    {
+      "item": "焊点、氮气与 X-ray",
+      "basis": "两板各115点2.30元、氮气5.20元、两颗WSON底焊检查按20元",
+      "cny": 27.5,
+      "type": "官方费率模型，计费项目待整单确认",
+      "source": "sourcing/cost_model_receipt.json"
+    },
+    {
+      "item": "已取得贴片价的 24 种料",
+      "basis": "含公开打样损耗，最低上机量另核",
+      "cny": 50.6104,
+      "type": "24种国内贴片档与公开损耗模型",
+      "source": "sourcing/price_evidence.json"
+    },
+    {
+      "item": "余下 2 种板载料",
+      "basis": "4针JST座及升压芯片按可买的5只装各一包占位",
+      "cny": 15.534,
+      "type": "零售最低采购额，替代同料SMT未知价格，实际费用可升可降",
+      "source": "sourcing/采购核验记录_20261119.md"
+    },
+    {
+      "item": "微雪核心及彩屏",
+      "basis": "SKU 30306，2块×75.75元",
+      "cny": 151.5,
+      "type": "官网公开价，实发V2及预焊排针待核",
+      "source": "sourcing/waveshare-power.json"
+    },
+    {
+      "item": "保护电池及贴附式温感探头",
+      "basis": "2000 mAh电池2只22.5988元，探头按5只起购6.8395元",
+      "cny": 29.4383,
+      "type": "立创商城小量价",
+      "source": "sourcing/offboard_price_evidence.json"
+    },
+    {
+      "item": "外壳及操作件",
+      "basis": "9000HE，两套共12件，含6个按键帽和2个电源拨帽",
+      "cny": 74,
+      "type": "嘉立创四款STL最终尺寸和体积在线估价",
+      "source": "verification/enclosure-web-quote.json"
+    },
+    {
+      "item": "每台配套的充电电源",
+      "basis": "微雪 SKU 26938，2个×34.34元，各带1.2m圆头线",
+      "cny": 68.68,
+      "type": "微雪国内官网公开价",
+      "source": "sourcing/waveshare-power.json"
+    },
+    {
+      "item": "运行短线的原料及维护数据线",
+      "basis": "微雪 SKU 35944，4条×4.95元，2条保留作烧录",
+      "cny": 19.8,
+      "type": "微雪国内官网公开价",
+      "source": "sourcing/waveshare-usb.json"
+    },
+    {
+      "item": "三种 PH 插壳及压接端子",
+      "basis": "按整包购买而非仅计消耗，含22个触点的用量",
+      "cny": 17.282,
+      "type": "立创商城小量包装价",
+      "source": "sourcing/offboard_price_evidence.json"
+    },
+    {
+      "item": "螺钉、软绑带、扎带、探头覆盖胶带",
+      "basis": "整包或整卷计算，含两项会员／校采公开参考价",
+      "cny": 65.57408,
+      "type": "嘉立创FA及第三方公开参考价",
+      "source": "sourcing/mechanical-retail.json"
+    }
+  ],
+  "economic_conditional_subtotal": 839.91878,
+  "remaining_before_labor_other_parts_all_freight_and_vendor_adjustments": 160.08122,
+  "standard_conditional_subtotal": 952.71878,
+  "assumed_scenarios_not_quotes": [
+    {
+      "remaining_wire_and_housing": 15,
+      "factory_extras_tax_packaging": 10,
+      "all_freight": 45,
+      "labor_two_including_tests": 80,
+      "total_cny": 989.91878
+    },
+    {
+      "remaining_wire_and_housing": 15,
+      "factory_extras_tax_packaging": 10,
+      "all_freight": 45,
+      "labor_two_including_tests": 100,
+      "total_cny": 1009.91878
+    },
+    {
+      "remaining_wire_and_housing": 25,
+      "factory_extras_tax_packaging": 25,
+      "all_freight": 60,
+      "labor_two_including_tests": 180,
+      "total_cny": 1129.91878
+    }
+  ],
+  "excluded_from_baseline_until_quoted": [
+    "两只1×14母壳、十只配套触点、剩余线芯/绝缘",
+    "六条线束制作、两台代装、可选补焊核心排针、温感两端热态验收、烧录和BLE验证",
+    "各供应商到代装方、代装方至用户的全部物流",
+    "最低上机量、客户自备料接收或分摊差价、包装、税差、标准型工艺边和额外工装"
+  ],
+  "all_in_checkout_cny": null,
+  "all_in_under_cap_confirmed": false
+}

@@ -1,0 +1,2185 @@
+(kicad_symbol_lib
+  (version 20231120)
+  (generator "eeschema")
+  (symbol "R"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 0))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "R"
+      (at 2.032 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "R"
+      (at 0 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at -1.778 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Resistor"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "R res resistor"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "R_*"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "R_0_1"
+      (rectangle
+        (start -1.016 -2.54)
+        (end 1.016 2.54)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "R_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 1.27)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 1.27)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "C"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 0.254))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "C"
+      (at 0.635 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "C"
+      (at 0.635 -2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" ""
+      (at 0.9652 -3.81 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Unpolarized capacitor"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "cap capacitor"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "C_*"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "C_0_1"
+      (polyline
+        (pts
+          (xy -2.032 0.762)
+          (xy 2.032 0.762))
+        (stroke
+          (width 0.508)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -2.032 -0.762)
+          (xy 2.032 -0.762))
+        (stroke
+          (width 0.508)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "C_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 2.794)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 2.794)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "L"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "L"
+      (at -1.27 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "L"
+      (at 1.905 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Inductor"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "inductor choke coil reactor magnetic"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "FTC404030S1R0MGCA"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "L_0_1"
+      (arc
+        (start 0 2.54)
+        (mid 0.6323 1.905)
+        (end 0 1.27)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start 0 1.27)
+        (mid 0.6323 0.635)
+        (end 0 0)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start 0 0)
+        (mid 0.6323 -0.635)
+        (end 0 -1.27)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start 0 -1.27)
+        (mid 0.6323 -1.905)
+        (end 0 -2.54)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "L_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 1.27)
+        (name "1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 1.27)
+        (name "2"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "D_Zener"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "D"
+      (at 0 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "D_Zener"
+      (at 0 -2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Zener diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "D_Zener_0_1"
+      (polyline
+        (pts
+          (xy -1.27 -1.27)
+          (xy -1.27 1.27)
+          (xy -0.762 1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.27 0)
+          (xy -1.27 0))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.27 -1.27)
+          (xy 1.27 1.27)
+          (xy -1.27 0)
+          (xy 1.27 -1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "D_Zener_1_1"
+      (pin passive line
+        (at -3.81 0 0)
+        (length 2.54)
+        (name "K"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 3.81 0 180)
+        (length 2.54)
+        (name "A"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "LED"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "D"
+      (at 0 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "LED"
+      (at 0 -2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Light emitting diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sim.Pins" "1=K 2=A"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "LED diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "LED_0_1"
+      (polyline
+        (pts
+          (xy -3.048 -0.762)
+          (xy -4.572 -2.286)
+          (xy -3.81 -2.286)
+          (xy -4.572 -2.286)
+          (xy -4.572 -1.524))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.778 -0.762)
+          (xy -3.302 -2.286)
+          (xy -2.54 -2.286)
+          (xy -3.302 -2.286)
+          (xy -3.302 -1.524))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.27 0)
+          (xy 1.27 0))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.27 -1.27)
+          (xy -1.27 1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.27 -1.27)
+          (xy 1.27 1.27)
+          (xy -1.27 0)
+          (xy 1.27 -1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "LED_1_1"
+      (pin passive line
+        (at -3.81 0 0)
+        (length 2.54)
+        (name "K"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 3.81 0 180)
+        (length 2.54)
+        (name "A"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "Thermistor_NTC"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 0))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "TH"
+      (at -4.445 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "Thermistor_NTC"
+      (at 3.175 0 90)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 1.27 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 1.27 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Temperature dependent resistor, negative temperature coefficient"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "thermistor NTC resistor sensor RTD"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "R_* RV_*"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "Thermistor_NTC_0_1"
+      (arc
+        (start -3.175 2.413)
+        (mid -3.0506 2.3165)
+        (end -3.048 2.159)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -3.048 2.794)
+        (mid -2.9736 2.9736)
+        (end -2.794 3.048)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -2.794 3.048)
+        (mid -2.6144 2.9736)
+        (end -2.54 2.794)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -2.794 2.54)
+        (mid -2.9736 2.6144)
+        (end -3.048 2.794)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -2.794 1.905)
+        (mid -2.9736 1.9794)
+        (end -3.048 2.159)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -2.54 2.159)
+        (mid -2.6144 1.9794)
+        (end -2.794 1.905)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (arc
+        (start -2.159 2.794)
+        (mid -2.434 2.5608)
+        (end -2.794 2.54)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -2.54 2.159)
+          (xy -2.54 2.794))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -2.54 -3.683)
+          (xy -2.54 -1.397)
+          (xy -2.794 -2.159)
+          (xy -2.286 -2.159)
+          (xy -2.54 -1.397)
+          (xy -2.54 -1.651))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type outline)))
+      (polyline
+        (pts
+          (xy -1.778 2.54)
+          (xy -1.778 1.524)
+          (xy 1.778 -1.524)
+          (xy 1.778 -2.54))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.778 -1.397)
+          (xy -1.778 -3.683)
+          (xy -2.032 -2.921)
+          (xy -1.524 -2.921)
+          (xy -1.778 -3.683)
+          (xy -1.778 -3.429))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type outline)))
+      (rectangle
+        (start -1.016 2.54)
+        (end 1.016 -2.54)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "Thermistor_NTC_1_1"
+      (pin passive line
+        (at 0 3.81 270)
+        (length 1.27)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 0 -3.81 90)
+        (length 1.27)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "Q_NPN_BEC"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "Q"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "Q_NPN_BEC"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "Q_NPN_BEC_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "Q_NPN_BEC_1_1"
+      (pin input line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "BASE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "EMITTER"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "COLLECTOR"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "Q_NMOS_GSD"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "Q"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "Q_NMOS_GSD"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "Q_NMOS_GSD_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "Q_NMOS_GSD_1_1"
+      (pin input line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "GATE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "SOURCE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "DRAIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "Q_PMOS_GSD"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "Q"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "Q_PMOS_GSD"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "Q_PMOS_GSD_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "Q_PMOS_GSD_1_1"
+      (pin input line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "GATE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "SOURCE"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "DRAIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "KT-0603R"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "D"
+      (at 0 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "LED"
+      (at 0 -2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Light emitting diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sim.Pins" "1=K 2=A"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "LED diode"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "KT-0603R"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "KT-0603R_0_1"
+      (polyline
+        (pts
+          (xy -3.048 -0.762)
+          (xy -4.572 -2.286)
+          (xy -3.81 -2.286)
+          (xy -4.572 -2.286)
+          (xy -4.572 -1.524))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.778 -0.762)
+          (xy -3.302 -2.286)
+          (xy -2.54 -2.286)
+          (xy -3.302 -2.286)
+          (xy -3.302 -1.524))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.27 0)
+          (xy 1.27 0))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy -1.27 -1.27)
+          (xy -1.27 1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 1.27 -1.27)
+          (xy 1.27 1.27)
+          (xy -1.27 0)
+          (xy 1.27 -1.27))
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type none))))
+    (symbol "KT-0603R_1_1"
+      (pin passive line
+        (at -3.81 0 0)
+        (length 2.54)
+        (name "K"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 3.81 0 180)
+        (length 2.54)
+        (name "A"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "SW_Push"
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "SW"
+      (at 1.27 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "SW_Push"
+      (at 0 -1.524 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 5.08 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 5.08 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Push button switch, generic, two pins"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "switch normally-open pushbutton push-button"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "SW_Push_0_1"
+      (circle
+        (center -2.032 0)
+        (radius 0.508)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 0 1.27)
+          (xy 0 3.048))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (circle
+        (center 2.032 0)
+        (radius 0.508)
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (polyline
+        (pts
+          (xy 2.54 1.27)
+          (xy -2.54 1.27))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none)))
+      (pin passive line
+        (at -5.08 0 0)
+        (length 2.54)
+        (name "1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at 5.08 0 180)
+        (length 2.54)
+        (name "2"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "Conn_01x02"
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "J"
+      (at 0 2.54 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "Conn_01x02"
+      (at 0 -5.08 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "connector"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "Conn_01x02_1_1"
+      (rectangle
+        (start -1.27 1.27)
+        (end 1.27 -3.81)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background)))
+      (rectangle
+        (start -1.27 0.127)
+        (end 0 -0.127)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 -2.413)
+        (end 0 -2.667)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (pin passive line
+        (at -5.08 0 0)
+        (length 3.81)
+        (name "Pin_1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 -2.54 0)
+        (length 3.81)
+        (name "Pin_2"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "Conn_01x04"
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "J"
+      (at 0 5.08 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "Conn_01x04"
+      (at 0 -7.62 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "connector"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "Conn_01x04_1_1"
+      (rectangle
+        (start -1.27 3.81)
+        (end 1.27 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background)))
+      (rectangle
+        (start -1.27 2.667)
+        (end 0 2.413)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 0.127)
+        (end 0 -0.127)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 -2.413)
+        (end 0 -2.667)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 -4.953)
+        (end 0 -5.207)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (pin passive line
+        (at -5.08 2.54 0)
+        (length 3.81)
+        (name "Pin_1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 0 0)
+        (length 3.81)
+        (name "Pin_2"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 -2.54 0)
+        (length 3.81)
+        (name "Pin_3"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "3"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 -5.08 0)
+        (length 3.81)
+        (name "Pin_4"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "4"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "Conn_01x05"
+    (pin_names
+      (offset 1.016)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "J"
+      (at 0 7.62 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "Conn_01x05"
+      (at 0 -7.62 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "connector"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_fp_filters" "JST_PH_B5B-PH-SM4-TB_1x05-1MP_P2.00mm_Vertical"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "Conn_01x05_1_1"
+      (rectangle
+        (start -1.27 6.35)
+        (end 1.27 -6.35)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background)))
+      (rectangle
+        (start -1.27 5.207)
+        (end 0 4.953)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 2.667)
+        (end 0 2.413)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 0.127)
+        (end 0 -0.127)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 -2.413)
+        (end 0 -2.667)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (rectangle
+        (start -1.27 -4.953)
+        (end 0 -5.207)
+        (stroke
+          (width 0.1524)
+          (type default))
+        (fill
+          (type none)))
+      (pin passive line
+        (at -5.08 5.08 0)
+        (length 3.81)
+        (name "Pin_1"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 2.54 0)
+        (length 3.81)
+        (name "Pin_2"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "2"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 0 0)
+        (length 3.81)
+        (name "Pin_3"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "3"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 -2.54 0)
+        (length 3.81)
+        (name "Pin_4"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "4"
+          (effects
+            (font
+              (size 1.27 1.27)))))
+      (pin passive line
+        (at -5.08 -5.08 0)
+        (length 3.81)
+        (name "Pin_5"
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "5"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (embedded_fonts no))
+  (symbol "PWR_FLAG"
+    (power global)
+    (pin_numbers
+      (hide yes))
+    (pin_names
+      (offset 0)
+      (hide yes))
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (in_pos_files yes)
+    (duplicate_pin_numbers_are_jumpers no)
+    (property "Reference" "#FLG"
+      (at 0 1.905 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "PWR_FLAG"
+      (at 0 3.81 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" "Special symbol for telling ERC where power comes from"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "ki_keywords" "flag power"
+      (at 0 0 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (symbol "PWR_FLAG_0_0"
+      (pin power_out line
+        (at 0 0 90)
+        (length 0)
+        (name ""
+          (effects
+            (font
+              (size 1.27 1.27))))
+        (number "1"
+          (effects
+            (font
+              (size 1.27 1.27))))))
+    (symbol "PWR_FLAG_0_1"
+      (polyline
+        (pts
+          (xy 0 0)
+          (xy 0 1.27)
+          (xy -1.016 1.905)
+          (xy 0 2.54)
+          (xy 1.016 1.905)
+          (xy 0 1.27))
+        (stroke
+          (width 0)
+          (type default))
+        (fill
+          (type none))))
+    (embedded_fonts no))
+  (symbol "BQ25170DSGR"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "BQ25170DSGR"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "BQ25170DSGR_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "BQ25170DSGR_1_1"
+      (pin power_in line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "IN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 2.54 0)
+        (length 5.08)
+        (name "ISET"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "TS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -2.54 0)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin open_collector line
+        (at -15.24 -5.08 0)
+        (length 5.08)
+        (name "STAT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin open_collector line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "PG"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at 15.24 2.54 180)
+        (length 5.08)
+        (name "VSET"
+          (effects
+            (font
+              (size 1 1))))
+        (number "7"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_out line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "OUT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "8"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -2.54 180)
+        (length 5.08)
+        (name "EP_GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "9"
+          (effects
+            (font
+              (size 1 1))))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq25170.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.1 1.1))
+        (hide yes))))
+  (symbol "TPS61023DRLR"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "TPS61023DRLR"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "TPS61023DRLR_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TPS61023DRLR_1_1"
+      (pin input line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "FB"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin input line
+        (at -15.24 0 0)
+        (length 5.08)
+        (name "EN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 -5.08 0)
+        (length 5.08)
+        (name "VIN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "4"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "SW"
+          (effects
+            (font
+              (size 1 1))))
+        (number "5"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_out line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "VOUT"
+          (effects
+            (font
+              (size 1 1))))
+        (number "6"
+          (effects
+            (font
+              (size 1 1))))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61023.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.1 1.1))
+        (hide yes))))
+  (symbol "TLV803EA30DBZR"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "U"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "TLV803EA30DBZR"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "TLV803EA30DBZR_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "TLV803EA30DBZR_1_1"
+      (pin power_in line
+        (at -15.24 -5.08 0)
+        (length 5.08)
+        (name "GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin open_collector line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "RESET_n"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin power_in line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "VDD"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1))))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv803e.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.1 1.1))
+        (hide yes))))
+  (symbol "MSK12C02"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "SW"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "MSK12C02"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "MSK12C02_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "MSK12C02_1_1"
+      (pin passive line
+        (at -15.24 5.08 0)
+        (length 5.08)
+        (name "RUN"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "COMMON"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at -15.24 -5.08 0)
+        (length 5.08)
+        (name "OFF_NC"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "SHELL"
+          (effects
+            (font
+              (size 1 1))))
+        (number "SH"
+          (effects
+            (font
+              (size 1 1)))))))
+  (symbol "DC-050-2.0-BD"
+    (pin_names
+      (offset 0.4))
+    (in_bom yes)
+    (on_board yes)
+    (property "Reference" "J"
+      (at 0 11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (property "Value" "DC-050-2.0-BD"
+      (at 0 -11 0)
+      (effects
+        (font
+          (size 1.1 1.1))))
+    (symbol "DC-050-2.0-BD_0_1"
+      (rectangle
+        (start -10.16 7.62)
+        (end 10.16 -7.62)
+        (stroke
+          (width 0.254)
+          (type default))
+        (fill
+          (type background))))
+    (symbol "DC-050-2.0-BD_1_1"
+      (pin passive line
+        (at 15.24 5.08 180)
+        (length 5.08)
+        (name "CENTRE_POS"
+          (effects
+            (font
+              (size 1 1))))
+        (number "1"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 0 180)
+        (length 5.08)
+        (name "SLEEVE_GND"
+          (effects
+            (font
+              (size 1 1))))
+        (number "2"
+          (effects
+            (font
+              (size 1 1)))))
+      (pin passive line
+        (at 15.24 -5.08 180)
+        (length 5.08)
+        (name "SLEEVE_NC_SWITCH"
+          (effects
+            (font
+              (size 1 1))))
+        (number "3"
+          (effects
+            (font
+              (size 1 1))))))))

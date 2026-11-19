@@ -1,0 +1,28 @@
+﻿References,MPN,LCSC,Manufacturer,Footprint,Domain,PerBoard,NetQtyTwo,Library,SMT1plusCNY,PublishedLossQty,QtyBeforeMachineMinimum,MaterialSubtotalBeforeMachineMinimum,StockObserved,Status,Source
+TH1,HNTC-103F3950FB-100B,C52204609,HNTC,,battery_probe,1,2,offboard,,,,,,OFFBOARD_PROBE_NO_CONNECTOR,https://item.szlcsc.com/55044716.html
+"C3,C6",CC0603KRX7R9BB104,C14663,YAGEO,Capacitor_SMD:C_0603_1608Metric,main,2,4,base,0.0299,0,4,0.1196,52442829,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C14663.html
+Q3,AO3401A,C15127,Alpha and Omega Semiconductor,Package_TO_SOT_SMD:SOT-23,main,1,2,base,0.522,0,2,1.044,1342172,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C15127.html
+J4,B2B-PH-SM4-TB(LF)(SN),C160352,JST,Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical,main,1,2,expand,1.253,0,2,2.506,67561,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C160352.html
+J2,B4B-PH-SM4-TB(LF)(SN),C160354,JST,Connector_JST:JST_PH_B4B-PH-SM4-TB_1x04-1MP_P2.00mm_Vertical,main,1,2,expand,,,,,2842,REFERENCE_ONLY_NOT_SMALL_QUANTITY_PRICE,https://www.jlc-smt.com/lcsc/detail/C160354.html
+"Q1,Q2",AO3400A,C20917,Alpha and Omega Semiconductor,Package_TO_SOT_SMD:SOT-23,main,2,4,base,0.502,0,4,2.008,1120318,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C20917.html
+D3,BZT52C10,C2103,Jiangsu Changjing Electronics,Diode_SMD:D_SOD-123,main,1,2,expand,0.133,8,10,1.330,56367,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C2103.html
+"R2,R3",0603WAF1001T5E,C21190,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,2,4,base,0.0101,0,4,0.0404,30404627,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C21190.html
+D2,KT-0603R,C2286,KENTO,A2_Candidate:KT-0603R,main,1,2,base,0.0465,0,2,0.0930,8591544,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C2286.html
+R6,0603WAF2203T5E,C22961,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,1,2,base,0.0089,0,2,0.0178,893014,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C22961.html
+R5,0603WAF3301T5E,C22978,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,1,2,base,0.013,0,2,0.026,4079406,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C22978.html
+R7,0603WAF3002T5E,C22984,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,1,2,base,0.0124,0,2,0.0248,1619296,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C22984.html
+"R13,R14",0603WAF3303T5E,C23137,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,2,4,base,0.0093,0,4,0.0372,557316,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C23137.html
+R1,0603WAF3602T5E,C23147,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,1,2,expand,0.0106,10,12,0.1272,200872,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C23147.html
+"R4,R10,R15",0603WAF1003T5E,C25803,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,3,6,base,0.0176,0,6,0.1056,13587653,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C25803.html
+"R8,R9,R12",0603WAF1002T5E,C25804,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,3,6,base,0.0116,0,6,0.0696,43327060,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C25804.html
+R11,0603WAF4702T5E,C25819,UNI-ROYAL,Resistor_SMD:R_0603_1608Metric,main,1,2,base,0.0096,0,2,0.0192,2480661,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C25819.html
+J5,B5B-PH-SM4-TB(LF)(SN),C265085,JST,Connector_JST:JST_PH_B5B-PH-SM4-TB_1x05-1MP_P2.00mm_Vertical,main,1,2,expand,1.342,0,2,2.684,27456,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C265085.html
+C1,CL21B225KBYNNNE,C2762602,Samsung Electro-Mechanics,Capacitor_SMD:C_0805_2012Metric,main,1,2,expand,0.585,2,4,2.340,36683,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C2762602.html
+"SW1,SW2,SW3",TS-1187A-B-A-B,C318884,XKB,Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A,main,3,6,base,0.131,0,6,0.786,759995,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C318884.html
+L1,FTC404030S1R0MGCA,C39676079,cjiang (Changjiang),A2_Candidate:FTC404030S1R0MGCA,main,1,2,expand,1.704,0,2,3.408,1137,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C39676079.html
+SW4,MSK12C02,C431540,SHOU HAN,Button_Switch_SMD:SW_SPDT_Shouhan_MSK12C02,main,1,2,expand,0.316,4,6,1.896,159710,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C431540.html
+"C2,C4,C5",CL21A226MAQNNNE,C45783,Samsung Electro-Mechanics,Capacitor_SMD:C_0805_2012Metric,main,3,6,base,1.206,0,6,7.236,3643098,SAME_DAY_PUBLIC_TIER_REUSED,https://www.jlc-smt.com/lcsc/detail/C45783.html
+J1,DC-050-2.0-BD,C51927418,CAX,A2_Candidate:DC-050-2.0-BD,main,1,2,expand,0.898,2,4,3.592,652,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C51927418.html
+U1,BQ25170DSGR,C5208201,Texas Instruments,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,main,1,2,expand,7.86,0,2,15.72,2999,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C5208201.html
+U3,TLV803EA30DBZR,C5218924,Texas Instruments,Package_TO_SOT_SMD:SOT-23,main,1,2,expand,2.69,0,2,5.38,6952,LIVE_RENDERED_PUBLIC_1PLUS,https://www.jlc-smt.com/lcsc/detail/C5218924.html
+U2,TPS61023DRLR,C919459,Texas Instruments,Package_TO_SOT_SMD:SOT-563,main,1,2,expand,,,,,799,REFERENCE_ONLY_NOT_SMALL_QUANTITY_PRICE,https://www.jlc-smt.com/lcsc/detail/C919459.html

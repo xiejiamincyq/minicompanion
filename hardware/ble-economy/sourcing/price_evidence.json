@@ -1,0 +1,348 @@
+{
+  "schema": 1,
+  "currency": "CNY",
+  "observed_date": "2026-11-19",
+  "parts": {
+    "C2762602": {
+      "mpn": "CL21B225KBYNNNE",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.585,
+      "smt_stock": 36683,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C2762602.html",
+      "retrieved_at_utc": "2026-11-19T07:13:12.764652+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C45783": {
+      "mpn": "CL21A226MAQNNNE",
+      "library": "base",
+      "smt_unit_1plus_cny": 1.206,
+      "smt_stock": 3643098,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C45783.html",
+      "retrieved_at_utc": "2026-11-19T07:13:12.661081+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C14663": {
+      "mpn": "CC0603KRX7R9BB104",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0299,
+      "smt_stock": 52442829,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C14663.html",
+      "retrieved_at_utc": "2026-11-19T07:13:11.970303+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C94514": {
+      "mpn": "MMBT3904-7-F",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.348,
+      "smt_stock": 269906,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C94514.html",
+      "retrieved_at_utc": "2026-11-19T07:13:13.853369+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C20917": {
+      "mpn": "AO3400A",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.502,
+      "smt_stock": 1120318,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C20917.html",
+      "retrieved_at_utc": "2026-11-19T07:13:11.149531+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C25803": {
+      "mpn": "0603WAF1003T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0176,
+      "smt_stock": 13587653,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C25803.html",
+      "retrieved_at_utc": "2026-11-19T07:13:10.242050+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C25804": {
+      "mpn": "0603WAF1002T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0116,
+      "smt_stock": 43327060,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C25804.html",
+      "retrieved_at_utc": "2026-11-19T07:13:10.241374+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C25819": {
+      "mpn": "0603WAF4702T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0096,
+      "smt_stock": 2480661,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C25819.html",
+      "retrieved_at_utc": "2026-11-19T07:13:10.964924+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C318884": {
+      "mpn": "TS-1187A-B-A-B",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.131,
+      "smt_stock": 759995,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C318884.html",
+      "retrieved_at_utc": "2026-11-19T07:13:18.942992+00:00",
+      "status": "SAME_DAY_PUBLIC_TIER_REUSED",
+      "note": "Same-day A1 evidence reused for identical supplier SKU; no old design quantities reused."
+    },
+    "C5208201": {
+      "mpn": "BQ25170DSGR",
+      "library": "expand",
+      "smt_unit_1plus_cny": 7.86,
+      "smt_stock": 2999,
+      "pins_for_loss": 9,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C5208201.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS",
+      "economic_eligibility": "DOMESTIC_ORDER_REVIEW_REQUIRED_MSL2",
+      "msl_source": "https://www.ti.com/product/BQ25170/part-details/BQ25170DSGR",
+      "msl_rating": "Level-2-260C-1 YEAR",
+      "international_listing_not_domestic_approval": "Economic and Standard"
+    },
+    "C5218924": {
+      "mpn": "TLV803EA30DBZR",
+      "library": "expand",
+      "smt_unit_1plus_cny": 2.69,
+      "smt_stock": 6952,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C5218924.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C431540": {
+      "mpn": "MSK12C02",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.316,
+      "smt_stock": 159710,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C431540.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C39676079": {
+      "mpn": "FTC404030S1R0MGCA",
+      "library": "expand",
+      "smt_unit_1plus_cny": 1.704,
+      "smt_stock": 1137,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C39676079.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C160352": {
+      "mpn": "B2B-PH-SM4-TB(LF)(SN)",
+      "library": "expand",
+      "smt_unit_1plus_cny": 1.253,
+      "smt_stock": 67561,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C160352.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C265085": {
+      "mpn": "B5B-PH-SM4-TB(LF)(SN)",
+      "library": "expand",
+      "smt_unit_1plus_cny": 1.342,
+      "smt_stock": 27456,
+      "pins_for_loss": 5,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C265085.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C160354": {
+      "mpn": "B4B-PH-SM4-TB(LF)(SN)",
+      "library": "expand",
+      "smt_unit_1plus_cny": null,
+      "smt_stock": 2842,
+      "pins_for_loss": 4,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C160354.html",
+      "observed_date": "2026-11-19",
+      "status": "REFERENCE_ONLY_NOT_SMALL_QUANTITY_PRICE",
+      "reference_price_not_quote": 1.0407,
+      "retail_url": "https://item.szlcsc.com/171734.html",
+      "retail_moq": 5,
+      "retail_unit_at_moq_cny": 1.6825,
+      "retail_stock": 1370
+    },
+    "C919459": {
+      "mpn": "TPS61023DRLR",
+      "library": "expand",
+      "smt_unit_1plus_cny": null,
+      "smt_stock": 799,
+      "pins_for_loss": 6,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C919459.html",
+      "observed_date": "2026-11-19",
+      "status": "REFERENCE_ONLY_NOT_SMALL_QUANTITY_PRICE",
+      "reference_price_not_quote": 0.69,
+      "retail_url": "https://item.szlcsc.com/997354.html",
+      "retail_moq": 5,
+      "retail_unit_at_moq_cny": 1.4243,
+      "retail_stock": 10
+    },
+    "C51927418": {
+      "mpn": "DC-050-2.0-BD",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.898,
+      "smt_stock": 652,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C51927418.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C15127": {
+      "mpn": "AO3401A",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.522,
+      "smt_stock": 1342172,
+      "pins_for_loss": 3,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C15127.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C2103": {
+      "mpn": "BZT52C10",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.133,
+      "smt_stock": 56367,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C2103.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C21190": {
+      "mpn": "0603WAF1001T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0101,
+      "smt_stock": 30404627,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C21190.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C22978": {
+      "mpn": "0603WAF3301T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.013,
+      "smt_stock": 4079406,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C22978.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C23240": {
+      "mpn": "0603WAF7503T5E",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.0162,
+      "smt_stock": 212983,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C23240.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C22858": {
+      "mpn": "0603WAF1023T5E",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.0113,
+      "smt_stock": 5429,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C22858.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C23137": {
+      "mpn": "0603WAF3303T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0093,
+      "smt_stock": 557316,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C23137.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C94869": {
+      "mpn": "LTST-C190KRKT",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.132,
+      "smt_stock": 157790,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C94869.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C23147": {
+      "mpn": "0603WAF3602T5E",
+      "library": "expand",
+      "smt_unit_1plus_cny": 0.0106,
+      "smt_stock": 200872,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C23147.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS"
+    },
+    "C52204609": {
+      "mpn": "HNTC-103F3950FB-100B",
+      "library": "offboard",
+      "retail_url": "https://item.szlcsc.com/55044716.html",
+      "retail_moq": 5,
+      "retail_unit_at_moq_cny": 1.3679,
+      "retail_stock": 1805,
+      "status": "OFFBOARD_PROBE_NO_CONNECTOR",
+      "observed_date": "2026-11-19"
+    },
+    "C2286": {
+      "mpn": "KT-0603R",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0465,
+      "smt_stock": 8591544,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C2286.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS",
+      "note": "KENTO exact LED; manufacturer pin1=A, pin2=K. Dedicated footprint required."
+    },
+    "C22961": {
+      "mpn": "0603WAF2203T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0089,
+      "smt_stock": 893014,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C22961.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS",
+      "note": "0603 1% 100mW 75V +/-100ppm/C. Quote only until current netlist selects it."
+    },
+    "C22984": {
+      "mpn": "0603WAF3002T5E",
+      "library": "base",
+      "smt_unit_1plus_cny": 0.0124,
+      "smt_stock": 1619296,
+      "pins_for_loss": 2,
+      "smt_url": "https://www.jlc-smt.com/lcsc/detail/C22984.html",
+      "observed_date": "2026-11-19",
+      "status": "LIVE_RENDERED_PUBLIC_1PLUS",
+      "note": "0603 1% 100mW 75V +/-100ppm/C. Quote only until current netlist selects it."
+    }
+  },
+  "limitations": [
+    "Stock is a public observation, not reserved.",
+    "SMT unit values exclude feeding, loss, machine minimum, freight, tax changes and order-specific processing.",
+    "Two reference-only prices are not accepted as actual small-quantity costs."
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "status": "STATIC_CHECKS_PASS_PHYSICAL_ACCEPTANCE_PENDING",
+  "source_sha256": {
+    "verification\\a2_netlist.xml": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+    "project\\mini_companion_a2.kicad_sch": "6cc2321ac3082beaaedf36c9b45a90c9fe174cdba38e31683ab011c9a4782021",
+    "design\\electrical_contract.json": "9203f22497c8893286acdab588fafcbb619fa067a87eee9df7a6af466f557a5b"
+  },
+  "component_count": {
+    "board": 38,
+    "offboard": 1
+  },
+  "boost_divider": {
+    "top_ohm": 220000.0,
+    "bottom_ohm": 30000.0,
+    "nominal_output_load_A": 1.9833333333333332e-05,
+    "added_output_load_vs_previous_750k_102k_A": 1.3999999999999998e-05,
+    "maximum_bottom_ohm_with_tolerance": 30600.0,
+    "minimum_divider_current_A": 1.895424836601307e-05,
+    "ratio_to_FB_20nA_at_25C_limit": 947.7124183006536,
+    "nominal_PFM_reference_output_V": 5.008333333333333,
+    "source": "https://www.ti.com/lit/ds/symlink/tps61023.pdf",
+    "review": "Section 8.2.2.1 recommends bottom <300k; no minimum resistance specified. Lower resistance trades extra load for noise immunity. Internal compensation and unchanged L/C do not by themselves prove dynamic stability. PFM reference has no guaranteed maximum; output ripple/overshoot and load steps remain physical acceptance items."
+  },
+  "boost": {
+    "PWM_nominal_V": 4.958333333333332,
+    "PWM_static_corners_V": [
+      4.6665359477124175,
+      5.265918367346939
+    ],
+    "rated_design_load_A": 0.5,
+    "battery_input_at_0V6A_output_3V0_input_80pct_assumed_efficiency_A": 1.3164795918367345,
+    "limit": "0.5 A continuous design target; efficiency, startup and transient current are unmeasured. Not a hardware battery current limiter; pack PCM remains mandatory."
+  },
+  "uvlo": {
+    "falling_pack_V": [
+      3.0381731213697605,
+      3.2067155340520044
+    ],
+    "rising_pack_V": [
+      3.220298951941561,
+      3.3991499999999992
+    ],
+    "same_corner_hysteresis_V": [
+      0.16200415778701993,
+      0.21322505054712027
+    ],
+    "off_RUN_5V_residual_max_from_feedback_V": 0.12132105512372271,
+    "delay_ms": [
+      130,
+      270
+    ],
+    "low_EN_sink_demand_max_A": 0.0004285714285714286,
+    "limit": "Steady-state resistor model; battery rebound, ramps and dynamic sequencing need scope validation."
+  },
+  "charge": {
+    "set_voltage_corners_V": [
+      4.0672,
+      4.1328
+    ],
+    "current_corners_A": [
+      0.2647058823529412,
+      0.336734693877551
+    ],
+    "fast_timer_hours": [
+      9.5,
+      10.5
+    ],
+    "precharge_timer_minutes": [
+      28.5,
+      31.5
+    ],
+    "input_acceptance": "4.75–5.25 V at J1 under 0.35 A; verify DC_PROTECTED >=4.60 V. 5V >=1A wall adapter only."
+  },
+  "NTC": {
+    "nominal_cold_trip_C": 3.5542787098751236,
+    "nominal_hot_trip_C": 41.78815789473684,
+    "zero_leak_initial_worst_cold_trip_C": 1.4034760733041955,
+    "zero_leak_initial_worst_hot_trip_C": 44.8830723020811,
+    "initial_cold_0C_voltage_min_V": 1.1696425,
+    "initial_hot_45C_voltage_max_V": 0.1751825,
+    "cold_0C_with_5uA_clamp_leak_V": 1.0094175,
+    "limitation": "No full lifetime/coupling guarantee. Actual two finished units must each inhibit at +2 C and +42 C in thermal fixture, including hot PCB state; room temperature must charge; open/short faults tested. Untested or failing units cannot be delivered."
+  },
+  "capacitors": {
+    "C2_typical_at_4V2_uF": 12.474590602124993,
+    "C4_C5_typical_at_5V3_uF": 20.300217124117594,
+    "C2_estimate_with_initial20pct_temp15pct_and_assumed10pct_age_uF": 7.634449448500496,
+    "C4_C5_same_estimate_uF": 12.423732879959967,
+    "limitation": "Typical manufacturer bias curve; 10% ageing is a design allowance, not a guaranteed lifetime model. Validate actual supply ripple/startup."
+  },
+  "physical_tests_performed": false,
+  "manufacturing_release": false
+}

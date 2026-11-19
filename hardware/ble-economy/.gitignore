@@ -1,0 +1,6 @@
+__pycache__/
+*.dsn
+*.ses
+sourcing/evidence/
+design/*-review.png
+design/KT-0603R.pdf

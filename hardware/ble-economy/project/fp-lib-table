@@ -1,0 +1,63 @@
+(fp_lib_table
+  (version 7)
+  (lib
+    (name "A2_Candidate")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/A2_Candidate.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Button_Switch_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Button_Switch_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Capacitor_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Capacitor_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Connector_JST")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Connector_JST.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Diode_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Diode_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "LED_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/LED_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "MountingHole")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/MountingHole.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Package_SON")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Package_SON.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Package_TO_SOT_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Package_TO_SOT_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+  (lib
+    (name "Resistor_SMD")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/libs/Resistor_SMD.pretty")
+    (options "")
+    (descr "A2 vendored footprint"))
+)

@@ -1,0 +1,41 @@
+{
+  "pcb_sha256": "5693bb28de4d65dc6bfaf9ba724c4c58b5090111dbbab2306dcf4632e71f1f28",
+  "schematic_sha256": "6cc2321ac3082beaaedf36c9b45a90c9fe174cdba38e31683ab011c9a4782021",
+  "xml_sha256": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+  "origin": "PCB bottom-left; mm; +Y upward",
+  "j1_placement_correction": {
+    "footprint_anchor_local_top_left_mm": [
+      0,
+      12.5
+    ],
+    "housing_pick_center_local_top_left_mm": [
+      6.7,
+      12.5
+    ],
+    "jlc_cpl_mm": [
+      6.7,
+      22.5
+    ],
+    "rotation_deg": 90,
+    "reason": "DC-050 13.4mm housing centre; anchor intentionally at mouth"
+  },
+  "fabrication_release": false,
+  "files": {
+    "a2-gerber-drill.zip": "a76399abffaa563e130661d4f5cc1fa6450b3e846e220b171039b195bde03a22",
+    "drill-report.txt": "7be699a0a627407e37d163fec61d3cf96829d4353235e9f104a11766187fa9e5",
+    "gerber/mini_companion_a2-B_Cu.gbl": "d688ae6b4b1acb27166a0e5e8fc83194d82465b70486449fe94d9fdd2a1881f4",
+    "gerber/mini_companion_a2-B_Mask.gbs": "51567aef607141b8b6a73d86bc6c429dd81a2d7cf2af4de29059f36763ad9a35",
+    "gerber/mini_companion_a2-B_Silkscreen.gbo": "022082224621579f4cd5aa3bfad0bb69f2c53fc6860e2f1947fef6326fba436d",
+    "gerber/mini_companion_a2-Edge_Cuts.gm1": "691fe2e588880d6637f7963733676223b3ee21351879539ff8a71321ccdb78ad",
+    "gerber/mini_companion_a2-F_Cu.gtl": "9648917a0b642e4a679f1fb623c58b69672690cf7b87bd55a2918ddf855a75a6",
+    "gerber/mini_companion_a2-F_Mask.gts": "eee7b7633f275620fb6bd3bab45c6d3720c8b3fcb56aaf82a0707823353412f9",
+    "gerber/mini_companion_a2-F_Paste.gtp": "4dae112abad7bf0587c3354f3f2fdf99e254605928e16cd112754b64577b962f",
+    "gerber/mini_companion_a2-F_Silkscreen.gto": "62e058c198c997b31b4d814ba9f0b629c38b5970747b5cb9bb77f660cffeef83",
+    "gerber/mini_companion_a2-job.gbrjob": "9166af0512ae5812f4c7c007e8634fded1be5bcc8ee971cd139364d1b37a4584",
+    "gerber/mini_companion_a2-NPTH.drl": "640aacc81833c1eed87911a91661378dada3b8ba5e182de8323b0cb7350ae8f1",
+    "gerber/mini_companion_a2-PTH.drl": "db04d0a9d209d8d412ed14fe2565f1caa8ce814cd2f57aed884c85ec20805e30",
+    "README.md": "0cd77956aff2837c692d943c60dd4cbad4f86ec62aec0d8649357d856aa572ff",
+    "top-position-jlc.csv": "9267ab9b1e5ea56ac8122b31cfd283e4f10c5d2fcd8ced755d2500b1faeac54c",
+    "top-position-kicad.csv": "bac664d2c5385c16f84455ebb9ffa7aadc0e88c4af13a5e2e26dd06d40905fa8"
+  }
+}

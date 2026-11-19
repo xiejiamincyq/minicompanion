@@ -1,0 +1,149 @@
+{
+  "units": "mm",
+  "housing_mm": [
+    80.0,
+    94.0,
+    33.4
+  ],
+  "pcb_front_z_mm": 14.0,
+  "pcb_origin_xy_mm": [
+    6.0,
+    52.0
+  ],
+  "key_centres_xy_mm": [
+    [
+      18.0,
+      78.0
+    ],
+    [
+      40.0,
+      78.0
+    ],
+    [
+      62.0,
+      78.0
+    ]
+  ],
+  "parts": {
+    "front_tray": {
+      "quantity_for_two": 2,
+      "size_mm": [
+        80.0,
+        94.0,
+        31.2
+      ],
+      "volume_cm3": 39.01533,
+      "sha256": "9a370c9f5c0dcd751b96d7b2bbc3877f2cf28af37880d29f76f2d1a6260e7f5d"
+    },
+    "rear_lid": {
+      "quantity_for_two": 2,
+      "size_mm": [
+        80.0,
+        94.0,
+        23.9
+      ],
+      "volume_cm3": 18.51035,
+      "sha256": "518f12a091a238731ef4c69f5a57c6cd7203cb80e0c3cbe84cfe57e2412b7f96"
+    },
+    "keycap": {
+      "quantity_for_two": 6,
+      "size_mm": [
+        9.198,
+        9.199,
+        12.9
+      ],
+      "volume_cm3": 0.37437,
+      "sha256": "af08e768073b7970befc0f553baed676879aa516d0ed1e46c1089e60946993d0"
+    },
+    "power_slider": {
+      "quantity_for_two": 2,
+      "size_mm": [
+        7.28,
+        5.7,
+        5.25
+      ],
+      "volume_cm3": 0.09594,
+      "sha256": "33bd24c95b6d8ada979bd760d6c20526fefb9f74026d72129c3d43d41b5be2e3"
+    }
+  },
+  "mechanics": {
+    "cell_max_mm": [
+      52.5,
+      35,
+      10.3
+    ],
+    "cell_xyz": [
+      13.4,
+      52.9,
+      20.9
+    ],
+    "cell_pcb_gap_mm": 5.3,
+    "key_tip_z_mm": 12.25,
+    "key_nominal_height_mm": 1.5,
+    "key_rest_gap_mm": 0.25,
+    "small_board_mounts": [
+      [
+        9.0,
+        55.0
+      ],
+      [
+        9.0,
+        84.0
+      ],
+      [
+        71.0,
+        55.0
+      ],
+      [
+        71.0,
+        84.0
+      ]
+    ],
+    "core_mounts": [
+      [
+        6.5,
+        12.0
+      ],
+      [
+        6.5,
+        41.0
+      ],
+      [
+        48.7,
+        12.0
+      ],
+      [
+        48.7,
+        41.0
+      ]
+    ],
+    "core_mount_seat_z": 9.5,
+    "usb_socket_y_mm": 26.5,
+    "barrel_axis_yz_mm": [
+      64.5,
+      7.45
+    ]
+  },
+  "vendor_step_sha256": "a1df3c077b3b0497f4ea5e55b3543cbabbf335b6b66d1d39080f6cb925958ec4",
+  "intersection_mm3": {
+    "tray_lid": 0.0,
+    "pcb_tray": 0.0,
+    "pcb_lid": 0.0,
+    "battery_lid": 0.0,
+    "battery_pcb": 0.0,
+    "battery_shell": 0.0,
+    "slider_up_tray": 0.0,
+    "slider_up_lid": 0.0,
+    "slider_up_pcb": 0.0,
+    "slider_down_tray": 0.0,
+    "slider_down_lid": 0.0,
+    "slider_down_pcb": 0.0,
+    "key1_tray": 0.0,
+    "key2_tray": 0.0,
+    "key3_tray": 0.0,
+    "vendor_core_tray": 0,
+    "vendor_core_lid": 0,
+    "vendor_core_cell": 0,
+    "vendor_core_pcb": 0
+  }
+}

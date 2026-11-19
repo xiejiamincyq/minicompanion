@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "observed_date": "2026-11-19",
+  "currency": "CNY",
+  "status": "PUBLIC_CATALOG_EVIDENCE_NOT_ORDER_OR_LOCKED_QUOTE",
+  "wall_adapter": {
+    "manufacturer_store": "Waveshare CN",
+    "model": "PSU-5V4A-5.5-2.1-CN",
+    "sku": 26938,
+    "product_url": "https://www.waveshare.net/shop/PSU-5V4A-5.5-2.1-CN.htm",
+    "catalog_price_url": "https://www.waveshare.net/left_column/AI-Accessories.htm",
+    "unit_catalog_price_cny": 34.34,
+    "purchase_quantity": 2,
+    "catalog_goods_subtotal_cny": 68.68,
+    "packing": "Exact product embedded specification/packing page lists PSU-5V4A-5.5-2.1-CN x1. Two ordered units include two fixed leads.",
+    "fixed_output_V": 5,
+    "rated_output_A": 4,
+    "mains_plug": "CN, two flat pins",
+    "output_lead_length_m": 1.2,
+    "barrel_outer_mm": 5.5,
+    "barrel_inner_mm": 2.1,
+    "polarity": "centre positive",
+    "official_label_photo_url": "https://www.waveshare.net/photo/accessories/PSU-5V4A-5.5-2.1-CN/PSU-5V4A-5.5-2.1-CN-2.jpg",
+    "certification_evidence": "Official parameters list CCC and the official label photo visibly carries CCC and centre-positive markings. Independent certificate registry status was not checked.",
+    "method": "Normal public HTTP GET of official product HTML and its embedded specifications/packing content; official label photo inspected; catalogue price independently re-read.",
+    "stock_quantity_observed": null,
+    "tax_checkout_selection_confirmed": false,
+    "limitations": "Public catalogue price is not a stock reservation or a checkout quotation. Confirm exact CN SKU, actual delivery, tax and final shipping before any order.",
+    "application": "Supplies A2 J1 centre-positive DC charge input; it is not a direct battery charger. On-board BQ25170 remains the sole cell charger. Validate loaded input 4.75–5.25 V and DC_PROTECTED >=4.60 V.",
+    "budget_replacement": "Replaces two USB wall chargers plus two separate USB-A-to-DC5521 charging leads. Do not add the removed charging-lead line again. RUN and maintenance USB cables remain separate."
+  },
+  "core_and_run_power": {
+    "core_model": "ESP32-S3-LCD-2 non-touch V2",
+    "core_sku": 30306,
+    "core_product_url": "https://www.waveshare.net/shop/ESP32-S3-LCD-2.htm",
+    "core_quantity": 2,
+    "core_unit_cny_from_same_day_team_evidence": 75.75,
+    "core_subtotal_cny": 151.5,
+    "core_price_evidence_note": "Reuses the current team sourcing result recorded in 采购核验记录_20261119.md; this supplemental power review did not independently refresh the core price.",
+    "usb_cable_evidence": "waveshare-usb.json",
+    "usb_cable_model": "USB-A-TO-USB-C-Cable-1M",
+    "usb_cable_sku": 35944,
+    "usb_cable_product_url": "https://www.waveshare.net/shop/USB-A-TO-USB-C-Cable-1M.htm",
+    "usb_cable_quantity": 4,
+    "usb_cable_unit_cny_from_same_day_team_evidence": 4.95,
+    "usb_cable_subtotal_cny": 19.8,
+    "allocation": "Two USB cables stay intact for ordinary computer maintenance; two are shortened/terminated by the assembler into J4-to-USB-C RUN leads. Cable goods price excludes labour and PH terminals.",
+    "electrical_boundary": "RUN connects only VBUS/GND through the core native USB-C. Verify source-plug CC 56k resistance, polarity, voltage drop, insulation and strain relief on each assembled lead. Remove RUN plug before inserting a computer cable into that same socket. Core BAT/VBAT/3V3 stay unconnected.",
+    "adapter_and_core_goods_cny": 220.18,
+    "adapter_core_and_four_usb_cables_goods_cny": 239.98
+  },
+  "shipping": {
+    "rate_url": "https://www.waveshare.net/help_center/expressinf.htm",
+    "faq_url": "https://www.waveshare.net/help_center/FAQ.htm",
+    "buying_rules_url": "https://www.waveshare.net/help_center/how_to_buy.htm",
+    "rate_status": "Official lightweight first-weight reference prices only, not an address/weight checkout quote.",
+    "ordinary_first_weight_cny": {
+      "Guangdong": 6,
+      "other_mainland_provinces_except_Xinjiang_Tibet": 8,
+      "Xinjiang": 22,
+      "Tibet": 27
+    },
+    "SF_first_weight_cny": {
+      "Guangdong": 13,
+      "other_mainland_provinces_except_Xinjiang_Tibet": 23,
+      "Xinjiang_Tibet": 28
+    },
+    "free_shipping_claim": "Not established. Official FAQ says buyer pays below CNY800 and shipping may be negotiated above that amount; no CNY99-free-shipping assumption.",
+    "consolidation": "SKUs 30306, 26938 and 35944 share the Waveshare CN store and are candidates for one order/dispatch. Count shipping once only if the final order confirms consolidation; combined weight, availability and destination remain unverified.",
+    "two_adapters_alone_example_other_province_ordinary_cny": 76.68,
+    "all_listed_goods_one_dispatch_example_other_province_ordinary_cny": 247.98,
+    "example_limit": "Examples assume the published CNY8 first-weight rate applies. They are not complete project costs, not guaranteed combined shipping, and exclude any assembly/termination service."
+  },
+  "independent_harness_service_check": {
+    "provider": "LCSC official cable service",
+    "homepage": "https://cable.szlcsc.com/",
+    "capability_url": "https://cable.szlcsc.com/services.html",
+    "about_url": "https://cable.szlcsc.com/about.html",
+    "quotation_workflow_url": "https://cable.szlcsc.com/customize.html",
+    "verified_public_capabilities": [
+      "Preassembled terminal harnesses",
+      "USB-A/USB-C/Micro-USB cables",
+      "Charging/power cables",
+      "About page explicitly states no minimum order quantity, including single prototypes"
+    ],
+    "qualification_scope": "Official site claims raw-material batch inspection and IPC assembly practices. No independent audit/certificate assessment was performed for this precise custom job.",
+    "pricing": "Homepage advertises assembly starting at CNY1; this is not a price for H1/H2/H3, two complete devices, battery NTC attachment, tests or shipping. No task-specific quote was obtained.",
+    "quotation_workflow": "Official submission form requires drawings/contact details; it says engineering contact within two working days, followed by technical discussion and an exact quote.",
+    "remaining_acceptance": [
+      "Confirm six exact H1/H2/H3 harnesses and connector pinouts",
+      "Confirm protected battery lead handling and real NTC attachment without bypassing PCM",
+      "Confirm USB-C source plug CC/polarity and current tests",
+      "Confirm willingness to perform final device assembly and individual cold/hot electrical acceptance, or obtain a separate assembler",
+      "Confirm complete fee, minimum processing charge, shipping and lead time"
+    ],
+    "conclusion": "Credible official no-MOQ enquiry route, but no verified cheaper complete alternative yet. Do not reduce the retail-pack or assembly budget on the basis of the starting-price advertisement."
+  },
+  "rejected_or_unpriced_shortlist": [
+    {
+      "candidate": "UGREEN CD261/CD262 fixed 5V adapters",
+      "urls": ["https://www.lulian.cn/product/1935.html", "https://www.lulian.cn/product/1934.html"],
+      "reason": "Reviewed official versions use a different barrel size; not a drop-in 5521 choice."
+    },
+    {
+      "candidate": "DFRobot FIT0618 5V4A 5521",
+      "url": "https://www.dfrobot.com.cn/goods-1930.html",
+      "observed_unit_cny": 45,
+      "reason": "Higher catalogue price; this quick review did not verify CCC/centre polarity sufficiently to prefer it."
+    },
+    {
+      "candidate": "DFRobot FIT0916-F PH2.0 four-pin to Dupont female, five-pack",
+      "url": "https://www.dfrobot.com.cn/goods-3601.html",
+      "observed_pack_cny": 20,
+      "pack_quantity": 5,
+      "reason": "Four pins and stated current below 1A do not substitute for the exact five-pin core harness or prove the RUN/battery harness."
+    }
+  ],
+  "actions_performed": {
+    "public_read_only_research": true,
+    "supplier_contact": false,
+    "drawing_upload": false,
+    "order_created": false,
+    "payment": false,
+    "cad_changes_for_adapter_research": false
+  }
+}

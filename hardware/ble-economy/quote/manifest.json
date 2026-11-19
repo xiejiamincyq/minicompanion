@@ -1,0 +1,14 @@
+{
+  "archive": "Mini-Companion-A2-RFQ.zip",
+  "sha256": "01ebf74ddecab39714ac7e06ae05e000214540ad69356c81fb873e421688aba8",
+  "entries": 71,
+  "supplier_sources": {
+    "board_sha256": "5693bb28de4d65dc6bfaf9ba724c4c58b5090111dbbab2306dcf4632e71f1f28",
+    "schematic_sha256": "6cc2321ac3082beaaedf36c9b45a90c9fe174cdba38e31683ab011c9a4782021",
+    "netlist_sha256": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+    "front_smd": 38,
+    "front_skus": 26,
+    "mounts_matched": 4,
+    "print_pieces_for_two": 12
+  }
+}

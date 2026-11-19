@@ -1,0 +1,19 @@
+{
+  "observation_date": "2026-11-19",
+  "model": "USB-A-TO-USB-C-Cable-1M",
+  "sku": 35944,
+  "store": "Waveshare CN",
+  "listing": "https://www.waveshare.net/left_column/new.htm",
+  "product": "https://www.waveshare.net/shop/USB-A-TO-USB-C-Cable-1M.htm",
+  "description": "1米USB 2.0连接线，USB Type-A公口转Type-C公口",
+  "unit_price_cny": 4.95,
+  "purchase_qty": 4,
+  "total_cny": 19.8,
+  "same_dispatch_candidate_skus": [
+    30306,
+    26938,
+    35944
+  ],
+  "allocation": "两条保持完整用于维护，两条由代装方截短制作源端 RUN USB-C。逐条验证 CC 56k、电流压降、绝缘、卸力及壳口实际适配。线价不含端接工时。",
+  "stock_qty_observed": null
+}

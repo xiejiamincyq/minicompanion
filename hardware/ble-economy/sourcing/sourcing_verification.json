@@ -1,0 +1,16 @@
+{
+  "status": "PASS_SOURCE_AND_BOM_CHECKS_ONLY",
+  "netlist_sha256": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+  "pcb_sha256": "5693bb28de4d65dc6bfaf9ba724c4c58b5090111dbbab2306dcf4632e71f1f28",
+  "checks": [
+    "39 netlist rows = 38 board + 1 external probe",
+    "26 SMT SKUs, 12 economic extended",
+    "Final R6/R7, Q1/Q2, LED SKU and custom footprint matched",
+    "TH1 excluded from machine BOM",
+    "offboard pack totals verified",
+    "external RFQ no private local paths or internal spending ceiling"
+  ],
+  "manufacturing_release": false,
+  "quotes_submitted": false,
+  "orders_placed": false
+}

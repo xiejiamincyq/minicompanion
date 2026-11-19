@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-19",
+  "currency": "CNY",
+  "scope": "两台完整包装货款，扎带14.4为普通会员显示、胶带32.20为校采渠道参考；运费另计。代装方自备的材料从报价中剔除重复费用。扎带用量4根但采购项为一包。",
+  "items": [
+    {
+      "part": "核心安装机牙",
+      "model": "EDLA-S1-M2-L25",
+      "purchase_qty": 20,
+      "two_units_consumption_pieces_or_rolls": 8,
+      "unit_price_cny": 0.158154,
+      "observed_stock_in_offer_units": 10665,
+      "amount_cny": 3.16308,
+      "url": "https://www.jlcfa.com/serial/2129403909149.html?codeModel=EDLA-S1&productModel=EDLA-S1-M2-L25"
+    },
+    {
+      "part": "小板十字盘头自攻",
+      "model": "EDLL-S1-ST2-L5",
+      "purchase_qty": 200,
+      "two_units_consumption_pieces_or_rolls": 8,
+      "unit_price_cny": 0.0198,
+      "observed_stock_in_offer_units": 40896,
+      "amount_cny": 3.96,
+      "url": "https://www.jlcfa.com/serial/1978889188560.html?codeModel=EDLL-S1&productModel=EDLL-S1-ST2-L5"
+    },
+    {
+      "part": "后盖十字盘头自攻",
+      "model": "EDLL-S1-ST2-L10",
+      "purchase_qty": 200,
+      "two_units_consumption_pieces_or_rolls": 8,
+      "unit_price_cny": 0.024255,
+      "observed_stock_in_offer_units": 30034,
+      "amount_cny": 4.851,
+      "url": "https://www.jlcfa.com/serial/1978889188560.html?codeModel=EDLL-S1&productModel=EDLL-S1-ST2-L10"
+    },
+    {
+      "part": "电池软绑带",
+      "model": "ZKL-0008 12×150 裁至9.5–10mm宽",
+      "purchase_qty": 100,
+      "two_units_consumption_pieces_or_rolls": 2,
+      "unit_price_cny": 0.07,
+      "observed_stock_in_offer_units": 6026899,
+      "amount_cny": 7,
+      "url": "https://yiwugo.com/product/detail/973974129.html"
+    },
+    {
+      "part": "两处线扣的尼龙扎带",
+      "model": "干诚 2.5×100mm 100根/包",
+      "purchase_qty": 1,
+      "two_units_consumption_pieces_or_rolls": 4,
+      "unit_price_cny": 14.4,
+      "observed_stock_in_offer_units": 100,
+      "amount_cny": 14.4,
+      "url": "https://www.cpep360.com/goods.php?id=7999"
+    },
+    {
+      "part": "探头覆盖固定绝缘胶带",
+      "model": "3M 7413D 10mm×33m",
+      "purchase_qty": 1,
+      "two_units_consumption_pieces_or_rolls": 1,
+      "unit_price_cny": 32.2,
+      "observed_stock_in_offer_units": null,
+      "amount_cny": 32.2,
+      "url": "https://mall.icw.buaa.edu.cn/SzhtShop/detail/jd/100157066647"
+    }
+  ],
+  "total_cny": 65.57408
+}

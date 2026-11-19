@@ -1,0 +1,128 @@
+{
+  "source": "https://www.jlc-3dp.cn/3dp/modelPrintParameter/getMaterialInfo",
+  "date_utc": "2026-11-19T14:47:49.440234+00:00",
+  "scope": "per-file dimensional online estimate; no model uploaded; no finish or delivery",
+  "parts": [
+    {
+      "part": "front_tray",
+      "sha256": "9a370c9f5c0dcd751b96d7b2bbc3877f2cf28af37880d29f76f2d1a6260e7f5d",
+      "request": {
+        "materialTypeId": null,
+        "quantity": 2,
+        "sizeX": 8.0,
+        "sizeY": 9.4,
+        "sizeZ": 3.12,
+        "modelVolume": 39.02
+      },
+      "materials": {
+        "9000HE": {
+          "unit_cny": 20.29,
+          "line_cny": 40.58,
+          "lead_hours": 48
+        },
+        "9600": {
+          "unit_cny": 19.28,
+          "line_cny": 38.56,
+          "lead_hours": 48
+        },
+        "Grey": {
+          "unit_cny": 33.99,
+          "line_cny": 67.98,
+          "lead_hours": 48
+        }
+      }
+    },
+    {
+      "part": "rear_lid",
+      "sha256": "518f12a091a238731ef4c69f5a57c6cd7203cb80e0c3cbe84cfe57e2412b7f96",
+      "request": {
+        "materialTypeId": null,
+        "quantity": 2,
+        "sizeX": 8.0,
+        "sizeY": 9.4,
+        "sizeZ": 2.39,
+        "modelVolume": 18.51
+      },
+      "materials": {
+        "9000HE": {
+          "unit_cny": 9.63,
+          "line_cny": 19.26,
+          "lead_hours": 48
+        },
+        "9600": {
+          "unit_cny": 9.14,
+          "line_cny": 18.28,
+          "lead_hours": 48
+        },
+        "Grey": {
+          "unit_cny": 16.12,
+          "line_cny": 32.24,
+          "lead_hours": 48
+        }
+      }
+    },
+    {
+      "part": "keycap",
+      "sha256": "af08e768073b7970befc0f553baed676879aa516d0ed1e46c1089e60946993d0",
+      "request": {
+        "materialTypeId": null,
+        "quantity": 6,
+        "sizeX": 0.92,
+        "sizeY": 0.92,
+        "sizeZ": 1.29,
+        "modelVolume": 0.37
+      },
+      "materials": {
+        "9000HE": {
+          "unit_cny": 1.77,
+          "line_cny": 10.62,
+          "lead_hours": 48
+        },
+        "9600": {
+          "unit_cny": 1.77,
+          "line_cny": 10.62,
+          "lead_hours": 48
+        },
+        "Grey": {
+          "unit_cny": 1.77,
+          "line_cny": 10.62,
+          "lead_hours": 48
+        }
+      }
+    },
+    {
+      "part": "power_slider",
+      "sha256": "33bd24c95b6d8ada979bd760d6c20526fefb9f74026d72129c3d43d41b5be2e3",
+      "request": {
+        "materialTypeId": null,
+        "quantity": 2,
+        "sizeX": 0.73,
+        "sizeY": 0.57,
+        "sizeZ": 0.53,
+        "modelVolume": 0.1
+      },
+      "materials": {
+        "9000HE": {
+          "unit_cny": 1.77,
+          "line_cny": 3.54,
+          "lead_hours": 48
+        },
+        "9600": {
+          "unit_cny": 1.77,
+          "line_cny": 3.54,
+          "lead_hours": 48
+        },
+        "Grey": {
+          "unit_cny": 1.77,
+          "line_cny": 3.54,
+          "lead_hours": 48
+        }
+      }
+    }
+  ],
+  "total_cny_by_material": {
+    "9000HE": 74.0,
+    "9600": 71.0,
+    "Grey": 114.38
+  }
+}

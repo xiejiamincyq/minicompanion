@@ -1,0 +1,29 @@
+{
+  "status": "QUOTE_MODEL_NOT_ORDER_NOT_MANUFACTURING_RELEASE",
+  "netlist_sha256": "25fc8f14f9e106d4e4b7f8e7bfa077049923f07789a97de4f9ed877a3476325d",
+  "pcb_sha256_at_bom_generation": "5693bb28de4d65dc6bfaf9ba724c4c58b5090111dbbab2306dcf4632e71f1f28",
+  "main_components_per_board": 38,
+  "offboard_components_per_unit": 1,
+  "main_unique_skus": 26,
+  "economic_extension_skus": 12,
+  "unpriced_main_skus": [
+    "C160354",
+    "C919459"
+  ],
+  "known_main_net_material_cny_two": "45.2104",
+  "known_main_material_with_published_loss_before_machine_minimum_cny": "50.6104",
+  "economic_engineering_plus_feeding_cny": 290,
+  "economic_nitrogen_cny_two": 5.2,
+  "physical_smd_pads_per_board_at_design_review": 115,
+  "solder_joint_model_cny_two": 2.3,
+  "xray_model_cny_two_wson_devices": 20,
+  "standard_engineering_stencil_plus_all_sku_feeding_cny": 408,
+  "notes": [
+    "本表不是完整报价：最小上机量、两个缺价SKU、X-ray、焊点、包装、工艺边、邮费另计。",
+    "扩展料损耗按公开小量表试算；官方规定单价基于立创商城，最终使用列可覆盖本模型。",
+    "标准型用全SKU上料收费作保守可比模型；实际基础料是否计费应以整单匹配核准。",
+    "标准型最小70x70；68x35单板加到80x75外框已在线估价5片30元，具体拼边/铣桥/接单仍待工厂核准。",
+    "115点/片和WSON X-ray是费用模型；最终订单识别点数、收费项目及最小收费优先。",
+    "板外NTC仅归属线束采购，绝不自动送机器贴装。"
+  ]
+}

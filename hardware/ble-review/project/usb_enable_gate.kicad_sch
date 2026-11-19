@@ -1,0 +1,853 @@
+(kicad_sch
+  (version 20260306)
+  (generator "eeschema")
+  (uuid "f95c9fc4-435e-4df5-849e-4674d3c3ec17")
+  (paper "A3")
+  (title_block
+    (title "USB main-rail qualification | BLE-A1 candidate")
+    (date "2026-11-19")
+    (rev "BLE-A1-USB")
+    (comment 1 "Static design review only; power-transition capture required on first boards."))
+  (lib_symbols
+    (symbol "USB_Service:TPS389001DSER"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPS389001DSER"
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TPS389001DSER_0_1"
+        (rectangle
+          (start -10.16 7.62)
+          (end 10.16 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS389001DSER_1_1"
+        (pin input line
+          (at -15.24 5.08 0)
+          (length 5.08)
+          (name "SENSE"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 0 -12.7 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin input line
+          (at -15.24 -5.08 0)
+          (length 5.08)
+          (name "MR"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin power_in line
+          (at 0 12.7 270)
+          (length 5.08)
+          (name "VDD"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 -5.08 180)
+          (length 5.08)
+          (name "CT"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin open_collector line
+          (at 15.24 5.08 180)
+          (length 5.08)
+          (name "RESET"
+            (effects
+              (font
+                (size 1 1))))
+          (number "6"
+            (effects
+              (font
+                (size 1 1))))))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3890.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (symbol "USB_Service:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "USB_Service:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (symbol
+    (lib_id "USB_Service:TPS389001DSER")
+    (at 63.5 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "460a7e68-455a-4a8c-bf9a-64e1eb4289cc")
+    (property "Reference" "U7302"
+      (at 63.5 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS389001DSER"
+      (at 63.5 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
+      (at 63.5 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3890.pdf"
+      (at 63.5 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "TPS389001DSER"
+      (at 63.5 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C1509297"
+      (at 63.5 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 63.5 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "8d4b6a35-4d48-49b5-bfaa-31a23f48da05"))
+    (pin "2"
+      (uuid "d4c8f73a-2a23-450a-83e3-10e41553c6f5"))
+    (pin "3"
+      (uuid "e4a27509-756b-439d-9620-44ee09b82c70"))
+    (pin "4"
+      (uuid "91f7ae44-a8f6-4f29-ab43-4a0503c9787a"))
+    (pin "5"
+      (uuid "1ed96033-26d2-4ec4-9e66-04a01e8ae8fe"))
+    (pin "6"
+      (uuid "450ac2c7-bff2-4ad9-b0b3-47a3ad58e670"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713"
+          (reference "U7302")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 48.26 86.36)
+      (xy 43.18 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "44049e33-0fea-4687-9259-0016dccfa107"))
+  (global_label "USB_MAIN_SENSE"
+    (shape bidirectional)
+    (at 43.18 86.36 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "6b6f900b-8bce-4f14-908b-6f0f612a3b1e"))
+  (wire
+    (pts
+      (xy 63.5 104.14)
+      (xy 68.58 104.14))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0d616217-95a7-4528-aac0-7c0bd6edd3fb"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 68.58 104.14 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "87487652-62c8-4f3f-9324-74634135a09b"))
+  (wire
+    (pts
+      (xy 48.26 96.52)
+      (xy 43.18 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "22bb51b4-d3b1-41bf-95a5-7d15a0f2b2a0"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 43.18 96.52 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2c085751-b659-48db-998a-d3b9c62c444d"))
+  (wire
+    (pts
+      (xy 63.5 78.74)
+      (xy 58.42 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fabcfc0e-0386-4cd2-8d1f-ef6f9f9aa126"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 58.42 78.74 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2b99bf9a-cee3-4e68-b291-9f2e3e1e236a"))
+  (no_connect
+    (at 78.74 96.52)
+    (uuid "3b6140fe-d9a2-486f-b2a1-577e16229686"))
+  (wire
+    (pts
+      (xy 78.74 86.36)
+      (xy 83.82 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1ad67cf9-c3a4-4652-b19a-6489b82598c4"))
+  (global_label "USB_DATA_EN"
+    (shape bidirectional)
+    (at 83.82 86.36 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b45e5215-c027-413f-8b22-05fe3e20a39d"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 157.48 63.5 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fbdb4d3b-5760-416b-af6f-560d03579b30")
+    (property "Reference" "R7310"
+      (at 157.48 50.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "15.8k 0.1%"
+      (at 157.48 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 157.48 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 157.48 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "RT0603BRD0715K8L"
+      (at 157.48 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C861143"
+      (at 157.48 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 157.48 63.5 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "c52e5d0f-97e0-4e05-99d3-e18f7e7506d3"))
+    (pin "2"
+      (uuid "c4a7b77c-d320-4626-ad26-0a23a0d68ce6"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713"
+          (reference "R7310")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 157.48 59.69)
+      (xy 152.4 59.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c5c53978-d3bf-43b8-80ee-9449372f3eb1"))
+  (global_label "VLOGIC_SWITCHED"
+    (shape bidirectional)
+    (at 152.4 59.69 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f6bf48fe-c72c-4506-9253-4dad2f0cd774"))
+  (wire
+    (pts
+      (xy 157.48 67.31)
+      (xy 162.56 67.31))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "154d5f9b-6810-4290-a944-4fa0c9a1fa5a"))
+  (global_label "USB_MAIN_SENSE"
+    (shape bidirectional)
+    (at 162.56 67.31 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a6357b69-523b-4487-babd-5447cfff715d"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 157.48 109.22 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7623acb3-bd2b-4081-9e62-f4f5a7332240")
+    (property "Reference" "R7311"
+      (at 157.48 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k 0.1%"
+      (at 157.48 99.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 157.48 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 157.48 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "RT0603BRD0710KL"
+      (at 157.48 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C95204"
+      (at 157.48 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 157.48 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "44e40abd-421b-43f5-8634-c0c12a057479"))
+    (pin "2"
+      (uuid "c8bd5cb7-fa31-4004-b97d-fd91a9398d74"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713"
+          (reference "R7311")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 157.48 105.41)
+      (xy 152.4 105.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3a11c495-d9b3-4091-a00e-21795bf3e878"))
+  (global_label "USB_MAIN_SENSE"
+    (shape bidirectional)
+    (at 152.4 105.41 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2aba67ea-0e9a-47d5-a04d-824eaf4ceaae"))
+  (wire
+    (pts
+      (xy 157.48 113.03)
+      (xy 162.56 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "041a3d9d-40d5-4460-86c0-1ceffa38aba7"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 162.56 113.03 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "791b85ed-b262-4674-9e87-10ade4e6083d"))
+  (symbol
+    (lib_id "USB_Service:C")
+    (at 254 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a8908abb-d3cb-46b5-8723-a42aa54c4ba8")
+    (property "Reference" "C7302"
+      (at 254 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 50V"
+      (at 254 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 254 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 254 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 254 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C14663"
+      (at 254 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 254 91.44 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "d34d8e13-7e6e-437d-8385-a736ece0ff3e"))
+    (pin "2"
+      (uuid "fe02cbcf-113b-4366-b877-f7c2b88d8245"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713"
+          (reference "C7302")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 254.0 87.63)
+      (xy 248.92 87.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7ec101ad-99a4-4fd3-bcf9-ac17ed120e67"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 248.92 87.63 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "e67d6dcc-1548-4ac4-b19e-520270c5786f"))
+  (wire
+    (pts
+      (xy 254.0 95.25)
+      (xy 259.08 95.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8a23b9af-3eab-4da1-ab9f-b671b747e8e7"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 259.08 95.25 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a4444b45-563e-4d44-9534-75c2030df384"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 63.5 195.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bfe48f14-87cb-46a3-b95e-d892da7eacb2")
+    (property "Reference" "R7309"
+      (at 63.5 182.88000000000002 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "2.7k 1% 250mW"
+      (at 63.5 185.42000000000002 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+      (at 63.5 195.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 63.5 195.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "1206W4F2701T5E"
+      (at 63.5 195.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C17950"
+      (at 63.5 195.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 63.5 195.58 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "4dee6f7a-b88e-4b12-accf-93ebfb3bc4d4"))
+    (pin "2"
+      (uuid "1da8cd6f-843f-4e0f-a1f9-d7e7fa346ba0"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713"
+          (reference "R7309")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 63.5 191.77)
+      (xy 58.42 191.77))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9dcc5981-78c1-42fc-a666-8417b2f2c94a"))
+  (global_label "VBUS_RAW"
+    (shape bidirectional)
+    (at 58.42 191.77 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "56a882fb-0f38-4a1f-a17f-7c790325d5f1"))
+  (wire
+    (pts
+      (xy 63.5 199.39)
+      (xy 68.58 199.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "adbed49e-8d38-4569-8a83-245e8803f84e"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 68.58 199.39 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b09989ab-09c3-4ce3-82e7-fc9281a177c6"))
+  (text "1. MAIN RAIL MUST BE PRESENT BEFORE USB DATA CONNECTS"
+    (at 25.4 20.32 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "f39fd8df-3421-41d8-873d-931f600b818d"))
+  (text "U7302 is supplied by USB_3V3, so VLOGIC_SWITCHED = 0 V cannot float its reset output.\nR7310/R7311 set a nominal falling trip of 2.967 V. Both resistors: 0.1%, 25 ppm/C.\nCT deliberately open. RESET is wired-AND with VBUS monitor U7301 on USB_DATA_EN."
+    (at 25.4 137.16 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "c6c933d8-f5e2-4fc8-93f2-ad8353d5d277"))
+  (text "2. RAW VBUS DISCHARGE"
+    (at 25.4 165.1 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "4cf5db53-98aa-44a7-ad1f-115143311c94"))
+  (text "R7309 limits retained VBUS after cable removal. 1206 / 250 mW required.\nAt 20 V: nominal 148 mW. At 5.5 V: 11.2 mW. Do not substitute 0.1 W 0603.\nHost source collapse, switch bounce, main-rail dynamics and USB suspend remain sample tests."
+    (at 119.38 190.5 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "0f11b1a7-6db7-426a-9240-94c5d49b342c"))
+  (text "DESIGN LIMIT: comparator tolerances and delay do not prove USB compliance or transient safety.\nCapture DATA_EN, main rail, VBUS and D+/D- on both prototypes before release."
+    (at 25.4 241.3 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "5c3d8a59-0916-48f9-898e-da321f3ed46b")))

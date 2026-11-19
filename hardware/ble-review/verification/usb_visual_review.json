@@ -1,0 +1,15 @@
+{
+  "state": "CHANGED_SCHEMATIC_REGIONS_VISUALLY_REVIEWED",
+  "physical_validation": false,
+  "renderer": "KiCad10.0.6 SVG + resvg_py0.5.0 at96dpi, 2000/2400px wide",
+  "reviewed": "J201 data pairing, nativeUSB/straps, U1101 reused channels, SW7201 OFF NC/two-wire note, both new sheets and recovery notes. New overlaps corrected. Unrelated inherited annotation layout not redesigned.",
+  "sha256": {
+    "mcu.kicad_sch": "4e8bbb3d1e926fcf9f2578a433abefbde5c5d5a0f6be1fd4691381a850884429",
+    "power.kicad_sch": "fe3c181fe09caf814e4e7393569ef54e33d7561f132fa8c813b6d40211fea629",
+    "isolation.kicad_sch": "c3a65013ba67694635c3fb5f3725c877f47189f0fdbb3d02f6e7503216f13541",
+    "ble_enable.kicad_sch": "8cb7da84e29bb978e3e372cb31332f9c08342654ff85ad5a28b68fc703536818",
+    "usb_service.kicad_sch": "f7b6c8d9498c60cf4b0a539b1cbb5b2de84de85e75ddfd64f109ab728a8d723a",
+    "usb_enable_gate.kicad_sch": "e2ccb282aac5172422f80fb8ec544881d7b3cac419a35fa1524d714043d67b01"
+  },
+  "time_utc": "2026-11-18T17:17:28.413684+00:00"
+}

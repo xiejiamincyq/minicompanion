@@ -1,0 +1,68 @@
+{
+  "assumptions": "1% enable resistors; TPS60231 EN total sink16uA; RUN other sink2.2uA; TMUX RON4.5ohm. All not-measured.",
+  "enable_corners": [
+    {
+      "pack_v": 2.5,
+      "en_run_on_min_v": 1.5261343514083157,
+      "bl_en_on_min_v": 1.525928940416524,
+      "en_run_off_unloaded_max_v": 1.7115163017691317
+    },
+    {
+      "pack_v": 2.7,
+      "en_run_on_min_v": 1.6525953592642268,
+      "bl_en_on_min_v": 1.6523785079849065,
+      "en_run_off_unloaded_max_v": 1.8484376059106622
+    },
+    {
+      "pack_v": 3.0,
+      "en_run_on_min_v": 1.8422868710480935,
+      "bl_en_on_min_v": 1.84205285933748,
+      "en_run_off_unloaded_max_v": 2.0538195621229582
+    },
+    {
+      "pack_v": 3.2,
+      "en_run_on_min_v": 1.9687478789040047,
+      "bl_en_on_min_v": 1.9685024269058629,
+      "en_run_off_unloaded_max_v": 2.1907408662644885
+    },
+    {
+      "pack_v": 4.141,
+      "en_run_on_min_v": 2.5637469208660666,
+      "bl_en_on_min_v": 2.5634476423151025,
+      "en_run_off_unloaded_max_v": 2.8349556022503895
+    },
+    {
+      "pack_v": 4.3,
+      "en_run_on_min_v": 2.6642834221115157,
+      "bl_en_on_min_v": 2.6639750485319666,
+      "en_run_off_unloaded_max_v": 2.9438080390429064
+    }
+  ],
+  "logic_nominal_v": 3.147222222222222,
+  "logic_static_bound_without_resistor_TCR_v": [
+    3.079486361744506,
+    3.2159672591153643
+  ],
+  "logic_static_bound_with_opposite_TCR_over_minus40_to85_v": [
+    3.071084386996552,
+    3.2247757629950438
+  ],
+  "feedback_leakage_caveat": "TI lists typical FB current0.01uA without maximum;180k bottom chosen perTI guidance. Typical FB bias causes about9.53mV output shift with953k top. Do not call numerical interval an unconditional guaranteed all-error bound.",
+  "bl_typical_total_ma": 58.064516129032256,
+  "bl_upper_estimate_including_3pct_line_ma": 67.22610722610722,
+  "bl_off_estimate_v": 0.14241,
+  "capacitor_engineering_estimates_uf": {
+    "input_2x22_at4p3V_tol_temp": 16.636927875270384,
+    "output_4x22_at3p3V_tol_temp": 40.51779446121805,
+    "pump_2p2_at5p5V_tol_temp": 1.5156231216798326,
+    "flying_0p47_at5p5V_tol_temp": 0.3406218735681473
+  },
+  "capacitance_status": "Typical vendor bias curves multiplied by worst initial tolerance and temperature allowance. Design estimates, not manufacturer guaranteed combined corners.",
+  "battery_current_estimate_a_at3V_logic600mA_eff80pct_backlight110mA": 0.9161939407487607,
+  "executed_checks": {
+    "enable_high_above_1p3_in_all_listed_corners": true,
+    "signal_below_3V_for_lowest_valid_tmux_supply": true,
+    "off_leakage_pull_down_under_0p3": true,
+    "static_rail_with_resistor_TCR_inside_3p0_to3p3_excluding_unbounded_FB_bias_and_transients": true
+  }
+}

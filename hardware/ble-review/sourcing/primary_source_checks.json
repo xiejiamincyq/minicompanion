@@ -1,0 +1,319 @@
+{
+  "checked_date_china": "2026-11-19",
+  "method": "公开官网网页读取；未登录下单、未占库存、未联系供应商。目录/SMT标签不是实时成交报价。",
+  "components": [
+    {
+      "mpn": "HUSB320-BA000-QN12R",
+      "manufacturer": "Hynetek",
+      "lcsc": "C7471906",
+      "package": "QFN-12(1.6x1.6)",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库",
+      "stock_status": "本轮公开文本未返回国内库存或人民币数量价",
+      "url": "https://item.szlcsc.com/8528239.html"
+    },
+    {
+      "mpn": "ERTJ0ET472H",
+      "manufacturer": "Panasonic",
+      "lcsc": "C542173",
+      "package": "0402",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库；器件在板外电池探头",
+      "stock_status": "国内实时量价未返回；国际LCSC页面显示缺货，不外推国内仓",
+      "url": "https://item.szlcsc.com/562863.html"
+    },
+    {
+      "mpn": "HS20HS072RX",
+      "manufacturer": "HS",
+      "lcsc": "C5329582",
+      "package": "12PIN FPC屏组件",
+      "packing": "袋装",
+      "smt_catalog_status": "国内页面有SMT扩展库标签，但本设计为板外插屏，不可混入主板贴装坐标",
+      "stock_status": "本轮公开文本未返回国内数量价/可用库存",
+      "url": "https://item.szlcsc.com/6087843.html"
+    },
+    {
+      "mpn": "MMBT3904-7-F",
+      "manufacturer": "Diodes Incorporated",
+      "lcsc": "C94514",
+      "package": "SOT-23",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库",
+      "stock_status": "本轮公开文本未返回国内库存或人民币数量价",
+      "url": "https://item.szlcsc.com/95712.html"
+    },
+    {
+      "mpn": "RC0603FR-071K1L",
+      "manufacturer": "Yageo",
+      "lcsc": "C137780",
+      "package": "0603",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库",
+      "stock_status": "本轮公开文本未返回国内库存或人民币数量价",
+      "url": "https://item.szlcsc.com/149096.html"
+    },
+    {
+      "mpn": "RC0603FR-0736KL",
+      "manufacturer": "Yageo",
+      "lcsc": "C114619",
+      "package": "0603",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库",
+      "stock_status": "本轮公开文本未返回国内库存或人民币数量价",
+      "url": "https://item.szlcsc.com/115863.html"
+    },
+    {
+      "mpn": "RC0603FR-073K9L",
+      "manufacturer": "Yageo",
+      "lcsc": "C114616",
+      "package": "0603",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库",
+      "stock_status": "本轮公开文本未返回国内库存或人民币数量价",
+      "url": "https://item.szlcsc.com/115860.html"
+    },
+    {
+      "mpn": "JS202011SCQN",
+      "manufacturer": "C&K / Littelfuse",
+      "lcsc": "C221666",
+      "package": "SMD DPDT",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标记SMT扩展库；USB维护模式ECO候选",
+      "stock_status": "国内当前库存及两颗总价待询",
+      "url": "https://item.szlcsc.com/222096.html",
+      "manufacturer_pdf": "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-js-series-datasheet?assetguid=aba42b08-0d2c-423b-813d-a2faa5a3bb14",
+      "manufacturer_pdf_revision": "2026-01-14，具体型号在第4页；N为non-shorting"
+    },
+    {
+      "mpn": "0603WAF220JT5E",
+      "manufacturer": "UNI-ROYAL",
+      "lcsc": "C23345",
+      "package": "0603 22ohm 1% 100mW",
+      "packing": "编带",
+      "smt_catalog_status": "待国内SMT最终匹配；精确MPN/C号由LCSC官方目录核实",
+      "stock_status": "国际库存不计入国内库存；无国内两台价格",
+      "url": "https://www.lcsc.com/product-detail/C23345.html"
+    },
+    {
+      "mpn": "TPD2EUSB30DRTR",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C97502",
+      "package": "DRT 3-pin",
+      "packing": "编带",
+      "smt_catalog_status": "未选入ECO；JLCPCB国际目录支持SMT",
+      "stock_status": "LCSC国际目录本轮显示缺货；国内量价未知",
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPD2EUSB30DRTR/C97502",
+      "manufacturer_pdf": "https://www.ti.com/lit/ds/symlink/tpd2eusb30.pdf",
+      "note": "备选研究记录，不在当前BOM。C5182099同名但厂商TECH PUBLIC、C3040102为Leiditech，不得按TI等效料替代。"
+    },
+    {
+      "mpn": "PESD5V0U2BT,215",
+      "manufacturer": "Nexperia",
+      "lcsc": "C85399",
+      "package": "SOT-23",
+      "packing": "按215订货码供货，实际上机包装待供方确认",
+      "smt_catalog_status": "JLCPCB国际目录标Extended及SMT；国内型号匹配待询",
+      "stock_status": "国内实时库存和人民币数量价未知",
+      "url": "https://jlcpcb.com/partdetail/Nexperia-PESD5V0U2BT215/C85399",
+      "manufacturer_pdf": "https://assets.nexperia.com/documents/data-sheet/PESD5V0U2BT.pdf",
+      "manufacturer_pdf_revision": "2025-08-21",
+      "note": "ECO选择；两路低电容ESD，1/2为信号、3公共端按datasheet应用接GND，不依赖VBUS电源轨。"
+    },
+    {
+      "mpn": "TPS3808G01DBVR",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C19653",
+      "package": "SOT-23-6",
+      "packing": "编带订货码；实际损耗待询",
+      "smt_catalog_status": "JLCPCB国际目录标Extended及SMT；国内型号匹配待询",
+      "stock_status": "国内实时库存和人民币数量价未知",
+      "url": "https://jlcpcb.com/partdetail/TexasInstruments-TPS3808G01DBVR/C19653"
+    },
+    {
+      "mpn": "RT0603BRD07100KL",
+      "manufacturer": "YAGEO",
+      "lcsc": "C122538",
+      "package": "0603 100kΩ 0.1% 25ppm/℃ 100mW 薄膜",
+      "packing": "待供方确认",
+      "smt_catalog_status": "LCSC精确MPN/C号及参数已核；国内SMT匹配待询",
+      "stock_status": "公开页面未返回实时库存/数量价；JLCPCB详情读取超时",
+      "url": "https://www.lcsc.com/product-detail/C122538.html",
+      "note": "R7304精密分压，不得换1%厚膜。"
+    },
+    {
+      "mpn": "RT0603BRD0710KL",
+      "manufacturer": "YAGEO",
+      "lcsc": "C95204",
+      "package": "0603 10kΩ 0.1% 25ppm/℃ 100mW 薄膜",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标SMT扩展库",
+      "stock_status": "公开页面未返回国内实时库存/数量价",
+      "url": "https://item.szlcsc.com/96405.html",
+      "note": "R7305精密分压，不得换1%厚膜。"
+    },
+    {
+      "mpn": "TS-1187A-B-A-B",
+      "manufacturer": "XKB Connection",
+      "lcsc": "C318884",
+      "package": "SMD-4P 5.1x5.1x1.5mm",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标SMT基础库",
+      "stock_status": "公开页面未返回国内实时库存/数量价",
+      "url": "https://item.szlcsc.com/299976.html"
+    },
+    {
+      "mpn": "0603WAF1002T5E",
+      "manufacturer": "UNI-ROYAL",
+      "lcsc": "C25804",
+      "package": "0603 10kΩ 1%",
+      "packing": "待供方确认",
+      "smt_catalog_status": "LCSC精确型号已核；国内SMT匹配待询",
+      "stock_status": "国内实时库存及数量价未取得",
+      "url": "https://www.lcsc.com/product-detail/C25804.html"
+    },
+    {
+      "mpn": "1206W4F2701T5E",
+      "manufacturer": "UNI-ROYAL",
+      "lcsc": "C17950",
+      "package": "1206 2.7kΩ 1% 250mW 200V",
+      "packing": "待供方确认",
+      "smt_catalog_status": "LCSC精确型号已核；国内SMT匹配待询",
+      "stock_status": "国内实时库存及数量价未取得；不外推国际缓存库存",
+      "url": "https://www.lcsc.com/product-detail/C17950.html",
+      "note": "R7309泄放；额定功率不等于壳内温升验收通过。"
+    },
+    {
+      "mpn": "RT0603BRD07180KL",
+      "manufacturer": "YAGEO",
+      "lcsc": "C326731",
+      "package": "0603 180kΩ 0.1% 25ppm/℃",
+      "packing": "编带（国内官网搜索摘要）",
+      "smt_catalog_status": "国内官网搜索摘要标SMT扩展库；国际JLC目录支持SMT",
+      "stock_status": "国内实时库存及数量价未取得；打开国内详情返回访问校验，未绕过",
+      "url": "https://item.szlcsc.com/306825.html",
+      "secondary_official_url": "https://jlcpcb.com/partdetail/YAGEO-RT0603BRD07180KL/C326731"
+    },
+    {
+      "mpn": "RC0603FR-0733KL",
+      "manufacturer": "YAGEO",
+      "lcsc": "C126359",
+      "package": "0603 33kΩ 1% 100mW",
+      "packing": "待供方确认",
+      "smt_catalog_status": "LCSC精确型号/C号已核；国内SMT匹配待询",
+      "stock_status": "国内实时库存及数量价未取得；不采用陈旧国际库存数字",
+      "url": "https://www.lcsc.com/product-detail/C126359.html"
+    },
+    {
+      "mpn": "0603WAF4702T5E",
+      "manufacturer": "UNI-ROYAL",
+      "lcsc": "C25819",
+      "package": "0603 47kΩ 1% 100mW 75V",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标SMT基础库",
+      "stock_status": "国内实时库存及数量价未取得",
+      "url": "https://item.szlcsc.com/26562.html"
+    },
+    {
+      "mpn": "TPS389001DSER",
+      "manufacturer": "Texas Instruments",
+      "lcsc": "C1509297",
+      "package": "WSON-6 1.5x1.5mm",
+      "packing": "编带",
+      "smt_catalog_status": "国内页面标SMT扩展库；最终USB主轨监督器",
+      "stock_status": "国内页面未返回实时库存/人民币数量价；不把国际缓存库存作为国内承诺",
+      "url": "https://item.szlcsc.com/1600012.html",
+      "manufacturer_pdf": "https://www.ti.com/lit/ds/symlink/tps3890.pdf"
+    },
+    {
+      "mpn": "RT0603BRD0715K8L",
+      "manufacturer": "YAGEO",
+      "lcsc": "C861143",
+      "package": "0603 15.8kΩ 0.1% 25ppm/℃ 100mW 75V",
+      "packing": "实际编带余量/上机损耗待供应商回复",
+      "smt_catalog_status": "LCSC官方精确MPN/C号已核；国内SMT匹配待最终回复",
+      "stock_status": "国内相似品搜索摘要有库存线索，非本料实时锁库；数量价待报价",
+      "url": "https://www.lcsc.com/product-detail/C861143.html",
+      "note": "R7310所用精密薄膜型号，不得替换为50ppm的RT0603BRE0715K8L。"
+    },
+    {
+      "mpn": "ARG03BTC9533",
+      "manufacturer": "Viking Tech",
+      "lcsc": "C2686436",
+      "package": "0603 953kΩ 0.1% 25ppm/℃ 100mW 75V",
+      "packing": "厂家订货码T为编带卷装；实际分切及上机数量待报",
+      "smt_catalog_status": "国际JLC目录标Extended及Economic/Standard SMT；国内可贴匹配待报",
+      "stock_status": "国际JLC官方搜索缓存曾显示3192库存，非国内实时库存、非采购锁定",
+      "url": "https://jlcpcb.com/partdetail/VikingTech-ARG03BTC9533/C2686436",
+      "manufacturer_pdf": "https://www.viking.com.tw/Templates/att/ARG_Series.pdf?lng=en",
+      "manufacturer_pdf_revision": "REV.A6，封面2022-01-26",
+      "note": "R603同规格询价候选，是否作为当前料以最终网表MPN为准；不因存在目录自动覆盖原BOM。"
+    },
+    {
+      "mpn": "0603WAF9003T5E",
+      "manufacturer": "UNI-ROYAL",
+      "lcsc": "C407504",
+      "package": "0603 900kΩ 1% 100mW 75V",
+      "packing": "实际编带/上机数量待报",
+      "smt_catalog_status": "精确同阻值询价候选；国内可贴库存待回复",
+      "stock_status": "LCSC官方搜索缓存显示Out of Stock；旧国内备货方案也无确定交期，不当现货",
+      "url": "https://www.lcsc.com/product-detail/C407504.html",
+      "domestic_url": "https://item.szlcsc.com/396061.html",
+      "note": "R7104为HUSB320-BA000-QN12R PORT下拉，非BQ25170 VSET；当前CAD是否换料以网表为准。"
+    },
+    {
+      "mpn": "SS-12D01-G040",
+      "manufacturer": "G-Switch",
+      "lcsc": "C2876014",
+      "package": "插件 8.8x3.9mm，4mm柄高",
+      "packing": "袋装",
+      "smt_catalog_status": "国内目录标SMT扩展库，但本设计为板外开关、委外两线焊接，不进入主板贴片CPL",
+      "stock_status": "国内实时库存/数量价待报价；国际缓存有存货线索不当国内锁库",
+      "url": "https://item.szlcsc.com/3084347.html",
+      "manufacturer_pdf": "https://datasheet.lcsc.com/datasheet/pdf/af2c04499242010f9bc8773a044bd472.pdf?productCode=C5446804",
+      "note": "精确国内C2876014页PDF为相同SS-12D01-GXXX厂家图，含G040：CR≤50mΩ，IR≥100MΩ@DC250V，非短接式，−25～70°C，10000次；未给寿命后接触/绝缘劣化量。"
+    },
+    {
+      "mpn": "FLY.103450.2000",
+      "manufacturer": "FLYOUNG",
+      "lcsc": "C5154898",
+      "package": "带PCM软包，最大52.5x35.0x10.3mm",
+      "packing": "成品保护包及原厂引线；实际包装/MOQ待报价",
+      "smt_catalog_status": "板外保护电池；禁止回流，不混入主板CPL，代装预焊原厂引线",
+      "stock_status": "本轮未取得当前C5154898公开商品页/实时库存；沿用历史立创SKU映射，供应商需按精确MPN与C号再核",
+      "url": "https://atta.szlcsc.com/upload/public/pdf/source/20220914/13782EFE1AFAAC30421033D3D832A3F8.pdf",
+      "manufacturer_pdf": "https://atta.szlcsc.com/upload/public/pdf/source/20220914/13782EFE1AFAAC30421033D3D832A3F8.pdf",
+      "manufacturer_pdf_revision": "FLY-103450-A0，2022-09-01",
+      "note": "原厂文档封面精确MPN已核；C号为历史采购证据。本轮核原厂整包持续上限1.5A、PCM极性及容量条件，不能以电芯2A代替整包额定。"
+    }
+  ],
+  "manufacturing_rules": [
+    {
+      "url": "https://www.jlc.com/portal/server_guide_17103.html",
+      "updated": "2025-04-23",
+      "facts": "Q14经济型只有5片贴2片；标准型可选贴2片及以上。Q15标准型出货尺寸至少70x70mm。"
+    },
+    {
+      "url": "https://www.jlc-smt.com/vtechnology",
+      "facts": "标准型2片起贴、支持双面；最小70x70mm且有工艺边/Mark要求。小板可评估拼板，不据此直接判拒单。"
+    },
+    {
+      "url": "https://www.jlc.com/portal/server_guide_20279.html",
+      "updated": "2024-12-12",
+      "facts": "商城有售而可贴列表没有的型号需申请增加，封装资料必须完整。"
+    },
+    {
+      "url": "https://www.jlc.com/portal/server_guide_4018.html",
+      "updated": "2025-04-23",
+      "facts": "官方收费示例双面工程150x2及钢网50x2；另有焊点、器件、上料、X-ray、重量/治具等，不是本项目实际报价。"
+    },
+    {
+      "url": "https://www.jlc-smt.com/order?smtOrderSource=pcb",
+      "facts": "公开订单页面有器件组装/组装说明、烧录、FCT选项；未证明本项目线束/NTC/外壳均已接单。"
+    }
+  ],
+  "limitations": [
+    "本轮不采用美元价换算国内人民币报价。",
+    "SRP4020TA-1R5M及CL21B225KBYNNNE部分国内页面返回访问校验，未绕过，继续标记待询。",
+    "任何SMT目录标签只证明目录中有对应入口；最终数量、库存、器件匹配和实际贴装范围仍由报价确认。"
+  ]
+}

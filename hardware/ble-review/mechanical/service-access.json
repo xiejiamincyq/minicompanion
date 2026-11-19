@@ -1,0 +1,31 @@
+{
+  "units": "mm",
+  "step_solids_checked": 16,
+  "results": {
+    "SERVICE": {
+      "center_case_xy_mm": [
+        44.65,
+        24.2
+      ],
+      "assumed_body_height_including_allowance_mm": 5.65,
+      "tool_depth_from_outside_to_assumed_top_mm": 16.144,
+      "overlaps_mm3": {}
+    },
+    "BOOT": {
+      "center_case_xy_mm": [
+        53.2,
+        26.0
+      ],
+      "assumed_body_height_including_allowance_mm": 1.7,
+      "tool_depth_from_outside_to_assumed_top_mm": 20.094,
+      "overlaps_mm3": {}
+    }
+  },
+  "physical_validation": "pending",
+  "scope": "Rigid bodies, STEP geometry and nominal positions. Excludes wires, tolerances, switch forces and user handling.",
+  "sha256": {
+    "parameters.json": "2cc364f8aa3458d84a3ffa22981aa052bcf98d709c26f1168de28601be644846",
+    "rear_shell.step": "e27ea5809d76989e8dbc06247abbb23d46b8b752e1337957cc9ff45eea5f668b",
+    "PRINT_rear_shell.stl": "1b9233a0ddd0a83e56730dc786a444b67fb10dda97f496c1dd9710f114da27df"
+  }
+}

@@ -1,3 +1,5 @@
+> 2026-11-19 · 此页保留早期设计背景。两台 BLE 样机从 [当前硬件入口](../../hardware/ble-review/README.md) 进入。
+
 > 2026-09-30 HW-NFC-019：下一版选择 TCA9517ADGKR 有源缓冲 + TPS22919DCKR 随 NFC 开关供电；完成比较与条件计算，尚未改 CAD。具体引脚表及验证边界见 [记录](validation/nfc-019/REVIEW.md)。
 
 > 2026-09-30 HW-NFC-018：修正默认下拉，完成 I²C 两节点条件计算；现有直通式总线不进入生产主板。下一项是分别约束两侧电平并处理模块内部掉电，见 [审查](validation/nfc-018/REVIEW.md)。

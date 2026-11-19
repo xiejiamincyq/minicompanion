@@ -1,3 +1,5 @@
+> 2026-11-19 · 此页保留早期设计背景。两台 BLE 样机从 [当前硬件入口](../hardware/ble-review/README.md) 进入。
+
 # Hardware Design
 
 ## PCB

@@ -1,0 +1,168 @@
+(footprint "Bourns_SRP4020TA"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Bourns SRP4020TA recommended layout from datasheet page1: outer span5.2, inner gap2.2, height2.4mm; derived copper rectangles1.50x2.40 centered+/-1.85mm. Soldermask0.05mm expansion and1:1 paste are local engineering starting values, NOT specified by Bourns; confirm with assembler. Non-polar. No3D model assigned. https://www.bourns.com/docs/Product-Datasheets/SRP4020TA.pdf")
+	(property "Reference" "REF**"
+		(at 0 -2.9 0)
+		(layer "F.SilkS")
+		(uuid "d22444c8-0a32-415e-84bb-3b2edce9ed1d")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "Bourns_SRP4020TA"
+		(at 0 2.9 0)
+		(layer "F.Fab")
+		(uuid "862c7d9b-1cdf-48e0-9a15-485436b75567")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6a56a6a3-3e99-4203-8916-4912e5b1c140")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9ad032b7-e767-4c8f-a77e-293b47bbbe2f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.35 -2.16)
+		(end 2.35 -2.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "138e01cf-a921-43d2-931c-9bc6e3444a24")
+	)
+	(fp_line
+		(start -2.35 2.16)
+		(end 2.35 2.16)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6ba4c4dc-0be7-4ac7-ae05-fa29c50e4b37")
+	)
+	(fp_line
+		(start -2.9 -2.55)
+		(end 2.9 -2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b20c5a20-2f4b-4a5f-a193-5afe1a2fac38")
+	)
+	(fp_line
+		(start -2.9 2.55)
+		(end -2.9 -2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "40f1119b-e1d1-4a72-8256-8b8ff61f980d")
+	)
+	(fp_line
+		(start 2.9 -2.55)
+		(end 2.9 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "50384a2b-95cd-4261-9772-259775c8fa92")
+	)
+	(fp_line
+		(start 2.9 2.55)
+		(end -2.9 2.55)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "76952d8b-778b-455d-81ea-687006013271")
+	)
+	(fp_line
+		(start -2.225 -2.03)
+		(end 2.225 -2.03)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e0f2b07c-9468-46a6-ae0e-f7a20e3a096e")
+	)
+	(fp_line
+		(start -2.225 2.03)
+		(end -2.225 -2.03)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "12472b31-8348-4e8d-b2b6-8b4de50b2294")
+	)
+	(fp_line
+		(start 2.225 -2.03)
+		(end 2.225 2.03)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "992e13c7-7ce8-48f6-afda-f2485f979d9a")
+	)
+	(fp_line
+		(start 2.225 2.03)
+		(end -2.225 2.03)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b7996bc3-7ce7-43c8-9ec5-3785df98581f")
+	)
+	(pad "1" smd rect
+		(at -1.85 0)
+		(size 1.5 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "feb2b14c-01db-4da3-8d6f-cb91238db834")
+	)
+	(pad "2" smd rect
+		(at 1.85 0)
+		(size 1.5 2.4)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.05)
+		(uuid "834d9f06-5ee0-4d46-aa4a-6ece1366683d")
+	)
+	(embedded_fonts no)
+)

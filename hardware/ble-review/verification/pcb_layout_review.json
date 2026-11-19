@@ -1,0 +1,64 @@
+{
+  "board_sha256": "35675f68e93142e07def0e88f09073ee1605d7398833b505377b71d052818954",
+  "original_board_sha256": "9a5667eb991860b95062c8a7ceff00264be82c1c68d4a0834d06fc491ed38ac4",
+  "original_unchanged": true,
+  "native_footprints": 110,
+  "copper_layers": 4,
+  "board_thickness_mm": 1.6062,
+  "drc_report": "quote/DRC.json",
+  "drc_report_sha256": "50a875b4810fdfea706bab2bfc4e3309c6b52ac08334946e25e6b33ebd8fe99f",
+  "drc_violations": 0,
+  "unconnected_items": 0,
+  "schematic_parity": 0,
+  "drc_exclusions": [],
+  "custom_rules_unchanged_from_baseline": true,
+  "placements": {
+    "SW7301": {
+      "x_mm": 154.65,
+      "y_mm": 77.7,
+      "side": "B.Cu",
+      "rotation_deg": 90.0
+    },
+    "SW7302": {
+      "x_mm": 163.2,
+      "y_mm": 79.5,
+      "side": "B.Cu",
+      "rotation_deg": 0.0
+    },
+    "C1102": {
+      "x_mm": 139.7,
+      "y_mm": 84.5,
+      "side": "F.Cu",
+      "rotation_deg": 0.0
+    },
+    "R1104": {
+      "x_mm": 146.0,
+      "y_mm": 90.0,
+      "side": "F.Cu",
+      "rotation_deg": 90.0
+    },
+    "TP1203": {
+      "x_mm": 154.0,
+      "y_mm": 84.0,
+      "side": "B.Cu",
+      "rotation_deg": 0.0
+    }
+  },
+  "SC_switch_land_pattern": {
+    "native_dimensions_asserted": true,
+    "file_sha256": "0d809555ababd8b7341b8901573d1dda2f56dddde988b00bcb632d086e0905f4",
+    "pad_mm": [
+      1.2,
+      2.5
+    ],
+    "column_pitch_mm": 2.5,
+    "row_center_spacing_mm": 5.5
+  },
+  "actual_native_PDFs_visually_reviewed": {
+    "pcb_front.pdf": "c357991699368922ffb134e63315737c6d9b3da2f12625d700a12e4a8d3b644d",
+    "pcb_back.pdf": "4cca38da00d56c7d359b191c5bd2ab924cd5a74b506145cd33723177bb985af3"
+  },
+  "usb_route_metrics": "verification/usb_route_metrics.json",
+  "physical_function_qualification": false,
+  "USB_full_speed_layout_deviation_preserved": true
+}

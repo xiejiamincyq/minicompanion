@@ -1,3 +1,9 @@
+# Mini Companion 硬件工作区
+
+本分支用于两台自用设备的设计和打样审查。打开 [当前硬件入口](hardware/ble-review/README.md) 即可找到 KiCad 工程、采购清单、外壳和验证记录。下面保存的是 Devotchi 原始项目说明，其 PCB 路径和量产资料属于上游设计。
+
+---
+
 # Devotchi
 
 A Tamagotchi-style portable device that connects to AI coding agents (Claude Code, Cursor, etc.) via the Model Context Protocol (MCP). Your Devotchi shows what the agent is doing, handles approval requests via physical buttons, and its mood reflects the project's health.

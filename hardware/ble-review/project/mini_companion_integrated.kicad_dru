@@ -1,0 +1,15 @@
+(version 1)
+
+# Manufacturer/standard land patterns have 0.15–0.19 mm internal copper gaps.
+# Allow the existing 0.15 mm board minimum only BETWEEN PADS of the SAME
+# listed footprint. Keep all pad-to-track, inter-footprint and power-route
+# clearances at their existing netclass values. This is not a blanket waiver.
+(rule "Accepted fine-pitch internal pad clearance"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Reference == B.Reference && (A.Reference == 'U602' || A.Reference == 'U606' || A.Reference == 'U1203' || A.Reference == 'U611' || A.Reference == 'U613')")
+  (constraint clearance (min 0.15mm))
+)
+
+(rule "Preserve non-ground ordinary via minimum"
+  (condition "A.Type == 'Via' && A.NetName != 'GND'")
+  (constraint via_diameter (min 0.6mm))
+)

@@ -1,0 +1,184 @@
+(footprint "WirePads_2_P2.54"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "2-wire direct-solder harness,2.54mm pitch,0.80mm finished PTH drill,1.80x3.50mm copper; ENGINEERING DESIGN, no vendor footprint claim. Through-hole pad is NOT strain relief: anchor jacket to enclosure with clamp/tie before board; provide service loop; no tensile load on solder. Keep each hole center>=3mm from board edge, copper>=1mm from edge; verify actual insulated wire and soldering access. No automatic3mm pitch substitution and no3D model.")
+	(property "Reference" "REF**"
+		(at 0 -2.7 0)
+		(layer "F.SilkS")
+		(uuid "8d64fc14-b95d-47b0-b61e-e74e4a4a9fb8")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Value" "WirePads_2_P2.54"
+		(at 0 2.7 0)
+		(layer "F.Fab")
+		(uuid "fe534fcb-ae55-4c26-a3bc-889b22722ef8")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40ccdad6-05e2-4ca2-8a6c-0508b5f6f313")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0c594275-1375-489c-a2c6-8e569f9fcd75")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "StrainRelief" "Enclosure clamp/tie mandatory; hole center >=3mm from board edge"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2132455e-b6ca-4de7-ba5b-b899533f4704")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.12)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.42 -2)
+		(end -2.42 -1.3)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "3ab7b2ab-9647-4f8a-aaf1-1e552af71491")
+	)
+	(fp_line
+		(start -2.42 -2)
+		(end -1.77 -2)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7e05d007-3881-488e-b61f-85c47f763034")
+	)
+	(fp_line
+		(start -2.42 -2)
+		(end 2.42 -2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0e2528db-0e12-491e-932e-5af1d9825047")
+	)
+	(fp_line
+		(start -2.42 2)
+		(end -2.42 -2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4558c209-e52a-4ee3-91cc-98cd057f846d")
+	)
+	(fp_line
+		(start 2.42 -2)
+		(end 2.42 2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d67275f-ad69-4c7e-bc4b-a9f3742f5b57")
+	)
+	(fp_line
+		(start 2.42 2)
+		(end -2.42 2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "9b78e332-d2f5-4572-a3bb-7d92a6733025")
+	)
+	(fp_line
+		(start -2.17 -1.75)
+		(end 2.17 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c0f77a01-662d-4faa-8502-da77861a212d")
+	)
+	(fp_line
+		(start -2.17 1.75)
+		(end -2.17 -1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4499895f-5222-4094-bb2c-b0a68a99d22b")
+	)
+	(fp_line
+		(start 2.17 -1.75)
+		(end 2.17 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b626a4ca-252c-4741-9604-e1723d74dfec")
+	)
+	(fp_line
+		(start 2.17 1.75)
+		(end -2.17 1.75)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "37b267f3-a7ff-4446-b444-3941bb4d8a99")
+	)
+	(pad "1" thru_hole oval
+		(at -1.27 0)
+		(size 1.8 3.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.05)
+		(uuid "257d4847-edd6-4a4a-bf3f-4bd6f9d32a0b")
+	)
+	(pad "2" thru_hole oval
+		(at 1.27 0)
+		(size 1.8 3.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.05)
+		(uuid "38dffc5d-5b9c-4e2f-b5cd-34e7939eba58")
+	)
+	(embedded_fonts no)
+)

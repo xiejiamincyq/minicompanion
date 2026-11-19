@@ -1,0 +1,85 @@
+{
+  "status": "PASS_SAVED_STATE_CAD_GATE",
+  "timestamp": "2026-11-13T02:15:44.458270+08:00",
+  "kicad_version": "10.0.6",
+  "counts": {
+    "erc_violations": 0,
+    "drc_violations": 0,
+    "unconnected_items": 0,
+    "schematic_parity_issues": 0
+  },
+  "ignored_or_excluded": {
+    "erc_report": [],
+    "drc_report": [],
+    "erc_exclusions": [],
+    "drc_exclusions": []
+  },
+  "input_and_report_sha256": {
+    "project\\mini_companion_integrated.kicad_pcb": "9a5667eb991860b95062c8a7ceff00264be82c1c68d4a0834d06fc491ed38ac4",
+    "project\\mini_companion_integrated.kicad_pro": "069940c73f58bf208d6312a20bdc76e68c3c692ab5c9554923e8355c3ba7087e",
+    "project\\mini_companion_integrated.kicad_dru": "43cb9db3e9bb857a262b58e6ebb20b7b4d6476b230d8a8790a829b069c18b4a7",
+    "project\\fp-lib-table": "92f192b48e0264d77e830dbb56f93db16fd8d7bde4ea1f2c36efa5f647325be2",
+    "project\\sym-lib-table": "daeeeb878bb1696d472d5e16337e0e5f477604c373e1e542137a0559404120d4",
+    "project\\checks\\final_erc.json": "f77b312af751a5aca15d2352fe50cf6ceb8c00dbf4df3908b932f4bbfd89be61",
+    "project\\checks\\final_drc.json": "90a92e8e36d76dc67b6fd0b2b99c4d5191c4e67bda62b988942ff0b90f3fc17f",
+    "project\\checks\\integrated_review.xml": "8f8183e4514e381346205b720825b938d90848762e39de281abfb180ce466bec",
+    "project\\ble_backlight.kicad_sch": "58456aced69d7961b02a8540a72f54d15282ef43ff759f42123ccb91ed802792",
+    "project\\ble_charger.kicad_sch": "e8b8d00c5a1f662c93b2fce9c13330ed44b577ce72a8cc71f7f0832e8fbca034",
+    "project\\ble_enable.kicad_sch": "5b49ad72c645c98f7867e2036f3b8d7d96a6126193d083c4c44db360098670fc",
+    "project\\ble_rail.kicad_sch": "6ea1ca7abb6eb5a013b11ef20c3acb9476a8e533f0c6092a2c3783d3dc7950b1",
+    "project\\ble_usb.kicad_sch": "23343a0ca4621e5cb9e97869602b7f1106c4308aecff5bc6c0eafe0e78e5a1d1",
+    "project\\display.kicad_sch": "1ad1f6b66a6a67d380d0a9954cfba75aded9bbab800bbbc654bcb81f89606420",
+    "project\\isolation.kicad_sch": "f149c195a89d5127edc6fe2798662045a832ea8ab432bf0775632b9a8c83417c",
+    "project\\mcu.kicad_sch": "92e8203789c20c43f088572dfd784b6531f91b942e69fb3dd0ab6a150cd78c8e",
+    "project\\mini_companion_integrated.kicad_sch": "fd165983a2b578b0c119fdd03db69f66f18b718b5f9a58c509124d2fc14c2271",
+    "project\\power.kicad_sch": "5d750fa6098eaef8cc1fa72a8b2d74e3e5786ac3ced9831b8882bde500c38da1",
+    "project\\user_input.kicad_sch": "09268bbad2a1cea652bdf8fad51206e4504cc9960131e2312416ed1a96b7a28f",
+    "project\\BLE_Reviewed.kicad_sym": "95a578edfdd8c507f283d43a776399bc8e04165e966bf478ab95ef25011bcfba",
+    "project\\IntegrationFPC.kicad_sym": "f03f526b4cb5d127f5a37b8c421ac07d38f22fd989099ab16e315563985ec978",
+    "project\\IntegrationUSB.kicad_sym": "65d25b363dd4b32b3075633270d81d3094925d09864dc9819aa9de7657eb7580",
+    "project\\Isolation.kicad_sym": "18f62e4692f8756962214372a0cd0a37f5169af8417ffd65b70ccc2e079a7f67"
+  },
+  "runs": [
+    {
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "sch",
+        "erc",
+        "--format",
+        "json",
+        "--severity-all",
+        "--exit-code-violations",
+        "--output",
+        "C:\\Users\\21604\\mini-companion-v1-local-20261001\\LOCAL_RESULTS\\20261113-ble-implementation\\project\\checks\\final_erc.json",
+        "C:\\Users\\21604\\mini-companion-v1-local-20261001\\LOCAL_RESULTS\\20261113-ble-implementation\\project\\mini_companion_integrated.kicad_sch"
+      ],
+      "exit_code": 0,
+      "stdout": "发现 0 条违规项\r\n已将 ERC 报告保存到文件 C:/Users/21604/mini-companion-v1-local-20261001/LOCAL_RESULTS/20261113-ble-implementation/project/checks/final_erc.json\r\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "C:\\Program Files\\KiCad\\10.0\\bin\\kicad-cli.exe",
+        "pcb",
+        "drc",
+        "--format",
+        "json",
+        "--all-track-errors",
+        "--schematic-parity",
+        "--severity-all",
+        "--exit-code-violations",
+        "--refill-zones",
+        "--save-board",
+        "--output",
+        "C:\\Users\\21604\\mini-companion-v1-local-20261001\\LOCAL_RESULTS\\20261113-ble-implementation\\project\\checks\\final_drc.json",
+        "C:\\Users\\21604\\mini-companion-v1-local-20261001\\LOCAL_RESULTS\\20261113-ble-implementation\\project\\mini_companion_integrated.kicad_pcb"
+      ],
+      "exit_code": 0,
+      "stdout": "发现 0 条违规项\r\n发现 0 个未连接的项目\r\n发现 0 个原理图一致性问题\r\n保存 DRC 报告到 C:/Users/21604/mini-companion-v1-local-20261001/LOCAL_RESULTS/20261113-ble-implementation/project/checks/final_drc.json\r\n已保存电路板\r\n",
+      "stderr": ""
+    }
+  ],
+  "physical_tests_executed": 0,
+  "manufacturing_release": false,
+  "scope": "Saved-state ERC + strict geometry/connectivity + native schematic parity. Electrical performance, mechanical tolerances, thermal, RF and production remain separate gates."
+}

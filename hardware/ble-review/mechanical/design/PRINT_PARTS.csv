@@ -1,0 +1,5 @@
+部件,每台件数,两台实际打印件数,单件体积_cm3,单件包围盒_mm,打印STL,状态
+button,3,6,0.161051,10.4 x 10.4 x 4.6,stl/PRINT_button.stl,未切片/未打印/未实物验收
+rear_shell,1,2,20.938266,70.0 x 70.0 x 23.2,stl/PRINT_rear_shell.stl,未切片/未打印/未实物验收
+front_shell,1,2,10.797259,70.0 x 70.0 x 13.2,stl/PRINT_front_shell.stl,未切片/未打印/未实物验收
+power_slider,1,2,0.015134,2.6 x 4.8 x 3.2,stl/PRINT_power_slider.stl,未切片/未打印/未实物验收

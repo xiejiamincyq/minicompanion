@@ -1,0 +1,1662 @@
+{
+  "copper_layers": 4,
+  "thickness_mm": 1.6062,
+  "edge_bbox_mm": [
+    45.2,
+    50.2
+  ],
+  "footprints": [
+    {
+      "ref": "R207",
+      "value": "100k",
+      "x_mm": 140.0,
+      "y_mm": 88.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "BAT_ADC"
+        }
+      ]
+    },
+    {
+      "ref": "SW504",
+      "value": "BTN_REJECT",
+      "x_mm": 131.0,
+      "y_mm": 105.4,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "BTN_REJECT"
+        },
+        {
+          "number": "2",
+          "net": "BTN_REJECT"
+        }
+      ]
+    },
+    {
+      "ref": "C501",
+      "value": "100n",
+      "x_mm": 138.5,
+      "y_mm": 105.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_ACTION"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP501",
+      "value": "TestPoint",
+      "x_mm": 137.25,
+      "y_mm": 98.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_ACTION"
+        }
+      ]
+    },
+    {
+      "ref": "TP103",
+      "value": "Rx",
+      "x_mm": 163.25,
+      "y_mm": 80.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "/mcu/Mcu_Rx"
+        }
+      ]
+    },
+    {
+      "ref": "C502",
+      "value": "100n",
+      "x_mm": 152.5,
+      "y_mm": 105.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_APPROVE"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R205",
+      "value": "3k",
+      "x_mm": 125.25,
+      "y_mm": 116.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(U202-PROG)"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R301",
+      "value": "22R",
+      "x_mm": 132.75,
+      "y_mm": 84.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "/display/LED_A"
+        }
+      ]
+    },
+    {
+      "ref": "G***",
+      "value": "LOGO",
+      "x_mm": 135.95,
+      "y_mm": 78.1,
+      "layer": "F.Cu",
+      "pads": []
+    },
+    {
+      "ref": "R401",
+      "value": "150R",
+      "x_mm": 125.374992,
+      "y_mm": 104.783782,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LED_PWM"
+        },
+        {
+          "number": "2",
+          "net": "Net-(D402-A)"
+        }
+      ]
+    },
+    {
+      "ref": "C103",
+      "value": "1µ",
+      "x_mm": 162.75,
+      "y_mm": 73.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "/mcu/MCU_EN"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "U101",
+      "value": "ESP32-S3-MINI-1-N4R2",
+      "x_mm": 151.65,
+      "y_mm": 75.8,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "net": "+3V3"
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U101-IO0-Pad4)"
+        },
+        {
+          "number": "5",
+          "net": "unconnected-(U101-IO1-Pad5)"
+        },
+        {
+          "number": "6",
+          "net": "BAT_ADC"
+        },
+        {
+          "number": "7",
+          "net": "unconnected-(U101-IO3-Pad7)"
+        },
+        {
+          "number": "8",
+          "net": "BTN_APPROVE"
+        },
+        {
+          "number": "9",
+          "net": "BTN_REJECT"
+        },
+        {
+          "number": "10",
+          "net": "BTN_ACTION"
+        },
+        {
+          "number": "11",
+          "net": "BTN_WAKE"
+        },
+        {
+          "number": "12",
+          "net": "DISP_RST"
+        },
+        {
+          "number": "13",
+          "net": "DISP_DC"
+        },
+        {
+          "number": "14",
+          "net": "DISP_CS"
+        },
+        {
+          "number": "15",
+          "net": "DISP_MOSI"
+        },
+        {
+          "number": "16",
+          "net": "DISP_SCLK"
+        },
+        {
+          "number": "17",
+          "net": "DISP_BL"
+        },
+        {
+          "number": "18",
+          "net": "unconnected-(U101-IO14-Pad18)"
+        },
+        {
+          "number": "19",
+          "net": "unconnected-(U101-IO15-Pad19)"
+        },
+        {
+          "number": "20",
+          "net": "unconnected-(U101-IO16-Pad20)"
+        },
+        {
+          "number": "21",
+          "net": "PWR_STDBY"
+        },
+        {
+          "number": "22",
+          "net": "PWR_CHRG"
+        },
+        {
+          "number": "23",
+          "net": "USB_DN"
+        },
+        {
+          "number": "24",
+          "net": "USB_DP"
+        },
+        {
+          "number": "25",
+          "net": "unconnected-(U101-IO21-Pad25)"
+        },
+        {
+          "number": "26",
+          "net": "unconnected-(U101-IO26-Pad26)"
+        },
+        {
+          "number": "27",
+          "net": "unconnected-(U101-IO47-Pad27)"
+        },
+        {
+          "number": "28",
+          "net": "unconnected-(U101-IO33-Pad28)"
+        },
+        {
+          "number": "29",
+          "net": "unconnected-(U101-IO34-Pad29)"
+        },
+        {
+          "number": "30",
+          "net": "unconnected-(U101-IO48-Pad30)"
+        },
+        {
+          "number": "31",
+          "net": "unconnected-(U101-IO35-Pad31)"
+        },
+        {
+          "number": "32",
+          "net": "unconnected-(U101-IO36-Pad32)"
+        },
+        {
+          "number": "33",
+          "net": "MOTOR_PWM"
+        },
+        {
+          "number": "34",
+          "net": "LED_PWM"
+        },
+        {
+          "number": "35",
+          "net": "unconnected-(U101-IO39-Pad35)"
+        },
+        {
+          "number": "36",
+          "net": "unconnected-(U101-IO40-Pad36)"
+        },
+        {
+          "number": "37",
+          "net": "unconnected-(U101-IO41-Pad37)"
+        },
+        {
+          "number": "38",
+          "net": "unconnected-(U101-IO42-Pad38)"
+        },
+        {
+          "number": "39",
+          "net": "/mcu/Mcu_Tx"
+        },
+        {
+          "number": "40",
+          "net": "/mcu/Mcu_Rx"
+        },
+        {
+          "number": "41",
+          "net": "unconnected-(U101-IO45-Pad41)"
+        },
+        {
+          "number": "42",
+          "net": "GND"
+        },
+        {
+          "number": "43",
+          "net": "GND"
+        },
+        {
+          "number": "44",
+          "net": "unconnected-(U101-IO46-Pad44)"
+        },
+        {
+          "number": "45",
+          "net": "/mcu/MCU_EN"
+        },
+        {
+          "number": "46",
+          "net": "GND"
+        },
+        {
+          "number": "47",
+          "net": "GND"
+        },
+        {
+          "number": "48",
+          "net": "GND"
+        },
+        {
+          "number": "49",
+          "net": "GND"
+        },
+        {
+          "number": "50",
+          "net": "GND"
+        },
+        {
+          "number": "51",
+          "net": "GND"
+        },
+        {
+          "number": "52",
+          "net": "GND"
+        },
+        {
+          "number": "53",
+          "net": "GND"
+        },
+        {
+          "number": "54",
+          "net": "GND"
+        },
+        {
+          "number": "55",
+          "net": "GND"
+        },
+        {
+          "number": "56",
+          "net": "GND"
+        },
+        {
+          "number": "57",
+          "net": "GND"
+        },
+        {
+          "number": "58",
+          "net": "GND"
+        },
+        {
+          "number": "59",
+          "net": "GND"
+        },
+        {
+          "number": "60",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "61",
+          "net": "GND"
+        },
+        {
+          "number": "62",
+          "net": "GND"
+        },
+        {
+          "number": "63",
+          "net": "GND"
+        },
+        {
+          "number": "64",
+          "net": "GND"
+        },
+        {
+          "number": "65",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "D401",
+      "value": "1N5819W S4_C42441798",
+      "x_mm": 127.5,
+      "y_mm": 95.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "Net-(D401-A)"
+        }
+      ]
+    },
+    {
+      "ref": "R101",
+      "value": "10k",
+      "x_mm": 162.75,
+      "y_mm": 77.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "/mcu/MCU_EN"
+        }
+      ]
+    },
+    {
+      "ref": "TP102",
+      "value": "Tx",
+      "x_mm": 163.25,
+      "y_mm": 86.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "/mcu/Mcu_Tx"
+        }
+      ]
+    },
+    {
+      "ref": "C203",
+      "value": "100n",
+      "x_mm": 163.0,
+      "y_mm": 112.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(U201-VCC)"
+        },
+        {
+          "number": "2",
+          "net": "-BATT"
+        }
+      ]
+    },
+    {
+      "ref": "C204",
+      "value": "1µ",
+      "x_mm": 152.0,
+      "y_mm": 95.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP504",
+      "value": "TestPoint",
+      "x_mm": 129.25,
+      "y_mm": 99.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_REJECT"
+        }
+      ]
+    },
+    {
+      "ref": "R502",
+      "value": "10k",
+      "x_mm": 152.5,
+      "y_mm": 102.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "BTN_APPROVE"
+        }
+      ]
+    },
+    {
+      "ref": "SW101",
+      "value": "reset_btn",
+      "x_mm": 145.0,
+      "y_mm": 95.875,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "/mcu/MCU_EN"
+        },
+        {
+          "number": "2",
+          "net": "/mcu/MCU_EN"
+        }
+      ]
+    },
+    {
+      "ref": "SW501",
+      "value": "BTN_ACTION",
+      "x_mm": 145.0,
+      "y_mm": 105.4,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "BTN_ACTION"
+        },
+        {
+          "number": "2",
+          "net": "BTN_ACTION"
+        }
+      ]
+    },
+    {
+      "ref": "R501",
+      "value": "10k",
+      "x_mm": 138.5,
+      "y_mm": 102.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "BTN_ACTION"
+        }
+      ]
+    },
+    {
+      "ref": "R302",
+      "value": "1k",
+      "x_mm": 132.75,
+      "y_mm": 87.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "DISP_BL"
+        }
+      ]
+    },
+    {
+      "ref": "U301",
+      "value": "HS20HS072RX",
+      "x_mm": 18.145,
+      "y_mm": 70.125,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "unconnected-(U301-GND-Pad1)"
+        },
+        {
+          "number": "2",
+          "net": "unconnected-(U301-CS-Pad2)"
+        },
+        {
+          "number": "3",
+          "net": "unconnected-(U301-RS-Pad3)"
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U301-SCL-Pad4)"
+        },
+        {
+          "number": "5",
+          "net": "unconnected-(U301-SDA-Pad5)"
+        },
+        {
+          "number": "6",
+          "net": "unconnected-(U301-RST-Pad6)"
+        },
+        {
+          "number": "7",
+          "net": "unconnected-(U301-NC-Pad7)"
+        },
+        {
+          "number": "8",
+          "net": "unconnected-(U301-I{slash}O-VCC-Pad8)"
+        },
+        {
+          "number": "9",
+          "net": "unconnected-(U301-VCC-Pad9)"
+        },
+        {
+          "number": "10",
+          "net": "unconnected-(U301-A-Pad10)"
+        },
+        {
+          "number": "11",
+          "net": "unconnected-(U301-K-Pad11)"
+        },
+        {
+          "number": "12",
+          "net": "unconnected-(U301-GND-Pad12)"
+        }
+      ]
+    },
+    {
+      "ref": "J201",
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "x_mm": 145.0,
+      "y_mm": 117.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "A1",
+          "net": "GND"
+        },
+        {
+          "number": "A4",
+          "net": "VBUS"
+        },
+        {
+          "number": "A5",
+          "net": "Net-(J201-CC1)"
+        },
+        {
+          "number": "A6",
+          "net": "USB_DP"
+        },
+        {
+          "number": "A7",
+          "net": "USB_DN"
+        },
+        {
+          "number": "A8",
+          "net": "unconnected-(J201-SBU1-PadA8)"
+        },
+        {
+          "number": "A9",
+          "net": "VBUS"
+        },
+        {
+          "number": "A12",
+          "net": "GND"
+        },
+        {
+          "number": "B1",
+          "net": "GND"
+        },
+        {
+          "number": "B4",
+          "net": "VBUS"
+        },
+        {
+          "number": "B5",
+          "net": "Net-(J201-CC2)"
+        },
+        {
+          "number": "B6",
+          "net": "USB_DP"
+        },
+        {
+          "number": "B7",
+          "net": "USB_DN"
+        },
+        {
+          "number": "B8",
+          "net": "unconnected-(J201-SBU2-PadB8)"
+        },
+        {
+          "number": "B9",
+          "net": "VBUS"
+        },
+        {
+          "number": "B12",
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "net": "GND"
+        },
+        {
+          "number": "S1",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C101",
+      "value": "22µ",
+      "x_mm": 139.0,
+      "y_mm": 74.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C504",
+      "value": "100n",
+      "x_mm": 133.0,
+      "y_mm": 99.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_REJECT"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "H101",
+      "value": "MountingHole_Pad",
+      "x_mm": 163.5,
+      "y_mm": 99.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C102",
+      "value": "100n",
+      "x_mm": 142.25,
+      "y_mm": 75.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R201",
+      "value": "1k",
+      "x_mm": 164.0,
+      "y_mm": 116.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "Net-(U201-VCC)"
+        }
+      ]
+    },
+    {
+      "ref": "U203",
+      "value": "ME6211C33M5",
+      "x_mm": 156.1375,
+      "y_mm": 95.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "net": "+BATT"
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U203-NC-Pad4)"
+        },
+        {
+          "number": "5",
+          "net": "+3V3"
+        }
+      ]
+    },
+    {
+      "ref": "TP502",
+      "value": "TestPoint",
+      "x_mm": 155.75,
+      "y_mm": 100.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BTN_APPROVE"
+        }
+      ]
+    },
+    {
+      "ref": "SW502",
+      "value": "BTN_APPROVE",
+      "x_mm": 159.0,
+      "y_mm": 105.4,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "BTN_APPROVE"
+        },
+        {
+          "number": "2",
+          "net": "BTN_APPROVE"
+        }
+      ]
+    },
+    {
+      "ref": "R204",
+      "value": "5k1",
+      "x_mm": 138.5,
+      "y_mm": 108.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(J201-CC1)"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R208",
+      "value": "100k",
+      "x_mm": 141.75,
+      "y_mm": 88.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BAT_ADC"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP205",
+      "value": "TestPoint",
+      "x_mm": 155.0,
+      "y_mm": 90.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        }
+      ]
+    },
+    {
+      "ref": "TP208",
+      "value": "TestPoint",
+      "x_mm": 139.0,
+      "y_mm": 84.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "BAT_ADC"
+        }
+      ]
+    },
+    {
+      "ref": "D402",
+      "value": "FC-1608G1-520",
+      "x_mm": 125.374992,
+      "y_mm": 108.783782,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "Net-(D402-A)"
+        }
+      ]
+    },
+    {
+      "ref": "U202",
+      "value": "TP4056-42-ESOP8",
+      "x_mm": 131.825,
+      "y_mm": 114.3,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "",
+          "net": ""
+        },
+        {
+          "number": "1",
+          "net": "Net-(U202-TEMP)"
+        },
+        {
+          "number": "2",
+          "net": "Net-(U202-PROG)"
+        },
+        {
+          "number": "3",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "net": "VBUS"
+        },
+        {
+          "number": "5",
+          "net": "+BATT"
+        },
+        {
+          "number": "6",
+          "net": "PWR_STDBY"
+        },
+        {
+          "number": "7",
+          "net": "PWR_CHRG"
+        },
+        {
+          "number": "8",
+          "net": "VBUS"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        },
+        {
+          "number": "9",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "U201",
+      "value": "DW01A",
+      "x_mm": 159.5,
+      "y_mm": 113.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "/power/MOFETS_G1"
+        },
+        {
+          "number": "2",
+          "net": "Net-(U201-CS)"
+        },
+        {
+          "number": "3",
+          "net": "/power/MOFETS_G2"
+        },
+        {
+          "number": "4",
+          "net": "unconnected-(U201-TD-Pad4)"
+        },
+        {
+          "number": "5",
+          "net": "Net-(U201-VCC)"
+        },
+        {
+          "number": "6",
+          "net": "-BATT"
+        }
+      ]
+    },
+    {
+      "ref": "Q301",
+      "value": "AO3400A",
+      "x_mm": 133.0,
+      "y_mm": 90.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "DISP_BL"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "net": "/display/LED_K"
+        }
+      ]
+    },
+    {
+      "ref": "TP202",
+      "value": "TestPoint",
+      "x_mm": 156.0,
+      "y_mm": 118.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP104",
+      "value": "TestPoint",
+      "x_mm": 125.5,
+      "y_mm": 101.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "LED_PWM"
+        }
+      ]
+    },
+    {
+      "ref": "TP206",
+      "value": "TestPoint",
+      "x_mm": 161.5,
+      "y_mm": 90.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        }
+      ]
+    },
+    {
+      "ref": "R402",
+      "value": "1k",
+      "x_mm": 138.990764,
+      "y_mm": 93.13707,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "MOTOR_PWM"
+        }
+      ]
+    },
+    {
+      "ref": "C301",
+      "value": "1µ",
+      "x_mm": 131.0,
+      "y_mm": 74.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "Q201",
+      "value": "FS8205A_C2830320",
+      "x_mm": 154.0,
+      "y_mm": 113.45,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "-BATT"
+        },
+        {
+          "number": "2",
+          "net": "/power/MOFETS_D1{slash}D2"
+        },
+        {
+          "number": "3",
+          "net": "GND"
+        },
+        {
+          "number": "4",
+          "net": "/power/MOFETS_G2"
+        },
+        {
+          "number": "5",
+          "net": "/power/MOFETS_D1{slash}D2"
+        },
+        {
+          "number": "6",
+          "net": "/power/MOFETS_G1"
+        }
+      ]
+    },
+    {
+      "ref": "C302",
+      "value": "1µ",
+      "x_mm": 134.0,
+      "y_mm": 74.25,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C202",
+      "value": "10µ",
+      "x_mm": 137.25,
+      "y_mm": 115.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBUS"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R202",
+      "value": "1k",
+      "x_mm": 159.75,
+      "y_mm": 116.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(U201-CS)"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP101",
+      "value": "TestPoint",
+      "x_mm": 127.0,
+      "y_mm": 72.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        }
+      ]
+    },
+    {
+      "ref": "Q401",
+      "value": "AO3400A",
+      "x_mm": 127.5,
+      "y_mm": 90.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "MOTOR_PWM"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        },
+        {
+          "number": "3",
+          "net": "Net-(D401-A)"
+        }
+      ]
+    },
+    {
+      "ref": "R203",
+      "value": "5k1",
+      "x_mm": 152.5,
+      "y_mm": 108.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(J201-CC2)"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "C201",
+      "value": "10µ",
+      "x_mm": 137.25,
+      "y_mm": 111.75,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R504",
+      "value": "10k",
+      "x_mm": 133.0,
+      "y_mm": 96.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "BTN_REJECT"
+        }
+      ]
+    },
+    {
+      "ref": "C205",
+      "value": "1µ",
+      "x_mm": 160.25,
+      "y_mm": 95.0,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+3V3"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "FPC301",
+      "value": "AFC01-S12FCA-00",
+      "x_mm": 127.5,
+      "y_mm": 81.1,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        },
+        {
+          "number": "2",
+          "net": "DISP_CS"
+        },
+        {
+          "number": "3",
+          "net": "DISP_DC"
+        },
+        {
+          "number": "4",
+          "net": "DISP_SCLK"
+        },
+        {
+          "number": "5",
+          "net": "DISP_MOSI"
+        },
+        {
+          "number": "6",
+          "net": "DISP_RST"
+        },
+        {
+          "number": "7",
+          "net": "unconnected-(FPC301-Pad7)"
+        },
+        {
+          "number": "8",
+          "net": "+3V3"
+        },
+        {
+          "number": "9",
+          "net": "+3V3"
+        },
+        {
+          "number": "10",
+          "net": "/display/LED_A"
+        },
+        {
+          "number": "11",
+          "net": "/display/LED_K"
+        },
+        {
+          "number": "12",
+          "net": "GND"
+        },
+        {
+          "number": "13",
+          "net": "GND"
+        },
+        {
+          "number": "14",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "R206",
+      "value": "10k",
+      "x_mm": 125.25,
+      "y_mm": 112.5,
+      "layer": "F.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "Net-(U202-TEMP)"
+        },
+        {
+          "number": "2",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "TP203",
+      "value": "TestPoint",
+      "x_mm": 144.25,
+      "y_mm": 108.5,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "G***",
+      "value": "LOGO",
+      "x_mm": 145.0,
+      "y_mm": 95.0,
+      "layer": "B.Cu",
+      "pads": []
+    },
+    {
+      "ref": "TP204",
+      "value": "TestPoint",
+      "x_mm": 159.25,
+      "y_mm": 102.0,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        }
+      ]
+    },
+    {
+      "ref": "TP207",
+      "value": "TestPoint",
+      "x_mm": 159.25,
+      "y_mm": 114.75,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "-BATT"
+        }
+      ]
+    },
+    {
+      "ref": "J202",
+      "value": "Battery_conn",
+      "x_mm": 162.25,
+      "y_mm": 108.0,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "-BATT"
+        },
+        {
+          "number": "MP",
+          "net": ""
+        },
+        {
+          "number": "MP",
+          "net": ""
+        }
+      ]
+    },
+    {
+      "ref": "TP201",
+      "value": "TestPoint",
+      "x_mm": 148.5,
+      "y_mm": 108.5,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "VBUS"
+        }
+      ]
+    },
+    {
+      "ref": "TP105",
+      "value": "TestPoint",
+      "x_mm": 153.5,
+      "y_mm": 73.75,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "GND"
+        }
+      ]
+    },
+    {
+      "ref": "J401",
+      "value": "Motor",
+      "x_mm": 127.5,
+      "y_mm": 96.0,
+      "layer": "B.Cu",
+      "pads": [
+        {
+          "number": "1",
+          "net": "+BATT"
+        },
+        {
+          "number": "2",
+          "net": "Net-(D401-A)"
+        }
+      ]
+    }
+  ]
+}

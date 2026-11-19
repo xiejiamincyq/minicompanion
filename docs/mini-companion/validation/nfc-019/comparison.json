@@ -1,0 +1,26 @@
+{
+  "status": "selection_math_only_no_CAD_change",
+  "selected_for_next_CAD": "TCA9517ADGKR plus TPS22919DCKR switched supply",
+  "conditional_margins_V": {
+    "host_receive_low": 0.18438600000000005,
+    "module_receive_low": 0.43789000000000006,
+    "module_to_A_high": 0.9091992000000002,
+    "EN_high": 0.07836189294225537,
+    "EN_float_low_at_2V7": 0.13117900000000016
+  },
+  "conditional_EN_float_V": 0.6788209999999999,
+  "supervisor_sink_mA": 1.4796069788797062,
+  "6mA_budget_battery_mAh_48h_always_on": 291.2050874403816,
+  "6mA_budget_battery_mAh_40min_on": 4.044515103338632,
+  "assumptions": [
+    "Buffer 6mA is a planning allowance from differing datasheet conditions, not a guaranteed 3.18V maximum",
+    "3.18V, 3.7V battery, 85 percent converter efficiency, 40 minutes active over 48h",
+    "Power switch losses, pullup currents, leakage and NFC itself excluded from this incremental comparison",
+    "EN leakage and host GPIO output specifications require operating-point confirmation",
+    "Both buffer supply pins use a gated host rail; module pullups remain on its own internal rail"
+  ],
+  "source_sha256": {
+    "tca9517a.pdf": "ad2d7dc5994583006aa21b67ee9f18507a2698ad9366285dff56816f065790c6",
+    "tps22919.pdf": "743c59b01fb0891d2d0f1faba779161cd2d2b6c18edf68e6d5b3279016240c84"
+  }
+}

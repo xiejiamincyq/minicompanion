@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 07: Arcade Cabinet — 100×80×140mm (W×D×H)</text>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#E8E8E8" stroke-width="0.3"/>
+
+  <!-- VIEW 1: Front view (top-left) -->
+  <text x="200" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+  <!-- Cabinet body -->
+  <rect x="110" y="80" width="180" height="340" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Marquee at top -->
+  <rect x="115" y="85" width="170" height="35" rx="2" fill="#FFD700" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="107" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">DEVOTCHI</text>
+  <!-- Arcade bezel around screen -->
+  <rect x="120" y="125" width="160" height="145" rx="2" fill="#333" stroke="black" stroke-width="0.5"/>
+  <!-- Screen (portrait) -->
+  <rect x="132" y="133" width="136" height="128" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="200" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#4477AA">5.0" SSD1963</text>
+  <text x="200" y="212" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#4477AA">108×64.8mm active</text>
+  <!-- Control panel shelf -->
+  <path d="M120,280 L280,280 L280,350 L120,350 Z" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <!-- 3 dome buttons -->
+  <circle cx="160" cy="305" r="12" fill="#CC3333" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="305" r="12" fill="#33CC33" stroke="black" stroke-width="0.5"/>
+  <circle cx="240" cy="305" r="12" fill="#3333CC" stroke="black" stroke-width="0.5"/>
+  <!-- Joystick cap -->
+  <circle cx="200" cy="340" r="8" fill="#222" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="340" r="4" fill="#444" stroke="black" stroke-width="0.3"/>
+  <!-- Lower cabinet -->
+  <rect x="110" y="350" width="180" height="70" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Dimension: width 100mm -->
+  <line x1="110" y1="435" x2="290" y2="435" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="433" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">100mm</text>
+  <!-- Dimension: height 140mm -->
+  <line x1="305" y1="80" x2="305" y2="420" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="325" y="250" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,325,250)">140mm</text>
+
+  <!-- VIEW 2: Side profile (top-center) -->
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+  <!-- Cabinet side outline -->
+  <path d="M540,80 L620,80 L620,420 L540,420 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Marquee top -->
+  <rect x="540" y="85" width="80" height="35" fill="#FFD700" stroke="black" stroke-width="0.5"/>
+  <!-- Screen area with 15° tilt -->
+  <path d="M545,125 L620,125 L620,270 L545,250 Z" fill="#333" stroke="black" stroke-width="0.5"/>
+  <line x1="550" y1="133" x2="615" y2="133" stroke="#B0D4F1" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <line x1="550" y1="245" x2="615" y2="260" stroke="#B0D4F1" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <!-- Screen surface tilted 15° -->
+  <line x1="548" y1="130" x2="548" y2="248" stroke="#B0D4F1" stroke-width="1.5"/>
+  <text x="533" y="190" text-anchor="end" font-family="sans-serif" font-size="9" fill="#4477AA">15°</text>
+  <!-- Control panel shelf angle -->
+  <path d="M540,270 L620,280 L620,350 L540,350 Z" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <text x="580" y="315" text-anchor="middle" font-family="sans-serif" font-size="8">ctrl panel</text>
+  <!-- Lower body -->
+  <rect x="540" y="350" width="80" height="70" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Depth dimension 80mm -->
+  <line x1="540" y1="435" x2="620" y2="435" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="580" y="433" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">80mm</text>
+  <!-- Height dimension -->
+  <line x1="635" y1="80" x2="635" y2="420" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="655" y="250" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,655,250)">140mm</text>
+  <!-- 15° angle indicator -->
+  <path d="M548,248 Q548,258 555,260" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+
+  <!-- VIEW 3: Back view (top-right) -->
+  <text x="1000" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+  <!-- Flat back panel -->
+  <rect x="910" y="80" width="180" height="340" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Ventilation grid -->
+  <line x1="950" y1="120" x2="1050" y2="120" stroke="black" stroke-width="0.3"/>
+  <line x1="950" y1="128" x2="1050" y2="128" stroke="black" stroke-width="0.3"/>
+  <line x1="950" y1="136" x2="1050" y2="136" stroke="black" stroke-width="0.3"/>
+  <line x1="950" y1="144" x2="1050" y2="144" stroke="black" stroke-width="0.3"/>
+  <line x1="950" y1="152" x2="1050" y2="152" stroke="black" stroke-width="0.3"/>
+  <line x1="950" y1="160" x2="1050" y2="160" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="178" text-anchor="middle" font-family="sans-serif" font-size="8">ventilation</text>
+  <!-- USB-C port -->
+  <rect x="986" y="380" width="28" height="10" rx="3" fill="#666" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="404" text-anchor="middle" font-family="sans-serif" font-size="8">USB-C</text>
+  <text x="1000" y="414" text-anchor="middle" font-family="sans-serif" font-size="8">8.94×3.26mm</text>
+  <!-- Hidden edges: screen module dashed -->
+  <rect x="932" y="200" width="136" height="100" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="4,3"/>
+  <text x="1000" y="255" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">screen (hidden)</text>
+
+  <!-- VIEW 4: Top-down view (bottom-left) -->
+  <text x="200" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+  <!-- Marquee area from above -->
+  <rect x="110" y="500" width="180" height="80" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Marquee top surface -->
+  <rect x="115" y="505" width="170" height="25" fill="#FFD700" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="522" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">MARQUEE</text>
+  <!-- Screen bezel from above (angled back) -->
+  <rect x="120" y="535" width="160" height="15" fill="#333" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="546" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">screen (angled)</text>
+  <!-- Control panel from above -->
+  <rect x="120" y="555" width="160" height="20" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <!-- Buttons from above -->
+  <circle cx="155" cy="565" r="5" fill="#CC3333" stroke="black" stroke-width="0.3"/>
+  <circle cx="175" cy="565" r="5" fill="#33CC33" stroke="black" stroke-width="0.3"/>
+  <circle cx="195" cy="565" r="5" fill="#3333CC" stroke="black" stroke-width="0.3"/>
+  <circle cx="235" cy="565" r="4" fill="#222" stroke="black" stroke-width="0.3"/>
+  <!-- Width dim -->
+  <line x1="110" y1="600" x2="290" y2="600" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="598" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">100mm</text>
+  <!-- Depth dim -->
+  <line x1="305" y1="500" x2="305" y2="580" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="325" y="540" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,325,540)">80mm</text>
+
+  <!-- VIEW 5: Cross-section (bottom-center) -->
+  <text x="600" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Vertical Cut)</text>
+  <!-- Outer shell cross-section -->
+  <path d="M520,500 L680,500 L680,840 L520,840 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Interior cavity -->
+  <rect x="524" y="504" width="152" height="332" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Marquee area -->
+  <rect x="524" y="504" width="152" height="30" fill="#FFD700" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="523" text-anchor="middle" font-family="sans-serif" font-size="8">marquee</text>
+  <!-- Screen module tilted 15° -->
+  <g transform="rotate(-15,570,600)">
+    <rect x="540" y="545" width="60" height="115" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="570" y="605" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">screen</text>
+    <text x="570" y="618" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#4477AA">4.5mm</text>
+  </g>
+  <!-- PCB behind screen -->
+  <rect x="530" y="690" width="140" height="5" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="688" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#2E7D32">PCB 110×65×1.6mm</text>
+  <!-- Speaker at bottom -->
+  <ellipse cx="600" cy="780" rx="30" ry="8" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="783" text-anchor="middle" font-family="sans-serif" font-size="7">speaker 28mm</text>
+  <!-- Control panel shelf -->
+  <line x1="524" y1="720" x2="676" y2="740" stroke="black" stroke-width="0.5"/>
+  <text x="640" y="730" font-family="sans-serif" font-size="7">ctrl panel</text>
+  <!-- Wall thickness callout -->
+  <line x1="518" y1="650" x2="526" y2="650" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="508" y="648" text-anchor="end" font-family="sans-serif" font-size="8" fill="#CC0000">2mm wall</text>
+  <!-- Screen angle label -->
+  <text x="525" y="575" text-anchor="end" font-family="sans-serif" font-size="8" fill="#CC0000">15° tilt</text>
+
+  <!-- VIEW 6: Detail closeup (bottom-right) -->
+  <text x="1000" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Control Panel</text>
+  <!-- Control panel surface zoomed -->
+  <rect x="860" y="510" width="280" height="140" rx="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="540" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold">Control Panel Layout</text>
+  <!-- Dome buttons enlarged -->
+  <circle cx="920" cy="590" r="20" fill="#CC3333" stroke="black" stroke-width="0.5"/>
+  <text x="920" y="594" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">BTN 1</text>
+  <circle cx="1000" cy="590" r="20" fill="#33CC33" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="594" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">BTN 2</text>
+  <circle cx="1080" cy="590" r="20" fill="#3333CC" stroke="black" stroke-width="0.5"/>
+  <text x="1080" y="594" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">BTN 3</text>
+  <!-- Joystick enlarged -->
+  <circle cx="1000" cy="630" r="14" fill="#222" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="630" r="7" fill="#555" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="654" text-anchor="middle" font-family="sans-serif" font-size="8">joystick cap</text>
+  <!-- Button dimensions -->
+  <line x1="900" y1="570" x2="940" y2="570" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="920" y="565" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">6mm tactile</text>
+  <!-- Spacing dimension -->
+  <line x1="920" y1="560" x2="1000" y2="560" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="960" y="555" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">~20mm spacing</text>
+  <!-- Dome profile cross-section sketch -->
+  <text x="1000" y="700" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold">Dome Button Profile</text>
+  <path d="M940,740 Q940,710 970,710 Q1000,700 1030,710 Q1060,710 1060,740 Z" fill="#CC3333" stroke="black" stroke-width="0.5"/>
+  <rect x="960" y="740" width="80" height="8" fill="#E0E0E0" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="770" text-anchor="middle" font-family="sans-serif" font-size="8">dome over tactile switch</text>
+  <!-- Panel thickness -->
+  <line x1="935" y1="740" x2="935" y2="748" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="920" y="752" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">2mm</text>
+</svg>

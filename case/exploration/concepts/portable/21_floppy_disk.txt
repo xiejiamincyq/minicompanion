@@ -1,0 +1,262 @@
+DESIGN 21: FLOPPY DISK
+======================
+3.5" floppy disk tribute. Nearly square landscape form factor.
+Screen hides behind a sliding metal shutter that slides sideways
+to reveal the display — just like a real floppy's metal slider.
+Label area on upper portion houses 3 buttons. Write-protect tab
+hole in corner doubles as wake switch (slide tab). Authentic
+floppy details: hub hole on center-back, notch on right edge.
+Ultra-thin 10mm profile requires custom 3mm battery.
+
+Overall: 90mm wide x 94mm tall x 10mm deep
+Weight target: ~55g with battery
+Orientation: Landscape (screen area)
+Shell: 2-piece (front + back), 4x corner screws hidden under label
+Battery: Custom slim LiPo 3mm thick (30x35mm, ~200mAh)
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ╔══════════════════════════════════════╗ ─┬─
+    ║  ┌─────────────────────────────────┐ ║  │
+    ║  │       DEVOTCHI v1.0             │ ║  │
+    ║  │  ┌────┐   ┌────┐   ┌────┐      │ ║  │  Label area
+    ║  │  │ B1 │   │ B2 │   │ B3 │      │ ║  │  (sticker/printed)
+    ║  │  └────┘   └────┘   └────┘      │ ║  │
+    ║  │  REJECT   ACTION   APPROVE      │ ║  │
+    ║  └─────────────────────────────────┘ ║  │
+    ║──────────────────────────────────────║ ─┤  94mm
+    ║  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ║  │
+    ║  ▓▓╔═══════════════════════╗▓▓▓▓▓▓▓ ║  │
+    ║  ▓▓║   METAL  SHUTTER     ║▓▓▓▓▓▓▓ ║  │  Shutter zone
+    ║  ▓▓║   (slides right →)   ║▓▓▓▓▓▓▓ ║  │  Screen hidden
+    ║  ▓▓║   [TFT BEHIND]       ║▓▓▓▓▓▓▓ ║  │  behind shutter
+    ║  ▓▓╚═══════════════════════╝▓▓▓▓▓▓▓ ║  │
+    ║  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ║  │
+    ║                                      ║  │
+    ║    ┌────────USB-C────────┐      □ ← ║  │  Write-protect
+    ╚════╧═════════════════════╧══════╧═══╝ ─┴─  tab = wake
+    ├──────────── 90mm ────────────┤
+
+    Shutter open state:
+
+    ║  ▓▓┌───────────────────────┐════════║
+    ║  ▓▓│                       │ SHUTTER║
+    ║  ▓▓│    TFT LCD SCREEN     │  (slid ║
+    ║  ▓▓│    (40.8 x 30.6mm)   │  right)║
+    ║  ▓▓│                       │════════║
+    ║  ▓▓└───────────────────────┘▓▓▓▓▓▓▓║
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+       10mm
+      ├──────┤
+      ┌──────┐ ─┬─
+      │ label│  │
+      │      │  │
+      │══════│  │  94mm
+      │shuter│  │
+      │      │  │
+      │      │  │
+      └──┤  ├┘ ─┴─
+         USB
+      ↑      ↑
+     Front  Back
+
+    Note: Ultra-thin 10mm profile. Nearly flat like a real
+    floppy disk. Shutter rail adds ~0.5mm proud of surface.
+
+
+BACK VIEW
+─────────
+
+    ╔══════════════════════════════════════╗
+    ║                                      ║
+    ║                                      ║
+    ║            ┌───────┐                 ║
+    ║            │       │                 ║
+    ║            │   ◉   │ ← Hub hole     ║
+    ║            │       │   (cosmetic,    ║
+    ║            └───────┘    15mm dia)    ║
+    ║                                      ║
+    ║  ▪▪▪▪▪▪ ← Vibration motor zone      ║
+    ║                                      ║
+    ║  ┌──────────────────────────────┐    ║
+    ║  │      BATTERY  ACCESS         │    ║
+    ║  │      (snap panel, 32x37mm)   │    ║
+    ║  └──────────────────────────────┘    ║
+    ║                                      ║
+    ╚══════════════════════════════════════╝
+                            ├─┤ ← Notch on right edge
+                              (authentic floppy detail)
+
+
+CROSS-SECTION (cut through horizontal center, looking down)
+────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.0mm front wall           │  1.0mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Shutter rail ──────┐│  │
+      │  │   (0.5mm track)      ││  │
+      │  ├── Display ───────────┤│  │
+      │  │   (2.5mm thick)      ││  │  10mm total
+      │  ├──────────────────────┤│  │
+      │  │   1.4mm gap (FPC)    ││  │
+      │  ├── PCB ───────────────┤│  │
+      │  │   (1.6mm thick)      ││  │
+      │  ├──────────────────────┤│  │
+      │  ├── Battery ───────────┤│  │
+      │  │   (3.0mm custom slim)││  │
+      ├──┴──────────────────────┴┤  │
+      │                             │
+
+    Z-stack (modified for 10mm):
+    1.0 + 0.5 + 2.5 + 1.4 + 1.6 + 3.0 + 1.0 = 11.0mm
+    Note: Requires custom 3mm LiPo and thinner walls than
+    standard 15.1mm stack. Target 10mm with tight tolerances.
+    Actual achievable depth may be 11mm with shutter rail.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (floppy shape, 1.0mm wall)
+    ├── Label area recess (top 35mm, 0.3mm deep for sticker)
+    ├── 3x button holes in label area (12.5 x 6.5mm)
+    ├── Shutter rail channel (0.5mm deep, full width)
+    ├── Screen window cutout (42 x 32mm, below shutter)
+    ├── Write-protect tab opening (bottom-right corner, 5x8mm)
+    ├── USB-C cutout (bottom edge, 9.5 x 4.0mm)
+    └── Hub hole cosmetic ring (back side, 15mm dia)
+
+    Layer 2 — METAL SHUTTER ASSEMBLY
+    ├── Stamped stainless steel shutter (50 x 35 x 0.3mm)
+    ├── Spring-loaded return (small leaf spring)
+    ├── Rides in 0.5mm rail channel in front shell
+    └── Slides right to reveal screen, spring returns left
+
+    Layer 3 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted landscape in lower section
+    ├── FPC cable exits to PCB connector
+    └── Held by 4x retention clips
+
+    Layer 4 — AIR GAP (1.4mm)
+    ├── FPC routing
+    └── Button plunger passage from label area to PCB
+
+    Layer 5 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces back
+    ├── 3x tactile switches in upper zone (label button alignment)
+    ├── 1x wake switch at bottom-right corner (write-protect tab)
+    ├── USB-C connector on bottom edge
+    ├── Display FPC connector
+    └── Vibration motor pads
+
+    Layer 6 — BATTERY (30 x 35 x 3mm custom slim LiPo)
+    ├── ~200mAh capacity (reduced from standard 5mm)
+    ├── Centered behind PCB
+    └── JST pigtail to PCB
+
+    Layer 7 — BACK SHELL (floppy shape, 1.0mm wall)
+    ├── Hub hole cosmetic detail (15mm ring, raised 0.5mm)
+    ├── Right-edge notch (authentic floppy detail)
+    ├── Battery cradle ribs
+    ├── 4x PCB mounting posts
+    ├── USB-C cutout alignment
+    └── 4x screw bosses (hidden under front label)
+
+
+SHUTTER MECHANISM DETAIL
+────────────────────────
+
+    Closed (screen hidden):
+
+    ┌──────────────────────────────────────┐
+    │▓▓╔═══════════════════════╗▓▓▓▓▓▓▓▓▓│
+    │▓▓║  METAL SHUTTER ████  ║▓▓▓▓▓▓▓▓▓│
+    │▓▓║  ████████████████████║▓▓▓▓▓▓▓▓▓│
+    │▓▓╚═══════════════════════╝▓▓▓▓▓▓▓▓▓│
+    └──────────────────────────────────────┘
+       ↑ push tab here
+
+    Open (screen visible):
+
+    ┌──────────────────────────────────────┐
+    │▓▓┌───────────────────────┐╔═════════│
+    │▓▓│   TFT LCD SCREEN      │║ SHUTTER │
+    │▓▓│   (40.8 x 30.6mm)    │║ (moved) │
+    │▓▓└───────────────────────┘╚═════════│
+    └──────────────────────────────────────┘
+                                   → slid
+
+    Rail cross-section:
+    ┌───────────────────────────────┐
+    │  Front shell  ║ shutter ║    │ ← 0.5mm channel
+    │               ╚═════════╝    │
+    │  Display glass below         │
+    └───────────────────────────────┘
+
+
+WRITE-PROTECT TAB / WAKE SWITCH DETAIL
+───────────────────────────────────────
+
+    Bottom-right corner (front view):
+
+    ║              ┌───┐  ║
+    ║              │ □ │← ║  Sliding tab (5x3mm)
+    ║              │   │  ║  Slide up = wake
+    ║              └─┬─┘  ║  Slide down = sleep
+    ╚════════════════╧════╝  Actuates tactile switch
+                               beneath via cam ramp
+
+
+BUTTON LAYOUT DETAIL (label area)
+──────────────────────────────────
+
+    ┌─────────────────────────────────┐
+    │       DEVOTCHI v1.0             │
+    │  ┌────┐   ┌────┐   ┌────┐      │
+    │  │ 12 │   │ 12 │   │ 12 │      │ ← 12mm x 6mm caps
+    │  │x 6 │   │x 6 │   │x 6 │      │
+    │  └────┘   └────┘   └────┘      │
+    │  REJECT   ACTION   APPROVE      │ ← 14mm center spacing
+    │                                  │
+    │  Capacitive-feel through label   │
+    │  sticker (buttons protrude 0.5mm)│
+    └─────────────────────────────────┘
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece floppy shape (front + back), 4x M2 screws
+  hidden beneath the peel-on label sticker on front
+- Shutter assembly installs into front shell rail before
+  closing case — slides in from the right edge
+- Spring return: small leaf spring in left pocket of rail
+- Label is a thick vinyl sticker (0.3mm) that covers screw heads
+  and provides authentic floppy label aesthetic
+- Display press-fits into front shell pocket below shutter zone
+- PCB mounts on 4x posts in back shell
+- Custom 3mm LiPo required for 10mm target depth
+- Hub hole on back is cosmetic only — raised ring detail
+- Right-edge notch is cosmetic — matches real floppy geometry
+- USB-C on bottom edge aligns with where floppy head slot would be
+- Write-protect tab mechanism: small sliding plastic tab in corner
+  with cam surface that depresses wake switch beneath
+
+SPECIAL FEATURES
+────────────────
+- Sliding metal shutter reveals/hides screen — satisfying tactile click
+- Authentic 3.5" floppy proportions (90x94mm vs real 90x93.7mm)
+- Functional write-protect tab as wake/sleep toggle
+- Peel-and-replace label area for customization
+- Hub hole detail on back for authenticity
+- Ultra-thin 10mm profile (thinner than real floppy's 9mm body
+  when including shutter height)
+- Conversation starter / nostalgia piece
+- Shutter spring return provides haptic feedback

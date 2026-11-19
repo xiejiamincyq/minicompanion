@@ -1,0 +1,48 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Courier New", monospace; background: #1a1a2e; color: #e0e0e0; min-height: 100vh; }
+#app { max-width: 480px; margin: 0 auto; padding: 16px; }
+header { text-align: center; margin-bottom: 16px; }
+header h1 { font-size: 24px; color: #00ff88; margin-bottom: 12px; }
+#connection-bar { display: flex; align-items: center; gap: 8px; justify-content: center; }
+.dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.dot.connected { background: #00ff88; box-shadow: 0 0 8px #00ff88; }
+.dot.disconnected { background: #ff4444; box-shadow: 0 0 8px #ff4444; }
+#pairing-input { font-family: "Courier New", monospace; font-size: 16px; width: 120px; padding: 6px 10px; background: #16213e; border: 2px solid #0f3460; color: #e0e0e0; text-align: center; text-transform: uppercase; letter-spacing: 3px; border-radius: 4px; }
+#pairing-input:focus { outline: none; border-color: #00ff88; }
+#connect-btn { font-family: "Courier New", monospace; font-size: 14px; padding: 6px 16px; background: #0f3460; border: 2px solid #00ff88; color: #00ff88; cursor: pointer; border-radius: 4px; }
+#connect-btn:hover { background: #00ff88; color: #1a1a2e; }
+main { display: flex; flex-direction: column; gap: 16px; }
+#pet-area { background: #16213e; border: 2px solid #0f3460; border-radius: 8px; padding: 32px; text-align: center; }
+#pet-character { font-size: 80px; line-height: 1; margin-bottom: 12px; transition: transform 0.3s; }
+#pet-character.bounce { animation: bounce 0.5s ease; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
+#pet-mood { font-size: 14px; color: #888; text-transform: uppercase; letter-spacing: 2px; }
+#status-bar { background: #16213e; border: 2px solid #0f3460; border-radius: 8px; padding: 12px 16px; }
+#status-text { font-size: 14px; color: #aaa; }
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); display: flex; align-items: center; justify-content: center; z-index: 100; }
+.modal.hidden { display: none; }
+.modal.flash { animation: flash 0.3s ease; }
+@keyframes flash { 0%, 100% { background: rgba(0, 0, 0, 0.7); } 50% { background: rgba(0, 255, 136, 0.3); } }
+.modal-content { background: #16213e; border: 2px solid #e94560; border-radius: 8px; padding: 24px; max-width: 400px; width: 90%; text-align: center; }
+.modal-type { font-size: 12px; color: #e94560; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+.modal-desc { font-size: 18px; margin-bottom: 8px; }
+.modal-details { font-size: 13px; color: #888; margin-bottom: 12px; }
+.modal-timer { font-size: 24px; color: #e94560; margin-bottom: 16px; font-variant-numeric: tabular-nums; }
+.modal-buttons { display: flex; gap: 12px; justify-content: center; }
+.btn-approve, .btn-reject { font-family: "Courier New", monospace; font-size: 14px; padding: 8px 24px; border: 2px solid; cursor: pointer; border-radius: 4px; }
+.btn-approve { background: #0f3460; border-color: #00ff88; color: #00ff88; }
+.btn-approve:hover { background: #00ff88; color: #1a1a2e; }
+.btn-reject { background: #0f3460; border-color: #e94560; color: #e94560; }
+.btn-reject:hover { background: #e94560; color: #1a1a2e; }
+#event-log { background: #16213e; border: 2px solid #0f3460; border-radius: 8px; padding: 12px 16px; }
+#event-log h2 { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+#log-list { list-style: none; max-height: 200px; overflow-y: auto; font-size: 12px; }
+#log-list li { padding: 4px 0; border-bottom: 1px solid #0f3460; color: #aaa; }
+#log-list li:last-child { border-bottom: none; }
+#log-list .log-time { color: #555; margin-right: 8px; }
+#log-list .log-type { color: #00ff88; margin-right: 8px; }
+#settings-panel { background: #16213e; border: 2px solid #0f3460; border-radius: 8px; padding: 12px 16px; }
+#settings-panel h2 { font-size: 12px; color: #888; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 8px; }
+.settings-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 12px; }
+.settings-label { color: #888; }
+.settings-value { color: #aaa; }

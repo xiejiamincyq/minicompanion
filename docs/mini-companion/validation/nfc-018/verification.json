@@ -1,0 +1,35 @@
+{
+  "status": "conditional_static_only",
+  "components": 25,
+  "pins": 74,
+  "ERC_violations": 0,
+  "old_floating_SEL_V": 0.45955000000000007,
+  "new_floating_SEL_V": 0.21598850000000003,
+  "conditional_high_SEL_V": 2.0246097776090415,
+  "module_25C_budget_V": [
+    3.18945,
+    3.41055
+  ],
+  "normal_bus_min_margins_V": {
+    "host_high_margin": 0.7526126466982728,
+    "host_upper_margin": 0.08291481592463246,
+    "module_high_margin": 0.5636202875427858,
+    "module_upper_margin": 0.35893552978412346
+  },
+  "pretrip_bus_min_margins_V": {
+    "host_high_margin": 0.8348745163285236,
+    "host_upper_margin": 0.009544062254583707,
+    "module_high_margin": 0.5290269211079863,
+    "module_upper_margin": 0.4198855735486702
+  },
+  "collapsed_module_unclamped_bus_V": 0.999724353682381,
+  "nominal_request_pulldown_current_uA": 55.789473684210535,
+  "ldo_pdf_sha256": "866f18814ff045f47c1912f89c2791bce88b6bf579dc08396f9330ed82c5cf05",
+  "limits": [
+    "25C only; module pullup tolerance assumed 1 percent",
+    "GPIO VOH specification is high-impedance-load, not a loaded/full-temperature guarantee",
+    "Leakage limits quoted at differing bias conditions; characterize final operating points",
+    "Unclamped collapse model demonstrates missing proof, not actual clamped pin voltage",
+    "No dynamic, full-temperature or manufacturing approval"
+  ]
+}

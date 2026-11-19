@@ -1,0 +1,183 @@
+DESIGN 6: HEX TOWER
+====================
+Vertical hexagonal prism. Screen, buttons, and speaker each get
+their own dedicated facet. Standing tower form factor.
+Think "desktop totem" or "smart speaker tower" aesthetic.
+
+Overall: 80mm flat-to-flat hex, 120mm tall
+Target user: desk centerpiece, premium feel
+
+TOP VIEW (hexagonal cross-section)
+──────────────────────────────────
+
+                   80mm flat-to-flat
+               ┌─────────────────┐
+              /    SCREEN FACET    \
+             /  ┌───────────────┐  \
+    BUTTON  /   │  TFT SCREEN   │   \  SPEAKER
+    FACET  /    │  window       │    \  FACET
+          │     │  41.8x31.6mm  │     │
+          │     └───────────────┘     │  ← Speaker grille
+    (●●●) │                           │    ○○○○○
+     btns  \                         /     ○○○○○
+            \                       /
+             \                     /
+              \___________________/
+                  BACK FACETS
+              (plain, USB-C on one)
+
+    Facet assignment (face normals at 30°, 90°, 150°, 210°, 270°, 330°):
+    - 90° facet  → SCREEN (faces front)
+    - 30° facet  → BUTTONS (front-right)
+    - 210° facet → SPEAKER (back-left, fires away from user)
+    - 270° facet → USB-C cutout
+    - 150°, 330° → plain/decorative
+
+
+FRONT VIEW (looking at screen facet)
+────────────────────────────────────
+
+         ← Adjacent facets visible at angles →
+
+      \                                 /
+       \   ┌─────────────────────┐    /
+        \  │                     │   /
+         \ │                     │  /
+          \│                     │ /
+           │    TFT LCD SCREEN   │      ← Screen window on 90° facet
+           │   (40.8 x 30.6)    │
+           │                     │
+           │                     │
+          /│                     │\
+         / │                     │ \
+        /  └─────────────────────┘  \
+       /              ○ LED          \
+      /                               \
+    ─┘─────────────────────────────────└─
+    │                                   │  ← Bottom face (optional feet)
+    └───────────────────────────────────┘
+                  120mm tall
+
+
+SIDE VIEW (looking at button facet, 30° face)
+─────────────────────────────────────────────
+
+      \                                 /
+       \                               /
+        \   ◉  Button 1               /
+         \                            /
+          \ ◉  Button 2              /
+           \                        /
+            \◉  Button 3           /       120mm tall
+             \                    /
+              \                  /
+               \                /
+                \              /
+    ─────────────\────────────/──────
+    │                                │
+    └────────────────────────────────┘
+
+
+CROSS-SECTION (horizontal cut at screen height)
+───────────────────────────────────────────────
+
+                 Screen facet
+                     │
+            ┌────────┤────────┐
+           /  ┌screen┐  2mm   \
+          /   │module │  wall   \
+    Btn  /    │4.5mm  │          \  Spkr
+    facet│    ├───────┤           │ facet
+     (●) │   │PCB    │  28mm    │  ○○○
+         │   │       │  speaker │
+          \  │1.6mm  │  behind  /
+           \ └───────┘  wall   /
+            \                 /
+             \───────────────/
+                 Back facets
+              (USB-C on 270°)
+
+    The hex gives ~70mm internal depth from screen facet to back:
+    Wall:           2mm
+    Screen pocket:  5mm
+    Gap:            3mm (ESP32 module clearance)
+    PCB:            1.6mm
+    Remaining:     ~58mm to opposite wall
+    ────────────────────
+    Plenty of room for speaker cavity behind PCB
+
+
+VERTICAL LAYOUT (what goes where, top to bottom)
+────────────────────────────────────────────────
+
+    ┌───────────┐  ─┬─  TOP CAP (separate piece)
+    │  Hex cap  │   │   - Snap-fit or 4x screws from top
+    │  2mm wall │   │   - 4x screw hole access from above
+    ├───────────┤  ─┴─
+    │           │
+    │  Screen   │        UPPER ZONE (screen + PCB)
+    │  window   │   ─┬─  - Screen pocket on front facet
+    │  zone     │    │   - PCB behind screen, standoffs from side wall
+    │           │    │   - FPC cable: short run from screen to PCB
+    │  ┌─PCB──┐ │    │   - Buttons: tactile switches on PCB edge
+    │  │      │ │    │     → plunger caps through button facet
+    │  └──────┘ │   ─┴─
+    │           │
+    │  Speaker  │        LOWER ZONE (speaker + wiring)
+    │  zone     │   ─┬─  - Speaker mounted against speaker facet wall
+    │  ┌spkr──┐ │    │   - USB-C breakout on 270° facet
+    │  │      │ │    │   - Wire routing from PCB down to USB-C
+    │  └──────┘ │   ─┴─
+    │           │
+    ├───────────┤  ─┬─  BOTTOM
+    │  Hex base │   │   - 6x rubber feet (one per vertex)
+    │  USB-C    │   │   - USB-C cutout on 270° facet, near bottom
+    └───────────┘  ─┴─
+
+
+COMPONENT PLACEMENT ON FACETS
+─────────────────────────────
+
+    Facet   Angle   Feature
+    ─────   ─────   ───────
+    1       30°     BUTTONS — 3x tactile, 12mm spacing, centered vertically
+    2       90°     SCREEN — window 41.8x31.6mm, upper half of facet
+    3       150°    Plain (decorative texture or logo)
+    4       210°    SPEAKER — grille pattern, centered, lower half
+    5       270°    USB-C — cutout near bottom (9.5x3.5mm)
+    6       330°    Plain (decorative or vent slots)
+
+
+COMPONENT LAYOUT
+────────────────
+
+    TOWER BODY (main hex shell, open top)
+    ├── 6 facets, 2mm wall thickness
+    ├── Screen pocket on facet 2 (inside face)
+    │   ├── Pocket: 52.2 x 36.6mm, 5mm deep
+    │   └── 4x retention clips
+    ├── Button holes on facet 1 (3x, 5mm or 8mm dia)
+    ├── Speaker grille on facet 4 (28mm dia pattern, 1.5mm holes)
+    ├── USB-C cutout on facet 5 (9.5 x 3.5mm)
+    ├── 4x PCB standoffs (from inner walls, M2)
+    └── Speaker mounting shelf/pocket on inner wall of facet 4
+
+    HEX CAP (top lid)
+    ├── Hex plate, 2mm thick
+    ├── Snap-fit tabs or 4x screw holes
+    └── Slight chamfer on edges
+
+    BOTTOM
+    ├── Closed hex base (integrated with body or separate piece)
+    ├── 6x rubber feet at hex vertices
+    └── Optional: bottom access panel for USB-C cable routing
+
+
+ASSEMBLY
+────────
+- 2-piece: tower body (open top) + hex cap
+- Cap: snap-fit tabs (4x on alternating facets) or screws
+- Screen, PCB, speaker all load from top before cap installed
+- PCB screws to standoffs on inner walls
+- Speaker press-fit with foam gasket against facet 4
+- Cable exits bottom through slot or through facet 5 USB-C cutout

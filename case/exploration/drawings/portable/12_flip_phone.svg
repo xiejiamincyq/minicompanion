@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif" font-size="10">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#EEE" stroke-width="0.5"/>
+
+  <!-- Title -->
+  <text x="600" y="24" text-anchor="middle" font-size="14" font-weight="bold">Design 12: Flip Phone — 110×48mm open, 55×48×22mm closed</text>
+
+  <!-- ========== 1. FRONT VIEW OPEN (top-left) ========== -->
+  <text x="200" y="55" text-anchor="middle" font-size="11" font-weight="bold">Front View (Open)</text>
+
+  <!-- Upper half (screen) -->
+  <rect x="145" y="70" width="110" height="120" rx="8" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Screen -->
+  <rect x="157" y="80" width="86" height="65" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="116" text-anchor="middle" font-size="9" fill="#336">40.80×30.60</text>
+  <!-- Speaker grille -->
+  <line x1="185" y1="155" x2="215" y2="155" stroke="#999" stroke-width="0.5"/>
+  <line x1="185" y1="158" x2="215" y2="158" stroke="#999" stroke-width="0.5"/>
+  <line x1="185" y1="161" x2="215" y2="161" stroke="#999" stroke-width="0.5"/>
+  <text x="200" y="175" text-anchor="middle" font-size="8" fill="#666">Speaker</text>
+
+  <!-- Hinge area -->
+  <rect x="155" y="188" width="90" height="10" rx="5" ry="5" fill="#AAA" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="196" text-anchor="middle" font-size="7" fill="white">HINGE</text>
+
+  <!-- Lower half (buttons) -->
+  <rect x="145" y="196" width="110" height="120" rx="8" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Button grid — 4 buttons in 2×2 layout -->
+  <rect x="160" y="210" width="35" height="22" rx="3" ry="3" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <text x="177" y="225" text-anchor="middle" font-size="9">▲</text>
+  <rect x="205" y="210" width="35" height="22" rx="3" ry="3" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <text x="222" y="225" text-anchor="middle" font-size="9">✓</text>
+  <rect x="160" y="240" width="35" height="22" rx="3" ry="3" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <text x="177" y="255" text-anchor="middle" font-size="9">▼</text>
+  <rect x="205" y="240" width="35" height="22" rx="3" ry="3" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <text x="222" y="255" text-anchor="middle" font-size="9">✗</text>
+
+  <!-- USB-C on bottom -->
+  <rect x="188" y="306" width="24" height="6" rx="2" ry="2" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="324" text-anchor="middle" font-size="9">USB-C</text>
+
+  <!-- Dimension: total open height -->
+  <line x1="270" y1="70" x2="270" y2="316" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="285" y="195" font-size="9" fill="#CC0000">110mm</text>
+
+  <!-- Dimension: width -->
+  <line x1="145" y1="335" x2="255" y2="335" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="347" text-anchor="middle" font-size="9" fill="#CC0000">48mm</text>
+
+  <!-- ========== 2. SIDE PROFILE CLOSED (top-center) ========== -->
+  <text x="600" y="55" text-anchor="middle" font-size="11" font-weight="bold">Side Profile (Closed)</text>
+
+  <!-- Closed profile — two halves stacked -->
+  <!-- Upper half -->
+  <rect x="570" y="120" width="44" height="110" rx="4" ry="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Lower half (slightly offset showing fold) -->
+  <rect x="574" y="120" width="44" height="110" rx="4" ry="4" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+
+  <!-- Hinge bulge at top -->
+  <ellipse cx="596" cy="120" rx="22" ry="8" fill="#AAA" stroke="black" stroke-width="0.5"/>
+
+  <!-- Gap line between halves -->
+  <line x1="575" y1="121" x2="617" y2="121" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Dimension: closed thickness -->
+  <line x1="555" y1="140" x2="555" y2="162" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="545" y="155" font-size="9" fill="#CC0000" text-anchor="end">22mm</text>
+
+  <!-- Dimension: closed height -->
+  <line x1="630" y1="112" x2="630" y2="230" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="645" y="175" font-size="9" fill="#CC0000">55mm</text>
+
+  <!-- Hinge label -->
+  <line x1="596" y1="112" x2="596" y2="95" stroke="#666" stroke-width="0.5"/>
+  <text x="596" y="90" text-anchor="middle" font-size="9">Hinge barrel</text>
+
+  <!-- ========== 3. BACK VIEW (top-right) ========== -->
+  <text x="1000" y="55" text-anchor="middle" font-size="11" font-weight="bold">Back View (Closed)</text>
+
+  <!-- Outer shell -->
+  <rect x="945" y="80" width="110" height="120" rx="8" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- LED notification window -->
+  <rect x="985" y="95" width="30" height="10" rx="3" ry="3" fill="#334" stroke="black" stroke-width="0.5"/>
+  <circle cx="995" cy="100" r="3" fill="#4A4" stroke="none" opacity="0.7"/>
+  <circle cx="1005" cy="100" r="3" fill="#A44" stroke="none" opacity="0.7"/>
+
+  <!-- Branding area -->
+  <text x="1000" y="145" text-anchor="middle" font-size="10" fill="#888">DEVOTCHI</text>
+
+  <!-- Hinge visible at top -->
+  <ellipse cx="1000" cy="80" rx="40" ry="6" fill="#AAA" stroke="black" stroke-width="0.5"/>
+
+  <!-- Labels -->
+  <line x1="1020" y1="100" x2="1060" y2="90" stroke="#666" stroke-width="0.5"/>
+  <text x="1062" y="93" font-size="9">LED window</text>
+  <text x="1062" y="103" font-size="8" fill="#666">(status + notification)</text>
+
+  <!-- ========== 4. TOP-DOWN VIEW (bottom-left) ========== -->
+  <text x="200" y="475" text-anchor="middle" font-size="11" font-weight="bold">Top-Down View (Closed)</text>
+
+  <!-- Shell from top -->
+  <rect x="145" y="510" width="110" height="44" rx="4" ry="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Hinge barrel running across -->
+  <ellipse cx="200" cy="510" rx="50" ry="6" fill="#AAA" stroke="black" stroke-width="0.5"/>
+
+  <!-- Antenna nub -->
+  <rect x="240" y="504" width="8" height="8" rx="4" ry="4" fill="#999" stroke="black" stroke-width="0.5"/>
+
+  <!-- Dimension: width -->
+  <line x1="145" y1="570" x2="255" y2="570" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="582" text-anchor="middle" font-size="9" fill="#CC0000">48mm</text>
+
+  <!-- Dimension: depth -->
+  <line x1="270" y1="510" x2="270" y2="554" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="285" y="536" font-size="9" fill="#CC0000">22mm</text>
+
+  <!-- Antenna label -->
+  <line x1="248" y1="504" x2="265" y2="490" stroke="#666" stroke-width="0.5"/>
+  <text x="267" y="490" font-size="9">Antenna nub</text>
+
+  <!-- ========== 5. CROSS-SECTION THROUGH HINGE (bottom-center) ========== -->
+  <text x="600" y="475" text-anchor="middle" font-size="11" font-weight="bold">Cross-Section (Through Hinge)</text>
+
+  <!-- Upper half shell -->
+  <!-- Top wall -->
+  <rect x="520" y="500" width="160" height="5" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Left wall upper -->
+  <rect x="520" y="500" width="5" height="60" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Right wall upper -->
+  <rect x="675" y="500" width="5" height="60" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Bottom wall upper -->
+  <rect x="520" y="555" width="160" height="5" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen in upper half -->
+  <rect x="530" y="507" width="140" height="25" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="523" text-anchor="middle" font-size="8">Display</text>
+
+  <!-- Upper half air space -->
+  <rect x="530" y="535" width="140" height="18" fill="white" stroke="black" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <text x="600" y="548" text-anchor="middle" font-size="7" fill="#999">air</text>
+
+  <!-- Hinge barrel -->
+  <circle cx="600" cy="570" r="12" fill="#AAA" stroke="black" stroke-width="0.5"/>
+  <circle cx="600" cy="570" r="3" fill="#666" stroke="black" stroke-width="0.5"/>
+
+  <!-- FPC ribbon through hinge -->
+  <path d="M580,555 Q580,570 590,575 Q600,580 610,575 Q620,570 620,555" fill="none" stroke="#D4A84B" stroke-width="1.5"/>
+  <text x="635" y="570" font-size="8" fill="#D4A84B">FPC</text>
+
+  <!-- Lower half shell -->
+  <!-- Top wall lower -->
+  <rect x="520" y="582" width="160" height="5" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Left wall lower -->
+  <rect x="520" y="582" width="5" height="60" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Right wall lower -->
+  <rect x="675" y="582" width="5" height="60" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Bottom wall lower -->
+  <rect x="520" y="637" width="160" height="5" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+  <!-- PCB in lower half -->
+  <rect x="530" y="590" width="140" height="14" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="600" text-anchor="middle" font-size="8">PCB</text>
+
+  <!-- Battery in lower half -->
+  <rect x="535" y="608" width="130" height="25" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="624" text-anchor="middle" font-size="8">Battery</text>
+
+  <!-- Dimension: total closed height -->
+  <line x1="505" y1="500" x2="505" y2="642" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="495" y="575" font-size="9" fill="#CC0000" text-anchor="end">22mm</text>
+
+  <!-- Upper half label -->
+  <line x1="690" y1="525" x2="710" y2="525" stroke="#666" stroke-width="0.5"/>
+  <text x="712" y="528" font-size="9">Upper (screen)</text>
+
+  <!-- Lower half label -->
+  <line x1="690" y1="610" x2="710" y2="610" stroke="#666" stroke-width="0.5"/>
+  <text x="712" y="613" font-size="9">Lower (buttons)</text>
+
+  <!-- ========== 6. DETAIL: HINGE MECHANISM (bottom-right) ========== -->
+  <text x="1000" y="475" text-anchor="middle" font-size="11" font-weight="bold">Detail: Hinge Mechanism</text>
+
+  <!-- Enlarged hinge barrel -->
+  <circle cx="1000" cy="570" r="40" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Inner barrel -->
+  <circle cx="1000" cy="570" r="28" fill="#AAA" stroke="black" stroke-width="0.5"/>
+
+  <!-- Pin hole -->
+  <circle cx="1000" cy="570" r="8" fill="#666" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="570" r="3" fill="#444" stroke="black" stroke-width="0.5"/>
+
+  <!-- Spring detent notches -->
+  <path d="M970,548 L975,555" stroke="black" stroke-width="0.8"/>
+  <path d="M968,555 L975,560" stroke="black" stroke-width="0.8"/>
+  <circle cx="972" cy="550" r="3" fill="#888" stroke="black" stroke-width="0.5"/>
+
+  <!-- Spring ball -->
+  <circle cx="1028" cy="548" r="3" fill="#888" stroke="black" stroke-width="0.5"/>
+  <path d="M1025,548 L1018,545" stroke="black" stroke-width="0.8"/>
+
+  <!-- FPC channel -->
+  <path d="M985,530 Q985,560 990,575 Q995,590 1010,598" fill="none" stroke="#D4A84B" stroke-width="2"/>
+
+  <!-- Upper shell arm -->
+  <rect x="1040" y="540" width="60" height="10" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <text x="1070" y="535" text-anchor="middle" font-size="8">Upper shell</text>
+
+  <!-- Lower shell arm -->
+  <rect x="1040" y="580" width="60" height="10" rx="2" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+  <text x="1070" y="605" text-anchor="middle" font-size="8">Lower shell</text>
+
+  <!-- Labels -->
+  <line x1="1000" y1="570" x2="935" y2="530" stroke="#666" stroke-width="0.5"/>
+  <text x="920" y="525" text-anchor="middle" font-size="9">Steel pin</text>
+
+  <line x1="972" y1="547" x2="945" y2="520" stroke="#666" stroke-width="0.5"/>
+  <text x="935" y="515" text-anchor="end" font-size="9">Detent ball</text>
+
+  <line x1="997" y1="590" x2="960" y2="615" stroke="#666" stroke-width="0.5"/>
+  <text x="955" y="625" text-anchor="middle" font-size="9">FPC channel</text>
+
+  <!-- Angle indicators -->
+  <path d="M1040,545 L1070,530" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <path d="M1040,585 L1070,600" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="1080" y="565" font-size="9" fill="#CC0000">160° open</text>
+
+  <!-- Scale note -->
+  <text x="1000" y="635" text-anchor="middle" font-size="9" fill="#666">Scale: 3×</text>
+
+  <!-- Legend -->
+  <rect x="870" y="660" width="12" height="12" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="888" y="670" font-size="9">Display</text>
+  <rect x="940" y="660" width="12" height="12" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="958" y="670" font-size="9">PCB</text>
+  <rect x="990" y="660" width="12" height="12" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="1008" y="670" font-size="9">Battery</text>
+  <rect x="1060" y="660" width="12" height="12" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="1078" y="670" font-size="9">Shell wall</text>
+</svg>

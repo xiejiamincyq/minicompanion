@@ -1,0 +1,20 @@
+{
+  "status": "review_only_not_manufacturing_release",
+  "components": 13,
+  "pins": 36,
+  "nets": 8,
+  "netlist_and_switch_mutation_check": "pass",
+  "nominal_V": 3.18,
+  "PWM_DC_V_min_max": [
+    3.1375442610989013,
+    3.2225843790190187
+  ],
+  "remaining_headroom_to_3V3_V": 0.07741562098098109,
+  "limitations": [
+    "PFM ripple and transient peaks need verification",
+    "TPS63802 UVLO is not cell undervoltage protection",
+    "DLA footprint and exact passive/switch parts pending",
+    "USB/backlight/ADC integration and backfeed not verified",
+    "2A converter headline is not a system load guarantee"
+  ]
+}

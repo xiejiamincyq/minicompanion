@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch5" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 5: Keychain Pod — Rounded Square with Carabiner (55mm x 55mm x 18mm)</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="280" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Carabiner loop at top -->
+  <path d="M260,80 Q260,58 280,58 Q300,58 300,80" fill="none" stroke="#888" stroke-width="2.5"/>
+  <path d="M260,80 Q260,68 270,68" fill="none" stroke="#888" stroke-width="2.5"/>
+  <!-- Carabiner gate -->
+  <line x1="298" y1="74" x2="300" y2="80" stroke="#888" stroke-width="2"/>
+  <circle cx="298" cy="72" r="2" fill="#888"/>
+  <text x="315" y="72" font-family="sans-serif" font-size="8" fill="#555">Carabiner</text>
+  <text x="315" y="82" font-family="sans-serif" font-size="8" fill="#555">loop</text>
+
+  <!-- Main body - rounded square (almost circular) -->
+  <rect x="115" y="95" width="330" height="330" rx="82" ry="82" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Lanyard/carabiner attachment lug -->
+  <rect x="262" y="85" width="36" height="18" rx="6" ry="6" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <circle cx="280" cy="92" r="5" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen bezel - fills most of face -->
+  <rect x="155" y="130" width="250" height="190" rx="10" ry="10" fill="none" stroke="black" stroke-width="0.5"/>
+  <!-- Active display -->
+  <rect x="165" y="140" width="230" height="170" rx="6" ry="6" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="280" y="228" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Active Area</text>
+  <text x="280" y="242" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.80 x 30.60mm</text>
+  <text x="280" y="260" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">(Screen fills most of face)</text>
+
+  <!-- 3 small buttons at bottom -->
+  <rect x="210" y="350" width="28" height="12" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="266" y="350" width="28" height="12" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="322" y="350" width="28" height="12" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="224" y="376" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN1</text>
+  <text x="280" y="376" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN2</text>
+  <text x="336" y="376" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN3</text>
+
+  <!-- Wake button on left edge -->
+  <rect x="110" y="230" width="8" height="20" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="100" y="244" text-anchor="end" font-family="sans-serif" font-size="7" fill="#333">Wake</text>
+
+  <!-- USB-C at bottom -->
+  <rect x="266" y="420" width="28" height="6" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="280" y="440" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: width 55mm -->
+  <line x1="115" y1="455" x2="445" y2="455" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="115" y1="445" x2="115" y2="465" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="445" y1="445" x2="445" y2="465" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="280" y="475" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- Dimension: height 55mm (body only) -->
+  <line x1="480" y1="95" x2="480" y2="425" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="470" y1="95" x2="490" y2="95" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="470" y1="425" x2="490" y2="425" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="500" y="264" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- Corner radius -->
+  <text x="148" y="118" font-family="sans-serif" font-size="8" fill="#CC0000">R~15mm</text>
+
+  <!-- Button spacing -->
+  <line x1="224" y1="368" x2="280" y2="368" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="252" y="386" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">14mm</text>
+
+  <!-- ============ VIEW 2: SIDE VIEW (top-right) ============ -->
+  <text x="880" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side View (Right)</text>
+
+  <!-- Chunky side profile -->
+  <rect x="835" y="95" width="90" height="330" rx="28" ry="28" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen from side -->
+  <line x1="835" y1="140" x2="835" y2="310" stroke="#4488CC" stroke-width="2"/>
+  <text x="820" y="228" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- Heavily rounded edges visible -->
+  <path d="M835,123 Q828,140 828,260 Q828,380 835,397" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <path d="M925,123 Q932,140 932,260 Q932,380 925,397" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="940" y="180" font-family="sans-serif" font-size="8" fill="#555">Rounded</text>
+  <text x="940" y="192" font-family="sans-serif" font-size="8" fill="#555">edges</text>
+
+  <!-- Carabiner lug from side -->
+  <rect x="865" y="80" width="30" height="20" rx="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <circle cx="880" cy="88" r="4" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Button bumps -->
+  <rect x="831" y="345" width="5" height="14" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+
+  <!-- USB-C bottom -->
+  <rect x="867" y="423" width="26" height="5" rx="1" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="880" y="442" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Dimension: depth 18mm -->
+  <line x1="835" y1="460" x2="925" y2="460" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="835" y1="450" x2="835" y2="470" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="925" y1="450" x2="925" y2="470" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="880" y="480" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">18.0mm</text>
+
+  <!-- Dimension: height 55mm -->
+  <line x1="960" y1="95" x2="960" y2="425" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="950" y1="95" x2="970" y2="95" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="950" y1="425" x2="970" y2="425" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="980" y="264" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- ============ VIEW 3: CROSS-SECTION (bottom-left) ============ -->
+  <text x="280" y="530" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Vertical Cut) — Deeper Z-Stack</text>
+
+  <!-- Outer shell with rounded profile -->
+  <!-- Front wall -->
+  <rect x="120" y="560" width="320" height="14" rx="6" fill="url(#hatch5)" stroke="black" stroke-width="0.5"/>
+  <!-- Back wall -->
+  <rect x="120" y="870" width="320" height="14" rx="6" fill="url(#hatch5)" stroke="black" stroke-width="0.5"/>
+  <!-- Left wall -->
+  <rect x="120" y="574" width="10" height="296" fill="url(#hatch5)" stroke="black" stroke-width="0.5"/>
+  <!-- Right wall -->
+  <rect x="430" y="574" width="10" height="296" fill="url(#hatch5)" stroke="black" stroke-width="0.5"/>
+
+  <!-- Display 2.0mm -->
+  <rect x="140" y="580" width="280" height="32" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="280" y="600" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display Module 2.0mm</text>
+  <text x="455" y="600" font-family="sans-serif" font-size="8" fill="#4488CC">51.80 x 36.20</text>
+
+  <!-- Gap 1.0mm -->
+  <rect x="140" y="612" width="280" height="16" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="280" y="624" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#999">Air gap 1.0mm</text>
+
+  <!-- PCB 1.6mm -->
+  <rect x="140" y="628" width="280" height="26" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="280" y="645" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB 1.6mm</text>
+  <text x="455" y="645" font-family="sans-serif" font-size="8" fill="#5A8C5E">45.0 x 40.0</text>
+
+  <!-- ESP32 on bottom of PCB -->
+  <rect x="150" y="654" width="56" height="18" fill="#7AB37E" stroke="black" stroke-width="0.3"/>
+  <text x="178" y="666" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">ESP32-S3</text>
+  <text x="455" y="666" font-family="sans-serif" font-size="7" fill="#5A8C5E">15.4x20.5x2.4mm</text>
+
+  <!-- Other components -->
+  <rect x="225" y="654" width="18" height="10" fill="#AAA" stroke="black" stroke-width="0.2"/>
+  <rect x="255" y="654" width="14" height="10" fill="#AAA" stroke="black" stroke-width="0.2"/>
+
+  <!-- Gap 2.0mm (extra space in pod design) -->
+  <rect x="140" y="676" width="280" height="30" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="280" y="695" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#999">Gap 2.0mm (extra clearance)</text>
+
+  <!-- Battery 5.0mm (larger battery possible with 18mm depth) -->
+  <rect x="145" y="706" width="270" height="90" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="280" y="748" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery 5.0mm</text>
+  <text x="280" y="764" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Larger cell possible: 35x40mm</text>
+  <text x="280" y="778" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#B8922F">400-600mAh (extra depth budget)</text>
+
+  <!-- Vibration motor beside battery -->
+  <circle cx="140" cy="760" r="10" fill="#DDD" stroke="black" stroke-width="0.5"/>
+  <text x="140" y="763" text-anchor="middle" font-family="sans-serif" font-size="5" fill="#333">Vibe</text>
+
+  <!-- Gap -->
+  <rect x="140" y="800" width="280" height="12" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Total Z-stack dimension: 18mm -->
+  <line x1="98" y1="560" x2="98" y2="884" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="88" y1="560" x2="108" y2="560" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="88" y1="884" x2="108" y2="884" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="83" y="720" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">18.0mm</text>
+  <text x="83" y="735" text-anchor="end" font-family="sans-serif" font-size="9" fill="#CC0000">total Z</text>
+
+  <!-- Wall thickness -->
+  <line x1="120" y1="555" x2="130" y2="555" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="125" y="550" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">1.5mm</text>
+
+  <!-- Note about extra depth -->
+  <text x="280" y="835" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">18mm depth allows ~3mm extra vs 15.1mm baseline</text>
+  <text x="280" y="848" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Used for thicker battery + component clearance</text>
+
+  <!-- ============ VIEW 4: TOP VIEW WITH CARABINER (bottom-right) ============ -->
+  <text x="880" y="530" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top View — Carabiner Detail</text>
+
+  <!-- Top profile - rounded square showing depth -->
+  <rect x="740" y="570" width="280" height="90" rx="24" ry="24" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Carabiner attachment lug protruding from top -->
+  <rect x="860" y="548" width="40" height="28" rx="10" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Carabiner ring -->
+  <path d="M868,548 Q868,528 880,528 Q892,528 892,548" fill="none" stroke="#888" stroke-width="3"/>
+  <!-- Carabiner gate detail -->
+  <line x1="891" y1="536" x2="892" y2="548" stroke="#888" stroke-width="2"/>
+  <circle cx="891" cy="534" r="2" fill="#AAA" stroke="#888" stroke-width="0.5"/>
+  <!-- Carabiner spring indicator -->
+  <text x="904" y="540" font-family="sans-serif" font-size="7" fill="#555">Spring gate</text>
+
+  <!-- Hole through lug -->
+  <ellipse cx="880" cy="558" rx="7" ry="3" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen surface from top (slight recess) -->
+  <rect x="760" y="570" width="248" height="3" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <text x="884" y="564" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4488CC">Screen surface (recessed 0.3mm)</text>
+
+  <!-- Button positions from top -->
+  <rect x="798" y="658" width="20" height="4" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="870" y="658" width="20" height="4" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="942" y="658" width="20" height="4" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="880" y="676" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Buttons (bottom edge)</text>
+
+  <!-- USB-C on bottom edge from top view -->
+  <rect x="867" y="658" width="3" height="4" fill="white" stroke="black" stroke-width="0.3"/>
+
+  <!-- Dimension: width 55mm -->
+  <line x1="740" y1="695" x2="1020" y2="695" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="740" y1="685" x2="740" y2="705" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="1020" y1="685" x2="1020" y2="705" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="880" y="712" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- Dimension: depth 18mm -->
+  <line x1="718" y1="570" x2="718" y2="660" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="708" y1="570" x2="728" y2="570" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="708" y1="660" x2="728" y2="660" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="698" y="620" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">18mm</text>
+
+  <!-- Carabiner lug dimension -->
+  <line x1="860" y1="740" x2="900" y2="740" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="860" y1="730" x2="860" y2="750" stroke="#CC0000" stroke-width="0.4"/>
+  <line x1="900" y1="730" x2="900" y2="750" stroke="#CC0000" stroke-width="0.4"/>
+  <text x="880" y="756" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">Lug: 8mm wide</text>
+
+  <!-- Carabiner specs -->
+  <rect x="720" y="770" width="320" height="90" rx="6" ry="6" fill="none" stroke="#AAA" stroke-width="0.3"/>
+  <text x="880" y="790" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#555">Carabiner Specifications</text>
+  <text x="880" y="806" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Material: Stainless steel or aluminum</text>
+  <text x="880" y="820" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Gate type: Spring-loaded wire gate</text>
+  <text x="880" y="834" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Opening: 10mm (fits standard key ring)</text>
+  <text x="880" y="848" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Lug hole: 5mm ID for secure attachment</text>
+</svg>

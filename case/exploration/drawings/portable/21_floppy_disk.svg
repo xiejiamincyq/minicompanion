@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 21: Floppy Disk — Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 21: Floppy Disk — 90×94×10mm Square</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="200" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Floppy disk body -->
+  <rect x="80" y="80" width="240" height="250" rx="3" ry="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Metal shutter across top (over screen area) -->
+  <rect x="125" y="85" width="150" height="100" rx="1" fill="#AAAAAA" stroke="black" stroke-width="0.5"/>
+  <!-- Shutter slot lines -->
+  <line x1="125" y1="110" x2="275" y2="110" stroke="#888" stroke-width="0.3"/>
+  <line x1="125" y1="135" x2="275" y2="135" stroke="#888" stroke-width="0.3"/>
+  <!-- Screen visible through shutter opening -->
+  <rect x="140" y="95" width="80" height="80" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="180" y="140" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Screen</text>
+  <!-- Shutter tab -->
+  <rect x="265" y="105" width="12" height="30" rx="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="290" y="123" font-family="sans-serif" font-size="7" fill="#555">Slide</text>
+
+  <!-- Label section with buttons -->
+  <rect x="95" y="200" width="210" height="90" rx="2" fill="#F0F0E8" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="225" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#555">Label Area</text>
+  <line x1="95" y1="235" x2="305" y2="235" stroke="#CCC" stroke-width="0.3"/>
+  <line x1="95" y1="250" x2="305" y2="250" stroke="#CCC" stroke-width="0.3"/>
+  <line x1="95" y1="265" x2="305" y2="265" stroke="#CCC" stroke-width="0.3"/>
+
+  <!-- 4 buttons in label area -->
+  <circle cx="140" cy="278" r="8" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <circle cx="180" cy="278" r="8" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <circle cx="220" cy="278" r="8" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <circle cx="260" cy="278" r="8" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="300" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">4 buttons</text>
+
+  <!-- Hub hole (center circle) -->
+  <circle cx="200" cy="320" r="6" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="215" y="323" font-family="sans-serif" font-size="7" fill="#555">Hub</text>
+
+  <!-- Dimension: width 90mm -->
+  <line x1="80" y1="350" x2="320" y2="350" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="80" y1="340" x2="80" y2="360" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="320" y1="340" x2="320" y2="360" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="370" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">90.0mm</text>
+
+  <!-- Dimension: height 94mm -->
+  <line x1="340" y1="80" x2="340" y2="330" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="330" y1="80" x2="350" y2="80" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="330" y1="330" x2="350" y2="330" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="360" y="210" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">94.0mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-center) ============ -->
+  <text x="560" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+
+  <!-- Ultra-thin side rectangle -->
+  <rect x="545" y="80" width="30" height="250" rx="2" ry="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Shutter edge on top -->
+  <rect x="542" y="85" width="5" height="100" fill="#AAAAAA" stroke="black" stroke-width="0.3"/>
+  <text x="535" y="135" text-anchor="end" font-family="sans-serif" font-size="8" fill="#555">Shutter</text>
+
+  <!-- Screen edge -->
+  <line x1="545" y1="95" x2="545" y2="175" stroke="#4488CC" stroke-width="1"/>
+
+  <!-- USB-C bottom -->
+  <rect x="555" y="325" width="9" height="4" rx="1" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="575" y="330" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: depth 10mm -->
+  <line x1="545" y1="355" x2="575" y2="355" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="545" y1="345" x2="545" y2="365" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="575" y1="345" x2="575" y2="365" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="560" y="378" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 3: BACK VIEW (top-right) ============ -->
+  <text x="900" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Floppy back body -->
+  <rect x="780" y="80" width="240" height="250" rx="3" ry="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Hub hole center -->
+  <circle cx="900" cy="210" r="18" fill="white" stroke="black" stroke-width="0.5"/>
+  <circle cx="900" cy="210" r="6" fill="#DDD" stroke="black" stroke-width="0.3"/>
+  <text x="900" y="245" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Hub window</text>
+
+  <!-- Write-protect tab corner (top-right of back = top-left when flipped) -->
+  <rect x="785" y="85" width="18" height="30" rx="2" fill="none" stroke="black" stroke-width="0.5"/>
+  <rect x="789" y="89" width="10" height="10" fill="#999" stroke="black" stroke-width="0.3"/>
+  <text x="815" y="100" font-family="sans-serif" font-size="8" fill="#555">Write-protect</text>
+  <text x="815" y="110" font-family="sans-serif" font-size="8" fill="#555">tab</text>
+
+  <!-- Back label area (hidden lines for internals) -->
+  <rect x="810" y="260" width="180" height="55" rx="2" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="900" y="290" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Battery area (hidden)</text>
+
+  <!-- USB-C cutout at bottom -->
+  <rect x="883" y="325" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="345" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C 9.34×3.66mm</text>
+
+  <!-- ============ VIEW 4: TOP-DOWN VIEW (bottom-left) ============ -->
+  <text x="200" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Top edge — narrow rectangle -->
+  <rect x="80" y="500" width="240" height="30" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Write-protect tab slider (wake switch) -->
+  <rect x="85" y="503" width="24" height="24" rx="2" fill="#AAAAAA" stroke="black" stroke-width="0.5"/>
+  <!-- Slider track -->
+  <rect x="87" y="510" width="20" height="10" rx="1" fill="#999" stroke="black" stroke-width="0.3"/>
+  <!-- Slider knob -->
+  <rect x="95" y="511" width="8" height="8" rx="1" fill="#777" stroke="black" stroke-width="0.5"/>
+  <text x="115" y="520" font-family="sans-serif" font-size="8" fill="#555">Wake switch</text>
+  <text x="115" y="530" font-family="sans-serif" font-size="7" fill="#555">(write-protect tab)</text>
+
+  <!-- Shutter visible from top -->
+  <rect x="150" y="500" width="100" height="8" fill="#AAAAAA" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="497" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Shutter rail</text>
+
+  <!-- Dimensions -->
+  <line x1="80" y1="555" x2="320" y2="555" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="80" y1="545" x2="80" y2="565" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="320" y1="545" x2="320" y2="565" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="575" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">90.0mm</text>
+
+  <line x1="340" y1="500" x2="340" y2="530" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="330" y1="500" x2="350" y2="500" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="330" y1="530" x2="350" y2="530" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="360" y="518" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 5: CROSS-SECTION (bottom-center) ============ -->
+  <text x="600" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (A-A)</text>
+
+  <!-- Thin Z-stack — 10mm total -->
+  <!-- Front wall 1.0mm -->
+  <rect x="480" y="500" width="240" height="14" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="730" y="511" font-family="sans-serif" font-size="8" fill="#606060">Front wall 1.0mm</text>
+
+  <!-- Gap -->
+  <rect x="480" y="514" width="240" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Display module 2.0mm -->
+  <rect x="500" y="518" width="200" height="24" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="534" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display (2.0mm)</text>
+
+  <!-- Gap -->
+  <rect x="480" y="542" width="240" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- PCB 1.6mm -->
+  <rect x="480" y="546" width="240" height="20" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="560" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+  <!-- Gap -->
+  <rect x="480" y="566" width="240" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Battery 3.0mm -->
+  <rect x="500" y="570" width="200" height="36" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="592" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (3.0mm)</text>
+
+  <!-- Gap -->
+  <rect x="480" y="606" width="240" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Back wall 1.0mm -->
+  <rect x="480" y="610" width="240" height="14" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="730" y="621" font-family="sans-serif" font-size="8" fill="#606060">Back wall 1.0mm</text>
+
+  <!-- Total Z-stack dimension -->
+  <line x1="465" y1="500" x2="465" y2="624" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="455" y1="500" x2="475" y2="500" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="455" y1="624" x2="475" y2="624" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="450" y="565" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 6: DETAIL — Sliding Shutter (bottom-right) ============ -->
+  <text x="960" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Shutter Mechanism</text>
+
+  <!-- Shutter CLOSED state -->
+  <text x="910" y="505" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333">Closed</text>
+  <rect x="850" y="515" width="120" height="80" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Metal shutter covering screen -->
+  <rect x="860" y="520" width="100" height="65" rx="1" fill="#AAAAAA" stroke="black" stroke-width="0.5"/>
+  <line x1="860" y1="540" x2="960" y2="540" stroke="#999" stroke-width="0.3"/>
+  <line x1="860" y1="560" x2="960" y2="560" stroke="#999" stroke-width="0.3"/>
+  <text x="910" y="555" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">Shutter closed</text>
+  <!-- Tab on right -->
+  <rect x="955" y="540" width="10" height="20" rx="2" fill="#888" stroke="black" stroke-width="0.5"/>
+
+  <!-- Shutter OPEN state -->
+  <text x="910" y="615" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333">Open</text>
+  <rect x="850" y="625" width="120" height="80" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Screen visible -->
+  <rect x="860" y="630" width="80" height="65" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="667" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Screen</text>
+  <!-- Shutter slid to right -->
+  <rect x="940" y="630" width="25" height="65" rx="1" fill="#AAAAAA" stroke="black" stroke-width="0.5"/>
+  <text x="952" y="665" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#666" transform="rotate(90,952,665)">Shutter</text>
+
+  <!-- Arrow showing slide direction -->
+  <line x1="890" y1="720" x2="945" y2="720" stroke="#333" stroke-width="0.8" marker-end="url(#arrow-end)"/>
+  <text x="918" y="735" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Slide direction</text>
+
+  <!-- Rail detail -->
+  <rect x="855" y="750" width="110" height="8" fill="#DDD" stroke="black" stroke-width="0.3"/>
+  <rect x="855" y="755" width="110" height="3" fill="#BBB" stroke="black" stroke-width="0.3"/>
+  <text x="910" y="775" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Spring-loaded rail</text>
+
+  <!-- Dimension: shutter travel -->
+  <line x1="860" y1="790" x2="940" y2="790" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="900" y="805" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">~30mm travel</text>
+</svg>

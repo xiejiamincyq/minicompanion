@@ -1,0 +1,33 @@
+{
+  "status": "independent_candidate_only",
+  "components": 11,
+  "review_connectors": 3,
+  "pins": 26,
+  "ERC_violations": 0,
+  "injected_faults_detected": 3,
+  "nominal_PWM_V": 4.969999999999999,
+  "PWM_reference_and_resistor_only_V": [
+    4.83618499147911,
+    5.104273685450155
+  ],
+  "conditional_25C_FB_leakage_magnitude_V": 0.0015014999999999998,
+  "NFC_input_A_at_3_137544V_85pct": {
+    "0.06765": 0.12683206242544748,
+    "0.15": 0.28122408520054876,
+    "0.3": 0.5624481704010975
+  },
+  "two_stage_active_battery_mAh": 219.17142055550363,
+  "standby_max_mA_500mAh_under_assumptions": 3.820322100940064,
+  "standby_max_mA_800mAh_under_assumptions": 8.89074463615133,
+  "converter_IC_quote_USD_at_5_and_10_units": 0.2487,
+  "limits": [
+    "PWM calculation excludes PFM ripple and transients",
+    "20nA leakage limit is 25C only; not a full-temperature bound",
+    "Input current scenarios are not module maximum ratings",
+    "Enable policy and GPIO unassigned",
+    "No I2C isolation or module connected",
+    "Effective capacitance, inductor, footprints, thermals and startup not released",
+    "Domestic quote and full cost unknown",
+    "No physical test"
+  ]
+}

@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment & secrets
+.env
+
+# OS & editor
+.DS_Store
+*.log
+*.tgz
+
+# Claude Code
+.claude/settings.local.json
+
+# KiCad generated files
+*.kicad_prl
+*.lck
+*-backups/
+fp-info-cache
+hardware/output/
+hardware/jlcpcb/project.db
+hardware/gerbers/
+
+# OpenSCAD rough drafts
+scad/

@@ -1,0 +1,19 @@
+{
+  "status": "detection_frontend_review_only",
+  "components": 32,
+  "ERC_violations": 0,
+  "existing_22_components": "pin connectivity unchanged",
+  "USB_pin_contract": "pass",
+  "wrong_PORT_and_LDO_input_faults": "detected",
+  "USB_island_separate_from_switched_rail": true,
+  "VBUS_DET_resistor_ohm_range": [
+    878130.0,
+    895870.0
+  ],
+  "limitations": [
+    "Raw CC outputs are not charging permission",
+    "Worst-case auxiliary current and slow VBUS ramp not established",
+    "BC1.2, default USB and suspend policy not implemented",
+    "No physical measurements or PCB release"
+  ]
+}

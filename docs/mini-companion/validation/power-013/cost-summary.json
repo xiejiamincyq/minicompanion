@@ -1,0 +1,48 @@
+{
+  "quote_date": "2026-09-28",
+  "illustrative_CNY_per_USD": 7,
+  "exchange_rate_is_live_quote": false,
+  "scenarios": [
+    {
+      "quantity": 5,
+      "quoted_five_parts": [
+        "ESP32-S3-MINI-1-N4R2",
+        "HS20HS072RX",
+        "BQ24072TRGTR",
+        "TPS63802DLAR",
+        "TPS259470LRPWR"
+      ],
+      "partial_USD": "13.1322",
+      "partial_CNY_at_assumed_7": "91.9254",
+      "with_reference_NFC_USD": "34.9322",
+      "with_reference_NFC_CNY_at_assumed_7": "244.5254"
+    },
+    {
+      "quantity": 10,
+      "quoted_five_parts": [
+        "ESP32-S3-MINI-1-N4R2",
+        "HS20HS072RX",
+        "BQ24072TRGTR",
+        "TPS63802DLAR",
+        "TPS259470LRPWR"
+      ],
+      "partial_USD": "11.3606",
+      "partial_CNY_at_assumed_7": "79.5242",
+      "with_reference_NFC_USD": "30.1606",
+      "with_reference_NFC_CNY_at_assumed_7": "211.1242"
+    }
+  ],
+  "excluded_unquoted": [
+    "other six power ICs",
+    "passives",
+    "battery",
+    "NFC alternative",
+    "connectors",
+    "PCB",
+    "assembly",
+    "enclosure",
+    "shipping/tax"
+  ],
+  "complete_unit_cost": null,
+  "budget_compliance": "not_demonstrated"
+}

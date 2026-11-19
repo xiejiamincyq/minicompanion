@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 11: Dashboard Gauge — 90mm dia × 45mm Deep, Circular</text>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#E8E8E8" stroke-width="0.3"/>
+
+  <!-- VIEW 1: Front view (top-left) -->
+  <text x="200" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+  <!-- Outer chrome ring -->
+  <circle cx="200" cy="230" r="100" fill="#CCC" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="230" r="95" fill="#BBB" stroke="#999" stroke-width="1.5"/>
+  <!-- Inner bezel -->
+  <circle cx="200" cy="230" r="88" fill="#333" stroke="black" stroke-width="0.5"/>
+  <!-- Gauge markings around edge -->
+  <line x1="200" y1="148" x2="200" y2="158" stroke="white" stroke-width="1"/>
+  <line x1="242" y1="153" x2="237" y2="162" stroke="white" stroke-width="1"/>
+  <line x1="275" y1="175" x2="268" y2="182" stroke="white" stroke-width="1"/>
+  <line x1="293" y1="210" x2="284" y2="213" stroke="white" stroke-width="1"/>
+  <line x1="293" y1="250" x2="284" y2="247" stroke="white" stroke-width="1"/>
+  <line x1="275" y1="285" x2="268" y2="278" stroke="white" stroke-width="1"/>
+  <line x1="242" y1="307" x2="237" y2="298" stroke="white" stroke-width="1"/>
+  <line x1="158" y1="153" x2="163" y2="162" stroke="white" stroke-width="1"/>
+  <line x1="125" y1="175" x2="132" y2="182" stroke="white" stroke-width="1"/>
+  <line x1="107" y1="210" x2="116" y2="213" stroke="white" stroke-width="1"/>
+  <line x1="107" y1="250" x2="116" y2="247" stroke="white" stroke-width="1"/>
+  <line x1="125" y1="285" x2="132" y2="278" stroke="white" stroke-width="1"/>
+  <line x1="158" y1="307" x2="163" y2="298" stroke="white" stroke-width="1"/>
+  <!-- Screen through circular opening -->
+  <rect x="147" y="193" width="106" height="68" rx="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="230" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#4477AA">5.0" screen</text>
+  <text x="200" y="243" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">108×64.8mm</text>
+  <!-- 3 buttons at bottom -->
+  <circle cx="170" cy="305" r="6" fill="#555" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="312" r="6" fill="#555" stroke="black" stroke-width="0.5"/>
+  <circle cx="230" cy="305" r="6" fill="#555" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="335" text-anchor="middle" font-family="sans-serif" font-size="8">3× 6mm buttons</text>
+  <!-- Diameter dimension -->
+  <line x1="100" y1="350" x2="300" y2="350" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="348" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">90mm dia</text>
+
+  <!-- VIEW 2: Side profile (top-center) -->
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+  <!-- Deep dish body from side -->
+  <path d="M555,170 L555,290 Q555,310 575,310 L625,310 Q645,310 645,290 L645,170 Q645,150 625,150 L575,150 Q555,150 555,170 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Chrome bezel ring front -->
+  <rect x="548" y="155" width="8" height="150" rx="3" fill="#CCC" stroke="black" stroke-width="0.5"/>
+  <!-- Deep dish profile -->
+  <text x="600" y="235" text-anchor="middle" font-family="sans-serif" font-size="8">deep dish body</text>
+  <!-- Swivel base -->
+  <rect x="570" y="310" width="60" height="10" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <circle cx="600" cy="315" r="5" fill="#888" stroke="black" stroke-width="0.3"/>
+  <!-- Base plate -->
+  <rect x="555" y="320" width="90" height="8" rx="2" fill="#AAA" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="345" text-anchor="middle" font-family="sans-serif" font-size="8">swivel base</text>
+  <!-- Depth dimension -->
+  <line x1="548" y1="370" x2="645" y2="370" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="597" y="368" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">45mm deep</text>
+  <!-- Height dimension -->
+  <line x1="660" y1="150" x2="660" y2="328" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="680" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,680,240)">~90mm + base</text>
+  <!-- Screen visible from side -->
+  <line x1="556" y1="180" x2="556" y2="270" stroke="#B0D4F1" stroke-width="2"/>
+  <text x="545" y="225" text-anchor="end" font-family="sans-serif" font-size="7" fill="#4477AA">screen</text>
+
+  <!-- VIEW 3: Back view (top-right) -->
+  <text x="1000" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+  <!-- Circular back -->
+  <circle cx="1000" cy="230" r="100" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="230" r="95" fill="#D5D5D5" stroke="black" stroke-width="0.3"/>
+  <!-- USB-C center -->
+  <rect x="988" y="225" width="24" height="8" rx="3" fill="#666" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="248" text-anchor="middle" font-family="sans-serif" font-size="8">USB-C 8.94×3.26mm</text>
+  <!-- Mounting holes -->
+  <circle cx="970" cy="180" r="3" fill="#444" stroke="black" stroke-width="0.3"/>
+  <circle cx="1030" cy="180" r="3" fill="#444" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="172" text-anchor="middle" font-family="sans-serif" font-size="7">mounting holes</text>
+  <!-- Ventilation slots -->
+  <rect x="975" y="270" width="50" height="3" rx="1" fill="#444" stroke="black" stroke-width="0.2"/>
+  <rect x="975" y="278" width="50" height="3" rx="1" fill="#444" stroke="black" stroke-width="0.2"/>
+  <rect x="975" y="286" width="50" height="3" rx="1" fill="#444" stroke="black" stroke-width="0.2"/>
+  <text x="1000" y="300" text-anchor="middle" font-family="sans-serif" font-size="7">vent slots</text>
+  <!-- Hidden PCB outline -->
+  <rect x="940" y="198" width="120" height="65" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="4,3"/>
+  <text x="1000" y="220" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#888">PCB (hidden)</text>
+  <!-- Swivel mount point -->
+  <circle cx="1000" cy="320" r="8" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="340" text-anchor="middle" font-family="sans-serif" font-size="7">swivel mount</text>
+
+  <!-- VIEW 4: Top-down view (bottom-left) -->
+  <text x="200" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+  <!-- Circular gauge from above -->
+  <circle cx="200" cy="660" r="80" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="660" r="75" fill="#CCC" stroke="#999" stroke-width="1"/>
+  <!-- Chrome ring -->
+  <circle cx="200" cy="660" r="70" fill="#333" stroke="black" stroke-width="0.3"/>
+  <!-- Screen visible through top -->
+  <rect x="152" y="632" width="96" height="56" rx="1" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="664" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">screen</text>
+  <!-- Swivel base below -->
+  <ellipse cx="200" cy="660" rx="95" ry="30" fill="none" stroke="#AAA" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="200" y="705" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">swivel base (below)</text>
+  <!-- Diameter -->
+  <line x1="120" y1="760" x2="280" y2="760" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="758" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">90mm dia</text>
+
+  <!-- VIEW 5: Cross-section (bottom-center) -->
+  <text x="600" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Through Center)</text>
+  <!-- Deep dish outer shell -->
+  <path d="M500,540 L500,720 Q500,740 520,740 L680,740 Q700,740 700,720 L700,540 Q700,520 680,520 L520,520 Q500,520 500,540 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Interior cavity -->
+  <path d="M505,545 L505,715 Q505,735 520,735 L680,735 Q695,735 695,715 L695,545 Q695,530 680,525 L520,525 Q505,530 505,545 Z" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Chrome bezel ring at front -->
+  <rect x="494" y="525" width="8" height="210" rx="3" fill="#CCC" stroke="black" stroke-width="0.5"/>
+  <text x="490" y="522" text-anchor="end" font-family="sans-serif" font-size="7">chrome ring</text>
+  <!-- Screen module -->
+  <rect x="510" y="555" width="140" height="10" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="580" y="563" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#4477AA">screen 4.5mm</text>
+  <!-- Screen mounting bracket -->
+  <rect x="510" y="545" width="140" height="6" fill="#888" stroke="black" stroke-width="0.3"/>
+  <text x="580" y="551" text-anchor="middle" font-family="sans-serif" font-size="6">mounting bracket</text>
+  <!-- PCB behind screen -->
+  <rect x="520" y="580" width="160" height="5" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="585" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#2E7D32">PCB 110×65mm</text>
+  <!-- Speaker -->
+  <ellipse cx="560" cy="650" rx="24" ry="6" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="560" y="653" text-anchor="middle" font-family="sans-serif" font-size="7">speaker 28mm</text>
+  <!-- Air gap / cavity -->
+  <text x="640" y="660" font-family="sans-serif" font-size="7" fill="#888">air cavity</text>
+  <!-- Wall thickness -->
+  <line x1="498" y1="630" x2="507" y2="630" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="488" y="628" text-anchor="end" font-family="sans-serif" font-size="7" fill="#CC0000">2mm</text>
+  <!-- Depth dimension -->
+  <line x1="715" y1="520" x2="715" y2="740" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="735" y="635" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,735,635)">45mm deep</text>
+  <!-- Diameter -->
+  <line x1="500" y1="755" x2="700" y2="755" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="600" y="753" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">90mm dia</text>
+  <!-- Swivel mount below -->
+  <rect x="575" y="740" width="50" height="10" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="765" text-anchor="middle" font-family="sans-serif" font-size="7">swivel mount</text>
+
+  <!-- VIEW 6: Detail closeup (bottom-right) -->
+  <text x="1000" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Swivel/Tilt Base Joint</text>
+
+  <!-- Swivel mechanism exploded view -->
+  <text x="1000" y="510" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Swivel Base Assembly</text>
+
+  <!-- Base plate -->
+  <rect x="900" y="730" width="200" height="12" rx="3" fill="#AAA" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="740" text-anchor="middle" font-family="sans-serif" font-size="8">base plate</text>
+  <!-- Anti-slip pads -->
+  <rect x="910" y="742" width="15" height="3" rx="1" fill="#333" stroke="black" stroke-width="0.2"/>
+  <rect x="1075" y="742" width="15" height="3" rx="1" fill="#333" stroke="black" stroke-width="0.2"/>
+  <text x="1000" y="755" text-anchor="middle" font-family="sans-serif" font-size="7">rubber feet</text>
+
+  <!-- Swivel bearing -->
+  <circle cx="1000" cy="710" r="18" fill="#999" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="710" r="12" fill="#888" stroke="black" stroke-width="0.3"/>
+  <circle cx="1000" cy="710" r="4" fill="#666" stroke="black" stroke-width="0.3"/>
+  <text x="1030" y="705" font-family="sans-serif" font-size="8">swivel bearing</text>
+  <!-- Rotation arrows -->
+  <path d="M975,710 Q975,690 1000,690" fill="none" stroke="#CC0000" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+  <path d="M1025,710 Q1025,730 1000,730" fill="none" stroke="#CC0000" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+  <text x="1000" y="685" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">360° swivel</text>
+
+  <!-- Tilt mechanism -->
+  <text x="1000" y="540" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Tilt Joint Detail</text>
+  <!-- Gauge body stub -->
+  <rect x="950" y="555" width="100" height="60" rx="30" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="590" text-anchor="middle" font-family="sans-serif" font-size="8">gauge body</text>
+  <!-- Tilt pivot -->
+  <circle cx="970" cy="615" r="8" fill="#888" stroke="black" stroke-width="0.5"/>
+  <circle cx="1030" cy="615" r="8" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="615" text-anchor="middle" font-family="sans-serif" font-size="7">pivot pins</text>
+  <!-- Tilt bracket -->
+  <path d="M962,615 L962,660 L1038,660 L1038,615" fill="none" stroke="black" stroke-width="1"/>
+  <text x="1000" y="655" text-anchor="middle" font-family="sans-serif" font-size="7">tilt bracket</text>
+  <!-- Tilt angle indicator -->
+  <path d="M950,560 Q930,570 935,590" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="920" y="575" text-anchor="end" font-family="sans-serif" font-size="8" fill="#CC0000">±30° tilt</text>
+  <!-- Alternate positions dashed -->
+  <rect x="940" y="550" width="100" height="55" rx="28" fill="none" stroke="#888" stroke-width="0.3" stroke-dasharray="3,3" transform="rotate(-20,990,580)"/>
+  <rect x="940" y="560" width="100" height="55" rx="28" fill="none" stroke="#888" stroke-width="0.3" stroke-dasharray="3,3" transform="rotate(15,990,590)"/>
+
+  <!-- Connection to swivel -->
+  <line x1="1000" y1="660" x2="1000" y2="690" stroke="black" stroke-width="1"/>
+  <text x="1015" y="678" font-family="sans-serif" font-size="7">stem</text>
+</svg>

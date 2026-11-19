@@ -1,0 +1,333 @@
+DESIGN 21: TROPHY
+=================
+Award/achievement display stand. Solid pedestal base with tapered
+pillar rising to screen at top. Decorative crown element above screen.
+Nameplate recess for engraved label. Gold/metallic finish.
+Think "desk award" or "Best AI Agent 2026 trophy."
+
+Overall: 60 x 60mm square base, ~130mm total height
+Screen: 5.0" SSD1963 touch, 120x75mm module, 108x64.8mm active area
+Target user: celebration display, novelty desk trophy
+
+FRONT VIEW
+──────────
+
+                  ★
+                 ╱╲╲               ← Decorative crown element
+                ╱  ╲╲                star/cup/laurel wreath
+               ╱ ☆  ╲╲              adds ~20mm above screen
+              ╱______╲╲              (~30mm wide)
+         ┌──────────────────┐
+         │ ┌──────────────┐ │
+         │ │              │ │
+         │ │   TFT LCD    │ │
+         │ │   SCREEN     │ │      ← 5.0" SSD1963 screen
+         │ │   108x64.8   │ │        108 x 64.8mm active
+         │ │   active     │ │        in 120 x 75mm module
+         │ │              │ │        tilted ~10° forward
+         │ │              │ │
+         │ └──────────────┘ │
+         └────────┬┬────────┘      ← Screen housing (~125 x 80mm)
+                  ││
+                  ││               ← Tapered pillar/column
+                  ││                 20mm wide at top
+                  ││                 30mm wide at base
+                  ││                 ~70mm tall
+                  ││
+              ┌───┘└───┐
+         ┌────┴────────┴────┐
+         │ ╔══════════════╗ │      ← Nameplate recess
+         │ ║ BEST AI AGENT║ │        40 x 12mm engraved plate
+         │ ║    2026      ║ │        (replaceable metal strip)
+         │ ╚══════════════╝ │
+         │  (●)  (●)  (●)  │      ← 3 buttons on base front edge
+         └──────────────────┘        6mm each, 14mm spacing
+              60 x 60mm
+               base
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+              ★
+             ╱╲
+            ╱  ╲         ← Crown element ~20mm tall
+           ╱    ╲
+         ┌────────┐
+         │ screen │      ← Screen housing, tilted ~10° forward
+         │ 10° ╱  │        so user looks slightly down at it
+         │   ╱    │
+         └──┬─────┘
+            │╲
+            │ ╲          ← Pillar, slight backward lean
+            │  ╲           to offset screen forward tilt
+            │   ╲          ~20mm wide x 70mm tall
+            │    ╲
+         ┌──┴─────┴──┐
+         │   BASE    │   ← Base pedestal 60 x 60 x 20mm
+         │  speaker  │     Speaker inside base
+         └───────────┘
+            60mm deep
+
+    Total height: 20mm base + 70mm pillar + ~20mm screen
+                  housing + ~20mm crown = ~130mm
+
+
+BACK VIEW
+─────────
+
+              ★
+             ╱╲
+         ┌────────┐
+         │        │      ← Screen housing back (plain)
+         │        │
+         └──┬┬────┘
+            ││
+            ││           ← Pillar back (cable channel inside)
+            ││
+         ┌──┴┴────────┐
+         │  ┌──────┐  │
+         │  │USB-C │  │  ← USB-C cutout on base back face
+         │  └──────┘  │    8.94 x 3.26mm, centered
+         │            │
+         └────────────┘
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+              ★ crown
+         ┌──────────┐
+         │  screen  │     ← Screen housing ~80mm wide
+         │  housing │       (wider than pillar)
+         └────┬┬────┘
+              ││          ← Pillar ~20-30mm
+         ┌────┴┴────┐
+         │          │     ← Base 60 x 60mm
+         │   BASE   │
+         └──────────┘
+
+
+CROSS-SECTION (vertical cut through center, looking from right)
+────────────────────────────────────────────────────────────────
+
+           ┌─crown─┐          ← Decorative element (solid)
+           │  ★    │            mounted on top of screen housing
+           └──┬┬───┘
+         ┌────┘└─────────┐
+         │  ┌─screen──┐  │    ← Screen housing (2mm walls)
+         │  │ TFT 4.5 │╱ │      tilted 10° forward
+         │  ├─────────┤  │
+         │  │ gap 3mm │  │
+         │  ├─────────┤  │
+         │  │ PCB 1.6 │  │    ← PCB mounted in screen housing
+         │  │┌ESP32─┐ │  │      behind screen module
+         │  └┴──────┴─┘  │
+         └────┬─┬────────┘
+              │ │              ← Pillar (hollow)
+              │ │                internal cable channel
+              │w│                ~12mm internal dia
+              │i│                FPC + USB + speaker wires
+              │r│                route through pillar
+              │e│
+              │s│
+         ┌────┴─┴────────┐
+         │ ┌───────────┐ │    ← Base pedestal (hollow)
+         │ │  speaker   │ │     Speaker 28mm dia x 3.5mm
+         │ │  28mm ○    │ │     fires downward (reflects off desk)
+         │ │  USB-C ──────┤     USB-C breakout board in base
+         │ └───────────┘ │      wired up through pillar to PCB
+         └───────────────┘
+
+    Screen housing depth:
+    Front wall:  2mm
+    Screen:      4.5mm (in 5mm pocket)
+    Gap:         3mm
+    PCB:         1.6mm
+    ESP32:       2.4mm (on PCB back face)
+    Back wall:   2mm
+    Total: ~16mm housing depth
+
+
+COMPONENT LAYOUT (exploded, top to bottom)
+──────────────────────────────────────────
+
+    Part 1 — CROWN ELEMENT (~30 x 30 x 20mm)
+    ├── Decorative star, cup, or laurel wreath
+    ├── Press-fit or screw onto screen housing top
+    ├── Solid (no electronics)
+    ├── Gold/metallic painted finish
+    └── Interchangeable: different crowns for different moods
+
+    Part 2 — SCREEN HOUSING (~80 x 50 x 16mm)
+    ├── Screen window: 109 x 66mm on front face
+    ├── Screen pocket: 121 x 76mm, 5mm deep
+    ├── 4x retention clips for screen module
+    ├── PCB standoffs inside (4x M2)
+    ├── Tilted ~10° forward from vertical
+    ├── Bottom opening connects to pillar top
+    └── 2-piece clamshell (front + back half)
+
+    Part 3 — SCREEN MODULE (120 x 75 x 4.5mm)
+    ├── Landscape orientation
+    ├── Seated in housing front pocket
+    ├── Touch digitizer faces front
+    └── FPC exits bottom, routes into pillar
+
+    Part 4 — PCB (110 x 65 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5 x 2.4mm) faces back
+    ├── SSD1963 40-pin FPC connector
+    ├── No tactile switches on PCB (buttons in base, wired up)
+    ├── USB-C connector → wired to breakout in base via pillar
+    │   (or: USB-C on PCB, extension cable through pillar)
+    ├── Speaker connector header
+    └── 4x M2 mounting to housing standoffs
+
+    Part 5 — PILLAR (~30mm OD, ~70mm tall)
+    ├── Hollow tube, tapers from 30mm base to 20mm top
+    ├── Internal channel ~12mm dia for wiring
+    ├── Wires: FPC extension, USB-C extension, speaker, buttons
+    ├── Press-fits into base socket + screen housing socket
+    ├── Can be printed as separate piece or integral with base
+    └── Gold/metallic finish, smooth
+
+    Part 6 — BASE PEDESTAL (60 x 60 x 20mm)
+    ├── Hollow interior
+    ├── 3x tactile switches on front edge (6mm, through holes)
+    ├── Nameplate recess on front face: 42 x 14mm, 1mm deep
+    │   └── Accepts engraved metal strip (adhesive-backed)
+    ├── USB-C breakout board or extension port on back face
+    │   └── Cutout: 8.94 x 3.26mm
+    ├── Speaker (28mm dia x 3.5mm) mounted face-down
+    │   └── Sound exits through slot in base bottom
+    │   └── Desk surface acts as acoustic reflector
+    ├── Pillar socket (center top, 30mm dia recess)
+    ├── 4x rubber feet on bottom (8mm dia, 2mm tall)
+    │   └── Raised feet create gap for speaker sound to exit
+    └── Bottom panel: removable (2x screws) for assembly access
+
+
+WIRING THROUGH PILLAR
+─────────────────────
+
+    Screen housing (top):
+    ┌──────────┐
+    │  PCB     │
+    │  │ │ │ │ │       ← FPC, USB ext, speaker+, speaker-,
+    └──┤ │ │ ├─┘         btn1, btn2, btn3
+       │ │ │ │
+       │ │ │ │         ← Wires bundle through hollow pillar
+       │ │ │ │            (~12mm internal channel)
+       │ │ │ │            Use ribbon cable or flat flex
+    ┌──┤ │ │ ├─┐
+    │  │ │ │ │ │
+    │  ├─┘ └─┤ │       ← Split to: speaker, buttons, USB-C
+    │  spkr  usb│         in base
+    │  btns     │
+    └───────────┘
+    Base (bottom)
+
+    Alternative: PCB in base (not screen housing).
+    Then only FPC extension runs through pillar.
+    Trade-off: thicker pillar needed for 40-pin FPC.
+
+
+NAMEPLATE DETAIL
+────────────────
+
+    Base front face:
+
+    ┌──────────────────────────────────────┐
+    │                                      │
+    │   ╔════════════════════════════╗     │
+    │   ║   BEST AI AGENT  2026    ║     │   ← Recess: 42 x 14 x 1mm
+    │   ╚════════════════════════════╝     │     Accepts adhesive metal strip
+    │                                      │     or printed label
+    │     (●)      (●)      (●)           │   ← 3 buttons below nameplate
+    │    approve  reject   action          │     6mm, 14mm spacing
+    └──────────────────────────────────────┘
+
+    Nameplate options:
+    - Engraved brass/aluminum strip (adhesive back)
+    - Printed label behind clear window
+    - Laser-engraved directly into case material
+    - Blank (user fills in with label maker)
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+
+    Assembly order:
+    1. Install screen in housing front pocket (clips retain)
+    2. Mount PCB on housing standoffs (4x M2)
+    3. Connect FPC from screen to PCB
+    4. Route extension wires through pillar:
+       - Speaker wire (2-conductor)
+       - Button wires (3x 2-conductor or ribbon)
+       - USB-C extension cable
+    5. Press-fit pillar into screen housing bottom socket
+    6. Press-fit pillar into base top socket
+    7. Connect speaker to wire in base
+    8. Connect buttons to wires in base
+    9. Connect USB-C breakout in base
+    10. Close base bottom panel (2x M2 screws)
+    11. Apply rubber feet
+    12. Press-fit crown element on top
+    13. Insert nameplate into recess
+
+    Disassembly: pull crown off, pull pillar from base,
+    pull pillar from housing. Three main pieces separate.
+
+
+SPECIAL FEATURES
+────────────────
+
+    1. TROPHY / AWARD AESTHETIC
+       - Instantly recognizable desk trophy silhouette
+       - Gold/metallic finish elevates perceived quality
+       - Nameplate makes it feel like a real award
+       - Conversation starter: "What did you win?"
+       - Celebrates the AI agent partnership concept
+
+    2. INTERCHANGEABLE CROWN ELEMENTS
+       - Press-fit top decoration can be swapped:
+         ★ Star — default, classic trophy
+         🏆 Cup — achievement unlocked
+         ☆ Laurel wreath — winner's crown
+         ◇ Diamond — premium feel
+       - Print multiples, swap for mood or occasion
+       - Could 3D print custom crowns
+
+    3. NAMEPLATE PERSONALIZATION
+       - Recess accepts standard engraved plates
+       - "Best AI Agent 2026"
+       - "Most Helpful Coder"
+       - "Ship It Award"
+       - User personalizes their trophy
+
+    4. TILTED SCREEN VIEWING ANGLE
+       - 10° forward tilt angles screen toward seated user
+       - Natural viewing from slightly below (desk height)
+       - Screen at eye-friendly angle, no neck strain
+       - Touch accessible from front
+
+    5. SPEAKER IN BASE
+       - 28mm speaker fires down, reflects off desk surface
+       - Rubber feet create acoustic gap (2mm clearance)
+       - Base acts as resonance chamber (60x60x20mm cavity)
+       - Sound projects outward from base perimeter
+       - Achievement unlock sound effects
+
+    6. MODULAR THREE-PIECE DESIGN
+       - Crown + screen housing + pillar + base
+       - Each piece separates for maintenance
+       - Pillar press-fits into sockets (no tools needed)
+       - Could print different pillar heights
+       - Different bases possible (round, octagonal, etc.)
+
+    7. GOLD FINISH OPTIONS
+       - PLA/PETG: gold metallic filament
+       - Resin: metallic gold resin or gold spray paint
+       - Premium: vacuum-metallized plastic coating
+       - Budget: gold spray paint over primer
+       - Accent: black base with gold pillar and crown

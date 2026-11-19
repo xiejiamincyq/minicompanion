@@ -1,0 +1,317 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 10                              ║
+║                    PICTURE FRAME                                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+DESCRIPTION
+───────────
+Digital photo frame aesthetic designed to blend into any living room or desk.
+Wide decorative bezel with wood grain or bamboo texture pattern surrounds the
+screen behind a clear panel. From the front, it looks like a normal small
+picture frame — no visible buttons, no obvious tech. Three buttons are
+completely hidden on the bottom edge (touch to find, invisible from front).
+An easel-style fold-out back stand props it up at a comfortable viewing
+angle. USB-C is recessed on the bottom edge. Optional wall-mount keyhole
+slot on back. The cleanest, most discreet Devotchi design.
+
+OVERALL DIMENSIONS
+──────────────────
+  Width:  160 mm
+  Height: 120 mm
+  Depth:   25 mm  (body) / ~80 mm (with easel deployed)
+  Wall:     2.0 mm (structural) + 20 mm decorative bezel
+  Bezel:   20 mm on all sides
+
+
+FRONT VIEW
+──────────
+
+              160 mm
+     ◄─────────────────────────────────────►
+
+     ┌─────────────────────────────────────┐  ▲
+     │ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │  │
+     │ ░░                              ░░░ │  │
+     │ ░░   ┌───────────────────────┐  ░░░ │  │
+     │ ░░   │                       │  ░░░ │  │
+     │ ░░   │      5.0" SCREEN      │  ░░░ │  │  120 mm
+     │ ░░   │      (landscape)      │  ░░░ │  │
+     │ ░░   │   108×64.8mm active   │  ░░░ │  │
+     │ ░░   │                       │  ░░░ │  │
+     │ ░░   └───────────────────────┘  ░░░ │  │
+     │ ░░                              ░░░ │  │
+     │ ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │  │
+     └─────────────────────────────────────┘  ▼
+
+     ░░░ = Wood grain / bamboo texture bezel (20mm all sides)
+
+     No visible buttons, LEDs, or ports from front.
+     Clear protective panel over screen.
+
+
+BOTTOM EDGE (HIDDEN INTERFACE)
+──────────────────────────────
+
+              160 mm
+     ◄─────────────────────────────────────►
+
+     ╔═════════════════════════════════════╗
+     ║                                     ║
+     ║   ■      ■      ■     ┌──────┐     ║
+     ║  btn1   btn2   btn3   │USB-C │     ║
+     ║  (hidden, flush)      │recess│     ║
+     ║                       └──────┘     ║
+     ╚═════════════════════════════════════╝
+
+     Buttons: 6mm tactile, flush with bottom edge
+     No visible marking — located by touch
+     USB-C: recessed 3mm into bottom edge
+
+
+SIDE PROFILE (WITH EASEL DEPLOYED)
+──────────────────────────────────
+
+     ┌───────┐
+     │       │  25 mm deep body
+     │SCREEN │
+     │ + PCB │
+     │       │
+     │       │╲
+     │       │ ╲
+     └───────┘  ╲         Easel leg
+                 ╲        (fold-out)
+                  ╲
+                   ╲
+     ══════════════╧══════════
+          desk surface
+
+     Viewing angle: ~70° from horizontal
+     Easel extends ~55mm from back
+
+
+BACK VIEW
+─────────
+
+              160 mm
+     ◄─────────────────────────────────────►
+
+     ┌─────────────────────────────────────┐  ▲
+     │                                     │  │
+     │    ╭─────╮                          │  │
+     │    │ ◇◇◇ │  Keyhole wall mount      │  │
+     │    ╰─────╯  (optional)              │  │
+     │                                     │  │  120 mm
+     │  ┌─────────────────────────────┐    │  │
+     │  │                             │    │  │
+     │  │      EASEL LEG              │    │  │
+     │  │      (folded flat)          │    │  │
+     │  │      hinged at top          │    │  │
+     │  │                             │    │  │
+     │  └─────────────────────────────┘    │  │
+     │                                     │  │
+     │         [DEVOTCHI]  (subtle logo)   │  │
+     └─────────────────────────────────────┘  ▼
+
+
+CROSS-SECTION (SIDE CUT)
+─────────────────────────
+
+              25 mm
+     ◄──────────────────►
+
+     ┌──────────────────┐  ▲
+     │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│  │  Clear front panel (1.5mm)
+     ├──────────────────┤  │
+     │                  │  │  Air gap (0.5mm)
+     │ ╔══════════════╗ │  │
+     │ ║   SCREEN     ║ │  │  Screen module
+     │ ║  120×75mm    ║ │  │  (4.5mm thick)
+     │ ║  ×4.5mm     ║ │  │
+     │ ╚══════════════╝ │  │  120 mm
+     │                  │  │
+     │ ┌──────────────┐ │  │  Foam spacer (2mm)
+     │ │     PCB      │ │  │
+     │ │  110×65mm    │ │  │  PCB (1.6mm)
+     │ │  ×1.6mm     │ │  │
+     │ │  ESP32-S3   │ │  │
+     │ │  + speaker  │ │  │
+     │ └──────────────┘ │  │
+     │                  │  │
+     │  ┌────EASEL────┐ │  │  Easel leg (folded)
+     │  └─────────────┘ │  │
+     └──────────────────┘  ▼
+
+
+COMPONENT LAYOUT (EXPLODED FRONT-TO-BACK)
+──────────────────────────────────────────
+
+     ┌─ Front Frame Shell ────────────────────────┐
+     │  160 × 120 mm outer                        │
+     │  20mm bezel width on all sides              │
+     │  Wood grain / bamboo texture (printed)      │
+     │  Clear panel inset (acrylic/polycarbonate)  │
+     │  Screen opening: 110 × 66 mm               │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Screen Module ────────────────────────────┐
+     │  5.0" SSD1963 touch (120×75×4.5mm)         │
+     │  Landscape orientation                      │
+     │  Active area: 108×64.8mm                    │
+     │  FPC cable routes down to PCB               │
+     │  Held by perimeter foam tape                │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ PCB Assembly ─────────────────────────────┐
+     │  PCB (110×65×1.6mm) behind screen           │
+     │  ESP32-S3-MINI-1 (15.4×20.5×2.4mm)         │
+     │  Speaker (28mm dia × 3.5mm) — fires down    │
+     │  3 × tactile buttons (bottom edge routing)  │
+     │  USB-C connector (bottom edge)              │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Back Shell ───────────────────────────────┐
+     │  160 × 120 mm                               │
+     │  Flat with easel hinge mount                │
+     │  Keyhole wall-mount slot (optional)         │
+     │  Speaker vent holes (small, bottom area)    │
+     │  Subtle "DEVOTCHI" debossed text            │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Easel Leg ────────────────────────────────┐
+     │  ~100 × 30 mm, 2mm thick                   │
+     │  Hinged at top edge (piano hinge or living) │
+     │  Friction detent at ~20° open angle         │
+     │  Folds completely flat against back         │
+     │  Rubber tip on bottom for grip              │
+     └────────────────────────────────────────────┘
+
+
+MOUNTING DETAILS
+────────────────
+
+  Screen Mount:
+    - Landscape, centered behind front panel opening
+    - Perimeter foam tape (2mm thick) cushions module
+    - Front clear panel provides protection
+    - 1mm bezel lip overlap on screen edges
+    - No clips needed — sandwiched between shells
+
+  PCB Mount:
+    - Behind screen, separated by 2mm foam spacer
+    - 4 × M2 standoffs into back shell (3mm height)
+    - Component side faces back (speaker toward back vents)
+    - Buttons on daughter board or flex cable to bottom edge
+
+  Hidden Buttons:
+    - 3 × 6mm tactile switches
+    - Mounted on small flex PCB along bottom edge
+    - Actuated through 1mm holes in bottom edge
+    - No visible marking — user finds by touch
+    - Slight tactile bump (0.2mm) optional for findability
+    - 20mm spacing, centered on bottom edge
+
+  Speaker:
+    - 28mm dia × 3.5mm on PCB, fires toward back
+    - Sound exits through small vent holes in back shell
+    - Vent holes in bottom area — invisible from front
+    - Modest volume — appropriate for desktop distance
+
+  USB-C:
+    - Recessed 3mm into bottom edge
+    - 8.94 × 3.26 mm cutout
+    - Hidden from front and side views
+    - Cable exits downward — invisible on desk
+
+  Wall Mount (optional):
+    - Keyhole slot on upper back: 10mm head, 5mm neck
+    - Accepts standard picture hook or screw
+    - Centered horizontally, 25mm from top edge
+    - Load capacity: sufficient for ~150g total weight
+
+  Easel Stand:
+    - Piano hinge or living hinge at top of leg
+    - Friction detent holds at ~20° from vertical
+    - When deployed, creates ~70° viewing angle
+    - Folds completely flat (1.5mm profile)
+    - Rubber foot on bottom tip prevents sliding
+
+
+ASSEMBLY NOTES
+──────────────
+
+  1. Clean clear front panel, place into front frame recess
+  2. Apply foam tape perimeter to screen module
+  3. Seat screen module behind clear panel, press into foam
+  4. Mount PCB onto back shell standoffs (4 × M2 screws)
+  5. Connect button flex cable from PCB to bottom edge
+  6. Connect screen FPC to PCB
+  7. Route USB-C to bottom edge cutout
+  8. Attach easel leg to back shell hinge point
+  9. Join front frame to back shell
+  10. Secure with 4 × snap clips (hidden in frame edges)
+  11. Optional: 2 × M2 screws from back for security
+
+  Shell: 2-part (front frame + back plate)
+  Material: PLA/PETG with wood-grain texture filament
+           or standard filament + wood grain vinyl wrap
+  Clear panel: 1.5mm acrylic or polycarbonate, laser-cut
+  Print orientation: Front frame face-down, back plate flat
+  Finish: Matte — avoid glossy plastic look
+
+
+SPECIAL FEATURES
+────────────────
+
+  Invisible Technology:
+    - From the front: looks like an ordinary picture frame
+    - No visible buttons, ports, LEDs, or branding
+    - Clear panel could pass for glass
+    - Only the screen content reveals it is electronic
+    - Perfect for living room, office, or bedside table
+
+  Wood Grain / Bamboo Texture:
+    - 20mm wide decorative bezel on all sides
+    - Options for achieving texture:
+      a) Wood-fill PLA filament (real wood particles)
+      b) Standard PLA + printed vinyl wrap
+      c) Textured surface in 3D model (grain lines)
+      d) Real wood veneer glued to PLA frame
+    - Multiple finish options: oak, walnut, bamboo, white
+
+  Hidden Button Interface:
+    - Buttons on bottom edge — invisible from all angles
+    - User learns positions through muscle memory
+    - Optional: tiny tactile bumps (0.2mm) as guides
+    - Feels intentional, not like missing buttons
+    - Alternative: capacitive touch pads on bottom edge
+
+  Easel Stand:
+    - Classic picture frame back stand design
+    - Allows portrait or landscape orientation on desk
+    - Folds flat for transport or wall mounting
+    - Friction-fit holds angle without ratcheting
+    - Rubber tip grips desk surface
+
+  Wall Mount Option:
+    - Keyhole slot accepts standard picture hanging hardware
+    - No easel needed when wall-mounted
+    - Looks like a digital picture frame on any wall
+    - USB-C cable can be routed downward along wall
+
+  Glass/Clear Panel:
+    - Protects screen from dust and fingerprints
+    - Creates authentic frame appearance
+    - Anti-glare treatment optional
+    - Adds perceived quality and weight
+    - Replaceable if scratched
+
+  Living Room Friendly:
+    - Zero "gadget" aesthetic — pure home decor
+    - No fan noise, no visible wiring from front
+    - Size comparable to 4×6" photo in frame
+    - Could display clock, art, or ambient animations
+    - Partners and guests won't object to its presence
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Design 10: Picture Frame — Invisible tech, pure home decor aesthetic      ║
+╚══════════════════════════════════════════════════════════════════════════════╝

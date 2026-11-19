@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif" font-size="10px">
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-size="16px" font-weight="bold">Design 19: Skateboard — 96×26×14mm</text>
+
+  <!-- Grid labels -->
+  <text x="200" y="60" text-anchor="middle" font-size="11px" font-weight="bold">FRONT VIEW</text>
+  <text x="600" y="60" text-anchor="middle" font-size="11px" font-weight="bold">SIDE VIEW</text>
+  <text x="1000" y="60" text-anchor="middle" font-size="11px" font-weight="bold">BACK VIEW</text>
+  <text x="200" y="470" text-anchor="middle" font-size="11px" font-weight="bold">TOP-DOWN VIEW</text>
+  <text x="600" y="470" text-anchor="middle" font-size="11px" font-weight="bold">CROSS-SECTION A–A</text>
+  <text x="1000" y="470" text-anchor="middle" font-size="11px" font-weight="bold">DETAIL: TRUCK/WHEEL ASSEMBLY</text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowR" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto">
+      <path d="M0,0 L6,2 L0,4" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowL" markerWidth="6" markerHeight="4" refX="0" refY="2" orient="auto">
+      <path d="M6,0 L0,2 L6,4" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowD" markerWidth="4" markerHeight="6" refX="2" refY="6" orient="auto">
+      <path d="M0,0 L2,6 L4,0" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowU" markerWidth="4" markerHeight="6" refX="2" refY="0" orient="auto">
+      <path d="M0,6 L2,0 L4,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch19" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- ==================== FRONT VIEW (top-left) ==================== -->
+  <!-- Looking at the narrow end: 26mm wide × 14mm tall -->
+  <g transform="translate(200,250)">
+    <!-- Deck profile — slightly curved top -->
+    <path d="M-50,-20 Q-50,-28 -40,-28 L40,-28 Q50,-28 50,-20 L50,0 Q50,8 40,8 L-40,8 Q-50,8 -50,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Screen on top (visible as a line from front) -->
+    <line x1="-35" y1="-28" x2="35" y2="-28" stroke="#B0D4F1" stroke-width="3"/>
+    <text x="0" y="-35" text-anchor="middle" font-size="9px" fill="#336">Screen (edge)</text>
+    <!-- Wheels underneath — two visible from front -->
+    <circle cx="-38" cy="18" r="10" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="-38" cy="18" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+    <circle cx="38" cy="18" r="10" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="38" cy="18" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+    <!-- Truck axle -->
+    <line x1="-38" y1="18" x2="38" y2="18" stroke="#777" stroke-width="2"/>
+    <rect x="-8" y="8" width="16" height="10" rx="1" fill="#999" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="16" text-anchor="middle" font-size="7px" fill="white">Truck</text>
+
+    <!-- Width dimension -->
+    <line x1="-50" y1="45" x2="50" y2="45" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="57" text-anchor="middle" font-size="9px" fill="#CC0000">26mm</text>
+    <!-- Height -->
+    <line x1="70" y1="-28" x2="70" y2="28" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="85" y="3" text-anchor="middle" font-size="9px" fill="#CC0000">14mm</text>
+  </g>
+
+  <!-- ==================== SIDE VIEW (top-center) ==================== -->
+  <!-- 96mm long × 14mm tall with kicktail curves -->
+  <g transform="translate(600,250)">
+    <!-- Deck with kicktails -->
+    <path d="M-155,-15 Q-150,-35 -140,-30 L-130,-25 L130,-25 Q140,-30 145,-35 Q155,-15 145,-10 L130,0 L-130,0 L-145,-10 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Screen on deck top surface -->
+    <rect x="-80" y="-24" width="120" height="3" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="-20" y="-28" text-anchor="middle" font-size="9px" fill="#336">TFT Screen on deck</text>
+    <!-- Kicktail buttons -->
+    <circle cx="-135" cy="-18" r="5" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="-135" y="-16" text-anchor="middle" font-size="6px">A</text>
+    <circle cx="138" cy="-18" r="5" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="138" y="-16" text-anchor="middle" font-size="6px">B</text>
+    <text x="-135" y="-28" text-anchor="middle" font-size="8px">Kicktail btns</text>
+
+    <!-- Front truck + wheels -->
+    <rect x="-110" y="0" width="20" height="8" rx="1" fill="#999" stroke="black" stroke-width="0.5"/>
+    <circle cx="-110" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="-90" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+    <!-- Rear truck + wheels -->
+    <rect x="90" y="0" width="20" height="8" rx="1" fill="#999" stroke="black" stroke-width="0.5"/>
+    <circle cx="90" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="110" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+
+    <!-- USB-C at side -->
+    <rect x="145" y="-8" width="8" height="5" rx="1" fill="#333" stroke="black" stroke-width="0.5"/>
+    <text x="165" y="-4" font-size="8px">USB-C</text>
+
+    <!-- Length dimension -->
+    <line x1="-155" y1="40" x2="155" y2="40" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="53" text-anchor="middle" font-size="9px" fill="#CC0000">96mm</text>
+  </g>
+
+  <!-- ==================== BACK VIEW (top-right) ==================== -->
+  <g transform="translate(1000,250)">
+    <!-- Same as front but showing back side -->
+    <path d="M-50,-20 Q-50,-28 -40,-28 L40,-28 Q50,-28 50,-20 L50,0 Q50,8 40,8 L-40,8 Q-50,8 -50,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Battery visible as dashed outline -->
+    <rect x="-35" y="-18" width="70" height="16" rx="2" fill="#D4A84B" fill-opacity="0.3" stroke="black" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="0" y="-7" text-anchor="middle" font-size="8px" fill="#8B7020">Battery 400mAh</text>
+    <!-- PCB dashed -->
+    <rect x="-40" y="-22" width="80" height="3" rx="1" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="55" y="-18" font-size="8px" fill="#2A5E2A">PCB</text>
+    <!-- Wheels -->
+    <circle cx="-38" cy="18" r="10" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="-38" cy="18" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+    <circle cx="38" cy="18" r="10" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="38" cy="18" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+    <line x1="-38" y1="18" x2="38" y2="18" stroke="#777" stroke-width="2"/>
+    <rect x="-8" y="8" width="16" height="10" rx="1" fill="#999" stroke="black" stroke-width="0.5"/>
+  </g>
+
+  <!-- ==================== TOP-DOWN VIEW (bottom-left) ==================== -->
+  <g transform="translate(200,660)">
+    <!-- Skateboard deck outline from above — elongated with rounded kicktails -->
+    <path d="M-145,0 Q-155,-20 -145,-35 Q-130,-40 -120,-35 L120,-35 Q130,-40 145,-35 Q155,-20 145,0 Q155,20 145,35 Q130,40 120,35 L-120,35 Q-130,40 -145,35 Q-155,20 -145,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Screen -->
+    <rect x="-60" y="-20" width="120" height="40" rx="3" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="3" text-anchor="middle" font-size="9px" fill="#336">320×240 TFT</text>
+    <!-- Kicktail buttons -->
+    <circle cx="-130" cy="0" r="6" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="-130" y="3" text-anchor="middle" font-size="6px">A</text>
+    <circle cx="130" cy="0" r="6" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="130" y="3" text-anchor="middle" font-size="6px">B</text>
+    <!-- Truck positions (dashed) -->
+    <rect x="-115" y="-25" width="30" height="50" rx="2" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <rect x="85" y="-25" width="30" height="50" rx="2" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="-100" y="40" font-size="8px">Front truck</text>
+    <text x="88" y="40" font-size="8px">Rear truck</text>
+
+    <!-- Length dimension -->
+    <line x1="-155" y1="55" x2="155" y2="55" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="67" text-anchor="middle" font-size="9px" fill="#CC0000">96mm</text>
+    <!-- Width -->
+    <line x1="170" y1="-40" x2="170" y2="40" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="183" y="3" text-anchor="middle" font-size="9px" fill="#CC0000">26mm</text>
+  </g>
+
+  <!-- ==================== CROSS-SECTION A–A (bottom-center) ==================== -->
+  <g transform="translate(600,660)">
+    <!-- Deck shell cross section (side cut) -->
+    <path d="M-155,-15 Q-150,-35 -140,-30 L-130,-25 L130,-25 Q140,-30 145,-35 Q155,-15 145,-10 L130,5 L-130,5 L-145,-10 Z" fill="none" stroke="black" stroke-width="0.5"/>
+    <!-- Shell hatching — top -->
+    <path d="M-130,-25 L130,-25 L130,-20 L-130,-20 Z" fill="url(#hatch19)" stroke="black" stroke-width="0.5"/>
+    <!-- Shell hatching — bottom -->
+    <path d="M-130,0 L130,0 L130,5 L-130,5 Z" fill="url(#hatch19)" stroke="black" stroke-width="0.5"/>
+    <!-- Left kicktail hatch -->
+    <path d="M-155,-15 Q-150,-35 -140,-30 L-130,-25 L-130,-20 L-140,-25 Q-148,-30 -150,-15 Z" fill="url(#hatch19)" stroke="black" stroke-width="0.5"/>
+    <!-- Right kicktail hatch -->
+    <path d="M155,-15 Q150,-35 140,-30 L130,-25 L130,-20 L140,-25 Q148,-30 150,-15 Z" fill="url(#hatch19)" stroke="black" stroke-width="0.5"/>
+
+    <!-- PCB -->
+    <rect x="-100" y="-18" width="200" height="4" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-20" text-anchor="middle" font-size="8px" fill="#2A5E2A">PCB</text>
+    <!-- Screen module -->
+    <rect x="-60" y="-24" width="120" height="5" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <!-- Battery -->
+    <rect x="-60" y="-13" width="120" height="10" rx="1" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="8px" fill="white">Battery</text>
+    <!-- ESP32 chip on PCB -->
+    <rect x="-90" y="-22" width="12" height="4" fill="#333" stroke="black" stroke-width="0.3"/>
+    <text x="-84" y="-24" text-anchor="middle" font-size="7px">ESP32</text>
+
+    <!-- Front wheel -->
+    <circle cx="-110" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+    <rect x="-115" y="0" width="10" height="8" fill="#999" stroke="black" stroke-width="0.5"/>
+    <!-- Rear wheel -->
+    <circle cx="110" cy="15" r="8" fill="#444" stroke="black" stroke-width="0.5"/>
+    <rect x="105" y="0" width="10" height="8" fill="#999" stroke="black" stroke-width="0.5"/>
+  </g>
+
+  <!-- ==================== DETAIL: TRUCK/WHEEL ASSEMBLY (bottom-right) ==================== -->
+  <g transform="translate(1000,660)">
+    <!-- Enlarged truck assembly -->
+    <!-- Baseplate mounted to deck -->
+    <rect x="-80" y="-50" width="160" height="10" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-42" text-anchor="middle" font-size="9px">Deck underside</text>
+    <!-- Truck baseplate -->
+    <rect x="-40" y="-40" width="80" height="8" rx="1" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-34" text-anchor="middle" font-size="7px">Baseplate</text>
+    <!-- Truck hanger (triangular profile) -->
+    <path d="M-30,-32 L0,-10 L30,-32" fill="none" stroke="black" stroke-width="0.5"/>
+    <path d="M-28,-32 L0,-12 L28,-32" fill="#999" stroke="none"/>
+    <!-- Kingpin -->
+    <line x1="0" y1="-32" x2="0" y2="-10" stroke="black" stroke-width="1"/>
+    <text x="10" y="-20" font-size="8px">Kingpin</text>
+    <!-- Axle -->
+    <line x1="-70" y1="-10" x2="70" y2="-10" stroke="#777" stroke-width="2"/>
+    <text x="0" y="-3" text-anchor="middle" font-size="8px">Axle</text>
+    <!-- Left wheel -->
+    <circle cx="-60" cy="-10" r="20" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="-60" cy="-10" r="8" fill="#666" stroke="black" stroke-width="0.3"/>
+    <circle cx="-60" cy="-10" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+    <text x="-60" y="18" text-anchor="middle" font-size="8px">Wheel ∅8mm</text>
+    <!-- Right wheel -->
+    <circle cx="60" cy="-10" r="20" fill="#444" stroke="black" stroke-width="0.5"/>
+    <circle cx="60" cy="-10" r="8" fill="#666" stroke="black" stroke-width="0.3"/>
+    <circle cx="60" cy="-10" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+
+    <!-- Mounting screws -->
+    <circle cx="-30" cy="-45" r="2" fill="black"/>
+    <circle cx="30" cy="-45" r="2" fill="black"/>
+    <circle cx="-30" cy="-38" r="2" fill="black"/>
+    <circle cx="30" cy="-38" r="2" fill="black"/>
+    <text x="50" y="-42" font-size="8px">Mounting bolts</text>
+
+    <!-- Dimension — axle width -->
+    <line x1="-70" y1="30" x2="70" y2="30" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="42" text-anchor="middle" font-size="9px" fill="#CC0000">26mm (axle width)</text>
+    <!-- Wheel diameter -->
+    <line x1="-80" y1="-30" x2="-80" y2="10" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="-97" y="-8" font-size="8px" fill="#CC0000">∅8mm</text>
+  </g>
+</svg>

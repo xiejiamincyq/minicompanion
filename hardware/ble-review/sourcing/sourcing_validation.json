@@ -1,0 +1,183 @@
+{
+  "date_china": "2026-11-19",
+  "deliverable": "RFQ_ONLY_NOT_ORDER_OR_FAB_RELEASE",
+  "netlist_file": "C:\\Users\\21604\\.codex\\worktrees\\ble-hardware-review\\mini-companion-v1\\hardware\\ble-review\\verification\\usb_eco.xml",
+  "netlist_sha256": "da4e8ae84ece306601a8ff4597d4ad7769d2e9c40bf1a3c90d90c912e4afc48b",
+  "board_side_analysis": {
+    "file": "C:\\Users\\21604\\.codex\\worktrees\\ble-hardware-review\\mini-companion-v1\\hardware\\ble-review\\project\\mini_companion_integrated.kicad_pcb",
+    "sha256": "35675f68e93142e07def0e88f09073ee1605d7398833b505377b71d052818954",
+    "main_components_by_side": {
+      "F.Cu": 47,
+      "B.Cu": 47
+    },
+    "every_main_ref_has_one_side": true,
+    "purpose": "询价分工；不是贴片坐标；PCB布线/ERC/DRC由设计验收负责"
+  },
+  "power_harness": {
+    "switch_pin3_is_nc": true,
+    "j7201_pin1": "PACK_POS",
+    "j7201_pin2": "POWER_REQUEST",
+    "j7201_pin3_unwired_pad": "GND",
+    "wire_count_per_device": 2
+  },
+  "source_snapshot_sha256": {
+    "baseline_bom_by_ref.csv": "20106623b5b5acd1a01c769301738f7b3df875e61a7db54abdced335a438f175",
+    "baseline_netlist.xml": "8f8183e4514e381346205b720825b938d90848762e39de281abfb180ce466bec",
+    "historical_budget_20261113.json": "cd8238874783b8f3e7fc24447d66ecda571866dfe2156e702bbcbd68498db1c3",
+    "historical_purchase_two_20261113.csv": "a9a69aa109248ba70b9890f119ff082f6e7aee3b3c698236f9beca6121fed299",
+    "README.md": "8490a4c82a1d9e4e4d2c26364773bc15b1544b71efc02b6ac91e3223a4cdd105"
+  },
+  "netlist_components": 113,
+  "main_board_fitted_per_unit": 94,
+  "main_grouped_bom_rows": 48,
+  "external_electrical_refs": [
+    "SW7201",
+    "TH7101",
+    "TH7102"
+  ],
+  "pcb_features_or_excluded": 16,
+  "main_refs_without_lcsc_id": [
+    "R603",
+    "R7104"
+  ],
+  "changes_from_20261113": [
+    {
+      "ref": "C7301",
+      "old_mpn": null,
+      "new_mpn": "CC0603KRX7R9BB104",
+      "old_footprint": null,
+      "new_footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "D7301",
+      "old_mpn": null,
+      "new_mpn": "PESD5V0U2BT,215",
+      "old_footprint": null,
+      "new_footprint": "Package_TO_SOT_SMD:SOT-23"
+    },
+    {
+      "ref": "R7301",
+      "old_mpn": null,
+      "new_mpn": "0603WAF1002T5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7302",
+      "old_mpn": null,
+      "new_mpn": "0603WAF220JT5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7303",
+      "old_mpn": null,
+      "new_mpn": "0603WAF220JT5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7304",
+      "old_mpn": null,
+      "new_mpn": "RT0603BRD07100KL",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7305",
+      "old_mpn": null,
+      "new_mpn": "RT0603BRD0710KL",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7306",
+      "old_mpn": null,
+      "new_mpn": "0603WAF1002T5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7307",
+      "old_mpn": null,
+      "new_mpn": "0603WAF1003T5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7308",
+      "old_mpn": null,
+      "new_mpn": "0603WAF1002T5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "SW7301",
+      "old_mpn": null,
+      "new_mpn": "JS202011SCQN",
+      "old_footprint": null,
+      "new_footprint": "BLE_Candidate:CK_JS202011SCQN"
+    },
+    {
+      "ref": "SW7302",
+      "old_mpn": null,
+      "new_mpn": "TS-1187A-B-A-B",
+      "old_footprint": null,
+      "new_footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+    },
+    {
+      "ref": "U7301",
+      "old_mpn": null,
+      "new_mpn": "TPS3808G01DBVR",
+      "old_footprint": null,
+      "new_footprint": "Package_TO_SOT_SMD:SOT-23-6"
+    },
+    {
+      "ref": "C7302",
+      "old_mpn": null,
+      "new_mpn": "CC0603KRX7R9BB104",
+      "old_footprint": null,
+      "new_footprint": "Capacitor_SMD:C_0603_1608Metric"
+    },
+    {
+      "ref": "R7309",
+      "old_mpn": null,
+      "new_mpn": "1206W4F2701T5E",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_1206_3216Metric"
+    },
+    {
+      "ref": "R7310",
+      "old_mpn": null,
+      "new_mpn": "RT0603BRD0715K8L",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "R7311",
+      "old_mpn": null,
+      "new_mpn": "RT0603BRD0710KL",
+      "old_footprint": null,
+      "new_footprint": "Resistor_SMD:R_0603_1608Metric"
+    },
+    {
+      "ref": "U7302",
+      "old_mpn": null,
+      "new_mpn": "TPS389001DSER",
+      "old_footprint": null,
+      "new_footprint": "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
+    }
+  ],
+  "checks": {
+    "all_netlist_refs_unique": true,
+    "grouped_quantities_and_refs_exact": true,
+    "historical_cash_reconciles": true,
+    "unknown_current_quotes_remain_null": true
+  },
+  "errors": [],
+  "data_validation_passed": true,
+  "current_stock_verified": false,
+  "supplier_quote_received": false,
+  "physical_tests_performed": 0,
+  "production_ready": false
+}

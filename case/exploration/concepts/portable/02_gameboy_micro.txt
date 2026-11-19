@@ -1,0 +1,209 @@
+DESIGN 2: GAMEBOY MICRO
+=======================
+Landscape orientation rectangular handheld. Screen centered with
+buttons on either side. Comfortable two-hand hold like a tiny game
+controller. Think "GameBoy Micro" or "Analogue Pocket" miniaturized.
+
+Overall: 95mm wide x 55mm tall x 16mm deep
+Weight target: ~50g with battery
+Orientation: Landscape
+Corner radius: 5mm
+Shell: 2-piece (front + back), 4x M2 screws
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ╭─────────────────────────────────────────────────╮
+    │                                                 │
+    │          ┌───────────────────────┐              │
+    │  ┌────┐  │                       │  ┌────┐     │
+    │  │RJCT│  │                       │  │ACTN│     │ ← Action button (right)
+    │  └────┘  │    TFT LCD SCREEN     │  └────┘     │
+    │          │   (40.8 x 30.6mm)     │              │
+    │  ┌────┐  │                       │  ┌────┐     │
+    │  │APRV│  │                       │  │WAKE│     │ ← Wake button (right-low)
+    │  └────┘  └───────────────────────┘  └────┘     │
+    │                                          ○ LED  │
+    │  ░░░░░░                          ░░░░░░        │ ← Grip texture zones
+    ╰─────────────────────────────────────────────────╯
+    ├──────────────────── 95mm ────────────────────────┤
+
+    Button layout:
+    Left side:   REJECT (top), APPROVE (bottom) — stacked, 14mm apart
+    Right side:  ACTION (top), WAKE (bottom) — stacked, 14mm apart
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+    ╭─────────────────────────────────────────────────╮
+    │                                                 │ ← 16mm deep
+    ╰─────────────────────────────────────────────────╯
+    ├──────────────────── 95mm ────────────────────────┤
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+          16mm
+       ├────────┤
+       ╭────────╮ ─┬─
+       │        │  │
+       │ screen │  │
+       │  pcb   │  │  55mm
+       │  batt  │  │
+       │        │  │
+       ╰──┤  ├──╯ ─┴─
+          USB-C
+       ↑        ↑
+      Front   Back
+
+
+BOTTOM VIEW (USB-C location)
+────────────────────────────
+
+    ╭─────────────────────────────────────────────────╮
+    │                    ┌──────┐                     │
+    │                    │USB-C │                     │ ← 9.34 x 3.66mm cutout
+    │                    └──────┘                     │   bottom edge, centered
+    ╰─────────────────────────────────────────────────╯
+
+
+BACK VIEW
+─────────
+
+    ╭─────────────────────────────────────────────────╮
+    │                                                 │
+    │         ┌─────────────────────────┐             │
+    │         │                         │             │
+    │         │    SPEAKER GRILLE       │             │ ← Optional: 15x8mm
+    │         │    ○ ○ ○ ○ ○ ○ ○       │             │   pattern of 1mm holes
+    │         │    ○ ○ ○ ○ ○ ○ ○       │             │
+    │         │                         │             │
+    │         └─────────────────────────┘             │
+    │                                                 │
+    │  ●                  ●                  ●    ●   │ ← 4x M2 screw recesses
+    │                                                 │   (countersunk, 4mm OD)
+    ╰─────────────────────────────────────────────────╯
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                              Back
+      │                                  │
+      │  1.5mm wall                      │  1.5mm wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  ├── Display ───────────────┐ │  │
+      │  │   (2.5mm thick)         │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   2.5mm gap             │ │  │  16mm total
+      │  ├── PCB ──────────────────┤ │  │  (15.1mm stack + 0.9mm extra
+      │  │   (1.6mm thick)        │ │  │   for screw bosses / tolerance)
+      │  ├──────────────────────────┤ │  │
+      │  │   0.5mm gap            │ │  │
+      │  ├── Battery ──────────────┤ │  │
+      │  │   (5.0mm thick)        │ │  │
+      ├──┴──────────────────────────┴─┤  │
+      │                                  │
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    + 0.9mm tolerance/boss clearance = 16mm exterior
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (1.5mm wall, 5mm corner radius)
+    ├── Screen window cutout (41.8 x 31.6mm, landscape, centered)
+    ├── 4x button holes (12.5 x 6.5mm, 2 left + 2 right)
+    ├── 1x LED hole (2mm dia, bottom-right of screen area)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── Grip texture zones: 2x recessed areas (15 x 25mm)
+    │   with 0.5mm deep cross-hatch pattern on left/right edges
+    └── 4x M2 threaded inserts (heat-set, brass)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Landscape orientation (native, no rotation needed)
+    ├── Seated in pocket with 0.2mm clearance per side
+    ├── FPC cable exits bottom edge
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routes to PCB connector
+    └── Button plungers pass through
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 4x tactile switches face front (2 left, 2 right of center)
+    ├── USB-C connector on bottom edge (centered)
+    ├── Display FPC connector on top edge
+    ├── Vibration motor pads (bottom-left area)
+    ├── Optional piezo speaker pads (center-back area)
+    └── Mounted on 4x M2 standoffs (5mm OD, 2.5mm tall)
+
+    Layer 5 — 0.5mm GAP + BATTERY (30 x 35 x 5mm LiPo)
+    ├── Battery offset to one side of ESP32 module
+    ├── JST connector pigtail to PCB
+    └── Foam tape pad on back shell for retention
+
+    Layer 6 — BACK SHELL (1.5mm wall, 5mm corner radius)
+    ├── 4x M2 screw pass-through holes (countersunk)
+    ├── 4x standoff bosses (5mm OD, mate with PCB standoffs)
+    ├── Battery retention foam pad area
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Optional speaker grille (15 x 8mm, 1mm holes)
+
+
+BUTTON LAYOUT DETAIL
+────────────────────
+
+    Left cluster:                Right cluster:
+    ┌────────────┐               ┌────────────┐
+    │   ┌────┐   │               │   ┌────┐   │
+    │   │RJCT│   │  ← 12x6mm    │   │ACTN│   │
+    │   └────┘   │    cap        │   └────┘   │
+    │     14mm   │               │     14mm   │
+    │   ┌────┐   │               │   ┌────┐   │
+    │   │APRV│   │               │   │WAKE│   │ ← 10x4.5mm cap
+    │   └────┘   │               │   └────┘   │
+    └────────────┘               └────────────┘
+
+    Left buttons centered at X=15mm from left edge
+    Right buttons centered at X=80mm from left edge
+    Vertical centers at Y=20mm and Y=34mm from top
+
+
+GRIP TEXTURE DETAIL
+───────────────────
+
+    ╭─────╮              ╭─────╮
+    │░░░░░│              │░░░░░│
+    │░░░░░│ ← 0.5mm     │░░░░░│
+    │░░░░░│   recessed   │░░░░░│
+    │░░░░░│   cross-     │░░░░░│
+    │░░░░░│   hatch      │░░░░░│
+    ╰─────╯              ╰─────╯
+    Left grip            Right grip
+    15 x 25mm            15 x 25mm
+
+    Grip zones on front shell only, flanking the buttons.
+    Pattern: 45-degree cross-hatch, 1.5mm pitch, 0.5mm deep.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece rectangle (front + back), 4x M2 screws from back
+- Front shell has heat-set brass threaded inserts (M2 x 3mm)
+- Display press-fits into front shell pocket, held by retention clips
+- PCB sits on 4x standoffs molded into back shell
+- Battery secured with double-sided foam tape to back shell
+- USB-C cutout spans both shell halves at bottom center
+- Grip texture molded into front shell (no separate grip pads)
+- 5mm corner radius on all 4 corners, consistent front and back
+- Comfortable two-hand hold: index fingers rest on top edge,
+  thumbs reach buttons naturally on left and right
+- Speaker grille on back is optional — can be solid panel instead
+- Total depth 16mm allows 0.9mm extra for standoff bosses and tolerance

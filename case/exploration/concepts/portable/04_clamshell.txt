@@ -1,0 +1,315 @@
+DESIGN 4: CLAMSHELL / FLIP
+==========================
+Folds in half to protect screen when not in use. Upper half houses
+the screen, lower half has buttons and decoration. Piano hinge along
+the middle with ribbon cable pass-through. Magnetic latch keeps it
+shut. Think "flip phone" or "Nintendo DS Lite" form factor.
+
+Overall open:   120mm tall x 60mm wide x 10mm deep (each half)
+Overall closed: 65mm tall x 60mm wide x 20mm deep
+Weight target: ~55g with battery
+Orientation: Portrait (open), screen in upper half
+Shell: 4 pieces (upper front, upper back, lower front, lower back)
+
+FRONT VIEW — OPEN (screen facing viewer)
+─────────────────────────────────────────
+
+    ┌──────────────────────────────┐ ─┬─
+    │   ○ LED                      │  │
+    │   ┌────────────────────────┐ │  │
+    │   │                        │ │  │
+    │   │                        │ │  │
+    │   │     TFT LCD SCREEN     │ │  │  UPPER HALF
+    │   │    (40.8 x 30.6mm)    │ │  │  ~58mm tall
+    │   │                        │ │  │
+    │   │                        │ │  │
+    │   └────────────────────────┘ │  │
+    │                              │  │
+    ├──┤▓▓▓▓▓▓▓ HINGE ▓▓▓▓▓▓▓▓├──┤ ─┤  ← Piano hinge, 60mm wide
+    │                              │  │
+    │                              │  │
+    │     (●)   (●)   (●)         │  │  ← 3x main buttons
+    │                              │  │    (12x6mm caps, 14mm spacing)
+    │            (·)               │  │  ← Wake button (10x4.5mm)
+    │                              │  │  LOWER HALF
+    │   ╔════════════════════╗     │  │  ~58mm tall
+    │   ║  DEVOTCHI LOGO /   ║     │  │
+    │   ║  DECORATIVE AREA   ║     │  │  ← Etched/printed decoration
+    │   ╚════════════════════╝     │  │
+    │          ┌──────┐            │  │
+    │          │USB-C │            │  │  ← USB-C at bottom edge
+    └──────────┤      ├────────────┘ ─┴─
+               └──────┘
+    ├───────── 60mm ──────────┤
+    ├────────── 120mm total open height ───────────┤
+
+
+FRONT VIEW — CLOSED (top = back of upper half)
+──────────────────────────────────────────────
+
+    ┌──────────────────────────────┐ ─┬─
+    │                              │  │
+    │                              │  │
+    │                              │  │  UPPER HALF BACK
+    │      SMOOTH / TEXTURED       │  │  (screen protected inside)
+    │                              │  │
+    │                              │  │
+    ├──┤▓▓▓▓▓▓▓ HINGE ▓▓▓▓▓▓▓▓├──┤ ─┤
+    │                              │  │
+    │                              │  │
+    │                              │  │  LOWER HALF BACK
+    │      BATTERY DOOR            │  │
+    │                              │  │
+    │                              │  │
+    └──────────────────────────────┘ ─┴─
+    ├───── 60mm ──┤
+                   ├── 20mm deep (closed) ──┤
+
+
+SIDE VIEW — OPEN (right side)
+─────────────────────────────
+
+              10mm
+            ├──────┤
+    ┌───────────────┐ ─┬─
+    │               │  │  Upper half (screen inside)
+    │  scr / pcb*   │  │  ~58mm
+    │               │  │
+    ├═══════════════┤ ─┤  ← Hinge axis
+    │               │  │
+    │  btn / batt   │  │  Lower half (buttons inside)
+    │               │  │  ~58mm
+    └──────┤  ├─────┘ ─┴─
+           USB-C
+    ↑               ↑
+   Inside         Outside
+
+    * Display + PCB in upper half
+      Battery + buttons in lower half
+
+
+SIDE VIEW — CLOSED (right side, folded)
+───────────────────────────────────────
+
+           20mm
+    ├───────────────┤
+    ┌───────────────┐ ─┬─
+    │ ┌───────────┐ │  │
+    │ │ upper     │ │  │   65mm
+    │ │ lower     │ │  │   (half-height + hinge)
+    │ └───────────┘ │  │
+    └───────┤  ├────┘ ─┴─
+            USB-C
+
+    Screen faces inward, fully protected.
+    Hinge at top when closed.
+
+
+CROSS-SECTION — UPPER HALF (cut through center, looking from right)
+──────────────────────────────────────────────────────────────────
+
+    Outside (back)                 Inside (screen)
+      │                                  │
+      │  1.5mm wall                      │  1.5mm wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  │                            │  │
+      │  │   3.5mm air               │  │  10mm total
+      │  │                            │  │  per half
+      │  ├── Display ───────────────┐ │  │
+      │  │   (2.5mm thick)         │ │  │
+      │  ├──────────────────────────┤ │  │
+      ├──┘                            └──┤
+      │                                  │
+
+    Upper half Z-stack:
+    1.5mm back wall + 3.5mm air + 2.5mm display + 1.5mm front wall (not shown)
+    Note: Display FPC runs down through hinge to PCB in lower half
+
+
+CROSS-SECTION — LOWER HALF (cut through center, looking from right)
+──────────────────────────────────────────────────────────────────
+
+    Outside (back)                 Inside (buttons)
+      │                                  │
+      │  1.5mm wall                      │  1.5mm wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  ├── Battery ──────────────┐  │  │
+      │  │   (5.0mm thick)        │  │  │  10mm total
+      │  ├─────────────────────────┤  │  │  per half
+      │  ├── PCB ──────────────────┤  │  │
+      │  │   (1.6mm thick)        │  │  │
+      │  ├─────────────────────────┤  │  │
+      ├──┘                            └──┤
+      │                                  │
+
+    Lower half Z-stack:
+    1.5mm wall + 5.0mm battery + 0.4mm gap + 1.6mm PCB + 1.5mm wall = 10mm
+
+
+CROSS-SECTION — CLOSED (both halves stacked)
+────────────────────────────────────────────
+
+    ┌──────────────────────────────┐
+    │  Upper back wall  (1.5mm)   │ ← Outer surface
+    │  Air gap          (3.5mm)   │
+    │  Display          (2.5mm)   │
+    │  Upper front wall (1.5mm)   │ ← Screen faces down
+    │ ─── 1mm air gap (closed) ── │ ← Gap when halves mate
+    │  Lower front wall (1.5mm)   │ ← Button face up
+    │  PCB              (1.6mm)   │
+    │  Gap              (0.4mm)   │
+    │  Battery          (5.0mm)   │
+    │  Lower back wall  (1.5mm)   │ ← Outer surface
+    └──────────────────────────────┘
+    Total closed: 10 + 1 + 10 = ~21mm (compressed ~20mm with nesting)
+
+
+HINGE MECHANISM DETAIL
+──────────────────────
+
+    Top view of hinge (looking down at hinge axis):
+
+    ┌── Upper half ──┐   ┌── Lower half ──┐
+    │                │   │                │
+    │            ╭───┤   ├───╮            │
+    │            │ ○─┼───┼─○ │            │ ← 2mm steel pin
+    │            ╰───┤   ├───╯            │   through knuckles
+    │                │   │                │
+    └────────────────┘   └────────────────┘
+
+    Knuckle detail (side view):
+
+    ══╤══╤══╤══╤══╤══╤══╤══╤══  ← Alternating knuckles
+      U  L  U  L  U  L  U  L     U = upper half, L = lower half
+      │                     │
+      ├─ 60mm hinge width ──┤
+
+    - 8 knuckles total (4 per half), 7mm wide each
+    - 2mm stainless steel pin, press-fit at ends
+    - Center gap between knuckle pair 3 and 4: 8mm wide
+      for FPC ribbon cable pass-through
+
+    FPC routing through hinge:
+
+    Upper half    Hinge gap    Lower half
+    ┌──────────┐  ┌──────┐  ┌──────────┐
+    │  Display │  │      │  │  PCB     │
+    │  FPC ────┼──┤ FPC  ├──┼── FPC    │
+    │          │  │ loop │  │  conn    │
+    └──────────┘  └──────┘  └──────────┘
+
+    FPC makes a U-bend in the hinge gap.
+    Service loop allows ~180 degree fold without stress.
+    Minimum bend radius: 1.5mm (typical for 0.3mm pitch FPC).
+
+
+MAGNETIC LATCH DETAIL
+─────────────────────
+
+    Upper half (inside face):     Lower half (inside face):
+    ┌──────────────────────┐     ┌──────────────────────┐
+    │                      │     │                      │
+    │  ┌──┐          ┌──┐ │     │  ┌──┐          ┌──┐ │
+    │  │▓▓│          │▓▓│ │     │  │░░│          │░░│ │
+    │  └──┘          └──┘ │     │  └──┘          └──┘ │
+    │  magnet        magnet│     │  steel         steel│
+    │  (6x2mm)      (6x2mm)│     │  disc          disc │
+    └──────────────────────┘     └──────────────────────┘
+
+    2x neodymium disc magnets (6mm dia x 2mm thick) in upper half
+    2x steel discs (6mm dia x 1mm thick) in lower half
+    Pull force: ~0.5N per pair, enough to keep closed but easy to flip open
+    Magnets press-fit into pockets, secured with adhesive
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    UPPER HALF:
+    Layer U1 — UPPER BACK SHELL (1.5mm wall)
+    ├── Smooth exterior surface (or textured)
+    ├── 2x magnet pockets (6.2mm dia x 2.2mm deep)
+    └── 2x hinge knuckles with pin holes
+
+    Layer U2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Portrait orientation
+    ├── Supported by ledge in upper front shell
+    ├── FPC exits bottom, routes through hinge
+    └── Foam gasket around display (0.5mm, compresses to seal)
+
+    Layer U3 — UPPER FRONT SHELL (1.5mm wall)
+    ├── Screen window cutout (41.8 x 31.6mm)
+    ├── LED hole (2mm, top area)
+    ├── Display retention ledge
+    ├── 2x hinge knuckles with pin holes
+    └── 2x steel disc pockets for magnetic latch
+
+    LOWER HALF:
+    Layer L1 — LOWER FRONT SHELL (1.5mm wall)
+    ├── 3x main button holes (12.5 x 6.5mm)
+    ├── 1x wake button hole (10.5 x 5.0mm)
+    ├── Decorative etching / logo area
+    ├── 2x hinge knuckles with pin holes
+    └── 2x magnet pockets for magnetic latch
+
+    Layer L2 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces back
+    ├── Tactile switches face front (button side)
+    ├── USB-C on bottom edge
+    ├── Display FPC connector on top edge (hinge side)
+    ├── Vibration motor pads
+    └── Mounted on standoffs in lower back shell
+
+    Layer L3 — BATTERY (30 x 35 x 5mm LiPo)
+    ├── Behind PCB
+    ├── JST pigtail to PCB
+    └── Foam tape retention in lower back shell
+
+    Layer L4 — LOWER BACK SHELL (1.5mm wall)
+    ├── PCB standoff bosses
+    ├── Battery cradle
+    ├── USB-C cutout (9.5 x 4.0mm)
+    ├── 2x hinge knuckles with pin holes
+    └── Optional battery door (snap-off panel)
+
+
+BUTTON LAYOUT (lower half, inside face when open)
+─────────────────────────────────────────────────
+
+    ├──────────── 60mm ────────────┤
+    ┌──────────────────────────────┐
+    │                              │
+    │    ┌────┐ ┌────┐ ┌────┐     │ ← 3x main (12x6mm)
+    │    │RJCT│ │ACTN│ │APRV│     │   14mm spacing
+    │    └────┘ └────┘ └────┘     │
+    │                              │
+    │         ┌──────┐             │ ← Wake (10x4.5mm)
+    │         │ WAKE │             │
+    │         └──────┘             │
+    │                              │
+    │    ╔══════════════════╗      │
+    │    ║   DECORATION    ║      │ ← Logo / art area
+    │    ╚══════════════════╝      │
+    │                              │
+    └──────────────────────────────┘
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- 4-piece shell: upper front + upper back + lower front + lower back
+- Upper halves: 2x M2 screws (small, minimal)
+- Lower halves: 2x M2 screws
+- Piano hinge: 2mm stainless steel pin through 8 knuckles
+- Hinge has dedicated 8mm gap for FPC ribbon cable pass-through
+- FPC makes U-bend service loop in hinge — accommodates 180deg fold
+- Magnetic latch: 2x 6mm neodymium magnets + 2x steel discs
+- Screen fully protected when closed — no exposed glass
+- PCB and battery both in lower half to keep weight low (stable when open)
+- Display in upper half connected via FPC through hinge
+- USB-C accessible at bottom edge regardless of open/closed state
+- Hinge rated for >10,000 cycles
+- Closed dimensions: 65 x 60 x 20mm — pocket-friendly
+- Open angle: 0 (closed) to 180 (flat), friction holds at any angle
+- Vibration motor in lower half, felt through both halves when closed

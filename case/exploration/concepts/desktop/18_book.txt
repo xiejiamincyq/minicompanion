@@ -1,0 +1,289 @@
+DESIGN 18: BOOK
+===============
+Hardcover book standing upright on a shelf. Screen on "front cover"
+in portrait orientation. Faux page edges on fore-edge, hinged back
+cover for PCB access. Spine has embossed title and bookmark-tab buttons.
+Think "enchanted grimoire" or "smart desk reference book."
+
+Overall: 130 x 90 x 30mm (H x W x D when standing upright)
+Screen: 5.0" SSD1963 touch, 120x75mm module, 108x64.8mm active area
+Target user: bookshelf integration, literary aesthetic
+
+FRONT VIEW (front cover facing viewer, book standing upright)
+──────────────────────────────────────────────────────────────
+
+    ┌─────────────────────────────────────┐ ─┬─
+    │  ┌─────────────────────────────┐    │  │
+    │  │                             │    │  │
+    │  │                             │    │  │
+    │  │                             │    │  │
+    │  │      TFT LCD SCREEN         │    │  │
+    │  │      (portrait)             │    │  │  130mm
+    │  │      108 x 64.8mm active    │    │  │  tall
+    │  │      (rotated 90°)          │    │  │
+    │  │                             │    │  │
+    │  │                             │    │  │
+    │  │                             │    │  │
+    │  └─────────────────────────────┘    │  │
+    │                                     │  │
+    │      ═══ DEVOTCHI ═══               │  │ ← Embossed title on cover
+    └─────────────────────────────────────┘ ─┴─
+                   90mm
+                    ↑
+    Spine on left │   │ Fore-edge on right
+    (buttons)     │   │ (faux page ridges)
+
+
+SIDE VIEW — SPINE (left edge, book standing)
+────────────────────────────────────────────
+
+    ┌───┐ ─┬─
+    │   │  │
+    │ D │  │
+    │ E │  │
+    │ V │  │          ← Embossed vertical title text
+    │ O │  │            on spine surface
+    │ T │  │  130mm
+    │ C │  │
+    │ H │  │
+    │ I │  │
+    │   │  │
+    ├───┤  │
+    │(●)│  │          ← Button 1 (bookmark tab style)
+    │(●)│  │          ← Button 2 (protruding 1mm as tabs)
+    │(●)│  │          ← Button 3 (spaced 10mm apart)
+    └───┘ ─┴─
+     30mm
+     depth
+
+
+SIDE VIEW — FORE-EDGE (right edge, book standing)
+──────────────────────────────────────────────────
+
+    ┌───────┐ ─┬─
+    │ ═══── │  │     ← Faux page edge ridges
+    │ ═══── │  │       3D-printed horizontal lines
+    │ ═══── │  │       0.3mm deep, 1mm spacing
+    │ ═══── │  │       mimicking paper page edges
+    │ ═══── │  │
+    │ ═══── │  │  130mm
+    │ ═══── │  │
+    │ ═══── │  │     Page ridges span from front
+    │ ═══── │  │     cover to back cover, ~26mm wide
+    │ ═══── │  │     (30mm minus 2x 2mm covers)
+    │ ═══── │  │
+    │ ═══── │  │
+    │ ═══── │  │
+    └───────┘ ─┴─
+      30mm
+
+
+TOP VIEW (looking down at top edge of standing book)
+────────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────┐
+    │  Front cover (2mm)                   │
+    │  ┌──────────────────────────────┐    │
+    │  │  Screen module               │    │
+    │  │  (75mm wide in this orient.) │    │ 30mm deep
+    │  ├──────────────────────────────┤    │
+    │  │  PCB / air gap               │    │
+    │  ├──────────────────────────────┤    │
+    │  │  Back cover (2mm, hinged)    │    │
+    │  └──────────────────────────────┘    │
+    └──────────────────────────────────────┘
+                    90mm wide
+    ↑ Spine                    Fore-edge ↑
+
+
+BOTTOM VIEW (bottom edge when standing)
+───────────────────────────────────────
+
+    ┌──────────────────────────────────────┐
+    │           ┌────────┐                 │
+    │           │ USB-C  │                 │ ← USB-C cutout centered
+    │           └────────┘                 │   8.94 x 3.26mm
+    │                                      │   hidden when standing
+    └──────────────────────────────────────┘   on shelf
+                    90mm
+
+
+CROSS-SECTION (horizontal cut at screen height, looking down)
+─────────────────────────────────────────────────────────────
+
+    Spine                               Fore-edge
+      │                                     │
+      ▼                                     ▼
+    ┌──┬────────────────────────────────┬──┬──┐
+    │  │  ┌──────────────────────┐     │  │▓▓│
+    │  │  │     TFT SCREEN       │     │  │▓▓│ ← Page ridges
+    │  │  │     module           │     │  │▓▓│   (decorative)
+    │2 │  │     4.5mm            │     │  │▓▓│
+    │mm│  ├──────────────────────┤     │  │▓▓│
+    │  │  │  3mm air gap         │     │2 │▓▓│
+    │  │  ├──────────────────────┤     │mm│▓▓│
+    │  │  │  PCB 1.6mm           │     │  │▓▓│
+    │  │  │  ┌ESP32──┐           │     │  │▓▓│
+    │  │  └──┴───────┴───────────┘     │  │▓▓│
+    │  │                               │  │▓▓│
+    └──┴───────────────────────────────┴──┴──┘
+     ↑                                  ↑
+     Front cover                     Back cover
+     (2mm shell)                     (2mm, hinged)
+
+    Total depth: 2 + 5(screen pocket) + 4.5 + 3 + 1.6 + ~12 + 2 = 30mm
+    12mm rear cavity for ESP32 module height (2.4mm) + wiring
+
+
+BACK VIEW (back cover, book standing — this is the hinged door)
+───────────────────────────────────────────────────────────────
+
+    ┌─────────────────────────────────────┐
+    │                                     │
+    │                                     │
+    │                                     │
+    │         BACK COVER                  │
+    │         (hinged on spine edge)      │
+    │                                     │  130mm
+    │         Opens like opening          │
+    │         a book to reveal            │
+    │         PCB and wiring              │
+    │                                     │
+    │                        ┌─┐          │
+    │                        │○│          │ ← Magnetic catch
+    │                        └─┘          │   or friction latch
+    └─────────────────────────────────────┘
+                    90mm
+
+    Hinge on spine (left) edge — 2x small pin hinges
+    or living hinge if printed in PETG/TPU
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT COVER (shell piece)
+    ├── Screen window cutout: 109 x 66mm (portrait)
+    ├── Screen module pocket: 121 x 76mm, 5mm deep from inner face
+    ├── 4x screen retention clips
+    ├── Embossed title recess on lower front face
+    ├── Spine-side: 3x button plunger channels (6mm dia)
+    ├── Bottom edge: USB-C slot (8.94 x 3.26mm)
+    └── Wall: 2mm
+
+    Layer 2 — SCREEN MODULE (120 x 75 x 4.5mm)
+    ├── Portrait orientation (120mm vertical, 75mm horizontal)
+    ├── Seated in front cover pocket
+    ├── FPC cable exits toward bottom/spine
+    └── Touch digitizer faces front through window
+
+    Layer 3 — 3mm AIR GAP
+    ├── FPC routing to PCB
+    └── Foam spacers at corners for vibration isolation
+
+    Layer 4 — PCB (110 x 65 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5 x 2.4mm) faces back
+    ├── 3x tactile switches on spine edge (extend through holes)
+    ├── USB-C connector on bottom edge
+    ├── SSD1963 display connector (40-pin FPC)
+    ├── Mounted on 4x M2 standoffs from front cover inner bosses
+    └── No speaker (or optional piezo buzzer)
+
+    Layer 5 — BACK COVER (hinged door)
+    ├── Hinged along spine edge (2x pin hinges, 3mm diameter)
+    ├── Magnetic catch or friction latch on fore-edge
+    ├── Inner face may have foam pad to hold PCB snug when closed
+    └── Wall: 2mm
+
+
+PAGE EDGE DETAIL (fore-edge decoration)
+────────────────────────────────────────
+
+    Cross-section of fore-edge (right side, zoomed):
+
+    Front cover │▓▓▓▓▓▓▓│ Back cover
+                │▓═════▓│
+                │▓ ════ ▓│
+                │▓═════▓│       ← Horizontal ridges
+                │▓ ════ ▓│        0.3mm deep grooves
+                │▓═════▓│         1.0mm ridge spacing
+                │▓ ════ ▓│        Runs full 130mm height
+                │▓═════▓│         ~26mm wide between covers
+                │▓▓▓▓▓▓▓│
+
+    Ridges are part of the front cover piece (integral).
+    Visible from the side as realistic paper page edges.
+    Optional: slightly off-white/cream color for page illusion.
+
+
+SPINE BUTTON DETAIL
+────────────────────
+
+    Buttons protrude from spine like bookmark ribbon tabs:
+
+         ┌──────┐
+         │SPINE │
+         │      │
+         │  ┌─┐ │
+         │  │●│─┤ ← Button 1 (approve) — colored tab
+         │  └─┘ │   Protrudes 1mm from spine surface
+         │  ┌─┐ │
+         │  │●│─┤ ← Button 2 (reject) — colored tab
+         │  └─┘ │   Tactile switch behind, plunger cap
+         │  ┌─┐ │
+         │  │●│─┤ ← Button 3 (action) — colored tab
+         │  └─┘ │   10mm vertical spacing between buttons
+         │      │
+         └──────┘
+
+    Tab caps: printed in accent color (red/green/blue)
+    Press inward toward book center to actuate
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+
+    1. Front cover + screen + PCB assembled as main unit
+    2. Screen slides into pocket from inside, retained by clips
+    3. PCB screws to front cover standoffs (4x M2x5mm)
+    4. FPC cable connects screen to PCB
+    5. Back cover attaches via pin hinges on spine edge
+    6. Magnetic catch holds back cover shut during normal use
+    7. To access PCB: open back cover like opening a book
+    8. USB-C on bottom — cable drops down behind book on shelf
+    9. Book leans against wall or other books for support
+    10. Optional: small kickstand foot folds out from back cover
+
+
+SPECIAL FEATURES
+────────────────
+
+    1. BOOKSHELF CAMOUFLAGE
+       - Sized to blend in with real paperback books
+       - 130mm tall ≈ standard mass-market paperback height
+       - Page edges complete the illusion from the side
+       - Spine title makes it look like a real book spine
+
+    2. HINGED BACK COVER ACCESS
+       - Opens exactly like a real book
+       - Full access to PCB, wiring, USB-C connection
+       - No screws needed to open (magnetic/friction catch)
+       - Hinge durable for repeated open/close
+
+    3. PORTRAIT SCREEN ORIENTATION
+       - 5.0" screen rotated to portrait (108mm tall, 64.8mm wide)
+       - Matches book page proportions naturally
+       - Agent status displayed like a book page
+       - Scrolling text feels like reading
+
+    4. BOOKMARK-TAB BUTTONS
+       - Buttons feel like pressing bookmark ribbons
+       - Tactile and intuitive placement on spine
+       - Color-coded tabs visible from the side
+       - Natural thumb position when picking up the book
+
+    5. OPTIONAL ENHANCEMENTS
+       - Leather-texture filament for covers
+       - Gold foil sticker for spine title
+       - Felt bookmark ribbon (decorative, dangles from top)
+       - Matching "bookend" stand accessory

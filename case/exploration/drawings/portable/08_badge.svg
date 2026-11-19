@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 8: Lanyard Badge - Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#606060"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#909090" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">Design 8: Lanyard Badge — 90mm x 60mm x 12mm (thin badge form)</text>
+
+  <!-- ==================== VIEW 1: Front View (top-left) ==================== -->
+  <g transform="translate(20, 50)">
+    <text x="270" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Front View</text>
+
+    <!-- Lanyard slot at top -->
+    <rect x="210" y="30" width="120" height="18" rx="9" ry="9" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="42" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">Lanyard slot</text>
+
+    <!-- Lanyard strap hint -->
+    <path d="M230,30 L220,10 M310,30 L320,10" stroke="#888" stroke-width="1.5" fill="none"/>
+    <text x="270" y="8" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Lanyard</text>
+
+    <!-- Badge body -->
+    <rect x="100" y="55" width="340" height="400" rx="8" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Screen bezel - landscape orientation in upper 2/3 -->
+    <rect x="120" y="75" width="300" height="235" rx="4" ry="4" fill="#888" stroke="black" stroke-width="0.5"/>
+    <!-- Display module -->
+    <rect x="126" y="81" width="288" height="223" rx="2" ry="2" fill="#B8B8B8" stroke="black" stroke-width="0.5"/>
+    <!-- Active area -->
+    <rect x="145" y="98" width="250" height="190" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="198" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#336">Active Display</text>
+    <text x="270" y="213" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#336">40.80 x 30.60mm (landscape)</text>
+
+    <!-- 3 buttons along bottom -->
+    <rect x="125" y="345" width="70" height="32" rx="4" ry="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <rect x="235" y="345" width="70" height="32" rx="4" ry="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <rect x="345" y="345" width="70" height="32" rx="4" ry="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="160" y="365" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">BTN 1</text>
+    <text x="270" y="365" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">BTN 2</text>
+    <text x="380" y="365" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">BTN 3</text>
+
+    <!-- Button spacing -->
+    <line x1="160" y1="388" x2="270" y2="388" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="215" y="400" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">14mm</text>
+
+    <!-- LED -->
+    <circle cx="270" cy="420" r="3" fill="#44FF44" stroke="black" stroke-width="0.3"/>
+    <text x="282" y="423" font-family="sans-serif" font-size="8" fill="#666">LED</text>
+
+    <!-- USB-C at bottom edge -->
+    <rect x="243" y="451" width="54" height="5" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="468" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+
+    <!-- Dimension: width 60mm -->
+    <line x1="100" y1="480" x2="440" y2="480" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="100" y1="470" x2="100" y2="485" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="440" y1="470" x2="440" y2="485" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="270" y="495" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">60mm</text>
+
+    <!-- Dimension: height 90mm -->
+    <line x1="460" y1="55" x2="460" y2="455" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="440" y1="55" x2="468" y2="55" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="440" y1="455" x2="468" y2="455" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="475" y="260" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">90mm</text>
+  </g>
+
+  <!-- ==================== VIEW 2: Side View (top-right) ==================== -->
+  <g transform="translate(620, 50)">
+    <text x="280" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Side View (thin 12mm profile)</text>
+
+    <!-- Thin side profile -->
+    <rect x="240" y="55" width="80" height="400" rx="5" ry="5" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Screen on front face -->
+    <rect x="235" y="75" width="8" height="235" fill="#B0D4F1" stroke="black" stroke-width="0.4"/>
+    <text x="225" y="195" text-anchor="end" font-family="sans-serif" font-size="9" fill="#336">Screen</text>
+
+    <!-- Lanyard slot visible at top -->
+    <rect x="260" y="55" width="40" height="12" rx="6" ry="6" fill="white" stroke="black" stroke-width="0.5"/>
+
+    <!-- Button protrusions -->
+    <rect x="232" y="345" width="6" height="32" rx="1" ry="1" fill="#C0C0C0" stroke="black" stroke-width="0.4"/>
+
+    <!-- Wake button on side -->
+    <rect x="320" y="100" width="5" height="22" rx="1" ry="1" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="332" y="114" font-family="sans-serif" font-size="9" fill="#666">Wake</text>
+
+    <!-- USB-C at bottom -->
+    <rect x="260" y="455" width="40" height="5" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="280" y="470" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+
+    <!-- Dimension: depth 12mm -->
+    <line x1="240" y1="480" x2="320" y2="480" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="280" y="495" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">12mm</text>
+
+    <!-- Dimension: height 90mm -->
+    <line x1="210" y1="55" x2="210" y2="455" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="205" y1="55" x2="215" y2="55" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="205" y1="455" x2="215" y2="455" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="200" y="260" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">90mm</text>
+
+    <!-- Note about thinness -->
+    <text x="360" y="260" text-anchor="start" font-family="sans-serif" font-size="9" fill="#666">Ultra-thin</text>
+    <text x="360" y="273" text-anchor="start" font-family="sans-serif" font-size="9" fill="#666">badge profile</text>
+  </g>
+
+  <!-- ==================== VIEW 3: Cross-Section horizontal at screen height (bottom-left) ==================== -->
+  <g transform="translate(20, 520)">
+    <text x="270" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Cross-Section (horizontal, at screen height)</text>
+
+    <!-- Looking down at a horizontal slice through the badge -->
+    <!-- Outer shell walls -->
+    <!-- Top wall (front face) -->
+    <rect x="80" y="50" width="380" height="7" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Bottom wall (back face) -->
+    <rect x="80" y="150" width="380" height="7" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Left wall -->
+    <rect x="80" y="50" width="7" height="107" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Right wall -->
+    <rect x="453" y="50" width="7" height="107" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Display module (front, thin) -->
+    <rect x="87" y="57" width="366" height="16" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="69" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Display (1.5mm)</text>
+
+    <!-- Air gap -->
+    <rect x="87" y="73" width="366" height="6" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+    <!-- PCB -->
+    <rect x="87" y="79" width="366" height="10" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="88" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">PCB (1.6mm)</text>
+
+    <!-- ESP32 on PCB -->
+    <rect x="150" y="89" width="80" height="14" fill="#70A675" stroke="black" stroke-width="0.5"/>
+    <text x="190" y="99" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">ESP32-S3</text>
+
+    <!-- Vibration motor -->
+    <circle cx="380" cy="100" r="6" fill="#BBB" stroke="black" stroke-width="0.4"/>
+    <text x="380" y="114" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Vibe</text>
+
+    <!-- Battery (thin) -->
+    <rect x="87" y="108" width="366" height="30" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="127" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (thin, 3mm max)</text>
+
+    <!-- Dimension: total depth 12mm -->
+    <line x1="470" y1="50" x2="470" y2="157" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="483" y="107" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">12mm</text>
+
+    <!-- Dimension: wall thickness -->
+    <line x1="80" y1="40" x2="87" y2="40" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="83" y="35" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">1.5mm</text>
+
+    <!-- Dimension: width 60mm -->
+    <line x1="80" y1="172" x2="460" y2="172" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="270" y="185" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">60mm</text>
+
+    <!-- Note -->
+    <text x="270" y="210" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Thin Z-stack requires slim battery (300mAh max)</text>
+
+    <!-- Legend -->
+    <rect x="80" y="230" width="12" height="8" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+    <text x="98" y="238" font-family="sans-serif" font-size="9">Display</text>
+    <rect x="150" y="230" width="12" height="8" fill="#90C695" stroke="black" stroke-width="0.3"/>
+    <text x="168" y="238" font-family="sans-serif" font-size="9">PCB</text>
+    <rect x="210" y="230" width="12" height="8" fill="#D4A84B" stroke="black" stroke-width="0.3"/>
+    <text x="228" y="238" font-family="sans-serif" font-size="9">Battery</text>
+    <rect x="280" y="230" width="12" height="8" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+    <text x="298" y="238" font-family="sans-serif" font-size="9">Shell</text>
+  </g>
+
+  <!-- ==================== VIEW 4: Back View (bottom-right) ==================== -->
+  <g transform="translate(620, 520)">
+    <text x="280" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Back View</text>
+
+    <!-- Lanyard slot at top -->
+    <rect x="220" y="30" width="120" height="18" rx="9" ry="9" fill="white" stroke="black" stroke-width="0.5"/>
+
+    <!-- Badge body back -->
+    <rect x="110" y="55" width="340" height="300" rx="8" ry="8" fill="#E8E8E8" stroke="black" stroke-width="0.5"/>
+
+    <!-- Flat back - minimal features -->
+    <!-- Regulatory text area -->
+    <rect x="160" y="180" width="240" height="60" rx="2" ry="2" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+    <text x="280" y="200" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#999">FCC / CE / Model info</text>
+    <text x="280" y="215" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#999">DEVOTCHI v1.0</text>
+    <text x="280" y="228" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#999">S/N: XXXX-XXXX</text>
+
+    <!-- Lanyard clip detail -->
+    <rect x="228" y="30" width="104" height="30" rx="5" ry="5" fill="none" stroke="black" stroke-width="0.5"/>
+    <rect x="255" y="32" width="50" height="14" rx="7" ry="7" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="280" y="70" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Lanyard slot</text>
+    <text x="280" y="82" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">(reinforced edges)</text>
+
+    <!-- Speaker holes -->
+    <g transform="translate(250, 270)">
+      <circle cx="0" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="8" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="16" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="24" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="32" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="40" cy="0" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="0" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="8" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="16" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="24" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="32" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+      <circle cx="40" cy="8" r="1.5" fill="#999" stroke="black" stroke-width="0.2"/>
+    </g>
+    <text x="280" y="298" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">Speaker grille</text>
+
+    <!-- Screw points (recessed) -->
+    <circle cx="135" cy="80" r="3" fill="#CCC" stroke="black" stroke-width="0.3"/>
+    <circle cx="425" cy="80" r="3" fill="#CCC" stroke="black" stroke-width="0.3"/>
+    <circle cx="135" cy="330" r="3" fill="#CCC" stroke="black" stroke-width="0.3"/>
+    <circle cx="425" cy="330" r="3" fill="#CCC" stroke="black" stroke-width="0.3"/>
+
+    <!-- USB-C visible at bottom -->
+    <rect x="253" y="351" width="54" height="5" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="280" y="368" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+
+    <!-- Dimension lines -->
+    <line x1="110" y1="375" x2="450" y2="375" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="280" y="390" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">60mm</text>
+  </g>
+</svg>

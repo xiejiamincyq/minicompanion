@@ -1,0 +1,345 @@
+DESIGN 19: CUCKOO CLOCK
+=======================
+Wall-mountable case with hinged door revealing the screen.
+Traditional cuckoo clock silhouette with pointed gable roof.
+Decorative pendulum swings freely below. Dual-mount: wall or desk.
+Think "Black Forest meets cyberpunk" or "haunted smart clock."
+
+Overall: 90 x 60 x 130mm (W x D x H, body only)
+         + pendulum hanging ~60mm below body
+Screen: 5.0" SSD1963 touch, 120x75mm module, 108x64.8mm active area
+Target user: wall mount or desk display, whimsical conversation piece
+
+FRONT VIEW (door closed)
+─────────────────────────
+
+              ╱╲
+             ╱  ╲
+            ╱    ╲               ← Pointed gable roof
+           ╱      ╲                ~25mm tall peak
+          ╱________╲               decorative ridge line
+         ┌──────────────┐
+         │              │
+         │  XII         │        ← Clock face decoration
+         │ IX  ╔════╗III│          Roman numerals painted/
+         │     ║DOOR║   │          embossed around door
+         │     ║    ║   │
+         │ (●) ║    ║(●)│        ← Buttons on left and right
+         │     ║    ║   │          sides of door
+         │  VI ╚════╝   │
+         │              │
+         │         (●)  │        ← Third button, lower right
+         └──────────────┘
+              │    │
+              │    │             ← Pendulum rod (rigid, exits
+              │    │               through slot in bottom)
+              │ ╱╲ │
+              │╱  ╲│             ← Pendulum disc/weight
+              ╲    ╱               ~25mm dia, swings freely
+               ╲╱╱
+                90mm
+
+
+FRONT VIEW (door open — screen revealed)
+─────────────────────────────────────────
+
+              ╱╲
+             ╱  ╲
+            ╱    ╲
+           ╱      ╲
+          ╱________╲
+         ┌──────────────┐
+         │  ┌─────────────────┐  ← Door swings open to right
+         │  │            │    │    (or left, single hinge)
+         │  │            │    │
+         │  │  TFT LCD   │    │
+         │  │  SCREEN    │    │  ← 5.0" SSD1963 revealed
+         │  │  108x64.8  │    │    behind the door
+         │  │  active    │    │
+         │  │            │    │
+         │  │            │    │
+         │  └────────────┘    │
+         │              ╔═════╝
+         └──────────────┘
+              │    │
+              │ ╱╲ │
+              ╲  ╱╱
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+           ╱╲              ← Gable peak
+          ╱  │
+         ┌───┤ ─┬─
+         │   │  │
+         │(●)│  │          ← Button on side face
+         │   │  │
+         │   │  │  130mm body
+         │   │  │
+         │   │  │
+         │   │  │
+         │   │  │
+         └───┘ ─┴─
+         │   │
+         │ ○ │             ← Pendulum below
+         60mm
+         depth
+
+    Door hinge visible on front-right edge.
+    Door opens outward ~110° when unlatched.
+
+
+BACK VIEW
+─────────
+
+          ╱________╲
+         ┌──────────────┐
+         │              │
+         │   ┌──────┐   │      ← USB-C cutout
+         │   │USB-C │   │        8.94 x 3.26mm
+         │   └──────┘   │        upper back area
+         │              │
+         │    ╱╲        │      ← Keyhole wall mount slot
+         │   │  │       │        standard picture-hanging keyhole
+         │   │  │       │
+         │   └──┘       │
+         │              │
+         │   ┌──────┐   │      ← Fold-out desk stand
+         │   │stand │   │        (hinged flap, folds flat
+         │   │ flap │   │         against back when wall-mounted)
+         │   └──────┘   │
+         └──────────────┘
+
+
+CROSS-SECTION (vertical cut through center, looking from right)
+────────────────────────────────────────────────────────────────
+
+             ╱╲ roof peak
+            ╱  ╲
+           ╱ air╲           ← Roof cavity (hollow, decorative)
+          ┌──────┐
+          │      │ ─┬─
+    door──┤      │  │
+    hinge │┌────┐│  │       ← Door (2mm thick) opens outward
+     ↓    ││scrn││  │
+     ├────┤│mod ││  │       Screen module sits in main body
+     │door│├────┤│  │       behind door opening
+     │2mm ││gap ││  │  130mm
+     ├────┤│3mm ││  │  body
+          │├────┤│  │
+          ││PCB ││  │       PCB behind screen
+          ││1.6 ││  │
+          │├────┤│  │
+          ││spkr││  │       Speaker (28mm dia x 3.5mm)
+          ││3.5 ││  │       fires forward through door opening
+          │└────┘│  │
+          │      │ ─┴─
+          └──┬┬──┘
+             ││              ← Pendulum rod exits bottom slot
+             ○○              ← Pendulum weight (pivot point
+                               at bottom of case)
+
+    Front wall: 2mm (with door cutout)
+    Door: 2mm thick, decorative front face
+    Screen pocket: 5mm from inner front wall
+    Screen module: 4.5mm
+    Air gap: 3mm
+    PCB: 1.6mm
+    Speaker zone: 28mm dia behind PCB (offset low)
+    Back wall: 2mm
+    Total depth: ~60mm
+
+
+TOP VIEW (looking down, door closed)
+─────────────────────────────────────
+
+              ╱╲ ← roof ridge
+             ╱  ╲
+            ╱    ╲
+           ╱  90  ╲
+          ╱  wide  ╲
+         ┌──────────────┐
+         │   ╔══════╗   │       ← Door (closed) flush with front
+         │   ║ door ║   │
+         │   ╚══════╝   │
+         │              │  60mm
+         │   body       │  deep
+         │              │
+         └──────────────┘
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 0 — DOOR (hinged, decorative)
+    ├── 2mm thick panel, sized ~75 x 85mm
+    ├── Decorative clock face on front (numerals, frame)
+    ├── Hinged on right edge (2x micro pin hinges)
+    ├── Magnetic latch on left edge (holds shut)
+    ├── Optional: micro-servo bracket for auto-open
+    │   └── SG90 servo (23 x 12.2 x 22mm) mounts inside body
+    └── When open: speaker sound projects forward freely
+
+    Layer 1 — FRONT SHELL
+    ├── Door opening cutout: ~76 x 86mm (screen visible through it)
+    ├── Screen window behind door opening: 109 x 66mm
+    ├── 4x screen retention clips inside
+    ├── 3x button holes: 2 flanking door (left + right), 1 lower-right
+    │   └── 6mm dia holes, tactile switches behind
+    ├── Gable roof structure on top (hollow, decorative)
+    ├── Pendulum slot in bottom: 5 x 15mm
+    └── Wall: 2mm
+
+    Layer 2 — SCREEN MODULE (120 x 75 x 4.5mm)
+    ├── Landscape orientation (default)
+    ├── Seated in pocket behind door opening
+    ├── FPC exits bottom edge toward PCB
+    └── Touch accessible when door is open
+
+    Layer 3 — 3mm AIR GAP
+    ├── FPC routing
+    ├── Optional servo wiring
+    └── Door hinge clearance
+
+    Layer 4 — PCB (110 x 65 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5 x 2.4mm) faces back
+    ├── 3x tactile switches on edges (route to side-mounted buttons)
+    ├── USB-C connector on top edge (routes to back panel cutout)
+    ├── SSD1963 40-pin FPC connector
+    ├── Optional: servo control GPIO + 5V header
+    ├── Speaker connector (JST 2-pin)
+    └── 4x M2 standoff mounting
+
+    Layer 5 — SPEAKER (28mm dia x 3.5mm)
+    ├── Mounted low in body, below PCB
+    ├── Fires forward (sound exits through door opening)
+    ├── Foam gasket seal around speaker rim
+    └── Wire to PCB via JST connector
+
+    Layer 6 — BACK SHELL
+    ├── USB-C cutout (8.94 x 3.26mm) upper area
+    ├── Keyhole wall mount slot (standard, center, upper third)
+    ├── Fold-out desk stand (hinged flap, ~40 x 30mm)
+    │   └── Friction hinge or detent at ~45° angle
+    ├── 4x M2 standoff bosses
+    └── Wall: 2mm
+
+
+PENDULUM MECHANISM
+──────────────────
+
+    Pivot point at bottom of case:
+
+    ┌─── case bottom ───┐
+    │    ┌─ slot ─┐     │
+    │    │  │  ╱  │     │     ← 5x15mm slot in bottom
+    │    │  │╱    │     │
+    │    │  ○     │     │     ← Pivot pin (M2 bolt or wire pin)
+    │    │ ╱│     │     │       through rod, horizontal axis
+    │    └──┤─────┘     │
+    └───────┤───────────┘
+            │
+            │                  ← Pendulum rod: 3mm dia, ~50mm long
+            │                    (rigid wire or printed rod)
+            │
+           ╱╲
+          ╱  ╲                 ← Pendulum weight disc
+          ╲  ╱                   25mm dia, 5mm thick
+           ╲╱                    weighted (metal washer insert)
+
+    - Swings freely on pin through case bottom slot
+    - Purely decorative — not mechanized
+    - Natural oscillation from desk vibration / touching case
+    - Weight is press-fit onto rod or threaded
+
+
+DOOR MECHANISM DETAIL
+─────────────────────
+
+    Manual version (default):
+    ┌────────╗
+    │  body  ║ door     ← Pin hinges on right edge
+    │        ║           Magnetic catch on left edge
+    │   ◆────╫───       ← Pull to open, magnet holds shut
+    │  magnet║
+    └────────╝
+
+    Auto-open version (optional servo):
+    ┌────────╗
+    │ ┌servo┐║ door
+    │ │SG90 │║           ← SG90 micro-servo inside body
+    │ │  ├──╫───          Arm pushes door open on notification
+    │ └─────┘║            ESP32 GPIO controls servo
+    └────────╝
+
+    Servo adds ~12mm depth requirement (fits within 60mm body).
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+
+    Wall mount:
+    - Keyhole slot on back engages standard screw/nail
+    - Fold-out stand pressed flat against back
+    - USB-C cable drops down from back, along wall
+    - Pendulum hangs freely below
+
+    Desk stand:
+    - Fold-out flap on back opens to ~45°
+    - Case leans back slightly (~15° from vertical)
+    - Pendulum hangs in front of desk edge or dangles off
+    - Rubber pad on stand flap bottom prevents sliding
+
+    Assembly order:
+    1. Install screen in front shell pocket (clips retain)
+    2. Connect FPC to PCB
+    3. Mount PCB on standoffs (4x M2)
+    4. Connect speaker wire
+    5. Mount speaker with foam gasket
+    6. (Optional) Install servo, connect to PCB
+    7. Attach back shell (4x M2 screws)
+    8. Attach door via pin hinges
+    9. Insert pendulum rod through bottom slot, pin through pivot
+    10. Press-fit pendulum weight onto rod
+
+
+SPECIAL FEATURES
+────────────────
+
+    1. HINGED DOOR REVEAL
+       - Screen hidden when door closed (stealth mode)
+       - Door opens to reveal screen (notification mode)
+       - Manual: user pulls open; auto: servo opens on event
+       - Clock face decoration visible when "sleeping"
+       - Sound projects better with door open
+
+    2. WORKING PENDULUM
+       - Freely swinging decorative pendulum
+       - Weighted disc oscillates naturally
+       - Adds kinetic/analog charm to digital device
+       - Can be removed by pulling rod from pivot
+
+    3. CLOCK FACE AESTHETICS
+       - Roman numeral decoration around door frame
+       - Optional: actual time display on screen when door closed
+         (visible through small window, or door itself is partly open)
+       - Traditional cuckoo clock proportions and silhouette
+
+    4. DUAL MOUNT VERSATILITY
+       - Wall: keyhole slot, flat back, pendulum hangs free
+       - Desk: fold-out stand, stable lean-back angle
+       - Switch between modes without tools
+
+    5. SPEAKER BEHIND DOOR
+       - Sound is muffled when door closed (quiet mode)
+       - Sound projects clearly when door open (alert mode)
+       - Natural acoustic chamber behind screen
+       - "Cuckoo" sound effect for notifications (software)
+
+    6. AUTO-OPEN OPTION
+       - SG90 micro-servo fits inside 60mm depth body
+       - ESP32 GPIO drives servo on notification events
+       - Door swings open, screen lights up, sound plays
+       - Closes after timeout or on button press
+       - Truly feels like a cuckoo clock activating

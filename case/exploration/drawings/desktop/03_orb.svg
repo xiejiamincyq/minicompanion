@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="none" stroke="#CC0000" stroke-width="0.8"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#CC0000" stroke-width="0.8"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="4" height="4" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="4" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+    <style>
+      text { font-family: Arial, Helvetica, sans-serif; }
+      .title { font-size: 16px; font-weight: bold; fill: #222; }
+      .subtitle { font-size: 12px; font-weight: bold; fill: #444; }
+      .dim-text { font-size: 10px; fill: #CC0000; }
+      .label-text { font-size: 10px; fill: #333; }
+      .part-label { font-size: 11px; fill: #333; }
+      .dim-line { stroke: #CC0000; stroke-width: 0.5; marker-start: url(#arrow-start); marker-end: url(#arrow-end); }
+      .dim-ext { stroke: #CC0000; stroke-width: 0.3; stroke-dasharray: 2,2; }
+      .outline { stroke: #222; stroke-width: 0.5; fill: none; }
+      .outline-filled { stroke: #222; stroke-width: 0.5; fill: #E0E0E0; }
+      .hidden { stroke: #222; stroke-width: 0.4; stroke-dasharray: 3,2; fill: none; }
+      .wall { fill: url(#hatch); stroke: #606060; stroke-width: 0.5; }
+      .wall-solid { fill: #606060; stroke: #444; stroke-width: 0.5; }
+      .screen { fill: #B0D4F1; stroke: #5A8DB8; stroke-width: 0.5; }
+      .pcb { fill: #90C695; stroke: #4A8A50; stroke-width: 0.5; }
+      .speaker { fill: #D4A84B; stroke: #A07830; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="32" text-anchor="middle" class="title">DESIGN 3: FLOATING ORB — Devotchi Desktop Case Concept</text>
+  <line x1="100" y1="42" x2="1100" y2="42" stroke="#888" stroke-width="0.5"/>
+
+  <!-- ============================================================ -->
+  <!-- QUADRANT 1: FRONT/SIDE VIEW (top-left) -->
+  <!-- ============================================================ -->
+  <text x="200" y="68" text-anchor="middle" class="subtitle">Front / Side View</text>
+
+  <g transform="translate(200, 290)">
+    <!-- Pedestal base - cylinder side view -->
+    <rect x="-97" y="60" width="194" height="120" rx="3" class="outline-filled"/>
+    <!-- Base top ellipse -->
+    <ellipse cx="0" cy="60" rx="97" ry="14" class="outline-filled"/>
+    <!-- Base bottom ellipse (visible arc) -->
+    <path d="M-97,180 A97,14 0 0,0 97,180" class="outline" fill="#E0E0E0"/>
+
+    <!-- Speaker grille on base side (right) -->
+    <g transform="translate(85, 120)">
+      <circle cx="0" cy="0" r="10" stroke="#888" stroke-width="0.4" fill="none"/>
+      <line x1="-6" y1="-3" x2="6" y2="-3" stroke="#888" stroke-width="0.4"/>
+      <line x1="-7" y1="0" x2="7" y2="0" stroke="#888" stroke-width="0.4"/>
+      <line x1="-6" y1="3" x2="6" y2="3" stroke="#888" stroke-width="0.4"/>
+    </g>
+    <text x="115" y="124" class="label-text">Speaker</text>
+    <text x="115" y="135" class="label-text">Grille</text>
+
+    <!-- USB-C on base side (left) -->
+    <rect x="-97" y="148" width="6" height="10" rx="1" fill="#555" stroke="#333" stroke-width="0.4"/>
+    <line x1="-97" y1="148" x2="-108" y2="140" stroke="#666" stroke-width="0.3"/>
+    <text x="-140" y="140" class="label-text">USB-C</text>
+
+    <!-- Connecting peg -->
+    <rect x="-12" y="15" width="24" height="45" rx="2" fill="#D0D0D0" stroke="#222" stroke-width="0.5"/>
+
+    <!-- Egg body - oblate egg (wider than tall) -->
+    <!-- Using an ellipse approximation for egg shape -->
+    <ellipse cx="0" cy="-40" rx="120" ry="82" class="outline-filled"/>
+
+    <!-- Flat-cut top -->
+    <rect x="-95" y="-122" width="190" height="12" fill="white" stroke="none"/>
+    <line x1="-95" y1="-110" x2="95" y2="-110" stroke="#222" stroke-width="0.5"/>
+
+    <!-- Screen window on flat top -->
+    <rect x="-62" y="-110" width="124" height="6" rx="1" class="screen"/>
+    <text x="0" y="-114" text-anchor="middle" class="label-text" font-size="9">Screen (41.8 x 31.6mm)</text>
+
+    <!-- DIMENSIONS -->
+    <!-- Egg width: 80mm (~240px mapped, but using 120rx) -->
+    <line x1="-120" y1="-140" x2="-120" y2="-130" class="dim-ext"/>
+    <line x1="120" y1="-140" x2="120" y2="-130" class="dim-ext"/>
+    <line x1="-120" y1="-136" x2="120" y2="-136" class="dim-line"/>
+    <text x="0" y="-140" text-anchor="middle" class="dim-text">80mm</text>
+
+    <!-- Egg height: 55mm -->
+    <line x1="130" y1="-110" x2="140" y2="-110" class="dim-ext"/>
+    <line x1="130" y1="42" x2="140" y2="42" class="dim-ext"/>
+    <line x1="136" y1="-110" x2="136" y2="42" class="dim-line"/>
+    <text x="148" y="-30" class="dim-text" transform="rotate(90,148,-30)">55mm</text>
+
+    <!-- Peg: 8mm dia, 15mm tall -->
+    <line x1="24" y1="15" x2="34" y2="15" class="dim-ext"/>
+    <line x1="24" y1="60" x2="34" y2="60" class="dim-ext"/>
+    <line x1="30" y1="15" x2="30" y2="60" class="dim-line"/>
+    <text x="44" y="40" class="dim-text">15mm</text>
+
+    <line x1="-12" y1="6" x2="12" y2="6" class="dim-ext"/>
+    <line x1="-12" y1="2" x2="12" y2="2" class="dim-line"/>
+    <text x="0" y="-2" text-anchor="middle" class="dim-text" font-size="9">8mm</text>
+
+    <!-- Base width: 65mm dia -->
+    <line x1="-97" y1="190" x2="-97" y2="198" class="dim-ext"/>
+    <line x1="97" y1="190" x2="97" y2="198" class="dim-ext"/>
+    <line x1="-97" y1="195" x2="97" y2="195" class="dim-line"/>
+    <text x="0" y="208" text-anchor="middle" class="dim-text">65mm dia</text>
+
+    <!-- Base height: 40mm -->
+    <line x1="-110" y1="60" x2="-104" y2="60" class="dim-ext"/>
+    <line x1="-110" y1="180" x2="-104" y2="180" class="dim-ext"/>
+    <line x1="-107" y1="60" x2="-107" y2="180" class="dim-line"/>
+    <text x="-150" y="124" class="dim-text">40mm</text>
+
+    <!-- Total height: ~110mm -->
+    <line x1="160" y1="-110" x2="170" y2="-110" class="dim-ext"/>
+    <line x1="160" y1="180" x2="170" y2="180" class="dim-ext"/>
+    <line x1="166" y1="-110" x2="166" y2="180" class="dim-line"/>
+    <text x="178" y="40" class="dim-text" transform="rotate(90,178,40)">~110mm total</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- QUADRANT 2: TOP VIEW (top-right) -->
+  <!-- ============================================================ -->
+  <text x="820" y="68" text-anchor="middle" class="subtitle">Top View (Looking Down)</text>
+
+  <g transform="translate(820, 270)">
+    <!-- Egg outline from above - ellipse -->
+    <ellipse cx="0" cy="0" rx="140" ry="110" class="outline-filled"/>
+
+    <!-- Screen window centered -->
+    <rect x="-62" y="-47" width="124" height="94" rx="2" class="screen"/>
+    <text x="0" y="4" text-anchor="middle" class="label-text" font-size="9">Screen</text>
+    <text x="0" y="16" text-anchor="middle" class="label-text" font-size="9">41.8 x 31.6mm</text>
+
+    <!-- 4 button positions around screen -->
+    <!-- Top button -->
+    <circle cx="0" cy="-72" r="8" fill="#CCC" stroke="#888" stroke-width="0.5"/>
+    <text x="0" y="-83" text-anchor="middle" class="label-text" font-size="9">BTN1</text>
+    <!-- Bottom button -->
+    <circle cx="0" cy="72" r="8" fill="#CCC" stroke="#888" stroke-width="0.5"/>
+    <text x="0" y="92" text-anchor="middle" class="label-text" font-size="9">BTN2</text>
+    <!-- Left button -->
+    <circle cx="-88" cy="0" r="8" fill="#CCC" stroke="#888" stroke-width="0.5"/>
+    <text x="-88" y="-14" text-anchor="middle" class="label-text" font-size="9">BTN3</text>
+    <!-- Right button -->
+    <circle cx="88" cy="0" r="8" fill="#CCC" stroke="#888" stroke-width="0.5"/>
+    <text x="88" y="-14" text-anchor="middle" class="label-text" font-size="9">BTN4</text>
+
+    <!-- Overall width dimension -->
+    <line x1="-140" y1="130" x2="-140" y2="138" class="dim-ext"/>
+    <line x1="140" y1="130" x2="140" y2="138" class="dim-ext"/>
+    <line x1="-140" y1="135" x2="140" y2="135" class="dim-line"/>
+    <text x="0" y="150" text-anchor="middle" class="dim-text">80mm</text>
+
+    <!-- Overall depth dimension -->
+    <line x1="155" y1="-110" x2="163" y2="-110" class="dim-ext"/>
+    <line x1="155" y1="110" x2="163" y2="110" class="dim-ext"/>
+    <line x1="160" y1="-110" x2="160" y2="110" class="dim-line"/>
+    <text x="175" y="4" class="dim-text" transform="rotate(90,175,4)">55mm</text>
+
+    <!-- Screen dims -->
+    <line x1="-62" y1="-55" x2="62" y2="-55" class="dim-ext"/>
+    <line x1="-62" y1="-60" x2="62" y2="-60" class="dim-line"/>
+    <text x="0" y="-64" text-anchor="middle" class="dim-text" font-size="9">41.8mm</text>
+
+    <!-- Hidden base outline below -->
+    <ellipse cx="0" cy="0" rx="97" ry="97" class="hidden" stroke-dasharray="6,3"/>
+    <text x="72" y="82" class="label-text" font-size="9" fill="#888">Base (below)</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- QUADRANT 3: CROSS-SECTION (bottom-left) -->
+  <!-- ============================================================ -->
+  <text x="250" y="480" text-anchor="middle" class="subtitle">Cross-Section (Vertical Cut)</text>
+
+  <g transform="translate(250, 680)">
+    <!-- Base exterior -->
+    <rect x="-97" y="55" width="194" height="120" rx="3" fill="#E0E0E0" stroke="#222" stroke-width="0.5"/>
+
+    <!-- Base walls (2mm thick) hatched -->
+    <!-- Left wall -->
+    <rect x="-97" y="55" width="6" height="120" class="wall"/>
+    <!-- Right wall -->
+    <rect x="91" y="55" width="6" height="120" class="wall"/>
+    <!-- Bottom wall -->
+    <rect x="-97" y="169" width="194" height="6" class="wall"/>
+    <!-- Top wall of base -->
+    <rect x="-97" y="55" width="194" height="6" class="wall"/>
+
+    <!-- Base interior fill white -->
+    <rect x="-91" y="61" width="182" height="108" fill="white" stroke="none"/>
+
+    <!-- Speaker in base (gold circle) -->
+    <ellipse cx="-40" cy="120" rx="28" ry="28" class="speaker"/>
+    <text x="-40" y="124" text-anchor="middle" class="label-text" font-size="9" fill="#5A3A10">Speaker</text>
+
+    <!-- Wiring in base -->
+    <path d="M10,90 Q20,110 10,130 Q5,145 15,155" stroke="#C44" stroke-width="1" fill="none"/>
+    <text x="28" y="150" class="label-text" font-size="9">Wires</text>
+
+    <!-- Peg (hollow) -->
+    <rect x="-12" y="10" width="24" height="45" rx="1" fill="#D0D0D0" stroke="#222" stroke-width="0.5"/>
+    <!-- Hollow bore (5mm) -->
+    <rect x="-7.5" y="10" width="15" height="45" fill="white" stroke="#888" stroke-width="0.3" stroke-dasharray="2,1"/>
+    <text x="22" y="35" class="label-text" font-size="9">5mm bore</text>
+
+    <!-- Egg shell exterior -->
+    <ellipse cx="0" cy="-50" rx="120" ry="82" fill="#E0E0E0" stroke="#222" stroke-width="0.5"/>
+    <!-- Flat cut top -->
+    <rect x="-120" y="-132" width="240" height="20" fill="white" stroke="none"/>
+    <line x1="-95" y1="-112" x2="95" y2="-112" stroke="#222" stroke-width="0.5"/>
+
+    <!-- Egg shell inner cavity -->
+    <ellipse cx="0" cy="-50" rx="114" ry="76" fill="white" stroke="none"/>
+
+    <!-- Egg wall hatching - left arc -->
+    <clipPath id="egg-wall-left">
+      <path d="M-120,-50 A120,82 0 0,0 -120,-50 L-120,32 A120,82 0 0,1 0,32 L0,-132 A120,82 0 0,0 -120,-50 Z"/>
+    </clipPath>
+
+    <!-- Redraw walls as hatched paths on left and right of egg -->
+    <!-- Left egg wall section -->
+    <path d="M-120,-50 Q-120,-112 -95,-112 L-89,-112 Q-114,-112 -114,-50 Q-114,20 0,30 L0,32 Q-120,22 -120,-50 Z" class="wall"/>
+    <!-- Right egg wall section -->
+    <path d="M120,-50 Q120,-112 95,-112 L89,-112 Q114,-112 114,-50 Q114,20 0,30 L0,32 Q120,22 120,-50 Z" class="wall"/>
+    <!-- Top flat wall -->
+    <rect x="-95" y="-112" width="190" height="6" class="wall"/>
+
+    <!-- Screen module in pocket -->
+    <rect x="-62" y="-106" width="124" height="13.5" rx="1" class="screen"/>
+    <text x="0" y="-97" text-anchor="middle" style="font-size:8px; fill:#3A6A8A;">Screen (4.5mm)</text>
+
+    <!-- PCB below screen -->
+    <rect x="-55" y="-90" width="110" height="5" rx="0.5" class="pcb"/>
+    <text x="0" y="-86" text-anchor="middle" style="font-size:8px; fill:#2A5A30;">PCB (1.6mm)</text>
+
+    <!-- Standoffs from PCB to lower egg shell -->
+    <rect x="-45" y="-85" width="4" height="35" fill="#AAA" stroke="#666" stroke-width="0.4"/>
+    <rect x="41" y="-85" width="4" height="35" fill="#AAA" stroke="#666" stroke-width="0.4"/>
+    <rect x="-5" y="-85" width="4" height="35" fill="#AAA" stroke="#666" stroke-width="0.4"/>
+    <text x="55" y="-65" class="label-text" font-size="9">Standoffs</text>
+
+    <!-- DIMENSIONS -->
+    <!-- Wall thickness 2mm -->
+    <line x1="-120" y1="-112" x2="-120" y2="-125" class="dim-ext"/>
+    <line x1="-114" y1="-112" x2="-114" y2="-125" class="dim-ext"/>
+    <line x1="-120" y1="-122" x2="-114" y2="-122" class="dim-line"/>
+    <text x="-117" y="-127" text-anchor="middle" class="dim-text" font-size="9">2mm</text>
+
+    <!-- Screen 4.5mm -->
+    <line x1="70" y1="-106" x2="80" y2="-106" class="dim-ext"/>
+    <line x1="70" y1="-92.5" x2="80" y2="-92.5" class="dim-ext"/>
+    <line x1="76" y1="-106" x2="76" y2="-92.5" class="dim-line"/>
+    <text x="88" y="-97" class="dim-text" font-size="9">4.5mm</text>
+
+    <!-- PCB 1.6mm -->
+    <line x1="64" y1="-90" x2="74" y2="-90" class="dim-ext"/>
+    <line x1="64" y1="-85" x2="74" y2="-85" class="dim-ext"/>
+    <line x1="70" y1="-90" x2="70" y2="-85" class="dim-line"/>
+    <text x="82" y="-86" class="dim-text" font-size="9">1.6mm</text>
+
+    <!-- Base wall 2mm -->
+    <line x1="-97" y1="182" x2="-97" y2="192" class="dim-ext"/>
+    <line x1="-91" y1="182" x2="-91" y2="192" class="dim-ext"/>
+    <line x1="-97" y1="188" x2="-91" y2="188" class="dim-line"/>
+    <text x="-94" y="200" text-anchor="middle" class="dim-text" font-size="9">2mm</text>
+
+    <!-- Bore 5mm -->
+    <line x1="-7.5" y1="4" x2="7.5" y2="4" class="dim-ext"/>
+    <line x1="-7.5" y1="0" x2="7.5" y2="0" class="dim-line"/>
+    <text x="0" y="-4" text-anchor="middle" class="dim-text" font-size="9">5mm bore</text>
+
+    <!-- Peg width 8mm -->
+    <line x1="-12" y1="58" x2="12" y2="58" class="dim-ext"/>
+    <line x1="-12" y1="62" x2="12" y2="62" class="dim-line"/>
+    <text x="0" y="72" text-anchor="middle" class="dim-text" font-size="9">8mm</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- QUADRANT 4: EXPLODED VIEW (bottom-right) -->
+  <!-- ============================================================ -->
+  <text x="850" y="480" text-anchor="middle" class="subtitle">Exploded View</text>
+
+  <g transform="translate(850, 500)">
+    <!-- Egg top half -->
+    <path d="M-70,-100 Q-75,-130 -55,-145 Q-20,-165 0,-165 Q20,-165 55,-145 Q75,-130 70,-100 Z" fill="#E0E0E0" stroke="#222" stroke-width="0.5"/>
+    <!-- Screen opening in top -->
+    <rect x="-38" y="-148" width="76" height="10" rx="1" fill="white" stroke="#222" stroke-width="0.4"/>
+    <text x="90" y="-130" class="part-label">Egg Top Shell</text>
+    <line x1="72" y1="-125" x2="86" y2="-128" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Screen module -->
+    <rect x="-48" y="-82" width="96" height="18" rx="2" class="screen"/>
+    <text x="0" y="-70" text-anchor="middle" style="font-size:9px; fill:#3A6A8A;">Screen</text>
+    <text x="90" y="-70" class="part-label">Screen Module</text>
+    <line x1="50" y1="-72" x2="86" y2="-72" stroke="#888" stroke-width="0.3"/>
+
+    <!-- PCB -->
+    <rect x="-42" y="-42" width="84" height="8" rx="1" class="pcb"/>
+    <text x="0" y="-36" text-anchor="middle" style="font-size:8px; fill:#2A5A30;">PCB</text>
+    <text x="90" y="-36" class="part-label">Main PCB</text>
+    <line x1="44" y1="-38" x2="86" y2="-38" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Egg bottom half -->
+    <path d="M-70,-10 Q-75,20 -55,35 Q-20,55 0,55 Q20,55 55,35 Q75,20 70,-10 Z" fill="#E0E0E0" stroke="#222" stroke-width="0.5"/>
+    <text x="90" y="25" class="part-label">Egg Bottom Shell</text>
+    <line x1="72" y1="20" x2="86" y2="22" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Peg connector -->
+    <rect x="-8" y="76" width="16" height="30" rx="2" fill="#D0D0D0" stroke="#222" stroke-width="0.5"/>
+    <text x="90" y="94" class="part-label">Peg Connector</text>
+    <line x1="10" y1="91" x2="86" y2="92" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Base body -->
+    <rect x="-58" y="126" width="116" height="72" rx="3" fill="#E0E0E0" stroke="#222" stroke-width="0.5"/>
+    <ellipse cx="0" cy="126" rx="58" ry="9" fill="#D8D8D8" stroke="#222" stroke-width="0.5"/>
+    <text x="90" y="165" class="part-label">Base Body</text>
+    <line x1="60" y1="162" x2="86" y2="163" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Speaker inside base (shown offset) -->
+    <circle cx="-20" cy="225" r="20" class="speaker"/>
+    <text x="-20" y="228" text-anchor="middle" style="font-size:8px; fill:#5A3A10;">Speaker</text>
+    <text x="90" y="228" class="part-label">Speaker</text>
+    <line x1="2" y1="225" x2="86" y2="226" stroke="#888" stroke-width="0.3"/>
+
+    <!-- Vertical dashed assembly lines -->
+    <line x1="0" y1="-95" x2="0" y2="-86" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <line x1="0" y1="-62" x2="0" y2="-46" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <line x1="0" y1="-32" x2="0" y2="-14" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <line x1="0" y1="58" x2="0" y2="72" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <line x1="0" y1="108" x2="0" y2="122" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <line x1="-20" y1="200" x2="-20" y2="203" stroke="#888" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+    <!-- Assembly arrows -->
+    <path d="M0,-92 L-3,-86 L3,-86 Z" fill="#888"/>
+    <path d="M0,-50 L-3,-44 L3,-44 Z" fill="#888"/>
+    <path d="M0,-18 L-3,-12 L3,-12 Z" fill="#888"/>
+    <path d="M0,72 L-3,78 L3,78 Z" fill="#888"/>
+    <path d="M0,118 L-3,124 L3,124 Z" fill="#888"/>
+  </g>
+
+  <!-- Divider lines between quadrants -->
+  <line x1="600" y1="52" x2="600" y2="460" stroke="#CCC" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="600" y1="475" x2="600" y2="890" stroke="#CCC" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <line x1="50" y1="465" x2="1150" y2="465" stroke="#CCC" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Footer -->
+  <line x1="100" y1="880" x2="1100" y2="880" stroke="#888" stroke-width="0.5"/>
+  <text x="100" y="895" style="font-size:9px; fill:#888; font-family:Arial,sans-serif;">Devotchi Desktop Case — Design 3: Floating Orb</text>
+  <text x="1100" y="895" text-anchor="end" style="font-size:9px; fill:#888; font-family:Arial,sans-serif;">Scale: Not to scale — Concept illustration</text>
+</svg>

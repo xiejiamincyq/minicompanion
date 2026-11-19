@@ -1,0 +1,181 @@
+DESIGN 5: RETRO TV
+==================
+Chunky CRT television shape with rounded front bezel, antenna stubs,
+and knob-style buttons on the side. Screen centered in front face.
+Think "1970s portable TV" miniaturized.
+
+Overall: 165 x 110 x 65mm (landscape, chunky box)
+Target user: nostalgic desk ornament, conversation piece
+
+FRONT VIEW (screen facing viewer)
+─────────────────────────────────
+
+    ┌──── antenna ────┐   ┌──── antenna ────┐
+    │                 │   │                 │
+    ┌─────────────────────────────────────────┐
+    │          ╭─────────────────────╮        │
+    │          │                     │        │
+    │          │                     │        │
+    │          │    TFT LCD SCREEN   │        │  110mm
+    │          │   (40.8 x 30.6)    │        │
+    │          │                     │        │
+    │          │                     │        │
+    │          ╰─────────────────────╯        │
+    │                                ○ LED    │
+    │    ┌──────────────────────────────┐     │
+    │    │    DECORATIVE BOTTOM LIP     │     │  ← Slightly raised
+    │    └──────────────────────────────┘     │     "speaker grille" area
+    └─────────────────────────────────────────┘
+                    165mm
+
+
+RIGHT SIDE VIEW (button panel)
+──────────────────────────────
+
+         65mm deep
+    ├────────────────┤
+    ┌────────────────┐  ─┬─
+    │                │   │
+    │   ◉  Button 1  │   │
+    │                │   │
+    │   ◉  Button 2  │   │   110mm
+    │                │   │
+    │   ◉  Button 3  │   │   ← Knob-style buttons on
+    │                │   │     right side panel
+    │                │   │
+    └────────────────┘  ─┴─
+    ↑                ↑
+   Front           Back
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+    ┌─ antenna ─┐          ┌─ antenna ─┐
+    │           │          │           │
+    ┌───────────────────────────────────┐
+    │                                   │
+    │                                   │  65mm deep
+    │          BODY                     │
+    │                                   │
+    └───────────────────────────────────┘
+                  165mm
+
+
+BACK VIEW (ports and vents)
+───────────────────────────
+
+    ┌─────────────────────────────────────────┐
+    │                                         │
+    │  ═══  ═══  ═══  ═══  ═══  ═══  ═══     │  ← Vent slots
+    │  ═══  ═══  ═══  ═══  ═══  ═══  ═══     │    (heat dissipation)
+    │                                         │
+    │         ┌─────┐                         │
+    │         │USB-C│                         │  ← USB-C centered
+    │         │ 9.5 │                         │
+    │         │x3.5 │                         │
+    │         └─────┘                         │
+    │                                         │
+    └─────────────────────────────────────────┘
+
+
+CROSS-SECTION (horizontal cut through screen center)
+────────────────────────────────────────────────────
+
+    Front wall      ┌── Screen pocket (5mm)
+    (3mm, rounded)  │
+    ╭───────────────┤                          ┌── Back wall (2mm)
+    │  ┌─ Screen ──┐│                          │
+    │  │  4.5mm    ││       AIR SPACE          │
+    │  ├───────────┤│                          │     65mm total
+    │  │  3mm gap  ││    ┌── Speaker ──┐       │
+    │  ├─ PCB ─────┤│    │  (28mm dia) │       │
+    │  │  1.6mm    ││    │  5mm tall   │       │
+    │  └───────────┘│    └─────────────┘       │
+    ╰───────────────┘                          │
+    ↑                                          ↑
+    Front face (convex)                     Back face
+    Rounded bezel                          (vent slots)
+
+    Depth budget:
+    Front wall:     3.0mm (thick for rounded profile)
+    Screen pocket:  5.0mm
+    Gap:            3.0mm
+    PCB:            1.6mm
+    Speaker:        5.0mm (behind PCB area)
+    Air space:      ~45mm (generous interior)
+    Back wall:      2.0mm
+    ──────────────────
+    Total:          65mm (lots of room)
+
+
+LEFT SIDE VIEW (speaker grille)
+───────────────────────────────
+
+    ┌────────────────┐
+    │                │
+    │   ○○○○○○       │
+    │   ○○○○○○       │   ← Speaker grille
+    │   ○○○○○○       │     (grid of 1.5mm holes)
+    │   ○○○○○○       │     ~30mm diameter pattern
+    │                │
+    │                │
+    └────────────────┘
+
+
+COMPONENT LAYOUT
+────────────────
+
+    FRONT SHELL (CRT-style body)
+    ├── Rounded front face with screen bezel
+    │   ├── Screen window (41.8 x 31.6mm, radiused corners)
+    │   ├── Screen pocket (52.2 x 36.6mm, 5mm deep)
+    │   ├── 4x retention clips
+    │   └── Bezel overlap: 5mm around window
+    ├── Right side wall: 3x button holes (8mm dia for knob caps)
+    ├── Left side wall: speaker grille (28mm dia pattern)
+    ├── 2x antenna stubs on top (decorative, 6mm dia, 25mm tall)
+    ├── LED hole on front face below screen
+    └── Wall: 2–3mm (thicker at front for sculpted profile)
+
+    BACK SHELL (flat back plate)
+    ├── Vent slot array (2 x 15mm slots, 3 rows)
+    ├── USB-C cutout centered (9.5 x 3.5mm)
+    ├── 4x screw bosses
+    ├── 4x PCB standoffs (5mm OD, M2, 8mm tall)
+    └── 2x feet/pads on bottom edge
+
+    PCB
+    ├── Mounted to back shell standoffs
+    ├── ESP32 faces back (antenna toward vent slots for WiFi)
+    ├── USB-C on back edge
+    ├── Buttons on right edge (wire leads to side-mounted tactile switches)
+    └── Screen FPC routes up and over to front pocket
+
+    SPEAKER
+    ├── 28mm diameter, mounted to left side wall
+    ├── Foam gasket seal against inner wall
+    └── Fires out through left side grille
+
+
+ANTENNA DETAIL
+──────────────
+
+    ┌─ Antenna stub ─┐
+    │  6mm dia        │  25mm tall
+    │  cylinder       │  Solid decorative piece
+    │  (or tapered)   │  Press-fit into top shell sockets
+    └─────────────────┘
+
+    Can be:
+    - Solid cosmetic (just decoration)
+    - Functional WiFi antenna extension (hollow, with wire to ESP32 antenna pad)
+
+
+ASSEMBLY
+────────
+- 2-piece: front body + back plate, 4x M2 screws from back
+- Antenna stubs: press-fit into sockets in top of front shell
+- Button knobs: separate caps that press onto tactile switch stems
+- Screen loads from inside front shell before closing
+- Speaker glued/press-fit to inner left wall with foam gasket

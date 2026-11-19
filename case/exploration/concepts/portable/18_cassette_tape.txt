@@ -1,0 +1,356 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE — CONCEPT 18: CASSETTE TAPE
+================================================================================
+
+  Authentic compact cassette dimensions (100x64x12mm), landscape orientation.
+  Screen replaces the transparent tape window area in the center. 3 buttons
+  in the label area above the window. Decorative spool circles flank the
+  screen. 5 screw hole positions on front face for authenticity. Tape head
+  opening at bottom edge = USB-C location. Write-protect tab on top-left
+  corner = wake switch. Can physically fit in a cassette deck for fun.
+  Ultra-thin 12mm requires slim battery.
+
+  Overall Dimensions: 100mm wide x 64mm tall x 12mm deep
+  Active Screen:      40.80 x 30.60mm (landscape, centered in tape window)
+  Display Module:     51.80 x 36.20mm
+  Weight target:      ~55g with battery
+  Orientation:        Landscape
+  Shell:              2 pieces (front + back), injection-molded ABS
+  Battery:            Custom slim LiPo 60x30x3.5mm (~450mAh)
+
+  NOTE: The cassette form factor provides generous internal space (100x64mm)
+  for the 51.80x36.20mm display module. The 12mm depth is tight but feasible
+  with a slim battery. The standard 5mm LiPo does NOT fit — requires 3.5mm.
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                          100mm
+    |<-------------------------------------------------->|
+
+    +----------------------------------------------------+  ___
+    | ○                                                ○ |   |
+    |                                                    |   |
+    |   ╔══════════════════════════════════════════╗     |   |
+    |   ║  DEVOTCHI          [1] [2] [3] buttons  ║     |   |
+    |   ║  C-90              (in label area)      ║     |   |
+    |   ╠══════════════════════════════════════════╣     |   |
+    |   ║                                          ║     |  64mm
+    |   ║   ┌───┐  ┌────────────────┐  ┌───┐     ║     |   |
+    |   ║   │ ○ │  │  TFT DISPLAY   │  │ ○ │     ║     |   |
+    |   ║   │   │  │ 40.80x30.60mm  │  │   │     ║     |   |
+    |   ║   │spl│  │   (active)     │  │spl│     ║     |   |
+    |   ║   └───┘  └────────────────┘  └───┘     ║     |   |
+    |   ║    left     screen window     right     ║     |   |
+    |   ║   spool     (tape area)       spool     ║     |   |
+    |   ╚══════════════════════════════════════════╝     |   |
+    |                                                    |   |
+    | ○            ○                        ○            |   |
+    |   ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒     |   |
+    +----------------------------------------------------+  _|_
+
+    5x screw positions: top-left, top-right, bottom-left, bottom-center,
+                        bottom-right (Phillips head, M2)
+    Bottom slot: tape head opening = USB-C port (9.34x3.66mm cutout)
+    ▒▒▒ = tape head slot area (decorative, houses USB-C)
+
+================================================================================
+  TOP EDGE VIEW
+================================================================================
+
+                          100mm
+    |<-------------------------------------------------->|
+
+    +-[W]-+-------------------------------------------+--+
+    | tab |                                           |  |
+    +-----+-------------------------------------------+--+
+    |                    12mm depth                       |
+    |<-------------------------------------------------->|
+
+    [W] = Write-protect tab (top-left corner)
+        = Wake switch — slide tab to wake device
+        3mm wide x 5mm long, recessed channel
+        Authentic cassette detail repurposed as switch
+
+================================================================================
+  SIDE VIEW — LEFT EDGE
+================================================================================
+
+              12mm
+         |<--------->|
+
+    ___  +───────────+  ___
+     |   |           |   |
+     |   |           |   |
+     |   |           |   |
+     |   |           |   |
+    64   |           |  64mm
+    mm   |           |   |
+     |   |           |   |
+     |   |           |   |
+     |   |           |   |
+    _|_  +───────────+  _|_
+
+         Front    Back
+
+    No features on left/right edges (authentic cassette has
+    smooth sides). All interaction through front face buttons
+    and top-edge wake tab.
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                          100mm
+    |<-------------------------------------------------->|
+
+    +----------------------------------------------------+  ___
+    | ○                                                ○ |   |
+    |                                                    |   |
+    |   ┌──────────────────────────────────────────┐    |   |
+    |   │  Label area (sticker/printed)             │    |   |
+    |   │                                           │    |   |
+    |   │  DEVOTCHI — AI Agent Monitor              │    |   |
+    |   │  S/N: XXXX-XXXX-XXXX                     │   64mm
+    |   │  FCC ID: XXXXXXX                          │    |   |
+    |   │                                           │    |   |
+    |   │  Specs: ESP32-S3, 320x240 TFT             │    |   |
+    |   │  Battery: 450mAh LiPo                     │    |   |
+    |   └──────────────────────────────────────────┘    |   |
+    |                                                    |   |
+    | ○            ○                        ○            |   |
+    |          ┌──────────┐                              |   |
+    +----------┤  USB-C   ├------------------------------+  _|_
+               └──────────┘
+    Back has label area (mimics real cassette back label)
+    5 matching screw holes visible
+    USB-C visible through tape head slot at bottom
+
+================================================================================
+  CROSS-SECTION (cut through center, top-to-bottom at display area)
+================================================================================
+
+  Front (label side)                                Back
+   |                                                 |
+   | 1.5   2.5mm     1.0    1.6   0.4   3.5   1.5  |
+   |<-->|<-------->|<---->|<---->|<-->|<----->|<-->  |
+   |    |          |      |      |    |       |      |
+   |Wall| Display  | Gap  | PCB  |Gap |Battery|Wall  |
+   |    | Module   |      |      |    | 3.5mm |      |
+   |    | (TFT+BL) |      |      |    |(slim) |      |
+   +----+----------+------+------+----+-------+------+
+   |<------------------------------------------------>|
+                     12.0mm total
+
+  Z-Stack Breakdown:
+  +-----------+
+  |  1.5mm    |  Front wall (ABS shell + label recess)
+  +-----------+
+  |  2.5mm    |  Display module (TFT + backlight)
+  +-----------+
+  |  1.0mm    |  Air gap / FPC routing
+  +-----------+
+  |  1.6mm    |  PCB
+  +-----------+
+  |  0.4mm    |  Air gap
+  +-----------+
+  |  3.5mm    |  Slim LiPo battery (60x30x3.5mm)
+  +-----------+
+  |  1.5mm    |  Back wall (ABS shell + back label recess)
+  +-----------+
+  = 12.0mm total
+
+================================================================================
+  COMPONENT LAYOUT (exploded, front to back)
+================================================================================
+
+  Layer 1 — FRONT SHELL (1.5mm ABS):
+  +----------------------------------------------------+
+  |  (o)     Label recess (printed graphic)        (o) |
+  |     ╔═══════════════════════════════════════╗       |
+  |     ║ Text + 3 button holes (5mm dia each)  ║       |
+  |     ╠═══════════════════════════════════════╣       |
+  |     ║ Spool   Screen       Spool            ║       |
+  |     ║ window  window       window            ║       |
+  |     ║ (deco)  42x32mm     (deco)             ║       |
+  |     ╚═══════════════════════════════════════╝       |
+  |  (o)     (o)    [tape head slot]        (o)        |
+  +----------------------------------------------------+
+
+  Layer 2 — DISPLAY MODULE (51.80 x 36.20mm):
+       .-------------------------.
+       | TFT Display module      |
+       | Active: 40.80 x 30.60mm |
+       | Centered in window area  |
+       | FPC exits bottom         |
+       '-------------------------'
+
+  Layer 3 — SPOOL DECORATIONS:
+       Two circular decorative elements (15mm dia)
+       flanking the display. Printed on front shell or
+       separate plastic inserts. Purely aesthetic.
+
+  Layer 4 — PCB (custom, ~80 x 50mm):
+       +---------------------------------------+
+       |  [ESP32-S3-MINI-1]  [Buttons x3]     |
+       |  [USB-C connector]                     |
+       |  [Power management]  [Wake switch pad] |
+       |  Display FPC connector (center)        |
+       +---------------------------------------+
+
+  Layer 5 — BATTERY (60 x 30 x 3.5mm):
+       .----------------------------.
+       | LiPo 60x30x3.5mm           |
+       | ~450mAh                     |
+       | JST-SH 2-pin connector     |
+       '----------------------------'
+
+  Layer 6 — BACK SHELL (1.5mm ABS):
+  +----------------------------------------------------+
+  |  (o)     Back label recess (sticker area)      (o) |
+  |                                                     |
+  |     Model info, serial number, regulatory           |
+  |                                                     |
+  |  (o)     (o)                            (o)        |
+  +----------------------------------------------------+
+
+================================================================================
+  BUTTON & SWITCH DETAILS
+================================================================================
+
+  3 Front Buttons (in label area, above screen window):
+  +═══════════════════════════════════════════+
+  ║  DEVOTCHI   [REJ] [ACT] [APR]   C-90    ║
+  ║              ───   ───   ───             ║
+  ╠═══════════════════════════════════════════╣
+
+  - 5mm diameter circular caps, 1mm proud of surface
+  - Positioned in label area above tape window
+  - Left: REJECT, Center: ACTION, Right: APPROVE
+  - Soft-touch rubber caps, screen-printed icons
+  - Tactile switch underneath, 180gf actuation
+
+  Wake Switch (top-left corner, write-protect tab):
+       ┌───┐
+       │ ← │  Slide left = WAKE (tab removed position)
+       │ → │  Slide right = SLEEP (tab present position)
+       └───┘
+  - 3mm x 5mm sliding tab in authentic write-protect position
+  - SPDT slide switch underneath
+  - Repurposes real cassette mechanism
+
+  USB-C (bottom edge, tape head slot):
+  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+         ▒▒▒▒  ┌──────┐  ▒▒▒▒
+         ▒▒▒▒  │USB-C │  ▒▒▒▒
+         ▒▒▒▒  │9.34x │  ▒▒▒▒
+         ▒▒▒▒  │3.66mm│  ▒▒▒▒
+         ▒▒▒▒  └──────┘  ▒▒▒▒
+  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+
+  - USB-C connector sits inside the decorative tape head opening
+  - Opening is wider than needed (authentic cassette detail)
+  - Connector recessed 2mm inside slot for protection
+
+================================================================================
+  SPOOL WINDOW DETAIL
+================================================================================
+
+  The two decorative spool circles flank the screen:
+
+       ┌───┐  ┌────────────────┐  ┌───┐
+       │/  │  │                │  │  \│
+       │ ○ │  │    SCREEN      │  │ ○ │
+       │\  │  │                │  │  /│
+       └───┘  └────────────────┘  └───┘
+       15mm          42mm          15mm
+       spool       window         spool
+
+  - Each spool circle: 15mm outer diameter
+  - Decorative spokes molded into front shell
+  - Could spin freely (bearing on post) for fidget factor
+  - Or fixed/printed for simplicity
+  - Dark tinted transparent plastic behind spool windows
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Display module sits in recessed pocket in front shell interior
+  - Aligned with tape window opening
+  - Held by foam tape and shell clamping pressure
+  - Clear lens flush with front surface in window area
+
+  PCB Mounting:
+  - 4x M2 standoffs molded into back shell (2mm tall)
+  - PCB screws down to standoffs
+  - USB-C connector aligns with tape head slot opening
+  - Button tactile switches align with front shell button holes
+
+  Battery Mounting:
+  - Double-sided foam tape to back shell floor
+  - JST-SH 2-pin connector to PCB
+  - Positioned offset from center to avoid display FPC
+
+  Shell Assembly:
+  - Front and back shells snap together with 6 perimeter snap clips
+  - 5x M2 decorative screws on front (2 structural, 3 decorative)
+  - Screws go through front shell into back shell standoffs
+  - Authentic Phillips head screws match real cassette aesthetic
+
+  Wake Switch:
+  - Slide switch PCB-mounted, actuator extends through top shell slot
+  - Authentic write-protect tab position (top-left corner)
+  - Sliding action: 3mm travel
+  - Detent positions for ON/OFF
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Authentic Cassette Dimensions
+     - 100 x 64 x 12mm matches real Compact Cassette (IEC 60094)
+     - Will physically fit inside a cassette deck slot
+     - Nostalgic recognition — everyone knows this shape
+     - Generous internal volume for components
+
+  2. Skeuomorphic Design Language
+     - Spool windows with decorative circles flanking screen
+     - Label area with printed text above screen
+     - Tape head slot houses USB-C (functional repurposing)
+     - Write-protect tab = wake switch
+     - 5 authentic screw positions on front
+
+  3. Screen-in-Window Design
+     - Display visible through the tape window area
+     - Clear parallel to real cassette transparent window
+     - Natural visual focus point
+     - Spool circles frame the screen aesthetically
+
+  4. Comfortable Pocket Form Factor
+     - Flat, rectangular — sits well in shirt/pants pocket
+     - 12mm thin — comparable to a phone in a thin case
+     - Smooth edges, no protrusions (buttons flush or recessed)
+     - Light at ~55g
+
+  5. Customizable Label Area
+     - Front label area above screen can be custom printed
+     - Users can design their own cassette labels
+     - Interchangeable front shell covers possible
+     - Back label for regulatory info and serial number
+
+  6. Fidget-Friendly Spools
+     - Optional: free-spinning spool decorations
+     - Tactile engagement while waiting for approvals
+     - Small bearing on molded post, low friction
+     - Or fixed for reliability
+
+  7. Cultural Reference
+     - Cassette tapes are universally recognized
+     - Perfect conversation starter for a dev tool
+     - Mixtape metaphor: "your AI agent's greatest hits"
+     - Works with cassette-themed desk accessories
+
+================================================================================

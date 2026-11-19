@@ -1,0 +1,345 @@
+DESIGN 12: FLIP PHONE
+=====================
+2000s clamshell phone homage. Tall narrow portrait form factor.
+Flip open reveals screen on upper half with T9-style button grid on
+lower half. Small outer status window (LED hole). Spring-loaded hinge
+with 160-degree detent. Decorative antenna nub at top corner.
+When closed the two halves stack to a compact pocket-friendly brick.
+
+Overall open:   110mm tall x 48mm wide x 12mm deep (each half ~10mm)
+Overall closed:  55mm tall x 48mm wide x 22mm deep
+Weight target: ~52g with battery
+Orientation: Portrait
+Shell: 4-piece (upper front, upper back, lower front, lower back) + hinge
+
+
+FRONT VIEW — OPEN (screen facing viewer, hinge in middle)
+──────────────────────────────────────────────────────────
+
+                  ◢ ← antenna nub (decorative, 5mm tall)
+         ┌──────────────────────┐
+         │                        │
+         │  ┌──────────────────┐  │
+         │  │                  │  │
+         │  │    TFT LCD       │  │
+         │  │    SCREEN        │  │ ← 51.8 x 36.2mm module
+         │  │   (40.8 x 30.6)  │  │   (portrait, rotated)
+         │  │                  │  │
+         │  │                  │  │
+         │  └──────────────────┘  │
+         │                        │
+    ─────┤═══════ HINGE ════════├───── ← spring-loaded hinge, 160° detent
+         │                        │
+         │    ┌────┐  ┌────┐     │
+         │    │ 1  │  │ 2  │     │ ← T9-style grid, 12x6mm caps
+         │    └────┘  └────┘     │   Row 1: REJECT, APPROVE
+         │                        │
+         │    ┌────┐  ┌────┐     │
+         │    │ 3  │  │ 4  │     │   Row 2: ACTION, WAKE
+         │    └────┘  └────┘     │
+         │                        │
+         │          ┌──USB──┐     │
+         │          ┤ ○  ○  ├     │ ← USB-C on bottom edge
+         └──────────┴───────┴─────┘
+         ├───── 48mm ─────┤
+
+
+FRONT VIEW — CLOSED (folded shut)
+──────────────────────────────────
+
+                  ◢ ← antenna nub
+         ┌──────────────────────┐ ─┬─
+         │                        │  │
+         │       ○ ← LED hole    │  │
+         │     (outer status     │  │  55mm
+         │      indicator, 2mm)  │  │
+         │                        │  │
+         │  ╔══DEVOTCHI══════╗   │  │ ← embossed logo
+         │  ╚════════════════╝   │  │
+         │                        │  │
+         └──────────────────────┘ ─┴─
+         ├───── 48mm ─────┤
+
+         Side view when closed:
+              22mm
+            ├──────┤
+            ┌──────┐ ─┬─
+            │upper │  │
+            │ half │  │  55mm
+            ├══════┤  │  (half of open height)
+            │lower │  │
+            │ half │  │
+            └──────┘ ─┴─
+
+
+RIGHT SIDE VIEW — OPEN
+───────────────────────
+
+              ↙ antenna nub
+        ┌──┐
+        │  │ ← upper half (~10mm thick)
+        │  │   contains display
+        │  │
+        │  │
+        ●══╡ ← hinge barrel (6mm dia)
+        │  │
+        │  │ ← lower half (~10mm thick)
+        │  │   contains PCB + battery
+        │  │
+        └┤├┘ ← USB-C at bottom
+
+    Upper half thickness: ~10mm
+    ├── 1.5mm front wall
+    ├── 2.5mm display module
+    ├── 2.5mm gap (FPC routing)
+    ├── 2.0mm structural wall + hinge mount
+    └── 1.5mm back wall (outer face when closed)
+
+    Lower half thickness: ~10mm
+    ├── 1.5mm front wall (button face)
+    ├── 1.6mm PCB
+    ├── 0.5mm gap
+    ├── 5.0mm battery
+    └── 1.5mm back wall
+
+
+BACK VIEW — OPEN
+─────────────────
+
+                  ◢
+         ┌──────────────────────┐
+         │                        │
+         │                        │
+         │   (smooth back of      │ ← upper half back
+         │    upper shell)        │   (becomes outer face when closed)
+         │                        │
+         │       ○ LED hole       │ ← status LED visible when closed
+         │                        │
+    ─────┤═══════ HINGE ════════├─────
+         │                        │
+         │  ┌──────────────────┐  │
+         │  │                  │  │
+         │  │   BATTERY DOOR   │  │ ← snap-off panel (32 x 37mm)
+         │  │                  │  │
+         │  └──────────────────┘  │
+         │                        │
+         │   ▪▪▪ vib motor       │ ← 6mm coin motor
+         │          ┌──USB──┐     │
+         └──────────┤      ├─────┘
+                    └───────┘
+
+
+CROSS-SECTION — LOWER HALF (cut through vertical center)
+────────────────────────────────────────────────────────
+
+    Front (buttons)              Back
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── PCB ──────────────┤ │  │
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │  ~10mm
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      │  │   30 x 35mm LiPo   │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+      Front face               Back face
+
+
+CROSS-SECTION — UPPER HALF (cut through vertical center)
+────────────────────────────────────────────────────────
+
+    Front (screen)               Back (outer face when closed)
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │  ~10mm
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │
+      │  │   (FPC routing to   │ │  │
+      │  │    hinge barrel)    │ │  │
+      │  ├── structural wall ──┤ │  │
+      │  │   (2.0mm, hinge     │ │  │
+      │  │    mount points)    │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+
+
+HINGE DETAIL
+─────────────
+
+    Cross-section through hinge barrel:
+
+              Upper half
+         ┌────────────────┐
+         │                │
+    ─────┘   FPC cable    └─────
+              passes
+         ┌── through ────┐
+         │   ╔═══════╗   │ ← hinge barrel (6mm outer dia)
+         │   ║ spring ║   │   spring-loaded detent
+         │   ║ ┌───┐  ║   │   clicks at 0° (closed) and 160° (open)
+         │   ║ │FPC│  ║   │   FPC cable runs through hollow core
+         │   ║ └───┘  ║   │   (1.5mm wide channel)
+         │   ╚═══════╝   │
+         └── ─── ─── ────┘
+              passes
+    ─────┐   through     ┌─────
+         │                │
+         └────────────────┘
+              Lower half
+
+    FPC cable path:
+    Display FPC → routes down upper half → through hinge barrel center →
+    into lower half → connects to PCB FPC connector
+
+    Hinge specs:
+    - 6mm outer diameter barrel
+    - 2mm hollow core for FPC pass-through
+    - Spring-loaded ball detent (2 positions: 0° closed, 160° open)
+    - Metal pin (2mm dia stainless steel) through both sides
+    - Barrel extends full 48mm width for rigidity
+    - FPC: 0.5mm pitch, 12-pin, rated for 50K flex cycles
+
+
+BUTTON LAYOUT DETAIL — T9 GRID (lower half, front face)
+────────────────────────────────────────────────────────
+
+         ┌──────────────────────┐
+         │                        │
+         │    ┌──────┐ ┌──────┐  │
+         │    │REJECT│ │APPROV│  │ ← Row 1: 12x6mm caps
+         │    │  ✕   │ │  ✓   │  │   14mm horizontal spacing
+         │    └──────┘ └──────┘  │
+         │       14mm spacing     │
+         │    ┌──────┐ ┌──────┐  │
+         │    │ACTION│ │ WAKE │  │ ← Row 2: 12x6mm / 10x4.5mm
+         │    │  ◆   │ │  ◯   │  │   14mm horizontal spacing
+         │    └──────┘ └──────┘  │   14mm vertical spacing
+         │                        │
+         └──────────────────────┘
+
+    Grid arrangement:
+    ┌─────────┬─────────┐
+    │ REJECT  │ APPROVE │  Top row, 12x6mm caps
+    ├─────────┼─────────┤  14mm vertical gap
+    │ ACTION  │  WAKE   │  Bottom row, 12x6mm / 10x4.5mm
+    └─────────┴─────────┘
+       14mm horizontal
+
+
+ANTENNA NUB DETAIL
+──────────────────
+
+    Top-right corner of upper half:
+
+         ┌──────────────┐
+         │           ╱╲  │
+         │          │  │ │ ← 5mm tall, 4mm wide
+         │          │  │ │   decorative only (solid plastic)
+         │          │  │ │   rounded tip
+         │          ╰──╯ │
+         │  ┌─ upper ──┐ │
+         └──┘  shell   └─┘
+
+    Purely cosmetic — references the stub antennas on
+    early 2000s clamshell phones. Molded as part of
+    upper back shell. Slightly flexible TPU tip.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    UPPER HALF — Layer 1: FRONT SHELL (55 x 48mm, 1.5mm wall)
+    ├── Screen window cutout (42.8 x 32.6mm, portrait)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── Hinge barrel socket (left and right sides)
+    └── Registration pins for upper back shell (2x)
+
+    UPPER HALF — Layer 2: DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait (long axis vertical)
+    ├── FPC cable exits bottom toward hinge
+    └── Seated in pocket with 0.2mm clearance per side
+
+    UPPER HALF — Layer 3: 2.5mm GAP + STRUCTURE
+    ├── FPC cable channel routed to hinge barrel
+    ├── Structural ribs for rigidity
+    └── Hinge mount reinforcement bosses
+
+    UPPER HALF — Layer 4: BACK SHELL (55 x 48mm, 1.5mm wall)
+    ├── LED hole (2mm dia, visible when closed)
+    ├── Embossed logo area
+    ├── Antenna nub (molded integral, top-right)
+    ├── Hinge barrel socket (left and right sides)
+    └── Smooth outer surface (premium feel)
+
+    HINGE ASSEMBLY
+    ├── Stainless steel pin (2mm dia, 52mm long)
+    ├── Barrel halves molded into upper/lower shells
+    ├── Spring + ball detent mechanism (0° and 160°)
+    └── FPC cable (0.5mm pitch, 12-pin) through center channel
+
+    LOWER HALF — Layer 1: FRONT SHELL (55 x 48mm, 1.5mm wall)
+    ├── 4x button holes (2x2 grid, 12.5 x 6.5mm each)
+    ├── Hinge barrel socket (left and right sides)
+    └── Registration pins for lower back shell (2x)
+
+    LOWER HALF — Layer 2: PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 4x tactile switches face front (2x2 grid)
+    ├── USB-C connector on bottom edge (centered)
+    ├── Display FPC connector on top edge (near hinge)
+    ├── Vibration motor pads near bottom
+    └── Mounted on 4x posts from lower back shell
+
+    LOWER HALF — Layer 3: 0.5mm GAP
+    └── Clearance for ESP32 module height
+
+    LOWER HALF — Layer 4: BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in lower half
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in lower back shell
+
+    LOWER HALF — Layer 5: BACK SHELL (55 x 48mm, 1.5mm wall)
+    ├── 4x PCB mounting posts (3mm OD, press-fit)
+    ├── Battery cradle ribs (2x, 1mm tall)
+    ├── Battery door (snap-off panel, 32 x 37mm)
+    ├── Hinge barrel socket (left and right sides)
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Vibration motor pocket (7mm dia, foam tape)
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- 4-piece shell: upper front, upper back, lower front, lower back
+- Hinge pin inserted last — locks upper and lower halves together
+- Each half uses 2x snap-fit tabs + 2x registration pins (no screws)
+- FPC cable must be pre-routed through hinge barrel before pin insertion
+- FPC rated for 50K open/close cycles minimum
+- Display press-fits into upper front shell pocket
+- PCB press-fits onto 4x posts in lower back shell
+- Battery sits in cradle ribs in lower back shell
+- USB-C cutout at bottom of lower half only
+- Vibration motor adhered inside lower back shell with foam tape
+- LED hole in upper back shell — visible when phone is closed
+- Antenna nub: cosmetic, molded as part of upper back shell
+- Closed dimensions: very pocket-friendly at 55 x 48 x 22mm
+- Hinge rated for 20K open/close cycles minimum
+- Spring detent provides satisfying click at open and closed positions
+- FPC flex radius inside hinge barrel: minimum 2mm bend radius
+
+
+SPECIAL FEATURES
+────────────────
+- Satisfying flip-open action with spring detent at 160°
+- Outer LED visible when closed for status at a glance
+- Decorative antenna nub for authentic retro feel
+- T9-style 2x2 button grid references classic phone keypads
+- Compact closed form (55 x 48 x 22mm) fits any pocket
+- FPC pass-through hinge allows single PCB design
+- Closing the phone could trigger sleep mode (hall sensor + magnet)

@@ -1,0 +1,939 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-20T20:10:26",
+    "ignored_checks": [
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6",
+            "violations": [
+                {
+                    "description": "符号 'USB_C_Receptacle_USB2.0_16P' 与来源库 'Connector' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 J201 [USB_C_Receptacle_USB2.0_16P]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.5207
+                            },
+                            "uuid": "5e0167e6-6519-4495-8ee6-e9e8687d88a4"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                },
+                {
+                    "description": "符号 'Conn_01x02' 与来源库 'Connector_Generic' 中的符号存在差异",
+                    "items": [
+                        {
+                            "description": "符号 J202 [Conn_01x02]",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 1.1938
+                            },
+                            "uuid": "0db9641b-7bf3-4129-888b-46a9e232accb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "lib_symbol_mismatch"
+                }
+            ]
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/d501dd46-08d9-4743-b831-93de6bd7c7dd",
+            "violations": []
+        },
+        {
+            "path": "/power/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6",
+            "violations": [
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q201 引脚 1 [S1, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 0.7874
+                            },
+                            "uuid": "436985d8-f1c9-400c-b70f-f5fe35cedb32"
+                        },
+                        {
+                            "description": "Symbol C203 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": 0.4318
+                            },
+                            "uuid": "0fffcef5-eafc-4f9c-b185-a46a26e00cb8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Unspecified 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q201 引脚 2 [D1/D2, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 0.8128
+                            },
+                            "uuid": "3d6bd0c2-3810-4684-9c26-c8da0bfe47e9"
+                        },
+                        {
+                            "description": "Symbol Q201 引脚 5 [D1/D2, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.3368,
+                                "y": 0.8128
+                            },
+                            "uuid": "c3957692-1cea-4ac7-a25a-16addd29d39d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q201 引脚 3 [S2, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.0828,
+                                "y": 0.8382
+                            },
+                            "uuid": "a68450a2-f44a-474a-a378-6aeee8c367da"
+                        },
+                        {
+                            "description": "Symbol #PWR0215 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.7493
+                            },
+                            "uuid": "d1055a53-2aa8-4e23-bc42-67c0986cf87a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "-BATT 和 MOFETS_S1 都连接到同一项上; 将使用 -BATT 作为网表中的网络名称",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0221 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": 1.2446
+                            },
+                            "uuid": "450f03f1-e934-4883-9786-9dde2d5a931c"
+                        },
+                        {
+                            "description": "标签 'MOFETS_S1'",
+                            "pos": {
+                                "x": 2.1717,
+                                "y": 0.5461
+                            },
+                            "uuid": "2c3abae2-19cb-4488-a4b8-f88227469e14"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Output 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q201 引脚 6 [G1, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.3368,
+                                "y": 0.7874
+                            },
+                            "uuid": "2ade75e2-2e44-4f07-ad87-b104d3caa837"
+                        },
+                        {
+                            "description": "Symbol U201 引脚 1 [OD, Output, Line]",
+                            "pos": {
+                                "x": 2.3749,
+                                "y": 0.4318
+                            },
+                            "uuid": "b43ec7d0-b4f5-4777-9abc-72e84db285f1"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Output 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q201 引脚 4 [G2, Unspecified, Line]",
+                            "pos": {
+                                "x": 2.3368,
+                                "y": 0.8382
+                            },
+                            "uuid": "d88d585e-18a2-4776-97fe-c49f49afe4b1"
+                        },
+                        {
+                            "description": "Symbol U201 引脚 3 [OC, Output, Line]",
+                            "pos": {
+                                "x": 2.4257,
+                                "y": 0.4318
+                            },
+                            "uuid": "06294404-90e1-47e2-82a8-9585b68be5b9"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "GND 和 MOFETS_S2 都连接到同一项上; 将使用 GND 作为网表中的网络名称",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0215 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.6637,
+                                "y": 0.7493
+                            },
+                            "uuid": "d1055a53-2aa8-4e23-bc42-67c0986cf87a"
+                        },
+                        {
+                            "description": "标签 'MOFETS_S2'",
+                            "pos": {
+                                "x": 2.3622,
+                                "y": 0.5461
+                            },
+                            "uuid": "5546aaa8-f541-452f-b38b-3e39c3435c28"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "multiple_net_names"
+                }
+            ]
+        },
+        {
+            "path": "/display/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/98e7fe21-bddb-41d2-a56f-5f910350d952",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 1 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3175
+                            },
+                            "uuid": "fcfd46fc-ac78-4aab-8b64-237542bb4f1e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 2 [CS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3429
+                            },
+                            "uuid": "d0216e63-0820-4c0d-961d-4b298d29cbc1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 3 [RS, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3683
+                            },
+                            "uuid": "5ded88a0-f078-4b36-945c-06942376418f"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 4 [SCL, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.3937
+                            },
+                            "uuid": "255bc9a2-0bbe-4e5e-9b65-4a5609810b91"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 5 [SDA, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4191
+                            },
+                            "uuid": "a8afbf03-ea90-4a86-b9ad-6002d2fd07fe"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 6 [RST, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4445
+                            },
+                            "uuid": "fc344a0d-d2ec-48bc-8e54-908f40eb1cb2"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 7 [NC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4699
+                            },
+                            "uuid": "6a4c817f-3768-465c-af07-b52a940e77f9"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 8 [I/O-VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.4953
+                            },
+                            "uuid": "66d461b6-f6d8-404e-a731-728cef886d83"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 9 [VCC, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5207
+                            },
+                            "uuid": "6e539844-027e-4bfb-8728-53ab2ee4d1ae"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 10 [A, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5461
+                            },
+                            "uuid": "618edb22-6cb6-4867-824d-c42490cb4dc7"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 11 [K, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5715
+                            },
+                            "uuid": "00b24625-29b7-4edd-b08d-87560cc31c7d"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U301 引脚 12 [GND, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.8669,
+                                "y": 0.5969
+                            },
+                            "uuid": "c8da972e-86b0-4192-a995-e5e4c8463e00"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 14 [14, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.3429
+                            },
+                            "uuid": "29133cb4-5c5c-424b-a375-c753a5a4b53c"
+                        },
+                        {
+                            "description": "Symbol #PWR0301 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.3302
+                            },
+                            "uuid": "3469c042-7601-4555-9a3e-9178d0557c37"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Unspecified 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 12 [12, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.3937
+                            },
+                            "uuid": "2ee777af-a5fd-47d3-8850-7ff20af521f1"
+                        },
+                        {
+                            "description": "Symbol FPC301 引脚 14 [14, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.3429
+                            },
+                            "uuid": "29133cb4-5c5c-424b-a375-c753a5a4b53c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Unspecified 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 11 [11, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.4191
+                            },
+                            "uuid": "90cb1eac-4df2-49c1-9f42-3c99cdbdca1b"
+                        },
+                        {
+                            "description": "Symbol Q301 引脚 3 [D, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.3937
+                            },
+                            "uuid": "cc02d522-ce95-45e5-a1ba-912cac7d1d5a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 10 [10, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.4445
+                            },
+                            "uuid": "8fda5d1f-8c25-4835-8057-e830a8696043"
+                        },
+                        {
+                            "description": "Symbol R301 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.4605,
+                                "y": 0.4826
+                            },
+                            "uuid": "31e179af-3748-4c80-bf67-bc8b537c9a03"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 9 [9, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.4699
+                            },
+                            "uuid": "ae886357-0337-4eba-877e-0323d9a57544"
+                        },
+                        {
+                            "description": "Symbol #PWR0303 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.6477,
+                                "y": 0.4572
+                            },
+                            "uuid": "b889ab16-ac2e-4fe7-888f-3bb2e61e46d8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Unspecified 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 8 [8, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.4953
+                            },
+                            "uuid": "970971d4-0f17-4c8e-9062-4c45f1a52796"
+                        },
+                        {
+                            "description": "Symbol FPC301 引脚 9 [9, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.4699
+                            },
+                            "uuid": "ae886357-0337-4eba-877e-0323d9a57544"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Bidirectional 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 6 [6, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.5461
+                            },
+                            "uuid": "6b4727cd-61b4-456c-9e1e-7fe13a77ce90"
+                        },
+                        {
+                            "description": "Symbol U101 引脚 12 [IO8, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.762
+                            },
+                            "uuid": "85933094-977e-4f1d-b003-0b7526bfe00f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Bidirectional 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 5 [5, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.5715
+                            },
+                            "uuid": "008b4497-a0c5-4171-be51-487a541fe2ea"
+                        },
+                        {
+                            "description": "Symbol U101 引脚 15 [IO11, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.8382
+                            },
+                            "uuid": "272895ef-622c-4133-92d6-020be33f670f"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Bidirectional 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 4 [4, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.5969
+                            },
+                            "uuid": "bcb032fd-1a38-4bd3-8001-d00d3c2fb36b"
+                        },
+                        {
+                            "description": "Symbol U101 引脚 16 [IO12, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.8636
+                            },
+                            "uuid": "b622d8f8-85be-4c55-a58e-050a32c35a5e"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Bidirectional 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 3 [3, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6223
+                            },
+                            "uuid": "74a6938b-fafc-4029-8bb5-da130c060c0a"
+                        },
+                        {
+                            "description": "Symbol U101 引脚 13 [IO9, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.7874
+                            },
+                            "uuid": "6f92116f-3e1b-445b-84f4-bb131b08ce8a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Bidirectional 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 2 [2, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6477
+                            },
+                            "uuid": "f7233bd6-2751-417e-b40e-c7b6ff5d3309"
+                        },
+                        {
+                            "description": "Symbol U101 引脚 14 [IO10, Bidirectional, Line]",
+                            "pos": {
+                                "x": 0.9652,
+                                "y": 0.8128
+                            },
+                            "uuid": "5cab45ff-0376-4346-92eb-f07a6954f9a0"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Unspecified 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 1 [1, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.6731
+                            },
+                            "uuid": "ff622aac-0d64-45b5-829c-a97f967f2658"
+                        },
+                        {
+                            "description": "Symbol FPC301 引脚 13 [13, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.7239
+                            },
+                            "uuid": "700455f8-b2b9-42f5-a4e4-d4f7bf61146a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol FPC301 引脚 13 [13, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5334,
+                                "y": 0.7239
+                            },
+                            "uuid": "700455f8-b2b9-42f5-a4e4-d4f7bf61146a"
+                        },
+                        {
+                            "description": "Symbol #PWR0306 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5842,
+                                "y": 0.7366
+                            },
+                            "uuid": "880d413e-4d70-4e87-a2ee-73bf34646582"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q301 引脚 1 [G, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.2065,
+                                "y": 0.4445
+                            },
+                            "uuid": "11f32154-f5b2-4987-aed5-610d19653e59"
+                        },
+                        {
+                            "description": "Symbol R302 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.1811,
+                                "y": 0.4572
+                            },
+                            "uuid": "67d9d438-1aae-45ad-8c88-b280cbf5ac95"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q301 引脚 2 [S, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.4953
+                            },
+                            "uuid": "1f0e60ec-0ed8-4637-9268-bfd011313d1f"
+                        },
+                        {
+                            "description": "Symbol #PWR0304 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.5207
+                            },
+                            "uuid": "45d78271-a1a4-4771-82a6-8df134fc5b0d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/feedback/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/70f3265f-7569-4b26-921c-951badfb2520",
+            "violations": [
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol D401 引脚 1 [C, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.3937
+                            },
+                            "uuid": "e79efd4d-9939-4496-8079-b43932a47677"
+                        },
+                        {
+                            "description": "Symbol #PWR0401 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.4445,
+                                "y": 0.2921
+                            },
+                            "uuid": "bc0fb3d4-9457-4112-85e5-45a05968f2c6"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q401 引脚 1 [G, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.4953,
+                                "y": 0.4953
+                            },
+                            "uuid": "033d5a5e-c775-4064-b619-1b68d7c91736"
+                        },
+                        {
+                            "description": "Symbol R402 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 0.4699,
+                                "y": 0.508
+                            },
+                            "uuid": "6953dfbf-622e-44df-91e0-eb55dda0307d"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol D401 引脚 2 [A, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5461,
+                                "y": 0.3937
+                            },
+                            "uuid": "a6ba239e-40d7-4c2f-919b-9ab622f2065c"
+                        },
+                        {
+                            "description": "Symbol J401 引脚 2 [Pin_2, Passive, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.3556
+                            },
+                            "uuid": "82022289-8fc5-4f61-a327-38d2b25c42d5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q401 引脚 3 [D, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.4445
+                            },
+                            "uuid": "7f56ff1e-4134-4a1f-9c79-f72313bc7bb4"
+                        },
+                        {
+                            "description": "Symbol J401 引脚 2 [Pin_2, Passive, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.3556
+                            },
+                            "uuid": "82022289-8fc5-4f61-a327-38d2b25c42d5"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol Q401 引脚 2 [S, Unspecified, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.5461
+                            },
+                            "uuid": "ac30305f-2c79-41fb-9ff6-79edd75aa4d9"
+                        },
+                        {
+                            "description": "Symbol #PWR0404 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 0.5715,
+                                "y": 0.5842
+                            },
+                            "uuid": "6ebb2d25-a909-4fe5-9e91-5729b8459afb"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Passive 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol D402 引脚 2 [A, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.3335,
+                                "y": 0.4445
+                            },
+                            "uuid": "d98b77c0-3a87-4d34-a5af-a3fd8f5bdbd9"
+                        },
+                        {
+                            "description": "Symbol R401 引脚 2 [Passive, Line]",
+                            "pos": {
+                                "x": 1.2827,
+                                "y": 0.4445
+                            },
+                            "uuid": "6136750a-f91b-409b-96fc-7222d18ab1a8"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "类型为 Unspecified 和 Power input 的引脚已连接",
+                    "items": [
+                        {
+                            "description": "Symbol D402 引脚 1 [K, Unspecified, Line]",
+                            "pos": {
+                                "x": 1.4351,
+                                "y": 0.4445
+                            },
+                            "uuid": "cf691f50-6c27-4349-b902-911eec767cfe"
+                        },
+                        {
+                            "description": "Symbol #PWR0402 引脚 1 [Power input, Line]",
+                            "pos": {
+                                "x": 1.4732,
+                                "y": 0.508
+                            },
+                            "uuid": "62015691-f800-4a25-9da0-17342a16dc5a"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "pin_to_pin"
+                }
+            ]
+        },
+        {
+            "path": "/user_input/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b2236c73-c7ac-47cb-a363-4ec62c6a982a",
+            "violations": []
+        }
+    ],
+    "source": "devotchi.kicad_sch"
+}

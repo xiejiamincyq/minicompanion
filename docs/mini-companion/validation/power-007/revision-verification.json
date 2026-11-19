@@ -1,0 +1,13 @@
+{
+  "status": "review_revision_verified",
+  "components": 13,
+  "connected_nets": 8,
+  "only_electrical_change": "SW1.3 GND -> explicit NC",
+  "U1_L1_SW1_values_and_footprints": "pass",
+  "ERC_violations": 0,
+  "EN_off_V_with_0p2uA_and_101k": 0.0202,
+  "limitations": [
+    "switch lifetime and housing fit not verified",
+    "capacitor effective values and full power integration pending"
+  ]
+}

@@ -1,0 +1,262 @@
+DESIGN 22: WRIST GAUNTLET
+=========================
+Cyberpunk wrist-mounted device. Main pod sits on top of the
+forearm, screen visible when arm is extended. Angular, aggressive
+geometric aesthetic with chamfered edges. Wide 30mm velcro/silicone
+strap wraps around forearm with adjustable closure. LED status
+strip along one edge. Matte black with accent color lines.
+
+Overall: 70mm wide x 45mm long x 15mm deep (main pod)
+Strap: 30mm wide, ~250mm circumference (adjustable)
+Weight target: ~50g with battery (pod only), ~65g with strap
+Orientation: Landscape (screen on top face)
+Shell: 2-piece (top + bottom), 4x hex screws on corners
+Aesthetic: Matte black, angular chamfers, accent color edges
+
+FRONT/TOP VIEW (screen facing up, worn on wrist)
+─────────────────────────────────────────────────
+
+    Toward hand                    Toward elbow
+         ↓                              ↓
+
+         ╔══╗                      ╔══╗
+      ┌──╢LG╟──────────────────────╢LG╟──┐
+      │  ╚══╝  ╱‾‾‾‾‾‾‾‾‾‾‾‾‾╲   ╚══╝  │ ← Integrated lugs
+     ╱  ○LED  ╱                 ╲         ╲   for strap
+    │  ──────┌───────────────────┐   (●)B1 │
+    │        │                   │         │
+    │        │   TFT LCD SCREEN  │   (●)B2 │ ← 3x buttons on
+    │        │   (40.8 x 30.6)  │         │   outer edge
+    │        │                   │   (●)B3 │   (12x6mm caps)
+    │  ──────└───────────────────┘         │
+     ╲       ╲                 ╱     (·)W  ╱ ← Wake button
+      │  ╔══╗ ╲_______________╱    ╔══╗   │    (10x4.5mm)
+      └──╢LG╟──────────────────────╢LG╟──┘
+         ╚══╝                      ╚══╝
+         │  ├──────── 70mm ────────┤  │
+         │USB-C                       │
+         │(on hand-facing end)        │
+         ↓
+    ┌────┤○○├────┐ ← USB-C cutout (9.34x3.66mm)
+    └────────────┘
+
+    LED status strip (along top edge, left of screen):
+    ════════════════ ← RGB LED diffused through slot
+
+
+SIDE VIEW (looking at outer edge with buttons)
+──────────────────────────────────────────────
+
+           15mm
+          ├──────┤
+          ┌──────┐ ─┬─
+         ╱  scr  │  │
+        │   pcb  │  │  45mm
+        │   bat  │  │
+         ╲      ╱  │
+          └──────┘ ─┴─
+          ↑      ↑
+         Top   Bottom
+        (screen)(strap side)
+
+    With strap on forearm:
+
+          ┌──────┐ ← Main pod (15mm)
+    ══════╡      ╞══════ ← Strap (2mm thick)
+     ╲    │      │    ╱
+      ╲   └──────┘   ╱
+       ╲ ╱‾‾‾‾‾‾‾‾╲ ╱
+        │  FOREARM  │
+        │           │
+         ╲─────────╱
+
+
+BOTTOM VIEW (strap attachment side)
+────────────────────────────────────
+
+      ┌────────────────────────────────┐
+      │  ╔═══╗              ╔═══╗     │
+      │  ║LUG║              ║LUG║     │
+      │  ╚═╤═╝              ╚═╤═╝     │
+      │    │                   │       │
+      │    │ strap slot        │       │
+      │    │ (30mm wide)       │       │
+      │  ╔═╧═╗              ╔═╧═╗     │
+      │  ║LUG║              ║LUG║     │
+      │  ╚═══╝              ╚═══╝     │
+      │                                │
+      │  ▪▪▪▪▪▪ ← Vibration motor     │
+      │                                │
+      │  ┌──────────────────────┐      │
+      │  │    BATTERY ACCESS    │      │
+      │  └──────────────────────┘      │
+      └────────────────────────────────┘
+
+
+CROSS-SECTION (cut through long axis center, looking from outer edge)
+─────────────────────────────────────────────────────────────────────
+
+    Top (screen)                  Bottom (strap)
+      │                             │
+      │  1.5mm top wall             │  1.5mm bottom wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │  15mm total
+      │  │   (FPC routing)     │ │  │
+      │  ├── PCB ──────────────┤ │  │
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    (rounds to 15mm target)
+
+
+COMPONENT LAYOUT (exploded, top to bottom)
+──────────────────────────────────────────
+
+    Layer 1 — TOP SHELL (angular pod, 1.5mm wall)
+    ├── Screen window cutout (42 x 32mm, landscape)
+    ├── LED slot along top edge (1.5mm x 40mm diffusion channel)
+    ├── 3x button holes on outer (right) edge (12.5 x 6.5mm)
+    ├── 1x wake button hole on outer edge (10.5 x 5.0mm)
+    ├── 4x hex screw head recesses on corners (M2)
+    ├── Chamfered edges at 30deg (aggressive angular look)
+    └── Screen retention clips (4x)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted landscape
+    ├── FPC cable exits toward hand-facing end
+    └── Held by top shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routing
+    ├── LED light pipe/diffuser strip
+    └── Button plunger passages (side-mounted, angled)
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces bottom
+    ├── 3x tactile switches on right edge (side-mounted)
+    ├── 1x wake switch on right edge
+    ├── USB-C connector on short end (hand-facing)
+    ├── Display FPC connector
+    ├── RGB LED near top edge (diffuses through slot)
+    └── Vibration motor pads
+
+    Layer 5 — 0.5mm GAP
+    └── ESP32 module clearance
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in pod
+    ├── JST connector pigtail to PCB
+    └── Held by cradle ribs in bottom shell
+
+    Layer 7 — BOTTOM SHELL (angular pod, 1.5mm wall)
+    ├── 4x integrated strap lugs (reinforced, 4mm thick)
+    ├── Strap slot channels (30mm wide, 2.5mm gap)
+    ├── Battery cradle ribs
+    ├── 4x M2 threaded inserts for hex screws
+    ├── PCB mounting posts (4x)
+    ├── USB-C cutout
+    └── Vibration motor recess (6mm dia, 2mm deep)
+
+
+BUTTON LAYOUT DETAIL (outer edge, right side)
+──────────────────────────────────────────────
+
+    Looking at the right edge of the pod:
+
+    ┌────────────────────────────────────────┐
+    │                                        │ ← Top shell
+    │  ┌────┐   ┌────┐   ┌────┐   ┌──────┐  │
+    │  │ B1 │   │ B2 │   │ B3 │   │ WAKE │  │ ← Side-firing
+    │  │ 12 │   │ 12 │   │ 12 │   │10x4.5│  │   buttons
+    │  │x 6 │   │x 6 │   │x 6 │   │      │  │
+    │  └────┘   └────┘   └────┘   └──────┘  │
+    │  REJECT   ACTION   APPROVE    WAKE     │
+    │  ├─14mm─┤  ├─14mm─┤                    │
+    │                                        │ ← Bottom shell
+    └────────────────────────────────────────┘
+
+    Buttons protrude 1.5mm from edge for easy thumb access
+    while reaching with opposite hand.
+
+
+STRAP ATTACHMENT DETAIL
+───────────────────────
+
+    Integrated lugs on short ends of pod:
+
+         ╔════════╗
+    ═════╡  LUG   ╞═════ ← Strap passes through
+         ║ 10x4mm ║
+         ╚════════╝
+
+    Strap cross-section:
+    ┌────────────────────────────────┐
+    │  Silicone outer (1mm)          │
+    │  ──────────────────────────── │  2mm total
+    │  Velcro inner (1mm)            │
+    └────────────────────────────────┘
+
+    Closure: velcro overlap (40mm adjustment range)
+    Alternative: silicone with peg-and-hole sizing
+
+
+CHAMFER DETAIL (angular aesthetic)
+──────────────────────────────────
+
+    Edge profile (top shell):
+
+         ╱‾‾‾‾‾‾‾‾‾‾‾╲
+        ╱  30deg chamfer ╲    ← All top edges chamfered
+       │                   │     at 30deg, 2mm wide
+       │    Pod body       │
+       │                   │
+       └───────────────────┘
+
+    Corner detail:
+         ╱╲
+        ╱  ╲    ← Corners are clipped/truncated
+       │ ⬡  │     Hex screw visible in each corner
+       └────┘     M2 hex socket head cap screw
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece angular pod (top + bottom), 4x M2 hex screws
+  on corners — exposed screw heads are a design feature
+- All edges chamfered at 30deg for aggressive angular aesthetic
+- Buttons are side-mounted on the outer (right) edge of the pod
+  for access with the opposite hand while worn on left wrist
+- USB-C on the hand-facing end — cable routes along inner wrist
+- LED slot along top edge uses light pipe/diffuser for status glow
+- Strap lugs are integral to bottom shell, reinforced to 4mm
+- Strap: 30mm wide silicone/velcro, passes through lug slots
+- Pod sits ~3mm above the strap surface for airflow
+- Vibration motor recessed into bottom shell, contacts forearm
+  through strap for direct haptic feedback
+- Screen oriented for viewing when arm is extended forward
+- Matte black finish with accent color: painted chamfer edges,
+  LED glow, and optional colored hex screws (anodized aluminum)
+
+SPECIAL FEATURES
+────────────────
+- Wrist-mounted always-visible display — glanceable status
+- Cyberpunk angular aesthetic with aggressive chamfers
+- Exposed hex screw industrial design language
+- LED status strip along top edge (visible in peripheral vision)
+- Vibration haptics felt directly through forearm strap
+- Side-mounted buttons accessible with opposite hand
+- Strap system allows quick don/doff
+- Matte black with accent color theming
+- Adjustable strap fits 150-220mm wrist circumference
+- Pod can detach from strap for desktop use

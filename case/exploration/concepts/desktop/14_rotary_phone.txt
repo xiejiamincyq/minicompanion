@@ -1,0 +1,378 @@
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                  DEVOTCHI DESKTOP CONCEPT 14: ROTARY PHONE                     ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  1950s/60s desk telephone with rotary dial ring surrounding the screen.        ║
+║  Decorative handset in cradle on top. Spin the dial ring for fidget fun.       ║
+║  Bakelite/glossy black aesthetic. Weighted base for stability.                 ║
+║                                                                                ║
+║  Overall dimensions: 140mm (W) x 110mm (D) x 50mm (H body)                   ║
+║  With handset in cradle: ~80mm total height                                   ║
+║                                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+
+FRONT VIEW
+══════════
+
+                  ┌──────────────────────┐
+                 ╱  Handset in cradle     ╲
+                ╱   (decorative piece)     ╲
+    ┌──────────╱────────────────────────────╲──────────┐
+    │ ╭──────╮                                ╭──────╮ │
+    │ │cradle│     ╭──────────────────╮       │cradle│ │ ← Handset cradle
+    │ │ ear  │     │   Rotary ring    │       │mouth │ │   posts (left/right)
+    │ ╰──┬───╯     │  ╔════════════╗  │       ╰──┬───╯ │
+    │    │         │  ║            ║  │          │     │
+    │    │         │  ║   SCREEN   ║  │          │     │ ← Screen centered
+    │    │         │  ║  108x64.8  ║  │          │     │   in rotary ring
+    │    │         │  ║            ║  │          │     │
+    │    │         │  ╚════════════╝  │          │     │
+    │    │         │                  │          │     │
+    │    │         ╰──────────────────╯          │     │
+    │    │                                      │     │
+    │    │      ┌───┐    ┌───┐    ┌───┐        │     │
+    │    │      │ 1 │    │ 2 │    │ 3 │        │     │ ← 3 phone-style
+    │    │      └───┘    └───┘    └───┘        │     │   buttons
+    └────┴────────────────────────────────────────┴─────┘
+     ◄────────────────────── 140mm ───────────────────►
+
+
+TOP VIEW
+════════
+
+    ┌──────────────────────────────────────────────────┐
+    │ ╭────╮                                  ╭────╮   │
+    │ │    │    Handset (when in cradle)       │    │   │
+    │ │    ├──────────────────────────────────┤    │   │
+    │ │ear │          cord coil              │mth │   │ ← Decorative
+    │ │    ├──────────────────────────────────┤    │   │   handset piece
+    │ ╰────╯                                  ╰────╯   │
+    │                                                  │
+    │            ╭────────────────────╮                │
+    │           ╱   ╔══════════════╗   ╲               │
+    │          │    ║    Screen    ║    │               │ ← Rotary ring
+    │          │    ║   top edge   ║    │               │   surrounds
+    │          │    ╚══════════════╝    │               │   screen
+    │           ╲                      ╱               │
+    │            ╰────────────────────╯                │ ← Ring rotates
+    │                                                  │   freely (bearing)
+    │           ┌───┐  ┌───┐  ┌───┐                   │
+    │           │   │  │   │  │   │                   │ ← Buttons
+    │           └───┘  └───┘  └───┘                   │
+    └──────────────────────────────────────────────────┘
+     ◄──────────────────── 140mm ────────────────────►
+     ▲                                                ▲
+   Front                                            Back
+                  ◄──────── 110mm ────────►
+
+
+RIGHT SIDE VIEW
+═══════════════
+
+              Handset cradle post
+                    │
+         ┌──────────┤──────────┐
+         │          │          │
+         │    ╔═══════════╗    │ ← Screen visible
+         │    ║  Screen   ║    │   in landscape
+         │    ╚═══════════╝    │
+         │                     │
+         │  ┌───┐              │ ← Buttons on front
+         └──┴───┴──────────────┘
+          ◄────── 110mm ──────►
+          ▲                    ▲
+        Front                Back
+
+    Height profile:
+         ╭───╮  ← ~30mm handset above body
+    ─────┤   ├─────  ← 50mm body height
+         │   │
+    ─────┴───┴─────  ← Base/desk surface
+
+
+BACK VIEW
+═════════
+
+    ┌──────────────────────────────────────────────────┐
+    │ ╭──────╮                                ╭──────╮ │
+    │ │cradle│                                │cradle│ │
+    │ ╰──────╯                                ╰──────╯ │
+    │                                                  │
+    │              ┌──────────────┐                    │
+    │              │              │                    │
+    │              │  back panel  │                    │
+    │              │              │                    │
+    │              └──────────────┘                    │
+    │                                                  │
+    │                   ╔═══════╗                      │ ← USB-C port
+    │                   ╚═══════╝                      │
+    │                                                  │
+    │        ╭~~~~~~~~~~~~~~~~~~~~~~╮                  │ ← Decorative
+    │        │  coiled cord loop   │                  │   coiled cord
+    │        ╰~~~~~~~~~~~~~~~~~~~~~~╯                  │   from handset
+    └──────────────────────────────────────────────────┘
+
+
+CROSS-SECTION (side view, through center)
+═════════════════════════════════════════
+
+         Handset (decorative)
+         ╭═══════════════════╮
+         │  speaker  │  mic  │
+         ╰════╤══════╤═══════╯
+    ┌─────────┤cradle├─────────────────┐
+    │ 2mm     └──────┘                 │ ← Outer shell
+    │ wall                             │
+    │    ╭────────────────────╮        │
+    │    │ Rotary ring        │        │ ← Ring sits on bearing
+    │    │ ┌──bearing──┐      │        │   above screen level
+    │    ╰─┤           ├──────╯        │
+    │      │╔═════════╗│               │
+    │      │║  Screen ║│               │ ← Screen module
+    │      │║ 120x75  ║│               │   recessed in body
+    │      │║ x4.5mm  ║│               │
+    │      │╚═════════╝│               │
+    │      │           │               │
+    │   ╔══╧═══════════╧════════════╗  │
+    │   ║    PCB 110x65mm           ║  │ ← PCB flat at bottom
+    │   ║    ┌──────┐               ║  │
+    │   ║    │ESP32 │    ■ weight   ║  │ ← Steel weight for
+    │   ╚════╧══════╧═══════════════╝  │   stability
+    └──────────────────────────────────┘
+    ▲                                  ▲
+  Front                              Back
+
+    Body height breakdown:
+    ├── 2mm  top shell wall
+    ├── 5mm  rotary ring + bearing
+    ├── 4.5mm screen module
+    ├── 3mm  spacer
+    ├── 1.6mm PCB
+    ├── 32mm internal cavity
+    ├── 2mm  bottom wall
+    ╰── 50mm total
+
+
+ROTARY DIAL RING DETAIL (top view)
+═══════════════════════════════════
+
+              ╭─────────────────╮
+           ╱                       ╲
+         ╱    finger stop ╲          ╲
+        │   ╱               ╲         │
+        │  │  ╔═══════════╗  │        │ ← Ring outer dia: ~95mm
+        │  │  ║           ║  │        │   Ring inner dia: ~75mm
+        │  │  ║  Screen   ║  │        │   (screen visible through
+        │  │  ║  opening  ║  │        │    inner cutout)
+        │  │  ║           ║  │        │
+        │  │  ╚═══════════╝  │        │ ← Ring spins freely on
+        │   ╲               ╱         │   ball bearing race
+         ╲    ╲            ╱         ╱
+          ╲     finger holes       ╱    ← Optional: decorative
+            ╲    (10x around)    ╱      finger holes in ring
+              ╰─────────────────╯       (or smooth ring)
+
+    Bearing detail:
+    ┌───────────────────────────┐
+    │  Ring   │bearing│  Body   │
+    │         │ race  │ groove  │
+    │    ○────┤       ├────     │ ← Lazy susan bearing
+    │    ○    │ balls │         │   or 3D-printed race
+    │    ○────┤       ├────     │   with spring return
+    │         │       │         │
+    └───────────────────────────┘
+
+    Spring return mechanism:
+    ┌──────┐
+    │ Ring │───╮
+    │      │   │ ← Spiral spring (clock spring)
+    │      │───╯   returns ring to home position
+    └──────┘       after spin (like real rotary phone)
+
+
+COMPONENT LAYOUT (top-down, shell removed)
+══════════════════════════════════════════
+
+    ┌──────────────────────────────────────────────────┐
+    │                                                  │
+    │  ╭─cradle─╮                        ╭─cradle─╮   │
+    │  │  post  │                        │  post  │   │
+    │  ╰────────╯                        ╰────────╯   │
+    │                                                  │
+    │         ╭──────────────────────────╮             │
+    │         │  ROTARY RING ASSEMBLY    │             │
+    │         │  ┌────────────────────┐  │             │
+    │         │  │  Screen Module     │  │             │
+    │         │  │  120 x 75 x 4.5   │  │             │
+    │         │  │                    │  │             │
+    │         │  └────────────────────┘  │             │
+    │         │  [bearing race]         │             │
+    │         ╰──────────────────────────╯             │
+    │                                                  │
+    │    ╔════════════════════════════════════════╗     │
+    │    ║  PCB 110 x 65mm                       ║     │
+    │    ║                                       ║     │
+    │    ║  ┌────────────┐      ┌──────────┐     ║     │
+    │    ║  │ ESP32-S3   │      │ Speaker  │     ║     │
+    │    ║  │ 15.4x20.5  │      │ 28mm dia │     ║     │
+    │    ║  └────────────┘      └──────────┘     ║     │
+    │    ║                                       ║     │
+    │    ║  [USB-C]────────────────────→ back    ║     │
+    │    ╚════════════════════════════════════════╝     │
+    │                                                  │
+    │    ┌─────┐  ┌─────┐  ┌─────┐                    │
+    │    │btn 1│  │btn 2│  │btn 3│    ■ Steel weight  │ ← Weighted base
+    │    └─────┘  └─────┘  └─────┘    ■ (40-60g)      │
+    │                                                  │
+    └──────────────────────────────────────────────────┘
+
+
+HANDSET DETAIL
+══════════════
+
+    Top view (handset piece):
+    ╭────╮                              ╭────╮
+    │ear │──────────────────────────────│mth │
+    │ 30 │      handle bar 80mm         │ 25 │
+    │ mm │                              │ mm │
+    ╰────╯                              ╰────╯
+
+    Side view:
+              ╭──────────────────────────╮
+             ╱                            ╲
+    ╭───────╯      curved handle           ╰───────╮
+    │  ear  │                              │ mouth │
+    │ piece │         ~15mm thick          │ piece │
+    ╰───────╮                              ╭───────╯
+             ╲____________________________╱
+
+    Options:
+    A) Purely decorative — solid piece, sits in cradle
+    B) Speaker housed in earpiece — sound comes from handset
+       (pick up handset to hear notifications clearly)
+    C) Removable — lifts out of cradle, connected by
+       decorative coiled cord (non-functional)
+
+
+MOUNTING DETAILS
+════════════════
+
+    Screen to body:
+    ┌────────────────────────────────┐
+    │  Screen module sits in molded  │
+    │  recess in body top surface    │
+    │                                │
+    │  ┌──┐                  ┌──┐   │
+    │  │M2│                  │M2│   │ ← 4x M2 screws from below
+    │  └──┘                  └──┘   │   through PCB standoffs
+    │  ┌──┐                  ┌──┐   │   into screen frame
+    │  │M2│                  │M2│   │
+    │  └──┘                  └──┘   │
+    └────────────────────────────────┘
+
+    PCB mount:
+    ╔════════════════════════════════╗
+    ║  4x M2.5 standoffs (5mm)     ║
+    ║  ┌──┐                  ┌──┐  ║
+    ║  │  │                  │  │  ║ ← Screwed to bottom
+    ║  └──┘                  └──┘  ║   shell from below
+    ║  ┌──┐                  ┌──┐  ║
+    ║  │  │                  │  │  ║
+    ║  └──┘                  └──┘  ║
+    ╚════════════════════════════════╝
+
+    Rotary ring bearing:
+    ┌──────────────────────┐
+    │  Ring outer groove   │
+    │  ┌─○─○─○─○─○─○─○─┐  │ ← Ball bearing race
+    │  │  bearing balls  │  │   press-fit between ring
+    │  └─○─○─○─○─○─○─○─┘  │   and body groove
+    │  Body inner groove   │
+    └──────────────────────┘
+
+    Handset cradle posts:
+         ╭───╮       ╭───╮
+         │   │       │   │  ← Posts molded into body top
+         │   │       │   │    or screwed in
+         ├───┤       ├───┤  ← Notch for handset to rest
+         │   │       │   │
+    ─────┴───┴───────┴───┴──── body surface
+
+
+ASSEMBLY NOTES
+══════════════
+
+    1. Body is 2-piece clamshell (top shell + bottom shell)
+       - Top shell: screen opening, ring groove, cradle posts, button holes
+       - Bottom shell: flat base with weight pocket, PCB standoffs
+
+    2. Install steel weight plate in bottom shell pocket
+
+    3. Mount PCB to bottom shell with M2.5 standoffs
+
+    4. Install ball bearing race in body ring groove
+
+    5. Place rotary ring onto bearing race, install spring return
+
+    6. Mount screen module into top shell recess, connect FPC to PCB
+
+    7. Wire buttons (front face) to PCB tactile switches
+
+    8. Speaker mounts to PCB (or in handset if option B)
+
+    9. Join top and bottom shells (4x screws around perimeter)
+
+    10. Place handset in cradle
+
+    Shell join detail:
+    ┌────────────────┐
+    │   Top shell    │
+    │   ┌────────┐   │
+    │   │ screw  │   │ ← 4x perimeter screws
+    ├───┴────────┴───┤   (hidden by rubber feet)
+    │  Bottom shell  │
+    └────────────────┘
+
+
+SPECIAL FEATURES
+════════════════
+
+    1. SPINNING ROTARY RING
+       - Bearing-mounted ring spins freely around screen
+       - Spring return: ring rotates back to home after release
+       - Pure fidget satisfaction, non-functional
+       - Smooth ball-bearing action
+       - Optional: finger holes like real rotary dial
+       - Optional: ring position could trigger events (future)
+
+    2. HANDSET CRADLE
+       - Decorative 1950s telephone handset sits in cradle
+       - Option A: solid decorative piece
+       - Option B: speaker in earpiece (pick up to listen)
+       - Coiled cord decoration adds authenticity
+       - Satisfying handset-in-cradle click
+
+    3. WEIGHTED BASE
+       - Steel weight plate (40-60g) in bottom shell
+       - Prevents tipping when spinning dial ring
+       - Feels substantial and premium on desk
+       - Phone-like heft and stability
+
+    4. BAKELITE AESTHETIC
+       - Glossy black finish (like original Bakelite phones)
+       - Smooth, rounded organic form language
+       - Art Deco-inspired details on body edges
+       - Chrome accents on cradle posts and ring
+
+    5. LANDSCAPE SCREEN
+       - Screen in landscape orientation (natural phone dial position)
+       - Surrounded by rotary ring frame
+       - Slightly recessed below ring surface for protection
+       - Good viewing angle from standard desk position
+
+    6. RETRO PHONE BUTTONS
+       - 3 buttons on front face styled as phone base buttons
+       - Rounded rectangular caps (chrome or contrasting color)
+       - Satisfying tactile click
+       - Positioned below the dial area (like real phone buttons)

@@ -1,0 +1,25 @@
+{
+  "scope": "0..45C component ambient, initial tolerance and TCR only; aging, solder drift, noise and physical transients not bounded",
+  "vbus": {
+    "fall_min_v": 4.3505257397744295,
+    "fall_max_v": 4.560051664853825,
+    "rise_max_v": 4.69677809292444
+  },
+  "main_rail": {
+    "fall_min_v": 2.9299158546583675,
+    "fall_max_v": 3.0042265777666834,
+    "rise_max_v": 3.028998390851384,
+    "static_low_rail_margin_v": 0.04208599614516828
+  },
+  "raw_vbus_cap_upper_with_allowance_uf": 3.730000000000001,
+  "unplug_local_rc_estimate_ms": 2.3906744962036335,
+  "unplug_limit_note": "RC estimate excludes upstream retained VBUS and has no guaranteed supervisor delay bound; first-board capture must be <=3ms",
+  "r7309_max_w_at_20v": 0.15002344116268168,
+  "r7309_w_at_5p5v": 0.0113455227379278,
+  "extra_usb_current_budget_ma": 2.4683380416673666,
+  "default_usb_steady_estimate_ma": 94.93842351175283,
+  "power_switch_off_model_v": 0.2347442,
+  "power_switch_max_total_source_leak_ua_for_0p3v": 29.7029702970297,
+  "power_switch_note": "Baseline 18.2uA treated in worst sourcing direction, 5uA board/harness allowance, new-switch IR100Mohm estimate. Actual post-assembly leakage and worn contacts must be tested.",
+  "current_note": "Uses baseline slow-charge maximum plus 5mA baseline auxiliary and 2mA reserve, then all ECO additions; inrush and suspend not verified"
+}

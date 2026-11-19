@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 24: Holster — Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 24: Holster — 70×50×16mm + Belt Loop</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="200" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View (Screen Face)</text>
+
+  <!-- Holster body — slightly angled orientation -->
+  <path d="M100,90 L310,80 L315,360 L105,370 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen — angled with body -->
+  <path d="M125,110 L290,102 L293,280 L128,288 Z" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="210" y="195" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Active Area</text>
+  <text x="210" y="207" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.80×30.60mm</text>
+
+  <!-- 3 thumb-access buttons on top edge -->
+  <rect x="150" y="75" width="28" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="190" y="73" width="28" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="230" y="71" width="28" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="210" y="65" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">3 thumb buttons</text>
+
+  <!-- Wake button on left side -->
+  <rect x="96" y="200" width="8" height="20" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="88" y="213" text-anchor="end" font-family="sans-serif" font-size="8" fill="#333">Wake</text>
+
+  <!-- USB-C at bottom -->
+  <rect x="193" y="362" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="210" y="385" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: width 70mm -->
+  <line x1="100" y1="400" x2="315" y2="400" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="100" y1="390" x2="100" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="315" y1="390" x2="315" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="207" y="418" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">70.0mm</text>
+
+  <!-- Dimension: height 50mm -->
+  <line x1="340" y1="80" x2="340" y2="370" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="330" y1="80" x2="350" y2="80" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="330" y1="370" x2="350" y2="370" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="360" y="230" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">50.0mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-center) ============ -->
+  <text x="580" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side View (Belt Clip + 15° Angle)</text>
+
+  <!-- Body — tilted 15° when worn -->
+  <path d="M555,100 L600,100 L595,380 L550,380 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen face edge -->
+  <line x1="555" y1="120" x2="550" y2="300" stroke="#4488CC" stroke-width="1.5"/>
+  <text x="540" y="210" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- Belt loop / MOLLE clip on back -->
+  <path d="M600,120 L630,115 L630,240 L600,245" fill="none" stroke="black" stroke-width="0.5"/>
+  <rect x="600" y="120" width="30" height="12" rx="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="600" y="233" width="30" height="12" rx="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <!-- Belt clip body -->
+  <rect x="618" y="132" width="12" height="101" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="645" y="175" font-family="sans-serif" font-size="8" fill="#555">Belt/MOLLE</text>
+  <text x="645" y="185" font-family="sans-serif" font-size="8" fill="#555">clip</text>
+
+  <!-- 15° angle indicator -->
+  <line x1="550" y1="380" x2="550" y2="340" stroke="#CC0000" stroke-width="0.3"/>
+  <line x1="550" y1="380" x2="555" y2="340" stroke="#CC0000" stroke-width="0.3"/>
+  <text x="530" y="360" text-anchor="end" font-family="sans-serif" font-size="9" fill="#CC0000">15°</text>
+
+  <!-- Button on top -->
+  <rect x="560" y="95" width="20" height="8" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="570" y="90" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Btn</text>
+
+  <!-- Dimension: depth 16mm -->
+  <line x1="548" y1="400" x2="600" y2="400" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="548" y1="390" x2="548" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="600" y1="390" x2="600" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="574" y="418" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">16.0mm</text>
+
+  <!-- ============ VIEW 3: BACK VIEW (top-right) ============ -->
+  <text x="900" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Back of holster -->
+  <rect x="790" y="85" width="220" height="290" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Belt clip mechanism -->
+  <rect x="850" y="100" width="100" height="160" rx="4" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="175" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Belt Clip</text>
+  <text x="900" y="190" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Mechanism</text>
+
+  <!-- Clip spring tab -->
+  <rect x="875" y="100" width="50" height="8" rx="2" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="95" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#555">Spring tab</text>
+
+  <!-- MOLLE slots -->
+  <rect x="860" y="122" width="80" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <rect x="860" y="140" width="80" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="960" y="140" font-family="sans-serif" font-size="7" fill="#555">MOLLE slots</text>
+
+  <!-- Quick-release tab at bottom of clip -->
+  <rect x="870" y="252" width="60" height="15" rx="3" fill="#CC4444" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="263" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">RELEASE</text>
+
+  <!-- Battery area (hidden) -->
+  <rect x="810" y="290" width="180" height="60" rx="3" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="900" y="325" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Battery (hidden)</text>
+
+  <!-- USB-C -->
+  <rect x="883" y="370" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- ============ VIEW 4: TOP-DOWN VIEW (bottom-left) ============ -->
+  <text x="200" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Top edge of holster -->
+  <rect x="90" y="510" width="220" height="50" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- 3 thumb-access buttons on top -->
+  <rect x="130" y="505" width="30" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="180" y="505" width="30" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="230" y="505" width="30" height="12" rx="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="500" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">3 thumb buttons</text>
+
+  <!-- Belt clip visible from top -->
+  <rect x="160" y="555" width="80" height="20" rx="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="568" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Clip</text>
+
+  <!-- Dimensions -->
+  <line x1="90" y1="595" x2="310" y2="595" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="90" y1="585" x2="90" y2="605" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="310" y1="585" x2="310" y2="605" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="615" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">70.0mm</text>
+
+  <line x1="330" y1="510" x2="330" y2="560" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="320" y1="510" x2="340" y2="510" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="320" y1="560" x2="340" y2="560" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="350" y="538" font-family="sans-serif" font-size="10" fill="#CC0000">16.0mm</text>
+
+  <!-- ============ VIEW 5: CROSS-SECTION (bottom-center) ============ -->
+  <text x="600" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (A-A)</text>
+
+  <!-- Standard Z-stack — 16mm (15.1mm internals + extra shell) -->
+  <!-- Front wall 1.5mm -->
+  <rect x="490" y="510" width="220" height="16" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="522" font-family="sans-serif" font-size="8" fill="#606060">Front wall 1.5mm</text>
+
+  <!-- Gap -->
+  <rect x="490" y="526" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Display 2.0mm -->
+  <rect x="500" y="530" width="200" height="22" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="545" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display (2.0mm)</text>
+
+  <!-- Gap 1.0mm -->
+  <rect x="490" y="552" width="220" height="10" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- PCB 1.6mm -->
+  <rect x="490" y="562" width="220" height="18" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+  <!-- Gap 1.5mm -->
+  <rect x="490" y="580" width="220" height="16" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Battery 5.0mm -->
+  <rect x="505" y="596" width="190" height="54" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="627" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (5.0mm)</text>
+
+  <!-- Gap -->
+  <rect x="490" y="650" width="220" height="5" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Back wall 1.5mm -->
+  <rect x="490" y="655" width="220" height="16" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="667" font-family="sans-serif" font-size="8" fill="#606060">Back wall 1.5mm</text>
+
+  <!-- Total dimension -->
+  <line x1="475" y1="510" x2="475" y2="671" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="465" y1="510" x2="485" y2="510" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="465" y1="671" x2="485" y2="671" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="460" y="595" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">16.0mm</text>
+
+  <!-- ============ VIEW 6: DETAIL — Quick-Release Tab (bottom-right) ============ -->
+  <text x="960" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Quick-Release Tab</text>
+
+  <!-- Holster body section -->
+  <rect x="880" y="510" width="80" height="160" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Belt clip attached -->
+  <rect x="960" y="520" width="50" height="120" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="985" y="575" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Clip</text>
+  <text x="985" y="587" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">body</text>
+
+  <!-- Latch mechanism -->
+  <rect x="955" y="525" width="10" height="30" rx="1" fill="#777" stroke="black" stroke-width="0.5"/>
+  <text x="952" y="540" text-anchor="end" font-family="sans-serif" font-size="7" fill="#555">Latch</text>
+
+  <!-- Spring inside -->
+  <path d="M960,558 L964,562 L960,566 L964,570 L960,574" fill="none" stroke="black" stroke-width="0.5"/>
+
+  <!-- Release tab -->
+  <rect x="955" y="630" width="60" height="18" rx="4" fill="#CC4444" stroke="black" stroke-width="0.5"/>
+  <text x="985" y="642" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">PULL</text>
+
+  <!-- Arrow showing pull direction -->
+  <line x1="985" y1="655" x2="985" y2="685" stroke="#333" stroke-width="0.8" marker-end="url(#arrow-end)"/>
+  <text x="985" y="698" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Pull down to release</text>
+
+  <!-- Engaged vs released states -->
+  <text x="910" y="700" font-family="sans-serif" font-size="8" font-weight="bold" fill="#333">Engaged</text>
+  <rect x="895" y="710" width="30" height="25" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.3"/>
+  <rect x="920" y="715" width="10" height="15" rx="1" fill="#777" stroke="black" stroke-width="0.3"/>
+  <!-- Lock indicator -->
+  <line x1="925" y1="718" x2="925" y2="727" stroke="black" stroke-width="0.5"/>
+  <circle cx="925" cy="727" r="2" fill="#333"/>
+
+  <text x="960" y="700" font-family="sans-serif" font-size="8" font-weight="bold" fill="#333">Released</text>
+  <rect x="945" y="710" width="30" height="25" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.3"/>
+  <rect x="970" y="720" width="10" height="15" rx="1" fill="#777" stroke="black" stroke-width="0.3"/>
+  <!-- Open indicator -->
+  <path d="M973,733 L977,738" stroke="#CC4444" stroke-width="0.5"/>
+</svg>

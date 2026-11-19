@@ -1,0 +1,17 @@
+﻿ref,category,assembly_domain,value,mpn,manufacturer,lcsc,footprint,qty_per_device,quantity_two,unit,source,stock_status,smt_catalog_status,source_url,note
+H101,pcb_feature,main,MountingHole_Pad,,,,MountingHole:MountingHole_2.2mm_M2_DIN965_Pad,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+J610,pcb_feature,main,PROTECTED PACK P+ P-,SOLDER_PADS_2WIRE,,,BLE_Candidate:WirePads_2_P2.54,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+J7101,pcb_feature,main,Battery temperature probe pads,SOLDER_PADS_2WIRE,,,BLE_Candidate:WirePads_2_P2.54,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+J7201,pcb_feature,main,POWER SWITCH HARNESS,SOLDER_PADS_3WIRE,,,BLE_Candidate:WirePads_3_P2.54,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP101,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP102,pcb_feature,main,Tx,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP103,pcb_feature,main,Rx,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP105,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP106,pcb_feature,main,BOOT_GPIO0,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP107,pcb_feature,main,RECOVERY_EN,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP108,pcb_feature,main,RECOVERY_GND,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP501,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP502,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP504,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP1202,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件
+TP1203,pcb_feature,main,TestPoint,,,,TestPoint:TestPoint_Pad_D1.0mm,1,2,piece,saved_netlist,未取得本轮国内库存/采购报价,待嘉立创按精确型号匹配,,随PCB制作，不单买元件

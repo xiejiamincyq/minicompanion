@@ -1,0 +1,202 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif" font-size="10px">
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-size="16px" font-weight="bold">Design 18: Cassette Tape — 100×64×12mm</text>
+
+  <!-- Grid labels -->
+  <text x="200" y="60" text-anchor="middle" font-size="11px" font-weight="bold">FRONT VIEW</text>
+  <text x="600" y="60" text-anchor="middle" font-size="11px" font-weight="bold">SIDE VIEW</text>
+  <text x="1000" y="60" text-anchor="middle" font-size="11px" font-weight="bold">BACK VIEW</text>
+  <text x="200" y="470" text-anchor="middle" font-size="11px" font-weight="bold">TOP-DOWN VIEW</text>
+  <text x="600" y="470" text-anchor="middle" font-size="11px" font-weight="bold">CROSS-SECTION A–A</text>
+  <text x="1000" y="470" text-anchor="middle" font-size="11px" font-weight="bold">DETAIL: SPOOL + TAPE WINDOW</text>
+
+  <!-- ==================== FRONT VIEW (top-left) ==================== -->
+  <g transform="translate(200,250)">
+    <!-- Shell body 100×64mm scaled ~2.5x -->
+    <rect x="-125" y="-80" width="250" height="160" rx="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Rounded corners at top -->
+    <rect x="-125" y="-80" width="250" height="160" rx="8" fill="none" stroke="black" stroke-width="0.5"/>
+
+    <!-- Tape window area — screen -->
+    <rect x="-70" y="-55" width="140" height="65" rx="4" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-30" text-anchor="middle" font-size="9px" fill="#336">320×240 TFT</text>
+    <text x="0" y="-18" text-anchor="middle" font-size="9px" fill="#336">in tape window</text>
+
+    <!-- Left spool circle -->
+    <circle cx="-85" cy="-22" r="22" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="-85" cy="-22" r="10" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="-85" cy="-22" r="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spool spokes -->
+    <line x1="-85" y1="-32" x2="-85" y2="-12" stroke="black" stroke-width="0.5"/>
+    <line x1="-95" y1="-22" x2="-75" y2="-22" stroke="black" stroke-width="0.5"/>
+
+    <!-- Right spool circle -->
+    <circle cx="85" cy="-22" r="22" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="85" cy="-22" r="10" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="85" cy="-22" r="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <line x1="85" y1="-32" x2="85" y2="-12" stroke="black" stroke-width="0.5"/>
+    <line x1="75" y1="-22" x2="95" y2="-22" stroke="black" stroke-width="0.5"/>
+
+    <!-- Label area with buttons -->
+    <rect x="-110" y="20" width="220" height="50" rx="3" fill="#F5F0E0" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="33" text-anchor="middle" font-size="9px" fill="#333">DEVOTCHI</text>
+    <!-- Buttons row -->
+    <circle cx="-60" cy="52" r="7" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="-60" y="55" text-anchor="middle" font-size="7px">A</text>
+    <circle cx="-20" cy="52" r="7" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="-20" y="55" text-anchor="middle" font-size="7px">B</text>
+    <circle cx="20" cy="52" r="7" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="20" y="55" text-anchor="middle" font-size="7px">C</text>
+    <circle cx="60" cy="52" r="7" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="60" y="55" text-anchor="middle" font-size="7px">D</text>
+
+    <!-- Dimension arrows — width -->
+    <line x1="-125" y1="100" x2="125" y2="100" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="113" text-anchor="middle" font-size="9px" fill="#CC0000">100mm</text>
+    <!-- Height -->
+    <line x1="145" y1="-80" x2="145" y2="80" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="160" y="5" text-anchor="middle" font-size="9px" fill="#CC0000" transform="rotate(90,160,5)">64mm</text>
+  </g>
+
+  <!-- ==================== SIDE VIEW (top-center) ==================== -->
+  <g transform="translate(600,250)">
+    <!-- 12mm depth × 64mm height -->
+    <rect x="-15" y="-80" width="30" height="160" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Screen edge visible -->
+    <line x1="-12" y1="-55" x2="-12" y2="10" stroke="#B0D4F1" stroke-width="2"/>
+    <!-- USB-C port at bottom -->
+    <rect x="-5" y="74" width="10" height="6" rx="1" fill="#333" stroke="black" stroke-width="0.5"/>
+    <text x="25" y="80" font-size="9px">USB-C</text>
+    <!-- Write-protect tab at top -->
+    <rect x="-8" y="-80" width="6" height="5" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="15" y="-75" font-size="9px">Wake tab</text>
+
+    <!-- Depth dimension -->
+    <line x1="-15" y1="100" x2="15" y2="100" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="113" text-anchor="middle" font-size="9px" fill="#CC0000">12mm</text>
+    <!-- Height -->
+    <line x1="45" y1="-80" x2="45" y2="80" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="60" y="5" text-anchor="middle" font-size="9px" fill="#CC0000" transform="rotate(90,60,5)">64mm</text>
+  </g>
+
+  <!-- ==================== BACK VIEW (top-right) ==================== -->
+  <g transform="translate(1000,250)">
+    <rect x="-125" y="-80" width="250" height="160" rx="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Battery outline (dashed — hidden) -->
+    <rect x="-90" y="-60" width="180" height="100" rx="3" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <rect x="-90" y="-60" width="180" height="100" rx="3" fill="#D4A84B" fill-opacity="0.2" stroke="none"/>
+    <text x="0" y="-5" text-anchor="middle" font-size="9px" fill="#8B7020">Battery (LiPo)</text>
+    <text x="0" y="8" text-anchor="middle" font-size="9px" fill="#8B7020">800mAh</text>
+    <!-- Speaker grille -->
+    <circle cx="0" cy="60" r="12" fill="none" stroke="black" stroke-width="0.5"/>
+    <line x1="-8" y1="55" x2="8" y2="55" stroke="black" stroke-width="0.3"/>
+    <line x1="-8" y1="60" x2="8" y2="60" stroke="black" stroke-width="0.3"/>
+    <line x1="-8" y1="65" x2="8" y2="65" stroke="black" stroke-width="0.3"/>
+    <text x="20" y="63" font-size="9px">Speaker</text>
+    <!-- Screw holes at corners -->
+    <circle cx="-110" cy="-65" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="110" cy="-65" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="-110" cy="65" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="110" cy="65" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+  </g>
+
+  <!-- ==================== TOP-DOWN VIEW (bottom-left) ==================== -->
+  <g transform="translate(200,660)">
+    <!-- 100×12mm top profile -->
+    <rect x="-125" y="-15" width="250" height="30" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Write-protect tab -->
+    <rect x="105" y="-18" width="12" height="6" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <text x="105" y="-22" font-size="9px">Write-protect/Wake tab</text>
+    <!-- Hidden spool circles -->
+    <circle cx="-85" cy="0" r="12" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <circle cx="85" cy="0" r="12" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <!-- Width dimension -->
+    <line x1="-125" y1="30" x2="125" y2="30" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowL)" marker-end="url(#arrowR)"/>
+    <text x="0" y="43" text-anchor="middle" font-size="9px" fill="#CC0000">100mm</text>
+    <!-- Depth -->
+    <line x1="145" y1="-15" x2="145" y2="15" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="160" y="3" text-anchor="middle" font-size="9px" fill="#CC0000">12mm</text>
+  </g>
+
+  <!-- ==================== CROSS-SECTION A–A (bottom-center) ==================== -->
+  <g transform="translate(600,660)">
+    <!-- Outer shell cross-section -->
+    <rect x="-125" y="-80" width="250" height="160" rx="5" fill="none" stroke="black" stroke-width="0.5"/>
+    <!-- 45° hatch on shell walls -->
+    <defs>
+      <pattern id="hatch18" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+      </pattern>
+    </defs>
+    <!-- Left wall -->
+    <rect x="-125" y="-80" width="8" height="160" fill="url(#hatch18)" stroke="black" stroke-width="0.5"/>
+    <!-- Right wall -->
+    <rect x="117" y="-80" width="8" height="160" fill="url(#hatch18)" stroke="black" stroke-width="0.5"/>
+    <!-- Top wall -->
+    <rect x="-125" y="-80" width="250" height="8" fill="url(#hatch18)" stroke="black" stroke-width="0.5"/>
+    <!-- Bottom wall -->
+    <rect x="-125" y="72" width="250" height="8" fill="url(#hatch18)" stroke="black" stroke-width="0.5"/>
+
+    <!-- PCB -->
+    <rect x="-110" y="-10" width="226" height="6" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="10" y="-3" text-anchor="middle" font-size="9px" fill="#2A5E2A">PCB</text>
+    <!-- Screen module above PCB -->
+    <rect x="-70" y="-55" width="140" height="40" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-32" text-anchor="middle" font-size="9px" fill="#336">TFT LCD</text>
+    <!-- Battery below PCB -->
+    <rect x="-90" y="5" width="180" height="60" rx="2" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="38" text-anchor="middle" font-size="9px" fill="white">Battery</text>
+    <!-- USB-C connector -->
+    <rect x="-5" y="72" width="10" height="8" fill="#333" stroke="black" stroke-width="0.5"/>
+    <text x="15" y="80" font-size="8px">USB-C</text>
+
+    <!-- Shell thickness dimension -->
+    <line x1="-135" y1="-80" x2="-135" y2="-72" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrowU)" marker-end="url(#arrowD)"/>
+    <text x="-155" y="-73" font-size="8px" fill="#CC0000">1.5mm</text>
+  </g>
+
+  <!-- ==================== DETAIL: SPOOL + TAPE WINDOW (bottom-right) ==================== -->
+  <g transform="translate(1000,660)">
+    <!-- Enlarged spool circle -->
+    <circle cx="-60" cy="-10" r="50" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="-60" cy="-10" r="30" fill="none" stroke="black" stroke-width="0.5"/>
+    <circle cx="-60" cy="-10" r="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spool spokes (6) -->
+    <line x1="-60" y1="-40" x2="-60" y2="20" stroke="black" stroke-width="0.5"/>
+    <line x1="-85" y1="-23" x2="-35" y2="3" stroke="black" stroke-width="0.5"/>
+    <line x1="-85" y1="3" x2="-35" y2="-23" stroke="black" stroke-width="0.5"/>
+    <!-- Decorative ring grooves -->
+    <circle cx="-60" cy="-10" r="42" fill="none" stroke="black" stroke-width="0.3"/>
+    <circle cx="-60" cy="-10" r="36" fill="none" stroke="black" stroke-width="0.3"/>
+    <text x="-60" y="55" text-anchor="middle" font-size="9px">Spool decoration</text>
+    <text x="-60" y="67" text-anchor="middle" font-size="9px">(decorative only)</text>
+
+    <!-- Tape window overlay detail -->
+    <rect x="30" y="-50" width="100" height="60" rx="4" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <!-- Overlay tint strip at top -->
+    <rect x="30" y="-50" width="100" height="10" rx="4" fill="#8BB8D8" stroke="black" stroke-width="0.5"/>
+    <rect x="30" y="-44" width="100" height="4" rx="0" fill="#B0D4F1" stroke="none"/>
+    <text x="80" y="-28" text-anchor="middle" font-size="9px" fill="#336">Screen visible</text>
+    <text x="80" y="-16" text-anchor="middle" font-size="9px" fill="#336">through window</text>
+    <!-- Window frame -->
+    <rect x="26" y="-54" width="108" height="68" rx="6" fill="none" stroke="black" stroke-width="0.5"/>
+    <text x="80" y="30" text-anchor="middle" font-size="9px">Tape window frame</text>
+    <text x="80" y="42" text-anchor="middle" font-size="9px">overlays TFT display</text>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowR" markerWidth="6" markerHeight="4" refX="6" refY="2" orient="auto">
+      <path d="M0,0 L6,2 L0,4" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowL" markerWidth="6" markerHeight="4" refX="0" refY="2" orient="auto">
+      <path d="M6,0 L0,2 L6,4" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowD" markerWidth="4" markerHeight="6" refX="2" refY="6" orient="auto">
+      <path d="M0,0 L2,6 L4,0" fill="#CC0000"/>
+    </marker>
+    <marker id="arrowU" markerWidth="4" markerHeight="6" refX="2" refY="0" orient="auto">
+      <path d="M0,6 L2,0 L4,6" fill="#CC0000"/>
+    </marker>
+  </defs>
+</svg>

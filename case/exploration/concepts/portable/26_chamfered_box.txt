@@ -1,0 +1,214 @@
+DESIGN 26: CHAMFERED BOX (FreeCAD Final Design)
+=================================================
+Clean rectangular form with chamfered front edges and rounded corners.
+Portrait orientation. Compact dimensions driven directly by component
+stack. This is the chosen base design for PCB layout and manufacturing.
+
+Overall: 60.0mm tall x 60.0mm wide x 15.1mm deep
+Wall thickness: 1.5mm
+Corner radius: 3.0mm (XY plane)
+Front chamfer: 2.5mm (45-degree on Z edges)
+Back chamfer: 1.0mm
+Shell: 2-piece (front shell + snap-fit back cover)
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ╭──────────────────────────────╮ ─┬─
+    │                              │  │
+    │  ┌────────────────────────┐  │  │
+    │  │                        │  │  │
+    │  │    TFT LCD SCREEN      │  │  │  Display zone
+    │  │    40.8 x 30.6mm       │  │  │  39.2mm
+    │  │    (active area)       │  │  │
+    │  │                        │  │  │
+    │  └────────────────────────┘  │  │
+    │                              │ ─┤
+    │  <═══>    <═══>    <═══>     │  │  Button zone
+    │  Approve  Action   Reject    │  │  15.8mm
+    │                              │  │
+    │                              │ ─┤
+    │  ○                ══USB══    │  │  USB zone
+    │  LED              cutout     │  │  5.0mm
+    ╰──────────────────────────────╯ ─┴─
+    ├────────── 60.0mm ─────────────┤
+
+    Button shape: elongated hexagon <═══>
+    Main 3: 12.0 x 6.0mm, 14mm spacing
+    Wake removed — any button press wakes from deep sleep
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+       15.1mm
+    ├───────────┤
+    ╭──────────╮ ─┬─
+    │╲        ╱│  │    ← 2.5mm front chamfer
+    │ │      │ │  │
+    │ │ scrn │ │  │
+    │ │      │ │  │
+    │ │ pcb  │ │  │  60.0mm
+    │ │      │ │  │
+    │ │ batt │ │  │
+    │ │      │╲│  │    ← 1.0mm back chamfer
+    │ └──USB──┘│  │
+    ╰──────────╯ ─┴─
+    ↑            ↑
+   Front       Back
+
+    Front face has 2.5mm 45-degree chamfer
+    giving a softer, beveled appearance.
+    Back cover has subtle 1.0mm chamfer.
+
+
+BACK VIEW
+─────────
+
+    ╭──────────────────────────────╮
+    │                              │
+    │   ┌──┐              ┌──┐    │
+    │   │  │  PCB mount   │  │    │ ← 4x M2 standoffs
+    │   └──┘  posts       └──┘    │   (4mm OD, 2.2mm hole)
+    │                              │
+    │   ┌─────────────────────┐    │
+    │   │                     │    │
+    │   │   BATTERY AREA      │    │ ← Guide rails hold
+    │   │   30 x 35 x 5mm    │    │   battery in place
+    │   │                     │    │
+    │   └────────┤ ├──────────┘    │ ← 8mm gap for JST cable
+    │   ┌──┐              ┌──┐    │
+    │   │  │              │  │    │ ← Lower mount posts
+    │   └──┘              └──┘    │
+    │         ══════════          │ ← USB-C cutout
+    ╰──────────────────────────────╯
+
+    (○) Motor pocket: 6.4mm dia, 1mm deep
+        at X=25%, Y=20% of case
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                              Back
+      │                                  │
+      │  1.5mm front wall                │  1.5mm back wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  ├── Display ───────────────┐ │  │
+      │  │   (2.5mm thick)          │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   2.5mm gap              │ │  │  15.1mm total
+      │  │   (ESP32 clearance)      │ │  │
+      │  ├── PCB ───────────────────┤ │  │
+      │  │   (1.6mm thick)          │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   0.5mm gap              │ │  │
+      │  ├── Battery ───────────────┤ │  │
+      │  │   (5.0mm thick LiPo)     │ │  │
+      │  │   30 x 35mm, 300-500mAh  │ │  │
+      ├──┴──────────────────────────┴─┤  │
+      │                                  │
+      Front face                    Back face
+
+    Z-stack (front to back):
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 -- FRONT SHELL (1.5mm wall, 3mm corner radius)
+    +-- Display window cutout (40.8 x 30.6mm, with bezel slope)
+    +-- 3x main button holes (12.0 x 6.0mm elongated hex)
+    +-- 1x LED hole (2.0mm dia, bottom-left)
+    +-- 5x display retention clips (1.5mm overhang)
+    +-- FPC cable slot (8.5 x 2.0mm)
+    +-- 2.5mm front chamfer on all Z edges
+    +-- Snap-fit sockets for back cover
+
+    Layer 2 -- DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    +-- HS20HS072RX 2.0" TFT LCD
+    +-- Active area: 40.8 x 30.6mm
+    +-- FPC tail: 6.5mm wide, exits left edge
+    +-- Seated in pocket with 3.0mm total clearance
+
+    Layer 3 -- 2.5mm AIR GAP
+    +-- ESP32-S3-MINI-1 clearance (2.4mm module)
+    +-- Button plunger routing
+    +-- FPC cable routing to PCB connector
+
+    Layer 4 -- PCB (45.0 x 50.0 x 1.6mm)
+    +-- ESP32-S3-MINI-1 faces front (toward display)
+    +-- 4x tactile switches on front face
+    +-- USB-C (HRO TYPE-C-31-M-12) on bottom edge
+    +-- Display FPC connector
+    +-- Battery JST connector
+    +-- Centered horizontally, bottom-aligned for USB-C
+
+    Layer 5 -- 0.5mm GAP
+    +-- PCB solder-side clearance
+
+    Layer 6 -- BATTERY (503450 LiPo, 34 x 50 x 5mm)
+    +-- 1000mAh capacity, portrait orientation
+    +-- JST pigtail to PCB
+    +-- Held by guide rails on back cover
+
+    Layer 7 -- BACK COVER (1.5mm wall, 1.0mm chamfer)
+    +-- 4x PCB mounting standoffs (4mm OD, M2 holes, 5.5mm tall)
+    +-- Battery guide rails (1.2mm walls, split bottom for JST)
+    +-- Motor pocket (6.4mm dia, 1mm deep)
+    +-- 4x snap-fit clips (8mm wide, 0.5mm hook)
+    +-- Insertion rim (2mm deep, 0.3mm clearance)
+
+
+BUTTON LAYOUT DETAIL (front face, button zone)
+───────────────────────────────────────────────
+
+    │                                          │
+    │   <════════>  <════════>  <════════>      │
+    │    12x6mm      12x6mm      12x6mm        │ ← Elongated hex
+    │    Approve     Action      Reject        │   with 1.2mm
+    │    ├──14mm──┤  ├──14mm──┤                │   corner rounding
+    │                                          │
+    │              <══════>                    │
+    │               10x4.5                     │ ← Wake button
+    │                                          │
+
+    Button caps:
+    - Cap clearance: 0.3mm per side
+    - Top thickness: 1.8mm (visible part)
+    - Protrusion: 0.8mm above case surface
+    - Retention lip: +0.8mm per side
+    - Actuator post: 3mm dia, 2mm tall
+
+
+SNAP-FIT DETAIL (4 clips on back cover rim)
+───────────────────────────────────────────
+
+    Front shell          Back cover
+    ┌────────┐          ┌────────┐
+    │        │          │   ╱╲   │
+    │  ┌─┐  │          │  │  │  │ ← Clip: 8mm wide, 2mm tall
+    │  │ │<---- slot    │  │██│  │   0.5mm hook overhang
+    │  └─┘  │          │  │  │  │   0.3mm clearance gap
+    │        │          │   ╲╱   │
+    └────────┘          └────────┘
+
+    Clip positions: left, right (Y centered),
+    top, bottom (X centered)
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Front shell prints face-down (chamfered front on bed)
+- Back cover prints outer-face-down (flat back on bed)
+- Button caps print top-face-down (visible surface gets bed finish)
+- Display press-fits into front shell pocket, held by 5 retention clips
+- PCB mounts on 4x M2 standoffs in back cover
+- Battery sits in guide rail cradle, JST connects to PCB
+- Back cover snaps into front shell (4x clips + rim)
+- USB-C cutout aligned at bottom center
+- No screws required -- all snap/press fit
+- FDM tolerance: 0.2mm per side
+- No overhangs > 45 degrees

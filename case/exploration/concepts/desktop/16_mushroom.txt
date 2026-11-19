@@ -1,0 +1,514 @@
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 16: MUSHROOM                       ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  Toadstool desk toy. Screen on angled underside of mushroom cap, tilted ~30    ║
+║  degrees for desk viewing. Buttons on stem front face. Speaker hidden in       ║
+║  hollow cap with gill-slot sound exit. Polka-dot spotted cap decoration.       ║
+║                                                                                ║
+║  Overall dimensions: ~70mm cap diameter, ~120mm total height                   ║
+║  Stem: 25mm wide (top) tapering to 35mm (base), weighted 50mm dia flat base   ║
+║                                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+
+FRONT VIEW
+══════════
+
+                    ╭───────────────────╮
+                 ╱  ●    ●      ●        ╲
+               ╱       ●    ●       ●      ╲
+              │    ●        ●    ●      ●   │   ← Mushroom cap (dome)
+              │       ●  ●      ●    ●      │     ~70mm diameter
+               ╲  ●      ●    ●    ●      ╱     polka-dot spots
+                ╲____╔══════════╗______ ╱
+                     ║          ║            ← Screen mounted on
+                     ║  SCREEN  ║              angled underside
+                     ║ 108x64.8 ║              of cap (~30 deg tilt)
+                     ║          ║
+                     ╚══════════╝
+                     ┌──────────┐
+                     │          │        ← Stem (tapered)
+                     │  ┌────┐  │          25mm at top
+                     │  │btn1│  │
+                     │  └────┘  │        ← 3 buttons vertically
+                     │  ┌────┐  │          on stem front face
+                     │  │btn2│  │
+                     │  └────┘  │
+                     │  ┌────┐  │
+                     │  │btn3│  │
+                     │  └────┘  │
+                     │          │          35mm at base
+                   ┌─┴──────────┴─┐
+                   │   Flat base   │   ← Weighted base
+                   └───────────────┘     50mm diameter
+                   ◄──── 50mm ────►
+
+         Total height: ~120mm
+
+
+RIGHT SIDE VIEW
+═══════════════
+
+                    ╭──────────────╮
+                 ╱                    ╲
+               ╱                        ╲
+              │        Cap dome          │     ← ~35mm cap height
+               ╲                       ╱
+                ╲___________________╱
+                  ╲ ╔════════╗ ╱           ← Screen on angled
+                    ║ Screen ║               underside face
+                    ║ ~30deg ║               tilted up for viewing
+                    ╚════════╝
+                    ┌────────┐
+                    │  Stem  │             ← Stem ~55mm tall
+                    │        │
+                    │        │
+                    │        │
+                    │        │
+                  ┌─┴────────┴─┐
+                  │    Base     │           ← 8mm tall base
+                  └────────────┘
+
+    Screen angle detail:
+                  ╲
+                   ╲  cap underside
+                    ╲
+                     ╔═══════╗
+                     ║Screen ║  ← ~30 degrees from vertical
+                     ║       ║    faces upward toward viewer
+                     ╚═══════╝    at desk sitting position
+                        │
+                        │ stem
+
+
+BACK VIEW
+═════════
+
+                    ╭───────────────────╮
+                 ╱  ●    ●      ●        ╲
+               ╱       ●    ●       ●      ╲
+              │    ●        ●    ●      ●   │
+              │       ●  ●      ●    ●      │
+               ╲  ●      ●    ●    ●      ╱
+                ╲______________________╱
+                     ┌──────────┐
+                     │          │
+                     │          │        ← Back of stem
+                     │          │          (smooth, no buttons)
+                     │          │
+                     │          │
+                     │          │
+                     │          │
+                   ┌─┴──────────┴─┐
+                   │     Base      │
+                   │   ╔══════╗   │    ← USB-C enters through
+                   └───╚══════╝───┘      base bottom
+                        ↑
+                     USB-C port
+
+
+TOP VIEW (looking down at cap)
+══════════════════════════════
+
+                    ╭───────────────╮
+                 ╱  ●    ●     ●      ╲
+               ╱       ●    ●      ●     ╲
+              │    ●        ●    ●    ●    │
+              │       ●  DOME  ●    ●     │   ← ~70mm diameter cap
+              │    ●      TOP    ●         │     polka-dot decoration
+               ╲  ●    ●     ●    ●     ╱     (Amanita muscaria style)
+                 ╲   ●    ●     ●     ╱
+                    ╰───────────────╯
+
+    ● = White polka-dot spots on red/colored cap
+
+
+BOTTOM VIEW (looking up at base)
+════════════════════════════════
+
+                   ╭───────────────╮
+                  │                 │
+                  │    ╔═══════╗    │   ← USB-C port cutout
+                  │    ╚═══════╝    │     in base bottom
+                  │                 │
+                  │  ○    ○    ○    │   ← 3x rubber feet
+                  │                 │     (or felt pads)
+                  ╰─────────────────╯
+                   ◄──── 50mm ────►
+
+
+CROSS-SECTION (side view, through center)
+═════════════════════════════════════════
+
+                    ╭──────────────────╮
+                 ╱ 2mm wall              ╲
+               ╱                           ╲
+              │    ┌──────────────────┐     │
+              │    │  Hollow cavity   │     │  ← Cap interior cavity
+              │    │  ┌────────────┐  │     │    houses speaker
+              │    │  │  Speaker   │  │     │
+              │    │  │  28mm dia  │  │     │    Speaker fires downward
+              │    │  │  x 3.5mm   │  │     │    through gill slots
+              │    │  └────────────┘  │     │
+               ╲   └──────┬───────┘  ╱
+                ╲___╔══════╧═══╗__╱
+                    ║  Screen  ║         ← Screen module on angled
+                    ║  module  ║           face (cap-to-stem junction)
+                    ║ 120x75   ║           ~30 degrees from vertical
+                    ║ x4.5mm   ║
+                    ╚════╤═════╝
+                    ┌────┴─────┐
+                    │  Stem    │         ← Hollow stem
+                    │  hollow  │           carries FPC cable
+                    │  ┊FPC┊   │           and button wires
+                    │  ┊   ┊   │
+                    │  ┊   ┊   │
+                  ┌─┴──┊───┊───┴─┐
+                  │ ╔══╧═══╧══╗  │      ← PCB in weighted base
+                  │ ║ PCB     ║  │
+                  │ ║ 110x65  ║  │        Base is oversized (50mm dia)
+                  │ ╚═════════╝  │        for stability
+                  │  ■ weight ■  │      ← Steel weight plate
+                  └──────────────┘
+                        ↑
+                     USB-C exits bottom
+
+    Gill area detail:
+               ╲  cap wall  ╱
+                ╲__________╱
+                ║ ║ ║ ║ ║ ║     ← Gill slots (radial pattern)
+                ║ ║ ║ ║ ║ ║       2mm wide, 1mm gap
+                ╔══════════╗       speaker sound exits here
+                ║  Screen  ║
+
+
+CAP UNDERSIDE VIEW (gill pattern + screen)
+══════════════════════════════════════════
+
+                    ╭───────────────╮
+                 ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱  ╲
+               ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱ ╱  ╲    ← Radial gill pattern
+              │ ╱ ╱ ╱ ╔══════════╗ ╱ ╱ ╱ ╱ │     (decorative slots
+              │╱ ╱ ╱  ║          ║  ╱ ╱ ╱ ╱│      around screen,
+              │ ╱ ╱   ║  SCREEN  ║   ╱ ╱ ╱ │      speaker sound exits
+              │╱ ╱    ║  opening ║    ╱ ╱ ╱│      through these)
+               ╲ ╱    ╚══════════╝     ╱ ╱╱
+                 ╲ ╱ ╱ ╱     stem  ╱ ╱ ╱╱
+                    ╰──────┤  ├────────╯
+                           │  │
+                           stem
+
+
+COMPONENT LAYOUT (exploded view)
+════════════════════════════════
+
+    PIECE 1: Cap (lifts off stem)
+    ╭───────────────────────────────────╮
+    │          CAP DOME                 │
+    │                                   │
+    │  Interior cavity:                 │
+    │  ┌─────────────────────────────┐  │
+    │  │                             │  │
+    │  │  ┌──────────────────────┐   │  │
+    │  │  │  Speaker 28mm dia    │   │  │ ← Speaker mounts inside
+    │  │  │  (glued to cap top)  │   │  │   cap dome
+    │  │  └──────────────────────┘   │  │
+    │  │                             │  │
+    │  └─────────────────────────────┘  │
+    │                                   │
+    │  Angled screen face at bottom:    │
+    │  ╔══════════════════════════════╗ │
+    │  ║  Screen mounting bracket     ║ │ ← Screen module mounts
+    │  ║  (angled 30 deg)             ║ │   to cap bottom face
+    │  ║  ┌──┐              ┌──┐     ║ │
+    │  ║  │M2│              │M2│     ║ │
+    │  ║  └──┘              └──┘     ║ │
+    │  ╚══════════════════════════════╝ │
+    │                                   │
+    │  Gill slots molded into underside │
+    │  FPC connector exits at stem hole │
+    ╰───────────────────────────────────╯
+
+    PIECE 2: Stem (connects cap to base)
+    ┌───────────────────┐
+    │       STEM        │
+    │                   │
+    │  Hollow tube      │
+    │  25mm top →       │
+    │  35mm bottom      │
+    │                   │
+    │  Front face:      │
+    │  ┌────┐           │
+    │  │btn1│  6mm      │ ← 3x button cutouts
+    │  └────┘           │   on front face
+    │  ┌────┐           │
+    │  │btn2│           │
+    │  └────┘           │
+    │  ┌────┐           │
+    │  │btn3│           │
+    │  └────┘           │
+    │                   │
+    │  FPC + wires      │
+    │  route through    │
+    │  hollow center    │
+    │                   │
+    │  Bottom: mates    │
+    │  with base        │
+    └───────────────────┘
+
+    PIECE 3: Base (houses PCB + weight)
+    ┌───────────────────────────────┐
+    │         WEIGHTED BASE        │
+    │         50mm diameter        │
+    │         8mm tall             │
+    │                              │
+    │  ╔════════════════════════╗  │
+    │  ║  PCB 110x65mm         ║  │ ← PCB curled/folded or
+    │  ║  ┌────────────┐       ║  │   custom circular PCB?
+    │  ║  │ ESP32-S3   │       ║  │
+    │  ║  │ 15.4x20.5  │       ║  │   Note: 110x65mm PCB
+    │  ║  └────────────┘       ║  │   exceeds 50mm base dia.
+    │  ║                       ║  │   See notes below.
+    │  ║  [USB-C]→ bottom      ║  │
+    │  ╚════════════════════════╝  │
+    │  ■ Steel weight plate ■     │
+    │                              │
+    └───────────────────────────────┘
+
+
+PCB ACCOMMODATION NOTE
+══════════════════════
+
+    The standard PCB (110x65mm) is larger than the 50mm base.
+    Two solutions:
+
+    Option A: PCB in cap (preferred)
+    ┌──────────────────────────────┐
+    │  Cap interior is 70mm wide   │
+    │  PCB mounts behind screen    │
+    │  in cap cavity               │
+    │  Screen FPC: short run       │
+    │  Button/USB wires: through   │
+    │  stem to base connector      │
+    │                              │
+    │     Cap cavity layout:       │
+    │     ╔═══════════════════╗    │
+    │     ║ PCB (fits in 70mm ║    │
+    │     ║ cap diameter)     ║    │
+    │     ║ ┌──────┐ ┌─────┐ ║    │
+    │     ║ │ESP32 │ │Spkr │ ║    │
+    │     ║ └──────┘ └─────┘ ║    │
+    │     ╚═══════════════════╝    │
+    └──────────────────────────────┘
+
+    Option B: Enlarged base
+    ┌──────────────────────────────┐
+    │  Base enlarged to 120x70mm   │
+    │  (oval/rounded rectangle)    │
+    │  to accommodate full PCB     │
+    │  Mushroom proportions shift  │
+    │  to wider base (still works) │
+    └──────────────────────────────┘
+
+    Recommendation: Option A — PCB in cap.
+    Base houses only USB-C breakout, weight, and connector.
+    Wires route through hollow stem.
+
+
+REVISED CROSS-SECTION (Option A: PCB in cap)
+═════════════════════════════════════════════
+
+                    ╭──────────────────╮
+                 ╱ 2mm wall              ╲
+               ╱                           ╲
+              │    ╔══════════════════╗     │
+              │    ║   PCB 110x65    ║     │  ← PCB mounted horizontally
+              │    ║  ┌──────┐       ║     │    in cap cavity
+              │    ║  │ESP32 │ ┌───┐ ║     │
+              │    ║  └──────┘ │SPK│ ║     │  ← Speaker on PCB
+              │    ╚═══════════╧═══╧═╝     │    in cap
+               ╲   ║ ║ ║ gill ║ ║ ║     ╱
+                ╲___╔══════════════╗__╱
+                    ║   Screen     ║       ← Screen on angled face
+                    ║   module     ║         FPC: short run to PCB above
+                    ║   120x75     ║
+                    ╚══════╤══════╝
+                    ┌──────┴──────┐
+                    │    Stem     │         ← Stem carries only
+                    │   ┊wire┊   │           button wires + USB
+                    │   ┊    ┊   │           extension cable
+                    │   ┊    ┊   │
+                  ┌─┴───┊────┊───┴─┐
+                  │  ╔══╧════╧══╗  │       ← Base: USB-C breakout
+                  │  ║ USB-C    ║  │         board + weight only
+                  │  ║ breakout ║  │         (small PCB or connector)
+                  │  ╚══════════╝  │
+                  │  ■■ weight ■■  │
+                  └────────────────┘
+
+
+MOUNTING DETAILS
+════════════════
+
+    Cap-to-stem joint:
+         ╲  cap wall  ╱
+          ╲__________╱
+          │  ╭────╮  │
+          │  │peg │  │ ← Alignment pegs (2x)
+          │  ╰──┬─╯  │   cap drops onto stem
+          ├─────┼────┤   with twist-lock or
+          │  ┌──┴──┐ │   friction fit
+          │  │stem │ │
+          │  │top  │ │
+          └──┴─────┴─┘
+
+    Twist-lock detail:
+    ┌─────────┐
+    │ Cap peg │──╮
+    │  (L)    │  │ ← L-shaped peg drops in,
+    └─────────┘  │   quarter turn locks
+    ┌────────────┘
+    │ Stem slot   │
+    │  (bayonet)  │
+    └─────────────┘
+
+    Screen to cap bracket:
+    ╔═══════════════════════╗
+    ║  Angled bracket (30d) ║
+    ║  ┌──┐          ┌──┐  ║
+    ║  │M2│          │M2│  ║ ← Screen module screwed
+    ║  └──┘          └──┘  ║   to angled bracket
+    ║  ┌──┐          ┌──┐  ║   inside cap
+    ║  │M2│          │M2│  ║
+    ║  └──┘          └──┘  ║
+    ╚═══════════════════════╝
+
+    PCB to cap:
+    ╔════════════════════════╗
+    ║  PCB screwed to cap    ║
+    ║  interior standoffs    ║
+    ║  ┌──┐          ┌──┐   ║
+    ║  │M2│          │M2│   ║ ← 4x M2 standoffs
+    ║  └──┘          └──┘   ║   molded into cap dome
+    ║  ┌──┐          ┌──┐   ║
+    ║  │M2│          │M2│   ║
+    ║  └──┘          └──┘   ║
+    ╚════════════════════════╝
+
+    Stem-to-base joint:
+    ┌──────────────┐
+    │  Stem bottom │
+    │  ┌────────┐  │
+    │  │ tenon  │  │ ← Stem inserts into base
+    │  │        │  │   with press-fit or screw
+    ├──┴────────┴──┤
+    │  ┌────────┐  │
+    │  │ mortise│  │ ← Base has matching socket
+    │  └────────┘  │
+    └──────────────┘
+
+    Button mounting (stem face):
+    ┌──────┐
+    │ Stem │
+    │ wall │
+    │      │
+    │ ┌──┐ │
+    │ │6 │ │ ← Tactile switches mounted to
+    │ │mm│ │   small vertical PCB or wire-
+    │ └──┘ │   connected to main PCB
+    │      │   inside stem wall
+    └──────┘
+    Wires route up through stem to cap PCB
+
+
+ASSEMBLY NOTES
+══════════════
+
+    1. Mount PCB to cap interior standoffs (4x M2)
+
+    2. Mount screen module to angled bracket inside cap (4x M2)
+
+    3. Connect screen FPC to PCB (short run inside cap)
+
+    4. Mount speaker to cap dome interior (adhesive or bracket)
+       Speaker fires down through gill slots
+
+    5. Route button wires and USB extension cable
+       through cap bottom hole into stem
+
+    6. Slide stem onto cap pegs, twist-lock into place
+
+    7. Connect button wires to tactile switches
+       mounted in stem front face cutouts
+
+    8. Route USB extension cable through stem to base
+
+    9. Press stem bottom into base mortise
+
+    10. Connect USB extension cable to USB-C breakout
+        in base (or direct USB-C port in base bottom)
+
+    Wire routing summary:
+    ╭──────────╮
+    │   CAP    │ ← PCB, screen FPC, speaker
+    │          │
+    ╰────┬─────╯
+         │       ← Button wires (x3) + USB cable
+    ┌────┴─────┐    through hollow stem
+    │   STEM   │
+    │  buttons │
+    └────┬─────┘
+         │
+    ┌────┴─────┐
+    │   BASE   │ ← USB-C breakout + weight
+    └──────────┘
+
+
+SPECIAL FEATURES
+════════════════
+
+    1. GILL SPEAKER GRILLE
+       - Speaker hidden in hollow cap dome
+       - Sound exits through radial gill slots on cap underside
+       - Gill pattern is both decorative (mushroom-accurate)
+         and functional (speaker ventilation)
+       - Omnidirectional sound dispersion
+
+    2. POLKA-DOT CAP DECORATION
+       - Classic Amanita muscaria (fly agaric) toadstool look
+       - White spots on red cap (or customizable colors)
+       - Spots can be: painted, applied decals, or separate
+         inset pieces (white dots pressed into red dome)
+       - Cheerful, instantly recognizable silhouette
+
+    3. TWO-PIECE DISASSEMBLY
+       - Cap lifts off stem (twist-lock bayonet mount)
+       - Access to PCB, screen, speaker for maintenance
+       - Satisfying twist-click assembly action
+       - Could swap cap colors/styles (future accessories)
+
+    4. ANGLED SCREEN VIEWING
+       - Screen on cap underside at ~30 degrees from vertical
+       - Natural upward-facing angle for desk sitting position
+       - Partially sheltered by cap overhang (glare reduction)
+       - Unique viewing geometry — look slightly under the cap
+
+    5. VERTICAL BUTTON COLUMN
+       - 3 buttons stacked vertically on stem front face
+       - Natural thumb reach when holding stem
+       - Buttons follow the organic stem taper
+       - Sized 6mm with 8mm spacing between centers
+
+    6. ORGANIC FORM
+       - No straight lines — everything is curved/tapered
+       - Stem tapers: 25mm top to 35mm base (natural mushroom)
+       - Cap dome is smooth hemisphere with slight overhang
+       - Weighted flat base prevents tipping
+       - Desk toy you want to pick up and fidget with
+
+    7. USB-C THROUGH BASE
+       - Cable enters from base bottom
+       - Routes up through stem to cap PCB
+       - Cable exits downward — clean desk appearance
+       - Base sits flat, cable hidden underneath

@@ -1,0 +1,1376 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-19T17:04:52",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C101",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 74.5
+                    },
+                    "uuid": "75bf3a41-d3a1-46fc-9e29-8cc62b89d0e4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C102",
+                    "pos": {
+                        "x": 142.25,
+                        "y": 75.0
+                    },
+                    "uuid": "8976b57a-8fc0-4dca-95a8-3ef2c147f30d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C103",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 73.75
+                    },
+                    "uuid": "279483d0-3aff-4aae-a177-d4caffff6afd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 H101",
+                    "pos": {
+                        "x": 163.5,
+                        "y": 99.5
+                    },
+                    "uuid": "7e627772-5e4b-4139-b599-bce566ff2e74"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R101",
+                    "pos": {
+                        "x": 162.75,
+                        "y": 77.0
+                    },
+                    "uuid": "2af2b1e8-aeba-4daa-8d4f-1a79ae740927"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW101",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 95.875
+                    },
+                    "uuid": "4ab53563-db0e-4a09-9b82-a59abc613d14"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP101",
+                    "pos": {
+                        "x": 127.0,
+                        "y": 72.75
+                    },
+                    "uuid": "e6a743d0-49b1-4c6d-ad5d-d8f59cf24533"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP102",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 86.0
+                    },
+                    "uuid": "2e32a85c-b27c-4070-9c40-c4173dd1b75a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP103",
+                    "pos": {
+                        "x": 163.25,
+                        "y": 80.75
+                    },
+                    "uuid": "080c76cc-503f-4125-9915-a11ad3b810d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP104",
+                    "pos": {
+                        "x": 125.5,
+                        "y": 101.5
+                    },
+                    "uuid": "c300d104-705a-40fd-81ac-6474e382b9e8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP105",
+                    "pos": {
+                        "x": 153.5,
+                        "y": 73.75
+                    },
+                    "uuid": "d94f4013-0c91-432d-bede-bae4b47f6e82"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C201",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 111.75
+                    },
+                    "uuid": "f296f27e-fbbe-4e2c-ac74-6d9f60003ca5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C202",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 115.75
+                    },
+                    "uuid": "e2d221dd-b0ab-47b3-8886-dbc79ad3e6ed"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C203",
+                    "pos": {
+                        "x": 163.0,
+                        "y": 112.5
+                    },
+                    "uuid": "3204d8f0-ee3f-4ab4-9bad-c502313ebeb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C204",
+                    "pos": {
+                        "x": 152.0,
+                        "y": 95.0
+                    },
+                    "uuid": "32175682-8aa1-4b9d-bf1e-3eb834c9481b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C205",
+                    "pos": {
+                        "x": 160.25,
+                        "y": 95.0
+                    },
+                    "uuid": "f5a924db-901f-4082-b3e0-9874b403880e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 J202",
+                    "pos": {
+                        "x": 162.25,
+                        "y": 108.0
+                    },
+                    "uuid": "9ab6f2b6-0bb0-4296-bea3-82e75875c1ab"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R201",
+                    "pos": {
+                        "x": 164.0,
+                        "y": 116.5
+                    },
+                    "uuid": "9508f652-e7ab-4070-adc3-9def5abf3061"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R202",
+                    "pos": {
+                        "x": 159.75,
+                        "y": 116.5
+                    },
+                    "uuid": "e4faf654-8a9c-4897-8319-f749c956d6fc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R203",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 108.5
+                    },
+                    "uuid": "f1df81b0-3775-4588-80bd-dde82923c9d1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R204",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 108.5
+                    },
+                    "uuid": "a5524c74-17db-48fc-8f47-e89b3e80a83e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R205",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 116.25
+                    },
+                    "uuid": "12dc1d1c-4271-4d33-8eae-b8c2ab7d2baa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R206",
+                    "pos": {
+                        "x": 125.25,
+                        "y": 112.5
+                    },
+                    "uuid": "f762bb60-bee8-4045-be98-b64fa50f38cc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R207",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 88.0
+                    },
+                    "uuid": "02bd01ff-c51e-4b87-b8c6-f64e6be9c490"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R208",
+                    "pos": {
+                        "x": 141.75,
+                        "y": 88.0
+                    },
+                    "uuid": "a6521919-7085-4df4-8ef7-88c83a19f3be"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP201",
+                    "pos": {
+                        "x": 148.5,
+                        "y": 108.5
+                    },
+                    "uuid": "c02cebc1-98a1-4610-8a6b-88d3514d83c4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP202",
+                    "pos": {
+                        "x": 156.0,
+                        "y": 118.25
+                    },
+                    "uuid": "c2ab7ced-a3a3-4ad2-b7be-4e87f4736c1a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP203",
+                    "pos": {
+                        "x": 144.25,
+                        "y": 108.5
+                    },
+                    "uuid": "05e043c1-041f-4086-9bb0-d398e64cecb4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP204",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 102.0
+                    },
+                    "uuid": "68409188-fc7c-420a-8ef9-55ef4d0760d6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP205",
+                    "pos": {
+                        "x": 155.0,
+                        "y": 90.25
+                    },
+                    "uuid": "a7246254-b799-4789-82e3-7cba8fe3b54e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP206",
+                    "pos": {
+                        "x": 161.5,
+                        "y": 90.25
+                    },
+                    "uuid": "c7a6232e-cee4-4764-a8b7-5128cd2ce5cf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP207",
+                    "pos": {
+                        "x": 159.25,
+                        "y": 114.75
+                    },
+                    "uuid": "6ed28886-cd26-4dd0-8884-856ebb5e4a17"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP208",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 84.75
+                    },
+                    "uuid": "abf66e9c-162a-4075-84bc-e6b36ddb8c3d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C301",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 74.25
+                    },
+                    "uuid": "cda5d31e-ad8a-4df7-b9ad-9904d2764b29"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C302",
+                    "pos": {
+                        "x": 134.0,
+                        "y": 74.25
+                    },
+                    "uuid": "e141a459-e798-42f5-ad73-cf75c49044e0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R301",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 84.75
+                    },
+                    "uuid": "158a5e03-4ebd-44c2-84e8-218cbd57e3ee"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R302",
+                    "pos": {
+                        "x": 132.75,
+                        "y": 87.75
+                    },
+                    "uuid": "7022b98a-8500-4b72-b15c-6bc4109d84e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 J401",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 96.0
+                    },
+                    "uuid": "f7fb94be-4d88-4644-996f-24341398e8aa"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R401",
+                    "pos": {
+                        "x": 125.374992,
+                        "y": 104.783782
+                    },
+                    "uuid": "22edb0cc-7b09-445e-a69f-b537c43b7731"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R402",
+                    "pos": {
+                        "x": 138.990764,
+                        "y": 93.13707
+                    },
+                    "uuid": "c8687c25-040f-495f-b8ea-c5b9051b1fae"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 105.5
+                    },
+                    "uuid": "0726ed6a-7f8a-4b61-bf85-e63d964c5dd8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C502",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 105.5
+                    },
+                    "uuid": "0feafaee-6584-4eae-9ab5-ad286d215939"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 C504",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 99.5
+                    },
+                    "uuid": "76ef882c-2514-4870-b22f-ad5ae439b94e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R501",
+                    "pos": {
+                        "x": 138.5,
+                        "y": 102.5
+                    },
+                    "uuid": "594cd2d8-2aa4-4dd9-823a-2d354c4dd943"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R502",
+                    "pos": {
+                        "x": 152.5,
+                        "y": 102.5
+                    },
+                    "uuid": "42b9b8bb-5154-4650-86fa-8840a487deab"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 R504",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 96.5
+                    },
+                    "uuid": "f43aada3-0a6f-40e7-af82-073b3153a92c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW501",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 105.4
+                    },
+                    "uuid": "51331a37-695a-44fd-9924-0774c770ccad"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW502",
+                    "pos": {
+                        "x": 159.0,
+                        "y": 105.4
+                    },
+                    "uuid": "a26d3145-b10b-4712-8411-8f95315aa408"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 SW504",
+                    "pos": {
+                        "x": 131.0,
+                        "y": 105.4
+                    },
+                    "uuid": "033e9ea7-c8f5-423a-8293-6a651ef84ea0"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP501",
+                    "pos": {
+                        "x": 137.25,
+                        "y": 98.0
+                    },
+                    "uuid": "07f502ec-710e-4785-abed-f0204d9b17b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP502",
+                    "pos": {
+                        "x": 155.75,
+                        "y": 100.5
+                    },
+                    "uuid": "a173ae36-c423-4b51-bfb5-e71a9e32654c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "字段 'Datasheet' 不一致: (PCB: '~', 原理图: '')",
+            "items": [
+                {
+                    "description": "封装 TP504",
+                    "pos": {
+                        "x": 129.25,
+                        "y": 99.75
+                    },
+                    "uuid": "3f9bdbfb-90d6-46bd-86e1-83b2915db06e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "devotchi.kicad_pcb",
+    "unconnected_items": [],
+    "violations": [
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "走线 [Net-(U201-CS)] (F.Cu), 长度: 2.0875 mm",
+                    "pos": {
+                        "x": 156.75,
+                        "y": 116.5
+                    },
+                    "uuid": "40522d2b-e7cc-4716-8add-1a510b9aed6e"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [Net-(U201-CS)] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 156.75,
+                        "y": 116.5
+                    },
+                    "uuid": "429e064b-6407-41c7-a162-36fb6574423b"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "孔间距违规 (<电路板配置> 中的 \"孔\" 约束 间距 0.2500 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "过孔 [Net-(U201-CS)] (F.Cu - B.Cu)",
+                    "pos": {
+                        "x": 156.75,
+                        "y": 116.5
+                    },
+                    "uuid": "429e064b-6407-41c7-a162-36fb6574423b"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "hole_clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "F.Cu 上 R202 的焊盘 1 [Net-(U201-CS)]",
+                    "pos": {
+                        "x": 158.8375,
+                        "y": 116.5
+                    },
+                    "uuid": "cf466677-5aae-4fdf-89c7-4766ede5b573"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 J202 的焊盘 MP [<no net>]",
+                    "pos": {
+                        "x": 165.15,
+                        "y": 104.65
+                    },
+                    "uuid": "7b8046ae-e136-4a65-9fcf-1fafd3f1c004"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "B.Cu 上 J202 的焊盘 MP [<no net>]",
+                    "pos": {
+                        "x": 165.15,
+                        "y": 111.35
+                    },
+                    "uuid": "d4532404-9c31-42bd-8c82-cb6bbff8f3c8"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "泪滴 [Net-(U201-CS)] 在 F.Cu 上",
+                    "pos": {
+                        "x": 157.542314,
+                        "y": 116.625
+                    },
+                    "uuid": "02cc2b60-83cb-06d1-2bbf-2caa6eeeaf55"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "间距违规 (填充区 间距 0.5000 mm; 实际 0.0000 mm)",
+            "items": [
+                {
+                    "description": "泪滴 [Net-(U201-CS)] 在 F.Cu 上",
+                    "pos": {
+                        "x": 157.875,
+                        "y": 116.625
+                    },
+                    "uuid": "8f144b5c-bd62-08c9-031a-5d37e67f581d"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "clearance"
+        },
+        {
+            "description": "顶层阻焊开窗区域与不同网络的项目相连",
+            "items": [
+                {
+                    "description": "F.Cu 上 R202 的焊盘 1 [Net-(U201-CS)]",
+                    "pos": {
+                        "x": 158.8375,
+                        "y": 116.5
+                    },
+                    "uuid": "cf466677-5aae-4fdf-89c7-4766ede5b573"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "底层阻焊开窗区域与不同网络的项目相连",
+            "items": [
+                {
+                    "description": "B.Cu 上 J202 的焊盘 MP [<no net>]",
+                    "pos": {
+                        "x": 165.15,
+                        "y": 104.65
+                    },
+                    "uuid": "7b8046ae-e136-4a65-9fcf-1fafd3f1c004"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "底层阻焊开窗区域与不同网络的项目相连",
+            "items": [
+                {
+                    "description": "B.Cu 上 J202 的焊盘 MP [<no net>]",
+                    "pos": {
+                        "x": 165.15,
+                        "y": 111.35
+                    },
+                    "uuid": "d4532404-9c31-42bd-8c82-cb6bbff8f3c8"
+                },
+                {
+                    "description": "填充区 'TOP_GND' [GND]在 F.Cu, B.Cu 和 2 个更多上, 优先级 0",
+                    "pos": {
+                        "x": 167.5,
+                        "y": 120.0
+                    },
+                    "uuid": "0913fcbf-ff84-4619-b11e-cb3f7fa07b29"
+                }
+            ],
+            "severity": "error",
+            "type": "solder_mask_bridge"
+        },
+        {
+            "description": "当前配置中不包含封装库 'libs'",
+            "items": [
+                {
+                    "description": "封装 G***",
+                    "pos": {
+                        "x": 135.95,
+                        "y": 78.1
+                    },
+                    "uuid": "1c7da618-50ca-4db2-acb5-ac4f8cebfeb8"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 D401",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 95.0
+                    },
+                    "uuid": "29ebe8d5-f699-4e42-baac-6f58164fea56"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 U301",
+                    "pos": {
+                        "x": 18.145,
+                        "y": 70.125
+                    },
+                    "uuid": "7142f37d-f7e2-420e-a14a-1233353d84f6"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "封装 'USB_C_Receptacle_HRO_TYPE-C-31-M-12' 与库 'Connector_USB' 中的副本不匹配",
+            "items": [
+                {
+                    "description": "封装 J201",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 117.0
+                    },
+                    "uuid": "75423596-25f9-48ee-999c-3c4eac0a0058"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_mismatch"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 D402",
+                    "pos": {
+                        "x": 125.374992,
+                        "y": 108.783782
+                    },
+                    "uuid": "af33cb98-eadd-4cb9-b050-0250ea2eb59d"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 Q301",
+                    "pos": {
+                        "x": 133.0,
+                        "y": 90.5
+                    },
+                    "uuid": "bf585ddb-3a99-437c-ab98-1b6a403802f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 Q201",
+                    "pos": {
+                        "x": 154.0,
+                        "y": 113.45
+                    },
+                    "uuid": "dda2a16e-d692-4b61-bd83-6f03193a436c"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 Q401",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 90.5
+                    },
+                    "uuid": "ecd1d4c1-cff4-4031-88bb-10d55985a717"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'easyeda'",
+            "items": [
+                {
+                    "description": "封装 FPC301",
+                    "pos": {
+                        "x": 127.5,
+                        "y": 81.1
+                    },
+                    "uuid": "f6fac0ca-9fb9-4acf-ab69-b6034fe79124"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "当前配置中不包含封装库 'libs'",
+            "items": [
+                {
+                    "description": "封装 G***",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 95.0
+                    },
+                    "uuid": "3594e529-75b9-4e9a-a81d-3311aa89cfa4"
+                }
+            ],
+            "severity": "warning",
+            "type": "lib_footprint_issues"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "D401 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 126.12,
+                        "y": 94.07
+                    },
+                    "uuid": "8c94c44d-4422-4773-be7b-21dfa2765a66"
+                },
+                {
+                    "description": "F.Cu 上 D401 的焊盘 2 [Net-(D401-A)]",
+                    "pos": {
+                        "x": 125.86,
+                        "y": 95.0
+                    },
+                    "uuid": "306bd5e1-14eb-4ef2-aaf7-1649dcaea14b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "items": [
+                {
+                    "description": "D401 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 126.12,
+                        "y": 95.93
+                    },
+                    "uuid": "0b0593ee-4317-4e4e-ad30-615659a731cc"
+                },
+                {
+                    "description": "F.Cu 上 D401 的焊盘 2 [Net-(D401-A)]",
+                    "pos": {
+                        "x": 125.86,
+                        "y": 95.0
+                    },
+                    "uuid": "306bd5e1-14eb-4ef2-aaf7-1649dcaea14b"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_over_copper"
+        },
+        {
+            "comment": "",
+            "description": "Silkscreen clipped by board edge",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 70.0
+                    },
+                    "uuid": "316ce509-c19a-4876-a40e-6b76ce5df3b2"
+                },
+                {
+                    "description": "U101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 143.85,
+                        "y": 86.15
+                    },
+                    "uuid": "c9f0165a-40fa-489c-a503-be4105f7a5f3"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "comment": "",
+            "description": "Silkscreen clipped by board edge",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 124.5,
+                        "y": 70.0
+                    },
+                    "uuid": "316ce509-c19a-4876-a40e-6b76ce5df3b2"
+                },
+                {
+                    "description": "U101 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 159.45,
+                        "y": 65.45
+                    },
+                    "uuid": "b05a64df-211b-4fdc-9d32-5106aaecd584"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "comment": "",
+            "description": "Silkscreen clipped by board edge",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 120.0
+                    },
+                    "uuid": "7b23af98-34e5-4cb1-8117-ae99e73a546e"
+                },
+                {
+                    "description": "J201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 140.3,
+                        "y": 119.0
+                    },
+                    "uuid": "57e77bf5-4fa5-4f4c-925d-40ab60fa1340"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        },
+        {
+            "comment": "",
+            "description": "Silkscreen clipped by board edge",
+            "excluded": true,
+            "items": [
+                {
+                    "description": "Edge.Cuts 上的 线段",
+                    "pos": {
+                        "x": 165.5,
+                        "y": 120.0
+                    },
+                    "uuid": "7b23af98-34e5-4cb1-8117-ae99e73a546e"
+                },
+                {
+                    "description": "J201 的 线段, 位于 F.Silkscreen",
+                    "pos": {
+                        "x": 149.7,
+                        "y": 119.0
+                    },
+                    "uuid": "77477d11-e431-48ef-86bb-28d34a8998be"
+                }
+            ],
+            "severity": "warning",
+            "type": "silk_edge_clearance"
+        }
+    ]
+}

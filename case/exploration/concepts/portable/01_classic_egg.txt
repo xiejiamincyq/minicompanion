@@ -1,0 +1,210 @@
+DESIGN 1: CLASSIC EGG
+=====================
+Original Tamagotchi-inspired egg/oval shape. Portrait orientation.
+Rounded top, flatter bottom. Screen in upper half, buttons below.
+Think "1996 Bandai Tamagotchi" scaled up for a real TFT display.
+
+Overall: 70mm tall x 55mm wide x 15.1mm deep
+Weight target: ~45g with battery
+Orientation: Portrait
+Shell: 2-piece (front + back), snap-fit tabs
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+              ○  ← 3mm lanyard hole
+          ╭───────────╮
+        ╭─┘           └─╮
+       │   ○ LED         │ ← 2mm LED hole
+       │ ┌─────────────┐ │
+       │ │             │ │
+       │ │  TFT LCD    │ │
+       │ │  SCREEN     │ │ ← 51.8 x 36.2mm module
+       │ │ (40.8x30.6) │ │   (rotated portrait)
+       │ │             │ │
+       │ └─────────────┘ │
+       │                  │
+       │  (●)  (●)  (●)  │ ← 3x main buttons (12x6mm caps)
+       │                  │   14mm spacing center-to-center
+       │                  │
+        ╲      (·)      ╱  ← Wake button (10x4.5mm), bottom
+         ╲  ┌──USB──┐  ╱
+          ╰─┤ ○  ○  ├─╯   ← USB-C cutout (9.34x3.66mm)
+             └──────┘
+        ├── 55mm ──┤
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+        15.1mm
+       ├────────┤
+       ╭────────╮ ─┬─
+      ╱   ╲      │  │
+     │ scr  │     │  │
+     │ een  │     │  │
+     │      │     │  │  70mm
+     │ pcb  │     │  │
+     │      │     │  │
+     │ batt │     │  │
+      ╲    ╱      │  │
+       ╰──┤USB├──╯ ─┴─
+       ↑          ↑
+      Front     Back
+
+    Note: Sides curve inward — cross-section
+    is an ellipse, thickest at center (15.1mm),
+    tapering to ~12mm at top/bottom edges.
+
+
+BACK VIEW
+─────────
+
+          ╭───────────╮
+        ╭─┘           └─╮
+       │                  │
+       │                  │
+       │  ┌────────────┐  │
+       │  │            │  │ ← Battery access panel
+       │  │  BATTERY   │  │   (optional snap-off door)
+       │  │  AREA      │  │
+       │  └────────────┘  │
+       │                  │
+       │    ▪▪▪▪▪▪▪▪▪▪    │ ← Vibration motor zone
+       │                  │     (6mm coin motor)
+        ╲              ╱
+         ╲  ┌──USB──┐ ╱
+          ╰─┤      ├─╯
+             └──────┘
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │  15.1mm total
+      │  │   (FPC routing)     │ │  │
+      │  ├── PCB ──────────────┤ │  │
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      │  │   30 x 35mm LiPo   │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+      Front face               Back face
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (egg-shaped, 1.5mm wall)
+    ├── Screen window cutout (41.8 x 31.6mm, portrait)
+    ├── 3x main button holes (12.5 x 6.5mm rectangular)
+    ├── 1x wake button hole (10.5 x 5.0mm)
+    ├── 1x LED hole (2mm dia, above screen)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── 4x snap-fit tab sockets (around perimeter)
+    └── 1x lanyard hole boss (3mm ID, reinforced)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait (long axis vertical)
+    ├── Seated in pocket with 0.2mm clearance per side
+    ├── FPC cable exits bottom edge of module
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routes down to PCB connector
+    └── Button plungers pass through (front shell → PCB switches)
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 4x tactile switches face front
+    ├── USB-C connector on bottom edge (centered)
+    ├── Display FPC connector on top edge
+    ├── Vibration motor pads near bottom
+    └── Mounted on 4x posts from back shell (press-fit)
+
+    Layer 5 — 0.5mm GAP
+    └── Clearance for ESP32 module height (2.4mm fits
+        within combined gap + battery clearance)
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in lower portion of egg
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in back shell
+
+    Layer 7 — BACK SHELL (egg-shaped, 1.5mm wall)
+    ├── 4x PCB mounting posts (3mm OD, press-fit to PCB holes)
+    ├── Battery cradle ribs (2x, 1mm tall)
+    ├── 4x snap-fit tabs (mate with front shell sockets)
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Optional: battery door (snap-off panel, 32 x 37mm)
+
+
+BUTTON LAYOUT DETAIL (front face, below screen)
+────────────────────────────────────────────────
+
+    │                              │
+    │   ┌────┐  ┌────┐  ┌────┐   │
+    │   │ 12 │  │ 12 │  │ 12 │   │ ← 12mm x 6mm button caps
+    │   │x 6 │  │x 6 │  │x 6 │   │
+    │   └────┘  └────┘  └────┘   │
+    │   REJECT  ACTION  APPROVE   │
+    │   ├14mm─┤  ├14mm─┤          │ ← 14mm center spacing
+    │                              │
+    │          ┌──────┐            │
+    │          │10x4.5│            │ ← Wake button
+    │          └──────┘            │
+
+
+LANYARD HOLE DETAIL
+───────────────────
+
+          ┌─ 3mm hole ─┐
+          │    ○        │
+        ╭─┘    │       └─╮
+       │       │          │  ← Reinforced boss (5mm OD)
+                                extends 2mm into shell
+
+
+SNAP-FIT TAB DETAIL (4 locations around perimeter)
+──────────────────────────────────────────────────
+
+    Front shell          Back shell
+    ┌────────┐          ┌────────┐
+    │        │          │   ╱╲   │
+    │  ┌─┐  │          │  │  │  │ ← Tab: 3mm wide, 1.5mm deep
+    │  │█│◄─── socket   │  │██│  │    0.3mm interference fit
+    │  └─┘  │          │  │  │  │
+    │        │          │   ╲╱   │
+    └────────┘          └────────┘
+
+    Tab locations: top-left, top-right, bottom-left, bottom-right
+    Additional alignment: 2x registration pins (1.5mm dia) on seam
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece egg (front + back), 4x snap-fit tabs, no screws
+- Seam runs around the egg perimeter at the widest point (mid-depth)
+- Display press-fits into front shell pocket, held by 4x retention clips
+- PCB press-fits onto 4x posts in back shell
+- Battery sits in cradle ribs, JST pigtail connects to PCB
+- USB-C cutout aligned at bottom center of both shell halves
+- Vibration motor adhered to inside of back shell with foam tape
+- Lanyard hole at top center, 3mm ID, reinforced boss
+- Egg profile: elliptical cross-section, max 15.1mm at center,
+  tapering to ~12mm at top/bottom extremes
+- Portrait orientation: display rotated 90deg from landscape default

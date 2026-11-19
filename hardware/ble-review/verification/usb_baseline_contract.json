@@ -1,0 +1,916 @@
+{
+  "source": "BLE-A0 integrated_review.xml from preserved 20261113 baseline",
+  "source_sha256": "8f8183e4514e381346205b720825b938d90848762e39de281abfb180ce466bec",
+  "components": {
+    "C101": {
+      "value": "22µ",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C102": {
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C103": {
+      "value": "1µ",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "H101": {
+      "value": "MountingHole_Pad",
+      "footprint": "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "R101": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "SW101": {
+      "value": "reset_btn",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP101": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP102": {
+      "value": "Tx",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP103": {
+      "value": "Rx",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP105": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP106": {
+      "value": "BOOT_GPIO0",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP107": {
+      "value": "RECOVERY_EN",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP108": {
+      "value": "RECOVERY_GND",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "U101": {
+      "value": "ESP32-S3-MINI-1-N4R2",
+      "footprint": "MiniCompanionReviewed:ESP32-S3-MINI-1",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C1101": {
+      "value": "100nF 50V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C1102": {
+      "value": "100nF 50V X7R",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "R640": {
+      "value": "47k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF4702T5E",
+      "lcsc": "C25819"
+    },
+    "R1101": {
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R1102": {
+      "value": "100k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R1103": {
+      "value": "22k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF2202T5E",
+      "lcsc": "C31850"
+    },
+    "R1104": {
+      "value": "47k",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF4702T5E",
+      "lcsc": "C25819"
+    },
+    "U1101": {
+      "value": "TMUX1511RSVR",
+      "footprint": "IsolationCandidates:TI_RSV0016A_UQFN16_1.8x2.6mm_P0.4mm_Vendor",
+      "mpn": "TMUX1511RSVR",
+      "lcsc": "C2673275"
+    },
+    "C301": {
+      "value": "1µ",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C302": {
+      "value": "1µ",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "FPC301": {
+      "value": "AFC01-S12FCA-00",
+      "footprint": "easyeda:FPC-SMD_AFC01-S12FCA-00",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "J201": {
+      "value": "USB_C_Receptacle_USB2.0_16P",
+      "footprint": "PreservedUSB:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP1202": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP1203": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C501": {
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C502": {
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C504": {
+      "value": "100n",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "R501": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "R502": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "R504": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "SW501": {
+      "value": "BTN_ACTION",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "SW502": {
+      "value": "BTN_APPROVE",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "SW504": {
+      "value": "BTN_REJECT",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP501": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP502": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "TP504": {
+      "value": "TestPoint",
+      "footprint": "TestPoint:TestPoint_Pad_D1.0mm",
+      "mpn": "",
+      "lcsc": ""
+    },
+    "C7102": {
+      "value": "1uF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B105KBFNNNE",
+      "lcsc": "C28323"
+    },
+    "C7103": {
+      "value": "2.2uF 10V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KPFNNNE",
+      "lcsc": "C107366"
+    },
+    "C7105": {
+      "value": "100nF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C7106": {
+      "value": "100nF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C7108": {
+      "value": "2.2uF 10V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KPFNNNE",
+      "lcsc": "C107366"
+    },
+    "R7104": {
+      "value": "900k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-07900KL",
+      "lcsc": ""
+    },
+    "R7110": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R7115": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": ""
+    },
+    "U7102": {
+      "value": "HUSB320-BA000-QN12R",
+      "footprint": "BLE_Candidate:HUSB320_BA000_Derived_RWB",
+      "mpn": "HUSB320-BA000-QN12R",
+      "lcsc": "C7471906"
+    },
+    "U7103": {
+      "value": "TPS70933DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "mpn": "TPS70933DBVR",
+      "lcsc": "C89347"
+    },
+    "U7104": {
+      "value": "TPS3808G33DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "TPS3808G33DBVR",
+      "lcsc": "C43698"
+    },
+    "C7101": {
+      "value": "2.2uF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KBYNNNE",
+      "lcsc": "C2762602"
+    },
+    "C7104": {
+      "value": "2.2uF 10V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KPFNNNE",
+      "lcsc": "C107366"
+    },
+    "C7107": {
+      "value": "100nF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "J610": {
+      "value": "PROTECTED PACK P+ P-",
+      "footprint": "BLE_Candidate:WirePads_2_P2.54",
+      "mpn": "SOLDER_PADS_2WIRE",
+      "lcsc": ""
+    },
+    "J7101": {
+      "value": "Battery temperature probe pads",
+      "footprint": "BLE_Candidate:WirePads_2_P2.54",
+      "mpn": "SOLDER_PADS_2WIRE",
+      "lcsc": ""
+    },
+    "Q7101": {
+      "value": "PNP inverter",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "MMBT3906-7-F",
+      "lcsc": "C82762"
+    },
+    "Q7102": {
+      "value": "ISET fast-current switch",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "AO3400A",
+      "lcsc": "C20917"
+    },
+    "R7101": {
+      "value": "36k 1% <=200ppm/K",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0736KL",
+      "lcsc": ""
+    },
+    "R7102": {
+      "value": "3.90k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-073K9L",
+      "lcsc": ""
+    },
+    "R7103": {
+      "value": "1.10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-071K1L",
+      "lcsc": ""
+    },
+    "R7105": {
+      "value": "33k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0733KL",
+      "lcsc": ""
+    },
+    "R7106": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R7107": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R7108": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": ""
+    },
+    "R7109": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "TH7101": {
+      "value": "4.7k NTC",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "ERTJ0ET472H",
+      "lcsc": "C542173"
+    },
+    "TH7102": {
+      "value": "4.7k NTC",
+      "footprint": "Resistor_SMD:R_0402_1005Metric",
+      "mpn": "ERTJ0ET472H",
+      "lcsc": "C542173"
+    },
+    "U7101": {
+      "value": "BQ25170DSGR",
+      "footprint": "Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm",
+      "mpn": "BQ25170DSGR",
+      "lcsc": "C5208201"
+    },
+    "J7201": {
+      "value": "POWER SWITCH HARNESS",
+      "footprint": "BLE_Candidate:WirePads_3_P2.54",
+      "mpn": "SOLDER_PADS_3WIRE",
+      "lcsc": ""
+    },
+    "Q7103": {
+      "value": "Raw VBUS run inhibit",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "MMBT3904-7-F",
+      "lcsc": ""
+    },
+    "R7111": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": ""
+    },
+    "R7112": {
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803"
+    },
+    "R7113": {
+      "value": "4.7k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-074K7L",
+      "lcsc": ""
+    },
+    "R7114": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": ""
+    },
+    "SW7201": {
+      "value": "SS-12D01-G040",
+      "footprint": null,
+      "mpn": "SS-12D01-G040",
+      "lcsc": "C2876014"
+    },
+    "C604": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "C606": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "C607": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "C637": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "C638": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "C639": {
+      "value": "100nF 50V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663"
+    },
+    "C640": {
+      "value": "22uF 25V X5R 20%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21A226MAQNNNE",
+      "lcsc": "C45783"
+    },
+    "L601": {
+      "value": "1.5uH 20%, DCR<=42mOhm, Isat7A at20%drop / 25C, Irms4.5A",
+      "footprint": "BLE_Candidate:Bourns_SRP4020TA",
+      "mpn": "SRP4020TA-1R5M",
+      "lcsc": "C3233727"
+    },
+    "R603": {
+      "value": "953k 0.1% 25ppm/C",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD07953KL",
+      "lcsc": ""
+    },
+    "R607": {
+      "value": "180k 0.1% 25ppm/C",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD07180KL",
+      "lcsc": ""
+    },
+    "R608": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": "C98220"
+    },
+    "U603": {
+      "value": "TPS63020DSJR",
+      "footprint": "BLE_Candidate:TI_DSJ0014A_TPS63020",
+      "mpn": "TPS63020DSJR",
+      "lcsc": "C15483"
+    },
+    "C617": {
+      "value": "2.2uF 10V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KPFNNNE",
+      "lcsc": "C107366"
+    },
+    "C618": {
+      "value": "470nF 25V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CL10B474KA8NNNC",
+      "lcsc": "C1623"
+    },
+    "C619": {
+      "value": "470nF 25V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CL10B474KA8NNNC",
+      "lcsc": "C1623"
+    },
+    "C620": {
+      "value": "2.2uF 10V X7R 10%",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "mpn": "CL21B225KPFNNNE",
+      "lcsc": "C107366"
+    },
+    "R628": {
+      "value": "8.06k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-078K06L",
+      "lcsc": "C131052"
+    },
+    "R629": {
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RC0603FR-0710KL",
+      "lcsc": "C98220"
+    },
+    "U609": {
+      "value": "TPS60231RGTR",
+      "footprint": "Package_DFN_QFN:VQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm",
+      "mpn": "TPS60231RGTR",
+      "lcsc": "C544659"
+    }
+  },
+  "pins": {
+    "R1103.2": "/isolation/BAT_ADC_SWITCH_IN",
+    "U1101.2": "/isolation/BAT_ADC_SWITCH_IN",
+    "C1101.1": "/isolation/BAT_DIV_FILTER",
+    "R1101.2": "/isolation/BAT_DIV_FILTER",
+    "R1102.1": "/isolation/BAT_DIV_FILTER",
+    "R1103.1": "/isolation/BAT_DIV_FILTER",
+    "TP106.1": "/mcu/BOOT",
+    "U101.4": "/mcu/BOOT",
+    "C103.1": "/mcu/MCU_EN",
+    "R101.2": "/mcu/MCU_EN",
+    "SW101.2": "/mcu/MCU_EN",
+    "TP107.1": "/mcu/MCU_EN",
+    "U101.45": "/mcu/MCU_EN",
+    "TP103.1": "/mcu/Mcu_Rx",
+    "U101.40": "/mcu/Mcu_Rx",
+    "TP102.1": "/mcu/Mcu_Tx",
+    "U101.39": "/mcu/Mcu_Tx",
+    "R1104.1": "BAT_ADC",
+    "U101.6": "BAT_ADC",
+    "U1101.3": "BAT_ADC",
+    "C618.2": "BL_C1M",
+    "U609.11": "BL_C1M",
+    "C618.1": "BL_C1P",
+    "U609.10": "BL_C1P",
+    "C619.2": "BL_C2M",
+    "U609.12": "BL_C2M",
+    "C619.1": "BL_C2P",
+    "U609.9": "BL_C2P",
+    "R640.1": "BL_EN",
+    "U1101.6": "BL_EN",
+    "U609.15": "BL_EN",
+    "U609.16": "BL_EN",
+    "R628.1": "BL_ISET",
+    "U609.1": "BL_ISET",
+    "C501.1": "BTN_ACTION",
+    "R501.2": "BTN_ACTION",
+    "SW501.2": "BTN_ACTION",
+    "TP501.1": "BTN_ACTION",
+    "U101.21": "BTN_ACTION",
+    "C502.1": "BTN_APPROVE",
+    "R502.2": "BTN_APPROVE",
+    "SW502.2": "BTN_APPROVE",
+    "TP502.1": "BTN_APPROVE",
+    "U101.5": "BTN_APPROVE",
+    "C504.1": "BTN_REJECT",
+    "R504.2": "BTN_REJECT",
+    "SW504.2": "BTN_REJECT",
+    "TP504.1": "BTN_REJECT",
+    "U101.9": "BTN_REJECT",
+    "R7105.1": "CC_FAST_N",
+    "R7107.1": "CC_FAST_N",
+    "U7102.7": "CC_FAST_N",
+    "R7104.1": "CC_PORT",
+    "U7102.3": "CC_PORT",
+    "R7102.1": "CHG_ISET",
+    "R7103.1": "CHG_ISET",
+    "U7101.2": "CHG_ISET",
+    "R7101.1": "CHG_VSET",
+    "U7101.7": "CHG_VSET",
+    "R629.1": "DISP_BL",
+    "U101.17": "DISP_BL",
+    "U1101.4": "DISP_BL",
+    "FPC301.2": "DISP_CS",
+    "U101.37": "DISP_CS",
+    "FPC301.3": "DISP_DC",
+    "U101.36": "DISP_DC",
+    "FPC301.5": "DISP_MOSI",
+    "U101.15": "DISP_MOSI",
+    "FPC301.6": "DISP_RST",
+    "U101.35": "DISP_RST",
+    "FPC301.4": "DISP_SCLK",
+    "U101.16": "DISP_SCLK",
+    "Q7103.3": "EN_RUN",
+    "R7113.2": "EN_RUN",
+    "R7114.1": "EN_RUN",
+    "U1101.1": "EN_RUN",
+    "U1101.5": "EN_RUN",
+    "U603.12": "EN_RUN",
+    "Q7101.3": "FAST_DRIVE",
+    "R7108.1": "FAST_DRIVE",
+    "Q7102.1": "FAST_GATE",
+    "R7108.2": "FAST_GATE",
+    "R7109.1": "FAST_GATE",
+    "U7104.1": "FAST_GATE",
+    "Q7101.1": "FAST_PNP_BASE",
+    "R7105.2": "FAST_PNP_BASE",
+    "R7106.1": "FAST_PNP_BASE",
+    "C101.2": "GND",
+    "C102.2": "GND",
+    "C103.2": "GND",
+    "C1101.2": "GND",
+    "C1102.2": "GND",
+    "C301.2": "GND",
+    "C302.2": "GND",
+    "C501.2": "GND",
+    "C502.2": "GND",
+    "C504.2": "GND",
+    "C604.2": "GND",
+    "C606.2": "GND",
+    "C607.2": "GND",
+    "C617.2": "GND",
+    "C620.2": "GND",
+    "C637.2": "GND",
+    "C638.2": "GND",
+    "C639.2": "GND",
+    "C640.2": "GND",
+    "C7101.2": "GND",
+    "C7102.2": "GND",
+    "C7103.2": "GND",
+    "C7104.2": "GND",
+    "C7105.2": "GND",
+    "C7106.2": "GND",
+    "C7107.2": "GND",
+    "C7108.2": "GND",
+    "FPC301.1": "GND",
+    "FPC301.12": "GND",
+    "FPC301.13": "GND",
+    "FPC301.14": "GND",
+    "H101.1": "GND",
+    "J201.A1": "GND",
+    "J201.A12": "GND",
+    "J201.B1": "GND",
+    "J201.B12": "GND",
+    "J201.S1": "GND",
+    "J610.2": "GND",
+    "J7101.2": "GND",
+    "J7201.3": "GND",
+    "Q7102.2": "GND",
+    "Q7103.2": "GND",
+    "R1102.2": "GND",
+    "R1104.2": "GND",
+    "R607.2": "GND",
+    "R608.2": "GND",
+    "R628.2": "GND",
+    "R629.2": "GND",
+    "R640.2": "GND",
+    "R7101.2": "GND",
+    "R7102.2": "GND",
+    "R7104.2": "GND",
+    "R7109.2": "GND",
+    "R7112.2": "GND",
+    "R7114.2": "GND",
+    "R7115.2": "GND",
+    "SW101.1": "GND",
+    "SW501.1": "GND",
+    "SW502.1": "GND",
+    "SW504.1": "GND",
+    "SW7201.3": "GND",
+    "TH7102.2": "GND",
+    "TP105.1": "GND",
+    "TP108.1": "GND",
+    "TP1202.1": "GND",
+    "U101.1": "GND",
+    "U101.2": "GND",
+    "U101.42": "GND",
+    "U101.43": "GND",
+    "U101.46": "GND",
+    "U101.47": "GND",
+    "U101.48": "GND",
+    "U101.49": "GND",
+    "U101.50": "GND",
+    "U101.51": "GND",
+    "U101.52": "GND",
+    "U101.53": "GND",
+    "U101.54": "GND",
+    "U101.55": "GND",
+    "U101.56": "GND",
+    "U101.57": "GND",
+    "U101.58": "GND",
+    "U101.59": "GND",
+    "U101.60": "GND",
+    "U101.61": "GND",
+    "U101.62": "GND",
+    "U101.63": "GND",
+    "U101.64": "GND",
+    "U101.65": "GND",
+    "U1101.10": "GND",
+    "U1101.11": "GND",
+    "U1101.12": "GND",
+    "U1101.13": "GND",
+    "U1101.14": "GND",
+    "U1101.15": "GND",
+    "U1101.7": "GND",
+    "U1101.8": "GND",
+    "U1101.9": "GND",
+    "U603.15": "GND",
+    "U603.2": "GND",
+    "U609.14": "GND",
+    "U609.17": "GND",
+    "U609.7": "GND",
+    "U7101.4": "GND",
+    "U7101.9": "GND",
+    "U7102.10": "GND",
+    "U7102.11": "GND",
+    "U7103.2": "GND",
+    "U7104.2": "GND",
+    "Q7102.3": "ISET_FAST_RETURN",
+    "R7103.2": "ISET_FAST_RETURN",
+    "C620.1": "LED_A",
+    "FPC301.10": "LED_A",
+    "U609.8": "LED_A",
+    "FPC301.11": "LED_K",
+    "U609.4": "LED_K",
+    "U609.5": "LED_K",
+    "U609.6": "LED_K",
+    "TH7101.2": "NTC_MID",
+    "TH7102.1": "NTC_MID",
+    "J7101.1": "NTC_TS",
+    "TH7101.1": "NTC_TS",
+    "U7101.3": "NTC_TS",
+    "C604.1": "PACK_POS",
+    "C617.1": "PACK_POS",
+    "C638.1": "PACK_POS",
+    "C7104.1": "PACK_POS",
+    "J610.1": "PACK_POS",
+    "J7201.1": "PACK_POS",
+    "R1101.1": "PACK_POS",
+    "SW7201.1": "PACK_POS",
+    "U603.10": "PACK_POS",
+    "U603.11": "PACK_POS",
+    "U603.13": "PACK_POS",
+    "U609.13": "PACK_POS",
+    "U7101.8": "PACK_POS",
+    "R7110.1": "POR_CT",
+    "U7104.4": "POR_CT",
+    "J7201.2": "POWER_REQUEST",
+    "R7113.1": "POWER_REQUEST",
+    "SW7201.2": "POWER_REQUEST",
+    "L601.1": "SW_L1",
+    "U603.8": "SW_L1",
+    "U603.9": "SW_L1",
+    "L601.2": "SW_L2",
+    "U603.6": "SW_L2",
+    "U603.7": "SW_L2",
+    "C7103.1": "USB_3V3",
+    "C7105.1": "USB_3V3",
+    "C7106.1": "USB_3V3",
+    "C7108.1": "USB_3V3",
+    "Q7101.2": "USB_3V3",
+    "R7106.2": "USB_3V3",
+    "R7107.2": "USB_3V3",
+    "R7110.2": "USB_3V3",
+    "R7115.1": "USB_3V3",
+    "U7102.12": "USB_3V3",
+    "U7103.5": "USB_3V3",
+    "U7104.3": "USB_3V3",
+    "U7104.5": "USB_3V3",
+    "U7104.6": "USB_3V3",
+    "J201.A5": "USB_CC1",
+    "U7102.1": "USB_CC1",
+    "J201.B5": "USB_CC2",
+    "U7102.2": "USB_CC2",
+    "Q7103.1": "VBUS_INHIBIT_BASE",
+    "R7111.2": "VBUS_INHIBIT_BASE",
+    "R7112.1": "VBUS_INHIBIT_BASE",
+    "C7101.1": "VBUS_RAW",
+    "C7102.1": "VBUS_RAW",
+    "C7107.1": "VBUS_RAW",
+    "J201.A4": "VBUS_RAW",
+    "J201.A9": "VBUS_RAW",
+    "J201.B4": "VBUS_RAW",
+    "J201.B9": "VBUS_RAW",
+    "R7111.1": "VBUS_RAW",
+    "TP1203.1": "VBUS_RAW",
+    "U7101.1": "VBUS_RAW",
+    "U7102.4": "VBUS_RAW",
+    "U7103.1": "VBUS_RAW",
+    "C639.1": "VINA_LOCAL",
+    "U603.1": "VINA_LOCAL",
+    "R603.2": "VLOGIC_FB",
+    "R607.1": "VLOGIC_FB",
+    "U603.3": "VLOGIC_FB",
+    "C101.1": "VLOGIC_SWITCHED",
+    "C102.1": "VLOGIC_SWITCHED",
+    "C1102.1": "VLOGIC_SWITCHED",
+    "C301.1": "VLOGIC_SWITCHED",
+    "C302.1": "VLOGIC_SWITCHED",
+    "C606.1": "VLOGIC_SWITCHED",
+    "C607.1": "VLOGIC_SWITCHED",
+    "C637.1": "VLOGIC_SWITCHED",
+    "C640.1": "VLOGIC_SWITCHED",
+    "FPC301.8": "VLOGIC_SWITCHED",
+    "FPC301.9": "VLOGIC_SWITCHED",
+    "R101.1": "VLOGIC_SWITCHED",
+    "R501.1": "VLOGIC_SWITCHED",
+    "R502.1": "VLOGIC_SWITCHED",
+    "R504.1": "VLOGIC_SWITCHED",
+    "R603.1": "VLOGIC_SWITCHED",
+    "R608.1": "VLOGIC_SWITCHED",
+    "TP101.1": "VLOGIC_SWITCHED",
+    "U101.3": "VLOGIC_SWITCHED",
+    "U1101.16": "VLOGIC_SWITCHED",
+    "U603.4": "VLOGIC_SWITCHED",
+    "U603.5": "VLOGIC_SWITCHED",
+    "FPC301.7": "unconnected-(FPC301-Pad7)",
+    "J201.A6": "unconnected-(J201-D+-PadA6)",
+    "J201.B6": "unconnected-(J201-D+-PadB6)",
+    "J201.A7": "unconnected-(J201-D--PadA7)",
+    "J201.B7": "unconnected-(J201-D--PadB7)",
+    "J201.A8": "unconnected-(J201-SBU1-PadA8)",
+    "J201.B8": "unconnected-(J201-SBU2-PadB8)",
+    "U101.7": "unconnected-(U101-IO3-Pad7)",
+    "U101.8": "unconnected-(U101-IO4-Pad8)",
+    "U101.10": "unconnected-(U101-IO6-Pad10)",
+    "U101.11": "unconnected-(U101-IO7-Pad11)",
+    "U101.12": "unconnected-(U101-IO8-Pad12)",
+    "U101.13": "unconnected-(U101-IO9-Pad13)",
+    "U101.14": "unconnected-(U101-IO10-Pad14)",
+    "U101.18": "unconnected-(U101-IO14-Pad18)",
+    "U101.19": "unconnected-(U101-IO15-Pad19)",
+    "U101.20": "unconnected-(U101-IO16-Pad20)",
+    "U101.22": "unconnected-(U101-IO18-Pad22)",
+    "U101.25": "unconnected-(U101-IO21-Pad25)",
+    "U101.26": "unconnected-(U101-IO26-Pad26)",
+    "U101.28": "unconnected-(U101-IO33-Pad28)",
+    "U101.29": "unconnected-(U101-IO34-Pad29)",
+    "U101.31": "unconnected-(U101-IO35-Pad31)",
+    "U101.32": "unconnected-(U101-IO36-Pad32)",
+    "U101.33": "unconnected-(U101-IO37-Pad33)",
+    "U101.34": "unconnected-(U101-IO38-Pad34)",
+    "U101.38": "unconnected-(U101-IO42-Pad38)",
+    "U101.41": "unconnected-(U101-IO45-Pad41)",
+    "U101.44": "unconnected-(U101-IO46-Pad44)",
+    "U101.27": "unconnected-(U101-IO47-Pad27)",
+    "U101.30": "unconnected-(U101-IO48-Pad30)",
+    "U101.24": "unconnected-(U101-USB_D+-Pad24)",
+    "U101.23": "unconnected-(U101-USB_D--Pad23)",
+    "U603.14": "unconnected-(U603-PG-Pad14)",
+    "U609.2": "unconnected-(U609-NC-Pad2)",
+    "U609.3": "unconnected-(U609-NC-Pad3)",
+    "U7101.6": "unconnected-(U7101-PG-Pad6)",
+    "U7101.5": "unconnected-(U7101-STAT-Pad5)",
+    "U7102.5": "unconnected-(U7102-ADDR-Pad5)",
+    "U7102.9": "unconnected-(U7102-ID-Pad9)",
+    "U7102.6": "unconnected-(U7102-INT_N/OUT3-Pad6)",
+    "U7102.8": "unconnected-(U7102-OUT2-Pad8)",
+    "U7103.3": "unconnected-(U7103-EN-Pad3)",
+    "U7103.4": "unconnected-(U7103-NC-Pad4)"
+  }
+}

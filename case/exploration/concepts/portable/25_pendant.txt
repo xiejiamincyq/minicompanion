@@ -1,0 +1,356 @@
+DESIGN 25: PENDANT
+==================
+Oversized necklace pendant. Regular octagonal shape with screen
+centered and tight ~2mm bezels. Jewelry-inspired finishing with
+beveled/chamfered edges at 45deg that catch light beautifully.
+Decorative bail/loop at top vertex for chain or cord passage.
+Can also clip to shirt pocket with optional clip accessory.
+Thin profile with slim battery.
+
+Overall: 45mm x 45mm x 12mm (regular octagon, 45mm vertex-to-vertex)
+Octagon flat edge: ~18.6mm (45mm / (1 + sqrt(2)) * sqrt(2) = 18.6mm)
+Bail opening: 8mm ID
+Weight target: ~35g with battery
+Orientation: Portrait (screen fills octagon center)
+Shell: 2-piece (front + back), press-fit + 2x micro screws
+Finish: Polished, anodized, or plated (jewelry quality)
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+                 ╱╲  ← Bail/loop (8mm opening)
+                │  │    for chain or cord
+                 ╲╱
+              ┌──┴──┐
+           ╱──┘     └──╲
+         ╱  ○ LED        ╲
+        │ ┌─────────────┐  │
+       │  │             │  │
+      │   │  TFT LCD    │   │
+      │   │  SCREEN     │   │ ← 40.8 x 30.6mm active area
+      │   │  (centered) │   │   Tight 2mm bezels on all sides
+       │  │             │  │
+        │ └─────────────┘  │
+         ╲    (·) wake    ╱   ← Wake button (10x4.5mm)
+           ╲──┐     ┌──╱     bottom edge
+              └──┬──┘
+        ├── 45mm ──┤
+
+    Octagonal outline:
+           ____
+          ╱    ╲
+         │      │
+         │      │     Regular octagon
+         │      │     All 8 edges equal (~18.6mm)
+          ╲____╱      45mm vertex-to-vertex
+
+
+    With buttons visible:
+
+                 ╱╲
+                │  │
+                 ╲╱
+              ┌──┴──┐
+           ╱──┘     └──╲
+         ╱               ╲
+       (●)┌─────────────┐(●)  ← B1 (left edge) B3 (right edge)
+       B1 │             │ B3     Recessed into flat edges
+       │  │   SCREEN    │  │     12x6mm caps, flush with surface
+       │  │             │  │
+        │ └─────────────┘  │
+         ╲               ╱
+           ╲──┐ (●) ┌──╱      ← B2 (bottom edge)
+              └──┬──┘           12x6mm cap
+                 │
+    B1 = REJECT (left flat edge)
+    B2 = ACTION (bottom flat edge)
+    B3 = APPROVE (right flat edge)
+
+
+SIDE VIEW (looking at right flat edge)
+──────────────────────────────────────
+
+         ╱╲ bail
+        │  │
+         ╲╱
+       ┌──┴──┐
+      ╱      ╲
+     │  12mm  │ ─┬─
+     │        │  │  Thickest at center
+      ╲      ╱  │
+       └──┬──┘ ─┴─
+          │
+    ↑          ↑
+   Front     Back
+
+    Edge profile showing 45deg chamfer:
+
+       ╱╲
+      ╱45╲     ← 45deg bevel on both front and back
+     │    │      edges catches light, creates faceted
+      ╲45╱      jewelry appearance
+       ╲╱       2mm chamfer width
+
+
+BACK VIEW
+─────────
+
+              ┌──┴──┐
+           ╱──┘     └──╲
+         ╱               ╲
+        │                 │
+       │                   │
+       │   ┌───────────┐   │
+       │   │  BATTERY   │   │ ← Battery access
+       │   │  ACCESS    │   │   (small snap panel)
+        │  └───────────┘  │
+         ╲  ▪▪▪ vibe    ╱   ← Vibration motor
+           ╲──┐     ┌──╱
+              └──┬──┘
+              USB-C ↓
+           ┌──┤○ ○├──┐      ← USB-C cutout (9.34x3.66mm)
+           └──────────┘        on bottom flat edge, tiny
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.5mm front wall           │  1.0mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   1.5mm gap         │ │  │  12mm total
+      │  │   (FPC, tight)      │ │  │  (compressed stack)
+      │  ├── PCB ──────────────┤ │  │
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.4mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (3.5mm slim)      │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+
+    Z-stack (compressed for 12mm target):
+    1.5 + 2.5 + 1.5 + 1.6 + 0.4 + 3.5 + 1.0 = 12.0mm
+    Note: Requires slim 3.5mm battery (~250mAh) and
+    reduced back wall (1.0mm) and tighter gaps vs standard
+    15.1mm stack. Achievable with careful FPC routing.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (octagonal, 1.5mm wall)
+    ├── Screen window cutout (42 x 32mm, centered)
+    ├── LED hole (2mm dia, above screen near top edge)
+    ├── 2x button recesses in left/right flat edges (12.5 x 6.5mm)
+    ├── 1x button recess in bottom flat edge (12.5 x 6.5mm)
+    ├── Bail/loop integrated at top vertex (8mm ID opening)
+    ├── 45deg chamfer on all 8 outer edges (2mm width)
+    ├── Screen retention clips (4x, minimal)
+    └── 2x micro screw sockets (hidden in edge chamfer)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait, centered in octagon
+    ├── Module edges trimmed/filed to fit within 45mm octagon
+    │   (51.8mm diagonal fits within 45mm octagon — tight)
+    ├── FPC cable exits bottom, folds behind
+    └── Held by minimal retention clips
+
+    Layer 3 — 1.5mm AIR GAP (compressed)
+    ├── Tight FPC routing (folded flat)
+    ├── Side button plunger passages
+    └── Minimal clearance
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── PCB corners trimmed to fit octagonal shell
+    ├── ESP32-S3-MINI-1 faces back (15.4 x 20.5mm)
+    ├── 2x tactile switches on left/right edges (side-firing)
+    ├── 1x tactile switch on bottom edge (side-firing)
+    ├── 1x wake switch on bottom (near USB-C)
+    ├── USB-C connector on bottom edge
+    ├── Display FPC connector on top edge
+    └── Vibration motor pads (bottom area)
+
+    Layer 5 — 0.4mm GAP (tight)
+    └── ESP32 module clearance (may need selective
+        milling in back shell for 2.4mm module height)
+
+    Layer 6 — BATTERY (28 x 28 x 3.5mm slim LiPo)
+    ├── ~250mAh capacity (slim form factor)
+    ├── Custom octagonal-friendly dimensions
+    ├── JST pigtail to PCB (short)
+    └── Centered in shell
+
+    Layer 7 — BACK SHELL (octagonal, 1.0mm wall)
+    ├── Battery cradle (shallow pocket)
+    ├── PCB mounting posts (4x, short)
+    ├── 2x micro screw threaded inserts
+    ├── USB-C cutout on bottom flat edge
+    ├── Vibration motor recess
+    ├── ESP32 clearance pocket (milled 1mm deeper locally)
+    └── Smooth polished exterior
+
+
+BAIL / CHAIN LOOP DETAIL
+─────────────────────────
+
+    Top vertex of octagon:
+
+              ╭────────╮
+             │    8mm   │  ← Chain/cord opening
+             │  opening │     8mm ID, rounded
+              ╰───┬┬───╯
+                  ││
+              ┌───┘└───┐
+           ╱──┘         └──╲
+         ╱     (front       ╲
+        │       shell)        │
+
+    Bail cross-section:
+         ╭───╮
+        │ ○  │  ← 8mm ID hole
+        │     │    3mm wall thickness around hole
+         ╰─┬─╯    Reinforced junction to shell
+           │
+        Shell body
+
+    Chain options:
+    - Ball chain (2.4mm, stainless)
+    - Leather cord (2mm dia)
+    - Silicone cord (3mm dia)
+    - Metal link chain (jewelry style)
+    Cord/chain length: ~700mm for chest-level hang
+
+
+BUTTON PLACEMENT DETAIL (recessed into flat edges)
+───────────────────────────────────────────────────
+
+    Left edge button (B1 - REJECT):
+
+         ╱
+        │    ┌──────┐
+       │     │ B1   │ ← Recessed 0.5mm into flat edge
+       │     │12x6mm│   Flush or slightly proud (0.3mm)
+       │     └──────┘   Side-firing tactile switch on PCB
+        │
+         ╲
+
+    Button is oriented so press direction is
+    inward (toward center of octagon).
+
+    All 3 buttons are on different flat edges:
+           ____
+          ╱    ╲
+         │      │
+    B1 → │      │ ← B3
+         │      │
+          ╲____╱
+            ↑
+            B2
+
+    Wake button (W): recessed into bottom flat edge,
+    adjacent to USB-C cutout. Smaller 10x4.5mm cap.
+
+
+45-DEGREE CHAMFER DETAIL
+─────────────────────────
+
+    Edge cross-section (at any of 8 edges):
+
+        Front face
+           │
+           │  ╱ 45deg chamfer (2mm wide)
+           │╱
+           │
+           │╲
+           │  ╲ 45deg chamfer (2mm wide)
+           │
+        Back face
+
+    The chamfers create a faceted gem-like appearance.
+    When polished or anodized, each chamfer face catches
+    light at a different angle — creates sparkle effect.
+
+    Full edge profile:
+    ┌─────────────┐ Front face (1.5mm wall)
+    │             │
+     ╲           ╱  45deg chamfer
+      ╲─────────╱
+      ╱─────────╲   45deg chamfer
+     ╱           ╲
+    │             │
+    └─────────────┘ Back face (1.0mm wall)
+
+
+OPTIONAL POCKET CLIP ACCESSORY
+──────────────────────────────
+
+    Clip slides over top edge / bail:
+
+         ╭────╮
+         │CLIP│ ← Spring steel clip
+         │    │   Slides over bail
+         ╰─┬──╯
+            │  ╱╲
+            │ │  │  ← Bail
+            │  ╲╱
+         ╭──┴──╮
+      ╱──┘     └──╲
+    ╱    pendant    ╲
+
+    Clip detail:
+    ┌────────────┐
+    │  ┌──────┐  │ ← Spring arm (grips pocket edge)
+    │  │      │  │
+    │  │ ╱╲   │  │
+    │  ││  │  │  │ ← Bail pass-through
+    │  │ ╲╱   │  │
+    │  └──────┘  │
+    └────────────┘
+    Stainless steel, ~15mm wide
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece octagonal (front + back)
+- Assembly: press-fit alignment + 2x M1.4 micro screws
+  hidden within the chamfer edge (nearly invisible)
+- Bail integrated into front shell top vertex, reinforced
+  internally with extra wall thickness (3mm)
+- Display module may need edge trimming to fit 45mm octagon
+  (51.8mm module diagonal vs ~45mm available — tight fit,
+  module PCB tabs may need filing)
+- PCB corners need trimming to octagonal profile
+- Custom slim battery (28x28x3.5mm) for 12mm total depth
+- Back shell has selective pocket for ESP32 module height
+- Buttons recessed into 3 different flat edges of octagon
+  (left = reject, bottom = action, right = approve)
+- USB-C on bottom flat edge, small cutout
+- Jewelry-quality surface finish required:
+  - Option A: Polished stainless steel (CNC machined)
+  - Option B: Anodized aluminum (multiple color options)
+  - Option C: Plated brass (gold or silver tone)
+  - Option D: High-polish resin (3D printed + coated)
+- Chamfer faces can be contrasting finish (matte body +
+  polished chamfers, or vice versa)
+- Chain/cord not included — standard jewelry findings fit bail
+
+SPECIAL FEATURES
+────────────────
+- Wearable as jewelry — oversized pendant necklace
+- Regular octagonal shape with faceted gem-like chamfers
+- 45deg bevels catch light from all angles
+- Decorative bail for chain/cord (8mm opening fits most chains)
+- Optional pocket clip accessory for shirt pocket mounting
+- Jewelry-quality finishing options (polished, anodized, plated)
+- Tight 2mm bezels maximize screen-to-body ratio
+- Ultra-thin 12mm profile (slimmer than most pendants)
+- Conversation piece — "is that a necklace or a computer?"
+- Gender-neutral design — works as tech jewelry for anyone
+- Multiple chain/cord options for different aesthetics
+- Screen visible at a glance when worn at chest level

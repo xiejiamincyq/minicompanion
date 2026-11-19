@@ -1,0 +1,26 @@
+{
+  "status": "conditional_bus_disconnect_candidate",
+  "components": 18,
+  "pins": 56,
+  "old_pins_unchanged": 26,
+  "ERC_violations": 0,
+  "injected_faults_detected": 3,
+  "nominal_parallel_pullup_ohm": 1498.550724637681,
+  "conditional_100pF_rise_ns": 126.97220289855073,
+  "conditional_total_sink_mA_at_zero_V": 2.2077335052654203,
+  "conditional_switch_drop_mV": 9.93480077369439,
+  "assumptions": [
+    "Module pullups 2.2k, assumed 1 percent",
+    "Module 3.3V nominal only, not tolerance bound",
+    "100pF is an example total capacitance, not measured",
+    "Switch RON 4.5 ohm used for estimate"
+  ],
+  "limits": [
+    "Bus-connect must go low before NFC-enable; firmware not implemented",
+    "No automatic detection of NFC rail collapse",
+    "No protection guarantee during partial supply or brownout",
+    "Powered-off isolation applies at VDD=0 within datasheet signal limits, not galvanic isolation",
+    "Module/MCU voltage corners, rise time and leakage not physically validated",
+    "No complete cost or mainboard integration"
+  ]
+}

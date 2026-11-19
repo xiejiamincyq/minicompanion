@@ -1,0 +1,86 @@
+{
+  "status": "hardware_interface_candidate_only",
+  "components": 74,
+  "ERC_violations": 0,
+  "pin_changes": {
+    "U6.3": [
+      "GND",
+      "USB_HOST_LOGIC"
+    ]
+  },
+  "faults_detected": 3,
+  "truth_table": [
+    {
+      "ready": 0,
+      "cc_out1": 0,
+      "host": 0,
+      "EN2": 1,
+      "EN1": 1
+    },
+    {
+      "ready": 0,
+      "cc_out1": 0,
+      "host": 1,
+      "EN2": 1,
+      "EN1": 1
+    },
+    {
+      "ready": 0,
+      "cc_out1": 1,
+      "host": 0,
+      "EN2": 1,
+      "EN1": 1
+    },
+    {
+      "ready": 0,
+      "cc_out1": 1,
+      "host": 1,
+      "EN2": 1,
+      "EN1": 1
+    },
+    {
+      "ready": 1,
+      "cc_out1": 0,
+      "host": 0,
+      "EN2": 1,
+      "EN1": 0
+    },
+    {
+      "ready": 1,
+      "cc_out1": 0,
+      "host": 1,
+      "EN2": 1,
+      "EN1": 0
+    },
+    {
+      "ready": 1,
+      "cc_out1": 1,
+      "host": 0,
+      "EN2": 1,
+      "EN1": 1
+    },
+    {
+      "ready": 1,
+      "cc_out1": 1,
+      "host": 1,
+      "EN2": 1,
+      "EN1": 0
+    }
+  ],
+  "input_current_A_min_typ_max": [
+    0.360775803607758,
+    0.41424657534246573,
+    0.47045800470458005
+  ],
+  "remaining_from_500mA_A": 0.029541995295419954,
+  "conditional_floating_input_V_at_10uA": 0.101,
+  "conditional_gate_high_V_with_3V_host": 2.8604684810163183,
+  "limits": [
+    "No MCU GPIO connected yet",
+    "GPIO levels need actual supply and drive guarantees; Schmitt thresholds at 3.3V not separately tabulated",
+    "Host grant is software-trusted; stuck-high does not fail-safe for USB source permission",
+    "29mA auxiliary allowance is a budget, not a measured or fully bounded current",
+    "OFF Default USB, empty-battery SDP bootstrap and data isolation not completed",
+    "Brownout, thermals and battery safety not physically validated"
+  ]
+}

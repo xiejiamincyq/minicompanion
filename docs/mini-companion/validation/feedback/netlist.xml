@@ -1,0 +1,4018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\21604\mini-companion-v1\hardware\devotchi.kicad_sch</source>
+    <date>2026-09-21T12:36:51</date>
+    <tool>Eeschema 10.0.6</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>Devotchi</title>
+        <company>Hussam Koman</company>
+        <rev>v0.1</rev>
+        <date/>
+        <source>devotchi.kicad_sch</source>
+        <comment number="1" value="Devotchi"/>
+        <comment number="2" value="Portable AI Agent Companion Device"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/">
+      <title_block>
+        <title>MCU_ESP32_S3</title>
+        <company>Hussam Koman</company>
+        <rev/>
+        <date/>
+        <source>mcu.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/">
+      <title_block>
+        <title>Power</title>
+        <company>Hussam Koman</company>
+        <rev/>
+        <date/>
+        <source>power.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/">
+      <title_block>
+        <title>Display</title>
+        <company>Hussam Koman</company>
+        <rev/>
+        <date/>
+        <source>display.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>user_input.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C101">
+      <value>22µ</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C45783</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C45783"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>c21a6e3e-4faf-48e1-8f6c-20c7ef67ef21</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C102">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>82a05719-871f-49b4-8e0b-a258936a1f9e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C103">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15849</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15849"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>29f445e0-9774-42c6-a2bc-5fd2188946b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="H101">
+      <value>MountingHole_Pad</value>
+      <footprint>MountingHole:MountingHole_2.2mm_M2_DIN965_Pad</footprint>
+      <description>Mounting Hole with connection</description>
+      <fields>
+        <field name="Footprint">MountingHole:MountingHole_2.2mm_M2_DIN965_Pad</field>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <libsource lib="Mechanical" part="MountingHole_Pad" description="Mounting Hole with connection"/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <property name="ki_fp_filters" value="MountingHole*Pad*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>10153fd6-a9b6-4dc8-b655-c74dc5463786</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R101">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>e24df916-2877-410c-91ac-242fd12e9791</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW101">
+      <value>reset_btn</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="LCSC Part">C318884</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC Part" value="C318884"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>30b3cbdc-9044-48e4-b112-44526ee19ad1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP101">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>cfb95d57-3bfe-4d0c-abb6-04ff27882b03</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP102">
+      <value>Tx</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>00d185a7-76c4-4094-904f-083665a662cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP103">
+      <value>Rx</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>78515e1a-6805-40de-ac03-1ff7e1c6a167</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP105">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>4d629350-9d40-4163-86f0-d238298899c3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U101">
+      <value>ESP32-S3-MINI-1-N4R2</value>
+      <footprint>RF_Module:ESP32-S2-MINI-1</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf</datasheet>
+      <description>RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna</description>
+      <fields>
+        <field name="LCSC Part">C3013941</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">RF_Module:ESP32-S2-MINI-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf</field>
+        <field name="Description">RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna</field>
+      </fields>
+      <libsource lib="RF_Module" part="ESP32-S3-MINI-1" description="RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna"/>
+      <property name="LCSC Part" value="C3013941"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="mcu"/>
+      <property name="Sheetfile" value="mcu.kicad_sch"/>
+      <property name="ki_keywords" value="RF Radio BT ESP ESP32-S3 Espressif"/>
+      <property name="ki_fp_filters" value="ESP32?S*MINI?1"/>
+      <sheetpath names="/mcu/" tstamps="/d501dd46-08d9-4743-b831-93de6bd7c7dd/"/>
+      <tstamps>37aa69ec-eacc-43c6-aa18-219bbdde1a8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="45"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="56"/>
+            <pin num="58"/>
+            <pin num="59"/>
+            <pin num="60"/>
+            <pin num="61"/>
+            <pin num="62"/>
+            <pin num="63"/>
+            <pin num="64"/>
+            <pin num="65"/>
+            <pin num="57"/>
+            <pin num="42"/>
+            <pin num="43"/>
+            <pin num="46"/>
+            <pin num="47"/>
+            <pin num="48"/>
+            <pin num="49"/>
+            <pin num="50"/>
+            <pin num="51"/>
+            <pin num="52"/>
+            <pin num="53"/>
+            <pin num="54"/>
+            <pin num="55"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="41"/>
+            <pin num="44"/>
+            <pin num="27"/>
+            <pin num="30"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C201">
+      <value>10µ</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15850</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15850"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>39f4e3cc-19be-4123-b32d-511c5285d27c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C202">
+      <value>10µ</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15850</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15850"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>32018823-13d1-4012-9687-1f04f7b61197</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C203">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>80840b3a-2431-4a0f-83d5-eb5f94b855b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C204">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15849</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15849"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>c5a6615f-47c9-4bc6-b36b-52d7d532c57c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C205">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15849</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15849"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>10235f6c-c1e5-429a-b488-8f73cc2f9b05</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J201">
+      <value>USB_C_Receptacle_USB2.0_16P</value>
+      <footprint>Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <fields>
+        <field name="LCSC Part">C165948</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <libsource lib="Connector" part="USB_C_Receptacle_USB2.0_16P" description="USB 2.0-only 16P Type-C Receptacle connector"/>
+      <property name="LCSC Part" value="C165948"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
+      <property name="ki_fp_filters" value="USB*C*Receptacle*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>5e0167e6-6519-4495-8ee6-e9e8687d88a4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="S1"/>
+            <pin num="A1"/>
+            <pin num="A12"/>
+            <pin num="B1"/>
+            <pin num="B12"/>
+            <pin num="A4"/>
+            <pin num="A9"/>
+            <pin num="B4"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+            <pin num="A7"/>
+            <pin num="B7"/>
+            <pin num="A6"/>
+            <pin num="B6"/>
+            <pin num="A8"/>
+            <pin num="B8"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J202">
+      <value>Battery_conn</value>
+      <footprint>Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</footprint>
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <fields>
+        <field name="LCSC Part">C7433648</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <libsource lib="Connector_Generic" part="Conn_01x02" description="Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="LCSC Part" value="C7433648"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>0db9641b-7bf3-4129-888b-46a9e232accb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q201">
+      <value>FS8205A_C2830320</value>
+      <footprint>easyeda:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR</footprint>
+      <fields>
+        <field name="LCSC Part">C2830320</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">easyeda:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="easyeda" part="FS8205A_C2830320" description=""/>
+      <property name="LCSC Part" value="C2830320"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>5272e9e8-ab04-4a9a-bd5c-7a5f8847fc54</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R201">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C21190</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C21190"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>da12b474-2eb5-480d-a198-8dc0afbf7588</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R202">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C21190</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C21190"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>8defb640-0d71-43a5-b922-a24ca150b1ab</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R203">
+      <value>5k1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C23186</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C23186"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>a7f15e28-11c3-499b-90b9-57af33cdbc7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R204">
+      <value>5k1</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C23186</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C23186"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>24479764-fcd1-4f69-b8f3-9ddeacab91dc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R205">
+      <value>3k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C4211</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C4211"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>4e0ed3c7-c532-434a-a0c9-51e067b42ffc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R206">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>0d08b5b6-3082-41ed-a76f-b20cc8ed2c7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R207">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25803</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25803"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>356bce8e-edef-43f7-a949-7c369b6947a7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R208">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25803</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25803"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>130944e9-a7fe-458c-b9f6-f71b46559a6b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP201">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>a66f70a2-61c8-4476-bcc5-41020514640e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP202">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>50ef729f-1ac5-4f75-b2e6-18df0b690ffe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP203">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>b2e2cc11-6f55-4329-88bc-f16ff012097a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP204">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>cf98d678-f0ae-444e-967a-31de1293b5b7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP205">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>68a056a6-3066-459b-97e0-8ef734a1490c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP206">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>42b11d58-52a4-4525-ae8e-2092b35408e3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP207">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>3acaaa68-1a76-47a7-91aa-99ca00f6a215</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP208">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>d2e4c01a-c25a-49a8-8969-aa96770ff9e1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U201">
+      <value>DW01A</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
+      <datasheet>https://hmsemi.com/downfile/DW01A.PDF</datasheet>
+      <description>Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery</description>
+      <fields>
+        <field name="LCSC Part">C351410</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://hmsemi.com/downfile/DW01A.PDF</field>
+        <field name="Description">Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery</field>
+      </fields>
+      <libsource lib="Battery_Management" part="DW01A" description="Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery"/>
+      <property name="LCSC Part" value="C351410"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="battery protection li-ion lipo overcurrent overdischarge overcharge"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>d373839b-3ea3-4428-8d6c-c52201316638</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U202">
+      <value>TP4056-42-ESOP8</value>
+      <footprint>Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf</datasheet>
+      <description>1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)</description>
+      <fields>
+        <field name="LCSC Part">C725790</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf</field>
+        <field name="Description">1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)</field>
+      </fields>
+      <libsource lib="Battery_Management" part="TP4056-42-ESOP8" description="1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)"/>
+      <property name="LCSC Part" value="C725790"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="lithium-ion lithium-polymer Li-Poly"/>
+      <property name="ki_fp_filters" value="*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>7124a8ec-5f44-4708-b6cc-5aeac4bb4877</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="9"/>
+            <pin num="4"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U203">
+      <value>ME6211C33M5</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf</datasheet>
+      <description>500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5</description>
+      <fields>
+        <field name="LCSC Part">C82942</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf</field>
+        <field name="Description">500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5</field>
+      </fields>
+      <libsource lib="Regulator_Linear" part="ME6211C33M5" description="500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5"/>
+      <property name="LCSC Part" value="C82942"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="power"/>
+      <property name="Sheetfile" value="power.kicad_sch"/>
+      <property name="ki_keywords" value="linear regulator ldo fixed positive"/>
+      <property name="ki_fp_filters" value="SOT?23?5*"/>
+      <sheetpath names="/power/" tstamps="/9c37a0e5-9ac1-4129-87e1-3e889a79a4b6/"/>
+      <tstamps>d3ecfebc-bac9-415f-bec2-70b6f8e8d9af</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C301">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15849</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15849"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>ccfd5900-78a2-4531-80b9-f68a59d5a363</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C302">
+      <value>1µ</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C15849</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C15849"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>424702be-fa44-4d26-8e53-d293840ee1f1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="FPC301">
+      <value>AFC01-S12FCA-00</value>
+      <footprint>easyeda:FPC-SMD_AFC01-S12FCA-00</footprint>
+      <datasheet>https://lcsc.com/product-detail/Others_JUSHUO-AFC01-S12FCA-00_C262661.html</datasheet>
+      <fields>
+        <field name="LCSC Part">C262661</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">easyeda:FPC-SMD_AFC01-S12FCA-00</field>
+        <field name="Datasheet">https://lcsc.com/product-detail/Others_JUSHUO-AFC01-S12FCA-00_C262661.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="easyeda" part="AFC01-S12FCA-00" description=""/>
+      <property name="LCSC Part" value="C262661"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>36343d86-c92f-4496-a6ca-552611f5b4d1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="13"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q301">
+      <value>AO3400A</value>
+      <footprint>easyeda:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR</footprint>
+      <datasheet>https://lcsc.com/product-detail/MOSFET_AOS_AO3400A_AO3400A_C20917.html</datasheet>
+      <fields>
+        <field name="LCSC Part">C20917</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">easyeda:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR</field>
+        <field name="Datasheet">https://lcsc.com/product-detail/MOSFET_AOS_AO3400A_AO3400A_C20917.html</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="easyeda" part="AO3400A" description=""/>
+      <property name="LCSC Part" value="C20917"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>f2e2f120-852f-4ad5-ae51-240f8fb7db34</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R301">
+      <value>22R</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C23345</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C23345"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>b13ceff4-73ea-4106-b090-adb8dec08628</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R302">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C21190</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C21190"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>e1bab05c-24ee-41ad-af9d-b01b4ed0dd72</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U301">
+      <value>HS20HS072RX</value>
+      <footprint>easyeda:OLED-SMD_HS20HS072RX</footprint>
+      <fields>
+        <field name="LCSC Part">C5329582</field>
+        <field name="Footprint">easyeda:OLED-SMD_HS20HS072RX</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="easyeda" part="HS20HS072RX" description=""/>
+      <property name="LCSC Part" value="C5329582"/>
+      <property name="Sheetname" value="display"/>
+      <property name="Sheetfile" value="display.kicad_sch"/>
+      <property name="dnp"/>
+      <sheetpath names="/display/" tstamps="/98e7fe21-bddb-41d2-a56f-5f910350d952/"/>
+      <tstamps>8fb0d6cb-d336-4951-a63c-7bb367aef00b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C501">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>ee05d311-b855-4d15-996c-d9336da82f72</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C502">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>45ff913a-e5be-464b-af95-6b2f6935c865</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C503">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>8e8256e5-4ce4-4257-83c5-c2935b438539</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C504">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="LCSC Part">C14663</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC Part" value="C14663"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>3ab53da0-c799-46c0-9934-0e38c588bf09</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R501">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>63c6623a-4efb-4356-996a-2eca773653ac</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R502">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>0384f526-51e9-4d95-8a76-81c6e9fd6eb7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R503">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>ce190aa4-e1d6-4b38-9e9e-2117329a60a2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R504">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="LCSC Part">C25804</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="LCSC Part" value="C25804"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>7f40a393-d155-461f-9395-469cad57517f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW501">
+      <value>BTN_ACTION</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="LCSC Part">C318884</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC Part" value="C318884"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>9d94fb24-0418-4c6c-a6a7-5d279502c0f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW502">
+      <value>BTN_APPROVE</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="LCSC Part">C318884</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC Part" value="C318884"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>ece0dedf-b319-439a-bfc9-a22209dabed9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW503">
+      <value>BTN_WAKE</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="LCSC Part">   C318884 </field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC Part" value="   C318884 "/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>2fdc3cc0-e46a-48eb-afea-3c818b5fdbd8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW504">
+      <value>BTN_REJECT</value>
+      <footprint>Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="LCSC Part">C318884</field>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="LCSC Part" value="C318884"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>b5d2aa1b-5e06-4d08-8692-0c375c39d30c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP501">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>af1afaca-a4d9-48ab-9893-e190ed0e85c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP502">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>cec7c46d-87de-4505-b2d3-18165eb90991</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP503">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>f2d14cb6-b308-47d9-b5de-e3abae2af707</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP504">
+      <value>TestPoint</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <description>test point</description>
+      <fields>
+        <field name="Availability"/>
+        <field name="Check_prices"/>
+        <field name="Description_1"/>
+        <field name="MANUFACTURER"/>
+        <field name="MAXIMUM_PACKAGE_HEIGHT"/>
+        <field name="MF"/>
+        <field name="MP"/>
+        <field name="PARTREV"/>
+        <field name="Package"/>
+        <field name="Price"/>
+        <field name="STANDARD"/>
+        <field name="SnapEDA_Link"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Availability" value=""/>
+      <property name="Check_prices" value=""/>
+      <property name="Description_1" value=""/>
+      <property name="MANUFACTURER" value=""/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value=""/>
+      <property name="MF" value=""/>
+      <property name="MP" value=""/>
+      <property name="PARTREV" value=""/>
+      <property name="Package" value=""/>
+      <property name="Price" value=""/>
+      <property name="STANDARD" value=""/>
+      <property name="SnapEDA_Link" value=""/>
+      <property name="Sheetname" value="user_input"/>
+      <property name="Sheetfile" value="user_input.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/user_input/" tstamps="/b2236c73-c7ac-47cb-a363-4ec62c6a982a/"/>
+      <tstamps>9c0c82e1-ab97-436f-bcf2-971ac472cc06</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Battery_Management" part="DW01A">
+      <description>Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery</description>
+      <docs>https://hmsemi.com/downfile/DW01A.PDF</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DW01A</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">https://hmsemi.com/downfile/DW01A.PDF</field>
+        <field name="Description">Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OD" type="output"/>
+        <pin num="2" name="CS" type="input"/>
+        <pin num="3" name="OC" type="output"/>
+        <pin num="4" name="TD" type="no_connect"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Battery_Management" part="TP4056-42-ESOP8">
+      <description>1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)</description>
+      <docs>https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf</docs>
+      <footprints>
+        <fp>*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP4056-42-ESOP8</field>
+        <field name="Footprint">Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf</field>
+        <field name="Description">1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TEMP" type="input"/>
+        <pin num="2" name="PROG" type="passive"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="V_{CC}" type="power_in"/>
+        <pin num="5" name="BAT" type="power_out"/>
+        <pin num="6" name="~{STDBY}" type="open_collector"/>
+        <pin num="7" name="~{CHRG}" type="open_collector"/>
+        <pin num="8" name="CE" type="input"/>
+        <pin num="9" name="EPAD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="USB_C_Receptacle_USB2.0_16P">
+      <description>USB 2.0-only 16P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>USB*C*Receptacle*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J201</field>
+        <field name="Value">USB_C_Receptacle_USB2.0_16P</field>
+        <field name="Footprint">Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB 2.0-only 16P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="GND" type="passive"/>
+        <pin num="A4" name="VBUS" type="power_out"/>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A6" name="D+" type="bidirectional"/>
+        <pin num="A7" name="D-" type="bidirectional"/>
+        <pin num="A8" name="SBU1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B1" name="GND" type="passive"/>
+        <pin num="B4" name="VBUS" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B6" name="D+" type="bidirectional"/>
+        <pin num="B7" name="D-" type="bidirectional"/>
+        <pin num="B8" name="SBU2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J202</field>
+        <field name="Value">Conn_01x02</field>
+        <field name="Footprint">Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Mounting Hole with connection</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="RF_Module" part="ESP32-S3-MINI-1">
+      <description>RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf</docs>
+      <footprints>
+        <fp>ESP32?S*MINI?1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-S3-MINI-1</field>
+        <field name="Footprint">RF_Module:ESP32-S2-MINI-1</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf</field>
+        <field name="Description">RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, SMD, onboard antenna</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="3V3" type="power_in"/>
+        <pin num="4" name="IO0" type="bidirectional"/>
+        <pin num="5" name="IO1" type="bidirectional"/>
+        <pin num="6" name="IO2" type="bidirectional"/>
+        <pin num="7" name="IO3" type="bidirectional"/>
+        <pin num="8" name="IO4" type="bidirectional"/>
+        <pin num="9" name="IO5" type="bidirectional"/>
+        <pin num="10" name="IO6" type="bidirectional"/>
+        <pin num="11" name="IO7" type="bidirectional"/>
+        <pin num="12" name="IO8" type="bidirectional"/>
+        <pin num="13" name="IO9" type="bidirectional"/>
+        <pin num="14" name="IO10" type="bidirectional"/>
+        <pin num="15" name="IO11" type="bidirectional"/>
+        <pin num="16" name="IO12" type="bidirectional"/>
+        <pin num="17" name="IO13" type="bidirectional"/>
+        <pin num="18" name="IO14" type="bidirectional"/>
+        <pin num="19" name="IO15" type="bidirectional"/>
+        <pin num="20" name="IO16" type="bidirectional"/>
+        <pin num="21" name="IO17" type="bidirectional"/>
+        <pin num="22" name="IO18" type="bidirectional"/>
+        <pin num="23" name="USB_D-" type="bidirectional"/>
+        <pin num="24" name="USB_D+" type="bidirectional"/>
+        <pin num="25" name="IO21" type="bidirectional"/>
+        <pin num="26" name="IO26" type="bidirectional"/>
+        <pin num="27" name="IO47" type="bidirectional"/>
+        <pin num="28" name="IO33" type="bidirectional"/>
+        <pin num="29" name="IO34" type="bidirectional"/>
+        <pin num="30" name="IO48" type="bidirectional"/>
+        <pin num="31" name="IO35" type="bidirectional"/>
+        <pin num="32" name="IO36" type="bidirectional"/>
+        <pin num="33" name="IO37" type="bidirectional"/>
+        <pin num="34" name="IO38" type="bidirectional"/>
+        <pin num="35" name="IO39" type="bidirectional"/>
+        <pin num="36" name="IO40" type="bidirectional"/>
+        <pin num="37" name="IO41" type="bidirectional"/>
+        <pin num="38" name="IO42" type="bidirectional"/>
+        <pin num="39" name="TXD0" type="bidirectional"/>
+        <pin num="40" name="RXD0" type="bidirectional"/>
+        <pin num="41" name="IO45" type="bidirectional"/>
+        <pin num="42" name="GND" type="passive"/>
+        <pin num="43" name="GND" type="passive"/>
+        <pin num="44" name="IO46" type="bidirectional"/>
+        <pin num="45" name="EN" type="input"/>
+        <pin num="46" name="GND" type="passive"/>
+        <pin num="47" name="GND" type="passive"/>
+        <pin num="48" name="GND" type="passive"/>
+        <pin num="49" name="GND" type="passive"/>
+        <pin num="50" name="GND" type="passive"/>
+        <pin num="51" name="GND" type="passive"/>
+        <pin num="52" name="GND" type="passive"/>
+        <pin num="53" name="GND" type="passive"/>
+        <pin num="54" name="GND" type="passive"/>
+        <pin num="55" name="GND" type="passive"/>
+        <pin num="56" name="GND" type="passive"/>
+        <pin num="57" name="GND" type="passive"/>
+        <pin num="58" name="GND" type="passive"/>
+        <pin num="59" name="GND" type="passive"/>
+        <pin num="60" name="GND" type="passive"/>
+        <pin num="61" name="GND" type="passive"/>
+        <pin num="62" name="GND" type="passive"/>
+        <pin num="63" name="GND" type="passive"/>
+        <pin num="64" name="GND" type="passive"/>
+        <pin num="65" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="ME6211C33M5">
+      <description>500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5</description>
+      <docs>https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf</docs>
+      <footprints>
+        <fp>SOT?23?5*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ME6211C33M5</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf</field>
+        <field name="Description">500mA low dropout linear regulator, shutdown pin, 6.5V max input voltage, 3.3V fixed positive output, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V_{IN}" type="power_in"/>
+        <pin num="2" name="V_{SS}" type="power_in"/>
+        <pin num="3" name="CE" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="V_{OUT}" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="easyeda" part="AFC01-S12FCA-00">
+      <docs>https://lcsc.com/product-detail/Others_JUSHUO-AFC01-S12FCA-00_C262661.html</docs>
+      <fields>
+        <field name="Reference">FPC</field>
+        <field name="Value">AFC01-S12FCA-00</field>
+        <field name="Footprint">easyeda:FPC-SMD_AFC01-S12FCA-00</field>
+        <field name="Datasheet">https://lcsc.com/product-detail/Others_JUSHUO-AFC01-S12FCA-00_C262661.html</field>
+        <field name="Description"/>
+        <field name="LCSC Part">C262661</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="unspecified"/>
+        <pin num="2" name="2" type="unspecified"/>
+        <pin num="3" name="3" type="unspecified"/>
+        <pin num="4" name="4" type="unspecified"/>
+        <pin num="5" name="5" type="unspecified"/>
+        <pin num="6" name="6" type="unspecified"/>
+        <pin num="7" name="7" type="unspecified"/>
+        <pin num="8" name="8" type="unspecified"/>
+        <pin num="9" name="9" type="unspecified"/>
+        <pin num="10" name="10" type="unspecified"/>
+        <pin num="11" name="11" type="unspecified"/>
+        <pin num="12" name="12" type="unspecified"/>
+        <pin num="13" name="13" type="unspecified"/>
+        <pin num="14" name="14" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="easyeda" part="AO3400A">
+      <docs>https://lcsc.com/product-detail/MOSFET_AOS_AO3400A_AO3400A_C20917.html</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">AO3400A</field>
+        <field name="Footprint">easyeda:SOT-23-3_L2.9-W1.3-P1.90-LS2.4-BR</field>
+        <field name="Datasheet">https://lcsc.com/product-detail/MOSFET_AOS_AO3400A_AO3400A_C20917.html</field>
+        <field name="Description"/>
+        <field name="LCSC Part">C20917</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="unspecified"/>
+        <pin num="2" name="S" type="unspecified"/>
+        <pin num="3" name="D" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="easyeda" part="FS8205A_C2830320">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FS8205A_C2830320</field>
+        <field name="Footprint">easyeda:SOT-23-6_L2.9-W1.6-P0.95-LS2.8-BR</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="LCSC Part">C2830320</field>
+      </fields>
+      <pins>
+        <pin num="1" name="S1" type="unspecified"/>
+        <pin num="2" name="D1/D2" type="unspecified"/>
+        <pin num="3" name="S2" type="unspecified"/>
+        <pin num="4" name="G2" type="unspecified"/>
+        <pin num="5" name="D1/D2" type="unspecified"/>
+        <pin num="6" name="G1" type="unspecified"/>
+      </pins>
+    </libpart>
+    <libpart lib="easyeda" part="HS20HS072RX">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HS20HS072RX</field>
+        <field name="Footprint">easyeda:OLED-SMD_HS20HS072RX</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="LCSC Part">C5329582</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="unspecified"/>
+        <pin num="2" name="CS" type="unspecified"/>
+        <pin num="3" name="RS" type="unspecified"/>
+        <pin num="4" name="SCL" type="unspecified"/>
+        <pin num="5" name="SDA" type="unspecified"/>
+        <pin num="6" name="RST" type="unspecified"/>
+        <pin num="7" name="NC" type="unspecified"/>
+        <pin num="8" name="I/O-VCC" type="unspecified"/>
+        <pin num="9" name="VCC" type="unspecified"/>
+        <pin num="10" name="A" type="unspecified"/>
+        <pin num="11" name="K" type="unspecified"/>
+        <pin num="12" name="GND" type="unspecified"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Battery_Management">
+      <uri>${KICAD10_SYMBOL_DIR}/Battery_Management.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>${KICAD10_SYMBOL_DIR}/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="RF_Module">
+      <uri>${KICAD10_SYMBOL_DIR}/RF_Module.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>${KICAD10_SYMBOL_DIR}/Regulator_Linear.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>${KICAD10_SYMBOL_DIR}/Switch.kicad_sym</uri>
+    </library>
+    <library logical="easyeda">
+      <uri>${KIPRJMOD}/libs/easyeda/easyeda.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Default">
+      <node ref="C101" pin="1" pintype="passive"/>
+      <node ref="C102" pin="1" pintype="passive"/>
+      <node ref="C205" pin="1" pintype="passive"/>
+      <node ref="C301" pin="1" pintype="passive"/>
+      <node ref="C302" pin="1" pintype="passive"/>
+      <node ref="FPC301" pin="8" pinfunction="8_8" pintype="unspecified"/>
+      <node ref="FPC301" pin="9" pinfunction="9_9" pintype="unspecified"/>
+      <node ref="R101" pin="1" pintype="passive"/>
+      <node ref="R501" pin="1" pintype="passive"/>
+      <node ref="R502" pin="1" pintype="passive"/>
+      <node ref="R503" pin="1" pintype="passive"/>
+      <node ref="R504" pin="1" pintype="passive"/>
+      <node ref="TP101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP206" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="3" pinfunction="3V3_3" pintype="power_in"/>
+      <node ref="U203" pin="5" pinfunction="V_{OUT}_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="+BATT" class="Power,Default">
+      <node ref="C201" pin="1" pintype="passive"/>
+      <node ref="C204" pin="1" pintype="passive"/>
+      <node ref="J202" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R201" pin="1" pintype="passive"/>
+      <node ref="R207" pin="1" pintype="passive"/>
+      <node ref="R301" pin="1" pintype="passive"/>
+      <node ref="TP204" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP205" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U202" pin="5" pinfunction="BAT_5" pintype="power_out"/>
+      <node ref="U203" pin="1" pinfunction="V_{IN}_1" pintype="power_in"/>
+      <node ref="U203" pin="3" pinfunction="CE_3" pintype="input"/>
+    </net>
+    <net code="3" name="-BATT" class="Power,Default">
+      <node ref="C203" pin="2" pintype="passive"/>
+      <node ref="J202" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
+      <node ref="Q201" pin="1" pinfunction="S1_1" pintype="unspecified"/>
+      <node ref="TP207" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U201" pin="6" pinfunction="GND_6" pintype="power_in"/>
+    </net>
+    <net code="4" name="/display/LED_A" class="Default">
+      <node ref="FPC301" pin="10" pinfunction="10_10" pintype="unspecified"/>
+      <node ref="R301" pin="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/display/LED_K" class="Default">
+      <node ref="FPC301" pin="11" pinfunction="11_11" pintype="unspecified"/>
+      <node ref="Q301" pin="3" pinfunction="D_3" pintype="unspecified"/>
+    </net>
+    <net code="6" name="/mcu/MCU_EN" class="Default">
+      <node ref="C103" pin="1" pintype="passive"/>
+      <node ref="R101" pin="2" pintype="passive"/>
+      <node ref="SW101" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U101" pin="45" pinfunction="EN_45" pintype="input"/>
+    </net>
+    <net code="7" name="/mcu/Mcu_Rx" class="Default">
+      <node ref="TP103" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="40" pinfunction="RXD0_40" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="/mcu/Mcu_Tx" class="Default">
+      <node ref="TP102" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="39" pinfunction="TXD0_39" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="/power/MOFETS_D1/D2" class="Default">
+      <node ref="Q201" pin="2" pinfunction="D1/D2_2" pintype="unspecified"/>
+      <node ref="Q201" pin="5" pinfunction="D1/D2_5" pintype="unspecified"/>
+    </net>
+    <net code="10" name="/power/MOFETS_G1" class="Default">
+      <node ref="Q201" pin="6" pinfunction="G1_6" pintype="unspecified"/>
+      <node ref="U201" pin="1" pinfunction="OD_1" pintype="output"/>
+    </net>
+    <net code="11" name="/power/MOFETS_G2" class="Default">
+      <node ref="Q201" pin="4" pinfunction="G2_4" pintype="unspecified"/>
+      <node ref="U201" pin="3" pinfunction="OC_3" pintype="output"/>
+    </net>
+    <net code="12" name="BAT_ADC" class="Default">
+      <node ref="R207" pin="2" pintype="passive"/>
+      <node ref="R208" pin="1" pintype="passive"/>
+      <node ref="TP208" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="6" pinfunction="IO2_6" pintype="bidirectional"/>
+    </net>
+    <net code="13" name="BTN_ACTION" class="Default">
+      <node ref="C501" pin="1" pintype="passive"/>
+      <node ref="R501" pin="2" pintype="passive"/>
+      <node ref="SW501" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP501" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="10" pinfunction="IO6_10" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="BTN_APPROVE" class="Default">
+      <node ref="C502" pin="1" pintype="passive"/>
+      <node ref="R502" pin="2" pintype="passive"/>
+      <node ref="SW502" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP502" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="8" pinfunction="IO4_8" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="BTN_REJECT" class="Default">
+      <node ref="C504" pin="1" pintype="passive"/>
+      <node ref="R504" pin="2" pintype="passive"/>
+      <node ref="SW504" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP504" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="9" pinfunction="IO5_9" pintype="bidirectional"/>
+    </net>
+    <net code="16" name="BTN_WAKE" class="Default">
+      <node ref="C503" pin="1" pintype="passive"/>
+      <node ref="R503" pin="2" pintype="passive"/>
+      <node ref="SW503" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP503" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="11" pinfunction="IO7_11" pintype="bidirectional"/>
+    </net>
+    <net code="17" name="DISP_BL" class="Default">
+      <node ref="Q301" pin="1" pinfunction="G_1" pintype="unspecified"/>
+      <node ref="R302" pin="2" pintype="passive"/>
+      <node ref="U101" pin="17" pinfunction="IO13_17" pintype="bidirectional"/>
+    </net>
+    <net code="18" name="DISP_CS" class="Default">
+      <node ref="FPC301" pin="2" pinfunction="2_2" pintype="unspecified"/>
+      <node ref="U101" pin="14" pinfunction="IO10_14" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="DISP_DC" class="Default">
+      <node ref="FPC301" pin="3" pinfunction="3_3" pintype="unspecified"/>
+      <node ref="U101" pin="13" pinfunction="IO9_13" pintype="bidirectional"/>
+    </net>
+    <net code="20" name="DISP_MOSI" class="Default">
+      <node ref="FPC301" pin="5" pinfunction="5_5" pintype="unspecified"/>
+      <node ref="U101" pin="15" pinfunction="IO11_15" pintype="bidirectional"/>
+    </net>
+    <net code="21" name="DISP_RST" class="Default">
+      <node ref="FPC301" pin="6" pinfunction="6_6" pintype="unspecified"/>
+      <node ref="U101" pin="12" pinfunction="IO8_12" pintype="bidirectional"/>
+    </net>
+    <net code="22" name="DISP_SCLK" class="Default">
+      <node ref="FPC301" pin="4" pinfunction="4_4" pintype="unspecified"/>
+      <node ref="U101" pin="16" pinfunction="IO12_16" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="GND" class="Power,Default">
+      <node ref="C101" pin="2" pintype="passive"/>
+      <node ref="C102" pin="2" pintype="passive"/>
+      <node ref="C103" pin="2" pintype="passive"/>
+      <node ref="C201" pin="2" pintype="passive"/>
+      <node ref="C202" pin="2" pintype="passive"/>
+      <node ref="C204" pin="2" pintype="passive"/>
+      <node ref="C205" pin="2" pintype="passive"/>
+      <node ref="C301" pin="2" pintype="passive"/>
+      <node ref="C302" pin="2" pintype="passive"/>
+      <node ref="C501" pin="2" pintype="passive"/>
+      <node ref="C502" pin="2" pintype="passive"/>
+      <node ref="C503" pin="2" pintype="passive"/>
+      <node ref="C504" pin="2" pintype="passive"/>
+      <node ref="FPC301" pin="1" pinfunction="1_1" pintype="unspecified"/>
+      <node ref="FPC301" pin="12" pinfunction="12_12" pintype="unspecified"/>
+      <node ref="FPC301" pin="13" pinfunction="13_13" pintype="unspecified"/>
+      <node ref="FPC301" pin="14" pinfunction="14_14" pintype="unspecified"/>
+      <node ref="H101" pin="1" pinfunction="1_1" pintype="input"/>
+      <node ref="J201" pin="A1" pinfunction="GND_A1" pintype="passive"/>
+      <node ref="J201" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J201" pin="B1" pinfunction="GND_B1" pintype="passive"/>
+      <node ref="J201" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J201" pin="S1" pinfunction="SHIELD_S1" pintype="passive"/>
+      <node ref="Q201" pin="3" pinfunction="S2_3" pintype="unspecified"/>
+      <node ref="Q301" pin="2" pinfunction="S_2" pintype="unspecified"/>
+      <node ref="R202" pin="2" pintype="passive"/>
+      <node ref="R203" pin="2" pintype="passive"/>
+      <node ref="R204" pin="2" pintype="passive"/>
+      <node ref="R205" pin="2" pintype="passive"/>
+      <node ref="R206" pin="2" pintype="passive"/>
+      <node ref="R208" pin="2" pintype="passive"/>
+      <node ref="R302" pin="1" pintype="passive"/>
+      <node ref="SW101" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW501" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW502" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW503" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="SW504" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP105" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP202" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP203" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U101" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U101" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="U101" pin="42" pinfunction="GND_42" pintype="passive"/>
+      <node ref="U101" pin="43" pinfunction="GND_43" pintype="passive"/>
+      <node ref="U101" pin="46" pinfunction="GND_46" pintype="passive"/>
+      <node ref="U101" pin="47" pinfunction="GND_47" pintype="passive"/>
+      <node ref="U101" pin="48" pinfunction="GND_48" pintype="passive"/>
+      <node ref="U101" pin="49" pinfunction="GND_49" pintype="passive"/>
+      <node ref="U101" pin="50" pinfunction="GND_50" pintype="passive"/>
+      <node ref="U101" pin="51" pinfunction="GND_51" pintype="passive"/>
+      <node ref="U101" pin="52" pinfunction="GND_52" pintype="passive"/>
+      <node ref="U101" pin="53" pinfunction="GND_53" pintype="passive"/>
+      <node ref="U101" pin="54" pinfunction="GND_54" pintype="passive"/>
+      <node ref="U101" pin="55" pinfunction="GND_55" pintype="passive"/>
+      <node ref="U101" pin="56" pinfunction="GND_56" pintype="passive"/>
+      <node ref="U101" pin="57" pinfunction="GND_57" pintype="passive"/>
+      <node ref="U101" pin="58" pinfunction="GND_58" pintype="passive"/>
+      <node ref="U101" pin="59" pinfunction="GND_59" pintype="passive"/>
+      <node ref="U101" pin="60" pinfunction="GND_60" pintype="passive"/>
+      <node ref="U101" pin="61" pinfunction="GND_61" pintype="passive"/>
+      <node ref="U101" pin="62" pinfunction="GND_62" pintype="passive"/>
+      <node ref="U101" pin="63" pinfunction="GND_63" pintype="passive"/>
+      <node ref="U101" pin="64" pinfunction="GND_64" pintype="passive"/>
+      <node ref="U101" pin="65" pinfunction="GND_65" pintype="passive"/>
+      <node ref="U202" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U202" pin="9" pinfunction="EPAD_9" pintype="passive"/>
+      <node ref="U203" pin="2" pinfunction="V_{SS}_2" pintype="power_in"/>
+    </net>
+    <net code="24" name="Net-(J201-CC1)" class="Default">
+      <node ref="J201" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
+      <node ref="R204" pin="1" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(J201-CC2)" class="Default">
+      <node ref="J201" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
+      <node ref="R203" pin="1" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(U201-CS)" class="Default">
+      <node ref="R202" pin="1" pintype="passive"/>
+      <node ref="U201" pin="2" pinfunction="CS_2" pintype="input"/>
+    </net>
+    <net code="27" name="Net-(U201-VCC)" class="Default">
+      <node ref="C203" pin="1" pintype="passive"/>
+      <node ref="R201" pin="2" pintype="passive"/>
+      <node ref="U201" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="28" name="Net-(U202-PROG)" class="Default">
+      <node ref="R205" pin="1" pintype="passive"/>
+      <node ref="U202" pin="2" pinfunction="PROG_2" pintype="passive"/>
+    </net>
+    <net code="29" name="Net-(U202-TEMP)" class="Default">
+      <node ref="R206" pin="1" pintype="passive"/>
+      <node ref="U202" pin="1" pinfunction="TEMP_1" pintype="input"/>
+    </net>
+    <net code="30" name="PWR_CHRG" class="Default">
+      <node ref="U101" pin="22" pinfunction="IO18_22" pintype="bidirectional"/>
+      <node ref="U202" pin="7" pinfunction="~{CHRG}_7" pintype="open_collector"/>
+    </net>
+    <net code="31" name="PWR_STDBY" class="Default">
+      <node ref="U101" pin="21" pinfunction="IO17_21" pintype="bidirectional"/>
+      <node ref="U202" pin="6" pinfunction="~{STDBY}_6" pintype="open_collector"/>
+    </net>
+    <net code="32" name="USB_DN" class="USB,Default">
+      <node ref="J201" pin="A7" pinfunction="D-_A7" pintype="bidirectional"/>
+      <node ref="J201" pin="B7" pinfunction="D-_B7" pintype="bidirectional"/>
+      <node ref="U101" pin="23" pinfunction="USB_D-_23" pintype="bidirectional"/>
+    </net>
+    <net code="33" name="USB_DP" class="USB,Default">
+      <node ref="J201" pin="A6" pinfunction="D+_A6" pintype="bidirectional"/>
+      <node ref="J201" pin="B6" pinfunction="D+_B6" pintype="bidirectional"/>
+      <node ref="U101" pin="24" pinfunction="USB_D+_24" pintype="bidirectional"/>
+    </net>
+    <net code="34" name="VBUS" class="Power,Default">
+      <node ref="C202" pin="1" pintype="passive"/>
+      <node ref="J201" pin="A4" pinfunction="VBUS_A4" pintype="power_out"/>
+      <node ref="J201" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J201" pin="B4" pinfunction="VBUS_B4" pintype="passive"/>
+      <node ref="J201" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="TP201" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U202" pin="4" pinfunction="V_{CC}_4" pintype="power_in"/>
+      <node ref="U202" pin="8" pinfunction="CE_8" pintype="input"/>
+    </net>
+    <net code="35" name="unconnected-(FPC301-Pad7)" class="Default">
+      <node ref="FPC301" pin="7" pinfunction="7_7" pintype="unspecified+no_connect"/>
+    </net>
+    <net code="36" name="unconnected-(J201-SBU1-PadA8)" class="Default">
+      <node ref="J201" pin="A8" pinfunction="SBU1_A8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="37" name="unconnected-(J201-SBU2-PadB8)" class="Default">
+      <node ref="J201" pin="B8" pinfunction="SBU2_B8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="38" name="unconnected-(U101-IO0-Pad4)" class="Default">
+      <node ref="U101" pin="4" pinfunction="IO0_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="39" name="unconnected-(U101-IO1-Pad5)" class="Default">
+      <node ref="U101" pin="5" pinfunction="IO1_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="40" name="unconnected-(U101-IO3-Pad7)" class="Default">
+      <node ref="U101" pin="7" pinfunction="IO3_7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U101-IO14-Pad18)" class="Default">
+      <node ref="U101" pin="18" pinfunction="IO14_18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U101-IO15-Pad19)" class="Default">
+      <node ref="U101" pin="19" pinfunction="IO15_19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U101-IO16-Pad20)" class="Default">
+      <node ref="U101" pin="20" pinfunction="IO16_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U101-IO21-Pad25)" class="Default">
+      <node ref="U101" pin="25" pinfunction="IO21_25" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U101-IO26-Pad26)" class="Default">
+      <node ref="U101" pin="26" pinfunction="IO26_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U101-IO33-Pad28)" class="Default">
+      <node ref="U101" pin="28" pinfunction="IO33_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U101-IO34-Pad29)" class="Default">
+      <node ref="U101" pin="29" pinfunction="IO34_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U101-IO35-Pad31)" class="Default">
+      <node ref="U101" pin="31" pinfunction="IO35_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U101-IO36-Pad32)" class="Default">
+      <node ref="U101" pin="32" pinfunction="IO36_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U101-IO37-Pad33)" class="Default">
+      <node ref="U101" pin="33" pinfunction="IO37_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U101-IO38-Pad34)" class="Default">
+      <node ref="U101" pin="34" pinfunction="IO38_34" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U101-IO39-Pad35)" class="Default">
+      <node ref="U101" pin="35" pinfunction="IO39_35" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U101-IO40-Pad36)" class="Default">
+      <node ref="U101" pin="36" pinfunction="IO40_36" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U101-IO41-Pad37)" class="Default">
+      <node ref="U101" pin="37" pinfunction="IO41_37" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U101-IO42-Pad38)" class="Default">
+      <node ref="U101" pin="38" pinfunction="IO42_38" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U101-IO45-Pad41)" class="Default">
+      <node ref="U101" pin="41" pinfunction="IO45_41" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U101-IO46-Pad44)" class="Default">
+      <node ref="U101" pin="44" pinfunction="IO46_44" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U101-IO47-Pad27)" class="Default">
+      <node ref="U101" pin="27" pinfunction="IO47_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U101-IO48-Pad30)" class="Default">
+      <node ref="U101" pin="30" pinfunction="IO48_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U201-TD-Pad4)" class="Default">
+      <node ref="U201" pin="4" pinfunction="TD_4" pintype="no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U203-NC-Pad4)" class="Default">
+      <node ref="U203" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U301-A-Pad10)" class="Default">
+      <node ref="U301" pin="10" pinfunction="A_10" pintype="unspecified"/>
+    </net>
+    <net code="63" name="unconnected-(U301-CS-Pad2)" class="Default">
+      <node ref="U301" pin="2" pinfunction="CS_2" pintype="unspecified"/>
+    </net>
+    <net code="64" name="unconnected-(U301-GND-Pad1)" class="Default">
+      <node ref="U301" pin="1" pinfunction="GND_1" pintype="unspecified"/>
+    </net>
+    <net code="65" name="unconnected-(U301-GND-Pad12)" class="Default">
+      <node ref="U301" pin="12" pinfunction="GND_12" pintype="unspecified"/>
+    </net>
+    <net code="66" name="unconnected-(U301-I/O-VCC-Pad8)" class="Default">
+      <node ref="U301" pin="8" pinfunction="I/O-VCC_8" pintype="unspecified"/>
+    </net>
+    <net code="67" name="unconnected-(U301-K-Pad11)" class="Default">
+      <node ref="U301" pin="11" pinfunction="K_11" pintype="unspecified"/>
+    </net>
+    <net code="68" name="unconnected-(U301-NC-Pad7)" class="Default">
+      <node ref="U301" pin="7" pinfunction="NC_7" pintype="unspecified"/>
+    </net>
+    <net code="69" name="unconnected-(U301-RS-Pad3)" class="Default">
+      <node ref="U301" pin="3" pinfunction="RS_3" pintype="unspecified"/>
+    </net>
+    <net code="70" name="unconnected-(U301-RST-Pad6)" class="Default">
+      <node ref="U301" pin="6" pinfunction="RST_6" pintype="unspecified"/>
+    </net>
+    <net code="71" name="unconnected-(U301-SCL-Pad4)" class="Default">
+      <node ref="U301" pin="4" pinfunction="SCL_4" pintype="unspecified"/>
+    </net>
+    <net code="72" name="unconnected-(U301-SDA-Pad5)" class="Default">
+      <node ref="U301" pin="5" pinfunction="SDA_5" pintype="unspecified"/>
+    </net>
+    <net code="73" name="unconnected-(U301-VCC-Pad9)" class="Default">
+      <node ref="U301" pin="9" pinfunction="VCC_9" pintype="unspecified"/>
+    </net>
+  </nets>
+</export>

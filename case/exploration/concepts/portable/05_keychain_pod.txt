@@ -1,0 +1,276 @@
+DESIGN 5: KEYCHAIN POD
+======================
+Ultra-compact square pod with heavily rounded corners, almost circular.
+Integrated carabiner/keyring loop at top. Screen fills most of the front.
+Designed to clip onto keys, bags, or belt loops. Chunky and pocket-friendly.
+Think "AirTag meets Tamagotchi" — a thick, rounded puck with a screen.
+
+Overall body: 55mm x 55mm x 18mm deep
+With carabiner loop: 55mm x 65mm x 18mm (loop adds 10mm at top)
+Weight target: ~48g with battery
+Orientation: Portrait (slightly taller active area than wide)
+Corner radius: 12mm (very round, almost circular)
+Shell: 2-piece (front + back), 4x M2 screws
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+            ╭───╮
+           ╱  ○  ╲           ← Carabiner loop (10mm tall)
+          │   │   │             4mm hole, reinforced
+       ╭──┘       └──╮         Adds 10mm to height
+     ╭─╯    ○ LED     ╰─╮
+    │  ┌─────────────────┐  │
+    │  │                 │  │
+    │  │                 │  │
+    │  │  TFT LCD SCREEN │  │  55mm body
+    │  │ (40.8 x 30.6)  │  │
+    │  │                 │  │
+    │  │                 │  │
+    │  └─────────────────┘  │
+    │                        │
+    │  (●)    (●)    (●)    │ ← 3x main buttons (12x6mm caps)
+     ╰─╮    ┌──────┐    ╭─╯    14mm center spacing
+       ╰────┤USB-C ├────╯
+            └──────┘       ← USB-C cutout (9.34x3.66mm)
+       ├──── 55mm ────┤
+
+
+RIGHT SIDE VIEW
+───────────────
+
+           18mm
+       ├──────────┤
+       ╭──────────╮ ─┬─ ← Carabiner loop top
+      ╱            ╲  │
+     ┌──────────────┐ ─┤ ← Body top
+     │              │  │
+     │  scr         │  │
+     │   pcb   ═══W │  │  ← Wake button on right side
+     │    batt      │  │    (10x4.5mm cap, centered vertically)
+     │              │  │
+     └──────┤  ├────┘ ─┴─
+            USB-C      55mm body
+     ↑              ↑
+    Front         Back
+
+
+BACK VIEW
+─────────
+
+            ╭───╮
+           ╱     ╲
+          │       │
+       ╭──┘       └──╮
+     ╭─╯               ╰─╮
+    │                      │
+    │    ●          ●      │ ← 4x M2 screw recesses
+    │                      │   (countersunk, 4mm OD)
+    │                      │
+    │     ▪▪▪▪▪▪▪▪▪▪▪     │ ← Vibration motor zone
+    │                      │
+    │    ●          ●      │
+     ╰─╮              ╭─╯
+       ╰──────────────╯
+
+
+TOP VIEW (looking down, showing carabiner loop)
+───────────────────────────────────────────────
+
+              ╭──────╮        ← Loop: 12mm wide, 10mm tall
+             ╱   ○   ╲         4mm hole
+            │    │    │
+       ╭────┘         └────╮
+      │                     │ ← 18mm deep
+       ╰───────────────────╯
+       ├────── 55mm ────────┤
+
+
+BOTTOM VIEW (USB-C)
+───────────────────
+
+       ╭───────────────────╮
+      │     ┌──────┐        │ ← USB-C centered
+       ╰────┤      ├───────╯
+            └──────┘
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                              Back
+      │                                  │
+      │  1.5mm wall                      │  1.5mm wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  ├── Display ───────────────┐ │  │
+      │  │   (2.5mm thick)         │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   2.5mm gap             │ │  │  18mm total
+      │  ├── PCB ──────────────────┤ │  │  (15.1mm stack + 2.9mm extra
+      │  │   (1.6mm thick)        │ │  │   for screw bosses, vibration
+      │  ├──────────────────────────┤ │  │   motor clearance, tolerances)
+      │  │   0.5mm gap            │ │  │
+      │  ├── Battery ──────────────┤ │  │
+      │  │   (5.0mm thick)        │ │  │
+      ├──┴──────────────────────────┴─┤  │
+      │                                  │
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    + 2.9mm extra depth budget:
+      - 1.0mm for vibration motor (6mm coin, between PCB and battery)
+      - 1.0mm for screw boss height
+      - 0.9mm tolerance / air gap
+    = 18mm exterior
+
+    Note: The extra depth vs other designs is intentional —
+    the chunky/thick feel is part of the keychain pod aesthetic.
+    It also allows a thicker battery (up to 7mm / ~600mAh).
+
+
+CARABINER LOOP DETAIL
+─────────────────────
+
+    Cross-section through loop:
+
+         ╭───────────────╮
+        ╱    ╭───────╮    ╲
+       │     │  4mm  │     │  ← 4mm hole (fits split ring or
+       │     │  hole │     │    small carabiner clip)
+        ╲    ╰───────╯    ╱
+         ╰───────────────╯
+         ├── 12mm wide ──┤
+               3mm wall
+
+    - Reinforced: 3mm wall around hole (vs 1.5mm body wall)
+    - Loop is integral part of front + back shell
+    - Rated for 2kg pull force (keys, bag clip)
+    - Split ring (15mm OD) or mini carabiner attaches here
+
+    Top view showing loop integration:
+
+    ╭─── loop ───╮
+    │   ╭───╮    │
+    │   │ ○ │    │   ← Hole centered
+    │   ╰───╯    │
+    ├─ body top ─┤   ← Seamless transition into body
+    │            │
+
+
+WAKE BUTTON DETAIL (right side)
+───────────────────────────────
+
+    Side view (right edge):
+
+    ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱
+    │                           │
+    │          ┌─────┐          │
+    │          │ 10  │ ═══      │ ← Wake button cap (10x4.5mm)
+    │          │x4.5 │          │   protrudes 1mm from surface
+    │          └─────┘          │
+    │                           │
+    ╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲
+
+    Button centered vertically on right edge.
+    Uses right-angle tactile switch on PCB.
+    Recessed channel around button prevents accidental press in pocket.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (1.5mm wall, 12mm corner radius)
+    ├── Screen window cutout (41.8 x 31.6mm, portrait)
+    ├── 3x bottom-edge button holes (12.5 x 6.5mm)
+    ├── 1x right-side wake button slot (11 x 5mm)
+    ├── 1x LED hole (2mm, above screen)
+    ├── 4x screen retention clips
+    ├── Carabiner loop (upper half of loop, 3mm wall)
+    └── 4x M2 threaded inserts (heat-set, brass)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Portrait orientation
+    ├── Pushed as close to top of body as possible
+    ├── FPC exits bottom edge
+    └── Held by retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC routes to PCB connector
+    ├── Front button plungers pass through
+    └── Side wake button plunger routes here
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces back
+    ├── 3x tactile switches on bottom edge (face front)
+    ├── 1x right-angle tactile switch on right edge (wake)
+    ├── USB-C on bottom edge (centered)
+    ├── Display FPC connector on top edge
+    ├── Vibration motor pads (center-back)
+    └── Mounted on 4x M2 standoffs
+
+    Layer 5 — VIBRATION MOTOR + GAP
+    ├── 6mm coin motor between PCB and battery
+    ├── Adhered to back of PCB with foam tape
+    └── ~1.5mm total (motor + clearance)
+
+    Layer 6 — BATTERY (30 x 35 x 5-7mm LiPo)
+    ├── Centered in back shell cavity
+    ├── Extra depth allows up to 7mm battery (~600mAh)
+    ├── JST pigtail to PCB
+    └── Foam tape retention
+
+    Layer 7 — BACK SHELL (1.5mm wall, 12mm corner radius)
+    ├── 4x M2 countersunk screw holes
+    ├── 4x standoff bosses
+    ├── Battery cavity with retention pad
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Carabiner loop (lower half of loop, 3mm wall)
+
+
+BUTTON LAYOUT (front face, bottom edge)
+───────────────────────────────────────
+
+    │                              │
+    │  ┌────┐   ┌────┐   ┌────┐  │
+    │  │RJCT│   │ACTN│   │APRV│  │ ← 12x6mm caps
+    │  └────┘   └────┘   └────┘  │   14mm center spacing
+    │  ├─14mm──┤  ├─14mm──┤      │
+     ╰─╮                      ╭─╯
+       ╰──────────────────────╯
+
+    Buttons are close to bottom edge to maximize screen area.
+    Only ~5mm between screen bottom and button tops.
+
+
+SIZE COMPARISON (to scale, front views)
+───────────────────────────────────────
+
+    Keychain Pod     vs.     AirTag         vs.   Quarter (USD)
+    ┌─────────┐             ╭───╮                  ╭─╮
+    │         │            │   │                  │ │
+    │  55mm   │  55mm      │32 │  32mm            │24│ 24mm
+    │         │            │   │                  │ │
+    └─────────┘             ╰───╯                  ╰─╯
+
+    It is about 1.7x the size of an AirTag — substantial
+    but still pocket/keychain-friendly.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece rounded square, 4x M2 screws from back
+- 12mm corner radius makes it almost circular — very organic
+- Carabiner loop integrated into both shell halves, aligned at seam
+- Loop reinforced to 3mm wall thickness (2x body wall)
+- Front has 3 buttons along bottom edge + screen filling upper 80%
+- Wake button on right side (right-angle switch on PCB)
+- Extra body depth (18mm vs 15.1mm minimum) allows:
+  - Thicker battery option (7mm for ~600mAh)
+  - Vibration motor between PCB and battery
+  - More comfortable rounded profile
+- Chunky proportions are intentional — feels like a worry stone
+- All edges heavily rounded (2mm edge fillet on shell seam)
+- Pocket-friendly: no sharp edges, no protruding buttons (except wake)
+- Wake button has recessed channel to prevent accidental pocket press
+- USB-C on bottom edge, accessible when clipped to keyring

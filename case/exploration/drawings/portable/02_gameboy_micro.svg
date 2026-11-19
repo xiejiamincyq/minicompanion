@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch2" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 2: GameBoy Micro — Landscape Handheld (95mm x 55mm x 16mm)</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="300" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Main body - landscape rectangle with rounded corners -->
+  <rect x="82" y="110" width="436" height="252" rx="18" ry="18" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Grip zone left -->
+  <rect x="82" y="130" width="55" height="212" rx="18" ry="10" fill="none" stroke="#999" stroke-width="0.3" stroke-dasharray="3,3"/>
+  <text x="110" y="242" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#999" transform="rotate(-90 110 242)">GRIP ZONE</text>
+
+  <!-- Grip zone right -->
+  <rect x="463" y="130" width="55" height="212" rx="10" ry="10" fill="none" stroke="#999" stroke-width="0.3" stroke-dasharray="3,3"/>
+  <text x="490" y="242" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#999" transform="rotate(-90 490 242)">GRIP ZONE</text>
+
+  <!-- Screen bezel -->
+  <rect x="176" y="150" width="248" height="172" rx="4" ry="4" fill="none" stroke="black" stroke-width="0.5"/>
+  <!-- Active display -->
+  <rect x="186" y="160" width="228" height="152" rx="2" ry="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="300" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Active Area</text>
+  <text x="300" y="252" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.80 x 30.60mm</text>
+
+  <!-- Left buttons (2) -->
+  <rect x="103" y="175" width="40" height="18" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="103" y="215" width="40" height="18" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="123" y="170" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN1</text>
+  <text x="123" y="248" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN2</text>
+
+  <!-- Right buttons (2) -->
+  <rect x="457" y="175" width="40" height="18" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="457" y="215" width="40" height="18" rx="3" ry="3" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="477" y="170" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN3</text>
+  <text x="477" y="248" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">BTN4</text>
+
+  <!-- Wake button (small, bottom edge) -->
+  <rect x="288" y="350" width="24" height="8" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="300" y="374" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Wake</text>
+
+  <!-- USB-C at right side -->
+  <rect x="516" y="228" width="6" height="16" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="530" y="240" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: width 95mm -->
+  <line x1="82" y1="395" x2="518" y2="395" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="82" y1="385" x2="82" y2="405" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="518" y1="385" x2="518" y2="405" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="300" y="412" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">95.0mm</text>
+
+  <!-- Dimension: height 55mm -->
+  <line x1="545" y1="110" x2="545" y2="362" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="535" y1="110" x2="555" y2="110" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="535" y1="362" x2="555" y2="362" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="565" y="240" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- Dimension: button spacing -->
+  <line x1="123" y1="193" x2="123" y2="215" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="90" y="208" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">14mm</text>
+
+  <!-- ============ VIEW 2: TOP VIEW (top-right) ============ -->
+  <text x="900" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top View</text>
+
+  <!-- Top outline - showing width and depth -->
+  <rect x="672" y="140" width="456" height="74" rx="12" ry="12" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen position visible from top (slightly recessed) -->
+  <rect x="780" y="140" width="248" height="3" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <text x="904" y="136" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4488CC">Screen surface</text>
+
+  <!-- Button bumps on top face -->
+  <rect x="714" y="138" width="30" height="4" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="1064" y="138" width="30" height="4" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="729" y="133" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Btns</text>
+  <text x="1079" y="133" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Btns</text>
+
+  <!-- USB-C on right edge -->
+  <rect x="1126" y="170" width="6" height="16" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="1140" y="182" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Grip texture indicators -->
+  <line x1="690" y1="150" x2="690" y2="204" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="695" y1="150" x2="695" y2="204" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="700" y1="150" x2="700" y2="204" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="1108" y1="150" x2="1108" y2="204" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="1113" y1="150" x2="1113" y2="204" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="1118" y1="150" x2="1118" y2="204" stroke="#BBB" stroke-width="0.3"/>
+
+  <!-- Dimension: width 95mm -->
+  <line x1="672" y1="240" x2="1128" y2="240" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="672" y1="230" x2="672" y2="250" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="1128" y1="230" x2="1128" y2="250" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="900" y="256" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">95.0mm</text>
+
+  <!-- Dimension: depth 16mm -->
+  <line x1="650" y1="140" x2="650" y2="214" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="640" y1="140" x2="660" y2="140" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="640" y1="214" x2="660" y2="214" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="630" y="182" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">16mm</text>
+
+  <!-- ============ VIEW 3: CROSS-SECTION (bottom-left) ============ -->
+  <text x="300" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Horizontal Cut at Screen Height)</text>
+
+  <!-- Outer shell outline -->
+  <rect x="70" y="510" width="460" height="340" rx="14" ry="14" fill="none" stroke="black" stroke-width="0.5"/>
+
+  <!-- Wall hatching - top -->
+  <rect x="70" y="510" width="460" height="12" rx="14" fill="url(#hatch2)" stroke="black" stroke-width="0.5"/>
+  <!-- Wall - bottom -->
+  <rect x="70" y="838" width="460" height="12" rx="14" fill="url(#hatch2)" stroke="black" stroke-width="0.5"/>
+  <!-- Wall - left -->
+  <rect x="70" y="522" width="12" height="316" fill="url(#hatch2)" stroke="black" stroke-width="0.5"/>
+  <!-- Wall - right -->
+  <rect x="518" y="522" width="12" height="316" fill="url(#hatch2)" stroke="black" stroke-width="0.5"/>
+
+  <!-- Display module (from top) -->
+  <rect x="142" y="528" width="246" height="170" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="265" y="618" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display Module</text>
+  <text x="265" y="632" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">51.80 x 36.20mm</text>
+
+  <!-- PCB underneath -->
+  <rect x="107" y="540" width="210" height="190" fill="#90C695" stroke="black" stroke-width="0.5" opacity="0.5"/>
+  <text x="212" y="750" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#5A8C5E">PCB 45.0 x 40.0mm</text>
+
+  <!-- ESP32 on PCB -->
+  <rect x="115" y="580" width="72" height="96" fill="#7AB37E" stroke="black" stroke-width="0.5"/>
+  <text x="151" y="632" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">ESP32-S3</text>
+  <text x="151" y="644" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">15.4x20.5mm</text>
+
+  <!-- Battery (next to PCB in landscape layout) -->
+  <rect x="330" y="560" width="168" height="150" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="414" y="640" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery</text>
+  <text x="414" y="654" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">30 x 35 x 5mm</text>
+
+  <!-- Vibration motor -->
+  <circle cx="136" cy="800" r="16" fill="#DDD" stroke="black" stroke-width="0.5"/>
+  <text x="136" y="803" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Vibe</text>
+
+  <!-- USB-C connector on right wall -->
+  <rect x="518" y="670" width="14" height="22" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="540" y="685" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Wall thickness dimension -->
+  <line x1="70" y1="870" x2="82" y2="870" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="76" y="886" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">1.5mm</text>
+
+  <!-- ============ VIEW 4: SIDE VIEW (bottom-right) ============ -->
+  <text x="900" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side View (Right)</text>
+
+  <!-- Side profile - showing comfortable grip -->
+  <path d="M840,520 Q838,510 850,502 L950,502 Q962,510 960,520 L960,830 Q962,842 950,850 L850,850 Q838,842 840,830 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Slight ergonomic curve on back -->
+  <path d="M960,520 Q968,560 970,676 Q968,790 960,830" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="978" y="680" font-family="sans-serif" font-size="8" fill="#555">Slight</text>
+  <text x="978" y="692" font-family="sans-serif" font-size="8" fill="#555">ergonomic</text>
+  <text x="978" y="704" font-family="sans-serif" font-size="8" fill="#555">curve</text>
+
+  <!-- Screen from side -->
+  <line x1="840" y1="565" x2="840" y2="735" stroke="#4488CC" stroke-width="2"/>
+  <text x="828" y="654" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- Button positions on right side -->
+  <rect x="836" y="580" width="6" height="24" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="836" y="620" width="6" height="24" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="822" y="596" text-anchor="end" font-family="sans-serif" font-size="7" fill="#333">BTN3</text>
+  <text x="822" y="636" text-anchor="end" font-family="sans-serif" font-size="7" fill="#333">BTN4</text>
+
+  <!-- USB-C on bottom -->
+  <rect x="890" y="848" width="22" height="6" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="901" y="868" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Dimension: height 55mm -->
+  <line x1="1030" y1="502" x2="1030" y2="850" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="1020" y1="502" x2="1040" y2="502" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="1020" y1="850" x2="1040" y2="850" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="1050" y="680" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">55.0mm</text>
+
+  <!-- Dimension: depth 16mm -->
+  <line x1="840" y1="880" x2="960" y2="880" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="840" y1="870" x2="840" y2="890" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="960" y1="870" x2="960" y2="890" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="900" y="896" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">16.0mm</text>
+
+  <!-- Button cap dimension -->
+  <line x1="836" y1="560" x2="842" y2="560" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="830" y="554" text-anchor="end" font-family="sans-serif" font-size="7" fill="#CC0000">12x6mm caps</text>
+</svg>

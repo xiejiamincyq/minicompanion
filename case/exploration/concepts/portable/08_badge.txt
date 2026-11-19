@@ -1,0 +1,325 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 08: LANYARD BADGE
+================================================================================
+
+  ID badge form factor designed to hang from a lanyard. Landscape screen in
+  upper 2/3, thin profile. Slot at top for standard badge clip/lanyard.
+  Designed for conference/office wear.
+
+  Overall Dimensions: 90mm tall x 60mm wide x 12mm deep
+  Corner Radius:      4mm on all corners
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                           60mm
+          |<------------------------------------>|
+
+          .--[=====LANYARD SLOT=====]--.
+     ___  /                              \   ___
+      |  |                                |   |
+      |  |     ______________________     |   |
+      |  |    |                      |    |   |
+      |  |    |                      |    |   |
+      |  |    |    40.80 x 30.60     |    |   |
+      |  |    |    Active Area       |    |   |
+      |  |    |                      |    |   |
+  90  |  |    |    (landscape        |    |   |
+  mm  |  |    |     orientation)     |    |  90mm
+      |  |    |                      |    |   |
+      |  |    |______________________|    |   |
+      |  |                                |   |
+      |  |                                |   |
+      |  |   .-------. .-------. .-------.    |
+      |  |   | PREV  | |  OK   | | NEXT  |   |
+      |  |   '-------' '-------' '-------'   |
+      |  |                                |   |
+     _|_ |  \______________________________/  _|_
+                      [_USB-C_]
+                       9.34mm
+
+  Notes:
+  - Lanyard slot: 25mm wide x 5mm tall, centered at top
+    Accepts standard badge clips, lanyards, carabiners
+  - Screen in upper 2/3 of face
+  - Display module: landscape, FPC exits right side
+  - 3 buttons along bottom, 14mm center-to-center
+  - All corners: 4mm radius
+  - Slight bezel chamfer around screen (0.5mm x 45 deg)
+
+================================================================================
+  SIDE PROFILE (RIGHT SIDE)
+================================================================================
+
+                12mm
+          |<---------->|
+
+          +--+   +--+      ___ top (lanyard slot gap)
+          |  |   |  |
+          |  +---+  |       |
+          |         |        |
+          |  Screen |        |
+          |  area   |        |
+          |.........|       90mm
+          |         |        |
+          |  Btns   |        |
+          |         |        |
+     [W]--|         |        |   [W] = Wake button
+          |         |        |
+          \---------/       _|_
+            [USB-C]
+
+  Notes:
+  - Very thin: only 12mm deep
+  - Wake button on right side, ~50mm from top
+  - Flat back for comfortable chest/body wear
+  - Slight taper at bottom edges
+
+  12mm Z-Stack Challenge:
+  Standard stack is 15.1mm -- must be reduced!
+  See cross-section for modified stack.
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                           60mm
+          |<------------------------------------>|
+
+          .--[=====LANYARD SLOT=====]--.
+         /                              \
+        |                                |
+        |                                |
+        |    .----------------------.    |
+        |    |                      |    |
+        |    |   Flat back surface  |    |
+        |    |                      |    |
+        |    |   (comfortable       |    |
+        |    |    against chest)    |    |
+        |    |                      |    |
+        |    '----------------------'    |
+        |                                |
+        |         (o)      (o)           |   (o) = screws
+        |                                |
+        |                                |
+         \______________________________/
+
+  Notes:
+  - Completely flat back (no dome, no protrusions)
+  - 2x M2 screws near bottom for shell assembly
+  - Optional: soft-touch coating for comfort against clothing
+  - No belt clip (lanyard is the primary attachment)
+
+================================================================================
+  CROSS-SECTION (Side view, cut through center)
+================================================================================
+
+  MODIFIED Z-STACK FOR 12mm PROFILE:
+
+  Front                                          Back
+   |                                              |
+   | 1.2mm  2.5mm   0.8mm  1.6mm  4.4mm    1.5mm |
+   |<--->|<------->|<----->|<--->|<-------->|<--->|
+   |     |         |       |     |          |     |
+   |Wall | Display |  Gap  | PCB | Battery  |Wall |
+   |thin | Module  | (min) |     | (custom  |     |
+   |     |         |       |     |  thin)   |     |
+   +-----+---------+-------+-----+----------+-----+
+   |<------------------------------------------------>|
+                      12.0mm total
+
+  Key Changes from Standard Stack:
+  1. Front wall: 1.2mm (reduced from 1.5mm -- still structural)
+  2. Gap: 0.8mm (reduced from 2.5mm -- tight FPC fold)
+  3. Battery: 4.4mm thin (custom LiPo, wider to compensate)
+     - Standard 5mm battery won't fit
+     - Custom cell: 40 x 50 x 4.4mm (~400mAh)
+     - Or: 2x ultra-thin cells (2.2mm each) side by side
+  4. No air gap between PCB and battery (direct contact OK with
+     insulation tape)
+  5. Back wall: 1.5mm (standard)
+
+  Alternative: Accept 13mm depth
+  +-----+---------+-------+-----+--+------+-----+
+  |1.2mm| 2.5mm   | 1.2mm |1.6mm|.5| 4.4  |1.5mm| = 12.9mm
+  | Wall| Display | Gap   | PCB |G | Bat  | Wall|
+  +-----+---------+-------+-----+--+------+-----+
+
+================================================================================
+  LANYARD SLOT DETAIL (Top-down view at slot)
+================================================================================
+
+          .--[=====25mm=====]--.
+         / |                 |  \
+        |  |  5mm tall slot  |   |
+        |  |  3mm wide gap   |   |
+         \ |_________________|  /
+
+  Cross-section through slot:
+         ____       ____
+        |    | 3mm |    |
+        |    |<--->|    |
+        |    |     |    |    5mm tall
+        |    |     |    |
+        |    |_____|    |
+        |_______________|
+
+  Slot Specs:
+  - Width: 25mm (fits standard badge clips)
+  - Height: 5mm
+  - Depth (gap): 3mm (fits lanyard cord up to 3mm dia)
+  - Reinforced edges: 2mm thick walls around slot
+  - Smooth radius inside to prevent lanyard fraying
+
+  Compatible with:
+  - Standard lanyard clips (bulldog, swivel hook)
+  - Badge reels
+  - Carabiner clips
+  - Zip ties (for permanent mounting)
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Front Shell:
+  .--[===SLOT===]--.
+  /                  \
+ |   .--------------. |
+ |   | Screen window | |    42 x 32mm cutout
+ |   | (clear lens)  | |    landscape orientation
+ |   '--------------' |
+ |                     |
+ |  [BTN1][BTN2][BTN3] |    Button holes
+  \___[USB cutout]____/
+
+  Layer 2 - Display Module:
+       .--------------------.
+       | 51.80 x 36.20mm    |
+       | Landscape mount     |
+       | FPC exits right     |
+       '--------------------'
+
+  Layer 3 - PCB:
+       +----------------------+
+       | 45.0 x 40.0mm        |
+       | Landscape layout:    |
+       |                      |
+       | [ESP32]  [USB-C]     |
+       | [Vibra]  [Buttons]   |
+       | [Wake btn on edge]   |
+       +----------------------+
+
+  Layer 4 - Battery (custom thin):
+       .-------------------------.
+       | 40 x 50 x 4.4mm         |
+       | ~400mAh custom LiPo     |
+       | Wider/taller to          |
+       | compensate for thinness  |
+       '-------------------------'
+
+  Layer 5 - Back Shell:
+  .--[===SLOT===]--.
+  /                  \
+ |   Flat surface     |
+ |   Screw bosses x2  |
+ |   Battery pocket    |
+  \__________________/
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Recessed pocket in front shell: 52.0 x 36.4mm
+  - Pocket depth: 2.5mm
+  - Display held by adhesive foam frame
+  - Landscape orientation (long axis horizontal)
+  - FPC folds tightly (0.8mm gap -- use flex-rated FPC)
+
+  PCB Mounting:
+  - 4x molded standoffs in back shell (0.8mm tall)
+  - PCB sits on standoffs, screwed down with M2 screws
+  - Standoffs set the gap between display and PCB
+  - Components face back (toward battery)
+
+  Battery Mounting:
+  - Custom thin LiPo in molded pocket in back shell
+  - Pocket walls prevent lateral movement
+  - Foam pad on top (between battery and PCB)
+  - JST connector, short lead
+
+  Button Mounting:
+  - 3 buttons along bottom edge, landscape layout
+  - Standard tactile switches on PCB
+  - Caps: 12 x 6mm, press-fit in shell
+  - 14mm center-to-center spacing
+
+  Wake Button:
+  - Right side edge, tactile switch on PCB edge
+  - Cap: 10 x 4.5mm, flush with side surface
+  - Easily reachable with thumb when holding badge
+
+  Lanyard Slot:
+  - Molded as part of both shell halves
+  - Front and back shells each have half the slot
+  - When assembled, slot is complete
+  - Internal reinforcement ribs for strength
+
+  Shell Assembly:
+  - Front and back shells snap together
+  - Perimeter snap clips (6 points)
+  - 2x M2 screws near bottom for security
+  - Thin foam gasket around perimeter
+
+  USB-C:
+  - Bottom edge, centered
+  - 9.34 x 3.66mm cutout
+  - Accessible while wearing on lanyard
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Lanyard Attachment: Standard badge slot at top
+     - Compatible with all common lanyard hardware
+     - Reinforced slot walls to handle swinging/tugging
+     - Device hangs screen-forward on chest
+
+  2. Ultra-Thin Profile: 12mm deep
+     - Requires custom thin battery (4.4mm)
+     - Tight FPC fold (0.8mm gap)
+     - Slightly thinner front wall (1.2mm)
+     - Comfortable for all-day wear
+
+  3. Landscape Orientation:
+     - Natural reading position when hanging from lanyard
+     - Wider viewing area feels like a tiny monitor
+     - Screen content laid out horizontally
+
+  4. Conference Badge Aesthetic:
+     - Looks like a smart conference badge
+     - Professional appearance for office/events
+     - Optional: clear back panel to show PCB (tech aesthetic)
+
+  5. Flat Back:
+     - No protrusions, lies flat against chest
+     - Won't catch on clothing
+     - Comfortable for extended wear
+
+  6. Dual Wear Modes:
+     - Lanyard: hang from neck for passive monitoring
+     - Hand-held: grab and interact with buttons
+     - Size comfortable for both modes
+
+  7. Screen Auto-Rotate:
+     - Accelerometer on PCB detects orientation
+     - When picked up and rotated, screen adjusts
+     - Lanyard mode: specific layout optimized for glance-reading
+
+  8. Visibility:
+     - Screen faces outward when worn
+     - Colleagues can see your Devotchi's mood
+     - Conversation starter at conferences
+
+================================================================================

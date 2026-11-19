@@ -1,0 +1,368 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 11                              ║
+║                    DASHBOARD GAUGE                                          ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+DESCRIPTION
+───────────
+Car instrument cluster / tachometer style enclosure. Circular body with the
+screen visible through a round bezel opening — the "gauge face." A chrome-
+look trim ring surrounds the bezel. Three small buttons at the bottom
+(7, 5, and 4 o'clock positions) mimic gauge zero/reset buttons. The unit
+tilts on a ball-and-socket swivel base for adjustable viewing angle.
+Numerical markings (0-100 or RPM style) are printed/silk-screened around the
+bezel outside the screen area. Deep dish shape gives satisfying depth. USB-C
+on back center. Speaker optionally housed in the swivel base.
+
+OVERALL DIMENSIONS
+──────────────────
+  Body:  90 mm outer diameter × 45 mm deep (circular)
+  Base:  50 mm diameter × 15 mm tall (swivel plate)
+  Wall:  2.0 mm
+  Total: ~90 mm wide × ~60 mm tall (on base) × 45 mm deep
+
+
+FRONT VIEW
+──────────
+
+              90 mm diameter
+     ◄──────────────────────────►
+
+              ╭────────────╮
+          ╭───┤  CHROME    ├───╮
+        ╭─┤   │  TRIM RING │   ├─╮         ▲
+       │  │   ╰────────────╯   │  │        │
+       │  │  80  90 100 0  10  │  │        │
+       │  │ 70 ╭──────────╮ 20│  │        │
+       │  │60 │            │30│  │        │
+       │  │   │   SCREEN   │  │  │        │  90 mm
+       │  │50 │   (round   │40│  │        │
+       │  │   │   bezel)   │  │  │        │
+       │  │ 40│            │50│  │        │
+       │  │  ╰──────────╯   │  │        │
+       │  ■  30  20  10     ■  │        │  Buttons at
+        ╰─■───────────────────┤─╯        │  7, 5, 4 o'clock
+          ╰───────────────────╯          │
+              ╰────────────╯             ▼
+
+     ■ = Small push buttons (6mm)
+     Numbers = Printed gauge markings (0-100)
+     Inner circle = Screen visible area (~65mm dia)
+
+
+TOP VIEW
+────────
+
+              90 mm
+     ◄──────────────────────────►
+
+              ╭────────────╮
+          ╭───┤            ├───╮
+        ╭─┤   │            │   ├─╮
+       │  │   │            │   │  │
+       │  │   │  DEEP DISH │   │  │
+       │  │   │   45mm     │   │  │
+       │  │   │   depth    │   │  │
+       │  │   │            │   │  │
+        ╰─┤   │            │   ├─╯
+          ╰───┤            ├───╯
+              ╰─────┬──────╯
+                    │
+              ╭─────┴──────╮
+              │   SWIVEL   │
+              │    BASE    │
+              │   50mm     │
+              ╰────────────╯
+
+
+SIDE PROFILE
+────────────
+
+                45 mm deep
+          ◄──────────────────►
+
+          ┌──────────────────┐         ▲
+         ╱                    ╲        │
+        │  CHROME TRIM ────►   │       │
+        │  ╔══════════════╗    │       │
+        │  ║              ║    │       │  ~90 mm
+        │  ║    SCREEN    ║    │       │  dia
+        │  ║              ║    │       │
+        │  ╚══════════════╝    │       │
+         ╲          ■ button  ╱        │
+          ╲──────────────────╱         │
+           ╲                ╱          ▼
+            ╰──────┬───────╯
+             ╭─────┴─────╮
+             │  ◉ SWIVEL │◄── Ball-and-socket joint
+             │   BASE    │
+             ╰═══════════╯
+              ▓▓▓▓▓▓▓▓▓▓ ◄── Rubber pad base
+
+
+BACK VIEW
+─────────
+
+              90 mm diameter
+     ◄──────────────────────────►
+
+              ╭────────────╮
+          ╭───┤            ├───╮
+        ╭─┤   │            │   ├─╮
+       │  │   │            │   │  │
+       │  │   │  ┌──────┐  │   │  │
+       │  │   │  │USB-C │  │   │  │
+       │  │   │  │8.94× │  │   │  │
+       │  │   │  │3.26  │  │   │  │
+       │  │   │  └──────┘  │   │  │
+        ╰─┤   │  (center)  │   ├─╯
+          ╰───┤            ├───╯
+              ╰─────┬──────╯
+                    │
+              ╭─────┴──────╮
+              │   BASE     │
+              ╰────────────╯
+
+
+CROSS-SECTION (HORIZONTAL CUT THROUGH CENTER)
+──────────────────────────────────────────────
+
+              45 mm
+     ◄──────────────────────────►
+
+     ╭──────────────────────────╮
+     │▓▓ Chrome trim ring ▓▓▓▓▓│◄── 2mm chrome-look ring
+     │ ┌──────────────────────┐ │
+     │ │   Air gap / bezel    │ │◄── 3mm between trim and screen
+     │ │ ╔══════════════════╗ │ │
+     │ │ ║     SCREEN       ║ │ │◄── 5.0" module (4.5mm)
+     │ │ ║   120×75×4.5mm   ║ │ │
+     │ │ ╚══════════════════╝ │ │
+     │ │                      │ │
+     │ │ ┌──────────────────┐ │ │
+     │ │ │       PCB        │ │ │◄── PCB (110×65×1.6mm)
+     │ │ │   ESP32-S3-MINI  │ │ │    mounted on standoffs
+     │ │ └──────────────────┘ │ │
+     │ │                      │ │
+     │ │    ┌──────┐          │ │◄── USB-C at back center
+     │ │    │USB-C │          │ │
+     │ └────┴──────┴──────────┘ │
+     ╰──────────────────────────╯
+              │
+         ╭────┴────╮
+         │ ◉ ball  │◄── Ball-and-socket swivel
+         │  joint  │
+         ╰─────────╯
+         ╭─────────╮
+         │  BASE   │◄── 50mm base plate
+         │(speaker)│    Optional speaker inside
+         ╰═════════╯
+
+
+COMPONENT LAYOUT (EXPLODED FRONT-TO-BACK)
+──────────────────────────────────────────
+
+     ┌─ Chrome Trim Ring ─────────────────────────┐
+     │  90mm outer dia, 70mm inner dia             │
+     │  2mm wide chrome-look ring                  │
+     │  Press-fit or snap-fit onto front bezel     │
+     │  Material: chrome-painted PETG or metal     │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Front Bezel Shell ────────────────────────┐
+     │  90mm outer dia, deep dish shape            │
+     │  Round opening: ~68mm dia (screen visible)  │
+     │  Gauge markings printed around opening      │
+     │  3 button holes at 7, 5, 4 o'clock         │
+     │  Deep: ~30mm from front face to rear edge   │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Screen Module ────────────────────────────┐
+     │  5.0" SSD1963 touch (120×75×4.5mm)         │
+     │  Landscape orientation                      │
+     │  Active area: 108×64.8mm                    │
+     │  NOTE: rectangular module behind round      │
+     │        bezel — corners hidden by dish       │
+     │  Visible area: ~65mm diameter circle        │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ PCB Assembly ─────────────────────────────┐
+     │  PCB (110×65×1.6mm)                         │
+     │  ESP32-S3-MINI-1 (15.4×20.5×2.4mm)         │
+     │  3 × tactile buttons (6mm) — positioned     │
+     │    at lower arc of circular shell            │
+     │  USB-C connector — routes to back center    │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Back Cap ─────────────────────────────────┐
+     │  90mm dia, ~15mm deep                       │
+     │  USB-C cutout at center (8.94×3.26mm)       │
+     │  Ball-socket mount point at bottom center   │
+     │  Screw or snap attachment to front shell    │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Swivel Assembly ──────────────────────────┐
+     │  Ball: 15mm dia, attached to back cap       │
+     │  Socket: in base plate, friction fit         │
+     │  Allows tilt: ±30° any direction            │
+     │  Allows rotation: 360°                      │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Base Plate ───────────────────────────────┐
+     │  50mm diameter × 15mm tall                  │
+     │  Socket for ball joint on top               │
+     │  Optional: 28mm speaker inside              │
+     │  Rubber pad on bottom                       │
+     │  Weighted for stability                     │
+     └────────────────────────────────────────────┘
+
+
+MOUNTING DETAILS
+────────────────
+
+  Screen Mount:
+    - Landscape orientation, centered in circular body
+    - Rectangular module (120×75mm) fits inside 90mm dia shell
+    - Module corners extend beyond visible circle
+    - 4 foam pads cushion module against front bezel lip
+    - Visible through ~65mm diameter round opening
+    - Deep dish hides rectangular module edges completely
+
+  PCB Mount:
+    - Behind screen module, separated by 5mm spacer
+    - 4 × M2 standoffs into back cap
+    - Component side faces back
+    - Buttons positioned at lower arc for external access
+    - USB-C routes straight to back cap center cutout
+
+  Buttons:
+    - 3 × 6mm tactile switches at 7, 5, and 4 o'clock
+    - Through-hole in front bezel shell at those positions
+    - Small cylindrical button caps (4mm dia, 3mm proud)
+    - Styled as gauge reset/zero buttons
+    - Chrome or black metal-look caps
+
+  Chrome Trim Ring:
+    - Press-fit onto front bezel outer lip
+    - 90mm OD, 70mm ID, 3mm cross-section
+    - Options: chrome-painted PETG, polished stainless steel
+              ring, or chrome vinyl wrap on printed ring
+    - Adds premium instrument look
+
+  Gauge Markings:
+    - Printed/engraved around bezel between trim ring and screen
+    - Numerals: 0-100 in increments of 10 (or 0-8 RPM × 1000)
+    - Tick marks: major every 10, minor every 5
+    - White or red markings on black bezel
+    - Font: DIN-style automotive gauge font
+    - "Redline" zone possible at high end
+
+  Ball-and-Socket Swivel:
+    - Ball: 15mm diameter, printed integral with back cap
+    - Socket: 50mm base plate with hemispherical cavity
+    - Friction: tight enough to hold position, loose enough to adjust
+    - Tilt range: ±30° from vertical in any direction
+    - Rotation: full 360° (cable management needed)
+    - Material: PETG-on-PETG for good friction characteristics
+
+  USB-C:
+    - Back cap center, 8.94 × 3.26 mm cutout
+    - Cable exits straight back
+    - Must allow for swivel range without cable strain
+    - Recommend right-angle USB-C cable for cleaner routing
+
+  Speaker (optional, in base):
+    - 28mm dia × 3.5mm speaker in base plate cavity
+    - Sound exits through bottom or side vents in base
+    - Wire runs through ball joint center hole
+    - If omitted: base is solid weighted disc
+
+  Base Plate:
+    - 50mm diameter provides stable footprint
+    - Steel weight insert (~50g) for stability
+    - Rubber pad on bottom prevents scratching/sliding
+    - Low profile (15mm) keeps gauge body prominent
+
+
+ASSEMBLY NOTES
+──────────────
+
+  1. If using speaker: install in base plate, route wire up
+  2. Press steel weight into base plate cavity
+  3. Apply rubber pad to base bottom
+  4. Mount PCB onto back cap standoffs (4 × M2 screws)
+  5. Route USB-C to back cap center cutout
+  6. Connect button wires/flex to PCB
+  7. Connect screen FPC to PCB
+  8. Seat screen module against front bezel with foam pads
+  9. Insert button caps through front bezel holes
+  10. Join back cap to front bezel (snap-fit + 2 × M2 screws)
+  11. Press chrome trim ring onto front bezel lip
+  12. Snap ball (on back cap) into socket (on base plate)
+  13. If speaker present: connect wire through ball joint center
+
+  Shell: 2-part circular (front bezel dish + back cap)
+  Base: 1-part with socket cavity
+  Material: PLA/PETG — matte black body, chrome accents
+  Print orientation: Front bezel face-down, back cap face-down
+  Post-processing: Chrome paint or vinyl on trim ring
+
+
+SPECIAL FEATURES
+────────────────
+
+  Round Bezel / Gauge Face:
+    - Rectangular screen visible through circular opening
+    - Deep dish shape completely hides module corners
+    - Software can render circular gauge UI to match
+    - The "gauge face" metaphor works perfectly for status display
+    - RPM = code velocity, temperature = system health, etc.
+
+  Chrome Trim Ring:
+    - Premium instrument appearance
+    - Multiple finish options: chrome, brushed aluminum,
+      copper, gold, matte gunmetal
+    - Removable — can swap rings for different looks
+    - Real metal ring option for premium feel
+
+  Gauge Markings:
+    - Printed numerals and tick marks around bezel
+    - Customizable: RPM, percentage, temperature scale
+    - Options for printing:
+      a) Laser-engraved into painted surface
+      b) Water-slide decal
+      c) UV-printed directly
+      d) Modeled as raised/recessed geometry in 3D print
+    - Red zone marking at high end (optional)
+
+  Ball-and-Socket Swivel:
+    - Infinite adjustment angle — tilt to face user
+    - Compact mechanism, no external hardware
+    - 3D-printable as integral part of shells
+    - Can be adjusted one-handed
+    - Detachable: gauge lifts off base for transport
+
+  Deep Dish Shape:
+    - 45mm total depth creates substantial, weighty feel
+    - Hides all electronics behind screen
+    - PCB fits comfortably behind screen module
+    - Adequate space for wire routing
+    - Satisfying visual depth when viewed from angle
+
+  Dashboard Aesthetic:
+    - Immediately recognizable instrument cluster look
+    - Appeals to car enthusiasts, engineers, makers
+    - Pairs well with other desk instruments/gauges
+    - Could display real metrics in gauge format:
+      CPU load, network speed, build progress
+    - Software UI can match physical gauge markings
+
+  Automotive Button Style:
+    - Small, precise push buttons at clock positions
+    - Mimics trip meter reset / gauge adjustment buttons
+    - Chrome or knurled metal-look caps
+    - Tactile, purposeful feel
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Design 11: Dashboard Gauge — Instrument cluster meets desktop companion   ║
+╚══════════════════════════════════════════════════════════════════════════════╝

@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 22: Wrist Gauntlet — Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 22: Wrist Gauntlet — 70×45×15mm Pod + Strap</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="200" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View (Pod Face)</text>
+
+  <!-- Angular pod body -->
+  <path d="M110,100 L290,100 L300,110 L300,350 L290,360 L110,360 L100,350 L100,110 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- LED strip along top edge -->
+  <rect x="120" y="103" width="160" height="5" rx="1" fill="#44CC88" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="100" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#2A8A5A">LED strip</text>
+
+  <!-- Screen -->
+  <rect x="125" y="120" width="150" height="120" rx="3" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="180" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Active Area</text>
+  <text x="200" y="192" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.80×30.60mm</text>
+
+  <!-- Angular bevels on corners -->
+  <line x1="100" y1="110" x2="110" y2="100" stroke="black" stroke-width="0.5"/>
+  <line x1="290" y1="100" x2="300" y2="110" stroke="black" stroke-width="0.5"/>
+
+  <!-- 4 buttons on right edge -->
+  <rect x="300" y="150" width="12" height="18" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="300" y="180" width="12" height="18" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="300" y="210" width="12" height="18" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="300" y="240" width="12" height="18" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="325" y="200" font-family="sans-serif" font-size="8" fill="#333">4 buttons</text>
+
+  <!-- USB-C bottom -->
+  <rect x="183" y="355" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="378" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: width 70mm -->
+  <line x1="100" y1="395" x2="300" y2="395" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="100" y1="385" x2="100" y2="405" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="300" y1="385" x2="300" y2="405" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="415" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">70.0mm</text>
+
+  <!-- Dimension: height 45mm -->
+  <line x1="340" y1="100" x2="340" y2="360" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="330" y1="100" x2="350" y2="100" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="330" y1="360" x2="350" y2="360" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="360" y="235" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">45.0mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-center) ============ -->
+  <text x="580" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side View (On Wrist)</text>
+
+  <!-- Curved strap wrapping around arm (shown as arc) -->
+  <path d="M480,350 Q480,180 560,120 Q580,105 600,105 Q620,105 640,120 Q720,180 720,350" fill="none" stroke="#555" stroke-width="1.5"/>
+  <text x="580" y="380" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#555">Strap (nylon/velcro)</text>
+
+  <!-- Arm cross-section hint -->
+  <ellipse cx="600" cy="280" rx="70" ry="40" fill="none" stroke="#CCC" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <text x="600" y="283" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CCC">Wrist ~60mm</text>
+
+  <!-- Pod sitting on top of strap -->
+  <rect x="560" y="95" width="80" height="35" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Screen edge -->
+  <line x1="560" y1="100" x2="560" y2="125" stroke="#4488CC" stroke-width="1.5"/>
+  <text x="548" y="115" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- Strap attachment points -->
+  <rect x="555" y="128" width="10" height="10" rx="1" fill="#777" stroke="black" stroke-width="0.3"/>
+  <rect x="635" y="128" width="10" height="10" rx="1" fill="#777" stroke="black" stroke-width="0.3"/>
+  <text x="650" y="135" font-family="sans-serif" font-size="7" fill="#555">Lug</text>
+
+  <!-- Dimension: pod depth 15mm -->
+  <line x1="560" y1="80" x2="640" y2="80" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="560" y1="70" x2="560" y2="90" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="640" y1="70" x2="640" y2="90" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="600" y="75" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">15.0mm (pod depth)</text>
+
+  <!-- ============ VIEW 3: BACK VIEW (top-right) ============ -->
+  <text x="920" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Pod back -->
+  <path d="M830,100 L1010,100 L1020,110 L1020,350 L1010,360 L830,360 L820,350 L820,110 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Strap attachment lugs -->
+  <rect x="825" y="105" width="20" height="30" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="995" y="105" width="20" height="30" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="825" y="325" width="20" height="30" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="995" y="325" width="20" height="30" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="1030" y="120" font-family="sans-serif" font-size="8" fill="#555">Strap lugs</text>
+
+  <!-- Velcro/contact area -->
+  <rect x="860" y="140" width="120" height="180" rx="4" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <!-- Velcro texture dots -->
+  <circle cx="890" cy="180" r="2" fill="#CCC"/>
+  <circle cx="910" cy="180" r="2" fill="#CCC"/>
+  <circle cx="930" cy="180" r="2" fill="#CCC"/>
+  <circle cx="950" cy="180" r="2" fill="#CCC"/>
+  <circle cx="890" cy="200" r="2" fill="#CCC"/>
+  <circle cx="910" cy="200" r="2" fill="#CCC"/>
+  <circle cx="930" cy="200" r="2" fill="#CCC"/>
+  <circle cx="950" cy="200" r="2" fill="#CCC"/>
+  <text x="920" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#555">Velcro area</text>
+  <text x="920" y="255" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">(contacts wrist)</text>
+
+  <!-- Battery door outline (hidden) -->
+  <rect x="870" y="270" width="100" height="50" rx="3" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="920" y="300" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">Battery (hidden)</text>
+
+  <!-- ============ VIEW 4: TOP-DOWN VIEW (bottom-left) ============ -->
+  <text x="200" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Pod top — screen visible -->
+  <rect x="100" y="510" width="200" height="130" rx="5" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen face -->
+  <rect x="115" y="525" width="170" height="95" rx="3" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="575" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Screen face up</text>
+
+  <!-- Buttons along right edge -->
+  <rect x="300" y="530" width="8" height="14" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="300" y="550" width="8" height="14" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="300" y="570" width="8" height="14" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="300" y="590" width="8" height="14" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="318" y="565" font-family="sans-serif" font-size="8" fill="#333">Buttons</text>
+
+  <!-- LED strip indicator -->
+  <rect x="115" y="510" width="170" height="4" rx="1" fill="#44CC88" stroke="black" stroke-width="0.3"/>
+
+  <!-- Dimensions -->
+  <line x1="100" y1="660" x2="300" y2="660" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="100" y1="650" x2="100" y2="670" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="300" y1="650" x2="300" y2="670" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="680" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">70.0mm</text>
+
+  <line x1="340" y1="510" x2="340" y2="640" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="330" y1="510" x2="350" y2="510" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="330" y1="640" x2="350" y2="640" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="360" y="578" font-family="sans-serif" font-size="10" fill="#CC0000">45.0mm</text>
+
+  <!-- ============ VIEW 5: CROSS-SECTION (bottom-center) ============ -->
+  <text x="600" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Pod Center)</text>
+
+  <!-- Z-stack — 15mm total -->
+  <!-- Front wall 1.5mm -->
+  <rect x="490" y="510" width="220" height="16" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="522" font-family="sans-serif" font-size="8" fill="#606060">Front wall 1.5mm</text>
+
+  <!-- Gap -->
+  <rect x="490" y="526" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Display 2.0mm -->
+  <rect x="500" y="530" width="200" height="22" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="545" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display (2.0mm)</text>
+
+  <!-- Gap 1.0mm -->
+  <rect x="490" y="552" width="220" height="10" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="600" y="560" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#999">Gap 1.0mm</text>
+
+  <!-- PCB 1.6mm -->
+  <rect x="490" y="562" width="220" height="18" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+  <!-- ESP32 component -->
+  <rect x="505" y="580" width="40" height="10" fill="#7AB37E" stroke="black" stroke-width="0.3"/>
+  <text x="525" y="588" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">ESP32</text>
+
+  <!-- Gap 1.5mm -->
+  <rect x="490" y="590" width="220" height="16" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Battery 5.0mm -->
+  <rect x="505" y="606" width="190" height="54" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="637" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (5.0mm)</text>
+
+  <!-- Gap -->
+  <rect x="490" y="660" width="220" height="5" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Back wall 1.5mm -->
+  <rect x="490" y="665" width="220" height="16" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="677" font-family="sans-serif" font-size="8" fill="#606060">Back wall 1.5mm</text>
+
+  <!-- Total dimension -->
+  <line x1="475" y1="510" x2="475" y2="681" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="465" y1="510" x2="485" y2="510" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="465" y1="681" x2="485" y2="681" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="460" y="600" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">15.0mm</text>
+
+  <!-- ============ VIEW 6: DETAIL — Strap Lug + Closure (bottom-right) ============ -->
+  <text x="960" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Strap Lug + Closure</text>
+
+  <!-- Zoomed strap lug -->
+  <rect x="880" y="510" width="60" height="80" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <text x="910" y="545" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Pod wall</text>
+
+  <!-- Lug bar -->
+  <rect x="940" y="520" width="50" height="15" rx="3" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="965" y="530" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Lug bar</text>
+
+  <!-- Spring bar pins -->
+  <circle cx="945" cy="527" r="2" fill="#777" stroke="black" stroke-width="0.3"/>
+  <circle cx="985" cy="527" r="2" fill="#777" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="525" font-family="sans-serif" font-size="7" fill="#555">Spring pin</text>
+
+  <!-- Strap going through lug -->
+  <path d="M940,535 L990,535 L990,570 L940,570 Q930,570 930,560 L930,545 Q930,535 940,535 Z" fill="#666" stroke="black" stroke-width="0.5"/>
+  <text x="965" y="558" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white">Strap</text>
+
+  <!-- Dimension: lug width -->
+  <line x1="940" y1="508" x2="990" y2="508" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="965" y="503" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">20mm</text>
+
+  <!-- Closure mechanism — velcro fold -->
+  <text x="910" y="620" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333">Velcro Closure</text>
+
+  <!-- Strap end with velcro -->
+  <rect x="870" y="635" width="120" height="14" rx="2" fill="#666" stroke="black" stroke-width="0.5"/>
+  <rect x="870" y="649" width="120" height="14" rx="2" fill="#888" stroke="black" stroke-width="0.5"/>
+  <!-- Velcro hook side -->
+  <rect x="875" y="637" width="50" height="8" rx="1" fill="#555" stroke="black" stroke-width="0.3"/>
+  <text x="900" y="644" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#CCC">Hook</text>
+  <!-- Velcro loop side -->
+  <rect x="935" y="651" width="50" height="8" rx="1" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <text x="960" y="658" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#555">Loop</text>
+
+  <!-- Fold arrow -->
+  <path d="M925,670 Q925,690 910,690 Q895,690 895,670" fill="none" stroke="#333" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+  <text x="910" y="705" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Fold over</text>
+</svg>

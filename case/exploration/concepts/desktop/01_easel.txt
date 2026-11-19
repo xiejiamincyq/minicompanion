@@ -1,0 +1,136 @@
+DESIGN 1: DESKTOP EASEL
+=======================
+Tilted slab on a triangular stand. Screen faces upward at ~65° angle.
+Think "digital picture frame" or "desk clock" form factor.
+
+Overall: 130 x 85 x 14mm slab, ~110mm wide stand, ~70mm tall
+Target user: desk/nightstand display
+
+FRONT VIEW (screen facing viewer, tilted back ~25° from vertical)
+─────────────────────────────────────────────────────────────────
+
+         ┌─────────────────────────────────┐
+         │  ○ LED                          │ ← 2mm LED hole
+         │  ┌───────────────────────────┐  │
+         │  │                           │  │
+         │  │                           │  │
+         │  │     TFT LCD SCREEN        │  │ ← 51.8 x 36.2mm module
+         │  │     (40.8 x 30.6 active)  │  │   in 52.2 x 36.6mm pocket
+         │  │                           │  │
+         │  │                           │  │
+         │  └───────────────────────────┘  │
+         │                                 │
+         │      (●)   (●)   (●)           │ ← 3x tactile buttons, 5mm holes
+         │                                 │   spaced 14mm apart
+         └─────────────────────────────────┘
+                     130mm
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+              14mm
+            ├──────┤
+         ┌──────────┐  ─┬─
+        /            │   │
+       /  ┌screen──┐ │   │ 85mm slab
+      /   │ PCB    │ │   │
+     /    └────────┘ │   │
+    /                │  ─┴─           ← slab tilted 65° from horizontal
+   ├─────────────────┤
+   │    STAND LEG    │  ─┬─
+   │   /             │   │ ~70mm
+   │  /              │   │
+   │ /               │   │
+   ├─────────────────┤  ─┴─
+          60mm
+    └── stand base depth ──┘
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+    ┌──────────────────────────────────┐
+    │          SLAB (top edge)         │ ← 130mm wide
+    │                                  │
+    │  ┌──────────────────────────┐    │
+    │  │      STAND BASE          │    │ ← 110mm wide
+    │  │                          │    │
+    │  └──────────────────────────┘    │
+    └──────────────────────────────────┘
+                                  60mm deep
+
+
+CROSS-SECTION (cut through center, looking from right side)
+───────────────────────────────────────────────────────────
+
+    Front wall (2mm) ──┐  ┌── Back wall (2mm)
+                       │  │
+    ┌──────────────────┤  ├──┐
+    │  ┌─ Screen ────┐ │  │  │
+    │  │  (4.5mm)    │ │  │  │   14mm total depth
+    │  ├─────────────┤ │  │  │
+    │  │  3mm gap    │ │  │  │   Screen pocket: 5mm from front face
+    │  ├─ PCB ───────┤ │  │  │   PCB at 5 + 4.5 + 3 = 12.5mm from front
+    │  │  (1.6mm)    │ │  │  │
+    │  └─────────────┘ │  │  │
+    └──────────────────┘  └──┘
+    ↑                        ↑
+    Front face            Back face
+    (screen window)       (plain)
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL
+    ├── Screen window cutout (41.8 x 31.6mm)
+    ├── 3x button holes (5mm dia, below screen)
+    ├── 1x LED hole (2mm, top-right of screen)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    └── Wall: 2mm
+
+    Layer 2 — SCREEN MODULE (51.8 x 36.2 x 4.5mm)
+    ├── Seated in pocket with 0.2mm clearance per side
+    ├── FPC cable exits bottom edge
+    └── Held by retention clips from front shell
+
+    Layer 3 — 3mm AIR GAP
+    └── FPC cable routes through here to PCB connector
+
+    Layer 4 — PCB (45 x 40 x 1.6mm, estimated)
+    ├── ESP32-S3-MINI-1 faces back
+    ├── Tactile switches face front (through button holes)
+    ├── USB-C connector on bottom edge
+    └── Mounted on 4x standoffs (5mm OD, M2 screws)
+
+    Layer 5 — BACK SHELL
+    ├── 4x standoff bosses (screw into front shell bosses)
+    ├── USB-C cutout (9.5 x 3.5mm) on bottom edge
+    └── Wall: 2mm
+
+
+STAND DESIGN
+────────────
+
+    ┌── Groove holds slab ──┐
+    │   (14 + 0.4mm wide)   │
+    │                       │
+    ├───────────────────────┤ ← Groove top at ~70mm
+    │ \                     │
+    │   \   Back leg        │   Angled ~25° from vertical
+    │     \                 │
+    │       \               │
+    ├─────────\─────────────┤
+    │  FOOT    \    FOOT    │ ← Rubber feet on bottom
+    └───────────────────────┘
+         110mm wide base
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Slab: 2-piece clamshell (front + back), 4x M2 screws at corners
+- Stand: separate piece, slab drops into groove
+- Groove friction-fit (no adhesive), 0.2mm clearance per side
+- USB-C accessible from bottom edge of slab, even when in stand
+- Rubber feet on stand base (4x, 8mm dia, 1.5mm tall)

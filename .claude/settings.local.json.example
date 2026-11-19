@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "mcp__devotchi__show_status",
+      "mcp__devotchi__notify",
+      "mcp__devotchi__set_mood"
+    ]
+  },
+  "hooks": {
+    "PermissionRequest": [
+      {
+        "hooks": [{
+          "type": "http",
+          "url": "http://localhost:8080/hook/permission?token=YOUR_TOKEN",
+          "timeout": 310
+        }]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Write|Edit",
+        "hooks": [{
+          "type": "http",
+          "url": "http://localhost:8080/hook/status?token=YOUR_TOKEN",
+          "timeout": 5
+        }]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [{
+          "type": "http",
+          "url": "http://localhost:8080/hook/stop?token=YOUR_TOKEN",
+          "timeout": 5
+        }]
+      }
+    ]
+  }
+}

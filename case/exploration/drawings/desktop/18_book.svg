@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Design 18: Book — 130×90×30mm Standing Upright Desktop Case</text>
+
+  <!-- Grid labels -->
+  <text x="200" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">FRONT VIEW</text>
+  <text x="600" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">SIDE / SPINE</text>
+  <text x="1000" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">BACK VIEW</text>
+  <text x="200" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">TOP-DOWN VIEW</text>
+  <text x="600" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">CROSS-SECTION</text>
+  <text x="1000" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">DETAIL — Fore-edge + Spine Buttons</text>
+
+  <!-- Grid dividers -->
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="800" y1="40" x2="800" y2="450" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="400" y1="460" x2="400" y2="890" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="800" y1="460" x2="800" y2="890" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#CCC" stroke-width="0.5"/>
+
+  <!-- ============ FRONT VIEW (top-left) ============ -->
+  <g transform="translate(200,260)">
+    <!-- Book cover — standing upright, portrait -->
+    <rect x="-55" y="-155" width="110" height="160" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Cover border/frame -->
+    <rect x="-48" y="-148" width="96" height="146" rx="2" fill="#D5D5D5" stroke="black" stroke-width="0.3"/>
+
+    <!-- Screen (portrait orientation) -->
+    <rect x="-42" y="-140" width="84" height="108" rx="1" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-85" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#336">5.0" SSD1963</text>
+    <text x="0" y="-73" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#336">(portrait)</text>
+
+    <!-- Spine edge visible on left -->
+    <rect x="-58" y="-155" width="6" height="160" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="-58" y1="-175" x2="55" y2="-175" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="-58" y1="-168" x2="-58" y2="-182" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="55" y1="-168" x2="55" y2="-182" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="0" y="-180" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: height 130mm -->
+    <line x1="75" y1="-155" x2="75" y2="5" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="68" y1="-155" x2="82" y2="-155" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="68" y1="5" x2="82" y2="5" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="88" y="-70" font-family="sans-serif" font-size="9" fill="#CC0000">130mm</text>
+  </g>
+
+  <!-- ============ SIDE / SPINE (top-center) ============ -->
+  <g transform="translate(600,260)">
+    <!-- Spine — 30mm wide, 130mm tall -->
+    <rect x="-20" y="-155" width="40" height="160" rx="2" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Title embossing area -->
+    <rect x="-14" y="-140" width="28" height="70" rx="1" fill="none" stroke="#999" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="0" y="-100" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#888" transform="rotate(-90,0,-100)">DEVOTCHI</text>
+
+    <!-- 3 button tabs protruding from spine -->
+    <rect x="20" y="-40" width="12" height="10" rx="2" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <circle cx="26" cy="-35" r="3" fill="#888" stroke="black" stroke-width="0.5"/>
+    <rect x="20" y="-20" width="12" height="10" rx="2" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <circle cx="26" cy="-15" r="3" fill="#888" stroke="black" stroke-width="0.5"/>
+    <rect x="20" y="0" width="12" height="10" rx="2" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <circle cx="26" cy="5" r="3" fill="#888" stroke="black" stroke-width="0.5"/>
+
+    <text x="45" y="-13" font-family="sans-serif" font-size="9" fill="#555">3× button tabs</text>
+    <text x="45" y="-1" font-family="sans-serif" font-size="8" fill="#777">6mm tactile</text>
+
+    <!-- Dimension: spine 30mm -->
+    <line x1="-20" y1="25" x2="20" y2="25" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="-20" y1="18" x2="-20" y2="32" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="20" y1="18" x2="20" y2="32" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="0" y="40" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">30mm spine</text>
+
+    <!-- Cover edges -->
+    <line x1="-20" y1="-155" x2="-35" y2="-148" stroke="black" stroke-width="0.3"/>
+    <line x1="-20" y1="5" x2="-35" y2="12" stroke="black" stroke-width="0.3"/>
+    <line x1="20" y1="-155" x2="35" y2="-148" stroke="black" stroke-width="0.3"/>
+    <line x1="20" y1="5" x2="35" y2="12" stroke="black" stroke-width="0.3"/>
+    <text x="-45" y="-70" font-family="sans-serif" font-size="8" fill="#888">Front</text>
+    <text x="38" y="-70" font-family="sans-serif" font-size="8" fill="#888">Back</text>
+  </g>
+
+  <!-- ============ BACK VIEW (top-right) ============ -->
+  <g transform="translate(1000,260)">
+    <!-- Back cover -->
+    <rect x="-55" y="-155" width="110" height="160" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Hinged back cover indication -->
+    <line x1="-55" y1="-155" x2="-55" y2="5" stroke="black" stroke-width="1"/>
+    <text x="-48" y="-140" font-family="sans-serif" font-size="8" fill="#888">Hinge</text>
+
+    <!-- Hinge marks -->
+    <circle cx="-55" cy="-130" r="2" fill="#999" stroke="black" stroke-width="0.5"/>
+    <circle cx="-55" cy="-75" r="2" fill="#999" stroke="black" stroke-width="0.5"/>
+    <circle cx="-55" cy="-20" r="2" fill="#999" stroke="black" stroke-width="0.5"/>
+
+    <!-- Page ridges on fore-edge (right side) -->
+    <line x1="52" y1="-150" x2="52" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="50" y1="-150" x2="50" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="48" y1="-150" x2="48" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="46" y1="-150" x2="46" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="44" y1="-150" x2="44" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="42" y1="-150" x2="42" y2="0" stroke="#BBB" stroke-width="0.5"/>
+    <text x="48" y="15" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#888">Page ridges</text>
+
+    <!-- Screen dashed (hidden behind) -->
+    <rect x="-42" y="-140" width="84" height="108" rx="1" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="0" y="-85" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#888">Screen (hidden)</text>
+
+    <!-- USB-C (not visible from back in this closed config, shown as note) -->
+    <text x="0" y="-20" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#555">USB-C accessible</text>
+    <text x="0" y="-10" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#555">when back opened</text>
+  </g>
+
+  <!-- ============ TOP-DOWN VIEW (bottom-left) ============ -->
+  <g transform="translate(200,680)">
+    <!-- Thin book profile from above -->
+    <!-- Front cover -->
+    <rect x="-60" y="-15" width="120" height="5" rx="1" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <!-- Pages / internal -->
+    <rect x="-58" y="-10" width="116" height="20" rx="0" fill="#F0EDE0" stroke="black" stroke-width="0.5"/>
+    <!-- Back cover -->
+    <rect x="-60" y="10" width="120" height="5" rx="1" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Spine on left -->
+    <rect x="-65" y="-15" width="8" height="30" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+    <text x="-61" y="4" font-family="sans-serif" font-size="7" fill="#888" transform="rotate(-90,-61,4)">Spine</text>
+
+    <!-- Page ridges on right -->
+    <line x1="57" y1="-8" x2="57" y2="8" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="55" y1="-8" x2="55" y2="8" stroke="#BBB" stroke-width="0.5"/>
+    <line x1="53" y1="-8" x2="53" y2="8" stroke="#BBB" stroke-width="0.5"/>
+
+    <!-- Labels -->
+    <text x="-60" y="-25" font-family="sans-serif" font-size="9" fill="#555">Spine</text>
+    <text x="40" y="-25" font-family="sans-serif" font-size="9" fill="#555">Fore-edge</text>
+    <text x="30" y="3" font-family="sans-serif" font-size="8" fill="#888">Front cover</text>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="-65" y1="35" x2="60" y2="35" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="48" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: depth 30mm -->
+    <line x1="80" y1="-15" x2="80" y2="15" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="95" y="3" font-family="sans-serif" font-size="9" fill="#CC0000">30mm</text>
+
+    <!-- Button tabs on spine -->
+    <rect x="-73" y="-5" width="8" height="6" rx="1" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <rect x="-73" y="3" width="8" height="6" rx="1" fill="#AAA" stroke="black" stroke-width="0.5"/>
+    <text x="-90" y="5" font-family="sans-serif" font-size="8" fill="#555">Buttons</text>
+  </g>
+
+  <!-- ============ CROSS-SECTION (bottom-center) ============ -->
+  <g transform="translate(600,680)">
+    <!-- Through center — vertical cross-section -->
+    <!-- Front cover shell -->
+    <rect x="-55" y="-130" width="4" height="160" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Back cover shell (hinged) -->
+    <rect x="50" y="-130" width="4" height="160" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Hinge at top -->
+    <circle cx="-55" cy="-130" r="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="-70" y="-132" font-family="sans-serif" font-size="8" fill="#555">Hinge</text>
+
+    <!-- Top/bottom walls -->
+    <rect x="-55" y="-134" width="109" height="4" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <rect x="-55" y="30" width="109" height="4" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Screen (against front cover) -->
+    <rect x="-50" y="-120" width="5" height="108" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="-42" y="-100" font-family="sans-serif" font-size="8" fill="#336">Screen</text>
+
+    <!-- PCB -->
+    <rect x="-20" y="-100" width="2" height="90" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="-15" y="-50" font-family="sans-serif" font-size="8" fill="#4A7A4E">PCB</text>
+
+    <!-- Speaker -->
+    <ellipse cx="30" cy="-50" rx="3" ry="18" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="36" y="-48" font-family="sans-serif" font-size="8" fill="#8B7030">Spkr</text>
+
+    <!-- Wall thickness -->
+    <line x1="-55" y1="50" x2="-51" y2="50" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="-65" y="60" font-family="sans-serif" font-size="8" fill="#CC0000">2mm</text>
+
+    <!-- Overall depth -->
+    <line x1="-55" y1="48" x2="54" y2="48" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="60" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">30mm depth</text>
+
+    <text x="0" y="80" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#555">Horizontal cut through center</text>
+  </g>
+
+  <!-- ============ DETAIL — Fore-edge + Spine Buttons (bottom-right) ============ -->
+  <g transform="translate(1000,680)">
+    <!-- Fore-edge page ridges detail (enlarged) -->
+    <text x="-60" y="-120" font-family="sans-serif" font-size="10" font-weight="bold" fill="#555">Fore-edge ridges:</text>
+    <rect x="-80" y="-110" width="100" height="80" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Ridge lines -->
+    <line x1="15" y1="-108" x2="15" y2="-32" stroke="#BBB" stroke-width="1"/>
+    <line x1="11" y1="-108" x2="11" y2="-32" stroke="#C8C8C8" stroke-width="1"/>
+    <line x1="7" y1="-108" x2="7" y2="-32" stroke="#BBB" stroke-width="1"/>
+    <line x1="3" y1="-108" x2="3" y2="-32" stroke="#C8C8C8" stroke-width="1"/>
+    <line x1="-1" y1="-108" x2="-1" y2="-32" stroke="#BBB" stroke-width="1"/>
+    <line x1="-5" y1="-108" x2="-5" y2="-32" stroke="#C8C8C8" stroke-width="1"/>
+    <line x1="-9" y1="-108" x2="-9" y2="-32" stroke="#BBB" stroke-width="1"/>
+
+    <!-- Ridge spacing dimension -->
+    <line x1="3" y1="-18" x2="15" y2="-18" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="9" y="-8" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#CC0000">~3mm</text>
+    <text x="9" y="2" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#CC0000">spacing</text>
+
+    <!-- Ridge depth -->
+    <text x="-30" y="-15" font-family="sans-serif" font-size="8" fill="#555">0.5mm depth</text>
+
+    <!-- Spine button tab detail (enlarged) -->
+    <text x="60" y="-120" font-family="sans-serif" font-size="10" font-weight="bold" fill="#555">Button tab:</text>
+    <!-- Spine surface -->
+    <rect x="45" y="-110" width="15" height="100" rx="1" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <!-- Button tab protruding -->
+    <rect x="60" y="-80" width="20" height="18" rx="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <!-- Tactile button -->
+    <circle cx="70" cy="-71" r="4" fill="#888" stroke="black" stroke-width="0.5"/>
+    <text x="70" y="-68" font-family="sans-serif" font-size="6" text-anchor="middle" fill="white">6mm</text>
+
+    <!-- Button label -->
+    <line x1="85" y1="-71" x2="95" y2="-71" stroke="#555" stroke-width="0.5"/>
+    <text x="98" y="-68" font-family="sans-serif" font-size="9" fill="#555">Tactile switch</text>
+
+    <!-- Tab protrusion dimension -->
+    <line x1="60" y1="-55" x2="80" y2="-55" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="70" y="-45" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#CC0000">8mm tab</text>
+
+    <!-- Spine label -->
+    <text x="52" y="-30" font-family="sans-serif" font-size="8" fill="#888" transform="rotate(-90,52,-30)">SPINE</text>
+
+    <!-- Second and third button positions -->
+    <rect x="60" y="-50" width="20" height="18" rx="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <circle cx="70" cy="-41" r="4" fill="#888" stroke="black" stroke-width="0.5"/>
+    <rect x="60" y="-20" width="20" height="18" rx="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <circle cx="70" cy="-11" r="4" fill="#888" stroke="black" stroke-width="0.5"/>
+
+    <!-- Tab spacing -->
+    <line x1="90" y1="-71" x2="90" y2="-41" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="100" y="-53" font-family="sans-serif" font-size="8" fill="#CC0000">12mm</text>
+  </g>
+</svg>

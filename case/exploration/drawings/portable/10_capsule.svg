@@ -1,0 +1,243 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 10: Capsule/Pill - Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#606060"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#909090" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">Design 10: Capsule/Pill — 90mm x 48mm x 16mm (landscape, stadium shape)</text>
+
+  <!-- ==================== VIEW 1: Front View (top-left) ==================== -->
+  <g transform="translate(20, 50)">
+    <text x="270" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Front View (pill outline)</text>
+
+    <!-- Pill/stadium shape - semicircle ends -->
+    <!-- Main body rectangle + semicircle caps -->
+    <path d="M160,45 L380,45 A115,115 0 0 1 380,275 L160,275 A115,115 0 0 1 160,45 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Center line (construction) -->
+    <line x1="100" y1="160" x2="450" y2="160" stroke="#999" stroke-width="0.3" stroke-dasharray="6,3"/>
+
+    <!-- Screen centered -->
+    <rect x="155" y="70" width="230" height="155" rx="4" ry="4" fill="#888" stroke="black" stroke-width="0.5"/>
+    <rect x="162" y="77" width="216" height="141" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="152" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#336">Active Display</text>
+    <text x="270" y="166" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#336">40.80 x 30.60mm</text>
+
+    <!-- 3 buttons on bottom flat edge area -->
+    <rect x="163" y="242" width="55" height="22" rx="3" ry="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <rect x="242" y="242" width="55" height="22" rx="3" ry="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <rect x="322" y="242" width="55" height="22" rx="3" ry="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="190" y="257" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">BTN 1</text>
+    <text x="270" y="257" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">BTN 2</text>
+    <text x="349" y="257" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">BTN 3</text>
+
+    <!-- Button spacing -->
+    <line x1="190" y1="272" x2="270" y2="272" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="230" y="285" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">14mm</text>
+
+    <!-- LED -->
+    <circle cx="270" cy="233" r="2.5" fill="#44FF44" stroke="black" stroke-width="0.3"/>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="45" y1="300" x2="495" y2="300" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="45" y1="275" x2="45" y2="305" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="495" y1="275" x2="495" y2="305" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="270" y="315" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: height 48mm -->
+    <line x1="510" y1="45" x2="510" y2="275" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="495" y1="45" x2="518" y2="45" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="495" y1="275" x2="518" y2="275" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="525" y="165" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">48mm</text>
+
+    <!-- Semicircle radius annotation -->
+    <line x1="160" y1="160" x2="45" y2="160" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="3,2"/>
+    <text x="90" y="150" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">R24mm</text>
+  </g>
+
+  <!-- ==================== VIEW 2: Top View (top-right) ==================== -->
+  <g transform="translate(600, 50)">
+    <text x="280" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Top View (showing pill shape with depth)</text>
+
+    <!-- Pill shape from above -->
+    <path d="M170,100 L390,100 A50,50 0 0 1 390,200 L170,200 A50,50 0 0 1 170,100 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Inner edge (front face edge visible from top) -->
+    <path d="M175,108 L385,108 A42,42 0 0 1 385,192 L175,192 A42,42 0 0 1 175,108 Z" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+
+    <!-- Screen area visible from top as slight recess -->
+    <rect x="195" y="115" width="170" height="70" rx="2" ry="2" fill="#C0C0C0" stroke="black" stroke-width="0.3"/>
+    <text x="280" y="155" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Screen (recessed)</text>
+
+    <!-- Center line -->
+    <line x1="120" y1="150" x2="440" y2="150" stroke="#999" stroke-width="0.3" stroke-dasharray="6,3"/>
+
+    <!-- USB-C on left end -->
+    <rect x="120" y="140" width="8" height="20" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="115" y="135" text-anchor="end" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+
+    <!-- Wake button on right end -->
+    <rect x="432" y="142" width="8" height="16" rx="1" ry="1" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="448" y="155" text-anchor="start" font-family="sans-serif" font-size="9" fill="#666">Wake</text>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="120" y1="225" x2="440" y2="225" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="120" y1="210" x2="120" y2="230" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="440" y1="210" x2="440" y2="230" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="280" y="240" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: depth 16mm -->
+    <line x1="455" y1="100" x2="455" y2="200" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="468" y="155" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">16mm depth</text>
+
+    <!-- Dimension: 48mm width (top view shows height as width) -->
+    <line x1="280" y1="92" x2="280" y2="208" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="295" y="85" text-anchor="start" font-family="sans-serif" font-size="9" fill="#CC0000">48mm</text>
+
+    <!-- Note about depth representation -->
+    <text x="280" y="270" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Depth shown as vertical extent in top view</text>
+    <text x="280" y="283" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">(slightly domed top surface)</text>
+  </g>
+
+  <!-- ==================== VIEW 3: Cross-Section vertical through center (bottom-left) ==================== -->
+  <g transform="translate(20, 480)">
+    <text x="270" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Cross-Section (vertical, through center)</text>
+
+    <!-- Pill-shaped outer walls -->
+    <!-- Top wall curved -->
+    <path d="M80,55 Q80,40 95,40 L445,40 Q460,40 460,55" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Bottom wall curved -->
+    <path d="M80,275 Q80,290 95,290 L445,290 Q460,290 460,275" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Left wall (semicircle end) -->
+    <path d="M80,55 L80,275" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <rect x="73" y="55" width="9" height="220" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Right wall -->
+    <rect x="458" y="55" width="9" height="220" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Top shell -->
+    <rect x="82" y="40" width="376" height="9" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Bottom shell -->
+    <rect x="82" y="281" width="376" height="9" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Z-stack layers -->
+    <!-- Display -->
+    <rect x="82" y="55" width="376" height="22" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="70" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display module (1.5mm + glass)</text>
+
+    <!-- Display flex -->
+    <rect x="82" y="77" width="376" height="5" fill="#AAA" stroke="black" stroke-width="0.3"/>
+
+    <!-- Gap -->
+    <rect x="82" y="82" width="376" height="8" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <text x="270" y="89" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#999">gap</text>
+
+    <!-- PCB -->
+    <rect x="82" y="90" width="376" height="12" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="100" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+    <!-- ESP32 on underside of PCB -->
+    <rect x="180" y="102" width="90" height="16" fill="#70A675" stroke="black" stroke-width="0.5"/>
+    <text x="225" y="113" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">ESP32-S3</text>
+
+    <!-- Vibration motor -->
+    <circle cx="400" cy="112" r="7" fill="#BBB" stroke="black" stroke-width="0.4"/>
+    <text x="400" y="128" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Vibe</text>
+
+    <!-- Gap -->
+    <rect x="82" y="122" width="376" height="6" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+    <!-- Battery -->
+    <rect x="82" y="128" width="376" height="48" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="157" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#333">LiPo Battery (5mm)</text>
+
+    <!-- Remaining space -->
+    <rect x="82" y="176" width="376" height="30" fill="#F8F8F0" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <text x="270" y="195" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#999">Air / padding</text>
+
+    <!-- USB-C on left -->
+    <rect x="73" y="120" width="12" height="30" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="60" y="140" text-anchor="end" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+    <!-- Dimension: total height 16mm -->
+    <line x1="480" y1="40" x2="480" y2="290" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="493" y="170" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">16mm</text>
+
+    <!-- Z-stack dimension -->
+    <line x1="30" y1="49" x2="30" y2="176" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="20" y="115" text-anchor="end" font-family="sans-serif" font-size="9" fill="#CC0000">15.1mm Z-stack</text>
+
+    <!-- Wall thickness -->
+    <line x1="82" y1="33" x2="82" y2="38" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="73" y1="33" x2="82" y2="33" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="77" y="28" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">1.5</text>
+
+    <!-- Legend -->
+    <rect x="82" y="310" width="12" height="8" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+    <text x="100" y="318" font-family="sans-serif" font-size="9">Display</text>
+    <rect x="155" y="310" width="12" height="8" fill="#90C695" stroke="black" stroke-width="0.3"/>
+    <text x="173" y="318" font-family="sans-serif" font-size="9">PCB</text>
+    <rect x="215" y="310" width="12" height="8" fill="#D4A84B" stroke="black" stroke-width="0.3"/>
+    <text x="233" y="318" font-family="sans-serif" font-size="9">Battery</text>
+    <rect x="290" y="310" width="12" height="8" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+    <text x="308" y="318" font-family="sans-serif" font-size="9">Shell</text>
+  </g>
+
+  <!-- ==================== VIEW 4: Side View (bottom-right) ==================== -->
+  <g transform="translate(600, 480)">
+    <text x="280" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Side View (rounded end profile)</text>
+
+    <!-- Rounded end profile - nearly circular cross-section -->
+    <ellipse cx="280" cy="180" rx="80" ry="130" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Top surface curvature hint -->
+    <path d="M200,170 Q280,130 360,170" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+
+    <!-- Screen on front face -->
+    <rect x="195" y="90" width="12" height="125" fill="#B0D4F1" stroke="black" stroke-width="0.4"/>
+    <text x="185" y="155" text-anchor="end" font-family="sans-serif" font-size="9" fill="#336">Screen</text>
+
+    <!-- Button protrusion -->
+    <rect x="192" y="240" width="7" height="20" rx="1" ry="1" fill="#C0C0C0" stroke="black" stroke-width="0.4"/>
+    <text x="183" y="255" text-anchor="end" font-family="sans-serif" font-size="8" fill="#666">Btn</text>
+
+    <!-- USB-C on left end (this is the end view showing the port) -->
+    <rect x="256" y="295" width="48" height="10" rx="3" ry="3" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="280" y="318" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C (9.34 x 3.66mm)</text>
+
+    <!-- Wake button on opposite end would be here -->
+    <rect x="256" y="50" width="48" height="8" rx="2" ry="2" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="280" y="45" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Wake button (opposite end)</text>
+
+    <!-- Dimension: height 48mm -->
+    <line x1="380" y1="50" x2="380" y2="310" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="360" y1="50" x2="388" y2="50" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="360" y1="310" x2="388" y2="310" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="395" y="185" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">48mm</text>
+
+    <!-- Dimension: depth 16mm -->
+    <line x1="200" y1="330" x2="360" y2="330" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="200" y1="310" x2="200" y2="335" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="360" y1="310" x2="360" y2="335" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="280" y="345" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">16mm</text>
+
+    <!-- Parting line -->
+    <line x1="200" y1="180" x2="360" y2="180" stroke="black" stroke-width="0.4" stroke-dasharray="4,2"/>
+    <text x="370" y="180" font-family="sans-serif" font-size="8" fill="#666">Parting line</text>
+
+    <!-- Note -->
+    <text x="280" y="375" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">Rounded stadium ends create</text>
+    <text x="280" y="388" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">smooth, pocket-friendly profile</text>
+  </g>
+</svg>

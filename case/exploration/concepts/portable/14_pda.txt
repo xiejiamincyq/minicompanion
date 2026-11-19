@@ -1,0 +1,309 @@
+DESIGN 14: PDA
+==============
+Palm Pilot / early PocketPC homage. Portrait orientation.
+Screen fills the upper 70% of the front face. Below: 4 round
+app-launcher buttons in a row with silk-screened icons, tiny
+nav rocker in center. Stylus slot on right edge. Infrared
+window decoration at top. Graffiti writing area below buttons.
+Think "Palm III" meets Tamagotchi pet.
+
+Overall: 75mm tall x 55mm wide x 16mm deep
+Weight target: ~52g with battery
+Orientation: Portrait
+Shell: 2-piece (front + back), 4x screw posts + snap alignment
+
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ┌══════════════════════════════════┐
+    │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│ ← IR window (dark red
+    │▓▓▓▓▓▓▓▓▓▓ IR WINDOW ▓▓▓▓▓▓▓▓▓▓▓│   translucent plastic insert
+    ├──────────────────────────────────┤   3mm tall strip)
+    │  ○ LED                           │
+    │  ┌────────────────────────────┐  │
+    │  │                            │  │
+    │  │                            │  │
+    │  │        TFT LCD             │  │
+    │  │        SCREEN              │  │ ← 51.8 x 36.2mm module
+    │  │       (40.8x30.6           │  │   (portrait, fills upper 70%)
+    │  │        active)             │  │
+    │  │                            │  │
+    │  │                            │  │
+    │  │                            │  │
+    │  └────────────────────────────┘  │
+    │                                  │
+    │  ┌──┐            ┌──┐           │
+    │  │☰ │  ┌──┐  ┌──┐  │🏠│           │ ← 4x round app-launcher
+    │  └──┘  │◀▶│  │▲▼│  └──┘           │   buttons (8mm dia caps)
+    │        └──┘  └──┘                │   silk-screened icons
+    │   📅    NAV    NAV    🏠          │   14mm spacing
+    │        ROCKER  PAD               │
+    │  ┌──────────────────────────┐   │
+    │  │░░░░░░░░░░░░░░░░░░░░░░░░░░│   │ ← Graffiti writing area
+    │  │░░░ GRAFFITI  ZONE ░░░░░░░│   │   textured/stippled surface
+    │  │░░░░░░░░░░░░░░░░░░░░░░░░░░│   │   12mm tall recessed zone
+    │  └──────────────────────────┘   │
+    │          ┌──USB-C──┐            │
+    └──────────┤  ○  ○   ├────────────┘ ← USB-C cutout (9.34x3.66mm)
+               └─────────┘
+    ├────────── 55mm ──────────┤
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+        16mm
+      ├────────┤
+      ┌────────┐ ─┬─
+      │IR wndw │  │
+      │        │  │
+      │ screen │  │
+      │        │  │
+      │        │  │   75mm
+      │  pcb   │  │
+      │        │  │
+      │ batt   │  │
+      │        │  │
+      │ graffi │  │
+      └──┤USB├─┘ ─┴─
+      ↑         ↑
+     Front    Back
+
+    ║ ← Stylus slot groove
+    ║   runs along right edge
+    ║   (55mm long, 4mm wide,
+    ║    2mm deep channel)
+    ║   Holds mini stylus pen
+    ║   or decorative groove
+
+    Stylus slot detail (right edge cross-section):
+    ┌──╮
+    │  ╰──╮  ← 4mm wide channel
+    │     │     2mm deep
+    │  ╭──╯     rounded bottom
+    └──╯
+
+
+BACK VIEW
+─────────
+
+    ┌──────────────────────────────────┐
+    │                                  │
+    │  ┌────────────────────────────┐  │
+    │  │                            │  │
+    │  │       BATTERY AREA         │  │ ← Battery access panel
+    │  │       30 x 35mm LiPo      │  │   (optional snap-off door)
+    │  │                            │  │
+    │  └────────────────────────────┘  │
+    │                                  │
+    │     ▪▪▪▪▪▪▪▪  ← Vibration motor │   (6mm coin motor)
+    │                                  │
+    │  ┌──────────────────────────┐   │
+    │  │  Devotchi PDA            │   │ ← Recessed label area
+    │  │  Model P-1000            │   │   engraved text / sticker
+    │  └──────────────────────────┘   │
+    │                                  │
+    │          ┌──USB-C──┐            │
+    └──────────┤         ├────────────┘
+               └─────────┘
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤  IR window insert     ├──┤  ← 3mm tall, dark red plastic
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │     16mm total
+      │  │   (FPC routing)     │ │  │  (15.1mm z-stack
+      │  ├── PCB ──────────────┤ │  │   + 0.9mm IR insert)
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      │  │   30 x 35mm LiPo   │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+      Front face               Back face
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    (+0.9mm IR window protrusion at top = 16mm max)
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (rectangular, rounded corners, 1.5mm wall)
+    ├── Screen window cutout (41.8 x 31.6mm, portrait)
+    ├── IR window slot at top edge (50mm x 3mm, for translucent insert)
+    ├── 4x round button holes (8.5mm dia) in launcher row
+    ├── 1x nav rocker opening (10 x 10mm, center)
+    ├── Graffiti zone: textured recessed area (45 x 12mm, 0.3mm deep)
+    ├── 1x LED hole (2mm dia, above screen)
+    ├── Stylus channel on right wall (55mm long, 4mm wide, 2mm deep)
+    ├── 4x screen retention clips (L-shaped)
+    └── 4x screw post sockets (M2 threaded inserts)
+
+    Layer 2 — IR WINDOW INSERT (dark red translucent plastic)
+    ├── 50mm x 3mm x 2mm strip
+    ├── Press-fits into slot at top of front shell
+    └── Purely decorative (no actual IR hardware)
+
+    Layer 3 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait (long axis vertical)
+    ├── Seated in pocket, 0.2mm clearance per side
+    ├── FPC cable exits bottom edge
+    └── Held by front shell retention clips
+
+    Layer 4 — 2.5mm AIR GAP
+    ├── FPC cable routes to PCB connector
+    └── Button plungers pass through
+
+    Layer 5 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 4x tactile switches for launcher buttons (face front)
+    ├── 1x 5-way nav switch (center, face front)
+    ├── USB-C connector on bottom edge
+    ├── Display FPC connector on top edge
+    └── Vibration motor pads
+
+    Layer 6 — 0.5mm GAP
+    └── Clearance for ESP32 module height
+
+    Layer 7 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in device
+    ├── JST connector pigtail to PCB
+    └── Held by cradle ribs in back shell
+
+    Layer 8 — BACK SHELL (rectangular, rounded corners, 1.5mm wall)
+    ├── 4x screw posts (M2, 8mm tall)
+    ├── Battery cradle ribs (2x)
+    ├── USB-C cutout (9.5 x 4.0mm)
+    ├── Stylus channel continuation (right wall)
+    └── Recessed label area (engraved or sticker)
+
+
+BUTTON LAYOUT DETAIL (front face, below screen)
+────────────────────────────────────────────────
+
+    │                                  │
+    │    ╭──╮   ╭──╮   ╭──╮   ╭──╮   │
+    │    │📅│   │📧│   │☰ │   │🏠│   │ ← 4x round buttons
+    │    ╰──╯   ╰──╯   ╰──╯   ╰──╯   │   8mm dia caps
+    │    CAL    MAIL    MENU   HOME    │   silk-screened icons
+    │    ├14mm┤  ├14mm┤  ├14mm┤        │   14mm center spacing
+    │                                  │
+    │            ┌───┐                 │
+    │            │ ▲ │                 │ ← 5-way nav rocker
+    │          ┌─┤   ├─┐               │   (10x10mm, center click)
+    │          │◀│ ● │▶│               │   doubles as wake button
+    │          └─┤   ├─┘               │
+    │            │ ▼ │                 │
+    │            └───┘                 │
+
+
+STYLUS SLOT DETAIL (right edge)
+───────────────────────────────
+
+    Top of device
+    ┌─────────────────────┐
+    │                     │
+    │   ╔═══╗  ← Stylus  │  Stylus: 50mm long, 3.5mm dia
+    │   ║   ║    sits in  │  Aluminum tube with pocket clip
+    │   ║   ║    channel  │  Can be real mini stylus or
+    │   ║   ║             │  decorative ribbed insert
+    │   ║   ║             │
+    │   ╚═══╝             │
+    │   ↑                 │
+    │   Friction fit      │
+    │   (slight taper)    │
+    │                     │
+    └─────────────────────┘
+    Bottom of device
+
+    Cross-section of slot:
+    ┌────┐
+    │╭──╮│
+    ││○ ││ ← Stylus (3.5mm dia) in channel
+    │╰──╯│   (4mm wide, 2mm deep, rounded)
+    └────┘
+
+
+IR WINDOW DETAIL (top edge)
+────────────────────────────
+
+    ┌══════════════════════════════════┐
+    │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│ ← Dark red translucent
+    │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│   polycarbonate insert
+    ├──────────────────────────────────┤   3mm tall, full width
+
+    Cross-section:
+    ┌──┬▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓┬──┐
+    │  │  IR translucent plastic      │  │
+    │  └──────────────────────────────┘  │
+    │     Front shell continues below    │
+
+    The IR window is decorative only — a homage to
+    Palm Pilot IR beaming. No actual IR hardware.
+    Material: dark red-tinted translucent polycarbonate.
+
+
+GRAFFITI ZONE DETAIL (bottom of front face)
+────────────────────────────────────────────
+
+    │  ┌──────────────────────────┐   │
+    │  │░░░░░░│░░░░░░░░░░░░░░░░░░│   │ ← 45mm x 12mm recessed area
+    │  │░ abc ░│░░░░ 123 ░░░░░░░░│   │   0.3mm depth
+    │  │░░░░░░│░░░░░░░░░░░░░░░░░░│   │   Stippled/textured surface
+    │  └──────┴───────────────────┘   │   Silk-screened divider line
+    │  ← letters │  numbers →         │   (like original Palm)
+
+    Purely decorative — textured surface evokes
+    the Graffiti handwriting recognition area from
+    original Palm devices. Nice tactile detail.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece rectangular with rounded corners (3mm radius)
+- Front + back joined by 4x M2 screws (recessed into back shell)
+- Alignment via 2x registration pins on seam edge
+- Display press-fits into front shell pocket, 4x retention clips
+- PCB screws onto 4x posts in back shell
+- Battery in cradle ribs, JST pigtail to PCB
+- USB-C cutout at bottom center, aligned across both halves
+- Vibration motor foam-taped to inside of back shell
+- IR window insert press-fits into top edge slot
+- Stylus channel molded into right wall of both shell halves
+- Graffiti zone is recessed texture on front shell (no cutout)
+- Nav rocker center-click doubles as wake function
+- Portrait orientation: screen dominates upper 70% of face
+
+
+SPECIAL FEATURES
+────────────────
+- IR window: Dark red translucent plastic insert at top edge.
+  Purely decorative homage to Palm Pilot IR beaming port.
+  Glows faintly when internal LED shines through (status indicator).
+- Stylus slot: Channel along right edge holds a mini aluminum
+  stylus (50mm). Friction fit with slight taper. Can be real
+  capacitive stylus or decorative ribbed insert.
+- Graffiti zone: Textured/stippled recessed area below buttons.
+  Silk-screened divider line separating "abc" and "123" zones.
+  Purely tactile/visual homage — not touch-sensitive.
+- App launcher buttons: 4 round buttons with silk-screened icons
+  (calendar, mail, menu, home). Evokes Palm's hardware launcher.
+- Nav rocker: 5-way navigation pad in center below buttons.
+  Center click = wake. Directional = future menu navigation.
+- Two-tone plastic: Front shell in dark gray, back in lighter
+  gray or metallic silver — classic PDA color scheme.
+- Recessed label area on back: "Devotchi PDA Model P-1000"
+  engraved or printed — product identity detail.

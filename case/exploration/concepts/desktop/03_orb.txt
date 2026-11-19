@@ -1,0 +1,128 @@
+DESIGN 3: FLOATING ORB
+======================
+Egg-shaped head on a cylindrical pedestal base. Screen embedded
+in the flat-cut top of the egg. Think "desk toy" or "smart speaker"
+form factor. Two-piece egg + separate base.
+
+Overall: ~80mm egg dia x ~55mm egg height, 65mm base dia x 40mm base height
+Total height: ~110mm (base + peg + egg)
+Target user: conversation piece, living room display
+
+FRONT VIEW (looking at egg from the side)
+─────────────────────────────────────────
+
+              ┌─ Screen window ─┐
+           ┌──┤  (41.8x31.6mm) ├──┐
+          /   └─────────────────┘   \
+         /   ┌───────────────────┐   \
+        │    │   TFT LCD SCREEN  │    │    ← Egg: ~80mm wide
+        │    │  (flat cut on top)│    │       ~55mm tall (oblate)
+         \   └───────────────────┘   /
+          \                         /
+           \───────────┬───────────/
+                       │               ← Peg: 8mm dia, 15mm tall
+                       │
+            ┌──────────┴──────────┐
+            │                     │    ← Base: 65mm dia cylinder
+            │    PEDESTAL BASE    │       40mm tall
+            │  ┌───────────────┐  │
+            │  │  speaker      │  │    ← Speaker fires out side
+            │  │  grille ○○○○  │  │       through grille holes
+            │  └───────────────┘  │
+            │      ┌─────┐        │    ← USB-C on base side
+            │      │USB-C│        │
+            └─────────────────────┘
+                 4x rubber feet
+
+
+SIDE VIEW (same — it's round)
+─────────────────────────────
+    Same as front view. The egg is rotationally symmetric
+    except for the flat screen cut and button placement.
+
+
+TOP VIEW (looking down at screen face)
+──────────────────────────────────────
+
+                 ┌────────────────┐
+              ┌──┤                ├──┐
+            /    │  TFT SCREEN    │    \
+           /     │ 40.8 x 30.6   │     \
+          │      │   active area  │      │
+          │      │                │      │    ~80mm egg diameter
+           \     └────────────────┘     /
+            \    (●)(●)(●)(●)          /     ← 4 buttons around screen
+              \                      /          or on egg equator
+                ──────────────────
+
+
+CROSS-SECTION (cut through center vertically)
+─────────────────────────────────────────────
+
+    ┌─ Screen window ─┐
+    │                  │
+    ┌──────────────────────────┐ ── Egg shell (2mm wall)
+    │  ┌─ Screen ───────────┐  │
+    │  │  (4.5mm module)    │  │
+    │  ├────────────────────┤  │
+    │  │  2.5mm gap         │  │    Egg interior:
+    │  ├─ PCB ──────────────┤  │    screen + PCB stacked
+    │  │  (1.6mm)           │  │    inside upper half
+    │  │  ↕ standoffs       │  │
+    │  └────────────────────┘  │
+    │                          │
+    └──────────┬───────────────┘ ── Egg bottom (2mm wall)
+               │ PEG (8mm dia)
+               │ 15mm tall
+    ┌──────────┴───────────────┐ ── Base top plate
+    │  ┌───────────────────┐   │
+    │  │   SPEAKER          │  │    Base interior:
+    │  │   (28mm, 5mm tall) │  │    speaker + USB-C board
+    │  ├────────────────────┤  │
+    │  │   wiring channel   │  │
+    │  └────────────────────┘  │
+    └──────────────────────────┘ ── Base bottom plate
+         4x rubber feet
+
+
+COMPONENT LAYOUT
+────────────────
+
+    EGG — FRONT HALF (top half of egg)
+    ├── Flat-cut top face with screen window
+    ├── Screen pocket (52.2 x 36.6mm, depth = module thickness)
+    ├── 4x retention clips holding screen in pocket
+    ├── Button holes on equator band (4x, 5mm dia)
+    └── Shell wall: 2mm, spherical profile
+
+    EGG — BACK HALF (bottom half of egg)
+    ├── 4x PCB standoffs (5mm OD, M2, 3mm tall)
+    ├── Peg socket (8mm hole, 10mm deep) for base connection
+    ├── Wire channel from peg socket to PCB area
+    └── Shell wall: 2mm
+
+    PEDESTAL BASE
+    ├── Cylinder: 65mm OD, 40mm tall
+    ├── Peg on top (8mm dia, 15mm tall) — friction fit into egg
+    ├── Speaker cavity inside (28mm dia, 6mm deep)
+    ├── Speaker grille on side wall
+    ├── USB-C cutout on side wall (9.5 x 3.5mm)
+    ├── Wire channel from peg through to internal USB-C breakout
+    └── 4x rubber feet on bottom
+
+
+WIRING NOTES
+────────────
+- FPC from screen → PCB in egg (short, direct connection)
+- USB-C on base connects via wire through hollow peg to PCB in egg
+- Speaker in base connects via wire through hollow peg
+- Peg is hollow (5mm bore) for wire routing
+- Alternative: all electronics in base, only screen+FPC in egg
+
+
+ASSEMBLY
+────────
+- Egg: 2 halves (horizontal split at equator), 4x M2 screws
+- Base: 2 pieces (top plate + cylinder body), snap-fit or 3x screws from bottom
+- Egg sits on base peg (friction fit, can lift off)
+- Total 3 subassemblies

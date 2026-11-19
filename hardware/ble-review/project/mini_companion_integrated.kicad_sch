@@ -1,0 +1,376 @@
+(kicad_sch
+  (version 20260306)
+  (generator "eeschema")
+  (generator_version "10.0")
+  (uuid "d2bf821d-2b43-48c2-bd9f-23e5d37beff6")
+  (paper "A3")
+  (title_block
+    (title "Mini Companion BLE-A1 USB service candidate")
+    (rev "BLE-A1-USB")
+    (company "Hussam Koman")
+    (comment 1 "Engineering candidate - NOT FOR FABRICATION")
+    (comment 2 "BLE; charge-off; preserve MCU/display/buttons/protection")
+    (date "2026-11-19"))
+  (lib_symbols)
+  (sheet
+    (at 147.32000 48.26000)
+    (size 81.28 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "98e7fe21-bddb-41d2-a56f-5f910350d952")
+    (property "Sheetname" "display"
+      (at 147.32000 47.54840 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 3.81 3.81)
+          (thickness 0.762)
+          (bold yes))
+        (justify left bottom)))
+    (property "Sheetfile" "display.kicad_sch"
+      (at 147.32000 75.51460 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "3")))))
+  (sheet
+    (at 269.24000 48.26000)
+    (size 81.28 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "b2236c73-c7ac-47cb-a363-4ec62c6a982a")
+    (property "Sheetname" "user_input"
+      (at 269.24000 47.54840 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 3.81 3.81)
+          (thickness 0.762)
+          (bold yes))
+        (justify left bottom)))
+    (property "Sheetfile" "user_input.kicad_sch"
+      (at 269.24000 61.54460 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "5")))))
+  (sheet
+    (at 25.40000 101.60000)
+    (size 81.28 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "b650cb4c-26d8-4ddd-9a38-ed7407049d46")
+    (property "Sheetname" "usb_interface"
+      (at 25.40000 100.88840 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "power.kicad_sch"
+      (at 25.40000 122.50460 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "4")))))
+  (sheet
+    (at 147.32000 101.60000)
+    (size 81.28 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ba08bb9c-27db-4863-93da-d0a8774410f3")
+    (property "Sheetname" "isolation"
+      (at 147.32000 100.88840 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "isolation.kicad_sch"
+      (at 147.32000 122.50460 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "11")))))
+  (sheet
+    (at 25.40000 48.26000)
+    (size 81.28 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0))
+    (uuid "d501dd46-08d9-4743-b831-93de6bd7c7dd")
+    (property "Sheetname" "mcu"
+      (at 25.40000 47.54840 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 3.81 3.81)
+          (thickness 0.762)
+          (bold yes))
+        (justify left bottom)))
+    (property "Sheetfile" "mcu.kicad_sch"
+      (at 25.40000 99.64460 0)
+      (show_name no)
+      (do_not_autoplace no)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "1")))))
+  (sheet_instances
+    (path "/"
+      (page "0")))
+  (embedded_fonts no)
+  (sheet
+    (at 269.24 101.6)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "a86c52ba-e972-4659-b017-ab4e304f9539")
+    (property "Sheetname" "ble_usb"
+      (at 269.24 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "ble_usb.kicad_sch"
+      (at 269.24 128.26999999999998 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "7")))))
+  (sheet
+    (at 25.4 154.94)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "da5e6a86-4c89-47d4-9d42-e42c869d18e0")
+    (property "Sheetname" "ble_charger"
+      (at 25.4 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "ble_charger.kicad_sch"
+      (at 25.4 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "8")))))
+  (sheet
+    (at 147.32 154.94)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ed0d18dc-9791-4b24-b35c-a4c41b0b99f8")
+    (property "Sheetname" "ble_enable"
+      (at 147.32 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "ble_enable.kicad_sch"
+      (at 147.32 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "9")))))
+  (sheet
+    (at 269.24 154.94)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "a9a21ec2-34ac-4baf-89c6-27e7ac9698ed")
+    (property "Sheetname" "ble_rail"
+      (at 269.24 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "ble_rail.kicad_sch"
+      (at 269.24 181.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "10")))))
+  (sheet
+    (at 25.4 208.28)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "ba9fd70b-1a31-4dc5-9a56-64841f09f9ba")
+    (property "Sheetname" "ble_backlight"
+      (at 25.4 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "ble_backlight.kicad_sch"
+      (at 25.4 234.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "11")))))
+  (text "BLE-A1 USB service candidate | hardware only | NOT FOR FABRICATION"
+    (at 25.4 25.4 0)
+    (effects
+      (font
+        (size 2 2))
+      (justify left))
+    (uuid "d73a5d71-1469-4641-9da7-a45c108115be"))
+  (sheet
+    (at 147.32 208.28)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "63249bf5-8c44-45df-a5cc-fefd189a006b")
+    (property "Sheetname" "usb_service"
+      (at 147.32 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "usb_service.kicad_sch"
+      (at 147.32 234.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "12")))))
+  (sheet
+    (at 269.24 208.28)
+    (size 81.28 25.4)
+    (stroke
+      (width 0)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "b165c0bd-7de4-43ea-a6f1-dd29dd8fa713")
+    (property "Sheetname" "usb_enable_gate"
+      (at 269.24 207.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "usb_enable_gate.kicad_sch"
+      (at 269.24 234.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6"
+          (page "13"))))))

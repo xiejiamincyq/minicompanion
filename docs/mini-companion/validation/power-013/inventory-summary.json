@@ -1,0 +1,28 @@
+{
+  "source": "docs\\mini-companion\\validation\\power-013\\system-final.xml",
+  "sha256": "aeb2f9a1ef123d204a612befef12b9d3722eb6e059282c536863394f749c5311",
+  "schematic_components": 74,
+  "review_interface_placeholders": 11,
+  "remaining_candidate_positions": 63,
+  "IC_count": 9,
+  "per_sheet": {
+    "/": 13,
+    "/usb_qualify/": 13,
+    "/usb_cc/": 10,
+    "/usb_input/": 10,
+    "/charger/": 19,
+    "/backlight/": 9
+  },
+  "excluded_from_scope": [
+    "ESP32 module",
+    "display assembly",
+    "NFC",
+    "battery pack",
+    "main-board support components",
+    "PCB",
+    "assembly",
+    "enclosure",
+    "shipping/taxes"
+  ],
+  "warning": "63 is not a released manufacturing BOM; missing prices remain empty, never zero."
+}

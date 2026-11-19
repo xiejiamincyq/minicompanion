@@ -1,0 +1,316 @@
+DESIGN 23: CYBERDECK
+====================
+Compact hacker terminal aesthetic. Landscape brick with an angled
+top face (~15deg tilt) giving the screen a built-in viewing angle.
+Front vertical face has 3 mechanical-style buttons with visible
+square stems and RGB LED rings. Exposed hex screw heads on all
+4 corners (functional). One side panel is transparent/clear acrylic
+showing PCB edge and components inside. Industrial/utilitarian
+aesthetic. Rubber feet on bottom. Sticker area on back.
+
+Overall: 95mm wide x 60mm deep x 20mm tall (front) / 36mm tall (back)
+Weight target: ~65g with battery
+Orientation: Landscape (screen on angled top face)
+Shell: Multi-piece (frame + clear side panel + top + bottom)
+       4x M2.5 hex socket screws on corners
+
+TOP VIEW (looking down at angled screen)
+────────────────────────────────────────
+
+         ╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾╲
+        ╱  ┌───────────────────────────────────┐  ╲
+       ╱   │                                   │   ╲
+      │    │        TFT LCD SCREEN             │    │
+      │    │        (40.8 x 30.6mm)            │    │
+      │    │                                   │    │
+      │    │        ~15deg angled face          │    │
+       ╲   └───────────────────────────────────┘   ╱
+        ╲                                         ╱
+         ╲_______________________________________╱
+    ⬡                                              ⬡  ← Hex screws
+    ├──────────────── 95mm ────────────────────────┤     on corners
+
+
+FRONT VIEW (facing the button panel)
+─────────────────────────────────────
+
+    ⬡──────────────────────────────────────────────⬡
+    │                                              │ ─┬─
+    │      ╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾╲        │  │  Angled
+    │     ╱   SCREEN (visible from front)  ╲       │  │  top face
+    │    ╱─────────────────────────────────╲       │  │  (~15deg)
+    │───┘                                   └───│  │ ─┤
+    │                                              │  │
+    │    ╔══╗        ╔══╗        ╔══╗              │  │  20mm front
+    │    ║○ ║        ║○ ║        ║○ ║              │  │  height
+    │    ║B1║        ║B2║        ║B3║              │  │
+    │    ╚══╝        ╚══╝        ╚══╝              │  │
+    │   REJECT      ACTION      APPROVE            │  │
+    │                                              │  │
+    ⬡──────────────────────────────────────────────⬡ ─┴─
+    ├──────────────── 95mm ────────────────────────┤
+
+    Button detail:
+    ╔════════╗
+    ║ ◯ LED  ║ ← RGB LED ring around square stem
+    ║ ┌────┐ ║    Visible square plunger (mechanical feel)
+    ║ │████│ ║    12mm cap with 2mm exposed travel
+    ║ └────┘ ║
+    ╚════════╝
+
+
+SIDE VIEW (right side — this is the CLEAR ACRYLIC panel)
+────────────────────────────────────────────────────────
+
+                    36mm back height
+                         ├──┤
+         ╱───────────────┐  │
+        ╱  15deg angle    │  │
+       ╱    screen face   │  │
+      ┌───────────────────┤  │
+      │ ░░░░░░░░░░░░░░░░░ │  │  ← Transparent panel
+      │ ░░ PCB  visible ░░ │  │    Clear acrylic
+      │ ░░ ESP32 chip   ░░ │  │    2mm thick
+      │ ░░ components   ░░ │  │
+      │ ░░░░░░░░░░░░░░░░░ │  │
+      └─┤■├─┤■├───────────┘  │
+        feet               ─┴─
+      ├───── 60mm deep ──────┤
+
+    Left side is opaque (matching main body material).
+
+
+SIDE VIEW (left side — opaque panel)
+────────────────────────────────────
+
+                    36mm back height
+                         ├──┤
+         ╱───────────────┐  │
+        ╱                 │  │
+       ╱                  │  │
+      ┌───────────────────┤  │
+      │                   │  │
+      │   OPAQUE SHELL    │  │
+      │   (matte finish)  │  │
+      │                   │  │
+      └─┤■├─┤■├──────────┘  │
+        feet               ─┴─
+
+
+BACK VIEW
+─────────
+
+    ⬡──────────────────────────────────────────────⬡
+    │                                              │ ─┬─
+    │                                              │  │
+    │   ┌──────────────────────────────────────┐   │  │
+    │   │                                      │   │  │
+    │   │    STICKER / LABEL AREA              │   │  │
+    │   │    "PROPERTY OF: ___________"        │   │  │  36mm
+    │   │    "ASSET NO: DVTCH-023"             │   │  │
+    │   │                                      │   │  │
+    │   └──────────────────────────────────────┘   │  │
+    │                                              │  │
+    │              ┌────USB-C────┐                  │  │
+    ⬡──────────────┤    ○  ○    ├──────────────────⬡ ─┴─
+                   └────────────┘
+                   (9.34 x 3.66mm cutout)
+
+
+BOTTOM VIEW
+───────────
+
+    ┌──────────────────────────────────────────────┐
+    │ ⬡                                          ⬡ │
+    │                                              │
+    │  ┌──────────────────────────────────────┐    │
+    │  │        BATTERY  ACCESS               │    │
+    │  │        (snap panel, 32x37mm)         │    │
+    │  └──────────────────────────────────────┘    │
+    │                                              │
+    │  ■                                        ■  │ ← Rubber feet
+    │                                              │   (4x, 8mm dia
+    │  ■                                        ■  │    2mm tall)
+    │                                              │
+    │ ⬡                                          ⬡ │
+    └──────────────────────────────────────────────┘
+
+
+CROSS-SECTION (cut through center, looking from right side)
+───────────────────────────────────────────────────────────
+
+              15deg angle
+             ╱
+    Front   ╱                              Back
+      │    ╱                                 │
+      │   ╱  Screen surface                  │
+      │  ├── Display ──────────────────┐     │
+      │  │   (2.5mm thick)            │     │
+      │  ├─────────────────────────────┤     │
+      │  │   2.5mm gap (FPC)          │     │
+      │  ├── PCB ──────────────────────┤     │
+      │  │   (1.6mm thick)            │     │
+      │  ├─────────────────────────────┤     │
+      │  │   0.5mm gap                │     │
+      │  ├── Battery ──────────────────┤     │
+      │  │   (5.0mm thick)            │     │
+      │  ├─────────────────────────────┤     │
+      │  │   1.5mm bottom wall + feet  │     │
+      └──┴─────────────────────────────┴─────┘
+
+    Z-stack (vertical, at front face):
+    1.5 (top wall) + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    Front height: ~20mm (15.1mm stack + button housing)
+    Back height: ~36mm (15.1mm stack + angled rise of ~16mm
+    over 60mm depth at 15deg)
+
+    The 15deg tilt means the back rises:
+    60mm x tan(15deg) = 60 x 0.268 = ~16mm above front
+
+
+COMPONENT LAYOUT (exploded, top to bottom)
+──────────────────────────────────────────
+
+    Layer 1 — TOP SHELL (angled face, 1.5mm wall)
+    ├── 15deg angled surface for screen
+    ├── Screen window cutout (42 x 32mm, landscape)
+    ├── Integrated with front face (one piece)
+    ├── 4x corner hex screw through-holes (M2.5)
+    └── Screen retention clips (4x)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted landscape on 15deg angled shelf
+    ├── FPC cable exits toward back
+    └── Held by top shell clips
+
+    Layer 3 — FRONT BUTTON PANEL (vertical face)
+    ├── 3x mechanical button assemblies
+    │   ├── Square plunger stems (visible 2mm travel)
+    │   ├── RGB LED ring PCBs (3x, wired to main PCB)
+    │   └── Tactile switches on main PCB behind
+    └── Buttons fire horizontally into PCB switches
+
+    Layer 4 — 2.5mm AIR GAP
+    ├── FPC routing (angled path to PCB)
+    ├── Button stem passages
+    └── LED wiring channel
+
+    Layer 5 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces right side (visible through clear panel)
+    ├── 3x tactile switches facing front
+    ├── USB-C connector on back edge (centered)
+    ├── Display FPC connector
+    ├── 3x LED ring headers
+    └── Vibration motor pads
+
+    Layer 6 — 0.5mm GAP
+    └── ESP32 module clearance
+
+    Layer 7 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Positioned in lower rear section
+    ├── JST pigtail to PCB
+    └── Held by bottom shell cradle
+
+    Layer 8 — BOTTOM SHELL (1.5mm wall)
+    ├── 4x rubber foot recesses (8mm dia)
+    ├── Battery cradle ribs
+    ├── 4x M2.5 threaded inserts (corners)
+    ├── PCB mounting posts
+    ├── USB-C cutout
+    └── Battery access panel (snap-off, bottom center)
+
+    SIDE PANELS
+    ├── Right: Clear acrylic (2mm thick), press-fit into frame
+    │   └── Shows PCB edge, ESP32, components, LED glow
+    └── Left: Opaque shell material, integrated with frame
+
+
+CLEAR ACRYLIC PANEL DETAIL
+───────────────────────────
+
+    Right side panel (exploded view):
+
+    ┌─────────────────────────┐
+    │ ░░░░░░░░░░░░░░░░░░░░░░ │
+    │ ░░                   ░░ │
+    │ ░░  ┌─────────────┐  ░░ │  Clear acrylic, 2mm thick
+    │ ░░  │ ESP32-S3    │  ░░ │  Press-fit into frame groove
+    │ ░░  │ MINI-1      │  ░░ │
+    │ ░░  └─────────────┘  ░░ │  Visible components:
+    │ ░░   ┌─┐  ┌─┐  ┌─┐  ░░ │  - ESP32 module
+    │ ░░   │C│  │C│  │R│  ░░ │  - Capacitors
+    │ ░░   └─┘  └─┘  └─┘  ░░ │  - Resistors
+    │ ░░                   ░░ │  - Traces on PCB
+    │ ░░░░░░░░░░░░░░░░░░░░░░ │  - LED glow internal
+    └─────────────────────────┘
+
+    Panel retention:
+    ┌──────────┐
+    │  Frame   │
+    │  ┌─╥──┐  │
+    │  │ ║  │  │ ← 1mm groove in frame
+    │  │ ║  │  │   Acrylic slides in from top
+    │  │ ║  │  │   Retained by corner hex screws
+    │  └─╨──┘  │
+    └──────────┘
+
+
+BUTTON ASSEMBLY DETAIL (front face)
+────────────────────────────────────
+
+    Single button (exploded):
+
+    ┌──────────┐
+    │  ◯ LED   │ ← RGB LED ring (10mm OD, 6mm ID)
+    │ ┌──────┐ │   Addressable, shows status color
+    │ │ CAP  │ │ ← Square cap (12x6mm)
+    │ │      │ │   Visible square stem (2mm travel)
+    │ └──┬───┘ │
+    │    │stem │ ← 4mm square plunger
+    │    │     │   Passes through front panel
+    │    ▼     │
+    │ [switch] │ ← Tactile switch on PCB
+    └──────────┘
+
+    Three buttons spaced 22mm center-to-center
+    (wider than standard 14mm to accommodate LED rings)
+
+    LED ring states:
+    ◯ = idle (dim white)
+    ◯ = active (bright per-button color)
+    ◯ = pressed (flash)
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: Multi-piece construction
+  - Main frame: top + front + left side + bottom (one molded piece
+    or 3D printed as a unit)
+  - Clear acrylic right side panel (2mm, laser-cut, slides into groove)
+  - 4x M2.5 hex socket head cap screws hold it all together
+- 15deg angled top face gives natural screen viewing angle
+  when device sits on desk or is held
+- Buttons on vertical front face have mechanical-style square stems
+  with visible 2mm travel and audible click
+- RGB LED rings around each button powered from main PCB
+- Clear panel slides into frame groove, retained by corner screws
+- Rubber feet (4x, 8mm dia, 2mm tall) prevent sliding on desk
+- USB-C on back edge for clean cable routing on desk
+- Back face has recessed label area for "property of" sticker
+- Battery access via snap panel on bottom
+- Vibration motor adhered to bottom shell interior
+- Assembly order: PCB onto posts, battery in cradle, slide in
+  clear panel, close top/front, insert 4x hex screws
+
+SPECIAL FEATURES
+────────────────
+- Built-in 15deg screen tilt — no stand needed
+- Visible mechanical button stems with RGB LED rings
+- Transparent side panel shows internals (PCB, ESP32, glow)
+- Exposed hex screw industrial aesthetic (all 4 corners)
+- "Property of" label area on back (asset tag / hacker cred)
+- Rubber feet for stable desk placement
+- Compact hacker terminal / cyberdeck aesthetic
+- Button LED rings provide per-button status indication
+- Clear panel lets internal LED glow create ambient light effect
+- Asymmetric design (one clear side, one opaque) adds visual interest

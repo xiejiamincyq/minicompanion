@@ -1,0 +1,338 @@
+DESIGN 13: iPOD NANO
+====================
+Click-wheel era Apple iPod tribute. Very slim tall portrait form.
+Screen dominates the upper 60% of the front face. Below: a circular
+click-wheel ring with center approve button. Reject and action buttons
+at 12 and 6 o'clock on the wheel rim. Wake button and hold switch on
+top edge. Rounded back with slight dome. Polished aluminum aesthetic.
+Extremely thin — uses custom slim battery layout to hit 14mm depth.
+
+Overall: 88mm tall x 42mm wide x 14mm deep
+Weight target: ~38g with battery
+Orientation: Portrait
+Shell: 2-piece (front plate + back shell), 4x M2 screws hidden under back
+
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ┌─ hold ─┐  ┌─ wake ─┐
+    │ slider  │  │ button │
+    ┌────────────────────────────┐ ─┬─
+    │                              │  │
+    │  ┌──────────────────────┐   │  │
+    │  │                      │   │  │
+    │  │                      │   │  │
+    │  │     TFT LCD          │   │  │
+    │  │     SCREEN           │   │  │ ← 51.8 x 36.2mm module
+    │  │    (40.8 x 30.6)     │   │  │   (portrait, rotated)
+    │  │                      │   │  │
+    │  │                      │   │  │
+    │  │                      │   │  │
+    │  └──────────────────────┘   │  │
+    │                              │  │  88mm
+    │        ┌── REJECT ──┐       │  │
+    │       ╱    12 o'clk   ╲     │  │
+    │      ╱   ┌────────┐   ╲    │  │
+    │     │    │12x6 btn│    │   │  │
+    │     │    └────────┘    │   │  │
+    │     │  ╭──────────╮   │   │  │ ← 30mm click-wheel ring
+    │  ACT│  │          │   │REJ│  │   (decorative/tactile ridge)
+    │  6  │  │  CENTER   │   │12 │  │
+    │  clk│  │ ╔══════╗  │   │clk│  │
+    │     │  │ ║APPROV║  │   │   │  │ ← center button = APPROVE
+    │     │  │ ╚══════╝  │   │   │  │   (15mm dia, raised 0.5mm)
+    │     │  │          │   │   │  │
+    │     │  ╰──────────╯   │   │  │
+    │     │    ┌────────┐    │   │  │
+    │      ╲  │12x6 btn│   ╱    │  │
+    │       ╲  └────────┘  ╱     │  │
+    │        └── ACTION ──┘       │  │
+    │              6 o'clk        │  │
+    │                              │  │
+    │   ○ LED                      │  │ ← 2mm LED hole
+    └────────────────────────────┘ ─┴─
+    ├────── 42mm ──────┤
+
+
+TOP EDGE VIEW
+─────────────
+
+    ┌────────────────────────────┐
+    │ ┌──────┐         ┌──────┐ │
+    │ │ HOLD │         │ WAKE │ │ ← hold switch (slider, 10mm travel)
+    │ │slider│         │10x4.5│ │   wake button (10 x 4.5mm)
+    │ └──────┘         └──────┘ │
+    └────────────────────────────┘
+    ├────── 42mm ──────┤
+
+    Hold switch detail:
+    ┌─────────────┐
+    │  ═══▓═══    │ ← slider (8 x 3mm cap)
+    │  OFF ← → ON │   orange dot visible when ON
+    └─────────────┘   disables all buttons when locked
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+         14mm
+        ├──────┤
+        ╭──────╮ ─┬─
+       ╱        ╲  │
+      │  screen  │  │
+      │          │  │
+      │          │  │  88mm
+      │  wheel   │  │
+      │          │  │
+      │          │  │
+       ╲        ╱  │
+        ╰──────╯ ─┴─
+        ↑        ↑
+      Front    Back
+
+    Note: Back has a slight dome — cross-section is
+    not rectangular but gently curved. Front plate is
+    flat. Thickest at center (14mm), tapering to
+    ~12mm at top and bottom edges.
+
+
+BACK VIEW
+─────────
+
+        ╭────────────────────────────╮
+       ╱                              ╲
+      │                                │
+      │    ┌────────────────────┐     │
+      │    │                    │     │
+      │    │    BATTERY DOOR    │     │ ← snap-off panel (32 x 37mm)
+      │    │                    │     │   flush with domed surface
+      │    │                    │     │
+      │    └────────────────────┘     │
+      │                                │
+      │    ▪▪▪ vib motor              │ ← 6mm coin motor
+      │                                │
+      │    ═══════════════════════     │ ← polished/brushed aluminum
+      │    mirror finish back          │   finish line (decorative)
+      │                                │
+       ╲          ┌──USB──┐           ╱
+        ╰─────────┤ ○  ○  ├─────────╯
+                  └───────┘
+               USB-C (9.34 x 3.66mm)
+
+    Back surface: gently domed (1.5mm crown over 42mm width).
+    Polished aluminum-look finish (anodized or painted plastic).
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front (flat)                 Back (domed)
+      │                            ╲
+      │  1.0mm front plate          ╲  1.5mm back wall (at center)
+      │  │                       │   ╲
+      ├──┤                       ├────╮
+      │  ├── Display ──────────┐ │    │
+      │  │   (2.5mm thick)     │ │    │
+      │  ├─────────────────────┤ │    │
+      │  │   2.5mm gap         │ │    │  14mm total
+      │  │   (FPC routing)     │ │    │
+      │  ├── PCB ──────────────┤ │    │
+      │  │   (1.6mm thick)     │ │    │
+      │  ├─────────────────────┤ │    │
+      │  │   0.5mm gap         │ │    │
+      │  ├── Battery ──────────┤ │    │
+      │  │   (4.5mm slim cell)  │ │    │
+      │  │   30 x 35mm LiPo   │ │    │
+      ├──┴─────────────────────┴─┤    │
+      │                           ╱   │
+      Front face              Back face
+
+    Z-stack (modified for slim profile):
+    1.0 + 2.5 + 2.5 + 1.6 + 0.5 + 4.5 + 1.4 = 14.0mm
+    ↑                                     ↑   ↑
+    thinner front plate               slim    thinner back
+    (aluminum or rigid plastic)       batt    (dome adds 1.5mm at center)
+
+    Note: front wall reduced to 1.0mm (rigid aluminum plate
+    provides structural strength). Battery reduced to 4.5mm
+    slim cell (~250-350mAh). Back wall averages 1.4mm due to dome.
+
+
+CLICK-WHEEL DETAIL
+──────────────────
+
+    Top view of click-wheel area:
+
+              ┌── REJECT (12 o'clock) ──┐
+             ╱    ┌────────┐              ╲
+            ╱     │12x6 btn│               ╲
+           │      └────────┘                │
+           │    ╭────────────────╮          │
+           │   ╱                  ╲         │
+      ACT  │  │    ╭──────────╮    │        │  (no button
+      6clk │  │   │          │   │        │   at 3 or 9
+           │  │   │  CENTER   │   │        │   o'clock —
+           │  │   │ ╔══════╗  │   │        │   wheel ring
+           │  │   │ ║APPROV║  │   │        │   is tactile
+           │  │   │ ╚══════╝  │   │        │   ridge only)
+           │  │   │          │   │        │
+           │  │    ╰──────────╯    │        │
+           │   ╲                  ╱         │
+           │    ╰────────────────╯          │
+           │      ┌────────┐                │
+            ╲     │12x6 btn│               ╱
+             ╲    └────────┘              ╱
+              └── ACTION (6 o'clock) ──┘
+
+    Click-wheel specs:
+    - 30mm outer diameter ring
+    - 15mm inner diameter (center button area)
+    - Ring width: 7.5mm
+    - Raised tactile ridge on ring surface (0.3mm, concentric grooves)
+    - Ring is decorative/tactile — NOT a touch surface
+    - Center button: 15mm diameter, 0.5mm raised, convex surface
+    - 12 o'clock button: REJECT (12x6mm cap, embedded in ring top)
+    - 6 o'clock button: ACTION (12x6mm cap, embedded in ring bottom)
+    - 3 and 9 o'clock: smooth ring only (no buttons)
+    - All buttons are standard tactile switches underneath
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT PLATE (88 x 42mm, 1.0mm, aluminum-look)
+    ├── Screen window cutout (42.8 x 32.6mm, portrait)
+    ├── Click-wheel aperture (31mm dia circular cutout)
+    ├── Center button hole (16mm dia, within wheel aperture)
+    ├── 2x button slots in wheel ring (12 o'clock + 6 o'clock)
+    ├── LED hole (2mm dia, below wheel area)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── Polished/brushed aluminum finish (or anodized plastic)
+    └── Edges chamfered 0.3mm at 45° for premium feel
+
+    Layer 2 — CLICK-WHEEL ASSEMBLY (snap-in subassembly)
+    ├── Wheel ring (30mm OD, 15mm ID, 2mm thick)
+    │   ├── Decorative concentric grooves (tactile ridge)
+    │   ├── 2x button cap recesses (12 + 6 o'clock positions)
+    │   └── Snaps into front plate aperture
+    ├── Center button cap (15mm dia, convex, 0.5mm proud)
+    │   └── Sits on tactile switch plunger
+    └── 2x ring button caps (12x6mm, sit on tactile switch plungers)
+
+    Layer 3 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait (long axis vertical)
+    ├── Upper 60% of internal volume
+    ├── FPC cable exits bottom edge toward PCB
+    └── Held by front plate retention clips
+
+    Layer 4 — 2.5mm AIR GAP
+    ├── FPC cable routes from display to PCB connector
+    ├── Button plungers pass through (3x from wheel area)
+    └── Wake button and hold switch actuator rods
+
+    Layer 5 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 3x main tactile switches face front (triangular layout)
+    │   ├── Center: approve (under wheel center)
+    │   ├── Top: reject (under 12 o'clock position)
+    │   └── Bottom: action (under 6 o'clock position)
+    ├── 1x wake tactile switch on top edge
+    ├── 1x hold slide switch on top edge
+    ├── USB-C connector on bottom edge (centered)
+    ├── Display FPC connector on upper area
+    ├── Vibration motor pads near bottom
+    └── Mounted on 4x posts from back shell
+
+    Layer 6 — 0.5mm GAP
+    └── Clearance for ESP32 module (2.4mm total with battery gap)
+
+    Layer 7 — BATTERY (30 x 35 x 4.5mm slim LiPo, 250-350mAh)
+    ├── Centered in lower portion
+    ├── Slim cell selected for 14mm total depth target
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in back shell
+
+    Layer 8 — BACK SHELL (88 x 42mm, 1.4-1.5mm wall, domed)
+    ├── Gentle dome (1.5mm crown over 42mm width)
+    ├── 4x PCB mounting posts (3mm OD, press-fit)
+    ├── Battery cradle ribs (2x, 1mm tall)
+    ├── Battery door (snap-off panel, 32 x 37mm)
+    ├── 4x M2 screw holes (hidden, countersunk)
+    ├── USB-C cutout (9.5 x 4.0mm)
+    ├── Vibration motor pocket (7mm dia, foam tape)
+    └── Polished aluminum-look finish (matching front)
+
+
+TOP EDGE DETAIL
+───────────────
+
+    ┌────────────────────────────────────────┐
+    │                                          │
+    │  ┌────────┐              ┌──────────┐  │
+    │  │  HOLD  │              │   WAKE   │  │
+    │  │ ═══▓══ │              │ ┌──────┐ │  │
+    │  │ slider │              │ │10x4.5│ │  │
+    │  └────────┘              └──┴──────┴─┘  │
+    │                                          │
+    └────────────────────────────────────────┘
+
+    Hold switch:
+    - Slider moves left/right (10mm travel)
+    - Orange indicator dot visible when HOLD is ON
+    - Disables all button inputs (screen stays active)
+    - Implemented as SPDT slide switch on PCB edge
+
+    Wake button:
+    - 10 x 4.5mm cap, flush with top edge
+    - Short press: wake from sleep
+    - Long press: power off
+
+
+BOTTOM EDGE DETAIL
+──────────────────
+
+    ┌────────────────────────────────────────┐
+    │              ┌──────────┐                │
+    │              │ USB-C    │                │
+    │              │ 9.34 x   │                │
+    │              │  3.66mm  │                │
+    │              └──────────┘                │
+    └────────────────────────────────────────┘
+
+    USB-C centered, flush with bottom edge.
+    Chamfered cutout edges (0.5mm x 45°) for cable insertion.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece — flat front plate + domed back shell
+- Front plate: 1.0mm aluminum (or rigid aluminum-look plastic)
+- Back shell: 1.4-1.5mm domed plastic with aluminum finish
+- 4x M2 screws from back (countersunk, hidden under battery door)
+- Click-wheel ring snaps into front plate circular aperture
+- Display press-fits into front plate pocket, held by retention clips
+- PCB press-fits onto 4x posts in back shell
+- Battery sits in cradle ribs, JST pigtail connects to PCB
+- USB-C cutout at bottom center of back shell
+- Vibration motor adhered inside back shell with foam tape
+- Hold switch and wake button mounted on PCB top edge
+- Actuator rods extend from PCB switches through gap to top edge caps
+- Front plate edges: 0.3mm chamfer at 45° all around for premium feel
+- Portrait orientation: display rotated 90° from landscape default
+- Slim battery (4.5mm) trades capacity for thinness (~250-350mAh)
+- Back dome provides comfortable grip and visual depth
+
+
+SPECIAL FEATURES
+────────────────
+- Click-wheel aesthetic instantly recognizable as iPod homage
+- Extremely slim profile (14mm) — thinnest concept in the lineup
+- Hold switch prevents accidental button presses in pocket
+- Polished aluminum-look finish on both front and back surfaces
+- Domed back sits naturally in the palm
+- Front plate chamfered edges catch light like real aluminum
+- Center approve button is the largest and most prominent control
+- Wheel ring tactile grooves provide fidget-friendly texture
+- Screen dominates the front — 60% of face is display
+- Minimalist aesthetic — only essential elements visible on front

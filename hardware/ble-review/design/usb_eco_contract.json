@@ -1,0 +1,271 @@
+{
+  "revision": "BLE-A1-USB",
+  "physical_validation": false,
+  "new_components": [
+    {
+      "ref": "SW7301",
+      "value": "SERVICE / NORMAL",
+      "footprint": "BLE_Candidate:CK_JS202011SCQN",
+      "mpn": "JS202011SCQN",
+      "lcsc": "C221666",
+      "pins": {
+        "1": null,
+        "2": "GND",
+        "3": "NTC_TS",
+        "4": null,
+        "5": "GND",
+        "6": "VBUS_INHIBIT_BASE"
+      }
+    },
+    {
+      "ref": "SW7302",
+      "value": "BOOT",
+      "footprint": "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A",
+      "mpn": "TS-1187A-B-A-B",
+      "lcsc": "C318884",
+      "pins": {
+        "1": "MCU_BOOT",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R7301",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "pins": {
+        "1": "VLOGIC_SWITCHED",
+        "2": "MCU_BOOT"
+      }
+    },
+    {
+      "ref": "R7308",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "pins": {
+        "1": "MCU_STRAP46",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "U7301",
+      "value": "TPS3808G01DBVR",
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "mpn": "TPS3808G01DBVR",
+      "lcsc": "C19653",
+      "pins": {
+        "1": "USB_DATA_EN",
+        "2": "GND",
+        "3": "USB_3V3",
+        "4": null,
+        "5": "USB_VBUS_SENSE",
+        "6": "USB_3V3"
+      }
+    },
+    {
+      "ref": "R7304",
+      "value": "100k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD07100KL",
+      "lcsc": "C122538",
+      "pins": {
+        "1": "VBUS_RAW",
+        "2": "USB_VBUS_SENSE"
+      }
+    },
+    {
+      "ref": "R7305",
+      "value": "10k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD0710KL",
+      "lcsc": "C95204",
+      "pins": {
+        "1": "USB_VBUS_SENSE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R7306",
+      "value": "10k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1002T5E",
+      "lcsc": "C25804",
+      "pins": {
+        "1": "USB_3V3",
+        "2": "USB_DATA_EN"
+      }
+    },
+    {
+      "ref": "R7307",
+      "value": "100k 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF1003T5E",
+      "lcsc": "C25803",
+      "pins": {
+        "1": "USB_DATA_EN",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C7301",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "pins": {
+        "1": "USB_3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R7302",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
+      "pins": {
+        "1": "USB_DP_ISO",
+        "2": "MCU_USB_DP"
+      }
+    },
+    {
+      "ref": "R7303",
+      "value": "22R 1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "0603WAF220JT5E",
+      "lcsc": "C23345",
+      "pins": {
+        "1": "USB_DM_ISO",
+        "2": "MCU_USB_DM"
+      }
+    },
+    {
+      "ref": "D7301",
+      "value": "PESD5V0U2BT,215",
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "mpn": "PESD5V0U2BT,215",
+      "lcsc": "C85399",
+      "pins": {
+        "1": "USB_DP_CONN",
+        "2": "USB_DM_CONN",
+        "3": "GND"
+      }
+    },
+    {
+      "ref": "U7302",
+      "value": "TPS389001DSER",
+      "footprint": "Package_SON:WSON-6_1.5x1.5mm_P0.5mm",
+      "mpn": "TPS389001DSER",
+      "lcsc": "C1509297",
+      "pins": {
+        "1": "USB_MAIN_SENSE",
+        "2": "GND",
+        "3": "USB_3V3",
+        "4": "USB_3V3",
+        "5": null,
+        "6": "USB_DATA_EN"
+      }
+    },
+    {
+      "ref": "R7310",
+      "value": "15.8k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD0715K8L",
+      "lcsc": "C861143",
+      "pins": {
+        "1": "VLOGIC_SWITCHED",
+        "2": "USB_MAIN_SENSE"
+      }
+    },
+    {
+      "ref": "R7311",
+      "value": "10k 0.1%",
+      "footprint": "Resistor_SMD:R_0603_1608Metric",
+      "mpn": "RT0603BRD0710KL",
+      "lcsc": "C95204",
+      "pins": {
+        "1": "USB_MAIN_SENSE",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "C7302",
+      "value": "100nF 50V",
+      "footprint": "Capacitor_SMD:C_0603_1608Metric",
+      "mpn": "CC0603KRX7R9BB104",
+      "lcsc": "C14663",
+      "pins": {
+        "1": "USB_3V3",
+        "2": "GND"
+      }
+    },
+    {
+      "ref": "R7309",
+      "value": "2.7k 1% 250mW",
+      "footprint": "Resistor_SMD:R_1206_3216Metric",
+      "mpn": "1206W4F2701T5E",
+      "lcsc": "C17950",
+      "pins": {
+        "1": "VBUS_RAW",
+        "2": "GND"
+      }
+    }
+  ],
+  "existing_pin_changes": {
+    "J201": {
+      "A6": "USB_DP_CONN",
+      "B6": "USB_DP_CONN",
+      "A7": "USB_DM_CONN",
+      "B7": "USB_DM_CONN"
+    },
+    "U1101": {
+      "9": "USB_DP_ISO",
+      "10": "USB_DP_CONN",
+      "11": "USB_DATA_EN",
+      "13": "USB_DM_ISO",
+      "14": "USB_DM_CONN",
+      "15": "USB_DATA_EN"
+    },
+    "U101": {
+      "4": "MCU_BOOT",
+      "23": "MCU_USB_DM",
+      "24": "MCU_USB_DP",
+      "44": "MCU_STRAP46"
+    },
+    "TP106": {
+      "1": "MCU_BOOT"
+    },
+    "SW7201": {
+      "3": null
+    }
+  },
+  "mode_contract": {
+    "normal": "USB present: run inhibited; NTC retains charging control",
+    "service": "USB unplugged before switching; TS disabled, VBUS run inhibit bypassed; battery supplies all system loads",
+    "recovery": "Design procedure, not yet sample-verified: unplug USB; POWER OFF until main rail discharged; SERVICE; hold BOOT; POWER ON; attach USB data cable; release BOOT after ROM enumeration. Internal RESET is open-enclosure alternative. Unplug USB before returning NORMAL.",
+    "not_supported": "USB-only or empty-battery programming; hot mode changes; certified USB/ESD compliance",
+    "qualification": "DATA_EN requires valid VBUS and main rail; main falling nominal 2.967V; no physical transient evidence yet",
+    "power_harness": "Only two wires: J7201.1 PACK_POS to SW7201.1, J7201.2 POWER_REQUEST to SW7201.2. SW7201.3 NC. J7201.3 GND pad left unwired."
+  },
+  "baseline_sha256": {
+    "mcu.kicad_sch": "92e8203789c20c43f088572dfd784b6531f91b942e69fb3dd0ab6a150cd78c8e",
+    "power.kicad_sch": "5d750fa6098eaef8cc1fa72a8b2d74e3e5786ac3ced9831b8882bde500c38da1",
+    "isolation.kicad_sch": "f149c195a89d5127edc6fe2798662045a832ea8ab432bf0775632b9a8c83417c",
+    "mini_companion_integrated.kicad_sch": "fd165983a2b578b0c119fdd03db69f66f18b718b5f9a58c509124d2fc14c2271",
+    "sym-lib-table": "daeeeb878bb1696d472d5e16337e0e5f477604c373e1e542137a0559404120d4"
+  },
+  "schematic_sha256": {
+    "mcu.kicad_sch": "4e8bbb3d1e926fcf9f2578a433abefbde5c5d5a0f6be1fd4691381a850884429",
+    "power.kicad_sch": "fe3c181fe09caf814e4e7393569ef54e33d7561f132fa8c813b6d40211fea629",
+    "isolation.kicad_sch": "c3a65013ba67694635c3fb5f3725c877f47189f0fdbb3d02f6e7503216f13541",
+    "mini_companion_integrated.kicad_sch": "e59ab73764c5fb572c8bc1d205c64e390b50c2101f068cab853755d66e4398ab",
+    "sym-lib-table": "680231caf88832e9bb20a6960e85d362cb424ab61de710c95c6be0e815eeb0f2",
+    "usb_service.kicad_sch": "f7b6c8d9498c60cf4b0a539b1cbb5b2de84de85e75ddfd64f109ab728a8d723a",
+    "USB_Service.kicad_sym": "2f65a2c2556aa71f460a9a970423c82a24376b586fa21a82e245d6cd1cfb0dab",
+    "usb_enable_gate.kicad_sch": "e2ccb282aac5172422f80fb8ec544881d7b3cac419a35fa1524d714043d67b01",
+    "ble_enable.kicad_sch": "8cb7da84e29bb978e3e372cb31332f9c08342654ff85ad5a28b68fc703536818"
+  }
+}

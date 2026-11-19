@@ -1,0 +1,437 @@
+{
+  "revision": "BLE-service-review",
+  "status": "BLE-A1 USB maintenance access candidate for quotation. Physical tests pending.",
+  "units": "mm",
+  "case": {
+    "width": 70,
+    "length": 70,
+    "height": 30,
+    "corner_radius": 3,
+    "wall": 1.8,
+    "front_floor": 1.8,
+    "rear_floor": 1.8,
+    "split_z": 11.4
+  },
+  "pcb": {
+    "bounds": [
+      12.5,
+      16.5,
+      6.6,
+      57.5,
+      66.5,
+      8.2062
+    ],
+    "corner_radius": 2,
+    "h101": [
+      15,
+      63.5
+    ],
+    "h101_drill": 2.2,
+    "h101_post_diameter": 4.8,
+    "plastic_pilot": 1.7,
+    "h101_pilot_bottom_z": 2.6,
+    "clip_centers": [
+      [
+        9.5,
+        46.5
+      ],
+      [
+        60.5,
+        60.0
+      ]
+    ],
+    "clip_post_diameter": 4.6,
+    "clip_gap": 0.25,
+    "edge_contact_length": 1,
+    "edge_contact_overlap": 0.6,
+    "retention_method": "Front support ledges and original H101 fastener; both upper restraints are integral with the rear cover, leaving the front half open for PCB installation."
+  },
+  "lcd": {
+    "body_max_bbox": [
+      9,
+      6,
+      1.5,
+      61,
+      42.4,
+      3.6
+    ],
+    "active_center": [
+      37.86,
+      24.2
+    ],
+    "active_size": [
+      40.8,
+      30.6
+    ],
+    "window_size": [
+      41.6,
+      31.4
+    ],
+    "window_corner_radius": 0.6,
+    "pocket_center": [
+      35,
+      24.2
+    ],
+    "pocket_size": [
+      52.6,
+      37
+    ],
+    "pocket_bottom_z": 1.2,
+    "pocket_top_z": 4,
+    "clip_x": [
+      6.4,
+      63.6
+    ],
+    "clip_y": [
+      10,
+      38
+    ],
+    "clip_post_diameter": 4.4,
+    "clip_post_top_z": 4.2,
+    "clip_top_z": 5.6,
+    "clip_toe_bottom_z": 3.95,
+    "clip_tip_x": [
+      10.8,
+      59.2
+    ],
+    "pilot_bottom_z": 1.5,
+    "retention_method": "Integral front seating pocket and four 0.30mm double-sided compliant tape patches on non-active front border. Existing separate rear clips removed. Exact adhesive adhesion/temperature/creep qualification required.",
+    "adhesive_reference_bboxes": [
+      [
+        10.0,
+        8.0,
+        1.2,
+        14.0,
+        12.0,
+        1.5
+      ],
+      [
+        56.0,
+        8.0,
+        1.2,
+        60.0,
+        12.0,
+        1.5
+      ],
+      [
+        10.0,
+        37.0,
+        1.2,
+        14.0,
+        41.0,
+        1.5
+      ],
+      [
+        56.0,
+        40.0,
+        1.2,
+        60.0,
+        41.5,
+        1.5
+      ]
+    ]
+  },
+  "buttons": {
+    "centers": [
+      [
+        21,
+        53
+      ],
+      [
+        35,
+        53
+      ],
+      [
+        49,
+        53
+      ]
+    ],
+    "hole_diameter": 8.8,
+    "cap_diameter": 8.4,
+    "flange_diameter": 10.4,
+    "face_z": 0.2,
+    "flange_front_z": 1.8,
+    "flange_rear_z": 2.6,
+    "tip_diameter": 1.6,
+    "tip_end_z": 4.8,
+    "travel_status": "Unqualified; verify dry switch height/travel and adjust tip before use"
+  },
+  "usb": {
+    "center_x": 35,
+    "center_z": 4.9,
+    "opening_width": 12,
+    "opening_height": 6,
+    "cut_y_start": 67.3,
+    "port_front_y": 67.75
+  },
+  "closure": {
+    "side_screw_y": [
+      8,
+      62
+    ],
+    "side_screw_z": 8.9,
+    "clearance_diameter": 2.2,
+    "head_diameter": 4.2,
+    "countersink_depth": 1,
+    "tongue_y_half": 2,
+    "tongue_z": [
+      6.8,
+      13.2
+    ],
+    "left_tongue_x": [
+      0.7,
+      2.2
+    ],
+    "right_tongue_x": [
+      67.8,
+      69.3
+    ],
+    "left_front_thread_x": [
+      2.2,
+      6.85
+    ],
+    "right_front_thread_x": [
+      63.15,
+      67.8
+    ],
+    "front_slot_left_x": [
+      0.45,
+      2.45
+    ],
+    "front_slot_right_x": [
+      67.55,
+      69.55
+    ],
+    "front_slot_y_half": 2.25,
+    "front_slot_z": [
+      6.5,
+      11.5
+    ],
+    "front_groove_outside_inset": 0.4,
+    "front_groove_inside_inset": 1.4,
+    "front_groove_z": [
+      9.5,
+      11.5
+    ],
+    "lip_outside_inset": 0.65,
+    "lip_inside_inset": 1.15,
+    "lip_z": [
+      9.8,
+      12.2
+    ],
+    "pilot_diameter": 1.7,
+    "fastener_assumption": "4x M2x6 90-degree countersunk screws: rear wall-tongue clearance holes, front fixed thread blocks; actual screw identity/torque not qualified"
+  },
+  "battery": {
+    "body_bbox": [
+      2.5,
+      5.5,
+      14.8,
+      37.5,
+      58,
+      25.1
+    ],
+    "extra_rear_swelling_reserve": 1,
+    "tray_z": [
+      13.2,
+      14.6
+    ],
+    "tray_posts": [
+      [
+        7,
+        4
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        9.5,
+        60.8
+      ],
+      [
+        33,
+        60.8
+      ]
+    ],
+    "post_radius": 2,
+    "bottom_post_radius": 2.3,
+    "bottom_post_y_clip": [
+      2.2,
+      5.6
+    ],
+    "tray_tab_min_y": 2.2,
+    "tray_countersink_head_diameter": 4.2,
+    "tray_countersink_depth": 1.0,
+    "front_bridge_bbox": [
+      7,
+      58.8,
+      11.3,
+      35,
+      61.8,
+      13.8
+    ],
+    "tray_stop_y": [
+      [
+        4.5,
+        5
+      ],
+      [
+        58.5,
+        59
+      ]
+    ],
+    "tray_stop_top_z": 16.1,
+    "placement_delta_from_input": [
+      0,
+      0,
+      0.8
+    ],
+    "retention_status": "Integral rear-shell cradle; continuous insulating liner; two loose soft straps through slots; no screw heads beneath pouch. Protected pack and NTC move with rear shell; secure harness to cradle and leave controlled service loop or disconnect before opening. Strap and NTC adhesive material/pressure remain unqualified.",
+    "tray_fastener_assumptions": [],
+    "strap_slots": [
+      [
+        17,
+        3.0,
+        10.8,
+        20.6,
+        4.6,
+        14.8
+      ],
+      [
+        25,
+        3.0,
+        10.8,
+        28.6,
+        4.6,
+        14.8
+      ],
+      [
+        17,
+        59.4,
+        10.8,
+        20.6,
+        61.0,
+        14.8
+      ],
+      [
+        25,
+        59.4,
+        10.8,
+        28.6,
+        61.0,
+        14.8
+      ]
+    ],
+    "ntc_strain_relief_slot": [
+      22,
+      3.0,
+      10.8,
+      23.6,
+      4.6,
+      14.8
+    ],
+    "ntc_contact_note": "Thermistor contacts pouch with compatible dielectric adhesive; anchor wire to separate cradle slot so opening load does not reach the probe. Pack, probe and cradle move together. Harness service loop/disconnection and exact probe/adhesive envelope pending."
+  },
+  "wire_corridor_bbox": [
+    37.5,
+    5.5,
+    11.4,
+    43.5,
+    66.5,
+    27.5
+  ],
+  "power": {
+    "MPN": "SS-12D01-G040",
+    "source_url": "https://www.dg-switch.com/uploads/soft/200518/SS-12D01-GXXX.pdf",
+    "body_bbox": [
+      62,
+      63.05,
+      16,
+      65.5,
+      66.95,
+      24.8
+    ],
+    "body_cavity_bbox": [
+      60.8,
+      62.75,
+      15.7,
+      65.5,
+      67.25,
+      25.1
+    ],
+    "actuator_bbox": [
+      65.48,
+      64.25,
+      19.65,
+      69.5,
+      65.75,
+      21.15
+    ],
+    "window_bbox": [
+      68.0,
+      63.1,
+      17.5,
+      70.2,
+      66.9,
+      23.3
+    ],
+    "flange_cavity_bbox": [
+      67.1,
+      62.0,
+      17.0,
+      68.25,
+      68.0,
+      23.8
+    ],
+    "guide_travel_z": [
+      -1,
+      1
+    ],
+    "shaft_direction": "+X",
+    "travel_axis": "Z",
+    "pin_end_x": 57,
+    "pin_center_z": [
+      17.9,
+      20.4,
+      22.9
+    ],
+    "pin_center_y": 65,
+    "mount_screw_axis_y": 65,
+    "mount_screw_axis_z": [
+      14.8,
+      25.9
+    ],
+    "mount_washer_outer_diameter": 4.0,
+    "mounting": "Integral side-facing U seat. Two M2x6 screws and OD4mm washers overlap metal case rear edge; no switch mounting holes assumed. Fastener grip/torque/washer profile are unqualified. Wires separately anchored at rear-shell loop.",
+    "status": "New nominal-body side-mount candidate from exact manufacturer drawing, not old PCM linkage; physical switch/fasteners/cap force and material tolerances still require fit test."
+  },
+  "mesh": {
+    "linear_tolerance": 0.01,
+    "angular_tolerance": 0.08
+  },
+  "source_board_sha256": "36bc07a67a8f5a23c250d94de468c1ec360090f3bf6943390770e1336365a309",
+  "source_enclosure_readonly": "BLE-A0 six-piece enclosure, 2026-11-13; antecedent V01_3DPRINT_36bc07a6",
+  "nfc_removed": true,
+  "new_electronics_fit_verified": false,
+  "service_ports": {
+    "note": "Rear access for an insulated service tool. Confirm board position before cutting or printing.",
+    "SERVICE": {
+      "xy_mm": [
+        44.65,
+        24.2
+      ],
+      "opening_xy_mm": [
+        5.0,
+        7.5
+      ]
+    },
+    "BOOT": {
+      "xy_mm": [
+        53.2,
+        26.0
+      ],
+      "opening_diameter_mm": 3.0
+    }
+  }
+}

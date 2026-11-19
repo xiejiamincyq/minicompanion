@@ -1,0 +1,269 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 9: Fidget Brick - Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <rect width="6" height="6" fill="#606060"/>
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#909090" stroke-width="1"/>
+    </pattern>
+    <!-- Grip texture pattern -->
+    <pattern id="grip" patternUnits="userSpaceOnUse" width="8" height="8">
+      <circle cx="4" cy="4" r="1.2" fill="#CCC" stroke="#BBB" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold">Design 9: Fidget Brick — 65mm x 50mm x 22mm (extra chunky, 8mm radius)</text>
+
+  <!-- ==================== VIEW 1: Front View (top-left) ==================== -->
+  <g transform="translate(20, 50)">
+    <text x="260" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Front View</text>
+
+    <!-- Outer shell - very rounded corners -->
+    <rect x="110" y="35" width="300" height="390" rx="48" ry="48" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Recessed screen pocket -->
+    <rect x="145" y="70" width="230" height="195" rx="8" ry="8" fill="#CCCCCC" stroke="black" stroke-width="0.5"/>
+    <!-- Screen bezel -->
+    <rect x="152" y="77" width="216" height="181" rx="4" ry="4" fill="#888" stroke="black" stroke-width="0.5"/>
+    <!-- Active display -->
+    <rect x="163" y="90" width="194" height="155" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="260" y="172" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#336">Active Display</text>
+    <text x="260" y="186" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#336">40.80 x 30.60mm</text>
+
+    <!-- Recess depth shadow line -->
+    <line x1="148" y1="73" x2="372" y2="73" stroke="#AAA" stroke-width="0.5"/>
+    <line x1="148" y1="73" x2="148" y2="262" stroke="#AAA" stroke-width="0.5"/>
+    <text x="390" y="80" font-family="sans-serif" font-size="8" fill="#999">1mm recess</text>
+
+    <!-- 3 domed buttons below screen -->
+    <ellipse cx="175" cy="310" rx="28" ry="18" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+    <ellipse cx="175" cy="308" rx="25" ry="15" fill="#D4D4D4" stroke="black" stroke-width="0.3"/>
+    <ellipse cx="260" cy="310" rx="28" ry="18" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+    <ellipse cx="260" cy="308" rx="25" ry="15" fill="#D4D4D4" stroke="black" stroke-width="0.3"/>
+    <ellipse cx="345" cy="310" rx="28" ry="18" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+    <ellipse cx="345" cy="308" rx="25" ry="15" fill="#D4D4D4" stroke="black" stroke-width="0.3"/>
+    <text x="175" y="313" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">1</text>
+    <text x="260" y="313" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">2</text>
+    <text x="345" y="313" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">3</text>
+
+    <!-- Button spacing -->
+    <line x1="175" y1="338" x2="260" y2="338" stroke="#CC0000" stroke-width="0.4" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="217" y="352" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">14mm</text>
+
+    <!-- LED -->
+    <circle cx="260" cy="380" r="3" fill="#44FF44" stroke="black" stroke-width="0.3"/>
+
+    <!-- Dimension: width 50mm -->
+    <line x1="110" y1="445" x2="410" y2="445" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="110" y1="430" x2="110" y2="450" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="410" y1="430" x2="410" y2="450" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="260" y="460" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">50mm</text>
+
+    <!-- Dimension: height 65mm -->
+    <line x1="430" y1="35" x2="430" y2="425" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="410" y1="35" x2="438" y2="35" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="410" y1="425" x2="438" y2="425" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="445" y="235" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">65mm</text>
+
+    <!-- Corner radius annotation -->
+    <path d="M110,83 Q110,35 158,35" fill="none" stroke="#CC0000" stroke-width="0.4" stroke-dasharray="3,2"/>
+    <line x1="115" y1="55" x2="145" y2="55" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="90" y="60" text-anchor="end" font-family="sans-serif" font-size="9" fill="#CC0000">R8mm</text>
+  </g>
+
+  <!-- ==================== VIEW 2: Side View (top-right) ==================== -->
+  <g transform="translate(620, 50)">
+    <text x="250" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Side View (22mm thick profile)</text>
+
+    <!-- Chunky side profile with rounded corners -->
+    <rect x="180" y="35" width="140" height="390" rx="48" ry="48" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Grip texture on sides -->
+    <rect x="310" y="120" width="12" height="200" rx="2" ry="2" fill="url(#grip)" stroke="black" stroke-width="0.3"/>
+    <text x="332" y="225" text-anchor="start" font-family="sans-serif" font-size="9" fill="#666">Grip texture</text>
+    <rect x="178" y="120" width="12" height="200" rx="2" ry="2" fill="url(#grip)" stroke="black" stroke-width="0.3"/>
+
+    <!-- Screen on front face -->
+    <rect x="175" y="70" width="10" height="195" fill="#B0D4F1" stroke="black" stroke-width="0.4"/>
+    <text x="165" y="172" text-anchor="end" font-family="sans-serif" font-size="9" fill="#336">Screen</text>
+
+    <!-- Recessed screen visible in profile -->
+    <line x1="175" y1="70" x2="180" y2="73" stroke="black" stroke-width="0.3"/>
+    <line x1="175" y1="265" x2="180" y2="262" stroke="black" stroke-width="0.3"/>
+
+    <!-- Domed buttons in profile -->
+    <ellipse cx="178" cy="310" r="5" ry="12" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="160" y="315" text-anchor="end" font-family="sans-serif" font-size="8" fill="#666">Domed btn</text>
+
+    <!-- Wake button on side -->
+    <rect x="315" y="90" width="6" height="22" rx="2" ry="2" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="332" y="104" font-family="sans-serif" font-size="9" fill="#666">Wake</text>
+
+    <!-- USB-C at bottom -->
+    <rect x="225" y="420" width="50" height="6" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+    <text x="250" y="438" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+
+    <!-- Dimension: depth 22mm -->
+    <line x1="180" y1="445" x2="320" y2="445" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="250" y="460" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">22mm</text>
+
+    <!-- Dimension: height -->
+    <line x1="150" y1="35" x2="150" y2="425" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="145" y1="35" x2="155" y2="35" stroke="#CC0000" stroke-width="0.3"/>
+    <line x1="145" y1="425" x2="155" y2="425" stroke="#CC0000" stroke-width="0.3"/>
+    <text x="140" y="235" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">65mm</text>
+
+    <!-- Rounded edge annotation -->
+    <path d="M180,83 Q180,35 228,35" fill="none" stroke="#CC0000" stroke-width="0.4" stroke-dasharray="3,2"/>
+    <text x="195" y="50" font-family="sans-serif" font-size="8" fill="#CC0000">R8mm all edges</text>
+  </g>
+
+  <!-- ==================== VIEW 3: Cross-Section (bottom-left) ==================== -->
+  <g transform="translate(20, 510)">
+    <text x="270" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Cross-Section (extra-deep interior)</text>
+
+    <!-- Rounded outer shell walls with hatch -->
+    <!-- Top wall -->
+    <rect x="110" y="40" width="320" height="9" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Bottom wall -->
+    <rect x="110" y="310" width="320" height="9" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Left wall (thick) -->
+    <rect x="110" y="40" width="9" height="279" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Right wall (thick) -->
+    <rect x="421" y="40" width="9" height="279" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Rounded corners indicated -->
+    <path d="M110,49 Q110,40 119,40" fill="none" stroke="black" stroke-width="0.5"/>
+    <path d="M421,40 Q430,40 430,49" fill="none" stroke="black" stroke-width="0.5"/>
+
+    <!-- Display -->
+    <rect x="119" y="55" width="302" height="22" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="70" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display module</text>
+
+    <!-- Gap -->
+    <rect x="119" y="77" width="302" height="8" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+    <!-- PCB -->
+    <rect x="119" y="85" width="302" height="12" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="95" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+    <!-- ESP32 below PCB -->
+    <rect x="170" y="97" width="80" height="16" fill="#70A675" stroke="black" stroke-width="0.5"/>
+    <text x="210" y="108" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">ESP32-S3</text>
+
+    <!-- Vibration motor -->
+    <circle cx="370" cy="108" r="8" fill="#BBB" stroke="black" stroke-width="0.4"/>
+    <text x="370" y="125" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Vibe 6mm</text>
+
+    <!-- Gap -->
+    <rect x="119" y="120" width="302" height="8" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+    <!-- Battery - LARGER due to extra depth -->
+    <rect x="119" y="128" width="302" height="70" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="270" y="160" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#333">LiPo Battery (LARGER)</text>
+    <text x="270" y="175" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">~8mm thick, 500mAh+</text>
+
+    <!-- Extra space below battery -->
+    <rect x="119" y="198" width="302" height="40" fill="#F8F8F0" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <text x="270" y="222" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#999">Extra space (haptics/speaker)</text>
+
+    <!-- Dimension: total depth 22mm -->
+    <line x1="445" y1="40" x2="445" y2="319" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="458" y="183" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">22mm</text>
+
+    <!-- Dimension: battery thickness -->
+    <line x1="90" y1="128" x2="90" y2="198" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="80" y="168" text-anchor="end" font-family="sans-serif" font-size="9" fill="#CC0000">~8mm batt</text>
+
+    <!-- Wall thickness -->
+    <line x1="110" y1="33" x2="119" y2="33" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="114" y="28" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">1.5mm</text>
+
+    <!-- Legend -->
+    <rect x="120" y="270" width="12" height="8" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+    <text x="138" y="278" font-family="sans-serif" font-size="9">Display</text>
+    <rect x="190" y="270" width="12" height="8" fill="#90C695" stroke="black" stroke-width="0.3"/>
+    <text x="208" y="278" font-family="sans-serif" font-size="9">PCB</text>
+    <rect x="250" y="270" width="12" height="8" fill="#D4A84B" stroke="black" stroke-width="0.3"/>
+    <text x="268" y="278" font-family="sans-serif" font-size="9">Battery</text>
+    <rect x="320" y="270" width="12" height="8" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+    <text x="338" y="278" font-family="sans-serif" font-size="9">Shell</text>
+  </g>
+
+  <!-- ==================== VIEW 4: Isometric 3/4 View (bottom-right) ==================== -->
+  <g transform="translate(600, 510)">
+    <text x="280" y="15" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold">Isometric 3/4 View</text>
+
+    <!-- 3/4 isometric view of the chunky brick -->
+    <!-- Top face (parallelogram) -->
+    <polygon points="180,80 420,50 520,110 280,140" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+
+    <!-- Front face -->
+    <path d="M180,80 L180,340 Q180,370 210,370 L250,370 L280,140 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Approximated front with rounded bottom -->
+    <polygon points="180,80 280,140 280,360 180,340" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Right side face -->
+    <polygon points="280,140 520,110 520,330 280,360" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Rounded edge highlights -->
+    <path d="M180,90 Q175,80 185,75" fill="none" stroke="white" stroke-width="1.5" opacity="0.6"/>
+    <path d="M280,145 Q278,138 283,135" fill="none" stroke="white" stroke-width="1" opacity="0.4"/>
+
+    <!-- Recessed screen on front face -->
+    <polygon points="195,110 268,148 268,285 195,260" fill="#999" stroke="black" stroke-width="0.4"/>
+    <polygon points="200,118 264,152 264,275 200,252" fill="#B0D4F1" stroke="black" stroke-width="0.4"/>
+    <text x="232" y="200" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#336" transform="skewY(-10)">Display</text>
+
+    <!-- Domed buttons on front face -->
+    <ellipse cx="210" cy="295" rx="12" ry="8" fill="#C8C8C8" stroke="black" stroke-width="0.4" transform="skewY(-10)"/>
+    <ellipse cx="232" cy="290" rx="12" ry="8" fill="#C8C8C8" stroke="black" stroke-width="0.4" transform="skewY(-10)"/>
+    <ellipse cx="254" cy="285" rx="12" ry="8" fill="#C8C8C8" stroke="black" stroke-width="0.4" transform="skewY(-10)"/>
+
+    <!-- Grip texture on right side -->
+    <g opacity="0.4">
+      <circle cx="350" cy="180" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="365" cy="177" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="380" cy="174" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="395" cy="171" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="410" cy="168" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="350" cy="200" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="365" cy="197" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="380" cy="194" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="395" cy="191" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="410" cy="188" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="350" cy="220" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="365" cy="217" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="380" cy="214" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="395" cy="211" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="410" cy="208" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="350" cy="240" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="365" cy="237" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="380" cy="234" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="395" cy="231" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+      <circle cx="410" cy="228" r="2" fill="#BBB" stroke="#AAA" stroke-width="0.3"/>
+    </g>
+    <text x="430" y="210" text-anchor="start" font-family="sans-serif" font-size="9" fill="#666">Grip texture</text>
+
+    <!-- Wake button on right side -->
+    <rect x="510" y="140" width="8" height="20" rx="2" ry="2" fill="#C8C8C8" stroke="black" stroke-width="0.4"/>
+    <text x="525" y="153" font-family="sans-serif" font-size="8" fill="#666">Wake</text>
+
+    <!-- USB-C on bottom right edge -->
+    <rect x="380" y="335" width="40" height="5" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.4"/>
+    <text x="400" y="352" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+    <!-- Annotations -->
+    <text x="180" y="380" font-family="sans-serif" font-size="9" fill="#666">Extra chunky form factor</text>
+    <text x="180" y="393" font-family="sans-serif" font-size="9" fill="#666">8mm radius on all edges</text>
+    <text x="180" y="406" font-family="sans-serif" font-size="9" fill="#666">Satisfying to hold and fidget with</text>
+  </g>
+</svg>

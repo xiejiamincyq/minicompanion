@@ -1,0 +1,360 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <style>
+    text { font-family: Arial, Helvetica, sans-serif; font-size: 10px; fill: #333; }
+    .title { font-size: 16px; font-weight: bold; fill: #222; }
+    .subtitle { font-size: 12px; font-weight: bold; fill: #444; }
+    .dim { font-size: 10px; fill: #CC0000; }
+    .dim-small { font-size: 9px; fill: #CC0000; }
+    .label { font-size: 10px; fill: #555; }
+    .outline { fill: none; stroke: #333; stroke-width: 0.5; }
+    .shell { fill: #E0E0E0; stroke: #333; stroke-width: 0.5; }
+    .screen { fill: #B0D4F1; stroke: #333; stroke-width: 0.5; }
+    .pcb { fill: #90C695; stroke: #333; stroke-width: 0.5; }
+    .wall { fill: #606060; stroke: #333; stroke-width: 0.5; }
+    .hidden { fill: none; stroke: #333; stroke-width: 0.5; stroke-dasharray: 4,3; }
+    .dim-line { stroke: #CC0000; stroke-width: 0.4; fill: none; }
+    .dim-arrow { fill: #CC0000; stroke: none; }
+    .ext-line { stroke: #CC0000; stroke-width: 0.3; fill: none; }
+    .hatch { stroke: #404040; stroke-width: 0.3; fill: none; }
+    .cutout { fill: #fff; stroke: #333; stroke-width: 0.5; }
+    .kickstand { fill: #C8C8C8; stroke: #333; stroke-width: 0.5; }
+    .screw-boss { fill: none; stroke: #333; stroke-width: 0.5; }
+    .recess { fill: none; stroke: #333; stroke-width: 0.5; stroke-dasharray: 5,3; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="35" text-anchor="middle" class="title">DESIGN 4: MONOLITH SLAB — Devotchi Desktop Case Concept</text>
+  <line x1="100" y1="45" x2="1100" y2="45" stroke="#999" stroke-width="0.5"/>
+
+  <!-- ============================================================ -->
+  <!-- FRONT VIEW (top-left) -->
+  <!-- ============================================================ -->
+  <text x="185" y="72" text-anchor="middle" class="subtitle">Front View</text>
+
+  <!-- Device body: 84mm wide x 135mm tall, scaled ~2.8x => 235 x 378 -->
+  <!-- Position: x=68, y=82 -->
+  <g id="front-view">
+    <rect x="68" y="82" width="235" height="378" rx="8.4" ry="8.4" class="shell"/>
+
+    <!-- Screen window: 41.8x31.6mm => ~117x88.5, centered horizontally, upper 2/3 -->
+    <!-- Centered: x = 68 + (235-117)/2 = 127, y ~= 82 + 35 = 117 -->
+    <rect x="127" y="110" width="117" height="189" rx="3" ry="3" class="screen"/>
+    <text x="185.5" y="208" text-anchor="middle" class="label" style="font-size:9px;">TFT LCD</text>
+
+    <!-- LED hole below screen: 2mm => 5.6px circle -->
+    <circle cx="185.5" cy="320" r="2.8" fill="#FFF" stroke="#333" stroke-width="0.5"/>
+    <text x="206" y="323" class="label" style="font-size:9px;">LED</text>
+
+    <!-- 3 button holes below LED, 8mm dia => 22.4px, spaced 25mm => 70px apart -->
+    <circle cx="115.5" cy="380" r="11.2" class="cutout"/>
+    <circle cx="185.5" cy="380" r="11.2" class="cutout"/>
+    <circle cx="255.5" cy="380" r="11.2" class="cutout"/>
+    <text x="115.5" y="384" text-anchor="middle" class="label" style="font-size:8px;">BTN1</text>
+    <text x="185.5" y="384" text-anchor="middle" class="label" style="font-size:8px;">BTN2</text>
+    <text x="255.5" y="384" text-anchor="middle" class="label" style="font-size:8px;">BTN3</text>
+
+    <!-- USB-C cutout on bottom edge: 9.5x3.5mm => 26.6x9.8, centered -->
+    <rect x="172.2" y="455.2" width="26.6" height="9.8" rx="2" ry="2" class="cutout"/>
+    <text x="185.5" y="478" text-anchor="middle" class="label" style="font-size:9px;">USB-C</text>
+
+    <!-- Corner radius annotation -->
+    <path d="M 68 90.4 Q 68 82 76.4 82" fill="none" stroke="#CC0000" stroke-width="0.4"/>
+    <text x="52" y="87" class="dim-small">R3</text>
+
+    <!-- ===== Dimension lines ===== -->
+    <!-- Width: 84mm -->
+    <line x1="68" y1="470" x2="68" y2="495" class="ext-line"/>
+    <line x1="303" y1="470" x2="303" y2="495" class="ext-line"/>
+    <line x1="68" y1="490" x2="303" y2="490" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="185.5" y="502" text-anchor="middle" class="dim">84mm</text>
+
+    <!-- Height: 135mm -->
+    <line x1="303" y1="82" x2="330" y2="82" class="ext-line"/>
+    <line x1="303" y1="460" x2="330" y2="460" class="ext-line"/>
+    <line x1="325" y1="82" x2="325" y2="460" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <text x="340" y="275" text-anchor="middle" class="dim" transform="rotate(90,340,275)">135mm</text>
+
+    <!-- Screen width: 41.8mm -->
+    <line x1="127" y1="100" x2="127" y2="90" class="ext-line"/>
+    <line x1="244" y1="100" x2="244" y2="90" class="ext-line"/>
+    <line x1="127" y1="93" x2="244" y2="93" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="185.5" y="90" text-anchor="middle" class="dim-small">41.8mm</text>
+
+    <!-- Screen height: 31.6mm (displayed as vertical label) -->
+    <line x1="117" y1="110" x2="107" y2="110" class="ext-line"/>
+    <line x1="117" y1="299" x2="107" y2="299" class="ext-line"/>
+    <line x1="110" y1="110" x2="110" y2="299" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <text x="95" y="208" text-anchor="middle" class="dim-small" transform="rotate(-90,95,208)">67.5mm</text>
+
+    <!-- USB-C width -->
+    <text x="185.5" y="450" text-anchor="middle" class="dim-small">9.5x3.5</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- SIDE VIEW + KICKSTAND (top-right) -->
+  <!-- ============================================================ -->
+  <text x="730" y="72" text-anchor="middle" class="subtitle">Side View (with Kickstand Deployed)</text>
+
+  <g id="side-view">
+    <!-- Side profile: 15mm thick x 135mm tall => 42x378, scale ~2.8x -->
+    <!-- Position: x=620, y=82 -->
+    <rect x="660" y="82" width="42" height="378" rx="3" ry="3" class="shell"/>
+
+    <!-- 3 button holes on right edge: 5mm dia => 14px, 12mm spacing => 33.6px -->
+    <!-- Centered at y positions matching front view buttons area -->
+    <circle cx="702" cy="347" r="7" class="cutout"/>
+    <circle cx="702" cy="380" r="7" class="cutout"/>
+    <circle cx="702" cy="413" r="7" class="cutout"/>
+
+    <!-- Button dimension annotations -->
+    <line x1="715" y1="347" x2="740" y2="347" class="ext-line"/>
+    <line x1="715" y1="380" x2="740" y2="380" class="ext-line"/>
+    <line x1="715" y1="413" x2="740" y2="413" class="ext-line"/>
+    <line x1="735" y1="347" x2="735" y2="380" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <line x1="735" y1="380" x2="735" y2="413" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <text x="750" y="367" class="dim-small">12mm</text>
+    <text x="750" y="400" class="dim-small">12mm</text>
+
+    <!-- Button diameter label -->
+    <line x1="702" y1="340" x2="720" y2="325" class="ext-line"/>
+    <text x="722" y="323" class="dim-small">5mm dia</text>
+
+    <!-- Thickness dimension: 15mm -->
+    <line x1="660" y1="470" x2="660" y2="490" class="ext-line"/>
+    <line x1="702" y1="470" x2="702" y2="490" class="ext-line"/>
+    <line x1="660" y1="485" x2="702" y2="485" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="681" y="498" text-anchor="middle" class="dim">15mm</text>
+
+    <!-- Height dimension -->
+    <line x1="640" y1="82" x2="650" y2="82" class="ext-line"/>
+    <line x1="640" y1="460" x2="650" y2="460" class="ext-line"/>
+    <line x1="645" y1="82" x2="645" y2="460" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <text x="633" y="275" text-anchor="middle" class="dim" transform="rotate(-90,633,275)">135mm</text>
+
+    <!-- Kickstand deployed at ~30 degrees -->
+    <!-- Hinge at top-back of device (x=660, y=82+30=112) -->
+    <!-- Kickstand: ~120mm long => 336px, deployed at 30deg from vertical towards back-left -->
+    <line x1="660" y1="112" x2="660" y2="112" stroke="none"/>
+    <rect x="645" y="108" width="12" height="12" rx="2" ry="2" fill="#999" stroke="#333" stroke-width="0.5"/>
+    <text x="651" y="102" text-anchor="middle" class="label" style="font-size:8px;">Hinge</text>
+
+    <!-- Kickstand leg -->
+    <g transform="rotate(30, 651, 114)">
+      <rect x="647" y="114" width="8" height="300" rx="2" ry="2" class="kickstand"/>
+    </g>
+
+    <!-- 30 degree angle arc -->
+    <path d="M 651 155 A 40 40 0 0 0 631 148" fill="none" stroke="#CC0000" stroke-width="0.4"/>
+    <text x="622" y="155" class="dim-small">30°</text>
+
+    <!-- Ground line -->
+    <line x1="480" y1="460" x2="720" y2="460" stroke="#999" stroke-width="0.3" stroke-dasharray="8,4"/>
+
+    <!-- Footprint dimension -->
+    <line x1="504" y1="460" x2="504" y2="475" class="ext-line"/>
+    <line x1="702" y1="465" x2="702" y2="475" class="ext-line"/>
+    <line x1="504" y1="472" x2="702" y2="472" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="603" y="484" text-anchor="middle" class="dim">~82mm footprint</text>
+
+    <!-- Front face label -->
+    <text x="702" y="200" class="label" style="font-size:9px;" transform="rotate(90,710,200)">Front</text>
+    <text x="660" y="200" class="label" style="font-size:9px;" transform="rotate(-90,652,200)">Back</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- CROSS-SECTION (bottom-left) -->
+  <!-- ============================================================ -->
+  <text x="250" y="545" text-anchor="middle" class="subtitle">Cross-Section (through screen area)</text>
+
+  <g id="cross-section">
+    <!-- Total width represents 15mm => scale up to ~360px for clarity (24px/mm) -->
+    <!-- Layers left to right: Front wall, Screen, Gap, PCB, Back wall -->
+    <!-- Position: starting x=70, y=565 -->
+
+    <!-- Front wall: 2mm => 48px -->
+    <rect x="70" y="565" width="48" height="160" class="wall"/>
+    <!-- Hatching for front wall -->
+    <line x1="74" y1="565" x2="118" y2="725" class="hatch"/>
+    <line x1="82" y1="565" x2="118" y2="697" class="hatch"/>
+    <line x1="90" y1="565" x2="118" y2="669" class="hatch"/>
+    <line x1="98" y1="565" x2="118" y2="641" class="hatch"/>
+    <line x1="106" y1="565" x2="118" y2="613" class="hatch"/>
+    <line x1="114" y1="565" x2="118" y2="585" class="hatch"/>
+    <line x1="70" y1="593" x2="110" y2="725" class="hatch"/>
+    <line x1="70" y1="621" x2="102" y2="725" class="hatch"/>
+    <line x1="70" y1="649" x2="94" y2="725" class="hatch"/>
+    <line x1="70" y1="677" x2="86" y2="725" class="hatch"/>
+    <line x1="70" y1="705" x2="78" y2="725" class="hatch"/>
+
+    <!-- Screen module: 4.5mm => 108px -->
+    <rect x="118" y="580" width="108" height="130" class="screen"/>
+    <text x="172" y="650" text-anchor="middle" class="label" style="font-size:9px;">Screen</text>
+    <text x="172" y="662" text-anchor="middle" class="label" style="font-size:8px;">Module</text>
+
+    <!-- Gap: 2.5mm => 60px -->
+    <rect x="226" y="565" width="60" height="160" fill="#F5F5F5" stroke="#333" stroke-width="0.5"/>
+    <text x="256" y="650" text-anchor="middle" class="label" style="font-size:9px;">Air</text>
+    <text x="256" y="662" text-anchor="middle" class="label" style="font-size:8px;">Gap</text>
+
+    <!-- PCB: 1.6mm => 38.4px -->
+    <rect x="286" y="590" width="38" height="120" class="pcb"/>
+    <text x="305" y="650" text-anchor="middle" class="label" style="font-size:9px;">PCB</text>
+
+    <!-- Back wall: 2mm => 48px -->
+    <rect x="324" y="565" width="48" height="160" class="wall"/>
+    <!-- Hatching for back wall -->
+    <line x1="328" y1="565" x2="372" y2="725" class="hatch"/>
+    <line x1="336" y1="565" x2="372" y2="697" class="hatch"/>
+    <line x1="344" y1="565" x2="372" y2="669" class="hatch"/>
+    <line x1="352" y1="565" x2="372" y2="641" class="hatch"/>
+    <line x1="360" y1="565" x2="372" y2="613" class="hatch"/>
+    <line x1="368" y1="565" x2="372" y2="585" class="hatch"/>
+    <line x1="324" y1="593" x2="364" y2="725" class="hatch"/>
+    <line x1="324" y1="621" x2="356" y2="725" class="hatch"/>
+    <line x1="324" y1="649" x2="348" y2="725" class="hatch"/>
+    <line x1="324" y1="677" x2="340" y2="725" class="hatch"/>
+    <line x1="324" y1="705" x2="332" y2="725" class="hatch"/>
+
+    <!-- Kickstand slot recess: 2.4mm => 57.6px, shown as indentation in back wall -->
+    <rect x="372" y="595" width="22" height="100" fill="#D0D0D0" stroke="#333" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="407" y="640" class="label" style="font-size:8px;">Kickstand</text>
+    <text x="407" y="652" class="label" style="font-size:8px;">Slot</text>
+
+    <!-- ===== Layer dimension lines (below cross-section) ===== -->
+    <!-- Front wall: 2mm -->
+    <line x1="70" y1="730" x2="70" y2="752" class="ext-line"/>
+    <line x1="118" y1="730" x2="118" y2="752" class="ext-line"/>
+    <line x1="70" y1="747" x2="118" y2="747" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="94" y="760" text-anchor="middle" class="dim-small">2mm</text>
+
+    <!-- Screen: 4.5mm -->
+    <line x1="226" y1="730" x2="226" y2="752" class="ext-line"/>
+    <line x1="118" y1="747" x2="226" y2="747" class="dim-line"/>
+    <text x="172" y="760" text-anchor="middle" class="dim-small">4.5mm</text>
+
+    <!-- Gap: 2.5mm -->
+    <line x1="286" y1="730" x2="286" y2="752" class="ext-line"/>
+    <line x1="226" y1="747" x2="286" y2="747" class="dim-line"/>
+    <text x="256" y="760" text-anchor="middle" class="dim-small">2.5mm</text>
+
+    <!-- PCB: 1.6mm -->
+    <line x1="324" y1="730" x2="324" y2="752" class="ext-line"/>
+    <line x1="286" y1="747" x2="324" y2="747" class="dim-line"/>
+    <text x="305" y="760" text-anchor="middle" class="dim-small">1.6mm</text>
+
+    <!-- Back wall: 2mm -->
+    <line x1="372" y1="730" x2="372" y2="752" class="ext-line"/>
+    <line x1="324" y1="747" x2="372" y2="747" class="dim-line"/>
+    <text x="348" y="760" text-anchor="middle" class="dim-small">2mm</text>
+
+    <!-- Kickstand recess: 2.4mm -->
+    <line x1="394" y1="700" x2="394" y2="720" class="ext-line"/>
+    <line x1="372" y1="700" x2="372" y2="720" class="ext-line"/>
+    <line x1="372" y1="715" x2="394" y2="715" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="383" y="728" text-anchor="middle" class="dim-small">2.4mm</text>
+
+    <!-- Total: 15mm -->
+    <line x1="70" y1="770" x2="70" y2="790" class="ext-line"/>
+    <line x1="372" y1="770" x2="372" y2="790" class="ext-line"/>
+    <line x1="70" y1="785" x2="372" y2="785" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="221" y="798" text-anchor="middle" class="dim" style="font-weight:bold;">Total: 15mm</text>
+
+    <!-- Section cut indicator -->
+    <text x="55" y="648" text-anchor="middle" class="label" style="font-size:11px; font-weight:bold;">A</text>
+    <text x="400" y="648" text-anchor="middle" class="label" style="font-size:11px; font-weight:bold;">A</text>
+    <line x1="55" y1="654" x2="55" y2="666" stroke="#333" stroke-width="1"/>
+    <line x1="400" y1="654" x2="400" y2="666" stroke="#333" stroke-width="1"/>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- BACK VIEW (bottom-right) -->
+  <!-- ============================================================ -->
+  <text x="830" y="545" text-anchor="middle" class="subtitle">Back View</text>
+
+  <g id="back-view">
+    <!-- Device body: same as front 235x378 -->
+    <!-- Position: x=713, y=560 -->
+    <rect x="713" y="560" width="235" height="378" rx="8.4" ry="8.4" class="shell"/>
+
+    <!-- Kickstand recess outline: 50x120mm => 140x336, centered, dashed -->
+    <rect x="760.5" y="572" width="140" height="336" rx="4" ry="4" class="recess"/>
+    <text x="830.5" y="745" text-anchor="middle" class="label" style="font-size:9px;">Kickstand Recess</text>
+    <text x="830.5" y="757" text-anchor="middle" class="label" style="font-size:8px;">(50x120mm)</text>
+
+    <!-- Hinge position at top of recess -->
+    <rect x="800" y="572" width="62" height="14" rx="3" ry="3" fill="#999" stroke="#333" stroke-width="0.5"/>
+    <text x="831" y="582" text-anchor="middle" style="font-size:7px; fill:#fff; font-weight:bold;">HINGE</text>
+
+    <!-- 4x screw boss positions -->
+    <circle cx="745" cy="600" r="6" class="screw-boss"/>
+    <circle cx="745" cy="600" r="2" fill="#333"/>
+    <circle cx="916" cy="600" r="6" class="screw-boss"/>
+    <circle cx="916" cy="600" r="2" fill="#333"/>
+    <circle cx="745" cy="900" r="6" class="screw-boss"/>
+    <circle cx="745" cy="900" r="2" fill="#333"/>
+    <circle cx="916" cy="900" r="6" class="screw-boss"/>
+    <circle cx="916" cy="900" r="2" fill="#333"/>
+
+    <!-- Fix screw positions to be within device bounds -->
+    <!-- Top-left screw -->
+    <circle cx="738" cy="590" r="6" class="screw-boss" fill="none"/>
+    <circle cx="738" cy="590" r="2" fill="#555"/>
+    <!-- Top-right screw -->
+    <circle cx="923" cy="590" r="6" class="screw-boss" fill="none"/>
+    <circle cx="923" cy="590" r="2" fill="#555"/>
+    <!-- Bottom-left screw -->
+    <circle cx="738" cy="908" r="6" class="screw-boss" fill="none"/>
+    <circle cx="738" cy="908" r="2" fill="#555"/>
+    <!-- Bottom-right screw -->
+    <circle cx="923" cy="908" r="6" class="screw-boss" fill="none"/>
+    <circle cx="923" cy="908" r="2" fill="#555"/>
+
+    <!-- Screw labels -->
+    <text x="720" y="580" text-anchor="middle" class="label" style="font-size:7px;">M2</text>
+    <text x="942" y="580" text-anchor="end" class="label" style="font-size:7px;">M2</text>
+    <text x="720" y="918" text-anchor="middle" class="label" style="font-size:7px;">M2</text>
+    <text x="942" y="918" text-anchor="end" class="label" style="font-size:7px;">M2</text>
+
+    <!-- USB-C cutout on bottom edge -->
+    <rect x="817.2" y="933.2" width="26.6" height="9.8" rx="2" ry="2" class="cutout"/>
+    <text x="830.5" y="930" text-anchor="middle" class="label" style="font-size:9px;">USB-C</text>
+
+    <!-- Kickstand recess dimensions -->
+    <line x1="760.5" y1="555" x2="760.5" y2="548" class="ext-line"/>
+    <line x1="900.5" y1="555" x2="900.5" y2="548" class="ext-line"/>
+    <line x1="760.5" y1="551" x2="900.5" y2="551" class="dim-line" marker-start="url(#arrow-left)" marker-end="url(#arrow-right)"/>
+    <text x="830.5" y="547" text-anchor="middle" class="dim-small">50mm</text>
+
+    <!-- Recess height -->
+    <line x1="908" y1="572" x2="955" y2="572" class="ext-line"/>
+    <line x1="908" y1="908" x2="955" y2="908" class="ext-line"/>
+    <line x1="952" y1="572" x2="952" y2="908" class="dim-line" marker-start="url(#arrow-up)" marker-end="url(#arrow-down)"/>
+    <text x="965" y="745" text-anchor="middle" class="dim-small" transform="rotate(90,965,745)">120mm</text>
+  </g>
+
+  <!-- ============================================================ -->
+  <!-- Arrow markers -->
+  <!-- ============================================================ -->
+  <defs>
+    <marker id="arrow-right" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" class="dim-arrow"/>
+    </marker>
+    <marker id="arrow-left" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" class="dim-arrow"/>
+    </marker>
+    <marker id="arrow-up" markerWidth="6" markerHeight="8" refX="3" refY="0" orient="auto">
+      <polygon points="0,8 3,0 6,8" class="dim-arrow"/>
+    </marker>
+    <marker id="arrow-down" markerWidth="6" markerHeight="8" refX="3" refY="8" orient="auto">
+      <polygon points="0,0 3,8 6,0" class="dim-arrow"/>
+    </marker>
+  </defs>
+
+  <!-- Footer -->
+  <line x1="100" y1="870" x2="1100" y2="870" stroke="#999" stroke-width="0.5"/>
+  <text x="100" y="888" class="label" style="font-size:9px;">Devotchi Desktop Case — Monolith Slab Design</text>
+  <text x="1100" y="888" text-anchor="end" class="label" style="font-size:9px;">Scale: Approx. | All dimensions in mm | Material: ABS/PETG</text>
+</svg>

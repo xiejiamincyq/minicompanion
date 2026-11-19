@@ -1,0 +1,256 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 23: Cyberdeck — Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 23: Cyberdeck — 95×60×20mm Landscape</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="200" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Body — angled top, vertical front face -->
+  <!-- Top face is angled 15°, front face is vertical with buttons -->
+  <path d="M80,140 L320,140 L320,380 L80,380 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Angled top section with screen (shown as trapezoid in front view) -->
+  <path d="M80,85 L320,85 L320,140 L80,140 Z" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+  <!-- Angled screen visible from front -->
+  <rect x="100" y="92" width="200" height="42" rx="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="118" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Angled screen (15°)</text>
+
+  <!-- 3 mechanical buttons on vertical face -->
+  <rect x="120" y="200" width="40" height="40" rx="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <rect x="180" y="200" width="40" height="40" rx="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <rect x="240" y="200" width="40" height="40" rx="4" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <!-- Button stems visible -->
+  <rect x="135" y="240" width="10" height="8" rx="1" fill="#999" stroke="black" stroke-width="0.3"/>
+  <rect x="195" y="240" width="10" height="8" rx="1" fill="#999" stroke="black" stroke-width="0.3"/>
+  <rect x="255" y="240" width="10" height="8" rx="1" fill="#999" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="270" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">3 mechanical buttons</text>
+
+  <!-- Exposed screw heads at corners -->
+  <circle cx="92" cy="150" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="89" y1="150" x2="95" y2="150" stroke="black" stroke-width="0.5"/>
+  <circle cx="308" cy="150" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="305" y1="150" x2="311" y2="150" stroke="black" stroke-width="0.5"/>
+  <circle cx="92" cy="370" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="89" y1="370" x2="95" y2="370" stroke="black" stroke-width="0.5"/>
+  <circle cx="308" cy="370" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="305" y1="370" x2="311" y2="370" stroke="black" stroke-width="0.5"/>
+  <text x="325" y="153" font-family="sans-serif" font-size="7" fill="#555">M2 screws</text>
+
+  <!-- Wake button (4th button, smaller) -->
+  <rect x="80" y="300" width="8" height="20" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="70" y="313" text-anchor="end" font-family="sans-serif" font-size="8" fill="#333">Wake</text>
+
+  <!-- Dimension: width 95mm -->
+  <line x1="80" y1="400" x2="320" y2="400" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="80" y1="390" x2="80" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="320" y1="390" x2="320" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="420" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">95.0mm</text>
+
+  <!-- Dimension: height 60mm -->
+  <line x1="345" y1="85" x2="345" y2="380" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="335" y1="85" x2="355" y2="85" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="335" y1="380" x2="355" y2="380" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="365" y="235" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">60.0mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-center) ============ -->
+  <text x="580" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+
+  <!-- Side showing 15° angled top -->
+  <path d="M545,380 L545,140 L545,140 L615,140 L615,380 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Angled top face (15°) -->
+  <path d="M545,140 L545,105 L615,85 L615,140 Z" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen on angled face -->
+  <line x1="547" y1="108" x2="613" y2="90" stroke="#4488CC" stroke-width="2"/>
+  <text x="540" y="100" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- 15° angle annotation -->
+  <path d="M545,140 L565,140" fill="none" stroke="#CC0000" stroke-width="0.3"/>
+  <path d="M545,140 L560,130" fill="none" stroke="#CC0000" stroke-width="0.3"/>
+  <text x="570" y="138" font-family="sans-serif" font-size="9" fill="#CC0000">15°</text>
+
+  <!-- Exposed screw on corner -->
+  <circle cx="550" cy="148" r="3" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <circle cx="610" cy="148" r="3" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <circle cx="550" cy="372" r="3" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <circle cx="610" cy="372" r="3" fill="#AAA" stroke="black" stroke-width="0.3"/>
+
+  <!-- Button bump on front face -->
+  <rect x="541" y="200" width="5" height="30" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="530" y="218" text-anchor="end" font-family="sans-serif" font-size="8" fill="#333">Buttons</text>
+
+  <!-- USB-C on back -->
+  <rect x="612" y="260" width="5" height="10" rx="1" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="625" y="268" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: depth 20mm -->
+  <line x1="545" y1="400" x2="615" y2="400" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="545" y1="390" x2="545" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="615" y1="390" x2="615" y2="410" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="580" y="420" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">20.0mm</text>
+
+  <!-- ============ VIEW 3: BACK VIEW (top-right) ============ -->
+  <text x="900" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Back face -->
+  <rect x="780" y="85" width="240" height="295" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- USB-C port -->
+  <rect x="883" y="200" width="34" height="10" rx="3" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="900" y="225" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">USB-C</text>
+  <text x="900" y="236" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">9.34×3.66mm</text>
+
+  <!-- Sticker/label area -->
+  <rect x="810" y="260" width="180" height="100" rx="3" fill="#F5F5E8" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="900" y="310" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#555">Label / Sticker Area</text>
+  <text x="900" y="325" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#777">FCC / CE / S/N</text>
+
+  <!-- Screw heads (exposed industrial look) -->
+  <circle cx="793" cy="98" r="5" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="790" y1="98" x2="796" y2="98" stroke="black" stroke-width="0.5"/>
+  <circle cx="1007" cy="98" r="5" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="1004" y1="98" x2="1010" y2="98" stroke="black" stroke-width="0.5"/>
+  <circle cx="793" cy="367" r="5" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="790" y1="367" x2="796" y2="367" stroke="black" stroke-width="0.5"/>
+  <circle cx="1007" cy="367" r="5" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="1004" y1="367" x2="1010" y2="367" stroke="black" stroke-width="0.5"/>
+
+  <!-- Vent slots -->
+  <rect x="830" y="140" width="40" height="3" rx="1" fill="none" stroke="black" stroke-width="0.3"/>
+  <rect x="830" y="148" width="40" height="3" rx="1" fill="none" stroke="black" stroke-width="0.3"/>
+  <rect x="830" y="156" width="40" height="3" rx="1" fill="none" stroke="black" stroke-width="0.3"/>
+  <text x="880" y="152" font-family="sans-serif" font-size="7" fill="#555">Vents</text>
+
+  <!-- ============ VIEW 4: TOP-DOWN VIEW (bottom-left) ============ -->
+  <text x="200" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Top face — angled screen visible -->
+  <path d="M80,510 L320,510 L310,620 L90,620 Z" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen on angled top -->
+  <rect x="105" y="520" width="190" height="80" rx="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="565" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Angled screen face</text>
+
+  <!-- Screw heads at corners -->
+  <circle cx="92" cy="518" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="89" y1="518" x2="95" y2="518" stroke="black" stroke-width="0.5"/>
+  <circle cx="308" cy="518" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="305" y1="518" x2="311" y2="518" stroke="black" stroke-width="0.5"/>
+  <circle cx="98" cy="613" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="95" y1="613" x2="101" y2="613" stroke="black" stroke-width="0.5"/>
+  <circle cx="303" cy="613" r="4" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <line x1="300" y1="613" x2="306" y2="613" stroke="black" stroke-width="0.5"/>
+
+  <!-- Dimensions -->
+  <line x1="80" y1="640" x2="320" y2="640" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="80" y1="630" x2="80" y2="650" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="320" y1="630" x2="320" y2="650" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="658" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">95.0mm</text>
+
+  <line x1="340" y1="510" x2="330" y2="620" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="350" y="570" font-family="sans-serif" font-size="10" fill="#CC0000">60.0mm</text>
+
+  <!-- ============ VIEW 5: CROSS-SECTION (bottom-center) ============ -->
+  <text x="600" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Showing Angled Pocket)</text>
+
+  <!-- Outer shell with angled screen pocket -->
+  <!-- Left wall -->
+  <rect x="490" y="510" width="8" height="190" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Right wall -->
+  <rect x="702" y="510" width="8" height="190" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Top angled wall -->
+  <path d="M490,510 L710,510 L710,520 L498,530 L498,520 L490,520 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Bottom wall -->
+  <rect x="490" y="692" width="220" height="8" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+  <!-- Angled screen pocket -->
+  <path d="M500,530 L700,520 L700,546 L500,556 Z" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="542" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">Display (angled 15°)</text>
+
+  <!-- Gap -->
+  <rect x="500" y="558" width="200" height="8" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- PCB 1.6mm -->
+  <rect x="500" y="566" width="200" height="20" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="580" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+  <!-- Gap -->
+  <rect x="500" y="586" width="200" height="10" fill="#F5F5F5" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Battery 5.0mm -->
+  <rect x="510" y="596" width="180" height="56" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="628" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (5.0mm)</text>
+
+  <!-- Gap -->
+  <rect x="500" y="652" width="200" height="6" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Internal support -->
+  <rect x="500" y="658" width="200" height="34" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+  <text x="600" y="678" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#606060">Angled ramp fill</text>
+
+  <!-- Total dimension 20mm -->
+  <line x1="478" y1="510" x2="478" y2="700" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="468" y1="510" x2="488" y2="510" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="468" y1="700" x2="488" y2="700" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="462" y="610" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">20.0mm</text>
+
+  <!-- ============ VIEW 6: DETAIL — Mechanical Button + Clear Side Panel (bottom-right) ============ -->
+  <text x="960" y="485" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Button + Clear Panel</text>
+
+  <!-- Zoomed mechanical button -->
+  <text x="910" y="510" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333">Mechanical Button</text>
+
+  <!-- Button housing in wall -->
+  <rect x="870" y="525" width="80" height="70" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Button well -->
+  <rect x="885" y="530" width="50" height="60" rx="2" fill="#E8E8E8" stroke="black" stroke-width="0.5"/>
+  <!-- Button cap -->
+  <rect x="892" y="532" width="36" height="20" rx="3" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <text x="910" y="545" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Cap</text>
+  <!-- Stem -->
+  <rect x="905" y="552" width="10" height="20" fill="#999" stroke="black" stroke-width="0.5"/>
+  <text x="925" y="565" font-family="sans-serif" font-size="7" fill="#555">Stem</text>
+  <!-- Spring -->
+  <path d="M907,572 L913,576 L907,580 L913,584 L907,588" fill="none" stroke="black" stroke-width="0.5"/>
+  <text x="925" y="583" font-family="sans-serif" font-size="7" fill="#555">Spring</text>
+  <!-- PCB contact -->
+  <rect x="900" y="588" width="20" height="4" fill="#90C695" stroke="black" stroke-width="0.3"/>
+  <text x="925" y="595" font-family="sans-serif" font-size="7" fill="#5A8C5E">PCB pad</text>
+
+  <!-- Travel dimension -->
+  <line x1="880" y1="532" x2="880" y2="552" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="870" y="545" text-anchor="end" font-family="sans-serif" font-size="7" fill="#CC0000">2mm</text>
+
+  <!-- Clear side panel showing PCB -->
+  <text x="960" y="630" font-family="sans-serif" font-size="9" font-weight="bold" fill="#333">Clear Side Panel</text>
+
+  <!-- Panel cross-section -->
+  <rect x="870" y="645" width="120" height="80" rx="3" fill="none" stroke="black" stroke-width="0.5"/>
+  <!-- Clear/translucent panel -->
+  <rect x="870" y="645" width="120" height="80" rx="3" fill="rgba(200,220,240,0.3)" stroke="#88AACC" stroke-width="0.5"/>
+
+  <!-- PCB visible through panel -->
+  <rect x="880" y="665" width="100" height="15" fill="#90C695" stroke="black" stroke-width="0.3" opacity="0.7"/>
+  <text x="930" y="676" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">PCB visible</text>
+  <!-- Components visible -->
+  <rect x="885" y="680" width="20" height="8" fill="#7AB37E" stroke="black" stroke-width="0.2" opacity="0.7"/>
+  <rect x="910" y="680" width="12" height="8" fill="#666" stroke="black" stroke-width="0.2" opacity="0.7"/>
+  <text x="930" y="698" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#555">Components</text>
+
+  <text x="930" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Smoked polycarbonate</text>
+  <text x="930" y="752" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">side window</text>
+</svg>

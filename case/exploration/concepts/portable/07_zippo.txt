@@ -1,0 +1,360 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 07: ZIPPO / FLIP-LID
+================================================================================
+
+  Inspired by a Zippo lighter. Ultra-compact with hinged lid that flips open
+  180 degrees to reveal the screen. When closed, lid protects screen and shows
+  a decorative front plate. Very pocket-friendly.
+
+  Overall Dimensions: 65mm tall x 45mm wide x 18mm deep
+  Lid Dimensions:     ~35mm tall x 45mm wide x 3mm thick (when open)
+
+================================================================================
+  FRONT VIEW - CLOSED
+================================================================================
+
+                       45mm
+          |<------------------------>|
+
+     ___  +--========================--+  ___
+      |   ||     .-===============-.   ||  |
+      |   ||     |                 |   ||  |
+      |   ||     |   DEVOTCHI      |   ||  |
+      |   ||     |                 |   ||  |
+      |   ||     |   [decorative   |   ||  |
+  65  |   ||     |    front plate] |   ||  |
+  mm  |   ||     |                 |   || 65mm
+      |   ||     |   /\  /\       |   ||  |
+      |   ||     |  (  )(  )      |   ||  |
+      |   ||     |   \/  \/       |   ||  |
+      |   ||     '-===============-'   ||  |
+      |   ||                           ||  |
+      |   |+===========================+|  |
+      |   |  [BTN1]  [BTN2]  [BTN3]    |  |
+     _|_  +-----------------------------+  _|_
+                    [_USB-C_]
+
+  Notes:
+  - Lid covers upper ~40mm of front face
+  - Decorative plate: etched/debossed metal or plastic insert
+  - Brushed metal aesthetic (or textured plastic simulating it)
+  - Lid edge has slight lip for fingernail opening
+  - 3 buttons visible below lid line even when closed
+
+================================================================================
+  FRONT VIEW - OPEN (LID FLIPPED BACK 180 DEGREES)
+================================================================================
+
+                       45mm
+          |<------------------------>|
+
+                Hinge axis (top)
+          +--====[HHHHHHHHHH]====--+
+          |                         |
+          |    ._________________. |
+          |    |                 |  |
+          |    |                 |  |
+          |    |  40.80 x 30.60 |  |
+          |    |  Active Area   |  |
+          |    |                 |  |
+          |    |                 |  |
+          |    |_________________|  |
+          |                         |
+          |  .------. .------. .------. |
+          |  | SEL  | |  OK  | | BACK | |
+          |  '------' '------' '------' |
+          +-----------------------------+
+                    [_USB-C_]
+
+          [HHHHHHHHHH] = Hinge (piano hinge or dual-post)
+
+  Lid (behind body when open):
+          +-----------------------------+
+          |                             |
+          |   (back of decorative       |
+          |    plate / blank)           |
+          |                             |
+          |                             |
+          +--====[HHHHHHHHHH]====--+
+               (connects at hinge)
+
+  Notes:
+  - Lid rests behind body, held open by friction/detent in hinge
+  - Total depth when open: 18mm body + 3mm lid = 21mm
+  - Screen is fully exposed when lid is open
+  - Hinge has slight over-center detent to hold lid open
+
+================================================================================
+  SIDE PROFILE - CLOSED
+================================================================================
+
+             18mm
+          |<-------->|
+
+          +----------+  ___ top (hinge end)
+          |  |       |   |
+          | L|       |   |
+          | i|Screen |   |
+          | d| (hid- |   |
+          |  | den)  |  65mm
+          |  |       |   |
+          |  |       |   |
+          |  +.......+   |   <-- lid bottom edge
+          |  |Buttons|   |
+          +--+-------+  _|_  bottom
+              [USB-C]
+
+  L = Lid (3mm thick, covers front face)
+
+================================================================================
+  SIDE PROFILE - OPEN (LID FLIPPED BACK)
+================================================================================
+
+             18mm      3mm
+          |<-------->|<->|
+
+          +----------+---+  ___ top (hinge)
+          |          | L |   |
+          |  Screen  | i |   |
+          |  visible | d |   |
+          |          |   |   |
+          |          | b |  65mm
+          |          | e |   |
+          |          | h |   |
+          |          | i |   |
+          |  Buttons | n |   |
+          +----------+ d +  _|_
+              [USB-C]
+
+  Lid hangs behind body, adding 3mm to depth
+  Hinge at top allows lid to rotate 180 degrees
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                       45mm
+          |<------------------------>|
+
+          +--====[HHHHHHHHHH]====--+  ___ top (hinge)
+          |                         |   |
+          |                         |   |
+          |     .-------------.     |   |
+          |     |  Battery    |     |   |
+          |     |  area       |     |  65mm
+          |     |  (sealed)   |     |   |
+          |     '-------------'     |   |
+          |                         |   |
+          |    (o)            (o)   |   |  (o) = screws
+          |                         |   |
+          +-------------------------+  _|_
+
+  Notes:
+  - Clean flat back (no belt clip on this design)
+  - 2 screws at bottom for shell assembly
+  - Optional: engraved serial number area
+  - Slight rounded edges (2mm radius) for pocket comfort
+
+================================================================================
+  CROSS-SECTION (Side view, cut through center, CLOSED)
+================================================================================
+
+  Front (lid side)                              Back
+   |                                              |
+   | 3mm  1.5   2.5mm    2.5    1.6  0.5 5.0  1.5|
+   |<-->|<--->|<------->|<----->|<-->|<>|<--->|<->|
+   |    |     |         |       |    |  |     |   |
+   |Lid |Wall | Display |  Gap  |PCB |G |Bat  |Wal|
+   |    |     | Module  |       |    |a |tery |   |
+   |    |     |         |       |    |p |     |   |
+   +----+-----+---------+-------+----+--+-----+---+
+   |<------------------------------------------------>|
+                      ~18.6mm total
+
+  Lid Detail:
+  +------+
+  | 1.0  |  Outer shell (decorative plate)
+  +------+
+  | 1.0  |  Air gap / foam pad (screen protection)
+  +------+
+  | 1.0  |  Inner surface (felt or rubber lining)
+  +------+
+    3.0mm total
+
+  Note: With lid adding 3mm to front, total body Z-stack
+  is actually ~15.6mm. The 18mm overall includes lid.
+
+  Z-Stack without lid:
+  +-----------+  Front surface (under lid)
+  |  1.5mm    |  Front wall
+  +-----------+
+  |  2.5mm    |  Display module
+  +-----------+
+  |  2.5mm    |  Gap (FPC routing)
+  +-----------+
+  |  1.6mm    |  PCB
+  +-----------+
+  |  0.5mm    |  Air gap
+  +-----------+
+  |  5.0mm    |  LiPo battery
+  +-----------+
+  |  1.5mm    |  Back wall
+  +-----------+
+  = 15.1mm body + 3mm lid = 18.1mm (rounds to 18mm)
+
+================================================================================
+  HINGE DETAIL (Top-down cross-section at hinge axis)
+================================================================================
+
+              Lid                Body
+          +--------+        +----------+
+          |        |        |          |
+          |        +--+  +--+          |
+          |        |  |  |  |          |
+          |        |  +--+  |          |
+          |        +--/  \--+          |
+          |         [PIN]              |
+          |                            |
+
+  Hinge Options:
+  A) Piano hinge: continuous pin across full width (40mm)
+     - Most durable, smooth action
+     - Stainless steel pin, 1.5mm dia
+     - Molded knuckles in both shells
+
+  B) Dual-post hinge: two hinge posts at edges
+     - Simpler tooling
+     - Posts: 3mm dia, 5mm long
+     - Spring detent for open/closed positions
+
+  Recommended: Option B (dual-post) for simplicity
+  - Left and right hinge posts
+  - Internal torsion spring for snap-open action
+  - Detent positions at 0 deg (closed) and 180 deg (open)
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Lid:
+  +-----------------------------+
+  |  Decorative front plate     |
+  |  (metal insert or molded)   |
+  |  Inner: felt/rubber lining  |
+  |  Hinge knuckles at top      |
+  +--====[HHHHHHHHHH]====------+
+
+  Layer 2 - Front Shell:
+  +--====[HHHHHHHHHH]====------+
+  |                             |
+  |     .-------------------.   |    Screen window
+  |     | 42 x 32mm cutout  |   |    (clear lens)
+  |     '-------------------'   |
+  |                             |
+  |    [BTN1]  [BTN2]  [BTN3]  |    Button holes
+  +--------[USB cutout]---------+
+
+  Layer 3 - Display Module:
+       .--------------------.
+       | 51.80 x 36.20mm    |
+       | FPC exits bottom   |
+       '--------------------'
+
+  Layer 4 - PCB:
+       +----------------------+
+       |  [ESP32-S3-MINI-1]   |
+       |  [Vibration Motor]   |
+       |  [USB-C connector]   |
+       |  [Button switches]   |
+       |  45.0 x 40.0mm       |
+       +----------------------+
+
+  Layer 5 - Battery:
+       .-----------------.
+       | LiPo 30x35x5mm  |
+       '-----------------'
+
+  Layer 6 - Back Shell:
+  +-----------------------------+
+  |   Screw bosses (x2)        |
+  |   Flat back                 |
+  |   Hinge knuckles at top     |
+  +-----------------------------+
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Recessed pocket in front shell: 52.0 x 36.4mm, 2.5mm deep
+  - Thin foam frame around display for shock absorption
+  - Display pressed in from inside, held by PCB standoffs
+
+  PCB Mounting:
+  - 4x snap-in clips molded into body (no screws for PCB)
+  - PCB slides in from bottom, clips engage at top
+  - This allows compact assembly in tight enclosure
+
+  Battery Mounting:
+  - Foam tape to back shell
+  - JST connector to PCB, tucked alongside battery
+
+  Button Mounting:
+  - Located below lid line (always accessible)
+  - Caps: 12 x 6mm, standard profile
+  - Tactile switches on PCB, caps press-fit in shell
+
+  Wake Button:
+  - Right side, ~30mm from top
+  - Small rocker cap: 10 x 4.5mm
+  - Recessed to prevent accidental press in pocket
+
+  Hinge Assembly:
+  - Hinge posts molded into front shell and lid
+  - Stainless steel pin pressed through both
+  - Torsion spring wrapped around pin
+  - Assembly: insert spring, align lid, press pin through
+
+  Shell Assembly:
+  - Front and back shells clip together
+  - 2x M2 screws at bottom for security
+  - Lid attaches to front shell via hinge before final assembly
+
+  USB-C:
+  - Bottom center, 9.34 x 3.66mm cutout
+  - Accessible whether lid is open or closed
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Flip Lid: Protects screen when closed, satisfying snap-open action
+     - Over-center spring detent holds lid firmly open or closed
+     - Inner lid lining (felt/rubber) prevents screen scratches
+     - Decorative outer plate: brushed metal look
+
+  2. Ultra-Compact: 65 x 45 x 18mm fits in any pocket
+     - Similar size to actual Zippo lighter
+     - One-hand operable (flip open with thumb)
+
+  3. Decorative Front Plate Options:
+     - Brushed aluminum insert with etched Devotchi logo
+     - Or: textured plastic with metallic paint
+     - Or: clear window showing screen even when closed (defeats purpose
+       but looks cool)
+
+  4. Pocket-Friendly: No protrusions, rounded edges
+     - Smooth sides, no belt clip
+     - Can stand upright on bottom edge (USB-C acts as base notch)
+
+  5. Satisfying Mechanics:
+     - Lid snap-open has tactile + audible click
+     - Reminiscent of Zippo opening sound
+     - Vibration motor enhances the physical feel
+
+  6. Open/Closed Detection:
+     - Small magnet in lid + Hall effect sensor on PCB
+     - Screen turns off when lid closed (power saving)
+     - Wake on lid open (instant-on feel)
+
+================================================================================

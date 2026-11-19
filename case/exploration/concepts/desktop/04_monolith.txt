@@ -1,0 +1,151 @@
+DESIGN 4: MONOLITH SLAB
+=======================
+Minimal portrait slab with integrated kickstand. Think "phone on
+a stand" or "2001 monolith" aesthetic. Screen dominates the front face.
+Thinnest possible profile.
+
+Overall: 84 x 135 x 15mm slab (portrait)
+Target user: minimal desk display, developer status monitor
+
+FRONT VIEW (screen facing viewer, portrait orientation)
+───────────────────────────────────────────────────────
+
+         84mm
+    ├─────────────┤
+    ┌─────────────┐  ─┬─
+    │  ┌─────────┐│   │
+    │  │         ││   │
+    │  │  TFT    ││   │
+    │  │  LCD    ││   │
+    │  │  SCREEN ││   │   135mm
+    │  │         ││   │
+    │  │ 40.8x   ││   │
+    │  │  30.6   ││   │
+    │  │ active  ││   │
+    │  └─────────┘│   │
+    │       ○ LED  │   │   ← LED below screen
+    │  (●)(●)(●)  │   │   ← 3 buttons below screen
+    │             │   │
+    │    ┌─────┐  │   │
+    │    │USB-C│  │   │   ← USB-C on bottom face
+    └────┴─────┴──┘  ─┴─
+
+
+SIDE VIEW (right edge, showing button holes + thickness)
+────────────────────────────────────────────────────────
+
+    15mm
+    ├──┤
+    ┌──┐  ─┬─
+    │  │   │
+    │  │   │
+    │○ │   │     ← 3x button holes on right edge
+    │○ │   │       (5mm dia, 12mm spacing)
+    │○ │   │
+    │  │   │     135mm
+    │  │   │
+    │  │   │
+    │  │   │
+    │  │   │
+    │  │   │
+    │  │   │
+    └──┘  ─┴─
+
+
+BACK VIEW (showing kickstand)
+─────────────────────────────
+
+    ┌─────────────┐
+    │             │
+    │  ┌───────┐  │
+    │  │       │  │
+    │  │ KICK- │  │   ← Kickstand: 50 x 120mm plate
+    │  │ STAND │  │     Recessed flush into back face
+    │  │       │  │     Hinges at top, swings out
+    │  │  50mm │  │
+    │  │ wide  │  │
+    │  │       │  │
+    │  └───────┘  │
+    │             │
+    └─────────────┘
+
+
+SIDE VIEW WITH KICKSTAND DEPLOYED
+──────────────────────────────────
+
+    ┌──┐
+    │  │\
+    │  │ \
+    │  │  \  ← Kickstand angles out ~30°
+    │  │   \
+    │  │    \
+    │  │     \
+    │  │      \
+    │  │       \
+    └──┘────────\
+    ↑            ↑
+    Slab     Kickstand tip
+    Front    (rubber foot)
+
+
+CROSS-SECTION (horizontal cut through screen area)
+──────────────────────────────────────────────────
+
+    Front (2mm) ─┐  ┌─ Back (2mm)
+                 │  │
+    ┌────────────┤  ├────────────┐
+    │ ┌─screen──┐│  │            │
+    │ │ 4.5mm   ││  │  Kickstand │   15mm total
+    │ ├─────────┤│  │  slot      │
+    │ │ 2.5 gap ││  │  (2mm deep │
+    │ ├─ PCB ───┤│  │   recess)  │
+    │ │ 1.6mm   ││  │            │
+    │ └─────────┘│  │            │
+    └────────────┘  └────────────┘
+    ↑                            ↑
+    Front face                Back face
+    (screen)                (kickstand)
+
+    Depth budget:
+    Front wall:     2.0mm
+    Screen module:  4.5mm (in 5.0mm pocket)
+    Gap:            2.5mm (ESP32 clearance)
+    PCB:            1.6mm
+    Back wall:      2.0mm
+    Kickstand slot: 2.4mm (overlaps with back wall)
+    ─────────────────────
+    Total:         ~15mm
+
+
+COMPONENT LAYOUT
+────────────────
+
+    FRONT SHELL
+    ├── Screen window (41.8 x 31.6mm) — upper 2/3 of face
+    ├── LED hole (2mm) below screen
+    ├── Screen pocket (52.2 x 36.6mm, 5mm deep from inner face)
+    ├── 4x retention clips
+    └── Wall: 2mm
+
+    PCB (mounted to back shell)
+    ├── 4x standoffs on back shell inner face
+    ├── Buttons on RIGHT edge → holes in right side wall
+    ├── USB-C on BOTTOM edge → cutout in bottom wall
+    ├── ESP32 faces toward back (antenna clearance)
+    └── FPC from screen routes directly over top of PCB
+
+    BACK SHELL
+    ├── 4x PCB standoff bosses (5mm OD, M2)
+    ├── Kickstand slot (52 x 122mm recess, 2.4mm deep)
+    ├── Kickstand hinge at top (living hinge or pin hinge)
+    ├── USB-C cutout on bottom edge (9.5 x 3.5mm)
+    └── Wall: 2mm
+
+
+ASSEMBLY
+────────
+- 2-piece clamshell (front + back), 4x M2 screws
+- Kickstand is separate piece, pin-hinged to back shell
+- Screen drops into pocket from inside before closing
+- PCB screws to back shell standoffs
+- Extremely simple assembly: 4 screws total + kickstand pin

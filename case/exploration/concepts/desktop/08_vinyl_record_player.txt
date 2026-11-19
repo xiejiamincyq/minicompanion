@@ -1,0 +1,291 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 08                              ║
+║                    VINYL RECORD PLAYER                                      ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+DESCRIPTION
+───────────
+Turntable-aesthetic desktop companion with a square footprint. The landscape
+screen sits in the "album art" display position, angled up ~20 degrees on a
+raised section. Surrounding the screen, a circular platter ring decoration
+features grooved concentric circles evoking a vinyl record. A decorative
+tonearm curves from the right side toward the screen. Three buttons styled
+as deck transport controls (play/stop/cue) sit on the front edge. Speaker
+fires downward through bottom vents. Dust cover hinge points are decorative
+nods to real turntables. Rubber feet keep it stable and allow speaker sound
+to escape from below.
+
+OVERALL DIMENSIONS
+──────────────────
+  Width:  140 mm
+  Depth:  140 mm
+  Height:  40 mm  (at rear/highest point of tilted screen)
+  Wall:     2.0 mm
+
+
+FRONT VIEW
+──────────
+
+              140 mm
+     ◄───────────────────────────────►
+
+     ┌───────────────────────────────┐  ▲
+     │                               │  │
+     │   ╔═══════════════════════╗   │  │  Screen visible
+     │   ║                       ║   │  │  through platter
+     │   ║      5.0" SCREEN      ║   │  │  opening
+     │   ║      (landscape)      ║   │  │  20 mm
+     │   ║                       ║   │  │
+     │   ╚═══════════════════════╝   │  │
+     │                               │  │
+     ├───────────────────────────────┤  │
+     │   ▶║   ■    ◁◁            │  │  Transport buttons
+     │  PLAY STOP  CUE              │  │  (front edge panel)
+     └───────────────────────────────┘  ▼
+                                        ~25 mm front height
+
+
+SIDE PROFILE (RIGHT)
+─────────────────────
+
+              140 mm
+     ◄───────────────────────────────►
+
+                              ╭─── Tonearm (decorative)
+                             ╱
+     ┌──────────────────╱───────────┐  ▲  40 mm
+     │              ╱               │  │  (rear)
+     │  ┌──────╱────────────────┐   │  │
+     │  │  SCREEN  20° tilt     │   │  │
+     │  └───────────────────────┘   │  │
+     │                              │  │
+     ├──────────────────────────────┤  │  25 mm
+     │  ■ ■ ■  buttons              │  │  (front)
+     └══════════════════════════════┘  ▼
+      ▓▓                          ▓▓
+     feet                        feet
+
+     ◄── Bottom vent area (speaker) ──►
+
+
+TOP VIEW
+────────
+
+              140 mm
+     ◄───────────────────────────────►
+
+     ┌───────────────────────────────┐  ▲
+     │                         ○──┐  │  │  Tonearm pivot
+     │    ╭─────────────────╮  │  │  │  │
+     │  ╭─┤                 ├──╯  │  │  │
+     │ │  │                 │  ╲  │  │  │
+     │ │  │  ┌───────────┐  │   ╲ │  │  │  140 mm
+     │ │  │  │  SCREEN   │  │    ││  │  │
+     │ │  │  │ 120×75mm  │  │   ╱│  │  │
+     │ │  │  │  module   │  │  ╱ │  │  │
+     │ │  │  └───────────┘  │ ╱  │  │  │  Tonearm
+     │  ╰─┤  ╭───────────╮  ├╱───┘  │  │  (curved)
+     │    ╰──┤ concentric ├──╯      │  │
+     │       │  grooves   │         │  │
+     │       ╰────────────╯         │  │
+     │  ▶║    ■    ◁◁              │  │  Buttons
+     └───────────────────────────────┘  ▼
+
+     Legend:
+       ╭──╮  Circular platter ring (grooved)
+       ○     Tonearm pivot point
+       ╲╱    Tonearm headshell
+
+
+BACK VIEW
+─────────
+
+              140 mm
+     ◄───────────────────────────────►
+
+     ┌───────────────────────────────┐  ▲
+     │                               │  │  40 mm
+     │                               │  │
+     │         ┌──────┐              │  │
+     │         │USB-C │              │  │  USB-C centered
+     │         │8.94× │              │  │
+     │         │3.26  │              │  │
+     │         └──────┘              │  │
+     │  ○                        ○   │  │  Dust cover
+     │ hinge                   hinge │  │  hinge points
+     └───────────────────────────────┘  ▼
+      ▓▓                          ▓▓
+     feet                        feet
+
+
+CROSS-SECTION (SIDE CUT, LEFT TO RIGHT)
+────────────────────────────────────────
+
+     ┌──────────────────────────────────┐
+     │ 2mm wall                         │
+     │ ┌──────────────────────────────┐ │
+     │ │  ╔════════════════════════╗  │ │◄── Screen module
+     │ │  ║  SCREEN 120×75×4.5mm  ║╱  │ │    20° tilt
+     │ │  ╚════════════════════════╝   │ │
+     │ │                               │ │
+     │ │  ┌─────────────────────────┐  │ │◄── PCB (110×65×1.6mm)
+     │ │  │  PCB                    │  │ │    horizontal
+     │ │  │  ESP32-S3    ◉ speaker  │  │ │
+     │ │  │  15.4×20.5   28mm dia  │  │ │◄── Speaker faces down
+     │ │  └─────────────────────────┘  │ │
+     │ └───────────────────────────────┘ │
+     │  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  │◄── Bottom vent slots
+     └══════════════════════════════════┘
+      ▓▓          5mm gap            ▓▓ ◄── Rubber feet (clearance
+                                              for downward speaker)
+
+
+COMPONENT LAYOUT (EXPLODED TOP-DOWN)
+─────────────────────────────────────
+
+     ┌─ Dust Cover (decorative) ──────────────────┐
+     │  Clear/tinted PETG, clips onto hinge points │
+     │  Optional — purely cosmetic                  │
+     └─────────────────────────────────────────────┘
+              │
+     ┌─ Top Shell + Platter Ring ─────────────────┐
+     │  Square body with circular groove pattern   │
+     │  Screen bezel opening (108×64.8mm active)   │
+     │  Tonearm mount post (right side)            │
+     │  Concentric ring grooves (0.5mm deep)       │
+     └─────────────────────────────────────────────┘
+              │
+     ┌─ Tonearm Assembly ─────────────────────────┐
+     │  Decorative curved arm piece                │
+     │  Pivot post + headshell end                 │
+     │  Snap-fit onto top shell mount              │
+     └─────────────────────────────────────────────┘
+              │
+     ┌─ Screen Module ────────────────────────────┐
+     │  5.0" SSD1963 (120×75×4.5mm)               │
+     │  Landscape, tilted 20° on wedge support     │
+     │  FPC cable to PCB below                     │
+     └─────────────────────────────────────────────┘
+              │
+     ┌─ PCB Assembly ─────────────────────────────┐
+     │  PCB (110×65×1.6mm) — horizontal            │
+     │  ESP32-S3-MINI-1 (15.4×20.5×2.4mm)         │
+     │  Speaker (28mm × 3.5mm) — faces downward    │
+     │  3 × tactile buttons on front edge          │
+     │  USB-C connector at rear                    │
+     └─────────────────────────────────────────────┘
+              │
+     ┌─ Bottom Shell ─────────────────────────────┐
+     │  Flat base with vent slots for speaker      │
+     │  4 × rubber feet (8mm dia, 5mm tall)        │
+     │  USB-C pass-through cutout at rear          │
+     └─────────────────────────────────────────────┘
+
+
+MOUNTING DETAILS
+────────────────
+
+  Screen Mount:
+    - Landscape orientation in platter opening
+    - Active area (108×64.8mm) visible through bezel
+    - 20° wedge support underneath module
+    - 4 clip tabs hold module edges
+    - Wedge is integral to top shell interior
+
+  PCB Mount:
+    - Horizontal, centered in lower cavity
+    - 4 × M2 standoffs (4mm height) into bottom shell
+    - Component side up (ESP32 faces screen)
+    - Speaker soldered to PCB, faces down toward vents
+
+  Transport Buttons:
+    - 3 × 6mm tactile switches on PCB front edge
+    - Custom keycaps shaped as transport symbols
+    - ▶ (play): 8×8mm cap, triangular profile
+    - ■ (stop): 8×8mm cap, square profile
+    - ◁◁ (cue): 8×8mm cap, double-triangle profile
+    - Through front panel cutouts with 0.3mm clearance
+
+  Speaker:
+    - 28mm dia × 3.5mm, mounted face-down on PCB
+    - Bottom shell vent: radial slot pattern (12 slots)
+    - Rubber feet provide 5mm clearance for sound exit
+    - Vent pattern styled as secondary "record grooves"
+
+  USB-C:
+    - Rear center of bottom shell
+    - 8.94 × 3.26 mm cutout
+    - 8mm from bottom edge
+    - Accessible while unit sits on desk
+
+  Tonearm:
+    - Snap-fit onto pivot post on top shell
+    - Single piece: arm + headshell + counterweight
+    - Freely rotates on post (or fixed — design choice)
+    - Does not contact screen or interfere with display
+
+
+ASSEMBLY NOTES
+──────────────
+
+  1. Press rubber feet into bottom shell (4 corners)
+  2. Mount PCB onto bottom shell standoffs (4 × M2 screws)
+  3. Verify speaker alignment with bottom vent pattern
+  4. Route USB-C to rear cutout, secure with hot-melt
+  5. Place screen module on 20° wedge, connect FPC to PCB
+  6. Clip screen into bezel tabs
+  7. Align top shell over bottom shell
+  8. Snap-fit top to bottom (6 snap clips around perimeter)
+  9. 2 × M2 security screws on bottom for retention
+  10. Snap tonearm onto pivot post
+  11. Optionally attach dust cover to hinge points
+
+  Shell: 2-part (top + bottom), snap-fit + 2 screws
+  Material: PLA/PETG — matte black for "vinyl" aesthetic
+  Print orientation: Top shell face-down, bottom shell face-down
+  Accent: Platter ring can be printed in dark gray or painted silver
+
+
+SPECIAL FEATURES
+────────────────
+
+  Platter Ring Grooves:
+    - Concentric circular grooves machined/printed into top shell
+    - 0.5mm deep, 0.8mm spacing — mimics vinyl record surface
+    - Surrounds the screen bezel on all sides
+    - Radius: 55mm outer, tapering inward to screen edge
+    - Can be enhanced with gloss clear coat for realism
+
+  Tonearm:
+    - Curved decorative piece with classic S-shape profile
+    - Headshell end points toward screen edge
+    - Counterweight ball on opposite end
+    - Optional: freely pivots on post for tactile fidget
+
+  Transport Button Caps:
+    - Custom-shaped keycaps matching audio player symbols
+    - Slightly raised above front panel (1.5mm proud)
+    - Contrasting color (silver/chrome look) against black body
+    - Satisfying tactile click from underlying 6mm switches
+
+  Downward-Firing Speaker:
+    - Speaker faces down through styled vent pattern
+    - Rubber feet create acoustic chamber gap
+    - Vent slots styled as mini record grooves (matching theme)
+    - Desk surface acts as sound reflector
+
+  Dust Cover Hinge Points:
+    - Two small posts on rear edge of top shell
+    - Accept optional clear/tinted PETG dust cover
+    - Cover lifts up and back like real turntable
+    - Purely decorative — screen is always accessible
+
+  Living Room Aesthetic:
+    - Minimal branding, clean lines
+    - Square footprint looks intentional on any desk
+    - Matte black finish evokes real audio equipment
+    - All cables exit rear — clean front presentation
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Design 08: Vinyl Record Player — Turntable-inspired desktop companion     ║
+╚══════════════════════════════════════════════════════════════════════════════╝

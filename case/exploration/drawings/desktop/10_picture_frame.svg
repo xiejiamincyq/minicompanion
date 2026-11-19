@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+    <pattern id="woodgrain" patternUnits="userSpaceOnUse" width="200" height="8">
+      <line x1="0" y1="2" x2="200" y2="3" stroke="#A0784C" stroke-width="0.4" opacity="0.5"/>
+      <line x1="0" y1="5" x2="200" y2="6" stroke="#8B6839" stroke-width="0.3" opacity="0.4"/>
+      <line x1="0" y1="7" x2="200" y2="7.5" stroke="#A0784C" stroke-width="0.25" opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 10: Picture Frame — 160×120×25mm Landscape</text>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#E8E8E8" stroke-width="0.3"/>
+
+  <!-- VIEW 1: Front view (top-left) -->
+  <text x="200" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+  <!-- Outer frame with wood grain -->
+  <rect x="70" y="90" width="260" height="200" rx="3" fill="#C4975A" stroke="black" stroke-width="0.5"/>
+  <rect x="70" y="90" width="260" height="200" rx="3" fill="url(#woodgrain)" stroke="none"/>
+  <!-- Wood grain lines on frame -->
+  <line x1="75" y1="100" x2="325" y2="102" stroke="#A0784C" stroke-width="0.3" opacity="0.6"/>
+  <line x1="75" y1="108" x2="325" y2="110" stroke="#8B6839" stroke-width="0.3" opacity="0.5"/>
+  <line x1="75" y1="275" x2="325" y2="277" stroke="#A0784C" stroke-width="0.3" opacity="0.6"/>
+  <line x1="75" y1="283" x2="325" y2="282" stroke="#8B6839" stroke-width="0.3" opacity="0.5"/>
+  <!-- Inner bezel opening -->
+  <rect x="100" y="115" width="200" height="150" rx="1" fill="#444" stroke="black" stroke-width="0.5"/>
+  <!-- Screen -->
+  <rect x="108" y="123" width="184" height="134" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="192" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#4477AA">5.0" SSD1963</text>
+  <text x="200" y="206" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#4477AA">108×64.8mm active</text>
+  <!-- Frame bezel width indication -->
+  <line x1="70" y1="140" x2="100" y2="140" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="85" y="136" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">~25mm bezel</text>
+  <!-- Width dimension -->
+  <line x1="70" y1="310" x2="330" y2="310" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="308" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">160mm</text>
+  <!-- Height dimension -->
+  <line x1="345" y1="90" x2="345" y2="290" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="365" y="192" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,365,192)">120mm</text>
+
+  <!-- VIEW 2: Side profile (top-center) -->
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+  <!-- Frame edge (thin) -->
+  <rect x="580" y="90" width="40" height="200" rx="2" fill="#C4975A" stroke="black" stroke-width="0.5"/>
+  <rect x="580" y="90" width="40" height="200" fill="url(#woodgrain)" stroke="none"/>
+  <!-- Easel back folded (deployed) -->
+  <line x1="620" y1="280" x2="610" y2="290" stroke="black" stroke-width="0.5"/>
+  <path d="M620,140 L620,280 L660,290" fill="none" stroke="black" stroke-width="0.5"/>
+  <path d="M618,140 L618,280 L658,290" fill="#E0E0E0" stroke="black" stroke-width="0.3"/>
+  <text x="645" y="220" font-family="sans-serif" font-size="8" transform="rotate(15,645,220)">easel</text>
+  <!-- Depth dimension -->
+  <line x1="580" y1="310" x2="620" y2="310" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="600" y="325" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">25mm</text>
+  <!-- Surface to table line -->
+  <line x1="540" y1="290" x2="680" y2="290" stroke="#888" stroke-width="0.3" stroke-dasharray="3,3"/>
+  <text x="550" y="300" font-family="sans-serif" font-size="7" fill="#888">table surface</text>
+
+  <!-- VIEW 3: Back view (top-right) -->
+  <text x="1000" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+  <!-- Back panel -->
+  <rect x="870" y="90" width="260" height="200" rx="3" fill="#D8C8A8" stroke="black" stroke-width="0.5"/>
+  <!-- Easel stand deployed -->
+  <path d="M1000,130 L1000,260 L1060,290" fill="none" stroke="black" stroke-width="1"/>
+  <path d="M998,130 L998,258" fill="none" stroke="black" stroke-width="0.5"/>
+  <!-- Hinge at top -->
+  <rect x="990" y="128" width="20" height="8" rx="2" fill="#888" stroke="black" stroke-width="0.3"/>
+  <text x="1020" y="132" font-family="sans-serif" font-size="7">hinge</text>
+  <!-- Wall mount keyhole -->
+  <circle cx="940" cy="150" r="6" fill="#666" stroke="black" stroke-width="0.5"/>
+  <path d="M940,156 L940,168" stroke="#666" stroke-width="4"/>
+  <circle cx="940" cy="150" r="3" fill="#888" stroke="black" stroke-width="0.3"/>
+  <text x="920" y="180" text-anchor="middle" font-family="sans-serif" font-size="8">keyhole mount</text>
+  <!-- USB-C -->
+  <rect x="988" y="275" width="24" height="8" rx="3" fill="#666" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="298" text-anchor="middle" font-family="sans-serif" font-size="8">USB-C</text>
+  <!-- Hidden screen outline -->
+  <rect x="900" y="115" width="200" height="150" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="4,3"/>
+  <text x="1000" y="195" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#888">screen (hidden)</text>
+  <!-- Easel angle -->
+  <path d="M1040,260 Q1035,270 1060,290" fill="none" stroke="#CC0000" stroke-width="0.3"/>
+  <text x="1070" y="275" font-family="sans-serif" font-size="7" fill="#CC0000">~25°</text>
+
+  <!-- VIEW 4: Top-down view (bottom-left) -->
+  <text x="200" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+  <!-- Thin frame from above -->
+  <rect x="70" y="580" width="260" height="40" rx="2" fill="#C4975A" stroke="black" stroke-width="0.5"/>
+  <rect x="70" y="580" width="260" height="40" fill="url(#woodgrain)" stroke="none"/>
+  <!-- Glass/screen edge -->
+  <rect x="100" y="584" width="200" height="8" fill="#B0D4F1" stroke="black" stroke-width="0.3" opacity="0.5"/>
+  <text x="200" y="592" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#4477AA">glass + screen</text>
+  <!-- Back panel -->
+  <rect x="100" y="600" width="200" height="16" fill="#D8C8A8" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="612" text-anchor="middle" font-family="sans-serif" font-size="7">back panel</text>
+  <!-- Width dim -->
+  <line x1="70" y1="640" x2="330" y2="640" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="638" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">160mm</text>
+  <!-- Depth dim -->
+  <line x1="345" y1="580" x2="345" y2="620" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="365" y="604" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,365,604)">25mm</text>
+
+  <!-- VIEW 5: Cross-section (bottom-center) -->
+  <text x="600" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Through Center)</text>
+  <!-- Frame outline -->
+  <rect x="470" y="530" width="260" height="170" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Interior cavity -->
+  <rect x="500" y="534" width="200" height="162" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Glass front layer -->
+  <rect x="500" y="534" width="200" height="4" fill="#CCDDEE" stroke="black" stroke-width="0.3"/>
+  <text x="600" y="530" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">glass 2mm</text>
+  <!-- Air gap -->
+  <rect x="500" y="538" width="200" height="4" fill="white" stroke="none"/>
+  <!-- Screen module -->
+  <rect x="510" y="542" width="180" height="10" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="550" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#4477AA">screen module 4.5mm</text>
+  <!-- PCB -->
+  <rect x="510" y="560" width="180" height="4" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="564" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#2E7D32">PCB 1.6mm</text>
+  <!-- Speaker -->
+  <ellipse cx="560" cy="600" rx="20" ry="6" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="560" y="603" text-anchor="middle" font-family="sans-serif" font-size="7">speaker</text>
+  <!-- Frame bezel walls -->
+  <rect x="470" y="530" width="30" height="170" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+  <rect x="700" y="530" width="30" height="170" fill="url(#hatch)" stroke="black" stroke-width="0.3"/>
+  <!-- Back panel -->
+  <rect x="500" y="692" width="200" height="4" fill="#D8C8A8" stroke="black" stroke-width="0.3"/>
+  <text x="600" y="690" text-anchor="middle" font-family="sans-serif" font-size="7">back panel</text>
+  <!-- Wall thickness callout -->
+  <line x1="468" y1="610" x2="502" y2="610" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="485" y="625" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">~2mm wall</text>
+  <!-- Total depth -->
+  <line x1="745" y1="530" x2="745" y2="700" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="765" y="618" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,765,618)">25mm</text>
+
+  <!-- VIEW 6: Detail closeup (bottom-right) -->
+  <text x="1000" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Easel Hinge + Hidden Buttons</text>
+
+  <!-- Easel hinge mechanism -->
+  <text x="1000" y="510" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Easel Hinge Detail</text>
+  <!-- Frame back section -->
+  <rect x="880" y="530" width="160" height="30" fill="#D8C8A8" stroke="black" stroke-width="0.5"/>
+  <text x="960" y="550" text-anchor="middle" font-family="sans-serif" font-size="8">back panel</text>
+  <!-- Hinge barrel -->
+  <rect x="940" y="558" width="40" height="10" rx="3" fill="#888" stroke="black" stroke-width="0.5"/>
+  <circle cx="950" cy="563" r="4" fill="#999" stroke="black" stroke-width="0.3"/>
+  <circle cx="970" cy="563" r="4" fill="#999" stroke="black" stroke-width="0.3"/>
+  <text x="960" y="578" text-anchor="middle" font-family="sans-serif" font-size="7">piano hinge</text>
+  <!-- Easel leg -->
+  <path d="M960,568 L960,630 L1010,650" fill="none" stroke="black" stroke-width="1.5"/>
+  <text x="995" y="620" font-family="sans-serif" font-size="8" transform="rotate(20,995,620)">easel leg</text>
+  <!-- Friction detent -->
+  <circle cx="960" cy="600" r="2" fill="#CC0000" stroke="black" stroke-width="0.3"/>
+  <text x="975" y="598" font-family="sans-serif" font-size="7" fill="#CC0000">friction detent</text>
+  <!-- Max angle -->
+  <path d="M960,580 Q970,600 980,610" fill="none" stroke="#CC0000" stroke-width="0.3"/>
+  <text x="990" y="605" font-family="sans-serif" font-size="7" fill="#CC0000">max 45°</text>
+
+  <!-- Hidden button location -->
+  <text x="1000" y="680" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Hidden Buttons — Bottom Edge</text>
+  <!-- Bottom edge of frame -->
+  <rect x="870" y="700" width="260" height="18" rx="2" fill="#C4975A" stroke="black" stroke-width="0.5"/>
+  <rect x="870" y="700" width="260" height="18" fill="url(#woodgrain)" stroke="none"/>
+  <!-- Recessed buttons on underside -->
+  <rect x="945" y="718" width="10" height="6" rx="1" fill="#555" stroke="black" stroke-width="0.3"/>
+  <rect x="970" y="718" width="10" height="6" rx="1" fill="#555" stroke="black" stroke-width="0.3"/>
+  <rect x="995" y="718" width="10" height="6" rx="1" fill="#555" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="740" text-anchor="middle" font-family="sans-serif" font-size="8">3× recessed tactile 6mm</text>
+  <text x="1000" y="752" text-anchor="middle" font-family="sans-serif" font-size="8">hidden on bottom edge</text>
+  <!-- Finger access indication -->
+  <path d="M970,724 Q970,740 970,750" fill="none" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="960" y="765" text-anchor="end" font-family="sans-serif" font-size="7" fill="#CC0000">finger access from below</text>
+  <!-- Button spacing -->
+  <line x1="945" y1="730" x2="1005" y2="730" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="975" y="728" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">~25mm span</text>
+</svg>

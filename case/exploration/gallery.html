@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devotchi Case Design Gallery</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #1a1a2e;
+    color: #e0e0e0;
+    min-height: 100vh;
+  }
+  header {
+    background: #16213e;
+    padding: 20px 32px;
+    border-bottom: 2px solid #0f3460;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 24px;
+    color: #e94560;
+    font-weight: 700;
+  }
+  header h1 span { color: #e0e0e0; font-weight: 300; }
+
+  .tab-bar {
+    display: flex;
+    gap: 4px;
+    background: #16213e;
+    padding: 0 32px 12px;
+  }
+  .tab {
+    padding: 10px 24px;
+    border: none;
+    background: transparent;
+    color: #8899aa;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  .tab:hover { color: #e0e0e0; }
+  .tab.active { color: #e94560; border-bottom-color: #e94560; }
+
+  .gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 32px;
+  }
+
+  /* Card grid */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    background: #16213e;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #0f3460;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    border-color: #e94560;
+  }
+  .card .preview {
+    background: #fff;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .card .preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 8px;
+  }
+  .card .preview pre {
+    font-size: 6px;
+    line-height: 1.1;
+    color: #333;
+    padding: 8px;
+    overflow: hidden;
+    max-height: 100%;
+    white-space: pre;
+    font-family: 'Courier New', monospace;
+  }
+  .card .info {
+    padding: 16px;
+  }
+  .card .info h3 {
+    font-size: 16px;
+    color: #e94560;
+    margin-bottom: 4px;
+  }
+  .card .info .dims {
+    font-size: 12px;
+    color: #8899aa;
+  }
+  .card .info .desc {
+    font-size: 13px;
+    color: #aab;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  /* Modal / Lightbox */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+  }
+  .modal-overlay.active { display: flex; }
+  .modal {
+    background: #16213e;
+    border-radius: 16px;
+    max-width: 95vw;
+    max-height: 95vh;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #0f3460;
+  }
+  .modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    border-bottom: 1px solid #0f3460;
+  }
+  .modal-header h2 {
+    font-size: 20px;
+    color: #e94560;
+  }
+  .modal-header .counter {
+    color: #8899aa;
+    font-size: 14px;
+  }
+  .modal-close {
+    background: none;
+    border: none;
+    color: #8899aa;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 4px 8px;
+    line-height: 1;
+  }
+  .modal-close:hover { color: #e94560; }
+
+  .modal-body {
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .modal-tabs {
+    display: flex;
+    gap: 2px;
+    padding: 12px 24px 0;
+  }
+  .modal-tab {
+    padding: 8px 20px;
+    border: none;
+    background: #0f3460;
+    color: #8899aa;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: all 0.2s;
+  }
+  .modal-tab.active { background: #1a1a2e; color: #e94560; }
+
+  .modal-content {
+    flex: 1;
+    overflow: auto;
+    background: #fff;
+    margin: 0 24px 24px;
+    border-radius: 0 8px 8px 8px;
+  }
+  .modal-content.ascii-view {
+    background: #1a1a2e;
+    padding: 16px;
+  }
+  .modal-content.ascii-view pre {
+    font-size: 11px;
+    line-height: 1.3;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    white-space: pre;
+  }
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .modal-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 16px;
+  }
+  .nav-btn {
+    padding: 10px 24px;
+    border: 1px solid #0f3460;
+    background: #16213e;
+    color: #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  .nav-btn:hover { border-color: #e94560; color: #e94560; }
+  .nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+  /* Keyboard hints */
+  .kbd-hints {
+    text-align: center;
+    padding: 8px;
+    color: #556;
+    font-size: 12px;
+  }
+  kbd {
+    background: #0f3460;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    color: #aab;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Devotchi <span>Case Design Gallery</span></h1>
+  <div class="kbd-hints">
+    <kbd>←</kbd> <kbd>→</kbd> navigate &nbsp;
+    <kbd>Esc</kbd> close &nbsp;
+    <kbd>T</kbd> toggle SVG/ASCII
+  </div>
+</header>
+
+<div class="tab-bar">
+  <button class="tab active" data-category="all">All Designs</button>
+  <button class="tab" data-category="desktop">Desktop (21)</button>
+  <button class="tab" data-category="portable">Portable (25)</button>
+</div>
+
+<div class="gallery-container">
+  <div class="card-grid" id="cardGrid"></div>
+</div>
+
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">Design Name</h2>
+      <div>
+        <span class="counter" id="modalCounter">1 / 16</span>
+        <button class="modal-close" id="modalClose">&times;</button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-view="svg">SVG Drawing</button>
+        <button class="modal-tab" data-view="ascii">ASCII Concept</button>
+      </div>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+    <div class="modal-nav">
+      <button class="nav-btn" id="prevBtn">← Previous</button>
+      <button class="nav-btn" id="nextBtn">Next →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const designs = [
+  // Desktop designs
+  { id: 'd01', name: 'Upright Easel', category: 'desktop', dims: '~85×65mm, 65° tilt',
+    desc: 'Flat slab on a detachable triangular stand. Portrait orientation, minimal desk monitor aesthetic.',
+    svg: 'drawings/desktop/01_easel.svg', ascii: 'concepts/desktop/01_easel.txt' },
+  { id: 'd02', name: 'Wedge Console', category: 'desktop', dims: '155×100mm, 15° angle',
+    desc: 'Low-profile landscape wedge. Bloomberg terminal vibes with angled top surface.',
+    svg: 'drawings/desktop/02_wedge.svg', ascii: 'concepts/desktop/02_wedge.txt' },
+  { id: 'd03', name: 'Floating Orb', category: 'desktop', dims: '80mm egg, 65mm base',
+    desc: 'Egg-shaped head on a cylindrical pedestal. Most "Tamagotchi" of the desktop designs.',
+    svg: 'drawings/desktop/03_orb.svg', ascii: 'concepts/desktop/03_orb.txt' },
+  { id: 'd04', name: 'Monolith Slab', category: 'desktop', dims: '84×135mm, 15mm thin',
+    desc: 'Thin portrait tablet with integrated kickstand. Surface Pro style.',
+    svg: 'drawings/desktop/04_monolith.svg', ascii: 'concepts/desktop/04_monolith.txt' },
+  { id: 'd05', name: 'Retro TV', category: 'desktop', dims: '165×110mm, 65mm deep',
+    desc: 'Chunky CRT-shaped enclosure with antenna stubs. 70s nostalgia.',
+    svg: 'drawings/desktop/05_retro_tv.svg', ascii: 'concepts/desktop/05_retro_tv.txt' },
+  { id: 'd06', name: 'Hex Tower', category: 'desktop', dims: '55mm hex, 120mm tall',
+    desc: 'Hexagonal prism with dedicated facets for screen, buttons, speaker. Geometric desk art.',
+    svg: 'drawings/desktop/06_hex_tower.svg', ascii: 'concepts/desktop/06_hex_tower.txt' },
+
+  // Portable designs
+  { id: 'p01', name: 'Classic Egg', category: 'portable', dims: '~70×55×15mm',
+    desc: 'Original Tamagotchi-inspired egg shape. Screen in upper half, buttons below, lanyard hole at top.',
+    svg: 'drawings/portable/01_classic_egg.svg', ascii: 'concepts/portable/01_classic_egg.txt' },
+  { id: 'p02', name: 'GameBoy Micro', category: 'portable', dims: '~95×55×16mm',
+    desc: 'Landscape handheld gaming device. Two-hand grip with buttons flanking the screen.',
+    svg: 'drawings/portable/02_gameboy_micro.svg', ascii: 'concepts/portable/02_gameboy_micro.txt' },
+  { id: 'p03', name: 'Pebble', category: 'portable', dims: '~62×50×16mm',
+    desc: 'Smartwatch-inspired rounded rectangle. Clean front face with side buttons like watch pushers.',
+    svg: 'drawings/portable/03_pebble.svg', ascii: 'concepts/portable/03_pebble.txt' },
+  { id: 'p04', name: 'Clamshell', category: 'portable', dims: '~65×60×20mm closed',
+    desc: 'Folds in half to protect screen. Opens to reveal display and buttons.',
+    svg: 'drawings/portable/04_clamshell.svg', ascii: 'concepts/portable/04_clamshell.txt' },
+  { id: 'p05', name: 'Keychain Pod', category: 'portable', dims: '~55×55×18mm',
+    desc: 'Ultra-compact rounded square with carabiner loop. Clips onto keys or bag.',
+    svg: 'drawings/portable/05_keychain_pod.svg', ascii: 'concepts/portable/05_keychain_pod.txt' },
+  { id: 'p06', name: 'Pager', category: 'portable', dims: '~80×55×18mm',
+    desc: '90s beeper aesthetic with belt clip. Slight wedge taper, curved back for comfort.',
+    svg: 'drawings/portable/06_pager.svg', ascii: 'concepts/portable/06_pager.txt' },
+  { id: 'p07', name: 'Zippo', category: 'portable', dims: '~65×45×18mm',
+    desc: 'Flip-lid reveals screen. Decorative front plate when closed. Very pocket-friendly.',
+    svg: 'drawings/portable/07_zippo.svg', ascii: 'concepts/portable/07_zippo.txt' },
+  { id: 'p08', name: 'Badge', category: 'portable', dims: '~90×60×12mm',
+    desc: 'Lanyard-mounted ID badge form factor. Thin profile, hangs from neck like conference badge.',
+    svg: 'drawings/portable/08_badge.svg', ascii: 'concepts/portable/08_badge.txt' },
+  { id: 'p09', name: 'Brick', category: 'portable', dims: '~65×50×22mm',
+    desc: 'Chunky fidget-friendly brick. Extra rounded, textured grips, satisfying to hold.',
+    svg: 'drawings/portable/09_brick.svg', ascii: 'concepts/portable/09_brick.txt' },
+  { id: 'p10', name: 'Capsule', category: 'portable', dims: '~90×48×16mm',
+    desc: 'Pill-shaped landscape design. Semicircle ends, smooth all around. Palm-friendly grip.',
+    svg: 'drawings/portable/10_capsule.svg', ascii: 'concepts/portable/10_capsule.txt' },
+
+  // --- Batch 2: Desktop designs 07-21 ---
+  { id: 'd07', name: 'Arcade Cabinet', category: 'desktop', dims: '100×80×140mm',
+    desc: 'Mini arcade machine with control panel shelf, dome buttons, joystick cap, and marquee header.',
+    svg: 'drawings/desktop/07_arcade_cabinet.svg', ascii: 'concepts/desktop/07_arcade_cabinet.txt' },
+  { id: 'd08', name: 'Vinyl Record Player', category: 'desktop', dims: '140×140×40mm',
+    desc: 'Turntable aesthetic with platter ring around screen and decorative tonearm.',
+    svg: 'drawings/desktop/08_vinyl_record_player.svg', ascii: 'concepts/desktop/08_vinyl_record_player.txt' },
+  { id: 'd09', name: 'Desk Lamp', category: 'desktop', dims: '70mm base, 150mm neck',
+    desc: 'Adjustable gooseneck lamp with screen head. Infinite angle adjustment.',
+    svg: 'drawings/desktop/09_desk_lamp.svg', ascii: 'concepts/desktop/09_desk_lamp.txt' },
+  { id: 'd10', name: 'Picture Frame', category: 'desktop', dims: '160×120×25mm',
+    desc: 'Digital photo frame with wide decorative bezel. Hidden buttons, easel back.',
+    svg: 'drawings/desktop/10_picture_frame.svg', ascii: 'concepts/desktop/10_picture_frame.txt' },
+  { id: 'd11', name: 'Dashboard Gauge', category: 'desktop', dims: '90mm dia × 45mm',
+    desc: 'Car tachometer style with chrome bezel, gauge markings, and swivel base.',
+    svg: 'drawings/desktop/11_dashboard_gauge.svg', ascii: 'concepts/desktop/11_dashboard_gauge.txt' },
+  { id: 'd12', name: 'Toaster', category: 'desktop', dims: '120×70×90mm',
+    desc: 'Screen pops up on spring carriage. Push lever to sleep. Toast-control buttons.',
+    svg: 'drawings/desktop/12_toaster.svg', ascii: 'concepts/desktop/12_toaster.txt' },
+  { id: 'd13', name: 'Terrarium', category: 'desktop', dims: '100×80×120mm cube',
+    desc: 'Transparent acrylic cube on wooden base. Screen visible through walls, space for decorations.',
+    svg: 'drawings/desktop/13_terrarium.svg', ascii: 'concepts/desktop/13_terrarium.txt' },
+  { id: 'd14', name: 'Rotary Phone', category: 'desktop', dims: '140×110×50mm',
+    desc: '1950s desk telephone with spinning rotary dial ring around screen. Decorative handset.',
+    svg: 'drawings/desktop/14_rotary_phone.svg', ascii: 'concepts/desktop/14_rotary_phone.txt' },
+  { id: 'd15', name: 'Boombox', category: 'desktop', dims: '180×50×100mm',
+    desc: '80s ghetto blaster with flanking speaker grilles, carry handle, and slider buttons.',
+    svg: 'drawings/desktop/15_boombox.svg', ascii: 'concepts/desktop/15_boombox.txt' },
+  { id: 'd16', name: 'Mushroom', category: 'desktop', dims: '70mm cap, 120mm tall',
+    desc: 'Toadstool desk toy. Screen under angled cap, buttons on stem, speaker in cap.',
+    svg: 'drawings/desktop/16_mushroom.svg', ascii: 'concepts/desktop/16_mushroom.txt' },
+  { id: 'd17', name: 'Crystal', category: 'desktop', dims: '80×60×100mm',
+    desc: 'Faceted gem polyhedron. Screen on largest facet. Frosted resin with LED glow.',
+    svg: 'drawings/desktop/17_crystal.svg', ascii: 'concepts/desktop/17_crystal.txt' },
+  { id: 'd18', name: 'Book', category: 'desktop', dims: '130×90×30mm',
+    desc: 'Hardcover book standing upright. Screen on cover, faux page edges, spine buttons.',
+    svg: 'drawings/desktop/18_book.svg', ascii: 'concepts/desktop/18_book.txt' },
+  { id: 'd19', name: 'Cuckoo Clock', category: 'desktop', dims: '90×60×130mm',
+    desc: 'Wall-mountable with hinged door, clock face, and swinging pendulum.',
+    svg: 'drawings/desktop/19_cuckoo_clock.svg', ascii: 'concepts/desktop/19_cuckoo_clock.txt' },
+  { id: 'd20', name: 'Cassette Deck', category: 'desktop', dims: '170×100×40mm',
+    desc: 'Desktop hi-fi component. Brushed aluminum faceplate, transport buttons, VU meter screen.',
+    svg: 'drawings/desktop/20_cassette_deck.svg', ascii: 'concepts/desktop/20_cassette_deck.txt' },
+  { id: 'd21', name: 'Trophy', category: 'desktop', dims: '60×60mm base, 130mm tall',
+    desc: 'Award stand with screen on pillar, star decoration on top, nameplate on base.',
+    svg: 'drawings/desktop/21_trophy.svg', ascii: 'concepts/desktop/21_trophy.txt' },
+
+  // --- Batch 2: Portable designs 11-25 ---
+  { id: 'p11', name: 'Walkman', category: 'portable', dims: '100×65×18mm',
+    desc: '80s Sony Walkman homage. Cassette window shows screen, transport buttons, belt clip.',
+    svg: 'drawings/portable/11_walkman.svg', ascii: 'concepts/portable/11_walkman.txt' },
+  { id: 'p12', name: 'Flip Phone', category: 'portable', dims: '55×48×22mm closed',
+    desc: '2000s clamshell phone. Flip open for screen, T9 button grid, antenna nub.',
+    svg: 'drawings/portable/12_flip_phone.svg', ascii: 'concepts/portable/12_flip_phone.txt' },
+  { id: 'p13', name: 'iPod Nano', category: 'portable', dims: '88×42×14mm',
+    desc: 'Click-wheel era tribute. Screen above circular wheel with center approve button.',
+    svg: 'drawings/portable/13_ipod_nano.svg', ascii: 'concepts/portable/13_ipod_nano.txt' },
+  { id: 'p14', name: 'PDA', category: 'portable', dims: '75×55×16mm',
+    desc: 'Palm Pilot homage. App-launcher buttons, stylus slot, infrared window decoration.',
+    svg: 'drawings/portable/14_pda.svg', ascii: 'concepts/portable/14_pda.txt' },
+  { id: 'p15', name: 'Communicator', category: 'portable', dims: '65×50×12mm',
+    desc: 'Star Trek badge shape. Chevron/shield with pin mount. Tap-to-wake.',
+    svg: 'drawings/portable/15_communicator.svg', ascii: 'concepts/portable/15_communicator.txt' },
+  { id: 'p16', name: 'Gamepad', category: 'portable', dims: '120×60×20mm',
+    desc: 'Dual-grip controller. D-pad left, action buttons right, trigger wake on back.',
+    svg: 'drawings/portable/16_gamepad.svg', ascii: 'concepts/portable/16_gamepad.txt' },
+  { id: 'p17', name: 'Dog Tag', category: 'portable', dims: '50×28×10mm',
+    desc: 'Military ID tag. Ultra-compact, full-face screen, ball chain loop. Stamped metal look.',
+    svg: 'drawings/portable/17_dog_tag.svg', ascii: 'concepts/portable/17_dog_tag.txt' },
+  { id: 'p18', name: 'Cassette Tape', category: 'portable', dims: '100×64×12mm',
+    desc: 'Actual cassette dimensions. Screen in tape window, spool decorations, fits in a deck.',
+    svg: 'drawings/portable/18_cassette_tape.svg', ascii: 'concepts/portable/18_cassette_tape.txt' },
+  { id: 'p19', name: 'Skateboard', category: 'portable', dims: '96×26×14mm',
+    desc: 'Fingerboard shape with spinning wheels. Screen on deck, buttons on kicktail.',
+    svg: 'drawings/portable/19_skateboard.svg', ascii: 'concepts/portable/19_skateboard.txt' },
+  { id: 'p20', name: 'Compass', category: 'portable', dims: '60mm dia × 18mm',
+    desc: 'Pocket compass with hinged lid. Compass rose engraving, brass aesthetic, lanyard ring.',
+    svg: 'drawings/portable/20_compass.svg', ascii: 'concepts/portable/20_compass.txt' },
+  { id: 'p21', name: 'Floppy Disk', category: 'portable', dims: '90×94×10mm',
+    desc: '3.5" floppy tribute. Sliding metal shutter reveals screen. Write-protect tab = wake.',
+    svg: 'drawings/portable/21_floppy_disk.svg', ascii: 'concepts/portable/21_floppy_disk.txt' },
+  { id: 'p22', name: 'Wrist Gauntlet', category: 'portable', dims: '70×45×15mm + strap',
+    desc: 'Cyberpunk wrist-mounted pod. Angular aesthetic, LED strip, velcro strap.',
+    svg: 'drawings/portable/22_wrist_gauntlet.svg', ascii: 'concepts/portable/22_wrist_gauntlet.txt' },
+  { id: 'p23', name: 'Cyberdeck', category: 'portable', dims: '95×60×20mm',
+    desc: 'Hacker terminal. Angled screen, mechanical buttons, transparent side panel showing PCB.',
+    svg: 'drawings/portable/23_cyberdeck.svg', ascii: 'concepts/portable/23_cyberdeck.txt' },
+  { id: 'p24', name: 'Holster', category: 'portable', dims: '70×50×16mm + clip',
+    desc: 'Belt-mounted quick-draw pod. Thumb buttons on top, MOLLE clip, tactical aesthetic.',
+    svg: 'drawings/portable/24_holster.svg', ascii: 'concepts/portable/24_holster.txt' },
+  { id: 'p25', name: 'Pendant', category: 'portable', dims: '45×45×12mm',
+    desc: 'Octagonal necklace pendant. Beveled edges, bail loop for chain, jewelry finishing.',
+    svg: 'drawings/portable/25_pendant.svg', ascii: 'concepts/portable/25_pendant.txt' },
+  { id: 'p26', name: 'Chamfered Box', category: 'portable', dims: '60×60×15.1mm',
+    desc: 'FreeCAD final design. Clean rectangular form with chamfered front edges, rounded corners, snap-fit back cover. 3 buttons, no wake. Chosen base design.',
+    svg: 'drawings/portable/26_chamfered_box.svg', ascii: 'concepts/portable/26_chamfered_box.txt' },
+  { id: 'p27', name: 'PCB Layout', category: 'portable', dims: '45×50×1.6mm',
+    desc: 'PCB component placement reference. ESP32, FPC connector, 3 buttons, USB-C, power section. 503450 battery (1000mAh). Shows display-PCB alignment.',
+    svg: 'drawings/portable/27_pcb_layout.svg', ascii: 'concepts/portable/27_pcb_layout.txt' },
+];
+
+let currentCategory = 'all';
+let filteredDesigns = [...designs];
+let currentIndex = 0;
+let currentView = 'svg';
+const contentCache = {};
+
+// --- Tab filtering ---
+document.querySelectorAll('.tab-bar .tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab-bar .tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    currentCategory = tab.dataset.category;
+    renderGrid();
+  });
+});
+
+// --- Render card grid ---
+function renderGrid() {
+  filteredDesigns = currentCategory === 'all'
+    ? [...designs]
+    : designs.filter(d => d.category === currentCategory);
+
+  const grid = document.getElementById('cardGrid');
+  grid.innerHTML = '';
+
+  filteredDesigns.forEach((d, i) => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <div class="preview" id="preview-${d.id}">
+        <img src="${d.svg}" alt="${d.name}" onerror="this.parentElement.innerHTML='<div style=\\'color:#666;font-size:14px;\\'>SVG preview</div>'">
+      </div>
+      <div class="info">
+        <h3>${d.category === 'desktop' ? '🖥' : '📱'} ${d.name}</h3>
+        <div class="dims">${d.dims}</div>
+        <div class="desc">${d.desc}</div>
+      </div>
+    `;
+    card.addEventListener('click', () => openModal(i));
+    grid.appendChild(card);
+  });
+}
+
+// --- Modal ---
+async function fetchContent(url) {
+  if (contentCache[url]) return contentCache[url];
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error('Not found');
+    const text = await resp.text();
+    contentCache[url] = text;
+    return text;
+  } catch {
+    return null;
+  }
+}
+
+async function showContent() {
+  const d = filteredDesigns[currentIndex];
+  const el = document.getElementById('modalContent');
+
+  document.querySelectorAll('.modal-tab').forEach(t => {
+    t.classList.toggle('active', t.dataset.view === currentView);
+  });
+
+  if (currentView === 'svg') {
+    el.className = 'modal-content';
+    el.innerHTML = `<img src="${d.svg}" alt="${d.name}" style="background:#fff">`;
+  } else {
+    el.className = 'modal-content ascii-view';
+    const text = await fetchContent(d.ascii);
+    const escaped = (text || 'ASCII file not found.').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    el.innerHTML = `<pre>${escaped}</pre>`;
+  }
+}
+
+function openModal(index) {
+  currentIndex = index;
+  currentView = 'svg';
+  updateModal();
+  document.getElementById('modal').classList.add('active');
+}
+
+function updateModal() {
+  const d = filteredDesigns[currentIndex];
+  document.getElementById('modalTitle').textContent =
+    `${d.category === 'desktop' ? '🖥' : '📱'} ${d.name}`;
+  document.getElementById('modalCounter').textContent =
+    `${currentIndex + 1} / ${filteredDesigns.length}`;
+  document.getElementById('prevBtn').disabled = currentIndex === 0;
+  document.getElementById('nextBtn').disabled = currentIndex === filteredDesigns.length - 1;
+  showContent();
+}
+
+document.getElementById('modalClose').addEventListener('click', () => {
+  document.getElementById('modal').classList.remove('active');
+});
+document.getElementById('modal').addEventListener('click', e => {
+  if (e.target === document.getElementById('modal'))
+    document.getElementById('modal').classList.remove('active');
+});
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if (currentIndex > 0) { currentIndex--; updateModal(); }
+});
+document.getElementById('nextBtn').addEventListener('click', () => {
+  if (currentIndex < filteredDesigns.length - 1) { currentIndex++; updateModal(); }
+});
+
+document.querySelectorAll('.modal-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    currentView = tab.dataset.view;
+    showContent();
+  });
+});
+
+// --- Keyboard navigation ---
+document.addEventListener('keydown', e => {
+  const modal = document.getElementById('modal');
+  if (!modal.classList.contains('active')) return;
+
+  if (e.key === 'Escape') modal.classList.remove('active');
+  if (e.key === 'ArrowLeft' && currentIndex > 0) { currentIndex--; updateModal(); }
+  if (e.key === 'ArrowRight' && currentIndex < filteredDesigns.length - 1) { currentIndex++; updateModal(); }
+  if (e.key === 't' || e.key === 'T') {
+    currentView = currentView === 'svg' ? 'ascii' : 'svg';
+    showContent();
+  }
+});
+
+// Init
+renderGrid();
+</script>
+
+</body>
+</html>

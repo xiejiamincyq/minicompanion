@@ -1,0 +1,329 @@
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 13: TERRARIUM                      ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  Transparent acrylic/glass display cube on a wooden base.                      ║
+║  Screen mounted vertically inside, visible from all sides.                     ║
+║  Space around screen for mini plants, figurines, pebbles.                      ║
+║  Brass/copper button caps on wooden base. Terrarium/display cabinet vibes.     ║
+║                                                                                ║
+║  Overall dimensions: Cube 100x80x120mm, Base 110x90x15mm                      ║
+║  Total height: 135mm (15mm base + 120mm cube)                                 ║
+║                                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+
+FRONT VIEW
+══════════
+
+         ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+         │                                       │
+         │                                       │  ← Clear acrylic/glass
+         │       ╔═══════════════════╗           │    cube 100x80x120mm
+         │       ║                   ║           │    (3mm wall thickness)
+         │       ║                   ║           │
+         │       ║     S C R E E N   ║           │  ← Screen 108x64.8mm
+         │       ║     108 x 64.8    ║           │    active area visible
+         │       ║                   ║           │    through transparent
+         │       ║                   ║           │    walls
+         │       ╚═══════════════════╝           │
+         │            │bracket│                  │  ← Internal stand/bracket
+         │    ·  ·  · │      │ · ✿ ·  ·         │    holds screen upright
+         │   pebbles  └──────┘  mini             │
+         │                      plant            │  ← Decorative items on
+         └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘    floor of cube
+    ┌─────────────────────────────────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│ ← Wooden base
+    │▒▒▒  ◉       ◉       ◉  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   110x90x15mm
+    │▒▒▒ btn1    btn2    btn3 ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   (walnut/oak)
+    └─────────────────────────────────────────────────┘
+     ◄───────────────── 110mm ──────────────────────►
+
+    ◉ = Brass/copper button caps (3x, on front edge of base)
+
+
+RIGHT SIDE VIEW
+═══════════════
+
+         ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+         │                         │
+         │                         │  ← 120mm tall cube
+         │     ┌───────────┐      │
+         │     │           │      │
+         │     │  Screen   │      │  ← Screen seen edge-on
+         │     │  module   │      │    through side wall
+         │     │  4.5mm    │      │
+         │     │  thick    │      │
+         │     │           │      │
+         │     └─────┬─────┘      │
+         │           │            │  ← Bracket/stand
+         │    · · · ·│· · · · ·   │
+         └ ─ ─ ─ ─ ─┼─ ─ ─ ─ ─ ┘
+    ┌─────────────────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│ ← Wooden base
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   (deeper than cube)
+    └─────────────────────────────────┘
+     ◄──────────── 90mm ────────────►
+     ▲                               ▲
+   Front                           Back
+
+
+BACK VIEW
+═════════
+
+         ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+         │                                       │
+         │                                       │
+         │       ┌───────────────────┐           │  ← Back of screen
+         │       │                   │           │    module visible
+         │       │   PCB visible     │           │    through clear
+         │       │   through back    │           │    back wall
+         │       │   (110x65mm)      │           │
+         │       │                   │           │
+         │       │   ESP32-S3 ■      │           │
+         │       └───────────────────┘           │
+         │            │bracket│                  │
+         │    · · · · │      │ · · · ·           │
+         └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+    ┌─────────────────────────────────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╔═══╗▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│ ← USB-C port
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒╚═══╝▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   on base back
+    └─────────────────────────────────────────────────┘
+
+
+TOP VIEW
+════════
+
+         ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+         │                                       │  ← Looking down into
+         │         ┌─────────────────┐           │    open-top cube
+         │         │  Screen module  │           │    (or clear lid)
+         │         │  top edge       │           │
+         │         │  120 x 75mm     │           │
+         │         └────────┬────────┘           │
+         │                  │                    │
+         │    ·  ✿  ·  ·   │bracket  ·  ·  🪨  │  ← Visible decorative
+         │                  │                    │    items around screen
+         └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+          ◄──────────── 100mm ─────────────────►
+         ▲                                       ▲
+       Front                                   Back
+                    ◄──── 80mm ────►
+
+
+CROSS-SECTION (side view, through center)
+═════════════════════════════════════════
+
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+    │ 3mm                         │ ← Clear acrylic wall
+    │ wall  ┌────────────┐       │
+    │       │            │       │
+    │       │   Screen   │       │   120mm
+    │       │   module   │       │   cube
+    │       │ 120x75x4.5 │       │   height
+    │       │            │       │
+    │       │            │       │
+    │       └──────┬─────┘       │
+    │              │             │ ← L-bracket stand
+    │   ╔══════════╧═══════════╗ │
+    │   ║ PCB 110x65mm         ║ │ ← PCB lies flat on base
+    └ ──╨══════════════════════╨─┘   inside cube footprint
+    ┌────────────────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│ ← Wooden base
+    │▒▒ ◉ ▒▒ ◉ ▒▒ ◉ ▒▒▒▒▒▒╔══╗▒▒▒▒▒│   houses speaker
+    │▒▒btns▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒║SP║▒▒▒▒▒│   + USB-C
+    └────────────────────────╚══╝────┘
+                              ↑
+                           Speaker
+                           recessed
+                           in base
+
+    Detail — screen bracket:
+         ┌─────────┐
+         │ Screen  │
+         │ module  │
+         └────┬────┘
+              │     ← Aluminum or acrylic L-bracket
+         ┌────┴────┐   screwed to PCB mounting holes
+         │   PCB   │
+         └─────────┘
+
+
+COMPONENT LAYOUT (exploded, top-down)
+═════════════════════════════════════
+
+    LAYER 1: Clear cube (lifts off)
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+    │                                     │
+    │   100mm x 80mm x 120mm             │
+    │   3mm clear acrylic or glass        │
+    │   Open bottom (sits on base)        │
+    │   Optional: rubber feet/gasket      │
+    │   at bottom edge for grip           │
+    │                                     │
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+
+    LAYER 2: Screen + bracket assembly
+    ┌─────────────────────────────────────┐
+    │   Screen module 120x75x4.5mm       │
+    │   mounted to L-bracket             │
+    │   ┌──┐                      ┌──┐   │
+    │   │M2│  bracket attachment  │M2│   │ ← 2x M2 to bracket
+    │   └──┘                      └──┘   │
+    │          │                │         │
+    │          │   L-bracket    │         │
+    │          │   (aluminum)   │         │
+    │          └───────┬────────┘         │
+    │                  │                  │
+    │             ┌──┐ │ ┌──┐             │ ← 2x M2 to PCB
+    │             │M2│ │ │M2│             │
+    │             └──┘   └──┘             │
+    └─────────────────────────────────────┘
+
+    LAYER 3: PCB on base
+    ┌─────────────────────────────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+    │▒ ╔═══════════════════════════════════════╗ ▒│
+    │▒ ║  PCB 110x65mm                        ║ ▒│
+    │▒ ║  ┌────────────┐                      ║ ▒│
+    │▒ ║  │ ESP32-S3   │        ┌────────┐   ║ ▒│
+    │▒ ║  │ 15.4x20.5  │        │Speaker │   ║ ▒│
+    │▒ ║  └────────────┘        │ 28mm   │   ║ ▒│
+    │▒ ║                        └────────┘   ║ ▒│
+    │▒ ║  [FPC to screen]                    ║ ▒│
+    │▒ ║                          [USB-C]──→ ║ ▒│ ← USB-C exits back
+    │▒ ╚═══════════════════════════════════════╝ ▒│
+    │▒▒ ◉ ▒▒▒▒ ◉ ▒▒▒▒ ◉ ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│ ← Buttons on
+    │▒▒btn1▒▒▒btn2▒▒▒btn3▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   front edge
+    └─────────────────────────────────────────────┘
+     ◄───────────────── 110mm ──────────────────►
+
+
+MOUNTING DETAILS
+════════════════
+
+    Screen bracket (L-shaped):
+
+         Side view:          Front view:
+         ┌────┐              ┌──────────────────┐
+         │    │              │   ┌──┐    ┌──┐   │
+         │    │ 75mm         │   │M2│    │M2│   │ ← To screen
+         │    │ vertical     │   └──┘    └──┘   │
+         │    │              │                  │
+         └────┴────┐         └──────────────────┘
+              │    │ 15mm             │
+              └────┘ foot    ┌───────┴────────┐
+                             │  ┌──┐   ┌──┐   │ ← To PCB
+                             │  │M2│   │M2│   │
+                             └────────────────┘
+
+    Cube-to-base alignment:
+    ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐
+    │                     │ ← Cube bottom edge
+    │  ┌──┐         ┌──┐ │
+    │  │  │ locator │  │ │ ← 4x alignment pins in base
+    │  │  │ pins    │  │ │   (cube drops over them)
+    │  └──┘         └──┘ │
+    │                     │
+    └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘
+
+    Button detail (brass cap):
+         ╭───╮
+         │   │ ← 8mm brass/copper domed cap
+         ╰─┬─╯
+           │   ← 3mm stem
+         ┌─┴─┐
+         │6mm│ ← Tactile switch on PCB
+         │   │   underneath base surface
+         └───┘
+
+    Speaker recess in base:
+    ┌──────────────────────┐
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+    │▒▒▒▒▒▒▒╔══════╗▒▒▒▒▒▒│ ← 28mm dia recess
+    │▒▒▒▒▒▒▒║ spkr ║▒▒▒▒▒▒│   milled into base
+    │▒▒▒▒▒▒▒║ 28mm ║▒▒▒▒▒▒│   bottom, with sound
+    │▒▒▒▒▒▒▒╚══════╝▒▒▒▒▒▒│   holes through base
+    │▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│   (downward firing)
+    └──────────────────────┘
+
+
+ASSEMBLY NOTES
+══════════════
+
+    1. Mill/CNC the wooden base:
+       - 110x90x15mm block (walnut, oak, or bamboo)
+       - Mill cavity for PCB (112x67mm, 5mm deep, centered)
+       - Drill 3x button holes on front edge (6mm dia)
+       - Mill speaker recess on bottom (28mm dia, 8mm deep)
+       - Drill speaker sound holes through base bottom
+       - Drill USB-C cutout on back face (8.94x3.26mm)
+       - Drill 4x alignment pin holes for cube (2mm dia)
+
+    2. Mount PCB into base cavity:
+       - 4x M2 screws from base bottom into PCB standoffs
+       - PCB sits flush or 1mm below base top surface
+
+    3. Install brass button caps:
+       - Button caps sit proud of base surface by 2mm
+       - Spring-loaded stems press PCB tactile switches
+       - Press-fit or threaded into base
+
+    4. Assemble screen bracket:
+       - Attach screen module to L-bracket (2x M2)
+       - Attach bracket to PCB (2x M2 standoffs)
+       - Connect FPC cable
+
+    5. Place alignment pins in base (4x press-fit brass pins)
+
+    6. Add decorative items around screen inside cube area
+
+    7. Lower cube over assembly, aligning with pins
+
+    Cable routing:
+    - FPC from screen to PCB: short run, bracket-mounted
+    - Speaker wires: PCB to speaker in base recess
+    - USB-C: PCB connector aligns with base back cutout
+
+
+SPECIAL FEATURES
+════════════════
+
+    1. TRANSPARENT DISPLAY CUBE
+       - Screen visible from front, back, and both sides
+       - PCB components become part of the aesthetic
+       - Electronics-as-art: circuit board visible through glass
+       - 3mm clear acrylic or tempered glass construction
+
+    2. REMOVABLE CUBE
+       - Cube lifts straight off base (no fasteners)
+       - Alignment pins keep it positioned
+       - Easy access to arrange decorative items
+       - Swap cubes: tinted, frosted, or custom-etched
+
+    3. TERRARIUM SPACE
+       - ~30mm of space around screen on all sides
+       - Place small items: mini succulents (faux), figurines,
+         crystals, pebbles, moss, tiny scene dioramas
+       - Personalize your Devotchi's living space
+       - Items visible through all transparent walls
+
+    4. NATURAL MATERIAL BASE
+       - Warm wood contrasts with clear cube
+       - Options: walnut (dark), oak (light), bamboo (modern)
+       - Brass/copper button caps add premium tactile feel
+       - Visible wood grain, oil-finished
+
+    5. DOWNWARD-FIRING SPEAKER
+       - Speaker in base fires downward through holes
+       - Desk surface acts as resonance amplifier
+       - Subtle, ambient sound quality
+       - Rubber feet create air gap for sound
+
+    6. DISPLAY CABINET AESTHETIC
+       - Museum/curiosity cabinet vibes
+       - Devotchi creature "lives" in its habitat
+       - Conversation starter on any desk
+       - Can be lit with small LED strip inside cube
+         for ambient glow (optional future addition)

@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif" font-size="10">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-size="14" font-weight="bold">Design 16: Mushroom — 70mm Cap, 120mm Total Height Desktop Devotchi Case</text>
+
+  <!-- Grid labels -->
+  <text x="200" y="55" text-anchor="middle" font-size="11" font-weight="bold">Front View</text>
+  <text x="600" y="55" text-anchor="middle" font-size="11" font-weight="bold">Side Profile</text>
+  <text x="1000" y="55" text-anchor="middle" font-size="11" font-weight="bold">Back View</text>
+  <text x="200" y="475" text-anchor="middle" font-size="11" font-weight="bold">Top-Down View</text>
+  <text x="600" y="475" text-anchor="middle" font-size="11" font-weight="bold">Cross-Section</text>
+  <text x="1000" y="475" text-anchor="middle" font-size="11" font-weight="bold">Detail: Cap Joint &amp; Gills</text>
+
+  <!-- ==================== FRONT VIEW (top-left) ==================== -->
+  <g transform="translate(200,270)">
+    <!-- Wide base -->
+    <ellipse cx="0" cy="100" rx="55" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <rect x="-55" y="90" width="110" height="10" rx="0" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Stem - tapers upward -->
+    <path d="M-25,90 Q-30,50 -20,0 L20,0 Q30,50 25,90" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Buttons on stem -->
+    <circle cx="-15" cy="55" r="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <circle cx="0" cy="55" r="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <circle cx="15" cy="55" r="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="30" y="58" font-size="8">3× buttons</text>
+
+    <!-- Dome cap -->
+    <path d="M-75,0 Q-75,-60 0,-80 Q75,-60 75,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spots on cap -->
+    <circle cx="-25" cy="-50" r="10" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="20" cy="-60" r="8" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="-40" cy="-25" r="7" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="45" cy="-30" r="9" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="5" cy="-35" r="6" fill="white" stroke="black" stroke-width="0.3"/>
+
+    <!-- Screen angled under cap edge -->
+    <g transform="rotate(-30, -50, -5)">
+      <rect x="-80" y="-25" width="70" height="45" rx="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+      <text x="-45" y="0" text-anchor="middle" font-size="7" fill="#336">Screen ~30°</text>
+    </g>
+
+    <!-- Dimensions -->
+    <line x1="-75" y1="118" x2="75" y2="118" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="130" text-anchor="middle" font-size="9" fill="#CC0000">70mm cap ⌀</text>
+    <line x1="90" y1="-80" x2="90" y2="100" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="105" y="15" text-anchor="middle" font-size="9" fill="#CC0000" transform="rotate(90,105,15)">120mm total</text>
+  </g>
+
+  <!-- ==================== SIDE PROFILE (top-center) ==================== -->
+  <g transform="translate(600,270)">
+    <!-- Wide base -->
+    <ellipse cx="0" cy="100" rx="55" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <rect x="-55" y="90" width="110" height="10" rx="0" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Stem -->
+    <path d="M-22,90 Q-28,50 -18,0 L18,0 Q28,50 22,90" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Dome cap -->
+    <path d="M-75,0 Q-75,-60 0,-80 Q75,-60 75,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spots -->
+    <circle cx="-30" cy="-45" r="9" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="25" cy="-55" r="7" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="50" cy="-25" r="8" fill="white" stroke="black" stroke-width="0.3"/>
+
+    <!-- Screen under cap edge at 30° angle -->
+    <line x1="-65" y1="0" x2="-45" y2="-35" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="2,2"/>
+    <text x="-75" y="-20" font-size="8" fill="#CC0000">~30°</text>
+    <!-- Screen edge visible -->
+    <line x1="-60" y1="-5" x2="-35" y2="-35" stroke="black" stroke-width="0.8"/>
+    <line x1="-55" y1="-2" x2="-30" y2="-32" stroke="black" stroke-width="0.8"/>
+    <text x="-70" y="10" font-size="8">Screen</text>
+
+    <!-- Cap dome height -->
+    <line x1="-90" y1="0" x2="-90" y2="-80" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="-105" y="-35" text-anchor="middle" font-size="8" fill="#CC0000" transform="rotate(-90,-105,-35)">Cap ~50mm</text>
+
+    <!-- Stem taper callout -->
+    <line x1="-22" y1="88" x2="22" y2="88" stroke="#CC0000" stroke-width="0.3" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="85" text-anchor="middle" font-size="7" fill="#CC0000">~40mm base</text>
+    <line x1="-18" y1="5" x2="18" y2="5" stroke="#CC0000" stroke-width="0.3" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="15" text-anchor="middle" font-size="7" fill="#CC0000">~35mm neck</text>
+  </g>
+
+  <!-- ==================== BACK VIEW (top-right) ==================== -->
+  <g transform="translate(1000,270)">
+    <!-- Wide base -->
+    <ellipse cx="0" cy="100" rx="55" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <rect x="-55" y="90" width="110" height="10" rx="0" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Stem back -->
+    <path d="M-25,90 Q-30,50 -20,0 L20,0 Q30,50 25,90" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- USB-C on base back -->
+    <rect x="-7" y="85" width="14" height="5" rx="2" fill="#333" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="82" text-anchor="middle" font-size="8">USB-C</text>
+
+    <!-- Dome cap -->
+    <path d="M-75,0 Q-75,-60 0,-80 Q75,-60 75,0 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spots -->
+    <circle cx="30" cy="-50" r="10" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="-20" cy="-60" r="7" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="50" cy="-20" r="8" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="-45" cy="-30" r="9" fill="white" stroke="black" stroke-width="0.3"/>
+  </g>
+
+  <!-- ==================== TOP-DOWN VIEW (bottom-left) ==================== -->
+  <g transform="translate(200,690)">
+    <!-- Cap dome from above — full circle -->
+    <circle cx="0" cy="0" r="85" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Spots on cap -->
+    <circle cx="-30" cy="-40" r="14" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="35" cy="-25" r="11" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="-15" cy="30" r="12" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="40" cy="35" r="9" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="-50" cy="10" r="10" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="10" cy="-60" r="8" fill="white" stroke="black" stroke-width="0.3"/>
+    <circle cx="60" cy="0" r="7" fill="white" stroke="black" stroke-width="0.3"/>
+
+    <!-- Stem hidden below (dashed) -->
+    <circle cx="0" cy="0" r="25" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text x="0" y="4" text-anchor="middle" font-size="8" fill="#888">Stem below</text>
+
+    <!-- Dimensions -->
+    <line x1="-85" y1="100" x2="85" y2="100" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="112" text-anchor="middle" font-size="9" fill="#CC0000">70mm cap diameter</text>
+  </g>
+
+  <!-- ==================== CROSS-SECTION (bottom-center) ==================== -->
+  <g transform="translate(600,680)">
+    <!-- Cap shell — cut in half vertically -->
+    <path d="M0,-80 Q-75,-60 -75,0 L-70,0 Q-70,-55 0,-75 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <path d="M0,-80 Q75,-60 75,0 L70,0 Q70,-55 0,-75 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Cap interior - hollow -->
+    <path d="M-70,0 Q-70,-55 0,-75 Q70,-55 70,0 Z" fill="#F5F5F5" stroke="none"/>
+
+    <!-- Speaker inside cap -->
+    <ellipse cx="0" cy="-40" rx="20" ry="8" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-38" text-anchor="middle" font-size="7">Speaker 28mm</text>
+
+    <!-- Gill area / speaker vent at cap rim -->
+    <line x1="-70" y1="0" x2="-60" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <line x1="-65" y1="0" x2="-55" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <line x1="-60" y1="0" x2="-50" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <line x1="70" y1="0" x2="60" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <line x1="65" y1="0" x2="55" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <line x1="60" y1="0" x2="50" y2="-8" stroke="#888" stroke-width="0.3"/>
+    <text x="85" y="-5" font-size="7">Gill vents</text>
+
+    <!-- Stem walls -->
+    <rect x="-25" y="0" width="5" height="90" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <rect x="20" y="0" width="5" height="90" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+    <!-- Screen at angle inside upper stem / cap junction -->
+    <g transform="rotate(-30, -10, 5)">
+      <rect x="-35" y="-15" width="55" height="35" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+      <text x="-8" y="5" text-anchor="middle" font-size="7" fill="#336">Screen 30°</text>
+    </g>
+
+    <!-- PCB in stem -->
+    <rect x="-18" y="50" width="36" height="4" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="35" y="54" font-size="8">PCB</text>
+
+    <!-- Base -->
+    <rect x="-55" y="90" width="110" height="10" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <ellipse cx="0" cy="100" rx="55" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Section markers -->
+    <text x="-80" y="-80" font-size="9" font-weight="bold">A</text>
+    <text x="76" y="-80" font-size="9" font-weight="bold">A</text>
+
+    <!-- Overall height -->
+    <line x1="-95" y1="-80" x2="-95" y2="100" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="-108" y="15" text-anchor="middle" font-size="9" fill="#CC0000" transform="rotate(-90,-108,15)">120mm total</text>
+
+    <!-- Cap height -->
+    <line x1="90" y1="-80" x2="90" y2="0" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="105" y="-35" text-anchor="middle" font-size="8" fill="#CC0000" transform="rotate(90,105,-35)">~50mm cap</text>
+
+    <!-- Wall callout -->
+    <line x1="-25" y1="70" x2="-20" y2="70" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="-22" y="65" text-anchor="middle" font-size="7" fill="#CC0000">2mm</text>
+  </g>
+
+  <!-- ==================== DETAIL: Cap Joint &amp; Gills (bottom-right) ==================== -->
+  <g transform="translate(1000,680)">
+    <rect x="-130" y="-155" width="260" height="310" rx="4" fill="#F8F8F8" stroke="black" stroke-width="0.3"/>
+    <text x="0" y="-135" text-anchor="middle" font-size="10" font-weight="bold">Cap-to-Stem Joint &amp; Gill Vent</text>
+
+    <!-- Zoomed cap rim and stem top -->
+    <!-- Cap shell wall -->
+    <path d="M-100,-40 Q-100,-100 0,-110 Q100,-100 100,-40" fill="none" stroke="black" stroke-width="0.8"/>
+    <!-- Inner cap wall -->
+    <path d="M-92,-40 Q-92,-92 0,-102 Q92,-92 92,-40" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+    <!-- Cap wall thickness (hatched area between outer and inner) -->
+    <path d="M-100,-40 Q-100,-100 0,-110 Q100,-100 100,-40 L92,-40 Q92,-92 0,-102 Q-92,-92 -92,-40 Z" fill="url(#hatch)" stroke="none"/>
+
+    <!-- Stem top -->
+    <rect x="-30" y="-40" width="60" height="60" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Registration lip on stem -->
+    <rect x="-35" y="-45" width="70" height="8" rx="2" fill="#CCC" stroke="black" stroke-width="0.5"/>
+    <text x="50" y="-38" font-size="8">Registration lip</text>
+
+    <!-- Cap sits over lip -->
+    <line x1="-40" y1="-40" x2="-100" y2="-40" stroke="black" stroke-width="0.5"/>
+    <line x1="40" y1="-40" x2="100" y2="-40" stroke="black" stroke-width="0.5"/>
+
+    <!-- Lift-off arrows -->
+    <line x1="-60" y1="-60" x2="-60" y2="-90" stroke="#CC0000" stroke-width="0.8" marker-end="url(#arrow-end)"/>
+    <line x1="60" y1="-60" x2="60" y2="-90" stroke="#CC0000" stroke-width="0.8" marker-end="url(#arrow-end)"/>
+    <text x="0" y="-95" text-anchor="middle" font-size="9" fill="#CC0000">Cap lifts off</text>
+
+    <!-- Gill area detail -->
+    <text x="0" y="40" text-anchor="middle" font-size="9" font-weight="bold">Gill Speaker Vent</text>
+
+    <!-- Cap underside (gill area) -->
+    <rect x="-90" y="55" width="180" height="12" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Gill slits -->
+    <line x1="-75" y1="55" x2="-70" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="-60" y1="55" x2="-55" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="-45" y1="55" x2="-40" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="-30" y1="55" x2="-25" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="-15" y1="55" x2="-10" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="0" y1="55" x2="5" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="15" y1="55" x2="20" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="30" y1="55" x2="35" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="45" y1="55" x2="50" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="60" y1="55" x2="65" y2="67" stroke="#888" stroke-width="0.8"/>
+    <line x1="75" y1="55" x2="80" y2="67" stroke="#888" stroke-width="0.8"/>
+
+    <!-- Speaker above gills (inside cap) -->
+    <ellipse cx="0" cy="48" rx="25" ry="5" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="50" text-anchor="middle" font-size="7" fill="white">Speaker</text>
+
+    <!-- Sound direction arrows -->
+    <line x1="-20" y1="68" x2="-25" y2="85" stroke="#CC0000" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+    <line x1="0" y1="68" x2="0" y2="85" stroke="#CC0000" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+    <line x1="20" y1="68" x2="25" y2="85" stroke="#CC0000" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+    <text x="0" y="97" text-anchor="middle" font-size="8" fill="#CC0000">Sound exits through gills</text>
+
+    <!-- Gill slot dimension -->
+    <line x1="-75" y1="75" x2="-70" y2="75" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="-72" y="85" text-anchor="middle" font-size="7" fill="#CC0000">~1.5mm</text>
+  </g>
+</svg>

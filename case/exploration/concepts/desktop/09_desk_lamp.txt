@@ -1,0 +1,298 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 09                              ║
+║                    DESK LAMP                                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+DESCRIPTION
+───────────
+Adjustable gooseneck desk lamp form factor. The 5.0" screen is housed in a
+compact head piece at the top of a flexible metal gooseneck tube. The
+gooseneck allows infinite angle adjustment — tilt, rotate, raise, lower.
+A weighted circular base contains the speaker, three buttons in a row on
+top, and the USB-C port in back. The screen head has a slight hood/shade
+protruding over the top edge, evoking a real desk lamp. Internal wiring
+runs through the gooseneck center. A steel disc in the base provides
+stability against the leverage of the extended gooseneck.
+
+OVERALL DIMENSIONS
+──────────────────
+  Head:       65 × 55 × 20 mm (W × H × D at thickest)
+  Gooseneck:  8 mm diameter, 150 mm long
+  Base:       70 mm diameter × 20 mm tall
+  Wall:       2.0 mm (head and base shells)
+  Total max height: ~190 mm (gooseneck fully vertical)
+
+
+FRONT VIEW (GOOSENECK VERTICAL)
+───────────────────────────────
+
+          65 mm
+     ◄──────────────►
+     ┌──────────────┐───── Hood/shade overhang        ▲
+     │ ╔══════════╗ │                                  │
+     │ ║  SCREEN  ║ │  Screen head                     │
+     │ ║  5.0"    ║ │  55 mm tall                      │
+     │ ║ 120×75mm ║ │  65 mm wide                      │
+     │ ║ module   ║ │  20 mm deep                      │
+     │ ╚══════════╝ │                                  │
+     └──────┬───────┘                                  │
+            │                                          │
+            │  Gooseneck                               │  ~190 mm
+            │  8mm dia tube                            │  max
+            │  150mm long                              │
+            │  (flexible)                              │
+            │                                          │
+            │                                          │
+     ┌──────┴───────────┐                              │
+     │   ■    ■    ■    │  3 buttons on base top       │
+     │                  │                              │
+     │  ╭────────────╮  │  Base: 70mm dia              │
+     │  │  WEIGHTED  │  │  20mm tall                   │
+     │  │    BASE    │  │                              │
+     │  ╰────────────╯  │                              │
+     └──────────────────┘                              ▼
+
+
+SIDE PROFILE
+────────────
+
+     ┌─────────────┐───── Hood overhang (5mm)
+     │ ╔═════════╗ │
+     │ ║ SCREEN  ║ │◄── 20 mm deep head
+     │ ╚═════════╝ │
+     └──────┬──────┘
+            │╲
+            │ ╲
+            │  ╲         Gooseneck shown
+            │   │        in curved pose
+            │  ╱
+            │ ╱
+            │╱
+     ┌──────┴──────────┐
+     │ ■  ■  ■  buttons│◄── Base top surface
+     │                  │
+     │  ╭────speaker──╮ │◄── Speaker inside
+     │  │  70mm base  │ │    20 mm tall
+     └──┴─────────────┴─┘
+      ▓▓              ▓▓ ◄── Rubber ring / feet
+
+
+BACK VIEW
+─────────
+
+     ┌──────────────┐
+     │              │
+     │  SCREEN HEAD │  (back side — flat panel)
+     │  BACK PLATE  │
+     │              │
+     └──────┬───────┘
+            │
+            │  Gooseneck
+            │
+            │
+     ┌──────┴───────────┐
+     │                  │
+     │    ┌──────┐      │
+     │    │USB-C │      │◄── USB-C cutout
+     │    │8.94× │      │    on base back
+     │    │3.26  │      │
+     │    └──────┘      │
+     └──────────────────┘
+
+
+CROSS-SECTION (SIDE CUT THROUGH CENTER)
+────────────────────────────────────────
+
+     ┌───────────────────┐
+     │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│◄── Hood/shade (2mm shell)
+     │ ╔═══════════════╗ │
+     │ ║    SCREEN     ║ │◄── 5.0" module (120×75×4.5mm)
+     │ ║   MODULE      ║ │    held by edge clips
+     │ ╚═══════════════╝ │
+     │ ┌───────────────┐ │◄── Slim PCB carrier board
+     │ │  FPC + wires  │ │    (optional — or just wires)
+     │ └───────┬───────┘ │
+     └─────────┤─────────┘
+               │
+          ┌────┤────┐
+          │ ○  │  ○ │◄── Gooseneck tube (8mm OD)
+          │  wires  │    Flexible chrome/black
+          │ inside  │    Internal: 4-wire bundle
+          │ ○  │  ○ │    (power + data for screen)
+          └────┤────┘
+               │
+     ┌─────────┴──────────┐
+     │  ┌──────────────┐  │
+     │  │   PCB MAIN   │  │◄── PCB (110×65mm, trimmed/folded
+     │  │  ESP32-S3    │  │    or custom smaller PCB)
+     │  │  ◉ speaker   │  │◄── 28mm speaker, fires up
+     │  │   28mm       │  │    through top vent holes
+     │  └──────────────┘  │
+     │  ┌──────────────┐  │
+     │  │ STEEL DISC   │  │◄── Counterweight (60mm dia)
+     │  │  ~120g       │  │    press-fit in base bottom
+     │  └──────────────┘  │
+     └════════════════════┘
+      ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ◄── Rubber ring base
+
+
+COMPONENT LAYOUT
+────────────────
+
+  ┌─────────────────────────────────────────────┐
+  │  SCREEN HEAD (65 × 55 × 20 mm)             │
+  │                                             │
+  │  ┌───────────────────────────────────────┐  │
+  │  │ 5.0" SSD1963 touch (120×75×4.5mm)    │  │
+  │  │ Landscape — active area 108×64.8mm   │  │
+  │  │ FPC exits bottom toward gooseneck    │  │
+  │  └───────────────────────────────────────┘  │
+  │  Hood/shade: 5mm overhang on top edge       │
+  │  Back plate: removable (2 screws)           │
+  └─────────────────────────┬───────────────────┘
+                            │
+                     GOOSENECK TUBE
+                     8mm OD, 6mm ID
+                     150mm length
+                     Chrome or matte black
+                     Contains: 4-wire cable
+                     (VCC, GND, SDA, SCL or SPI)
+                            │
+  ┌─────────────────────────┴───────────────────┐
+  │  BASE (70mm dia × 20mm tall)                │
+  │                                             │
+  │  Top surface:                               │
+  │    ┌─────────────────────────────────────┐  │
+  │    │  ■      ■      ■                   │  │
+  │    │ BTN1  BTN2   BTN3                  │  │
+  │    │ 6mm tactile, 15mm spacing          │  │
+  │    │ + speaker vent holes (ring pattern)│  │
+  │    └─────────────────────────────────────┘  │
+  │                                             │
+  │  Internal:                                  │
+  │    PCB (custom circular ~55mm dia           │
+  │         or standard 110×65 trimmed)         │
+  │    ESP32-S3-MINI-1 (15.4×20.5×2.4mm)       │
+  │    Speaker (28mm dia × 3.5mm)               │
+  │    Steel counterweight disc (60mm, ~120g)   │
+  │                                             │
+  │  Back:                                      │
+  │    USB-C cutout (8.94×3.26mm)               │
+  └─────────────────────────────────────────────┘
+
+
+MOUNTING DETAILS
+────────────────
+
+  Screen Mount (in head):
+    - Landscape, 120×75mm module fills head cavity
+    - 4 internal clip tabs grip module edges
+    - Active area visible through front bezel opening
+    - Back plate secured with 2 × M2 screws
+    - Head shell: 2-part (front bezel + back plate)
+
+  Gooseneck Connection:
+    - Bottom of head: threaded brass insert (M8 or press-fit)
+    - Top of base: threaded brass insert (M8 or press-fit)
+    - Gooseneck tube threads into both ends
+    - Alternative: press-fit with adhesive + set screw
+    - Cable passes through tube center (6mm ID)
+
+  PCB Mount (in base):
+    - Custom circular PCB recommended (55mm dia)
+    - Or: standard 110×65mm PCB trimmed to fit
+    - Mounted on 3 × M2 standoffs (3mm height)
+    - Component side up (buttons and speaker face up)
+
+  Buttons:
+    - 3 × 6mm tactile switches on PCB
+    - Through-hole in base top surface
+    - Custom flat keycaps flush with surface
+    - 15mm center-to-center spacing
+    - Arranged in arc following base curvature
+
+  Speaker:
+    - 28mm dia × 3.5mm on PCB, faces up
+    - Sound exits through vent holes in base top
+    - Vent pattern: ring of small holes around button area
+    - Sealed below by steel disc (acts as baffle)
+
+  USB-C:
+    - Cutout in base side wall (rear-facing)
+    - 8.94 × 3.26 mm opening
+    - 5mm from base bottom edge
+    - Strain relief clip inside
+
+  Counterweight:
+    - Steel disc: 60mm dia × 3-5mm thick (~120g)
+    - Press-fit into base bottom cavity
+    - Critical: must offset gooseneck + head weight
+    - Base must not tip when gooseneck extended horizontally
+
+
+ASSEMBLY NOTES
+──────────────
+
+  1. Press steel counterweight disc into base bottom cavity
+  2. Apply rubber ring/feet to base bottom
+  3. Mount PCB onto base standoffs (3 × M2 screws)
+  4. Solder/connect speaker to PCB
+  5. Route USB-C extension to base side cutout
+  6. Thread gooseneck tube into base brass insert
+  7. Route 4-wire cable through gooseneck tube
+  8. Thread gooseneck tube into head brass insert
+  9. Connect cable to screen FPC/connector inside head
+  10. Seat screen module into head bezel clips
+  11. Attach head back plate (2 × M2 screws)
+
+  Head shell: 2-part (front bezel + back plate)
+  Base shell: 2-part (top dome + bottom plate)
+  Gooseneck: purchased part (standard chrome/black flexible tube)
+  Material: PLA/PETG for shells, chrome gooseneck tube
+  Print orientation: Head front face-down, base halves flat
+
+
+SPECIAL FEATURES
+────────────────
+
+  Infinite Angle Adjustment:
+    - Gooseneck maintains any position set by user
+    - Tilt screen toward face, away, sideways — any angle
+    - Raise high for standing desk, lower for sitting
+    - Twist to switch between landscape orientations
+    - No locks or detents needed — friction holds position
+
+  Hood/Shade:
+    - 5mm overhang on top edge of screen head
+    - Reduces overhead light glare on screen
+    - Evokes desk lamp aesthetic
+    - Can be extended to 10mm for more shade effect
+    - Slight downward curve on leading edge
+
+  Cable Management:
+    - All wiring hidden inside gooseneck tube
+    - Only USB-C cable visible (exits base back)
+    - Clean single-cable desk footprint
+    - Internal cable has slack for full gooseneck range
+
+  Weighted Base Stability:
+    - 120g steel disc counterbalances ~50g head + gooseneck
+    - Base stays planted even at extreme gooseneck angles
+    - Rubber ring base prevents sliding
+    - Low center of gravity design
+
+  Compact Base Controls:
+    - Buttons on base top — always accessible
+    - Speaker also in base — sound comes from desk level
+    - All electronics in base — head is just screen
+    - Minimizes head weight for better gooseneck behavior
+
+  Desk Lamp Illusion:
+    - From across a room, looks like a small desk lamp
+    - Screen "glow" enhances the lamp metaphor
+    - Hood/shade sells the silhouette
+    - Conversation starter: "Is that a lamp or a screen?"
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Design 09: Desk Lamp — Flexible gooseneck with infinite adjustment        ║
+╚══════════════════════════════════════════════════════════════════════════════╝

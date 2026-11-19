@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch1" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 26: Chamfered Box — FreeCAD Final Design (60.0mm x 60.0mm x 15.1mm)</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="270" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Case outline with rounded corners -->
+  <rect x="120" y="80" width="300" height="305" rx="16" ry="16" fill="#E0E0E0" stroke="black" stroke-width="0.8"/>
+
+  <!-- Chamfer indication lines (front face bevel) -->
+  <rect x="128" y="88" width="284" height="289" rx="12" ry="12" fill="none" stroke="#999" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="440" y="95" font-family="sans-serif" font-size="8" fill="#999">2.5mm chamfer</text>
+
+  <!-- Display zone label -->
+  <text x="48" y="135" font-family="sans-serif" font-size="8" fill="#555" transform="rotate(-90,48,135)">Display zone 39.2mm</text>
+  <line x1="60" y1="80" x2="60" y2="283" stroke="#555" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Display module pocket outline -->
+  <rect x="145" y="93" width="250" height="178" rx="2" ry="2" fill="none" stroke="#888" stroke-width="0.3" stroke-dasharray="4,2"/>
+  <text x="395" y="108" font-family="sans-serif" font-size="7" fill="#888">Module 51.8x36.2</text>
+
+  <!-- Active display area -->
+  <rect x="170" y="110" width="200" height="150" rx="3" ry="3" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="270" y="185" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#333">Active Area</text>
+  <text x="270" y="198" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.8 x 30.6mm</text>
+
+  <!-- FPC tail indicator -->
+  <rect x="145" y="165" width="8" height="30" fill="#DDA0" stroke="#888" stroke-width="0.3"/>
+  <text x="105" y="183" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">FPC tail</text>
+
+  <!-- Button zone divider -->
+  <line x1="120" y1="283" x2="420" y2="283" stroke="#999" stroke-width="0.3" stroke-dasharray="4,2"/>
+  <text x="48" y="325" font-family="sans-serif" font-size="8" fill="#555" transform="rotate(-90,48,325)">Buttons 15mm</text>
+
+  <!-- 3 main buttons - elongated hexagon shape -->
+  <!-- Approve button -->
+  <polygon points="204,310 228,310 234,318 228,326 204,326 198,318" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="216" y="342" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Approve</text>
+
+  <!-- Action button -->
+  <polygon points="252,310 276,310 282,318 276,326 252,326 246,318" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="264" y="342" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Action</text>
+
+  <!-- Reject button -->
+  <polygon points="300,310 324,310 330,318 324,326 300,326 294,318" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="312" y="342" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">Reject</text>
+
+  <!-- Wake button removed — any button press wakes from deep sleep -->
+
+  <!-- USB zone divider -->
+  <line x1="120" y1="360" x2="420" y2="360" stroke="#999" stroke-width="0.3" stroke-dasharray="4,2"/>
+  <text x="48" y="372" font-family="sans-serif" font-size="7" fill="#555" transform="rotate(-90,48,372)">USB 5mm</text>
+
+  <!-- LED hole -->
+  <circle cx="155" cy="372" r="5" fill="#FFEE88" stroke="black" stroke-width="0.5"/>
+  <text x="155" y="382" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#333">LED</text>
+
+  <!-- USB-C cutout -->
+  <rect x="250" y="381" width="45" height="4" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="272" y="395" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Dimension: overall width 60.0mm -->
+  <line x1="120" y1="415" x2="420" y2="415" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="120" y1="405" x2="120" y2="425" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="420" y1="405" x2="420" y2="425" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="270" y="430" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">60.0mm</text>
+
+  <!-- Dimension: overall height 60.0mm -->
+  <line x1="450" y1="80" x2="450" y2="385" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="440" y1="80" x2="460" y2="80" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="440" y1="385" x2="460" y2="385" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="470" y="238" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">60.0mm</text>
+
+  <!-- Dimension: button spacing 14mm -->
+  <line x1="216" y1="348" x2="264" y2="348" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="240" y="356" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#CC0000">14mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-right) ============ -->
+  <text x="820" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side View (Profile)</text>
+
+  <!-- Case side profile -->
+  <path d="M770,80 L770,369 Q770,385 786,385 L854,385 Q870,385 870,369 L870,80 Q870,80 854,80 L786,80 Q770,80 770,80 Z" fill="#E0E0E0" stroke="black" stroke-width="0.8"/>
+
+  <!-- Front chamfer (left side = front face) -->
+  <path d="M770,95 L780,80" stroke="#333" stroke-width="0.5"/>
+  <path d="M770,370 L780,385" stroke="#333" stroke-width="0.5"/>
+  <line x1="770" y1="95" x2="770" y2="370" stroke="black" stroke-width="0.8"/>
+  <text x="755" y="90" text-anchor="end" font-family="sans-serif" font-size="7" fill="#555">2.5mm</text>
+  <text x="755" y="99" text-anchor="end" font-family="sans-serif" font-size="7" fill="#555">chamfer</text>
+
+  <!-- Back chamfer (right side = back) -->
+  <path d="M870,84 L866,80" stroke="#333" stroke-width="0.5"/>
+  <path d="M870,381 L866,385" stroke="#333" stroke-width="0.5"/>
+  <text x="885" y="90" font-family="sans-serif" font-size="7" fill="#555">1.0mm</text>
+
+  <!-- Internal layers visible from side -->
+  <!-- Screen edge -->
+  <line x1="770" y1="115" x2="790" y2="115" stroke="#4488CC" stroke-width="1.5"/>
+  <line x1="770" y1="260" x2="790" y2="260" stroke="#4488CC" stroke-width="1.5"/>
+  <line x1="790" y1="115" x2="790" y2="260" stroke="#4488CC" stroke-width="1"/>
+  <text x="755" y="190" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- PCB edge -->
+  <line x1="800" y1="175" x2="800" y2="360" stroke="#90C695" stroke-width="1"/>
+  <text x="805" y="270" font-family="sans-serif" font-size="8" fill="#5A9E5F">PCB</text>
+
+  <!-- Battery -->
+  <rect x="830" y="195" width="30" height="160" rx="2" ry="2" fill="none" stroke="#E8A040" stroke-width="0.8"/>
+  <text x="880" y="280" font-family="sans-serif" font-size="8" fill="#E8A040">Battery</text>
+
+  <!-- Button bumps on front face -->
+  <rect x="766" y="300" width="4" height="8" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <rect x="766" y="320" width="4" height="6" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="755" y="308" text-anchor="end" font-family="sans-serif" font-size="7" fill="#333">Btns</text>
+
+  <!-- USB-C at bottom -->
+  <rect x="778" y="383" width="12" height="5" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="778" y="398" font-family="sans-serif" font-size="7" fill="#333">USB-C</text>
+
+  <!-- Labels -->
+  <text x="770" y="415" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Front</text>
+  <text x="870" y="415" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Back</text>
+
+  <!-- Dimension: depth 15.1mm -->
+  <line x1="770" y1="440" x2="870" y2="440" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="770" y1="430" x2="770" y2="450" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="870" y1="430" x2="870" y2="450" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="820" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">15.1mm</text>
+
+  <!-- Dimension: height 60.0mm -->
+  <line x1="910" y1="80" x2="910" y2="385" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="900" y1="80" x2="920" y2="80" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="900" y1="385" x2="920" y2="385" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="930" y="238" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">60.0mm</text>
+
+  <!-- ============ VIEW 3: CROSS-SECTION (bottom-left) ============ -->
+  <text x="270" y="500" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Depth Stack)</text>
+
+  <!-- Cross section outline -->
+  <rect x="120" y="520" width="300" height="200" fill="none" stroke="black" stroke-width="0.8"/>
+
+  <!-- Front wall -->
+  <rect x="120" y="520" width="30" height="200" fill="url(#hatch1)" stroke="black" stroke-width="0.5"/>
+  <text x="135" y="630" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333" transform="rotate(-90,135,630)">Front wall 1.5mm</text>
+
+  <!-- Display -->
+  <rect x="150" y="520" width="50" height="200" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="175" y="630" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333" transform="rotate(-90,175,630)">Display 2.5mm</text>
+
+  <!-- Gap (ESP32) -->
+  <rect x="200" y="520" width="50" height="200" fill="#F5F5F5" stroke="black" stroke-width="0.3"/>
+  <text x="225" y="630" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333" transform="rotate(-90,225,630)">Gap 2.5mm (ESP32)</text>
+
+  <!-- PCB -->
+  <rect x="250" y="520" width="32" height="200" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="266" y="630" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333" transform="rotate(-90,266,630)">PCB 1.6mm</text>
+
+  <!-- Gap -->
+  <rect x="282" y="520" width="10" height="200" fill="#FAFAFA" stroke="black" stroke-width="0.3"/>
+  <text x="287" y="615" text-anchor="middle" font-family="sans-serif" font-size="6" fill="#333" transform="rotate(-90,287,615)">0.5</text>
+
+  <!-- Battery -->
+  <rect x="292" y="520" width="98" height="200" fill="#FFD580" stroke="black" stroke-width="0.5"/>
+  <text x="341" y="630" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333" transform="rotate(-90,341,630)">Battery 5.0mm</text>
+
+  <!-- Back wall -->
+  <rect x="390" y="520" width="30" height="200" fill="url(#hatch1)" stroke="black" stroke-width="0.5"/>
+  <text x="405" y="630" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333" transform="rotate(-90,405,630)">Back wall 1.5mm</text>
+
+  <!-- Z dimensions -->
+  <text x="135" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">Z=0</text>
+  <text x="150" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">1.5</text>
+  <text x="200" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">4.0</text>
+  <text x="250" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">6.5</text>
+  <text x="282" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">8.1</text>
+  <text x="292" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">8.6</text>
+  <text x="390" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">13.6</text>
+  <text x="420" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">15.1</text>
+
+  <!-- Total depth dimension -->
+  <line x1="120" y1="760" x2="420" y2="760" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="120" y1="750" x2="120" y2="770" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="420" y1="750" x2="420" y2="770" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="270" y="780" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">15.1mm total depth</text>
+
+  <!-- Front/Back labels -->
+  <text x="120" y="515" font-family="sans-serif" font-size="9" fill="#555">Front</text>
+  <text x="400" y="515" font-family="sans-serif" font-size="9" fill="#555">Back</text>
+
+  <!-- ============ VIEW 4: EXPLODED VIEW (bottom-right) ============ -->
+  <text x="820" y="500" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Exploded View (Front to Back)</text>
+
+  <!-- Front shell -->
+  <rect x="720" y="520" width="200" height="50" rx="8" ry="8" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Display window in shell -->
+  <rect x="760" y="530" width="120" height="30" rx="2" ry="2" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Button holes -->
+  <polygon points="775,565 787,565 790,568 787,571 775,571 772,568" fill="white" stroke="black" stroke-width="0.3"/>
+  <polygon points="798,565 810,565 813,568 810,571 798,571 795,568" fill="white" stroke="black" stroke-width="0.3"/>
+  <polygon points="821,565 833,565 836,568 833,571 821,571 818,568" fill="white" stroke="black" stroke-width="0.3"/>
+  <text x="930" y="545" font-family="sans-serif" font-size="9" fill="#555">Front Shell</text>
+  <text x="930" y="557" font-family="sans-serif" font-size="8" fill="#888">1.5mm wall, 3mm radius</text>
+
+  <!-- Spacing arrow -->
+  <line x1="820" y1="575" x2="820" y2="595" stroke="#999" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+
+  <!-- Display module -->
+  <rect x="740" y="600" width="160" height="35" rx="2" ry="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="820" y="621" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display 51.8 x 36.2mm</text>
+  <text x="930" y="618" font-family="sans-serif" font-size="9" fill="#555">TFT LCD</text>
+  <!-- FPC tail -->
+  <rect x="735" y="612" width="5" height="18" fill="#DDA0" stroke="#888" stroke-width="0.3"/>
+  <text x="725" y="625" text-anchor="end" font-family="sans-serif" font-size="7" fill="#888">FPC</text>
+
+  <!-- Spacing arrow -->
+  <line x1="820" y1="640" x2="820" y2="660" stroke="#999" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+
+  <!-- PCB -->
+  <rect x="750" y="665" width="140" height="25" rx="1" ry="1" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <!-- ESP32 on PCB -->
+  <rect x="790" y="668" width="50" height="15" rx="1" ry="1" fill="#70A675" stroke="black" stroke-width="0.3"/>
+  <text x="815" y="679" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">ESP32-S3</text>
+  <text x="930" y="680" font-family="sans-serif" font-size="9" fill="#555">PCB 45 x 40mm</text>
+  <!-- USB-C on bottom edge -->
+  <rect x="805" y="688" width="20" height="5" rx="2" fill="#AAA" stroke="black" stroke-width="0.3"/>
+  <text x="835" y="695" font-family="sans-serif" font-size="7" fill="#888">USB-C</text>
+
+  <!-- Spacing arrow -->
+  <line x1="820" y1="698" x2="820" y2="718" stroke="#999" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+
+  <!-- Battery -->
+  <rect x="760" y="723" width="120" height="40" rx="3" ry="3" fill="#FFD580" stroke="#E8A040" stroke-width="0.5"/>
+  <text x="820" y="747" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Battery 30 x 35 x 5mm</text>
+  <text x="930" y="745" font-family="sans-serif" font-size="9" fill="#555">LiPo 300-500mAh</text>
+
+  <!-- Spacing arrow -->
+  <line x1="820" y1="768" x2="820" y2="788" stroke="#999" stroke-width="0.5" marker-end="url(#arrow-end)"/>
+
+  <!-- Back cover -->
+  <rect x="720" y="793" width="200" height="35" rx="8" ry="8" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <!-- Standoffs -->
+  <circle cx="752" cy="810" r="5" fill="#B0B0B0" stroke="black" stroke-width="0.3"/>
+  <circle cx="888" cy="810" r="5" fill="#B0B0B0" stroke="black" stroke-width="0.3"/>
+  <circle cx="752" cy="818" r="5" fill="#B0B0B0" stroke="black" stroke-width="0.3"/>
+  <circle cx="888" cy="818" r="5" fill="#B0B0B0" stroke="black" stroke-width="0.3"/>
+  <text x="930" y="810" font-family="sans-serif" font-size="9" fill="#555">Back Cover</text>
+  <text x="930" y="822" font-family="sans-serif" font-size="8" fill="#888">4x M2 standoffs, snap-fit</text>
+
+  <!-- ============ LEGEND (bottom-right corner) ============ -->
+  <rect x="700" y="845" width="12" height="12" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <text x="718" y="855" font-family="sans-serif" font-size="8" fill="#333">Display</text>
+  <rect x="770" y="845" width="12" height="12" fill="#90C695" stroke="black" stroke-width="0.3"/>
+  <text x="788" y="855" font-family="sans-serif" font-size="8" fill="#333">PCB</text>
+  <rect x="825" y="845" width="12" height="12" fill="#FFD580" stroke="black" stroke-width="0.3"/>
+  <text x="843" y="855" font-family="sans-serif" font-size="8" fill="#333">Battery</text>
+  <rect x="895" y="845" width="12" height="12" fill="url(#hatch1)" stroke="black" stroke-width="0.3"/>
+  <text x="913" y="855" font-family="sans-serif" font-size="8" fill="#333">Shell wall</text>
+
+  <!-- Design tag -->
+  <rect x="30" y="855" width="180" height="25" rx="4" fill="#E94560" opacity="0.9"/>
+  <text x="120" y="872" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white" font-weight="bold">CHOSEN BASE DESIGN</text>
+</svg>

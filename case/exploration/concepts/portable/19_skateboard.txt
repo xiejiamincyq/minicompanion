@@ -1,0 +1,258 @@
+DESIGN 19: SKATEBOARD / FINGERBOARD
+=====================================
+Very elongated landscape slab shaped like a miniature skateboard. Screen sits
+flush on the flat deck top. Nose and tail kick up at gentle 15-degree angles.
+Four 8mm spinning wheels on truck assemblies underneath. Grip tape texture
+on side rails. Three tiny buttons clustered on the kicktail end.
+Playful desk toy that also happens to be a Devotchi.
+
+Overall: 96mm long x 26mm wide x 14mm tall (at deck, 18mm at wheels)
+Weight target: ~42g with battery
+Orientation: Landscape
+Shell: 3-piece (deck top + deck base + 2x truck clips), snap-fit
+
+
+FRONT VIEW (top-down, screen facing up)
+────────────────────────────────────────
+
+    nose                                          tail
+     ╱╲                                           ╱╲
+    ╱  ╲─────────────────────────────────────────╱  ╲
+   │    ┌───────────────────────────────────┐ (●)(●)(●) │
+   │    │                                   │  R  A  P  │
+   │    │          TFT LCD SCREEN           │           │
+   │    │         51.8 x 36.2mm             │  ← 3 tiny │
+   │    │        (landscape, fills deck)    │   buttons │
+   │    │                                   │  (6x4mm) │
+   │    └───────────────────────────────────┘           │
+    ╲  ╱─────────────────────────────────────────╲  ╱
+     ╲╱                                           ╲╱
+
+    ├──────────────── 96mm ────────────────────────┤
+                      ├── 26mm ──┤
+
+    Button legend: R=Reject  A=Action  P=Approve
+    Buttons sit on kicktail area, right of screen
+
+
+SIDE VIEW (right rail, looking from the side)
+─────────────────────────────────────────────
+
+                         14mm deck
+    nose kick           ├────────┤            tail kick
+       ╲               ┌─────────────────────┐     ╱
+        ╲─────────────│  screen │ PCB │ batt  │────╱
+         ─────────────└─────────────────────────┘─────
+              │                               │
+           ┌──┴──┐                         ┌──┴──┐
+           │ ○○  │ ← front truck           │  ○○ │ ← rear truck
+           └─────┘   (2x 8mm wheels)       └─────┘   (2x 8mm wheels)
+        ├──┤                                       ├──┤
+       11mm axle                                  11mm axle
+        width                                      width
+
+    ├────────────────────── 96mm ──────────────────────┤
+
+    Deck height from ground: ~12mm (wheel radius 4mm + truck 4mm + clearance)
+    Total height at wheels: ~18mm
+    Nose/tail kick angle: ~15 degrees, rising 3mm
+
+
+BOTTOM VIEW (flipped, looking at underside)
+───────────────────────────────────────────
+
+     ╱╲                                           ╱╲
+    ╱  ╲─────────────────────────────────────────╱  ╲
+   │ USB-C  │                                │ (·)   │
+   │┌─────┐│                                 │ wake  │
+   ││9.3x ││   ┌─────────┐    ┌─────────┐   │       │
+   ││3.7  ││   │  front   │    │  rear    │   │       │
+   │└─────┘│   │  truck   │    │  truck   │   │       │
+   │  ↑    │   │  plate   │    │  plate   │   │       │
+   │ under │   └─────────┘    └─────────┘   │       │
+   │ nose  │        ○  ○            ○  ○     │       │
+    ╲  ╱───── wheels(8mm) ──── wheels(8mm) ──╲  ╱
+     ╲╱                                        ╲╱
+
+    USB-C port: centered under nose kick
+    Wake button: small recess on right rail near tail
+    Truck plates: 18x10mm each, screwed to deck base
+
+
+BACK VIEW (tail end, looking at kicktail)
+─────────────────────────────────────────
+
+              14mm
+           ├────────┤
+          ╱┌────────┐╲  ← tail kick (15 deg)
+         ╱ │ screen │ ╲
+        │  │  PCB   │  │  26mm
+        │  │  batt  │  │
+         ╲ └────────┘ ╱
+          ╲──────────╱
+              │  │
+           ┌──┴──┴──┐
+           │ ○    ○ │  ← rear truck + 2 wheels
+           └────────┘
+
+    Buttons (●)(●)(●) visible on tail face,
+    arranged in horizontal row above the kick
+
+
+CROSS-SECTION (cut through center width, looking from tail)
+───────────────────────────────────────────────────────────
+
+    Top (deck surface)          Bottom
+      │                           │
+      │  1.2mm deck top shell     │
+      ├──┤                     ├──┤
+      │  ├── Display ────────┐ │  │
+      │  │   (2.5mm thick)   │ │  │
+      │  ├───────────────────┤ │  │
+      │  │   1.3mm gap       │ │  │  14mm total
+      │  │   (FPC routing)   │ │  │  (deck only)
+      │  ├── PCB ────────────┤ │  │
+      │  │   (1.6mm thick)   │ │  │
+      │  ├───────────────────┤ │  │
+      │  │   0.4mm gap       │ │  │
+      │  ├── Battery ────────┤ │  │
+      │  │   (5.0mm thick)   │ │  │
+      │  │   30 x 35mm LiPo │ │  │
+      ├──┴───────────────────┴─┤  │
+      │  1.0mm deck base shell │  │
+      │                           │
+    Deck top                 Deck base
+
+    Z-stack:
+    1.2 + 2.5 + 1.3 + 1.6 + 0.4 + 5.0 + 1.0 = 13.0mm
+    (+ 1.0mm grip tape texture on top = 14.0mm deck)
+
+    Below deck: truck assembly adds ~4mm + wheel radius 4mm
+
+
+COMPONENT LAYOUT (exploded, top to bottom)
+──────────────────────────────────────────
+
+    Layer 1 — DECK TOP SHELL (1.2mm wall, elongated skateboard outline)
+    ├── Screen window cutout (42 x 31mm, landscape)
+    ├── 3x button holes on kicktail (6.5 x 4.5mm each)
+    ├── Grip tape texture molded on side rails (0.3mm raised bumps)
+    ├── Nose kick: 15-deg upturn, last 12mm of nose
+    ├── Tail kick: 15-deg upturn, last 10mm of tail
+    ├── 4x screen retention clips (L-shaped)
+    └── 6x snap-fit tab sockets along perimeter
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted landscape (long axis along deck length)
+    ├── Seated in recessed pocket, offset toward nose
+    ├── FPC cable exits toward center of deck
+    └── Held by front shell retention clips
+
+    Layer 3 — 1.3mm AIR GAP
+    ├── FPC cable routes to PCB connector
+    └── Button plungers pass through at tail end
+
+    Layer 4 — PCB (45 x 40mm x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces bottom (toward trucks)
+    ├── 3x tactile switches at tail end, face top
+    ├── 1x wake button on right edge (accessible from rail)
+    ├── USB-C connector on nose end (centered)
+    ├── Display FPC connector centered
+    └── Mounted on posts from deck base shell
+
+    Layer 5 — 0.4mm GAP
+    └── Clearance for ESP32 module underside components
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered under PCB in main deck area
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in deck base
+
+    Layer 7 — DECK BASE SHELL (1.0mm wall)
+    ├── 4x PCB mounting posts
+    ├── Battery cradle ribs
+    ├── 2x truck mounting bosses (M2 threaded inserts)
+    ├── USB-C cutout at nose end
+    └── 6x snap-fit tabs (mate with deck top)
+
+    Layer 8 — TRUCK ASSEMBLIES (2x, clip-on)
+    ├── Front truck: 18mm wide, 2x 8mm wheels on axle
+    ├── Rear truck: 18mm wide, 2x 8mm wheels on axle
+    ├── Trucks attach via M2 screws into deck base bosses
+    ├── Wheels: 8mm diameter, 5mm wide, free-spinning on axle
+    └── Axle: 1.5mm steel pin, press-fit into truck hangers
+
+
+WHEEL AND TRUCK DETAIL
+──────────────────────
+
+    Front truck (bottom view):
+              ┌──────────────────┐
+              │    baseplate      │  18 x 10mm
+              │   ┌──────────┐   │
+         ○────┤   │  hanger  │   ├────○
+       wheel  │   └──────────┘   │  wheel
+       (8mm)  └──────────────────┘  (8mm)
+
+    Wheel cross-section:
+         ┌───┐
+        ╱     ╲
+       │   ○   │  ← 1.5mm axle pin
+        ╲     ╱     8mm OD, 5mm wide
+         └───┘     Rounded profile
+
+    Wheels spin freely on steel axle pins.
+    Truck hangers: rigid (no pivot, unlike real skateboards).
+    Baseplate: 2x M2 screws into deck base.
+
+
+BUTTON LAYOUT DETAIL (tail end, top view)
+─────────────────────────────────────────
+
+    ╱  ╲
+   │  ┌──┐ ┌──┐ ┌──┐  │
+   │  │6x│ │6x│ │6x│  │  ← 3x tiny buttons (6x4mm caps)
+   │  │4 │ │4 │ │4 │  │     8mm center-to-center spacing
+   │  └──┘ └──┘ └──┘  │
+   │  REJ  ACT  APR   │
+    ╲                  ╱
+     ╲────────────────╱  ← tail kick begins here
+
+    Wake button: recessed in right rail, near tail
+    ┌─────────────────────── right rail ──────────────
+    │                                    ┌─(·)─┐
+    │                                    │ wake │
+    │                                    └──────┘
+    └──────────────────────────────────────────────────
+
+
+USB-C PORT DETAIL (under nose)
+──────────────────────────────
+
+      nose kick
+         ╲
+          ╲───────────
+           ┌─────────┐
+           │ ┌─────┐ │  ← USB-C cutout (9.34 x 3.66mm)
+           │ │USB-C│ │     Recessed 1mm into nose underside
+           │ └─────┘ │     Protected by nose kick angle
+           └─────────┘
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 3-piece (deck top + deck base + 2x truck clips)
+- Deck top and base snap together with 6x snap-fit tabs along rails
+- Seam runs along the side rails at mid-height of the deck
+- Display press-fits into deck top pocket, landscape orientation
+- PCB press-fits onto posts in deck base
+- Battery in cradle ribs within deck base
+- Trucks attach via M2 screws from outside deck base into threaded inserts
+- Wheels: 4x 8mm, free-spinning on 1.5mm steel axle pins
+- USB-C accessible under nose — angled down by nose kick for easy cable plug
+- Wake button on right rail — small tactile switch, flush with rail surface
+- Grip tape texture: molded bumps on both rails for grip, 0.3mm height
+- Nose/tail kicks are solid — no internal components in curved sections
+- Landscape screen orientation matches the elongated deck shape
+- Very elongated profile (96x26mm) — fits in palm like a fingerboard
+- Desk toy functionality: wheels spin, can roll on flat surfaces

@@ -1,0 +1,398 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 17: DOG TAG
+================================================================================
+
+  Military ID tag shape. Ultra-compact portrait form factor with the screen
+  filling nearly the entire front face. Minimal 2mm bezels on all sides.
+  Brushed/stamped metal aesthetic with a notch in one corner like real
+  military dog tags. Ball chain loop hole at top for wearing around neck.
+  Wake via double-tap on accelerometer (no physical wake button).
+
+  Overall Dimensions: 50mm tall x 28mm wide x 10mm deep
+  Active Screen:      40.80 x 30.60mm (portrait, rotated — 30.60 wide)
+  Display Module:     51.80 x 36.20mm (tight fit, FPC folds behind)
+  Bezel:              ~2mm on all sides around active area
+  Chain Hole:         5mm diameter, centered at top
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                    28mm
+          |<------------------>|
+
+          .---.
+         /  O  \                       O = 5mm ball chain hole
+        / (5mm) \
+       /         \
+      +-----+-----+---.  ___
+      |  2mm bezel     |  |
+      |  .----------.  |  |
+      |  |          |  |  |
+      |  |          |  |
+      |  | 30.60w x |  |
+      |  | 40.80h   |  |  50mm
+      |  | Active   |  |  (body only,
+      |  | Area     |  |   excl. loop)
+      |  |          |  |
+      |  |          |  |
+      |  '----------'  |  |
+      |  2mm bezel     |  |
+      +-----------+----+  |
+      |           |   /   |    <-- Notch corner (dog tag style)
+      +-----------+--'   _|_
+
+      BTN_L               BTN_R
+     (left                (right
+      edge)                edge)
+
+  Notes:
+  - Screen fills nearly the entire front face
+  - 2mm bezels all around (structural minimum)
+  - Notch at bottom-right corner, 5x3mm 45-degree cut
+  - No front-facing buttons — all edge-mounted
+  - Brushed metal texture or stamped finish on bezel frame
+  - Ball chain loop is an integral part of the top shell
+
+  Button placement (edge view):
+      Left edge:  [REJECT] button, recessed, 12x6mm cap
+      Right edge: [APPROVE] button, recessed, 12x6mm cap
+      Top edge:   [ACTION] button, 10x4.5mm cap, beside chain hole
+
+================================================================================
+  SIDE PROFILE (Right side view)
+================================================================================
+
+             10mm
+          |<-------->|
+
+          +----------+  ___
+          |          |   |
+          |          |   |
+          |  Screen  |   |
+          |  +PCB    |  50mm
+          |  +Batt   |   |
+          |          |   |
+          |    [BTN] |   |    <-- Approve button, recessed in edge
+          |          |   |
+          +----------+  _|_
+
+  Left side identical but with Reject button.
+
+================================================================================
+  TOP EDGE VIEW
+================================================================================
+
+               28mm
+      |<------------------>|
+      +----.----+----.-----+
+      |    | O  | [ACT]    |
+      |    '----'          |     O = chain hole
+      +--------------------+     ACT = action button
+      |<------10mm-------->|
+
+  - Chain hole: 5mm dia, 3mm from top edge center
+  - Action button: 10x4.5mm, recessed, right of center
+  - USB-C on bottom edge (see bottom view)
+
+================================================================================
+  BOTTOM EDGE VIEW
+================================================================================
+
+               28mm
+      |<------------------>|
+      +------+------+--+--+
+      |      |USB-C |  |/   <-- Notch corner
+      |      |9.3x  |  /
+      +------+3.7mm-+-'
+      |<------10mm-------->|
+
+  - USB-C port centered on bottom edge
+  - Notch at bottom-right, 5x3mm at 45 degrees
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                    28mm
+          |<------------------>|
+
+          .---.
+         /  O  \
+        / (5mm) \
+       /         \
+      +--------------------.  ___
+      |                    |  |
+      |  ╔══════════════╗  |  |
+      |  ║  DEVOTCHI    ║  |  |
+      |  ║              ║  |  |
+      |  ║  S/N: XXXXX  ║  |  50mm
+      |  ║              ║  |  |
+      |  ║  MODEL: DT-1 ║  |  |
+      |  ╚══════════════╝  |  |
+      |                    |  |
+      |  (o)          (o)  |  |    (o) = M1.6 screws
+      +-----------+----+   |  |
+      |           |   /    |
+      +-----------+--'    _|_
+
+  Notes:
+  - Flat back with engraved/stamped text block
+  - Military-style information: model, serial, etc.
+  - 2x M1.6 screws (small — space is extremely tight)
+  - Engraving is shallow deboss, 0.2mm deep
+  - Brushed finish matches front bezel
+
+================================================================================
+  CROSS-SECTION (Cut through center, side view)
+================================================================================
+
+  Front                                          Back
+   |                                               |
+   | 1.5mm  2.5mm      1.0  1.6mm  0.5  custom 1.5|
+   |<--->|<------->|<----->|<---->|<-->|<----->|<->|
+   |     |         |       |      |    |       |   |
+   |Wall | Display | Gap/  | PCB  |Gap |Custom |Wal|
+   |     | Module  | FPC   |      |    |Batt   |   |
+   |     |         |       |      |    |3.0mm  |   |
+   +-----+---------+-------+------+----+-------+---+
+   |<------------------------------------------------>|
+                       ~10.1mm total (tight!)
+
+  Custom Battery Z-Stack Note:
+  - Standard 5mm battery does NOT fit (would make device 12.1mm)
+  - Requires custom 3mm thick LiPo: 24x20x3mm
+  - Capacity: ~150-200mAh (reduced but sufficient for BLE)
+  - Alternative: use 2x stacked Li-polymer pouch cells, 1.5mm each
+
+  Full Z-Stack Breakdown:
+  +-----------+  Front surface
+  |  1.5mm    |  Front wall (metal or metalized plastic)
+  +-----------+
+  |  2.5mm    |  Display module (51.80 x 36.20mm)
+  +-----------+
+  |  1.0mm    |  Air gap / FPC routing
+  +-----------+
+  |  1.6mm    |  PCB (reduced size: 26 x 24mm, custom)
+  +-----------+
+  |  0.5mm    |  Air gap / adhesive
+  +-----------+
+  |  3.0mm    |  Custom thin LiPo battery
+  +-----------+
+  |  1.5mm    |  Back wall (metal or metalized plastic)
+  +-----------+
+  = 11.6mm (must compress gaps to hit 10mm target)
+
+  Compression Strategy:
+  - Front wall: 1.2mm (thin metal is strong)
+  - FPC gap: 0.8mm (tight fold)
+  - Air gap: 0.3mm (adhesive only)
+  - Back wall: 1.2mm
+  - Revised total: 1.2 + 2.5 + 0.8 + 1.6 + 0.3 + 3.0 + 1.2 = 10.6mm
+  - Round to 10mm with precision tolerancing
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Front Shell (brushed metal finish):
+  +--------------------.
+  |  .--------------.  |
+  |  | Screen window |  |      42 x 32mm cutout
+  |  | (clear lens)  |  |      with thin protective lens
+  |  '--------------'  |
+  |                    |
+  +-----------+----+   |
+  |           |   /    |       Notch corner
+  +-----------+--'
+
+  Layer 2 - Display Module:
+       .-----------------.
+       | 51.80 x 36.20mm |     Portrait orientation
+       | FPC folds under  |     FPC exits bottom, folds 180 deg
+       | and back         |     to reach PCB behind display
+       '-----------------'
+
+  Layer 3 - PCB (custom small board):
+       +------------------+
+       |  [ESP32-S3-MINI] |     15.4 x 20.5mm (fills most of board)
+       |  [Accelerometer] |     LIS2DH12 (2x2mm) for wake detect
+       |  [USB-C conn]    |     Bottom edge
+       |  [2x edge BTN]   |     Left/right tact switches
+       |  [1x top BTN]    |     Top edge tact switch
+       |  [Vibration]     |     6mm coin, squeezed beside ESP32
+       |  26 x 24mm       |     Custom board, smaller than standard
+       +------------------+
+
+  Layer 4 - Custom Battery:
+       .-----------------.
+       | 24 x 20 x 3mm   |     Custom thin LiPo
+       | ~150-200mAh      |     Sufficient for BLE + display
+       '-----------------'
+
+  Layer 5 - Back Shell (engraved):
+  +--------------------.
+  |  Engraved text     |       Stamped/debossed info
+  |  block area        |
+  |  M1.6 screw bosses |       2x screw posts
+  |  Ball chain loop   |       Integral with shell
+  +-----------+----+   |
+  |           |   /    |       Notch matches front
+  +-----------+--'
+
+================================================================================
+  EDGE BUTTON DETAIL
+================================================================================
+
+  Cross-section through left/right edge (top-down):
+
+      Front           Back
+      shell            shell
+        |    Button     |
+        |    cavity     |
+        |   .-----.     |
+        |   |     |     |
+        |   | CAP-+-+   |     Cap: 12x6mm, extends 0.5mm proud
+        |   |     |T|   |     T = tact switch on PCB edge
+        |   '-----+-+   |
+        |               |
+        |    10mm       |
+
+  - Button caps recessed 0.5mm into edge groove
+  - Only 0.5mm protrusion when pressed
+  - Tactile switches soldered on PCB edge (side-mount)
+  - Travel: 0.3mm (low-profile tact switches)
+  - Cap material: silicone overmold for good feel
+
+  Top edge button (Action):
+  - Smaller: 10 x 4.5mm cap
+  - Offset right of chain hole
+  - Same recessed mounting approach
+
+================================================================================
+  BALL CHAIN ATTACHMENT DETAIL
+================================================================================
+
+  Top view (looking down):
+
+         Front shell     Back shell
+            |               |
+            | .---.   .---. |
+            | | O---+---O | |      O = 5mm hole halves
+            | '---'   '---' |      Each shell has semicircle
+            |               |
+
+  - 5mm through-hole at top center
+  - Hole is split between front and back shells
+  - Reinforced with 1mm thick stainless steel grommet
+  - Grommet pressed in during assembly, prevents wear
+  - Compatible with standard military ball chain (2.4mm ball dia)
+  - Also fits split rings, carabiner clips, lanyards
+
+  Chain routing:
+       .---.
+      / (O) \-------- Ball chain (stainless, 60cm loop)
+     /       \
+    +----...         Can also use:
+                     - Leather cord
+                     - Paracord loop
+                     - Silicone lanyard
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Front shell has recessed pocket: 52.0 x 36.4mm, 2.5mm deep
+  - Display module sits in pocket, held by friction + back pressure from PCB
+  - Thin clear lens (0.5mm polycarbonate) bonded to front shell over cutout
+  - Lens is flush with front surface (no lip to catch)
+
+  PCB Mounting:
+  - Custom small PCB: 26 x 24 x 1.6mm
+  - 2x snap clips in back shell
+  - PCB must carry ESP32-S3-MINI, USB-C, accelerometer, tact switches
+  - Very dense layout — may require 4-layer PCB
+
+  Battery Mounting:
+  - Double-sided adhesive tape to back shell
+  - Soldered wire pair to PCB (no connector — saves 2mm height)
+  - Battery is NOT user-replaceable (sealed unit)
+
+  Shell Assembly:
+  - Front + back shells joined by 2x M1.6 screws
+  - Screws accessible from back only
+  - Shells have alignment pins (2x, diagonal corners)
+  - Perimeter has snap-fit clips (4x) plus screws for security
+  - Seal: thin rubber gasket around perimeter (splash resistance)
+
+  Wake Mechanism:
+  - NO physical wake button (saves space)
+  - LIS2DH12 accelerometer detects double-tap gesture
+  - Double-tap threshold tuned to avoid false wakes
+  - Accelerometer current in listen mode: ~2uA
+  - Alternative: tap pattern (e.g., shave-and-a-haircut knock)
+
+  USB-C:
+  - Bottom edge center, 9.34 x 3.66mm cutout
+  - Recessed 0.5mm into shell for protection
+  - Compatible with standard USB-C cables (tested clearance)
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Ultra-Compact Form Factor: 50 x 28 x 10mm
+     - Smallest concept in the Devotchi lineup
+     - Lighter than a real dog tag (~15g target)
+     - Wearable around neck on ball chain
+     - Fits in coin pocket, badge holder, or wallet
+
+  2. Military Dog Tag Aesthetic:
+     - Brushed/stamped metal finish (anodized aluminum shell or
+       zinc alloy die-cast)
+     - Authentic corner notch (5x3mm, 45-degree)
+     - Engraved text on back (model, serial, "Devotchi" branding)
+     - Ball chain attachment at top
+     - Pairs well with a second blank tag on same chain
+
+  3. Screen-Dominant Front Face:
+     - ~85% front face is active display
+     - 2mm bezels — engineering minimum for structural shell
+     - No buttons on front face — clean, uninterrupted surface
+     - Protective polycarbonate lens flush with shell
+
+  4. Edge-Mounted Controls:
+     - Left edge: Reject button (red indicator mark)
+     - Right edge: Approve button (green indicator mark)
+     - Top edge: Action button (beside chain hole)
+     - Recessed caps prevent accidental activation
+     - Intuitive left=no, right=yes mapping
+
+  5. Accelerometer Wake:
+     - Double-tap to wake (no wake button needed)
+     - Saves precious space in ultra-compact form factor
+     - Can also detect orientation for auto screen rotation
+     - Tap patterns configurable via firmware
+
+  6. Custom Thin Battery:
+     - 3mm thick custom LiPo (vs standard 5mm)
+     - ~150-200mAh capacity
+     - Sufficient for 4-8 hours active use with BLE
+     - Charges via USB-C, ~1 hour to full
+     - Trade-off: less battery life for pocketability
+
+  7. Splash Resistance:
+     - Perimeter gasket between shells
+     - Recessed USB-C port
+     - No speaker holes or vents
+     - Not waterproof, but survives rain/sweat
+
+  8. Wearability Options:
+     - Ball chain necklace (included)
+     - Clip to backpack/bag via carabiner
+     - Badge reel attachment for office use
+     - Keyring via split ring through chain hole
+     - Pair with actual dog tags for aesthetic
+
+================================================================================

@@ -1,0 +1,134 @@
+DESIGN 2: WEDGE CONSOLE
+=======================
+Low-profile landscape wedge. 155 x 100mm footprint, 40mm at back
+tapering to 10mm at front. Screen embedded in angled top surface
+(~15° tilt). Think "alarm clock" or "retro game console" aesthetic.
+
+Overall: 155 x 100 x 10–40mm (wedge taper)
+Target user: desk console, always-on status display
+
+FRONT VIEW (looking at the thin front edge)
+───────────────────────────────────────────
+
+    40mm ──┐                              ┌── 10mm
+           │ ____________________________/│
+           │/         TOP SURFACE        / │
+           │  ┌──────────────────────┐  /  │
+           │  │    TFT LCD SCREEN    │ /   │ ← Screen recessed in
+           │  │   (40.8 x 30.6 act) │/    │   angled top surface
+           │  └──────────────────────┘     │
+           │  (●) (●) (●)                 │ ← 3 buttons on front lip
+           │______________________________│
+                     155mm
+
+
+SIDE VIEW (right side, profile showing wedge taper)
+───────────────────────────────────────────────────
+
+                         ┌─ Back edge: 40mm tall
+                        /│
+                       / │
+         Screen ──→  /▓▓▓│ ← ~15° angled surface
+                    / ▓▓▓│
+                   /     │
+          10mm ──/───────│
+                 │       │
+                 └───────┘
+                  100mm deep
+                 ↑       ↑
+             Front     Back
+             edge      edge
+
+
+TOP VIEW (looking down at angled screen surface)
+────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────────────┐
+    │                                              │
+    │    ┌────────────────────────────────────┐    │
+    │    │                                    │    │
+    │    │         TFT LCD SCREEN             │    │ ← Centered on top surface
+    │    │        51.8 x 36.2mm module        │    │
+    │    │                                    │    │
+    │    └────────────────────────────────────┘    │
+    │                                              │
+    │                      (●) (●) (●)             │ ← Buttons near front edge
+    │         ○ LED                                │
+    └──────────────────────────────────────────────┘
+     ↑          155mm wide                         ↑
+    Back                                        Front
+    edge                                        edge
+
+
+CROSS-SECTION (cut through center, side view)
+─────────────────────────────────────────────
+
+    Back wall ─┐              ┌─ Front wall (2mm)
+    (2mm)      │              │
+         ┌─────┤       ┌──Screen pocket (5mm deep)
+         │     │      /│  ┌screen─┐
+    40mm │     │     / │  │ 4.5mm │  ← Module in angled pocket
+         │     │    /  │  └───────┘
+         │ ┌───┤   /   │  3mm gap
+         │ │PCB│  /    │  ┌─PCB──┐
+         │ │   │ /     │  │1.6mm │
+         │ └───┤/      │  └──────┘
+         │     │       │
+    10mm │     │  ┌────┤  ┌speaker┐  ← Speaker fires down
+         │     │  │spkr│  │ 28mm  │    through grille in bottom
+         └─────┘  └────┘  └──────-┘
+         ↑                         ↑
+        Back                     Front
+      (USB-C here)            (buttons here)
+
+
+COMPONENT LAYOUT (top to bottom inside wedge)
+─────────────────────────────────────────────
+
+    TOP SHELL (wedge shape)
+    ├── Angled screen pocket on top surface (~15° tilt)
+    │   ├── Screen window cutout (41.8 x 31.6mm)
+    │   ├── 4x retention clips around screen edges
+    │   └── Pocket depth: module thickness + 0.3mm
+    ├── 3x button holes on front lip (5mm dia)
+    ├── LED hole on front lip (2mm dia)
+    ├── Vent slots on back face (for heat)
+    └── Wall: 2mm, uniform
+
+    INTERNALS (stacked front-to-back inside wedge)
+    ├── Screen module (51.8 x 36.2mm) in angled pocket
+    ├── PCB mounted on 4x standoffs from bottom plate
+    │   ├── Standoffs: 5mm OD, M2 screw, 4mm tall
+    │   ├── USB-C connector faces back edge
+    │   └── Tactile switches face up toward button holes
+    └── Speaker (28mm dia) in cavity near back-bottom
+        ├── Fires downward through bottom plate grille
+        └── 0.5mm foam gasket for acoustic seal
+
+    BOTTOM PLATE
+    ├── Speaker grille (grid of 1.5mm holes, 30% open area)
+    ├── 4x screw bosses (align with top shell)
+    ├── 4x rubber feet (8mm dia, 1.5mm tall)
+    └── Wall: 2mm
+
+
+BACK EDGE DETAIL
+────────────────
+
+    ┌─────────────────────────────────────┐
+    │  ┌─────┐                            │
+    │  │USB-C│  ═══ ═══ ═══ ═══ ═══ ═══  │ ← Vent slots (2 x 15mm each)
+    │  │ 9.5 │                            │
+    │  │x3.5 │                            │
+    │  └─────┘                            │
+    └─────────────────────────────────────┘
+              155mm wide
+
+
+ASSEMBLY
+────────
+- 2-piece: top shell + bottom plate
+- 4x M2 screws from bottom into top shell bosses
+- Screen drops into angled pocket from above before closing
+- PCB screws to bottom plate standoffs
+- Speaker press-fit into bottom plate cavity with foam gasket

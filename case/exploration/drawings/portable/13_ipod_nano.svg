@@ -1,0 +1,249 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="sans-serif" font-size="10">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#EEE" stroke-width="0.5"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#EEE" stroke-width="0.5"/>
+
+  <!-- Title -->
+  <text x="600" y="24" text-anchor="middle" font-size="14" font-weight="bold">Design 13: iPod Nano — 88×42×14mm Portrait, Ultra-Slim</text>
+
+  <!-- ========== 1. FRONT VIEW (top-left) ========== -->
+  <text x="200" y="55" text-anchor="middle" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Shell body — portrait orientation -->
+  <rect x="155" y="70" width="90" height="190" rx="10" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen — upper 60% -->
+  <rect x="168" y="82" width="64" height="95" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="133" text-anchor="middle" font-size="8" fill="#336">40.80×30.60</text>
+  <text x="200" y="143" text-anchor="middle" font-size="7" fill="#336">active area</text>
+
+  <!-- Click wheel — lower area -->
+  <circle cx="200" cy="215" r="32" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="215" r="30" fill="#D8D8D8" stroke="black" stroke-width="0.3"/>
+
+  <!-- Center button -->
+  <circle cx="200" cy="215" r="10" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="218" text-anchor="middle" font-size="8">OK</text>
+
+  <!-- Rim buttons indicated -->
+  <text x="200" y="190" text-anchor="middle" font-size="9">▲</text>
+  <text x="200" y="244" text-anchor="middle" font-size="9">▼</text>
+  <text x="174" y="218" text-anchor="middle" font-size="9">◀</text>
+  <text x="226" y="218" text-anchor="middle" font-size="9">▶</text>
+
+  <!-- Dimension: width -->
+  <line x1="155" y1="275" x2="245" y2="275" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="287" text-anchor="middle" font-size="9" fill="#CC0000">42mm</text>
+
+  <!-- Dimension: height -->
+  <line x1="260" y1="70" x2="260" y2="260" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="275" y="168" font-size="9" fill="#CC0000">88mm</text>
+
+  <!-- Screen area label -->
+  <line x1="235" y1="100" x2="260" y2="85" stroke="#666" stroke-width="0.5"/>
+  <text x="262" y="83" font-size="8">Display (60%)</text>
+
+  <!-- Click wheel label -->
+  <line x1="232" y1="215" x2="260" y2="230" stroke="#666" stroke-width="0.5"/>
+  <text x="262" y="233" font-size="8">Click wheel</text>
+
+  <!-- ========== 2. SIDE PROFILE (top-center) ========== -->
+  <text x="600" y="55" text-anchor="middle" font-size="11" font-weight="bold">Side Profile</text>
+
+  <!-- Slim side profile with rounded back dome -->
+  <path d="M580,85 L580,260 Q580,268 588,268 Q598,268 605,265 Q610,260 610,250 L610,95 Q610,88 605,85 Q600,82 588,82 Q580,82 580,85 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Rounded back dome — slight bulge on right side -->
+  <path d="M605,100 Q618,170 605,250" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+  <!-- Screen edge -->
+  <rect x="580" y="90" width="3" height="95" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+
+  <!-- Click wheel bump -->
+  <rect x="579" y="200" width="4" height="30" rx="1" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Dimension: depth -->
+  <line x1="575" y1="280" x2="618" y2="280" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="596" y="292" text-anchor="middle" font-size="9" fill="#CC0000">14mm</text>
+
+  <!-- Dimension: height -->
+  <line x1="565" y1="82" x2="565" y2="268" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="555" y="178" font-size="9" fill="#CC0000" text-anchor="end">88mm</text>
+
+  <!-- Rounded back label -->
+  <line x1="616" y1="170" x2="640" y2="160" stroke="#666" stroke-width="0.5"/>
+  <text x="642" y="163" font-size="9">Rounded back dome</text>
+
+  <!-- ========== 3. BACK VIEW (top-right) ========== -->
+  <text x="1000" y="55" text-anchor="middle" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Shell back — clean rounded -->
+  <rect x="955" y="70" width="90" height="190" rx="10" ry="10" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Mirror-polished back surface (indicated) -->
+  <rect x="965" y="80" width="70" height="170" rx="8" ry="8" fill="#ECECEC" stroke="#CCC" stroke-width="0.5"/>
+
+  <!-- Hold switch slider on top -->
+  <rect x="1010" y="68" width="20" height="6" rx="2" ry="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="1020" y="67" width="8" height="8" rx="1" ry="1" fill="#777" stroke="black" stroke-width="0.5"/>
+
+  <!-- Branding -->
+  <text x="1000" y="160" text-anchor="middle" font-size="10" fill="#AAA">DEVOTCHI</text>
+
+  <!-- USB-C on bottom -->
+  <rect x="988" y="256" width="24" height="6" rx="2" ry="2" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="272" text-anchor="middle" font-size="9">USB-C</text>
+
+  <!-- Hold switch label -->
+  <line x1="1030" y1="71" x2="1060" y2="60" stroke="#666" stroke-width="0.5"/>
+  <text x="1062" y="60" font-size="9">Hold switch</text>
+
+  <!-- ========== 4. TOP-DOWN VIEW (bottom-left) ========== -->
+  <text x="200" y="475" text-anchor="middle" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Shell from top -->
+  <rect x="155" y="520" width="90" height="28" rx="6" ry="6" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Rounded back dome profile -->
+  <path d="M165,548 Q200,558 235,548" fill="none" stroke="black" stroke-width="0.5"/>
+
+  <!-- Hold switch -->
+  <rect x="210" y="517" width="20" height="6" rx="2" ry="2" fill="#999" stroke="black" stroke-width="0.5"/>
+  <rect x="220" y="516" width="8" height="8" rx="1" ry="1" fill="#777" stroke="black" stroke-width="0.5"/>
+
+  <!-- Wake button -->
+  <rect x="175" y="517" width="14" height="5" rx="1" ry="1" fill="#CCC" stroke="black" stroke-width="0.5"/>
+
+  <!-- Dimension: width -->
+  <line x1="155" y1="575" x2="245" y2="575" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="587" text-anchor="middle" font-size="9" fill="#CC0000">42mm</text>
+
+  <!-- Dimension: depth -->
+  <line x1="260" y1="520" x2="260" y2="558" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="275" y="542" font-size="9" fill="#CC0000">14mm</text>
+
+  <!-- Labels -->
+  <line x1="224" y1="516" x2="240" y2="505" stroke="#666" stroke-width="0.5"/>
+  <text x="242" y="505" font-size="9">Hold</text>
+
+  <line x1="182" y1="517" x2="170" y2="505" stroke="#666" stroke-width="0.5"/>
+  <text x="170" y="500" text-anchor="middle" font-size="9">Wake</text>
+
+  <!-- ========== 5. CROSS-SECTION (bottom-center) ========== -->
+  <text x="600" y="475" text-anchor="middle" font-size="11" font-weight="bold">Cross-Section (Slim Z-Stack)</text>
+
+  <!-- Outer shell — front wall (flat) -->
+  <rect x="530" y="500" width="140" height="5" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Left wall -->
+  <rect x="530" y="500" width="5" height="110" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Right wall -->
+  <rect x="665" y="500" width="5" height="110" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <!-- Back wall (curved/dome) -->
+  <path d="M530,610 L530,605 Q600,625 670,605 L670,610 Q600,630 530,610 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+
+  <!-- Display module — thin -->
+  <rect x="540" y="507" width="120" height="22" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="521" text-anchor="middle" font-size="8">Display (3.2mm)</text>
+
+  <!-- Tiny gap -->
+  <rect x="540" y="529" width="120" height="4" fill="white" stroke="black" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+  <!-- PCB -->
+  <rect x="545" y="533" width="110" height="14" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="543" text-anchor="middle" font-size="8">PCB 1.6mm</text>
+
+  <!-- Thin gap -->
+  <rect x="540" y="547" width="120" height="4" fill="white" stroke="black" stroke-width="0.5" stroke-dasharray="2,2"/>
+
+  <!-- Thin battery -->
+  <rect x="545" y="551" width="110" height="48" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="578" text-anchor="middle" font-size="8">Thin LiPo 30×35×5mm</text>
+
+  <!-- Z-stack dimension -->
+  <line x1="685" y1="507" x2="685" y2="599" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="698" y="557" font-size="9" fill="#CC0000">15.1mm</text>
+
+  <!-- Total shell dimension -->
+  <line x1="515" y1="500" x2="515" y2="620" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="505" y="563" font-size="9" fill="#CC0000" text-anchor="end">14mm</text>
+
+  <!-- Dome back label -->
+  <line x1="600" y1="622" x2="600" y2="640" stroke="#666" stroke-width="0.5"/>
+  <text x="600" y="650" text-anchor="middle" font-size="9">Rounded dome back</text>
+
+  <!-- ========== 6. DETAIL: CLICK WHEEL (bottom-right) ========== -->
+  <text x="1000" y="475" text-anchor="middle" font-size="11" font-weight="bold">Detail: Click Wheel</text>
+
+  <!-- Enlarged click wheel -->
+  <circle cx="1000" cy="580" r="70" fill="#D8D8D8" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="580" r="68" fill="#D0D0D0" stroke="black" stroke-width="0.3"/>
+
+  <!-- Center button -->
+  <circle cx="1000" cy="580" r="22" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="584" text-anchor="middle" font-size="10" font-weight="bold">OK</text>
+
+  <!-- Button positions on rim -->
+  <!-- Top — Menu/Up -->
+  <rect x="985" y="515" width="30" height="14" rx="3" ry="3" fill="none" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="1000" y="525" text-anchor="middle" font-size="9">▲ Up</text>
+
+  <!-- Bottom — Down -->
+  <rect x="985" y="633" width="30" height="14" rx="3" ry="3" fill="none" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="1000" y="643" text-anchor="middle" font-size="9">▼ Down</text>
+
+  <!-- Left — Prev -->
+  <rect x="933" y="573" width="30" height="14" rx="3" ry="3" fill="none" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="948" y="583" text-anchor="middle" font-size="9">◀</text>
+
+  <!-- Right — Next (actually mapped to approve) -->
+  <rect x="1037" y="573" width="30" height="14" rx="3" ry="3" fill="none" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="1052" y="583" text-anchor="middle" font-size="9">▶</text>
+
+  <!-- Touch-sensitive ring indicator -->
+  <circle cx="1000" cy="580" r="50" fill="none" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+  <!-- Labels -->
+  <line x1="1050" y1="540" x2="1085" y2="520" stroke="#666" stroke-width="0.5"/>
+  <text x="1087" y="520" font-size="9">Capacitive ring</text>
+  <text x="1087" y="530" font-size="8" fill="#666">(scroll by touch)</text>
+
+  <line x1="1000" y1="602" x2="1000" y2="615" stroke="#666" stroke-width="0.5"/>
+
+  <!-- Dimension: wheel diameter -->
+  <line x1="930" y1="580" x2="1070" y2="580" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)" opacity="0.3"/>
+  <text x="1000" y="670" text-anchor="middle" font-size="9" fill="#CC0000">~28mm dia (actual)</text>
+
+  <!-- Button mapping table -->
+  <text x="890" y="500" font-size="9" font-weight="bold">Button Mapping:</text>
+  <text x="890" y="512" font-size="8">• Center = Confirm/OK</text>
+  <text x="890" y="522" font-size="8">• Up = Scroll up / Wake</text>
+  <text x="890" y="532" font-size="8">• Down = Scroll down</text>
+
+  <!-- Scale note -->
+  <text x="1000" y="685" text-anchor="middle" font-size="9" fill="#666">Scale: 2.5×</text>
+
+  <!-- Legend -->
+  <rect x="870" y="700" width="12" height="12" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="888" y="710" font-size="9">Display</text>
+  <rect x="940" y="700" width="12" height="12" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="958" y="710" font-size="9">PCB</text>
+  <rect x="990" y="700" width="12" height="12" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="1008" y="710" font-size="9">Battery</text>
+  <rect x="1060" y="700" width="12" height="12" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="1078" y="710" font-size="9">Shell wall</text>
+</svg>

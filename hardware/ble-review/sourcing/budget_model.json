@@ -1,0 +1,106 @@
+{
+  "date_china": "2026-11-19",
+  "devices": 2,
+  "preferred_complete_budget_two_cny": [
+    400,
+    600
+  ],
+  "ceiling_complete_budget_two_cny": 1000,
+  "scope": "两台完整设备的全部项目支出；用户不焊接；含PCB、器件、外壳、线束/探头加工、装配、运费及后续可选开支。1000元是累计总支出上限，后续改板或扩展不能另开预算绕过此上限。",
+  "aggregate_project_ceiling_cny": 1000,
+  "future_optional_spend_reserve_cny": null,
+  "future_optional_spend_note": "尚未选定后续付费项目或预留金额；不能假设后续支出为0。只有当前整单金额、已发生费用和明确的后续预留合计不超过1000元，才可声明整体预算可满足。未授权的后续项目不采购。",
+  "current_quote_lines": [
+    {
+      "id": "MAIN_MATERIALS",
+      "label": "最终主板BOM器件及生产损耗",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "MAIN_PCB",
+      "label": "主PCB整批、拼板/工艺边与表面处理",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "SMT_STANDARD",
+      "label": "标准型双面工程/钢网/焊点/上料/检测/包装",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "OFFBOARD",
+      "label": "两块原屏、两块保护电池、外置POWER开关",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "PROBE_HARNESS",
+      "label": "两套NTC探头、两套开关/电池线束及焊接绝缘固定",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "CASE",
+      "label": "外壳打印、五金、胶/绝缘材料",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "FINAL_ASSEMBLY",
+      "label": "供应商总装/插接/工序检查；用户不焊接",
+      "quoted_two_cny": null
+    },
+    {
+      "id": "FREIGHT_TAX",
+      "label": "全部包裹运费及前项未包含税费",
+      "quoted_two_cny": null
+    }
+  ],
+  "route_comparison": [
+    {
+      "id": "A_STANDARD_BOTH",
+      "label": "同板标准型双面贴2块+板外代装",
+      "price_two_complete_cny": null,
+      "quote_status": "未收到",
+      "conditions": "完整BOM/CPL匹配、双面及工艺边可接；沿用上述8项完整费用结构"
+    },
+    {
+      "id": "B_ECONOMIC_FRONT_EXTERNAL_BACK",
+      "label": "同板正面经济型贴2块+背面及全部线束/探头统一委外",
+      "price_two_complete_cny": null,
+      "quote_status": "未收到",
+      "conditions": "先确认正面全部料号/板工艺符合经济型，5片贴2片；背面含QFN，委外必须具备回流及检查能力；计二次钢网/备料/检验/运送费用"
+    },
+    {
+      "id": "B_ALTERNATIVE_EXTERNAL_FULL",
+      "label": "同板由小型代工商双面贴装及板外工序全包",
+      "price_two_complete_cny": null,
+      "quote_status": "未收到",
+      "conditions": "物料优先嘉立创采购，代工商明确损耗、整批费、双面工艺、线束/探头、壳体和完整交付范围；不假设更便宜"
+    }
+  ],
+  "historical_conditions_not_carried_forward": [
+    "2026-11-13预算由用户自行焊接并明确不计运费；当前要求相反。",
+    "旧材料现金499.726904为条件报价；含缺货胶带、缺货电阻、未执行的替代料ECO及未审图PCB参数价。",
+    "旧电阻/电容零售MOQ不能直接当SMT收费数量；供应商应报实际生产损耗与上机数量。",
+    "旧自有焊料/助焊剂/清洁剂耗用4.03元不另算当前用户成本，防止与代工费重复。",
+    "旧NTC载板20.14元只为未定型参数报价，不能当已完成探头或代工人工。"
+  ],
+  "orders_submitted": false,
+  "supplier_messages_sent": false,
+  "budget_met": null,
+  "current_complete_total_two_cny": null,
+  "historical_cash_two_cny": "499.726904",
+  "published_fee_sensitivity": {
+    "kind": "旧材料现金加官方双面SMT收费示例；非当前报价、非完整费用区间",
+    "historical_material_and_fabrication_cash": "499.726904",
+    "example_setup_two_sides": "300",
+    "example_stencil_two_sides": "100",
+    "subtotal_old_pcb_30": "899.726904",
+    "subtotal_old_pcb_100": "969.726904",
+    "still_excludes": [
+      "焊点/上料/检验/双面加工实际附费",
+      "外包线束和NTC探头加工",
+      "总装/功能检查",
+      "全部运费",
+      "ECO净增减和时效价格变化"
+    ],
+    "source_url": "https://www.jlc.com/portal/server_guide_4018.html"
+  }
+}

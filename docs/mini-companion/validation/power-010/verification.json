@@ -1,0 +1,70 @@
+{
+  "status": "qualification_candidate_not_final_charger_control",
+  "components": 40,
+  "ERC_violations": 0,
+  "existing_pin_connections": "unchanged",
+  "existing_value_change": "R9 200k to 10k",
+  "pin_contract_and_mux_swap_fault": "pass",
+  "valid_rail_truth_table": [
+    {
+      "USB_READY": 0,
+      "OUT1": 0,
+      "OUT2": 0,
+      "candidate": 0
+    },
+    {
+      "USB_READY": 0,
+      "OUT1": 0,
+      "OUT2": 1,
+      "candidate": 0
+    },
+    {
+      "USB_READY": 0,
+      "OUT1": 1,
+      "OUT2": 0,
+      "candidate": 0
+    },
+    {
+      "USB_READY": 0,
+      "OUT1": 1,
+      "OUT2": 1,
+      "candidate": 0
+    },
+    {
+      "USB_READY": 1,
+      "OUT1": 0,
+      "OUT2": 0,
+      "candidate": 1
+    },
+    {
+      "USB_READY": 1,
+      "OUT1": 0,
+      "OUT2": 1,
+      "candidate": 1
+    },
+    {
+      "USB_READY": 1,
+      "OUT1": 1,
+      "OUT2": 0,
+      "candidate": 0
+    },
+    {
+      "USB_READY": 1,
+      "OUT1": 1,
+      "OUT2": 1,
+      "candidate": 0
+    }
+  ],
+  "G33_falling_threshold_V": [
+    3.0239499999999997,
+    3.1160499999999995
+  ],
+  "receiver_only_CC_pullup_drop_V": 0.0505,
+  "RESET_pullup_drop_V": 0.5353,
+  "limitations": [
+    "No logic guarantee for supply below 1.65V",
+    "180nF datasheet delays do not include selected capacitor corners",
+    "TUSB initialization worst-case not established",
+    "Default USB and BC1.2 not implemented; output not connected to charger EN"
+  ]
+}

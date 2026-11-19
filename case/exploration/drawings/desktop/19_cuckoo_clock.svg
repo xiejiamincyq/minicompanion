@@ -1,0 +1,250 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#333">Design 19: Cuckoo Clock — 90×60×130mm with Gable Roof Desktop Case</text>
+
+  <!-- Grid labels -->
+  <text x="200" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">FRONT VIEW</text>
+  <text x="600" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">SIDE PROFILE</text>
+  <text x="1000" y="58" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">BACK VIEW</text>
+  <text x="200" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">TOP-DOWN VIEW</text>
+  <text x="600" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">CROSS-SECTION</text>
+  <text x="1000" y="478" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#555">DETAIL — Door + Pendulum</text>
+
+  <!-- Grid dividers -->
+  <line x1="400" y1="40" x2="400" y2="450" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="800" y1="40" x2="800" y2="450" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="400" y1="460" x2="400" y2="890" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="800" y1="460" x2="800" y2="890" stroke="#CCC" stroke-width="0.5"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#CCC" stroke-width="0.5"/>
+
+  <!-- ============ FRONT VIEW (top-left) ============ -->
+  <g transform="translate(200,270)">
+    <!-- Main body -->
+    <rect x="-55" y="-60" width="110" height="120" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Gable roof -->
+    <polygon points="-60,-60 0,-110 60,-60" fill="#D0C8B8" stroke="black" stroke-width="0.5"/>
+    <!-- Roof ridge ornament -->
+    <circle cx="0" cy="-110" r="4" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+
+    <!-- Clock face circle -->
+    <circle cx="0" cy="-20" r="48" fill="#F5F0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Roman numerals -->
+    <text x="0" y="-58" font-family="serif" font-size="7" text-anchor="middle" fill="#333">XII</text>
+    <text x="24" y="-50" font-family="serif" font-size="6" text-anchor="middle" fill="#333">I</text>
+    <text x="40" y="-35" font-family="serif" font-size="6" text-anchor="middle" fill="#333">II</text>
+    <text x="46" y="-18" font-family="serif" font-size="6" text-anchor="middle" fill="#333">III</text>
+    <text x="40" y="-1" font-family="serif" font-size="6" text-anchor="middle" fill="#333">IV</text>
+    <text x="24" y="12" font-family="serif" font-size="6" text-anchor="middle" fill="#333">V</text>
+    <text x="0" y="18" font-family="serif" font-size="7" text-anchor="middle" fill="#333">VI</text>
+    <text x="-24" y="12" font-family="serif" font-size="6" text-anchor="middle" fill="#333">VII</text>
+    <text x="-40" y="-1" font-family="serif" font-size="6" text-anchor="middle" fill="#333">VIII</text>
+    <text x="-46" y="-18" font-family="serif" font-size="6" text-anchor="middle" fill="#333">IX</text>
+    <text x="-40" y="-35" font-family="serif" font-size="6" text-anchor="middle" fill="#333">X</text>
+    <text x="-24" y="-50" font-family="serif" font-size="6" text-anchor="middle" fill="#333">XI</text>
+
+    <!-- Door (open, showing screen) -->
+    <rect x="-30" y="-45" width="60" height="50" rx="1" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="0" y="-18" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#336">Screen</text>
+    <!-- Door hinge line on left -->
+    <line x1="-30" y1="-45" x2="-30" y2="5" stroke="black" stroke-width="1"/>
+
+    <!-- Open door (swung to left) -->
+    <rect x="-65" y="-45" width="35" height="50" rx="1" fill="#D8D0C0" stroke="black" stroke-width="0.5" transform="skewY(5)"/>
+    <text x="-47" y="-18" font-family="sans-serif" font-size="7" text-anchor="middle" fill="#888">Door</text>
+
+    <!-- Pendulum below -->
+    <line x1="0" y1="60" x2="-10" y2="115" stroke="#333" stroke-width="1"/>
+    <circle cx="-10" cy="120" r="10" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="15" y="120" font-family="sans-serif" font-size="8" fill="#555">Pendulum</text>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="-60" y1="-130" x2="60" y2="-130" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="-60" y1="-123" x2="-60" y2="-137" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="60" y1="-123" x2="60" y2="-137" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="0" y="-135" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: height 130mm (body only) -->
+    <line x1="75" y1="-110" x2="75" y2="60" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="68" y1="-110" x2="82" y2="-110" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="68" y1="60" x2="82" y2="60" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="88" y="-20" font-family="sans-serif" font-size="9" fill="#CC0000">130mm</text>
+  </g>
+
+  <!-- ============ SIDE PROFILE (top-center) ============ -->
+  <g transform="translate(600,270)">
+    <!-- Body side -->
+    <rect x="-35" y="-60" width="70" height="120" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Gable roof side -->
+    <polygon points="-40,-60 0,-85 40,-60" fill="#D0C8B8" stroke="black" stroke-width="0.5"/>
+
+    <!-- Wall mount bracket on back -->
+    <rect x="35" y="-40" width="8" height="20" rx="1" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="55" y="-28" font-family="sans-serif" font-size="8" fill="#555">Wall</text>
+    <text x="55" y="-18" font-family="sans-serif" font-size="8" fill="#555">mount</text>
+
+    <!-- Pendulum -->
+    <line x1="0" y1="60" x2="-8" y2="110" stroke="#333" stroke-width="1"/>
+    <circle cx="-8" cy="115" r="8" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+
+    <!-- Door edge visible -->
+    <line x1="-35" y1="-40" x2="-35" y2="10" stroke="#888" stroke-width="1"/>
+    <text x="-50" y="-15" font-family="sans-serif" font-size="8" fill="#888">Door</text>
+
+    <!-- Dimension: depth 60mm -->
+    <line x1="-40" y1="75" x2="40" y2="75" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <line x1="-40" y1="68" x2="-40" y2="82" stroke="#CC0000" stroke-width="0.5"/>
+    <line x1="40" y1="68" x2="40" y2="82" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="0" y="90" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">60mm</text>
+  </g>
+
+  <!-- ============ BACK VIEW (top-right) ============ -->
+  <g transform="translate(1000,270)">
+    <!-- Back of clock body -->
+    <rect x="-55" y="-60" width="110" height="120" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+    <!-- Gable roof back -->
+    <polygon points="-60,-60 0,-110 60,-60" fill="#D0C8B8" stroke="black" stroke-width="0.5"/>
+
+    <!-- Wall mount keyhole -->
+    <path d="M0,-30 Q-6,-30 -6,-24 Q-6,-18 -2,-18 L-2,-5 L2,-5 L2,-18 Q6,-18 6,-24 Q6,-30 0,-30 Z"
+          fill="#888" stroke="black" stroke-width="0.5"/>
+    <text x="15" y="-20" font-family="sans-serif" font-size="8" fill="#555">Keyhole</text>
+
+    <!-- Fold-out desk stand -->
+    <rect x="-20" y="10" width="40" height="35" rx="1" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+    <line x1="-20" y1="10" x2="20" y2="10" stroke="black" stroke-width="1"/>
+    <text x="0" y="32" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#555">Fold-out</text>
+    <text x="0" y="42" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#555">desk stand</text>
+
+    <!-- Pendulum hook -->
+    <circle cx="0" cy="55" r="3" fill="none" stroke="black" stroke-width="0.5"/>
+    <text x="12" y="58" font-family="sans-serif" font-size="8" fill="#555">Hook</text>
+
+    <!-- Ventilation slots -->
+    <line x1="-20" y1="-50" x2="20" y2="-50" stroke="#999" stroke-width="0.5"/>
+    <line x1="-20" y1="-46" x2="20" y2="-46" stroke="#999" stroke-width="0.5"/>
+    <line x1="-20" y1="-42" x2="20" y2="-42" stroke="#999" stroke-width="0.5"/>
+    <text x="30" y="-44" font-family="sans-serif" font-size="8" fill="#888">Vents</text>
+  </g>
+
+  <!-- ============ TOP-DOWN VIEW (bottom-left) ============ -->
+  <g transform="translate(200,680)">
+    <!-- Gable roof ridge from above -->
+    <polygon points="-55,-35 0,-5 55,-35 55,35 0,5 -55,35" fill="#D0C8B8" stroke="black" stroke-width="0.5"/>
+    <!-- Ridge line -->
+    <line x1="-55" y1="0" x2="55" y2="0" stroke="black" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="black" stroke-width="1"/>
+
+    <!-- Ridge ornament -->
+    <circle cx="0" cy="0" r="4" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+
+    <text x="0" y="-45" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#555">Ridge line</text>
+
+    <!-- Body outline (dashed below roof) -->
+    <rect x="-50" y="-30" width="100" height="60" rx="1" fill="none" stroke="black" stroke-width="0.5" stroke-dasharray="4,3"/>
+
+    <!-- Dimension: width 90mm -->
+    <line x1="-55" y1="55" x2="55" y2="55" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="0" y="68" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#CC0000">90mm</text>
+
+    <!-- Dimension: depth 60mm -->
+    <line x1="70" y1="-35" x2="70" y2="35" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="80" y="5" font-family="sans-serif" font-size="9" fill="#CC0000">60mm</text>
+
+    <text x="-30" y="15" font-family="sans-serif" font-size="8" fill="#888">Front slope</text>
+    <text x="15" y="15" font-family="sans-serif" font-size="8" fill="#888">Back slope</text>
+  </g>
+
+  <!-- ============ CROSS-SECTION (bottom-center) ============ -->
+  <g transform="translate(600,680)">
+    <!-- Vertical cut through center -->
+    <!-- Outer shell -->
+    <polygon points="-55,-60 0,-110 55,-60 55,60 -55,60"
+             fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+    <!-- Inner cavity -->
+    <polygon points="-48,-55 0,-98 48,-55 48,55 -48,55"
+             fill="white" stroke="black" stroke-width="0.5"/>
+
+    <!-- Door hinge at front -->
+    <circle cx="-48" cy="-40" r="3" fill="#999" stroke="black" stroke-width="0.5"/>
+    <line x1="-48" y1="-40" x2="-55" y2="-60" stroke="black" stroke-width="0.5"/>
+    <text x="-70" y="-45" font-family="sans-serif" font-size="8" fill="#555">Hinge</text>
+
+    <!-- Screen behind door -->
+    <rect x="-42" y="-38" width="5" height="70" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="-30" y="-5" font-family="sans-serif" font-size="8" fill="#336">Screen</text>
+
+    <!-- PCB -->
+    <rect x="0" y="-30" width="2" height="65" fill="#90C695" stroke="black" stroke-width="0.5"/>
+    <text x="8" y="5" font-family="sans-serif" font-size="8" fill="#4A7A4E">PCB</text>
+
+    <!-- Speaker -->
+    <ellipse cx="25" cy="35" rx="18" ry="4" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="25" y="48" font-family="sans-serif" font-size="8" text-anchor="middle" fill="#8B7030">Speaker 28mm</text>
+
+    <!-- Pendulum attachment -->
+    <circle cx="0" cy="55" r="2" fill="#333" stroke="black" stroke-width="0.5"/>
+    <line x1="0" y1="57" x2="0" y2="80" stroke="#333" stroke-width="0.8"/>
+    <circle cx="0" cy="85" r="6" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+
+    <!-- Wall -->
+    <line x1="48" y1="-55" x2="55" y2="-55" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+    <text x="60" y="-52" font-family="sans-serif" font-size="8" fill="#CC0000">2mm</text>
+  </g>
+
+  <!-- ============ DETAIL — Door + Pendulum (bottom-right) ============ -->
+  <g transform="translate(1000,680)">
+    <!-- Enlarged door mechanism -->
+    <text x="0" y="-130" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#555">Hinged Door Mechanism</text>
+
+    <!-- Door frame -->
+    <rect x="-80" y="-115" width="100" height="110" rx="2" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+    <!-- Door (shown open at ~45°) -->
+    <g transform="rotate(-45,-80,-60)">
+      <rect x="-80" y="-115" width="80" height="110" rx="1" fill="#D8D0C0" stroke="black" stroke-width="0.5" opacity="0.7"/>
+      <text x="-45" y="-55" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#888">Door (open)</text>
+    </g>
+
+    <!-- Hinge detail -->
+    <circle cx="-80" cy="-115" r="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <circle cx="-80" cy="-5" r="5" fill="#C0C0C0" stroke="black" stroke-width="0.5"/>
+    <text x="-95" y="-60" font-family="sans-serif" font-size="9" fill="#555">Piano hinge</text>
+
+    <!-- Screen visible behind -->
+    <rect x="-70" y="-105" width="80" height="90" rx="1" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+    <text x="-30" y="-55" font-family="sans-serif" font-size="9" text-anchor="middle" fill="#336">5.0" Screen</text>
+
+    <!-- Magnetic latch -->
+    <rect x="15" y="-65" width="6" height="10" rx="1" fill="#666" stroke="black" stroke-width="0.5"/>
+    <text x="30" y="-57" font-family="sans-serif" font-size="8" fill="#555">Mag latch</text>
+
+    <!-- Pendulum hook detail -->
+    <text x="60" y="-130" font-family="sans-serif" font-size="10" font-weight="bold" fill="#555">Hook:</text>
+    <line x1="80" y1="-120" x2="80" y2="-90" stroke="#333" stroke-width="1.5"/>
+    <path d="M80,-90 Q80,-80 75,-78 Q70,-76 70,-82" fill="none" stroke="#333" stroke-width="1.5"/>
+    <circle cx="80" cy="-120" r="3" fill="#999" stroke="black" stroke-width="0.5"/>
+    <text x="95" y="-100" font-family="sans-serif" font-size="8" fill="#555">Pendulum</text>
+    <text x="95" y="-90" font-family="sans-serif" font-size="8" fill="#555">hook</text>
+
+    <!-- Pendulum disc -->
+    <circle cx="75" cy="-72" r="12" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+    <text x="75" y="-69" font-family="sans-serif" font-size="7" text-anchor="middle" fill="#8B7030">Disc</text>
+
+    <!-- Door open angle -->
+    <path d="M-75,-115 Q-60,-130 -45,-115" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+    <text x="-55" y="-132" font-family="sans-serif" font-size="8" fill="#CC0000">~90° open</text>
+  </g>
+</svg>

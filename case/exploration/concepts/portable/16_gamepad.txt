@@ -1,0 +1,402 @@
+DESIGN 16: GAMEPAD
+==================
+Dual-grip game controller shape. Landscape orientation.
+Screen centered in the body. Left grip has D-pad style rocker
+(approve=up, reject=down). Right grip has 2 round action buttons
+(A/B style). Textured rubber grip surfaces on both horns.
+Comfortable ergonomic two-hand hold. Trigger on back for wake.
+Chunky, satisfying to hold. Think classic console controller.
+
+Overall: 120mm wide x 60mm tall x 20mm deep
+Weight target: ~75g with battery
+Orientation: Landscape
+Shell: 2-piece (front + back), 6x screw posts
+
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+     ╭───╮                                       ╭───╮
+    │     │    ╭─────────────────────────────╮   │     │
+    │     │   │                               │  │     │
+    │     │   │  ○ LED                        │  │     │
+    │  L  │   │  ┌───────────────────────┐   │  │  R  │
+    │     │   │  │                       │   │  │     │
+    │  G  │   │  │      TFT LCD          │   │  │  G  │
+    │  R  │   │  │      SCREEN           │   │  │  R  │
+    │  I  │   │  │     (40.8x30.6)       │   │  │  I  │
+    │  P  │   │  │                       │   │  │  P  │
+    │     │   │  └───────────────────────┘   │  │     │
+    │ ┌─┐ │   │                               │  │ ╭─╮ │
+    │ │▲│ │   │                               │  │ │A│ │ ← A button
+    │┌┤ ├┐│   │                               │  │ ╰─╯ │   (10mm dia)
+    ││◀ ▶││    ╰─────────────────────────────╯   │     │
+    │└┤ ├┘│                                      │ ╭─╮ │
+    │ │▼│ │                                      │ │B│ │ ← B button
+    │ └─┘ │       ┌──── USB-C ────┐              │ ╰─╯ │   (10mm dia)
+    │     │       │    ○    ○     │              │     │
+     ╰───╯        └───────────────┘               ╰───╯
+       │                                            │
+       │←─ grip ─→│←──── 70mm body ────→│←─ grip ─→│
+       │   25mm   │                      │   25mm   │
+       ├──────────────── 120mm ─────────────────────┤
+
+    Left grip: D-pad rocker (14x14mm)
+      ▲ = Approve
+      ▼ = Reject
+      ◀▶ = Navigate menus
+
+    Right grip: 2x round action buttons
+      A (top) = Action/Select (10mm dia)
+      B (bottom) = Back/Cancel (10mm dia)
+
+    Grips extend 15mm below the main body.
+
+
+SIDE VIEW (right side, looking at right grip)
+─────────────────────────────────────────────
+
+         20mm
+        ├──────┤
+        ╭──────╮ ─┬─
+       ╱ screen ╲  │
+      │   pcb    │  │
+      │   batt   │  │  60mm
+      │          │  │  (body)
+       ╲        ╱   │
+        │      │    │
+        │ grip │    │  +15mm
+        │      │    │  (grip extends
+        ╰──────╯   ─┴─  below body)
+        ↑         ↑
+       Front    Back
+
+    Main body: 20mm thick at center
+    Grips: Taper from 20mm at junction
+    to 16mm at the horn tips (ergonomic).
+    Back surface contoured for palm fit.
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+    ╭───────────────────────────────────────────╮
+    │    TRIGGER                                 │ ← Back/top edge
+    │    ┌─────┐   ┌──── USB-C ────┐           │
+    │    │WAKE │   │               │            │   USB-C on top edge
+    │    └─────┘   └───────────────┘            │   center
+    │  L.GRIP         BODY          R.GRIP      │
+    ╰───────────────────────────────────────────╯
+
+    ├── 25mm ─┤├───── 70mm ──────┤├── 25mm ─┤
+
+
+BACK VIEW
+─────────
+
+     ╭───╮                                       ╭───╮
+    │     │    ╭─────────────────────────────╮   │     │
+    │     │   │                               │  │     │
+    │ ┌───┤   │  ┌────────────────────────┐  │  │     │
+    │ │TRG│   │  │                        │  │  │     │
+    │ └───┤   │  │     BATTERY AREA       │  │  │     │ ← Trigger button
+    │     │   │  │     30 x 35mm LiPo     │  │  │     │   on back of left
+    │▒▒▒▒▒│   │  │                        │  │  │▒▒▒▒▒│   grip (index
+    │▒GRIP│   │  └────────────────────────┘  │  │GRIP▒│   finger reach)
+    │▒TXTR│   │                               │  │TXTR▒│
+    │▒▒▒▒▒│   │     ▪▪▪▪▪▪  ← Vibe motor    │  │▒▒▒▒▒│ ← Textured rubber
+    │     │   │                               │  │     │   grip panels
+    │     │    ╰─────────────────────────────╯   │     │   (both horns)
+    │     │                                      │     │
+    │     │                                      │     │
+     ╰───╯                                       ╰───╯
+
+    Trigger = Wake button (12 x 6mm)
+    Located on back of left grip,
+    natural index finger position.
+    6x screw holes visible (recessed).
+
+
+CROSS-SECTION (cut through horizontal center of body, looking down)
+───────────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │     20mm total
+      │  │   (FPC routing)     │ │  │  (body center,
+      │  ├── PCB ──────────────┤ │  │   thickest point)
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      │  │   30 x 35mm LiPo   │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │     3.9mm extra depth      │  ← Additional depth beyond
+      │     (contoured back)       │    standard z-stack (15.1mm)
+      │                             │    used for ergonomic contouring
+      Front face               Back face
+
+    Z-stack in body center:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    + 4.9mm ergonomic back shell contouring = 20mm max
+
+    Grip cross-section (at horn mid-point):
+    ╭──────╮
+    │      │  ← 20mm wide x 18mm deep
+    │      │     Oval cross-section
+    │      │     Hollow interior for
+    ╰──────╯     wiring to D-pad/buttons
+
+
+CROSS-SECTION (cut through left grip, looking from front)
+─────────────────────────────────────────────────────────
+
+        20mm
+       ├──────┤
+       ╭──────╮
+      ╱▒▒▒▒▒▒▒▒╲   ← Rubber grip texture (0.5mm)
+     │  ┌────┐   │
+     │  │wire│   │  ← FPC ribbon to D-pad switches
+     │  │duct│   │     (routed through grip horn)
+     │  └────┘   │
+      ╲▒▒▒▒▒▒▒▒╱
+       ╰──────╯
+       ↑         ↑
+      Front    Back
+
+    Grip interior is mostly hollow.
+    Thin FPC ribbon connects D-pad switches
+    in the grip to the main PCB in the body.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (gamepad shape, 1.5mm wall)
+    ├── Screen window cutout (41.8 x 31.6mm, landscape, centered)
+    ├── D-pad opening in left grip (16 x 16mm square, rounded)
+    ├── 2x action button holes in right grip (10.5mm dia each)
+    ├── 1x LED hole (2mm dia, above screen)
+    ├── 4x screen retention clips
+    ├── 6x screw post sockets (M2 threaded inserts)
+    ├── Grip horn extensions (25mm each side, hollow)
+    └── Rubber grip texture panels (overmolded or adhesive)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Centered in body, landscape orientation
+    ├── Seated in pocket, 0.2mm clearance per side
+    ├── FPC cable exits toward PCB connector
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routing
+    ├── D-pad rocker mechanism clearance
+    └── Action button plunger clearance
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── D-pad FPC connector (left side, routes to grip)
+    ├── Action button FPC connector (right side, routes to grip)
+    ├── Trigger/wake switch FPC connector (routes to left grip back)
+    ├── USB-C connector on top edge (centered)
+    ├── Display FPC connector
+    ├── Vibration motor pads
+    └── Centered in body section
+
+    Layer 5 — 0.5mm GAP
+    └── Clearance for ESP32 module height
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in body section
+    ├── JST connector pigtail to PCB
+    └── Held by cradle ribs in back shell
+
+    Layer 7 — BACK SHELL (gamepad shape, 1.5mm wall + contouring)
+    ├── Ergonomic contoured palm rest (4.9mm extra depth at center)
+    ├── 6x screw posts (M2, 10mm tall)
+    ├── Battery cradle ribs (2x)
+    ├── Trigger button hole in left grip (12.5 x 6.5mm)
+    ├── USB-C cutout on top edge (9.5 x 4.0mm)
+    ├── Grip horn extensions (match front shell)
+    ├── Rubber grip texture panels (overmolded or adhesive)
+    └── 6x recessed screw counterbores (M2 heads sit flush)
+
+
+BUTTON LAYOUT DETAIL — LEFT GRIP (D-PAD)
+─────────────────────────────────────────
+
+    │         │
+    │  ┌───┐  │
+    │  │ ▲ │  │  ← UP = Approve
+    │  │APP│  │    (green marking)
+    │┌─┤   ├─┐│
+    ││◀│ ● │▶││  ← LEFT/RIGHT = Navigate
+    ││  │   │  ││    CENTER = Select
+    │└─┤   ├─┘│    (gray markings)
+    │  │REJ│  │
+    │  │ ▼ │  │  ← DOWN = Reject
+    │  └───┘  │    (red marking)
+    │         │
+
+    D-pad: Single rocker piece, 14x14mm face
+    4 directional + center click
+    Molded cross-shaped rocker on dome switch array
+    Travel: 0.5mm per direction
+    Center click: 0.3mm travel
+
+    Color coding on D-pad face:
+    ▲ Green arrow (approve)
+    ▼ Red arrow (reject)
+    ◀▶ Gray arrows (navigate)
+
+
+BUTTON LAYOUT DETAIL — RIGHT GRIP (A/B)
+────────────────────────────────────────
+
+    │         │
+    │  ╭───╮  │
+    │  │ A │  │  ← A button (top)
+    │  │   │  │    10mm dia cap
+    │  ╰───╯  │    Action/Select
+    │         │    (blue marking)
+    │         │    14mm vertical spacing
+    │  ╭───╮  │
+    │  │ B │  │  ← B button (bottom)
+    │  │   │  │    10mm dia cap
+    │  ╰───╯  │    Back/Cancel
+    │         │    (red marking)
+    │         │
+
+    Both buttons: Concave top surface
+    for comfortable thumb press.
+    Slightly different heights (A is 1mm
+    taller) for tactile differentiation.
+
+
+TRIGGER BUTTON DETAIL (back of left grip)
+─────────────────────────────────────────
+
+    Back view of left grip:
+
+    │         │
+    │ ┌─────┐ │
+    │ │ TRG │ │  ← Trigger button (12 x 6mm cap)
+    │ │WAKE │ │    On back surface of left grip
+    │ └─────┘ │    Natural index finger position
+    │         │    when holding controller
+    │         │
+
+    Side view of trigger:
+              ┌──┐
+    ──────────┤  ├── ← 1.5mm travel
+    back shell│  │     spring return
+              └──┘     tactile click
+
+    Trigger = Wake function.
+    Single press wakes device from sleep.
+    Also usable as modifier key when awake.
+
+
+GRIP ERGONOMICS DETAIL
+──────────────────────
+
+    Front view showing grip extension:
+
+                    MAIN BODY (60mm tall)
+    ╭───╮  ╭─────────────────────────╮  ╭───╮
+    │   │  │                         │  │   │
+    │   │  │        SCREEN           │  │   │
+    │   │  │                         │  │   │
+    │   │   ╰─────────────────────────╯  │   │
+    │   │                                │   │  ← Grips extend
+    │   │     15mm below main body       │   │    15mm below
+    │   │                                │   │
+    ╰───╯                                ╰───╯
+
+    Grip dimensions:
+    - Width: 20mm (oval cross-section)
+    - Depth: 18mm at widest
+    - Extension below body: 15mm
+    - Total grip length: ~45mm (usable grip surface)
+    - Fillet radius at body junction: 5mm (smooth blend)
+
+    Rubber texture pattern:
+    ▒▒▒▒▒▒▒▒▒▒
+    ▒ ╱╱╱╱╱╱ ▒  ← Diamond crosshatch pattern
+    ▒ ╲╲╲╲╲╲ ▒     0.5mm deep texture
+    ▒ ╱╱╱╱╱╱ ▒     TPU overmold or adhesive
+    ▒ ╲╲╲╲╲╲ ▒     rubber grip panels
+    ▒▒▒▒▒▒▒▒▒▒
+
+
+USB-C PLACEMENT DETAIL (top edge center)
+────────────────────────────────────────
+
+    Top-down view:
+
+    ╭───╮  ╭─────┬──USB-C──┬─────╮  ╭───╮
+    │   │  │     │  ○  ○   │     │  │   │
+    │L.G│  │     └─────────┘     │  │R.G│
+    │   │  │       BODY TOP       │  │   │
+    ╰───╯  ╰─────────────────────╯  ╰───╯
+
+    USB-C on top edge so cable doesn't interfere
+    with grip when charging and playing.
+    Cutout: 9.5 x 4.0mm, centered in body section.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece gamepad shape (front + back), 6x M2 screws
+- 4x screws in body section, 1x in each grip horn
+- Seam runs around perimeter at mid-depth
+- Display press-fits into front shell pocket, 4x retention clips
+- PCB mounts on 4x posts in body section of back shell
+- D-pad: Single-piece rocker sits on 5-dome switch PCBlet in left grip
+- D-pad PCBlet connects to main PCB via short FPC ribbon
+- Action buttons: Individual plungers on 2-switch PCBlet in right grip
+- Action PCBlet connects to main PCB via short FPC ribbon
+- Trigger: Single switch on small PCBlet, FPC to main PCB
+- Battery in cradle ribs, centered in body, JST pigtail to PCB
+- USB-C cutout on top edge center, aligned across both halves
+- Vibration motor foam-taped inside back shell (body center)
+- Rubber grip panels: Either TPU overmold (injection) or adhesive
+  rubber sheets (3D print / prototype version)
+- Grip horns are hollow — FPC ribbons route through internal channels
+- Back shell has ergonomic palm contour (4.9mm extra depth)
+- 6x screw counterbores on back are recessed flush
+
+
+SPECIAL FEATURES
+────────────────
+- Dual-grip ergonomics: Full two-hand controller feel. Left hand
+  controls D-pad (approve/reject/navigate), right hand has A/B
+  action buttons. Natural, intuitive input mapping.
+- D-pad approve/reject: Up=approve (green), Down=reject (red).
+  Directional input feels decisive and satisfying. Center click
+  for select/confirm. Navigate menus with left/right.
+- Back trigger wake: Index finger trigger on back of left grip.
+  Natural reach, no fumbling. Also serves as modifier when awake.
+- Textured rubber grips: Diamond crosshatch pattern on both horns.
+  TPU overmold or adhesive rubber panels. Comfortable, non-slip
+  grip for extended holding.
+- Chunky satisfying form: 120mm wide controller body with 20mm
+  depth. Substantial, premium hand-feel. The kind of device you
+  pick up and don't want to put down.
+- Ergonomic back contour: Back shell has 4.9mm of extra contouring
+  beyond the z-stack minimum. Palm rests naturally on the curved
+  surface. No sharp edges or flat spots.
+- Top-edge USB-C: Charging cable exits upward, doesn't interfere
+  with grip during use. Can charge while operating.
+- Hollow grip horns: Internal FPC ribbon channels connect grip
+  button PCBlets to main PCB. Clean routing, no external wires.
+- Color scheme: Body in matte black, grip rubber in dark gray,
+  button caps in classic SNES-style colors (A=blue, B=red,
+  D-pad in dark gray with colored arrow markings).

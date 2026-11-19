@@ -1,0 +1,478 @@
+{
+  "removed": [
+    {
+      "uuid": "60be0037-8fe6-4694-a0e0-8aac4385cf36",
+      "type": "PCB_TRACK",
+      "net": "GND"
+    },
+    {
+      "uuid": "ac6fecc7-5b8c-4d77-a507-1cedd1b490c8",
+      "type": "PCB_TRACK",
+      "net": "GND"
+    },
+    {
+      "uuid": "12a4117c-6655-425d-860e-a11dad3e77d6",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "05113319-e234-4c9f-9aaf-884817a5d8b0",
+      "type": "PCB_VIA",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "34d77809-534b-426a-a981-74771c3600b3",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "54e58fa7-f9d3-43c7-9893-e1041ddb6e62",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "7e9d646e-b3bd-434d-b5ce-e1655bbe6f1b",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "a7b0193e-6e1a-4d02-b95a-67c308b145fc",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "c5f94a35-c527-4ed9-aa2d-c4ff3cfc364c",
+      "type": "PCB_TRACK",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "13b07023-1b73-480b-9d0a-a42ef02f733d",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "304ea902-8b4b-473c-8a40-680e4035cf65",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "3b19107d-c87f-439f-a00e-6455f788eb17",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "8b8e7b28-07d6-41bc-83d5-35a42adc35f1",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "cf5a07cf-a0b2-40b3-9901-523ec1960d76",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "006092a2-f1e6-4f81-b765-e77268fd8c32",
+      "type": "PCB_VIA",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "18f7ac38-c119-4dad-b4f4-fcb169af67c4",
+      "type": "PCB_TRACK",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "768b36da-0ac4-4e59-a4d2-de289ec44714",
+      "type": "PCB_TRACK",
+      "net": "Net-(D402-A)"
+    },
+    {
+      "uuid": "017485cc-cf99-493e-872d-6b75d7cd1cd4",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "04312043-83c8-4569-9056-ab6680264954",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "137a95ca-6fa0-4907-92d3-64beeee45b1b",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "2c8c6f73-8f1b-427c-b857-c72aadcb7e58",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "481925b4-3e48-4027-9dfe-171ed67607c2",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "5a46fce6-628f-474d-8abd-6703689dee81",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "60259acc-19af-4620-959b-400c8debf4fe",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "772ed5e8-636f-4007-865e-f5dea59836dc",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "8c54ed1b-5474-445e-b2ac-c6a3df8322d2",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "d3a51318-bd22-45fa-8a94-39877ec822a6",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "db795c04-8192-439d-b45c-78d9aeaf0488",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "ed10b485-287c-443a-bb00-c63125b5a95b",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "fb903483-e456-4d77-80eb-82136eeab348",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "2a70e238-0d36-4091-aed4-46928068211b",
+      "type": "PCB_VIA",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "4078598a-cfe6-4e39-ac6d-bf70f1cc1587",
+      "type": "PCB_VIA",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "7fe9b5ad-dd2e-4246-b8da-0dc08d519c2b",
+      "type": "PCB_VIA",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "95dd7108-738b-4bad-8f49-475ae3fa9ac5",
+      "type": "PCB_VIA",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "a37ca214-6481-4b3b-9149-a3504bc035e9",
+      "type": "PCB_VIA",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "06feeeaa-de90-4ae5-9917-9437cb14e461",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "26f7c4ba-dd1a-4a7d-85a5-dfe8f445d4b1",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "3b3bf700-0b6b-4f69-9d28-d468273239c6",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "6b6b26bc-3e25-49d6-998a-9b8ee0d6d2b1",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "6c0f0e79-105b-4fd9-a872-5156bb33b8ee",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "b1722f26-1649-48f1-8ce6-9a73e113ea6e",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "f0f2fd21-02f8-40fd-b85a-1602a93550e2",
+      "type": "PCB_TRACK",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "2752dec4-482a-4452-af1a-023ce5caf35d",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "462a5693-7454-4c84-875b-01251156c23c",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "4ffa3b5a-907a-4308-b613-9dd23cf0fd52",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "602e26b5-0d15-447f-a933-599b63a69e85",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "629eb329-875d-4ae1-9dce-a65892320f0f",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "66f0f9a2-3ba8-492c-b80a-bddfc7417b0f",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "7da2d25e-47a9-4c61-be13-1c77d73caea1",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "a7595833-e01d-4694-9d78-631bd7d8c6ec",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "bf472039-c62c-4452-bce6-c127c9dd5f57",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "ec5df3e1-3f23-47cc-af89-d2ac38757cf2",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "0ba171b5-f3d7-42e7-9c39-8c1f2e0d53db",
+      "type": "PCB_VIA",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "1a3b59eb-59b2-4a3f-b50b-845b0ec7e4ab",
+      "type": "PCB_VIA",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "0ebedec1-e26a-4e08-87ca-0006b9be9f6e",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "404f892f-6dfa-4086-8a6f-702b6d5c1771",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "8705e6d2-431a-4950-b341-424d86b96e15",
+      "type": "PCB_TRACK",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "374c10f7-3810-46e5-9b93-e833e96a64d6",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "2a82ac1c-253c-4f3e-ab82-e49e72c6f34b",
+      "type": "ZONE",
+      "net": "GND"
+    },
+    {
+      "uuid": "bef22b59-6ce4-4184-b6d9-bdcfb107ae08",
+      "type": "ZONE",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "23aca45d-0e7b-478e-833c-c1f0cd36ab6f",
+      "type": "ZONE",
+      "net": "Net-(D402-A)"
+    },
+    {
+      "uuid": "bbfedb10-9086-4d41-9866-866e243f4402",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "3b84f824-b139-471f-94b2-6ad43956972a",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "f2277255-b418-458d-aa74-9034f20245b5",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "0e694dc4-ddf3-4719-9cab-7e23b2faca1c",
+      "type": "ZONE",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "bd91df2f-4775-4e3c-95d9-1bbfd6260a82",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "f1cc8632-f34e-450a-bda7-4032e3d8f8c7",
+      "type": "ZONE",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "0a80ea65-17f2-4f7b-83d1-ba9ea7217aff",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "fc10b425-d1c5-4ca8-ab37-e9cde210ff63",
+      "type": "ZONE",
+      "net": "Net-(D402-A)"
+    },
+    {
+      "uuid": "c0e653df-421c-4822-b234-11b45e230e8d",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "5d6d71f9-7a4b-491e-ad61-c86fa0b0e2fa",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "1b92501b-dd64-4167-8222-b3a762782b11",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "b86e5443-fe72-4970-9eeb-53ad2663ec6d",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "61058acb-35dc-4841-8fe9-2fa24737ec0b",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "04752894-d4cb-4365-ad4a-7482e0ba1dd7",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "63667d90-c467-4b42-867f-13e4b2d94660",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "b5a8fb0a-23ca-4783-8577-93ad10456ea3",
+      "type": "ZONE",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "425306a2-00d9-445a-9a40-67dff3be0b78",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "69bec2c6-cb18-4be3-8677-f3f3c72186ad",
+      "type": "ZONE",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "a5f931fc-cd68-443f-9e4b-d18dead8b97d",
+      "type": "ZONE",
+      "net": "LED_PWM"
+    },
+    {
+      "uuid": "5df8bc29-ab09-492e-8528-247f905a7b72",
+      "type": "ZONE",
+      "net": "Net-(D401-A)"
+    },
+    {
+      "uuid": "09bdc9b9-62a2-4306-a2db-30cc1cab103c",
+      "type": "ZONE",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "9635ee14-2ec3-4ead-8c5e-a04ba63edd09",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "7ee682c9-666f-4ff5-861a-6b295a97ffef",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "d3184377-37c2-4b36-b44a-58d71417d8e5",
+      "type": "ZONE",
+      "net": "+BATT"
+    },
+    {
+      "uuid": "76478ea8-0871-405c-9fe8-473bccf2654a",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "f3c2a987-3955-445f-98b0-74e4d9567c00",
+      "type": "ZONE",
+      "net": "MOTOR_PWM"
+    },
+    {
+      "uuid": "22edb0cc-7b09-445e-a69f-b537c43b7731",
+      "ref": "R401",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "29ebe8d5-f699-4e42-baac-6f58164fea56",
+      "ref": "D401",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "af33cb98-eadd-4cb9-b050-0250ea2eb59d",
+      "ref": "D402",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "c300d104-705a-40fd-81ac-6474e382b9e8",
+      "ref": "TP104",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "c8687c25-040f-495f-b8ea-c5b9051b1fae",
+      "ref": "R402",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "ecd1d4c1-cff4-4031-88bb-10d55985a717",
+      "ref": "Q401",
+      "type": "FOOTPRINT"
+    },
+    {
+      "uuid": "f7fb94be-4d88-4644-996f-24341398e8aa",
+      "ref": "J401",
+      "type": "FOOTPRINT"
+    }
+  ],
+  "released_pads": {
+    "33": "unconnected-(U101-IO37-Pad33)",
+    "34": "unconnected-(U101-IO38-Pad34)"
+  }
+}

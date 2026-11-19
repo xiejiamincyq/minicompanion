@@ -1,0 +1,427 @@
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 15: BOOMBOX                         ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  80s ghetto blaster / portable stereo. Screen centered where the tape deck     ║
+║  would be. Two speaker grilles flanking the screen. Carry handle on top.       ║
+║  Chunky aggressive proportions. Slider-style rocker buttons on top surface.    ║
+║                                                                                ║
+║  Overall dimensions: 180mm (W) x 50mm (D) x 100mm (H body, ~115mm w/handle)  ║
+║                                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+
+FRONT VIEW
+══════════
+
+                       ╭──────────╮
+                       │  Handle  │  ← Carry handle (~115mm at peak)
+    ┌──────────────────┤          ├──────────────────┐
+    │                  ╰──────────╯                  │
+    │  ╔════════════════════════════════════════════╗ │
+    │  ║ ░░░ DEVOTCHI BOOMBOX ░░░░ FM/AM ░░ EQ ░░ ║ │ ← Faux EQ/label strip
+    │  ╚════════════════════════════════════════════╝ │   (LED strip or printed)
+    │                                                │
+    │  ╭─────────╮  ╔══════════════════╗  ╭─────────╮│
+    │  │ ╭─────╮ │  ║                  ║  │ ╭─────╮ ││
+    │  │ │     │ │  ║                  ║  │ │     │ ││
+    │  │ │ ))) │ │  ║     SCREEN      ║  │ │ ((( │ ││ ← Speaker grilles
+    │  │ │     │ │  ║    108x64.8     ║  │ │     │ ││   L: functional
+    │  │ │ ))) │ │  ║                  ║  │ │ ((( │ ││   R: decorative
+    │  │ │     │ │  ║                  ║  │ │     │ ││   (symmetry)
+    │  │ ╰─────╯ │  ║                  ║  │ ╰─────╯ ││
+    │  ╰─────────╯  ╚══════════════════╝  ╰─────────╯│
+    │                                                │
+    │  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │ ← Bottom grille strip
+    └────────────────────────────────────────────────┘
+     ◄──────────────────── 180mm ──────────────────►
+
+                                                 100mm
+                                                 height
+
+
+TOP VIEW
+════════
+
+    ┌────────────────────────────────────────────────────┐
+    │            ╭──────────────────────╮                │
+    │            │     Handle base      │                │ ← Handle hinge
+    │            ╰──────────────────────╯                │   points
+    │                                                    │
+    │  ┌─══─┐         ┌─══─┐         ┌─══─┐            │
+    │  │btn1│         │btn2│         │btn3│            │ ← 3 slider-style
+    │  │ ▓▓ │         │ ▓▓ │         │ ▓▓ │            │   rocker buttons
+    │  └─══─┘         └─══─┘         └─══─┘            │   on top surface
+    │                                                    │
+    │  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ │ ← Faux EQ strip
+    └────────────────────────────────────────────────────┘
+     ◄──────────────────── 180mm ──────────────────────►
+     ▲                                                  ▲
+   Front                                              Back
+                    ◄──── 50mm ────►
+
+
+RIGHT SIDE VIEW
+═══════════════
+
+              ╭───╮
+              │   │  ← Handle (folds flat or fixed)
+    ┌─────────┤   ├─────────┐
+    │         ╰───╯         │
+    │  ┌─══─┐               │ ← Button on top
+    │  └─══─┘               │
+    │                       │
+    │    ╭─────────────╮    │
+    │    │  Speaker     │    │ ← Speaker grille visible
+    │    │  grille      │    │   from side angle
+    │    ╰─────────────╯    │
+    │                       │
+    └───────────────────────┘
+     ◄────── 50mm ────────►
+     ▲                     ▲
+   Front                 Back
+
+    Height: 100mm body + ~15mm handle
+
+
+LEFT SIDE VIEW
+══════════════
+
+              ╭───╮
+              │   │
+    ┌─────────┤   ├─────────┐
+    │         ╰───╯         │
+    │               ┌─══─┐  │
+    │               └─══─┘  │
+    │                       │
+    │    ╭─────────────╮    │
+    │    │  Speaker     │    │
+    │    │  grille      │    │
+    │    ╰─────────────╯    │
+    │                       │
+    └───────────────────────┘
+
+
+BACK VIEW
+═════════
+
+    ┌────────────────────────────────────────────────────┐
+    │                  ╭──────────╮                      │
+    │                  │  Handle  │                      │
+    │                  ╰──────────╯                      │
+    │                                                    │
+    │  ┌──────────────────────────────────────────────┐  │
+    │  │                                              │  │
+    │  │              BACK PANEL                      │  │
+    │  │                                              │  │
+    │  │    ╔═══════╗                                 │  │
+    │  │    ╚═══════╝  ← USB-C port (center)         │  │
+    │  │                                              │  │
+    │  │    ┌────────────────────────────────────┐    │  │
+    │  │    │  ═══ ═══ ═══ ═══ ═══ ═══ ═══ ═══  │    │  │ ← Battery
+    │  │    │  BATTERY COMPARTMENT (decorative)  │    │  │   compartment
+    │  │    │  (does not open — faux detail)     │    │  │   decoration
+    │  │    └────────────────────────────────────┘    │  │   (non-functional)
+    │  │                                              │  │
+    │  └──────────────────────────────────────────────┘  │
+    │                                                    │
+    └────────────────────────────────────────────────────┘
+
+
+CROSS-SECTION (side view, through center)
+═════════════════════════════════════════
+
+              ╭───╮
+              │hdl│  ← Handle (pivot or fixed)
+    ┌─────────┤   ├──────────────┐
+    │ 2mm     ╰───╯              │
+    │ wall                       │
+    │  ┌─══─┐  ← button         │ ← Top surface with
+    │  └─┬──┘    actuator       │   button cutouts
+    │    │                       │
+    │  ┌─┴───────────────────┐   │
+    │  │  Screen module      │   │ ← Screen mounted vertically
+    │  │  120 x 75 x 4.5mm  │   │   behind front panel opening
+    │  │                     │   │
+    │  └─────────────────────┘   │
+    │                            │
+    │  ╔══════════════════════╗  │
+    │  ║  PCB 110x65mm       ║  │ ← PCB flat at bottom
+    │  ║  (horizontal)       ║  │
+    │  ╚══════════════════════╝  │
+    │ 2mm                        │
+    └────────────────────────────┘
+     ◄──────── 50mm ────────────►
+     ▲                           ▲
+   Front                       Back
+
+    Height breakdown:
+    ├── 2mm  top wall
+    ├── 8mm  button area + gap
+    ├── 75mm screen height (vertically mounted)
+    ├── ~5mm spacer
+    ├── 1.6mm PCB
+    ├── ~6mm cavity below PCB
+    ├── 2mm  bottom wall
+    ╰── ~100mm total
+
+
+CROSS-SECTION (front view, through center)
+══════════════════════════════════════════
+
+    ┌────────────────────────────────────────────────┐
+    │                                                │
+    │  ┌──────────┐  ╔══════════════╗  ┌──────────┐ │
+    │  │          │  ║              ║  │          │ │
+    │  │ Speaker  │  ║    Screen    ║  │ Decorat. │ │
+    │  │  28mm    │  ║   module     ║  │ grille   │ │
+    │  │  (func.) │  ║  120x75mm   ║  │ (empty)  │ │
+    │  │          │  ║              ║  │          │ │
+    │  └──────────┘  ╚══════════════╝  └──────────┘ │
+    │                                                │
+    │  ╔════════════════════════════════════════════╗ │
+    │  ║              PCB 110x65mm                 ║ │
+    │  ║  ┌────────┐                    ┌────────┐ ║ │
+    │  ║  │ESP32-S3│                    │speaker │ ║ │
+    │  ║  └────────┘                    │ wires  │ ║ │
+    │  ╚════════════════════════════════════════════╝ │
+    │                                                │
+    └────────────────────────────────────────────────┘
+     ◄──────────────────── 180mm ──────────────────►
+
+
+COMPONENT LAYOUT (top-down, top shell removed)
+══════════════════════════════════════════════
+
+    ┌────────────────────────────────────────────────────┐
+    │                                                    │
+    │  ┌─══─┐         ┌─══─┐         ┌─══─┐            │ ← Button rockers
+    │  │btn1│         │btn2│         │btn3│            │   (top surface)
+    │  └─┬──┘         └─┬──┘         └─┬──┘            │
+    │    │               │               │               │
+    │  ┌─┴───────────────┴───────────────┴─────────────┐ │
+    │  │  ┌─────────────────────────────────────────┐  │ │
+    │  │  │         Screen Module 120x75mm          │  │ │
+    │  │  │         (mounted vertically             │  │ │
+    │  │  │          behind front panel)             │  │ │
+    │  │  └─────────────────────────────────────────┘  │ │
+    │  └───────────────────────────────────────────────┘ │
+    │                                                    │
+    │  ╔════════════════════════════════════════════════╗ │
+    │  ║  PCB 110x65mm                                 ║ │
+    │  ║                                               ║ │
+    │  ║  ┌────────────┐          ┌──────────┐         ║ │
+    │  ║  │ ESP32-S3   │          │ Speaker  │         ║ │
+    │  ║  │ 15.4x20.5  │          │ 28mm dia │         ║ │
+    │  ║  └────────────┘          └──────────┘         ║ │
+    │  ║                                               ║ │
+    │  ║              [USB-C]──────────→ back center   ║ │
+    │  ╚════════════════════════════════════════════════╝ │
+    │                                                    │
+    │     Speaker wire routing to left grille area       │
+    │     ←─────────────────────────────                 │
+    │                                                    │
+    └────────────────────────────────────────────────────┘
+
+    Speaker grille layout (front face):
+
+    Left grille (functional):        Right grille (decorative):
+    ╭───────────╮                    ╭───────────╮
+    │ ○ ○ ○ ○ ○ │                    │ ○ ○ ○ ○ ○ │
+    │ ○ ○ ○ ○ ○ │  ← Speaker        │ ○ ○ ○ ○ ○ │  ← Matching pattern
+    │ ○ ○ ○ ○ ○ │    behind          │ ○ ○ ○ ○ ○ │    (symmetry only,
+    │ ○ ○ ○ ○ ○ │    this grille     │ ○ ○ ○ ○ ○ │     no speaker)
+    │ ○ ○ ○ ○ ○ │                    │ ○ ○ ○ ○ ○ │
+    ╰───────────╯                    ╰───────────╯
+    ~30mm x 50mm                     ~30mm x 50mm
+
+
+HANDLE DETAIL
+═════════════
+
+    Fixed handle option:                Folding handle option:
+    ╭────────────────────╮             ╭────────────────────╮
+    │                    │             │                    │
+    │    grip area       │             │    grip area       │
+    │    (15mm thick)    │             │                    │
+    ├──┐              ┌──┤             ├──╮              ╭──┤
+    │  │              │  │             │  ○ pivot        ○  │
+    │  │ support      │  │             │  │              │  │
+    └──┴──────────────┴──┘             └──┴──────────────┴──┘
+       ▲              ▲                   ▲              ▲
+     Left           Right               Hinge          Hinge
+     post           post                point          point
+
+    Handle cross-section:
+    ╭──────────╮
+    │  ██████  │ ← Solid grip bar
+    │  ██████  │   15mm wide x 10mm thick
+    ╰──────────╯   textured/rubberized surface
+
+
+SLIDER BUTTON DETAIL (top surface)
+══════════════════════════════════
+
+    Top view (one button):
+    ┌─══════════─┐
+    │    ▓▓▓▓    │ ← Slider cap (15mm x 8mm)
+    │    ▓▓▓▓    │   rocks forward/back
+    └─══════════─┘
+      20mm wide
+
+    Side cross-section:
+         ┌────┐
+    ─────┤ ▓▓ ├───── ← Top shell surface
+         │    │
+         └──┬─┘
+            │        ← Rocker arm
+         ┌──┴──┐
+         │6mm  │     ← Tactile switch on PCB
+         │tact.│
+         └─────┘
+
+    All 3 buttons on top surface:
+    ┌─══─┐         ┌─══─┐         ┌─══─┐
+    │PLAY│         │ FF │         │STOP│  ← Boombox-style labels
+    │ ▶  │         │ ▶▶ │         │ ■  │    (decorative, functional
+    └─══─┘         └─══─┘         └─══─┘     Devotchi controls)
+
+
+MOUNTING DETAILS
+════════════════
+
+    Screen to body:
+    ┌──────────────────────────────┐
+    │  Screen module mounted to    │
+    │  internal bracket behind     │
+    │  front panel cutout          │
+    │                              │
+    │  ┌──┐                ┌──┐   │
+    │  │M2│                │M2│   │ ← 4x M2 screws into
+    │  └──┘                └──┘   │   L-bracket arms
+    │  ┌──┐                ┌──┐   │
+    │  │M2│                │M2│   │
+    │  └──┘                └──┘   │
+    └──────────────────────────────┘
+
+    PCB mount:
+    ╔══════════════════════════════╗
+    ║  4x M2.5 standoffs          ║
+    ║  (3mm height, bottom shell) ║
+    ║  ┌──┐                ┌──┐  ║
+    ║  │  │                │  │  ║
+    ║  └──┘                └──┘  ║
+    ║  ┌──┐                ┌──┐  ║
+    ║  │  │                │  │  ║
+    ║  └──┘                └──┘  ║
+    ╚══════════════════════════════╝
+
+    Handle to body (fixed version):
+    ┌────────┐
+    │ Handle │
+    │  post  │
+    ├────────┤ ← Posts insert into top shell
+    │ socket │   and are glued or screwed
+    │ in top │
+    │ shell  │
+    └────────┘
+
+    Speaker mount:
+    ┌──────────┐
+    │ Speaker  │
+    │  28mm    │ ← Speaker glued to internal
+    │  3.5mm   │   bracket, positioned behind
+    │          │   left grille opening
+    └──────────┘
+    Wire routed along bottom to PCB
+
+
+ASSEMBLY NOTES
+══════════════
+
+    1. Body is 2-piece clamshell (front/top shell + back/bottom shell)
+       - Front shell: screen opening, speaker grilles, button slots,
+         handle mounting points, EQ strip slot
+       - Back shell: flat base, battery decoration, USB-C cutout,
+         PCB standoffs
+
+    2. Mount PCB to back shell with M2.5 standoffs
+
+    3. Install screen module on internal L-bracket,
+       position behind front panel opening
+
+    4. Connect FPC cable from screen to PCB
+
+    5. Mount speaker behind left grille area on bracket
+       (wire to PCB speaker pads)
+
+    6. Install button rocker mechanisms in top surface slots
+       (align with PCB tactile switches)
+
+    7. Install EQ strip (LED strip or printed decorative insert)
+       in front panel slot above screen
+
+    8. Attach handle to top (glue, screw, or snap-fit)
+
+    9. Join front and back shells (screws hidden on bottom)
+
+    10. Apply rubber feet to bottom (4x corners)
+
+    Shell join:
+    ┌────────────────────────────┐
+    │     Front/top shell        │
+    ├────────────────────────────┤ ← Shells meet at mid-height
+    │     Back/bottom shell      │   seam line (horizontal split)
+    └────────────────────────────┘
+    Screws from bottom, hidden by rubber feet
+
+
+SPECIAL FEATURES
+════════════════
+
+    1. CARRY HANDLE
+       - Functional handle on top — pick up and carry
+       - 15mm thick grip bar, textured surface
+       - Fixed or folding (pivot hinge) options
+       - Adds personality and portability
+       - Boombox identity: carry your Devotchi around
+
+    2. DUAL SPEAKER GRILLES
+       - Left grille: functional (28mm speaker behind it)
+       - Right grille: decorative (matching pattern, no speaker)
+       - Classic boombox symmetry preserved
+       - Circular grille pattern with concentric rings
+
+    3. SLIDER ROCKER BUTTONS
+       - 3 rocker-style buttons on top surface
+       - Rock forward/back action (not push-down)
+       - Boombox transport control styling:
+         PLAY, FF, STOP (decorative labels)
+       - Satisfying clicky rocker action
+
+    4. FAUX EQ DISPLAY
+       - Strip above screen on front face
+       - Option A: Printed/static decorative bar
+       - Option B: Small LED strip showing equalizer animation
+         (driven by ESP32 GPIO, reacts to mood/status)
+       - Classic boombox visual element
+
+    5. BOOMBOX PROPORTIONS
+       - Chunky, wide, aggressive stance
+       - 180mm wide — dominant desk presence
+       - Boxy body with rounded vertical edges
+       - Thick bezels around screen and grilles
+       - Unapologetically 1980s aesthetic
+
+    6. BATTERY COMPARTMENT (decorative)
+       - Molded battery door on back panel
+       - Does not open — purely decorative detail
+       - Adds to the "this takes 8 D-cells" illusion
+       - Screw heads, latch detail, embossed label
+
+    7. AESTHETIC DETAILS
+       - Silver/chrome trim around grilles and screen
+       - "DEVOTCHI" badge above screen in chrome letters
+       - Faux antenna stub on one corner (optional)
+       - Textured front panel (fine crosshatch)
+       - Rubberized feet prevent desk scratching

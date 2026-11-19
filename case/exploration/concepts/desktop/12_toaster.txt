@@ -1,0 +1,316 @@
+╔══════════════════════════════════════════════════════════════════════════════════╗
+║                     DEVOTCHI DESKTOP CONCEPT 12: TOASTER                       ║
+╠══════════════════════════════════════════════════════════════════════════════════╣
+║                                                                                ║
+║  Retro kitchen toaster with spring-loaded pop-up screen carriage.              ║
+║  Push the lever down to "toast" (sleep mode), screen pops up on wake.          ║
+║  Brightness slider on side mimics toast darkness control.                      ║
+║  Chrome/stainless steel aesthetic with rounded retro body.                     ║
+║                                                                                ║
+║  Overall dimensions: 120mm (W) x 70mm (D) x 90mm (H body, 130mm screen up)   ║
+║                                                                                ║
+╚══════════════════════════════════════════════════════════════════════════════════╝
+
+
+FRONT VIEW (screen popped up)
+══════════════════════════════
+
+                    ┌─────────────────────┐
+                    │                     │
+                    │    ╔═══════════╗    │
+                    │    ║           ║    │  ← Screen visible
+                    │    ║  SCREEN   ║    │    ~40mm above body
+                    │    ║ 108x64.8  ║    │    when popped up
+                    │    ║           ║    │
+                    │    ╚═══════════╝    │
+        ╭───────────┴─────────────────────┴───────────╮
+       ╭┤░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░├╮
+       │├─────────────────────────────────────────────┤│  ← Bread slot
+       ││                                             ││    (speaker sound
+       ││          ╭─────────────────────╮            ││     exits here)
+       ││          │   DEVOTCHI TOASTER  │            ││
+       ││          ╰─────────────────────╯            ││
+       ││                                             ││  ← Chrome/stainless
+       ││         ┌───┐   ┌───┐   ┌───┐              ││    body
+       ││         │ 1 │   │ 2 │   │ 3 │              ││  ← 3 buttons styled
+       ││         └───┘   └───┘   └───┘              ││    as toast controls
+       ╰├─────────────────────────────────────────────┤╯
+        ╰─────────────────────────────────────────────╯
+         ◄──────────────── 120mm ────────────────────►
+
+
+FRONT VIEW (screen pushed down / "toasting")
+════════════════════════════════════════════
+
+        ╭─────────────────────────────────────────────╮
+       ╭┤░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░├╮
+       │├─────────────────────────────────────────────┤│  ← Slot — screen
+       ││                                             ││    hidden inside
+       ││          ╭─────────────────────╮            ││
+       ││          │   DEVOTCHI TOASTER  │            ││
+       ││          ╰─────────────────────╯            ││
+       ││                                             ││
+       ││         ┌───┐   ┌───┐   ┌───┐              ││
+       ││         │ 1 │   │ 2 │   │ 3 │              ││
+       ││         └───┘   └───┘   └───┘              ││
+       ╰├─────────────────────────────────────────────┤╯
+        ╰─────────────────────────────────────────────╯
+
+
+RIGHT SIDE VIEW (screen up)
+═══════════════════════════
+
+              ┌──────┐
+              │      │ ← Screen module
+              │      │   popped up ~40mm
+              │      │
+         ╭────┴──────┴────╮
+        ╭┤░░░░░░░░░░░░░░░░├╮
+        │├────────────────┤│ ← Bread slot opening
+        ││                ││
+        ││                ││
+        ││     ▓▓▓▓▓      ││ ← Brightness slider
+        ││     ▓  ▓      ││   (toast darkness)
+        ││     ▓▓▓▓▓      ││   vertical slide
+        ││                ││
+        ╰├────────────────┤╯
+         ╰────────────────╯
+          ◄──── 70mm ────►
+
+         ↑                ↑
+      Front             Back
+
+
+LEFT SIDE VIEW
+══════════════
+
+              ┌──────┐
+              │      │
+              │      │
+              │      │
+         ╭────┴──────┴────╮
+        ╭┤░░░░░░░░░░░░░░░░├╮
+        │├────────────────┤│
+        ││                ││
+        ││                ││
+        ││    ┌──────┐    ││ ← Toast lever
+        ││    │ ═══  │    ││   Push down to
+        ││    │  ▼   │    ││   "toast" / sleep
+        ││    └──────┘    ││
+        ╰├────────────────┤╯
+         ╰────────────────╯
+
+
+BACK VIEW
+═════════
+
+        ╭─────────────────────────────────────────────╮
+       ╭┤░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░├╮
+       │├─────────────────────────────────────────────┤│
+       ││                                             ││
+       ││                                             ││
+       ││          ╭─────────────────╮                ││
+       ││          │  Vent pattern   │                ││
+       ││          │  ═══ ═══ ═══    │                ││
+       ││          ╰─────────────────╯                ││
+       ││                                             ││
+       ││              ╔═══════╗                      ││ ← USB-C port
+       ╰├──────────────╨───────╨──────────────────────┤╯   at bottom
+        ╰─────────────────────────────────────────────╯
+
+
+TOP VIEW
+════════
+
+        ╭─────────────────────────────────────────────╮
+        │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
+        │░░┌─────────────────────────────────────┐░░░░│ ← Bread slot
+        │░░│    slot opening 100mm x 8mm         │░░░░│   (screen carriage
+        │░░└─────────────────────────────────────┘░░░░│    slides through)
+        │░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░│
+        ╰─────────────────────────────────────────────╯
+         ◄──────────────── 120mm ────────────────────►
+         ▲                                            ▲
+       Front                                        Back
+                          ◄── 70mm ──►
+
+
+CROSS-SECTION (side view, through center)
+═════════════════════════════════════════
+
+              ┌──────┐
+              │Screen│ ← Screen module on carriage
+              │module│   slides up/down in slot
+              │      │
+    ┌─────────┤      ├─────────┐ ← Body top surface
+    │  2mm    │      │         │
+    │  wall ┌─┤══════├─┐      │ ← Carriage rails (left/right)
+    │       │ │      │ │      │
+    │       │ │Spring│ │      │ ← Compression spring beneath
+    │       │ │  ↕   │ │      │   carriage provides pop-up force
+    │       │ │╔════╗│ │      │
+    │       │ │║PCB ║│ │      │ ← PCB mounted flat at bottom
+    │       │ │║110 ║│ │      │   of body cavity
+    │       └─┤║x65 ║├─┘      │
+    │         │╚════╝│         │ ← USB-C exits through back wall
+    └─────────┴──────┴─────────┘
+              ◄ 70mm ►
+
+    Lever mechanism (left side):
+    ┌────┐
+    │Levr│──── Lever pushes carriage down
+    │    │     against spring, latch holds
+    └────┘     until wake signal releases
+
+
+COMPONENT LAYOUT (top-down, body opened)
+════════════════════════════════════════
+
+    ┌─────────────────────────────────────────────┐
+    │                   SLOT                      │ ← Top slot for carriage
+    ├─────────────────────────────────────────────┤
+    │                                             │
+    │   ┌─────────────────────────────────────┐   │
+    │   │         CARRIAGE ASSEMBLY            │   │
+    │   │  ┌─────────────────────────────┐    │   │
+    │   │  │   Screen Module 120x75mm    │    │   │
+    │   │  │   (mounted to carriage)     │    │   │
+    │   │  └─────────────────────────────┘    │   │
+    │   │  ┌──────┐              ┌──────┐     │   │ ← Rail guides
+    │   │  │rail L│              │rail R│     │   │   (vertical slides)
+    │   │  └──────┘              └──────┘     │   │
+    │   └─────────────────────────────────────┘   │
+    │                                             │
+    │   ╔═══════════════════════════════════════╗  │
+    │   ║  PCB 110x65mm                        ║  │
+    │   ║  ┌────────────┐                      ║  │
+    │   ║  │ ESP32-S3   │     ┌──────┐         ║  │
+    │   ║  │ 15.4x20.5  │     │28mm  │         ║  │ ← Speaker (optional)
+    │   ║  └────────────┘     │spkr  │         ║  │   sound exits via slot
+    │   ║                     └──────┘         ║  │
+    │   ║  [USB-C]──────────────────→ back     ║  │
+    │   ╚═══════════════════════════════════════╝  │
+    │                                             │
+    │   ┌─────┐  ┌─────┐  ┌─────┐                │ ← Button actuators
+    │   │btn 1│  │btn 2│  │btn 3│                │   (front face,
+    │   └─────┘  └─────┘  └─────┘                │    connect to PCB)
+    │                                             │
+    └─────────────────────────────────────────────┘
+
+    Brightness slider (right side wall):
+    ┌───┐
+    │ ▓ │ ← Potentiometer or hall-effect
+    │ ║ │   slider, 30mm travel
+    │ ║ │
+    │ ▓ │
+    └───┘
+
+
+MOUNTING DETAILS
+════════════════
+
+    Screen to carriage:
+    ┌────────────────────────────┐
+    │  Screen module             │
+    │  ┌──┐              ┌──┐   │ ← 4x M2 screws into
+    │  │M2│              │M2│   │   carriage frame
+    │  └──┘              └──┘   │
+    │                           │
+    │  ┌──┐              ┌──┐   │
+    │  │M2│              │M2│   │
+    │  └──┘              └──┘   │
+    └────────────────────────────┘
+
+    Carriage rail system:
+    ┌──┐     ┌──┐
+    │▓▓│     │▓▓│  ← Linear slide bearings
+    │▓▓│     │▓▓│    or PTFE-lined channels
+    │▓▓│     │▓▓│    ~50mm travel
+    │▓▓│     │▓▓│
+    └──┘     └──┘
+
+    Spring:
+    ╔══╗
+    ║  ║  ← Compression spring
+    ║  ║    ~15mm natural, ~8mm compressed
+    ║  ║    ~0.5N force (gentle pop-up)
+    ╚══╝
+
+    PCB mount:
+    4x M2.5 standoffs, 5mm height, screwed to bottom of body
+
+    Lever latch:
+    ┌────────┐
+    │ Lever  │──┐
+    │ arm    │  │ ← Magnetic latch (small magnet
+    └────────┘  │   + reed switch, release on wake
+                │   command from ESP32)
+    ┌───────────┘
+    │ Latch point
+
+
+ASSEMBLY NOTES
+══════════════
+
+    1. Mount PCB to bottom of body cavity with M2.5 standoffs
+    2. Connect screen FPC cable through carriage slot to PCB
+       (use flexible ribbon cable with slack for travel)
+    3. Attach screen module to carriage frame (4x M2)
+    4. Insert compression spring into central guide post
+    5. Slide carriage onto rail channels, compress spring
+    6. Install lever mechanism on left side wall
+    7. Connect button actuators (front face) to PCB tactile switches
+    8. Install brightness slider potentiometer on right side wall
+    9. Route speaker wires, speaker mounts in body cavity
+       (sound exits through bread slot opening)
+    10. Snap or screw body shells together (2-piece clamshell)
+
+    FPC cable routing (critical):
+    ┌─────────┐
+    │Carriage │
+    │         ├──╮
+    │  Screen ├──┤ ← FPC ribbon folds in Z-pattern
+    │         │  │   to accommodate 50mm carriage travel
+    └─────────┘  │
+                 │
+    ╔════════════╧══╗
+    ║     PCB       ║
+    ╚═══════════════╝
+
+
+SPECIAL FEATURES
+════════════════
+
+    1. SPRING POP-UP MECHANISM
+       - Push lever down: carriage descends into body, screen hidden
+       - Magnetic latch holds carriage down (sleep mode)
+       - ESP32 releases magnetic latch on wake: screen pops up
+       - Satisfying spring action with gentle damping
+
+    2. BRIGHTNESS SLIDER (Toast Darkness Control)
+       - Vertical slider on right side
+       - Labeled "LIGHT ─── DARK" (reversed for humor)
+       - Controls actual screen brightness via potentiometer
+
+    3. TOAST-STYLE BUTTONS
+       - Button 1: "CANCEL" — left button
+       - Button 2: "DEFROST" — center button
+       - Button 3: "BAGEL" — right button
+       - Retro toaster labeling, functional Devotchi controls
+
+    4. SPEAKER THROUGH SLOT
+       - Sound exits through the bread slot opening
+       - Creates a natural resonance chamber effect
+       - Slot doubles as speaker grille
+
+    5. CHROME/STAINLESS AESTHETIC
+       - Body: brushed stainless steel look (metallic PLA or
+         actual sheet metal wrap)
+       - Rounded retro proportions (1950s Sunbeam toaster style)
+       - Lever: chrome-look plastic or metal
+       - Warm, kitchen-friendly desk presence
+
+    6. SLEEP/WAKE INTERACTION
+       - Push lever → satisfying click → screen descends → sleep mode
+       - Wake event → magnetic release → spring pop → screen rises
+       - Physical theater for digital state changes

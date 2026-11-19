@@ -1,0 +1,259 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    DEVOTCHI DESKTOP CONCEPT 07                              ║
+║                    ARCADE CABINET                                           ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+DESCRIPTION
+───────────
+Mini arcade machine desktop companion. Portrait-oriented screen sits behind
+an arcade-style bezel tilted back ~15 degrees. Below the screen, a control
+panel shelf angled at 20 degrees holds 3 oversized dome buttons and a
+decorative joystick cap. A marquee header area at top provides space for an
+LED strip or printed label. Speaker fires through a side vent panel. Coin
+slot decoration on the right side. T-molding trim on cabinet edges. Weighted
+base ensures tip-over resistance.
+
+OVERALL DIMENSIONS
+──────────────────
+  Width:  100 mm
+  Depth:   80 mm
+  Height: 140 mm
+  Wall:     2.0 mm
+
+
+FRONT VIEW
+──────────
+
+              100 mm
+     ◄──────────────────────►
+
+     ┌──────────────────────┐  ▲
+     │ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ │  │  Marquee area
+     │ ▓▓ D E V O T C H I ▓▓│  │  18 mm tall
+     │ ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ │  │  (LED strip or label)
+     ├──────────────────────┤  │
+     │ ┌──────────────────┐ │  │
+     │ │                  │ │  │
+     │ │                  │ │  │
+     │ │    5.0" SCREEN   │ │  │  140 mm
+     │ │    (portrait)    │ │  │
+     │ │   75 × 120 mm   │ │  │
+     │ │    module area   │ │  │
+     │ │                  │ │  │
+     │ │                  │ │  │
+     │ └──────────────────┘ │  │
+     ├──────────────────────┤  │  Control panel
+     │     ╭───╮            │  │  shelf (angled
+     │     │ J │  joystick  │  │  20 degrees)
+     │     ╰─┬─╯  (decor)  │  │
+     │       │              │  │
+     │  ⬤    ⬤    ⬤       │  │  3 dome buttons
+     │ 20mm 20mm 20mm      │  │  (20 mm diameter)
+     ├──────────────────────┤  │
+     │ ████████████████████ │  │  Weighted base
+     └──────────────────────┘  ▼
+
+
+SIDE PROFILE (RIGHT)
+─────────────────────
+
+              80 mm
+     ◄──────────────────►
+
+                    ╱│  ▲
+                  ╱  │  │  Marquee
+                ╱    │  │  (angled top)
+     ┌────────╱─────┐│  │
+     │   15° tilt   ││  │
+     │  ╔═════════╗ ││  │
+     │  ║ SCREEN  ║╱ │  │
+     │  ║         ║  │  │  140 mm
+     │  ║         ║  │  │
+     │  ╚═════════╝  │  │
+     │  ┌─────────┐╱ │  │  Control panel
+     │  │ BUTTONS │   │  │  20° angle
+     │  └─────────┘   │  │
+     │ ┌─[COIN]──┐   │  │  Coin slot
+     │ │ ░░░░░░░ │   │  │  decoration
+     │ └─────────┘   │  │
+     ├────────────────┤  │
+     │▓▓▓▓ BASE ▓▓▓▓▓│  │  Weighted base
+     └────────────────┘  ▼
+
+     ◄── Speaker vent ──►
+         (side panel)
+
+
+BACK VIEW
+─────────
+
+              100 mm
+     ◄──────────────────────►
+
+     ┌──────────────────────┐  ▲
+     │                      │  │
+     │                      │  │
+     │                      │  │
+     │   ┌──────────────┐   │  │
+     │   │   FLAT BACK  │   │  │
+     │   │    PANEL     │   │  │  140 mm
+     │   │              │   │  │
+     │   └──────────────┘   │  │
+     │                      │  │
+     │      ┌──────┐        │  │
+     │      │USB-C │        │  │  USB-C cutout
+     │      │8.94× │        │  │  (centered)
+     │      │3.26  │        │  │
+     │      └──────┘        │  │
+     ├──────────────────────┤  │
+     │▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓│  │
+     └──────────────────────┘  ▼
+
+
+CROSS-SECTION (SIDE CUT)
+─────────────────────────
+
+                      ╱───── Marquee / LED strip area
+                    ╱
+     ┌────────────╱──────┐
+     │ ░░░░░░░░░░░░░░░░ │◄── 2 mm wall
+     │ ┌────────────────┐│
+     │ │                ││
+     │ │  SCREEN MODULE ││◄── 15° backward tilt
+     │ │  120×75×4.5mm  ││    (portrait orientation)
+     │ │                ││
+     │ │                ││
+     │ └────────────────┘│
+     │   ╲               │
+     │    ╲──────────────│◄── Control panel shelf
+     │     │ PCB 110×65  │    20° forward tilt
+     │     │ ┌─┐┌─┐┌─┐  │◄── Dome buttons from above
+     │     └─────────────│
+     │ ┌────────────────┐│
+     │ │  STEEL WEIGHT  ││◄── Weighted base insert
+     │ │  ~60×40×5mm    ││
+     │ └────────────────┘│
+     └───────────────────┘
+
+
+COMPONENT LAYOUT (EXPLODED TOP-DOWN)
+─────────────────────────────────────
+
+     ┌─ Marquee Header ──────────────────────────┐
+     │  Optional LED strip (WS2812B, 5 LEDs)     │
+     │  or printed translucent label insert       │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Screen Assembly ─────────────────────────┐
+     │  5.0" SSD1963 module (120×75×4.5mm)       │
+     │  Portrait mount, 15° tilt bracket          │
+     │  FPC cable routes down to PCB              │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Control Panel ───────────────────────────┐
+     │  PCB (110×65×1.6mm) — mounted at 20°      │
+     │  ESP32-S3-MINI-1 (15.4×20.5×2.4mm)       │
+     │  3 × 20mm dome buttons (through-panel)    │
+     │  Decorative joystick cap (non-functional)  │
+     │  Speaker (28mm dia) behind side vent       │
+     └────────────────────────────────────────────┘
+              │
+     ┌─ Base ─────────────────────────────────────┐
+     │  Steel weight plate (~80g)                 │
+     │  4 × rubber feet                           │
+     │  USB-C breakout on flat back               │
+     └────────────────────────────────────────────┘
+
+
+MOUNTING DETAILS
+────────────────
+
+  Screen Mount:
+    - Portrait orientation in bezel opening (64.8×108mm visible)
+    - 2 mm bezel lip on all sides
+    - Tilted back 15° via angled internal rails
+    - Held by 4 snap clips on module edges
+
+  PCB Mount:
+    - Angled shelf at 20° below screen
+    - 4 × M2 brass standoffs (5mm height)
+    - PCB sits component-side up (buttons face user)
+
+  Dome Buttons:
+    - 3 × 20mm dome caps press onto tactile switches via plungers
+    - Through-hole mount in control panel face
+    - Spacing: 25mm center-to-center
+
+  Speaker:
+    - Mounted internally behind left side vent panel
+    - Vent: horizontal slat pattern (8 slats, 1.5mm wide)
+    - Sealed chamber behind speaker for better acoustics
+
+  USB-C:
+    - Cutout on flat back panel, centered horizontally
+    - 8.94 × 3.26 mm opening
+    - 15mm from bottom edge
+
+  Weight:
+    - Steel disc or plate, press-fit into base cavity
+    - Target: 80-100g for tip-over resistance
+
+
+ASSEMBLY NOTES
+──────────────
+
+  1. Insert steel weight into base cavity, press-fit or adhesive
+  2. Attach rubber feet to base bottom (4 corners)
+  3. Mount PCB onto angled shelf standoffs (4 × M2 screws)
+  4. Route USB-C extension to back panel cutout
+  5. Install speaker in side chamber, route wires to PCB
+  6. Connect screen FPC to PCB, seat screen in bezel clips
+  7. Install dome button caps through control panel holes
+  8. Snap joystick decorative cap into place
+  9. Insert marquee label or LED strip into header slot
+  10. Join front shell to back shell (4 × snap clips + 2 screws)
+  11. Apply T-molding trim strips to cabinet edges
+
+  Shell: 2-part (front + back), snap-fit with 2 security screws
+  Material: PLA/PETG, black with optional side-art decals
+  Print orientation: Front shell face-down, back shell face-down
+
+
+SPECIAL FEATURES
+────────────────
+
+  T-Molding Trim:
+    - Decorative edge trim channel on all vertical cabinet edges
+    - Accepts standard 3/4" T-molding or 3D-printed inserts
+    - Colors: neon pink, electric blue, or classic black
+
+  Coin Slot Decoration:
+    - Right side panel: embossed/recessed coin slot shape
+    - Non-functional, purely aesthetic
+    - Can be painted metallic silver for realism
+
+  Marquee Header:
+    - Translucent panel at top (2mm frosted acrylic or PETG)
+    - Backlit by optional 5× WS2812B LED strip
+    - Removable/swappable label insert slot
+    - Default: "DEVOTCHI" retro pixel font
+
+  Joystick Cap:
+    - Decorative ball-top cap (15mm diameter)
+    - Mounted on short fixed post
+    - Does not move — purely cosmetic
+    - Classic red or black ball top
+
+  Weighted Base:
+    - Steel plate counterbalances top-heavy cabinet
+    - Low center of gravity prevents tip-over
+    - Base slightly wider than cabinet body (100mm full width)
+
+  Retro Aesthetic:
+    - Side art panel areas for custom vinyl decals
+    - Optional "Player 1" / "Insert Coin" text embossing
+    - Control panel can be printed in contrasting color
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  Design 07: Arcade Cabinet — Mini desktop arcade with retro charm          ║
+╚══════════════════════════════════════════════════════════════════════════════╝

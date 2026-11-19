@@ -1,0 +1,1913 @@
+(kicad_sch
+  (version 20260306)
+  (generator "eeschema")
+  (uuid "f9c9555a-7452-4935-85fc-f1fb6d33f2a1")
+  (paper "A3")
+  (title_block
+    (title "USB service / recovery | BLE-A1 candidate")
+    (date "2026-11-19")
+    (rev "BLE-A1-USB")
+    (comment 1 "Disconnect USB before mode change. Battery required for programming."))
+  (lib_symbols
+    (symbol "USB_Service:JS202011SCQN"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "SW"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "JS202011SCQN"
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "JS202011SCQN_0_1"
+        (rectangle
+          (start -10.16 7.62)
+          (end 10.16 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "JS202011SCQN_1_1"
+        (pin passive line
+          (at -15.24 3.81 0)
+          (length 5.08)
+          (name "COMMON_A"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at -15.24 -3.81 0)
+          (length 5.08)
+          (name "COMMON_B"
+            (effects
+              (font
+                (size 1 1))))
+          (number "5"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 5.08 180)
+          (length 5.08)
+          (name "NORMAL_A"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 2.54 180)
+          (length 5.08)
+          (name "SERVICE_A"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 -2.54 180)
+          (length 5.08)
+          (name "NORMAL_B"
+            (effects
+              (font
+                (size 1 1))))
+          (number "4"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 -5.08 180)
+          (length 5.08)
+          (name "SERVICE_B"
+            (effects
+              (font
+                (size 1 1))))
+          (number "6"
+            (effects
+              (font
+                (size 1 1))))))
+      (property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-js-series-datasheet?assetguid=aba42b08-0d2c-423b-813d-a2faa5a3bb14"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (symbol "USB_Service:SW_Push"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "SW"
+        (at 1.27 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "SW_Push"
+        (at 0 -1.524 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Push button switch, generic, two pins"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "switch normally-open pushbutton push-button"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SW_Push_0_1"
+        (circle
+          (center -2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "USB_Service:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "USB_Service:TPS3808G01DBVR"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPS3808G01DBVR"
+        (at 0 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TPS3808G01DBVR_0_1"
+        (rectangle
+          (start -10.16 5.08)
+          (end 10.16 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TPS3808G01DBVR_1_1"
+        (pin open_collector line
+          (at -15.24 2.54 0)
+          (length 5.08)
+          (name "RESET_N"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "1"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at -15.24 0.0 0)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "2"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at -15.24 -2.54 0)
+          (length 5.08)
+          (name "MR_N"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "3"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin passive line
+          (at 15.24 2.54 180)
+          (length 5.08)
+          (name "CT"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "4"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin input line
+          (at 15.24 0.0 180)
+          (length 5.08)
+          (name "SENSE"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "5"
+            (effects
+              (font
+                (size 1.0 1.0)))))
+        (pin power_in line
+          (at 15.24 -2.54 180)
+          (length 5.08)
+          (name "VDD"
+            (effects
+              (font
+                (size 1.0 1.0))))
+          (number "6"
+            (effects
+              (font
+                (size 1.0 1.0))))))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (symbol "USB_Service:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "USB_Service:PESD5V0U2BT"
+      (pin_names
+        (offset 0.508))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "D"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "PESD5V0U2BT"
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PESD5V0U2BT_0_1"
+        (rectangle
+          (start -10.16 7.62)
+          (end 10.16 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "PESD5V0U2BT_1_1"
+        (pin passive line
+          (at -15.24 2.54 0)
+          (length 5.08)
+          (name "LINE1"
+            (effects
+              (font
+                (size 1 1))))
+          (number "1"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at -15.24 -2.54 0)
+          (length 5.08)
+          (name "LINE2"
+            (effects
+              (font
+                (size 1 1))))
+          (number "2"
+            (effects
+              (font
+                (size 1 1)))))
+        (pin passive line
+          (at 15.24 0 180)
+          (length 5.08)
+          (name "COMMON_GND"
+            (effects
+              (font
+                (size 1 1))))
+          (number "3"
+            (effects
+              (font
+                (size 1 1))))))
+      (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0U2BT.pdf"
+        (at 0 0 0)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (symbol
+    (lib_id "USB_Service:JS202011SCQN")
+    (at 50.8 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6ab8b610-b743-4b8a-9089-cb2d9e5eef23")
+    (property "Reference" "SW7301"
+      (at 50.8 38.099999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SERVICE / NORMAL"
+      (at 50.8 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "BLE_Candidate:CK_JS202011SCQN"
+      (at 50.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" "https://www.littelfuse.com/assetdocs/littelfuse-ck-slide-js-series-datasheet?assetguid=aba42b08-0d2c-423b-813d-a2faa5a3bb14"
+      (at 50.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "JS202011SCQN"
+      (at 50.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C221666"
+      (at 50.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 50.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "2"
+      (uuid "b09c8055-8bad-448b-a874-837438fa66bd"))
+    (pin "5"
+      (uuid "70ca5d2d-466e-46e3-9891-2bd169d588ed"))
+    (pin "1"
+      (uuid "410e32b1-83dc-4126-aa3b-7f01a9462db9"))
+    (pin "3"
+      (uuid "2a19a6b4-e852-4f9a-bba3-fd18d27c9a54"))
+    (pin "4"
+      (uuid "9fc07fe7-751d-45c7-b7d5-2b5e09bf3269"))
+    (pin "6"
+      (uuid "ab12304b-58e9-4c94-8545-aa52d27a851c"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "SW7301")
+          (unit 1)))))
+  (no_connect
+    (at 66.04 45.72)
+    (uuid "f01a7409-18f0-4d79-9150-04ec65cd3b66"))
+  (wire
+    (pts
+      (xy 35.56 46.99)
+      (xy 30.48 46.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "31b1a833-583d-4e4b-975c-7a78c9136c7c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 30.48 46.99 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ecd44ccd-eb31-4e03-8f5b-0c74561d9428"))
+  (wire
+    (pts
+      (xy 66.04 48.26)
+      (xy 71.12 48.26))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "341be0e5-5040-4f53-8377-d31b08cdf03e"))
+  (global_label "NTC_TS"
+    (shape bidirectional)
+    (at 71.12 48.26 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "523be22a-a1cb-4ff1-bcee-36e52783ce85"))
+  (no_connect
+    (at 66.04 53.34)
+    (uuid "a5883f72-07d8-4c16-9cc8-5974ac284175"))
+  (wire
+    (pts
+      (xy 35.56 54.61)
+      (xy 30.48 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a4f5c2e2-51d4-4b69-be0b-890b8a7c5b83"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 30.48 54.61 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "7df67ec5-4350-4d3f-a6f6-37d1a317bcc1"))
+  (wire
+    (pts
+      (xy 66.04 55.88)
+      (xy 71.12 55.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "176f0320-8f81-4c7e-b7a8-e7a2b1c07d63"))
+  (global_label "VBUS_INHIBIT_BASE"
+    (shape bidirectional)
+    (at 71.12 55.88 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "76a0d087-767b-48af-b4c1-98603592d92e"))
+  (symbol
+    (lib_id "USB_Service:SW_Push")
+    (at 177.8 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9bb75594-0eaa-41f1-9255-6ed13c6c167e")
+    (property "Reference" "SW7302"
+      (at 177.8 38.099999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "BOOT"
+      (at 177.8 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A"
+      (at 177.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 177.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "TS-1187A-B-A-B"
+      (at 177.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C318884"
+      (at 177.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 177.8 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "33666b9a-2552-4c15-a89a-5224e1bc8fde"))
+    (pin "2"
+      (uuid "231e18a6-a25f-464b-aaa7-a437005c30f2"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "SW7302")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 172.72 50.8)
+      (xy 167.64 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c06914e6-6b6e-4c35-bf7a-33b54b430787"))
+  (global_label "MCU_BOOT"
+    (shape bidirectional)
+    (at 167.64 50.8 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "d69ba705-fe4b-426a-b55b-73ac3aa6bb77"))
+  (wire
+    (pts
+      (xy 182.88 50.8)
+      (xy 187.96 50.8))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "18f839b1-b78e-47b8-b50c-731da14f0fbb"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 187.96 50.8 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "718fa5af-efbe-4220-84ee-b33edbdcde86"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 248.92 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "bfc360d8-4bff-4b0b-b1cb-a6e615c72c63")
+    (property "Reference" "R7301"
+      (at 248.92 38.099999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k 1%"
+      (at 248.92 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 248.92 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 248.92 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF1002T5E"
+      (at 248.92 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C25804"
+      (at 248.92 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 248.92 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "93269bce-5fdc-4444-8de6-8fcd0222298b"))
+    (pin "2"
+      (uuid "cebc6300-8701-48a3-a049-6e7625147cd0"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7301")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 248.92 46.99)
+      (xy 243.84 46.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8e3fdb8a-5eb0-4304-9074-a4f9128dd1e8"))
+  (global_label "VLOGIC_SWITCHED"
+    (shape bidirectional)
+    (at 243.84 46.99 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "20648c6f-b7eb-4192-b19c-5b47c4f8f248"))
+  (wire
+    (pts
+      (xy 248.92 54.61)
+      (xy 254.0 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b3a2ea13-31a5-43ae-af5e-8f1cf7b358da"))
+  (global_label "MCU_BOOT"
+    (shape bidirectional)
+    (at 254.0 54.61 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "bb92bf67-b257-498d-9b23-4a79363479d9"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 327.66 50.8 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6a3bfcdd-58db-4833-94c3-58d99b8f798a")
+    (property "Reference" "R7308"
+      (at 327.66 38.099999999999994 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k 1%"
+      (at 327.66 40.64 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 327.66 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 327.66 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF1002T5E"
+      (at 327.66 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C25804"
+      (at 327.66 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 327.66 50.8 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "0e25137b-d22a-4f5c-a356-63966c92a8a2"))
+    (pin "2"
+      (uuid "9e87ba30-5505-45c2-a1d2-d5ada11bc1c9"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7308")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 327.66 46.99)
+      (xy 322.58 46.99))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "21761aea-329e-452c-8dc3-d3c2bce13550"))
+  (global_label "MCU_STRAP46"
+    (shape bidirectional)
+    (at 322.58 46.99 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "7a12f393-48a2-4003-82ee-9c1f083e2eae"))
+  (wire
+    (pts
+      (xy 327.66 54.61)
+      (xy 332.74 54.61))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0f874a18-1eed-46ab-9169-ec91b5bfeee1"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 332.74 54.61 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "6df58662-839f-495c-aacc-f25f059b6186"))
+  (symbol
+    (lib_id "USB_Service:TPS3808G01DBVR")
+    (at 50.8 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "22a7d0ac-c0d3-46e6-badb-52df480ec95f")
+    (property "Reference" "U7301"
+      (at 50.8 119.38000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPS3808G01DBVR"
+      (at 50.8 121.92000000000002 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
+      (at 50.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf"
+      (at 50.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "TPS3808G01DBVR"
+      (at 50.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C19653"
+      (at 50.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 50.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "1b05ba50-b1a6-4942-ab3e-c78c46bd7d02"))
+    (pin "2"
+      (uuid "0dfa655c-5068-4eba-b3ac-850c5624c727"))
+    (pin "3"
+      (uuid "8b38507d-a2e7-448c-a384-f03aca842060"))
+    (pin "4"
+      (uuid "e2ac271b-d81e-4489-ba26-dfff323f4375"))
+    (pin "5"
+      (uuid "e113daee-1607-46e1-91b4-6d7c73b040d3"))
+    (pin "6"
+      (uuid "21f0339e-48df-4100-bd25-8e9d51e71fec"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "U7301")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 35.56 129.54)
+      (xy 30.48 129.54))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e25085ab-ee52-4566-8261-6d4975d1e66d"))
+  (global_label "USB_DATA_EN"
+    (shape bidirectional)
+    (at 30.48 129.54 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "0376c142-91e8-4c7a-8516-914cf0ecd074"))
+  (wire
+    (pts
+      (xy 35.56 132.08)
+      (xy 30.48 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "345c4323-6995-4012-8a11-b6f3f327a5bc"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 30.48 132.08 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "311de59b-d55d-4992-95ed-7516091f53a9"))
+  (wire
+    (pts
+      (xy 35.56 134.62)
+      (xy 30.48 134.62))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8eacbac9-2fac-435d-8817-5bb4727d6634"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 30.48 134.62 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2c971a17-b94a-4c9c-9202-c304e12bc359"))
+  (no_connect
+    (at 66.04 129.54)
+    (uuid "4d2a67e2-b1f7-42ea-9895-646f2ed11561"))
+  (wire
+    (pts
+      (xy 66.04 132.08)
+      (xy 71.12 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c413550e-0f16-469f-ba8b-4eebf997f438"))
+  (global_label "USB_VBUS_SENSE"
+    (shape bidirectional)
+    (at 71.12 132.08 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b91bfe56-424b-474f-ba40-6256be4e437b"))
+  (wire
+    (pts
+      (xy 66.04 134.62)
+      (xy 71.12 134.62))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "49bf0ee7-e4a7-4ae4-995e-b2b6b743a3c0"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 71.12 134.62 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "0198a2ae-cc6d-455f-88a7-3bc837fe06b5"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 137.16 109.22 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ad473bb6-58de-4b70-b024-91284772804f")
+    (property "Reference" "R7304"
+      (at 137.16 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100k 0.1%"
+      (at 137.16 99.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 137.16 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 137.16 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "RT0603BRD07100KL"
+      (at 137.16 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C122538"
+      (at 137.16 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 137.16 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "58174ee1-4938-4b59-ab8d-0a9bae646e1c"))
+    (pin "2"
+      (uuid "87ea4243-9b93-45dd-8aef-89ee9aee96d8"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7304")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 137.16 105.41)
+      (xy 132.08 105.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c4421b58-48f8-4e15-9e07-3470f2150777"))
+  (global_label "VBUS_RAW"
+    (shape bidirectional)
+    (at 132.08 105.41 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "bb5d47cf-fa90-47a2-8882-2447f07402be"))
+  (wire
+    (pts
+      (xy 137.16 113.03)
+      (xy 142.24 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "93608a55-fcb3-4b2e-a1d3-e8914c046629"))
+  (global_label "USB_VBUS_SENSE"
+    (shape bidirectional)
+    (at 142.24 113.03 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d096c992-3338-4e8b-af7c-0e82cf49f050"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 137.16 147.32 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ac592690-886c-4f9b-942d-9f3239a8e310")
+    (property "Reference" "R7305"
+      (at 137.16 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k 0.1%"
+      (at 137.16 137.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 137.16 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 137.16 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "RT0603BRD0710KL"
+      (at 137.16 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C95204"
+      (at 137.16 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 137.16 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "0e24d09b-6a84-4cbc-9155-4fd17c708ed1"))
+    (pin "2"
+      (uuid "0a2ed565-443d-4cc6-b3ac-1413457d1e92"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7305")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 137.16 143.51)
+      (xy 132.08 143.51))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e01c9a13-ebac-4a2b-91d5-696d544ebd4d"))
+  (global_label "USB_VBUS_SENSE"
+    (shape bidirectional)
+    (at 132.08 143.51 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "3fa6af85-89a9-44d9-89c2-a90ed92a1ce4"))
+  (wire
+    (pts
+      (xy 137.16 151.13)
+      (xy 142.24 151.13))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "54ffc9c1-ac18-4731-ba9d-f1db92a69005"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 142.24 151.13 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "ef4e5643-0b5f-4647-86d7-7124e0f6c029"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 218.44 109.22 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5cb3e76e-541d-4b57-8682-17630cbf6efd")
+    (property "Reference" "R7306"
+      (at 218.44 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k 1%"
+      (at 218.44 99.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 218.44 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 218.44 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF1002T5E"
+      (at 218.44 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C25804"
+      (at 218.44 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 218.44 109.22 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "fbd56a14-6487-4e07-a489-625c53300abc"))
+    (pin "2"
+      (uuid "c296f982-be25-4afe-965c-2a4eb79c7063"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7306")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.44 105.41)
+      (xy 213.36 105.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ecb84b1b-3ad9-4ccc-adb4-7378e89881a1"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 213.36 105.41 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f8261e44-7394-4172-a0c8-af5862c27747"))
+  (wire
+    (pts
+      (xy 218.44 113.03)
+      (xy 223.52 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7410c7e6-e77a-4285-bbbf-6029b5337630"))
+  (global_label "USB_DATA_EN"
+    (shape bidirectional)
+    (at 223.52 113.03 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "461434f1-05ed-49a7-9887-81c0d6ea0afe"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 218.44 147.32 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "52e56f26-ec7e-4f5b-abd6-9ceff03e2dc5")
+    (property "Reference" "R7307"
+      (at 218.44 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100k 1%"
+      (at 218.44 137.16 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 218.44 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 218.44 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF1003T5E"
+      (at 218.44 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C25803"
+      (at 218.44 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 218.44 147.32 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "d6207182-8049-4b77-8415-c07f2a018133"))
+    (pin "2"
+      (uuid "f9b357fe-2108-4f64-aad8-a3a82c30de69"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7307")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.44 143.51)
+      (xy 213.36 143.51))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f485c1cd-90b1-44cd-a289-6e8cdd5a4d0c"))
+  (global_label "USB_DATA_EN"
+    (shape bidirectional)
+    (at 213.36 143.51 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "bc5bdc60-3b0c-4142-88c4-848992715de6"))
+  (wire
+    (pts
+      (xy 218.44 151.13)
+      (xy 223.52 151.13))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ecac071f-4c04-4ddc-bbbe-f56a05e73aaa"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 223.52 151.13 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a2bb7e9c-ba6d-42d8-b98d-75a42b480d8e"))
+  (symbol
+    (lib_id "USB_Service:C")
+    (at 304.8 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "dd6b0f0c-9c14-47c1-8171-ce85f5b374fb")
+    (property "Reference" "C7301"
+      (at 304.8 119.38000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100nF 50V"
+      (at 304.8 121.92000000000002 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 304.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 304.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "CC0603KRX7R9BB104"
+      (at 304.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C14663"
+      (at 304.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 304.8 132.08 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "fb784bc9-f908-4ea2-8432-85b63741aed2"))
+    (pin "2"
+      (uuid "a57a7339-8389-4370-8c35-15a041d120f0"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "C7301")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 304.8 128.27)
+      (xy 299.72 128.27))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ebfc4d47-1c7f-44a1-a508-c59151c04b33"))
+  (global_label "USB_3V3"
+    (shape bidirectional)
+    (at 299.72 128.27 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "3dc3ed83-27c5-4d4d-a8a9-f7d505a786b2"))
+  (wire
+    (pts
+      (xy 304.8 135.89)
+      (xy 309.88 135.89))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "877afba2-77f6-4042-b1ac-7ff419002ae3"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 309.88 135.89 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d18dd351-e389-4c20-98e5-c01e3e0532cd"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 50.8 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8361a749-969f-4db5-abe1-de1ee653ebc2")
+    (property "Reference" "R7302"
+      (at 50.8 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "22R 1%"
+      (at 50.8 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 50.8 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 50.8 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF220JT5E"
+      (at 50.8 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C23345"
+      (at 50.8 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 50.8 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "77111561-bdd9-42cb-ac4c-50934ac9d0ae"))
+    (pin "2"
+      (uuid "caaa7148-248e-4662-80d9-6054ba16e6c0"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7302")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 50.8 207.01)
+      (xy 45.72 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e75197a0-2fd1-4399-bc73-73ff2105675a"))
+  (global_label "USB_DP_ISO"
+    (shape bidirectional)
+    (at 45.72 207.01 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "d0db58ff-2986-4f6e-a051-f946319b0850"))
+  (wire
+    (pts
+      (xy 50.8 214.63)
+      (xy 55.88 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3be400f3-5a16-458d-bdfb-24fa752dd1b1"))
+  (global_label "MCU_USB_DP"
+    (shape bidirectional)
+    (at 55.88 214.63 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "6f6cdab6-6c21-4136-ae8b-5b0bf5151ba7"))
+  (symbol
+    (lib_id "USB_Service:R")
+    (at 137.16 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "007f4bdf-9781-4574-9866-ad26bb642e03")
+    (property "Reference" "R7303"
+      (at 137.16 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "22R 1%"
+      (at 137.16 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 137.16 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 137.16 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "0603WAF220JT5E"
+      (at 137.16 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C23345"
+      (at 137.16 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 137.16 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "b350ac9c-3b6a-48bb-b033-be8a306f3ea3"))
+    (pin "2"
+      (uuid "1dab15c1-6e94-4465-8965-a1c52ec43513"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "R7303")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 137.16 207.01)
+      (xy 132.08 207.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1e8fa4ac-accc-434c-886d-33f433bb4d53"))
+  (global_label "USB_DM_ISO"
+    (shape bidirectional)
+    (at 132.08 207.01 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "6486d349-09af-4a2a-afe3-3c9ad4ee4913"))
+  (wire
+    (pts
+      (xy 137.16 214.63)
+      (xy 142.24 214.63))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3dd8477a-bba7-41c9-8af1-eacf02452a20"))
+  (global_label "MCU_USB_DM"
+    (shape bidirectional)
+    (at 142.24 214.63 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "92aee54a-0645-4251-bf7f-c5c76b0e493a"))
+  (symbol
+    (lib_id "USB_Service:PESD5V0U2BT")
+    (at 248.92 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "337c073b-726e-4350-b9e9-d3f8c3e0f746")
+    (property "Reference" "D7301"
+      (at 248.92 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "PESD5V0U2BT,215"
+      (at 248.92 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+      (at 248.92 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/PESD5V0U2BT.pdf"
+      (at 248.92 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "MPN" "PESD5V0U2BT,215"
+      (at 248.92 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "LCSC" "C85399"
+      (at 248.92 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "AssemblyDomain" "main"
+      (at 248.92 210.82 0)
+      (hide yes)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "b711bf88-0179-4971-9439-1930cde60b97"))
+    (pin "2"
+      (uuid "26fbd43c-a2f5-4b98-98d6-97b8d279fcf7"))
+    (pin "3"
+      (uuid "a182fb72-8fc3-4cd3-9392-8d5467bc20dc"))
+    (instances
+      (project "mini_companion_integrated"
+        (path "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b"
+          (reference "D7301")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 233.68 208.28)
+      (xy 228.6 208.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a8c7c202-ba51-4eb1-9be4-ee9bd24982bd"))
+  (global_label "USB_DP_CONN"
+    (shape bidirectional)
+    (at 228.6 208.28 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "c4a422f9-1a30-4de1-9125-a69f4467d6af"))
+  (wire
+    (pts
+      (xy 233.68 213.36)
+      (xy 228.6 213.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "110922da-13d0-4922-87fd-e2ef0c3e732a"))
+  (global_label "USB_DM_CONN"
+    (shape bidirectional)
+    (at 228.6 213.36 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "c6d4d860-8487-4694-9203-31dc5d3b364f"))
+  (wire
+    (pts
+      (xy 264.16 210.82)
+      (xy 269.24 210.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9fb7fdfb-52c1-46f3-a524-5531cd97a813"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 269.24 210.82 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "8ad7569a-1fd1-4a3c-aa87-a7276a2afe41"))
+  (text "1. MODE AND RECOVERY"
+    (at 25.4 20.32 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "50c950be-9a8d-4dc9-a137-50e0731eed69"))
+  (text "NORMAL: TS probe and VBUS run-inhibit untouched. SERVICE: charging disabled, battery run permitted.\nRecovery: unplug USB; POWER OFF and discharge; SERVICE; hold BOOT; POWER ON; attach data cable.\nAfter use: unplug USB before returning NORMAL. Empty battery: charge in NORMAL first."
+    (at 25.4 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "a5798ea7-0e8b-4b3c-b3bb-ab4ae5f60332"))
+  (text "2. HARDWARE VBUS QUALIFICATION"
+    (at 25.4 91.44 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "00ba7adc-5103-4438-9960-baca3317dcff"))
+  (text "R7304/R7305: 0.1% divider, nominal 4.455 V falling threshold.\nCT open: 12..28 ms release. U7302 on usb_enable_gate also qualifies main rail.\nBoth open-drain monitors must release before DATA_EN can rise."
+    (at 25.4 172.72 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "28575205-2ec0-46db-87f5-0598604ad608"))
+  (text "3. USB FULL-SPEED PATH"
+    (at 25.4 190.5 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "17df4864-3473-4a3f-acfb-d27ec36d9573"))
+  (text "J201 -> D7301 -> U1101 CH3/CH4 -> 22 ohm -> MCU GPIO20/19.\nPlace TVS at connector, series resistors at MCU. Keep D+/D- coupled over GND.\nNo bus-power or charging during SERVICE. USB-only recovery with an empty battery is unsupported."
+    (at 25.4 243.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "917a6f53-719e-480f-be5a-72c2ef68bc6c")))

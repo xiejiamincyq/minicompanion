@@ -1,0 +1,411 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 10: CAPSULE / PILL
+================================================================================
+
+  Pill-shaped (stadium shape) with fully rounded ends. Landscape orientation.
+  Semicircular ends with 24mm radius. Very smooth, no sharp edges anywhere.
+  Comfortable palm grip with rounded ends fitting naturally in hand.
+
+  Overall Dimensions: 90mm wide x 48mm tall x 16mm deep
+  End Radius:         24mm (full semicircle at each end)
+  Shell Split:        Along the long horizontal axis (front/back halves)
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                              90mm
+          |<------------------------------------------------>|
+
+              .---------------------------------------------.
+     ___    /        .___________________________.            \    ___
+      |   /         |                           |              \    |
+      |  |          |                           |               |   |
+      |  |          |     40.80 x 30.60         |               |   |
+  48  |  |          |     Active Area           |               |  48mm
+  mm  |  |          |     (landscape)           |               |   |
+      |  |          |                           |               |   |
+      |   \         |___________________________|              /    |
+     _|_    \                                                /     _|_
+              '-----[BTN1]----[BTN2]----[BTN3]----------'
+
+          |<->|                                        |<->|
+          24mm                                          24mm
+          radius                                        radius
+
+  Notes:
+  - Ends are perfect semicircles (24mm radius = 48mm/2)
+  - Screen centered in the body, landscape orientation
+  - 3 buttons on flat bottom edge, between the rounded ends
+  - Stadium/discorectangle shape (rectangle + 2 semicircles)
+
+================================================================================
+  FRONT VIEW (DETAILED WITH DIMENSIONS)
+================================================================================
+
+                              90mm
+     |<---------------------------------------------------->|
+     |    24mm    |<--- 42mm flat --->|    24mm              |
+     |   radius   |    center zone    |   radius             |
+
+              .--------.____________.--------.
+            /     .----|-screen win-|----.     \
+           /     |     | 42 x 32mm |     |     \
+          |      |     |  cutout   |     |      |
+     48mm |      |     |           |     |      |
+          |      |     |           |     |      |
+           \     |_____|___________|_____|     /
+            \         |  |   |  |   |         /
+              '------[B1]-[B2]-[B3]---------'
+                           |
+                        [USB-C]
+                     (left end, see below)
+
+  Button positions:
+  - BTN1 center: -14mm from center (x=31mm from left)
+  - BTN2 center: 0mm (centered, x=45mm from left)
+  - BTN3 center: +14mm from center (x=59mm from left)
+  - All buttons on the flat bottom edge
+
+================================================================================
+  SIDE PROFILE (RIGHT END VIEW)
+================================================================================
+
+                  16mm
+          |<------------->|
+
+              .-------.
+            /           \        ___  top
+           |             |        |
+           |   48mm      |       48mm
+           |   tall      |        |
+           |             |        |
+            \           /        _|_  bottom
+              '-------'
+
+  Notes:
+  - From the end, device looks like a rounded rectangle / oval
+  - 16mm deep, 48mm tall
+  - Edge radius: 8mm on the depth edges
+  - Wake button is on this right rounded end (see detail)
+
+================================================================================
+  SIDE PROFILE (LONG AXIS VIEW)
+================================================================================
+
+                              90mm
+          |<------------------------------------------------>|
+
+              .--------------------------------------------.
+             /                                              \
+            |               16mm deep                        |
+             \                                              /
+              '--------------------------------------------'
+
+  Features on edges:
+  - Bottom flat zone: buttons (BTN1, BTN2, BTN3)
+  - Left rounded end: USB-C port
+  - Right rounded end: Wake button
+  - Top: smooth, unbroken curve
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                              90mm
+          |<------------------------------------------------>|
+
+              .---------------------------------------------.
+            /                                                 \
+           /                                                   \
+          |                                                     |
+          |           .-------------------------.               |
+          |           |   Flat back area        |               |
+          |           |   (for table rest)      |               |
+          |           '-------------------------'               |
+           \                                                   /
+            \               (o)         (o)                   /
+              '---------------------------------------------'
+
+  Notes:
+  - Mostly curved back, slight flat zone in center (~40x20mm)
+  - Flat zone lets device rest on table without rocking
+  - 2x M2 screws in flat zone, recessed with rubber plugs
+  - Otherwise smooth, continuous surface
+
+================================================================================
+  TOP VIEW (LOOKING DOWN)
+================================================================================
+
+                              90mm
+          |<------------------------------------------------>|
+
+          USB-C                                        Wake btn
+            |                                              |
+            v                                              v
+              .---------------------------------------------.
+            / [U]   ._________________________.         [W]  \
+           |        |   Screen area          |                |
+           |        |   (below surface)      |                |
+            \ [U]   '-------------------------'         [W]  /
+              '---------------------------------------------'
+
+  [U] = USB-C connector (9.34 x 3.66mm cutout in left end)
+  [W] = Wake button (10 x 4.5mm cap in right end)
+
+  USB-C Position:
+  - Centered vertically on left rounded end
+  - Cutout follows the curve of the end
+
+  Wake Button Position:
+  - Centered vertically on right rounded end
+  - Flush with curved surface
+  - Natural thumb position when gripping right end
+
+================================================================================
+  CROSS-SECTION (Cut through center, looking from right end)
+================================================================================
+
+  Front                                          Back
+   |                                              |
+   | 1.5mm  2.5mm   2.5mm  1.6mm 0.5  5.0  1.5mm|
+   |<--->|<------->|<----->|<--->|<>|<---->|<--->|
+   |     |         |       |     |  |      |     |
+   |Wall | Display |  Gap  | PCB |G |Batt  |Wall |
+   |     | Module  |       |     |a |ery   |     |
+   |     |         |       |     |p |      |     |
+   +-----+---------+-------+-----+--+------+-----+
+   |<------------------------------------------------>|
+                    15.1mm Z-stack
+
+  Total depth: 16mm
+  Extra: 16 - 15.1 = 0.9mm tolerance/gasket/rounded wall blend
+
+  The 16mm depth means:
+  - Front wall blends into 8mm radius edge rounds
+  - Back wall blends into 8mm radius edge rounds
+  - Shell wall is thicker at edges due to rounding (structural benefit)
+
+================================================================================
+  CROSS-SECTION (Cut along long axis, top view)
+================================================================================
+
+                              90mm
+          |<------------------------------------------------>|
+
+          +----.                                    .----+
+         /      \                                  /      \
+        | USB-C  |    Display    PCB    Battery    | Wake  |
+        | port   |    module    area    area       | btn   |
+        | cutout |                                 | area  |
+         \      /                                  \      /
+          +----'                                    '----+
+
+          |<-24mm->|<------- 42mm ------->|<-24mm->|
+
+  Component Distribution:
+  - Left end (24mm radius): USB-C connector, some PCB routing
+  - Center (42mm): Display, PCB main area, battery
+  - Right end (24mm radius): Wake button, vibration motor
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Front Shell:
+              .---------------------------------------------.
+            /        .--------------------.                   \
+           |         | Screen window      |                    |
+           |         | 42 x 32mm cutout   |                    |
+           |         | landscape          |                    |
+            \        '--------------------'                   /
+              '------[BTN holes]----------------------------'
+
+  Layer 2 - Display Module:
+              .--------------------.
+              | 51.80 x 36.20mm    |
+              | Centered in body   |
+              | FPC exits right    |
+              '--------------------'
+
+  Layer 3 - PCB:
+            .-------------------------------------------.
+           /    +---------------------+                   \
+          |     | 45.0 x 40.0mm       |                    |
+          |     | PCB (centered)      |                    |
+          |     | ESP32 top-right     |                    |
+          |     | USB-C left edge     |                    |
+          |     | Buttons bottom      |                    |
+          |     | Wake btn right edge |                    |
+           \    +---------------------+                   /
+            '-------------------------------------------'
+
+  Layer 4 - Battery:
+              .-----------------.
+              | LiPo 30x35x5mm  |
+              | Centered under   |
+              | PCB              |
+              '-----------------'
+
+  Layer 5 - Back Shell:
+              .---------------------------------------------.
+            /                                                 \
+           |    Screw bosses (x4)                              |
+           |    Flat rest zone (center back)                    |
+           |    Battery pocket                                  |
+            \                                                 /
+              '---------------------------------------------'
+
+================================================================================
+  SHELL SPLIT DETAIL
+================================================================================
+
+  The two-piece shell splits along the LONG horizontal axis:
+
+  Side view (right end):
+
+              .-------.   Front half
+            / - - - - - \  ............  <-- split line (midplane)
+            \ - - - - - /
+              '-------'   Back half
+
+  Split Features:
+  - Split at 8mm from front (midplane of 16mm depth)
+  - Front half: screen window, button holes, front wall + half of edges
+  - Back half: battery pocket, screw bosses, back wall + half of edges
+  - Perimeter snap clips (8 points around the oval perimeter)
+  - 2x M2 screws on back for security
+  - Split line hidden in the natural edge radius
+  - Thin gasket in split groove for tight fit
+
+  Assembly Sequence:
+  1. Install display in front shell pocket
+  2. Place foam spacer frame
+  3. Install PCB onto standoffs (screw from back)
+  4. Connect display FPC to PCB
+  5. Install battery in back shell pocket, connect to PCB
+  6. Snap front and back shells together
+  7. Insert 2x security screws from back
+  8. Install rubber screw plugs
+
+================================================================================
+  USB-C AND WAKE BUTTON END DETAILS
+================================================================================
+
+  Left End (USB-C):
+              .-------.
+            /     |U|   \        U = USB-C cutout
+           |      |S|    |       9.34 x 3.66mm
+           |      |B|    |       Centered vertically
+            \     |-|   /        Follows end curve
+              '-------'
+
+  Right End (Wake Button):
+              .-------.
+            /           \
+           |     [WAKE]  |       10 x 4.5mm cap
+           |     btn     |       Flush with curved surface
+            \           /        Tactile switch on PCB edge
+              '-------'
+
+  USB-C Mounting:
+  - Connector soldered to PCB, extending to left edge
+  - Shell cutout in both halves (front and back) aligned
+  - Small rubber gasket around connector for dust resistance
+
+  Wake Button Mounting:
+  - Tactile switch on right edge of PCB
+  - Button cap shaped to match end curve
+  - Press-fit in shell cutout
+  - Flush or 0.3mm recessed
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Recessed pocket in front shell: 52.0 x 36.4mm
+  - Pocket depth: 2.5mm, centered in body
+  - Adhesive foam frame for retention + vibration isolation
+  - FPC folds right and connects to PCB below
+
+  PCB Mounting:
+  - 4x M2 standoffs in back shell (3.0mm tall)
+  - PCB centered in body
+  - 45mm wide PCB fits in 90mm body with 22.5mm margin each side
+  - Margins used for: edge rounding structure, USB-C routing, wake button
+
+  Battery Mounting:
+  - Centered pocket in back shell
+  - Foam-lined pocket walls
+  - Double-sided tape for retention
+  - JST connector with strain relief
+
+  Button Mounting:
+  - 3 buttons on flat bottom edge of front shell
+  - Standard 12 x 6mm caps
+  - Tactile switches on PCB bottom edge
+  - Caps press-fit in shell, posts align with switches
+  - Flat bottom edge provides stable button surface
+
+  Shell Assembly:
+  - 8 perimeter snap clips (evenly spaced around oval)
+  - 2x M2 security screws on back
+  - Snap clips engage with satisfying click
+  - Silicone gasket in perimeter groove
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Pill/Capsule Shape:
+     - Stadium geometry (rectangle + 2 semicircles)
+     - Fully continuous curves, no flat faces (except bottom edge)
+     - Visually distinctive, unlike any typical gadget
+     - Mathematically clean geometry (easy to CAD/manufacture)
+
+  2. Ergonomic Palm Grip:
+     - Rounded ends fit naturally between thumb and fingers
+     - Hold landscape with thumbs on buttons
+     - Left thumb rests on rounded end, right thumb on buttons
+     - Can also palm the whole device comfortably
+
+  3. No Sharp Edges:
+     - 24mm end radii + 8mm depth edge radii
+     - Smooth everywhere, safe in pockets
+     - Feels like a large capsule or smooth pebble
+
+  4. Landscape Orientation:
+     - Natural widescreen format for status display
+     - 90mm width provides comfortable two-hand grip
+     - Screen centered for balanced visual weight
+
+  5. End-Mounted Ports:
+     - USB-C on left end: charging cable doesn't interfere with grip
+     - Wake on right end: natural thumb position
+     - Clean front and back surfaces
+
+  6. Two-Piece Shell:
+     - Splits along long axis (front/back)
+     - Split line hidden in edge radius
+     - Clean, minimal visible seam
+     - Easy assembly with snap clips + screws
+
+  7. Table Rest:
+     - Flat zone on back prevents rocking
+     - Can sit screen-up on desk
+     - Slight back curvature keeps it from sliding
+
+  8. Pharmaceutical Aesthetic:
+     - White or pastel colored shell (pill-like)
+     - Optional: two-tone color (front/back halves different colors,
+       like a medicine capsule)
+     - Smooth matte or semi-gloss finish
+     - Embossed "DEVOTCHI" text along top curve
+     - Fun color combinations:
+       * White/coral
+       * Mint/white
+       * Lavender/cream
+       * Sky blue/white
+
+================================================================================

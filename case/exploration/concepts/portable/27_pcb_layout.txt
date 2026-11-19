@@ -1,0 +1,327 @@
+DESIGN 27: PCB COMPONENT LAYOUT
+=================================
+Top-down view of the 45x40mm PCB showing component placement,
+connector positions, and alignment with the case/display.
+Components face FRONT (toward display). USB-C on bottom edge.
+
+PCB: 45.0mm wide x 50.0mm tall x 1.6mm thick
+Position in case: centered X (7.5mm inset), bottom-aligned (8.5mm from top)
+Case: 60 x 60 x 15.1mm
+Mounting: 3x M2 holes (2.2mm), 3mm inset — TL removed for FPC connector
+
+IMPORTANT CONNECTOR ALIGNMENT NOTES:
+- Display FPC exits LEFT edge of module HORIZONTALLY, ~15.3mm from display top
+- FPC cable must fold downward in the gap between case wall and PCB edge
+- FPC connector (FPC301) near TOP-LEFT of PCB, latch facing LEFT to receive cable
+- USB-C connector centered on BOTTOM edge, protruding 1.95mm past PCB
+- Buttons on FRONT face must align with case button holes
+- ESP32 antenna must be at TOP edge with keepout zone
+
+
+FPC CABLE ROUTING (critical — verified from datasheet)
+──────────────────────────────────────────────────────
+
+    The display FPC exits the LEFT EDGE of the module
+    (short 36.2mm side), pointing HORIZONTALLY LEFT.
+
+    Top-down view showing cable path:
+
+    Case left wall (X=0)
+    │     Display left edge (X=3.2)
+    │     │     PCB left edge (X=6.6)
+    │     │     │
+    │     │     │
+    │  ◄══╡     │    Display module
+    │  FPC│     │    (51.8 x 36.2mm)
+    │  tail     │
+    │  │  │     │
+    │  │  └─────┘ ← display bottom edge
+    │  │        │
+    │  ╰──▶┌────┤ ← FPC bends RIGHT into connector
+    │      │FPC │    on PCB front face
+    │      │301 │
+    │      └────┤    PCB (45 x 40mm)
+    │           │
+
+    Side view of FPC routing:
+
+    Front wall (Z=0)
+    │  Display (Z=1.5 to 4.0)
+    │  │
+    │  ├── FPC exits left edge horizontally
+    │  │
+    │  │   Folds in 3.4mm gap between
+    │  │   case wall and PCB left edge
+    │  │
+    │  ├── PCB front face (Z=4.0)
+    │  │   FPC enters connector from left
+    │  │
+    │  Back
+    │
+
+    Minimum FPC bend radius: ~1mm (for 0.5mm pitch FPC)
+    Available gap for routing: 3.4mm (case wall to PCB edge)
+    Cable length: 12.1mm — sufficient for the fold
+
+
+PCB FRONT FACE (component side, facing display)
+────────────────────────────────────────────────
+
+    PCB top edge (closest to display)
+    ┌─────────────────────────────────────────────┐ Y=0
+    │                                       (M2)  │
+    │  ┌──FPC301──┐                          ○    │ ← TL hole removed
+    │  │ 12-pin   │                               │   for FPC connector
+    │  │ 0.5mm    │     ┌─────────────────────┐   │
+    │  │ 12-pin   │     │                     │   │
+    │  │ 0.5mm    │     │   ESP32-S3-MINI-1   │   │
+    │  │ FPC conn │     │   15.4 x 20.5mm     │   │ ← Antenna at TOP
+    │  └──────────┘     │                     │   │   (keepout zone:
+    │   X~5mm           │   ╔═══════════╗     │   │    no copper under
+    │   Y~38.9 (btm)    │   ║  antenna  ║     │   │    antenna area)
+    │   Latch faces     │   ╚═══════════╝     │   │
+    │   LEFT ◄          │                     │   │
+    │                   │                     │   │
+    │                   └─────────────────────┘   │
+    │                    X~20mm, Y~2mm            │
+    │                                             │
+    │  R,C passives     Power section:            │
+    │  (SPI bus)        TP4056, DW01A,            │
+    │                   FS8205A, ME6211            │
+    │                                             │
+    │                                             │
+    │  ┌──┐           ┌──┐           ┌──┐         │ Y≈26mm
+    │  │SW│           │SW│           │SW│         │ (Approve, Action, Reject)
+    │  │1 │           │2 │           │3 │         │ 14mm center spacing
+    │  └──┘           └──┘           └──┘         │
+    │  X≈8.5          X≈22.5         X≈36.5       │
+    │                                             │
+    │  ○ LED                                      │
+    │  X≈1.4          ┌──┐                        │ Y≈33.5mm
+    │                 │SW│  Wake                  │
+    │                 │4 │  button                 │
+    │                 └──┘                        │
+    │  JST-PH         X≈22.5                      │
+    │  battery                                    │
+    │  X≈8mm                                      │
+    │ (M2)            ┌──────────────────┐  (M2)  │
+    │  ○              │    USB-C         │   ○    │
+    │                 │  HRO TYPE-C-31  │        │
+    └─────────────────┤  (centered)     ├────────┘ Y=40mm
+                      └──────────────────┘
+                       ↕ 1.95mm overhang
+    ├──────────────── 45.0mm ─────────────────┤
+
+
+MOUNTING HOLES (4x M2)
+──────────────────────
+
+    3 holes: 2.2mm diameter (M2 + 0.2mm tolerance)
+    Inset: 3.0mm from PCB edge (both X and Y)
+    TL hole removed to make room for FPC connector
+
+    Hole    PCB X     PCB Y     Case X    Case Y
+    ──────  ────────  ────────  ────────  ────────
+    TR      42.0      3.0       48.6      15.7
+    BL      3.0       42.0      9.6       54.7
+    BR      42.0      42.0      48.6      54.7
+
+    Back cover has 3 matching standoffs:
+    - 4.0mm outer diameter
+    - 5.5mm tall (from back inner wall to PCB solder side)
+    - PCB screws in from back with M2 screws
+    - 3-point mount is stable for this size PCB
+
+
+PCB BACK FACE (solder side, facing battery)
+───────────────────────────────────────────
+
+    ┌─────────────────────────────────────────────┐
+    │ (M2)                                  (M2)  │
+    │  ○                                     ○    │
+    │                                             │
+    │  (FPC301 pads)    (ESP32 solder pads)       │
+    │                                             │
+    │                                             │
+    │         Ground plane covers most            │
+    │         of this side                        │
+    │                                             │
+    │                                             │
+    │  (SW1 pads)     (SW2 pads)    (SW3 pads)    │
+    │                                             │
+    │                                             │
+    │                 (SW4 pads)                   │
+    │                                             │
+    │  (JST pads)                                 │
+    │ (M2)            (USB-C pads)          (M2)  │
+    │  ○                                     ○    │
+    └─────────────────────────────────────────────┘
+
+    Solder-side components: minimal
+    JST connector may be on back face depending on routing
+
+
+DISPLAY-TO-PCB ALIGNMENT (side cross-section)
+──────────────────────────────────────────────
+
+    Case Y=0 (top)
+    │
+    │  ┌─────────────────────────────┐  Case wall 1.5mm
+    │  │                             │
+    │  │  ┌─────────────────────┐    │  Display module
+    │  │  │  HS20HS072RX        │    │  51.8 x 36.2mm
+    │  │  │                     │    │
+    │  │  │  FPC exits LEFT ──────▶  │  FPC at ~15.3mm from display top
+    │  │  │  edge HORIZONTALLY  │    │  = case Y ≈ 16.8mm
+    │  │  │                     │    │
+    │  │  └─────────────────────┘    │  Display bottom at Y≈37.7
+    │  │                             │
+    ├──┼─────────────────────────────┤  PCB top at case Y=12.7mm
+    │  │  ○ M2 hole (3mm inset)     │
+    │  │                             │
+    │  │  ┌─FPC301─┐                │
+    │  │  │connector│  ← Receives   │  FPC connector at PCB Y≈4mm
+    │  │  └────────┘    FPC cable   │  = case Y≈16.7 (aligned with FPC exit)
+    │  │                             │  Latch faces LEFT
+    │  │                             │
+    │  │  (buttons at Y≈31mm on PCB) │
+    │  │                             │
+    │  │  ○ M2 hole (3mm inset)     │
+    │  │         (USB-C)             │  PCB bottom at case Y=57.7mm
+    └──┴─────────────────────────────┘
+    Case Y=59.2 (bottom)
+
+    FPC cable path: exits display LEFT edge HORIZONTALLY at case Y≈16.8
+    → folds BACKWARD in Z (one bend, display plane to PCB plane)
+    → enters FPC301 at case Y≈16.7 (nearly perfect alignment)
+    Direct routing, single fold, no lateral bending needed
+
+
+BUTTON ALIGNMENT (case holes → PCB switches)
+─────────────────────────────────────────────
+
+    Case coordinates → PCB coordinates:
+    PCB origin = case (7.5, 8.5)
+    Wake button removed — any button press wakes from deep sleep
+
+    Button      Case X    Case Y    PCB X     PCB Y (from top)  PCB Y (from btm)
+    ──────────  ────────  ────────  ────────  ────────────────  ────────────────
+    Approve     16.0      43.9      8.5       35.4              14.6
+    Action      30.0      43.9      22.5      35.4              14.6
+    Reject      44.0      43.9      36.5      35.4              14.6
+
+    Switch footprint: 6x6mm tactile (standard)
+    Button caps sit in case holes, plunger presses switch
+
+
+ESP32-S3-MINI-1 PLACEMENT
+──────────────────────────
+
+    Module: 15.4 x 20.5 x 2.4mm
+    Position: right side of PCB, antenna at TOP edge
+    X: ~20mm from PCB left (right-biased to leave room for FPC)
+    Y: ~2mm from PCB top edge (antenna flush with PCB top)
+
+    CRITICAL: Antenna keepout zone
+    ┌─────────────────────────────┐
+    │  ╔═════════════╗            │
+    │  ║  KEEPOUT    ║  ← No copper, no traces,
+    │  ║  (antenna)  ║     no ground plane under
+    │  ╚═════════════╝     this area on ANY layer
+    │  ┌─────────────┐            │
+    │  │  ESP32-S3   │            │
+    │  │  module     │            │
+    │  │  body       │            │
+    │  └─────────────┘            │
+    │                             │
+
+    Antenna overhangs PCB edge by ~1mm (per datasheet recommendation)
+
+
+USB-C CONNECTOR DETAIL
+──────────────────────
+
+    PCB bottom edge
+    ───────────┬────────────────┬───────────
+               │   HRO TYPE-C  │
+               │   -31-M-12    │  ← Mid-mount connector
+               │   8.94 x 7.30 │    straddles PCB edge
+               │                │
+               │   D+/D- to    │  ← Connected to ESP32
+               │   ESP32 USB   │    GPIO19 (D-), GPIO20 (D+)
+               │                │
+               └────────────────┘
+                    ↕ 1.95mm
+                    overhang past PCB edge
+
+    Case cutout: 9.34 x 3.66mm (pill shape, centered)
+
+
+FPC CONNECTOR (AFC01-S12FCA-00) DETAIL
+──────────────────────────────────────
+
+    JUSHUO AFC01-S12FCA-00
+    LCSC: C262661
+    12-pin, 0.5mm pitch
+    Bottom-contact type
+
+    ┌─────────────────────┐
+    │  ┃┃┃┃┃┃┃┃┃┃┃┃      │  ← 12 pins (0.5mm pitch)
+    │  1            12    │     Pin 1: GND
+    │                     │     Pin 12: GND
+    │  ▓▓ latch ▓▓       │  ← Flip-lock latch
+    └─────────────────────┘
+          ↑
+          Latch faces LEFT (toward case wall)
+          FPC cable enters from LEFT side
+
+    FPC cable inserts with contacts facing DOWN
+    (same-side contact configuration)
+
+    ORIENTATION ON PCB:
+    - Connector rotated so latch/cable-entry faces LEFT
+    - Pins run vertically (top to bottom)
+    - This allows FPC from display left edge to
+      fold down and enter from the left
+
+
+POWER SECTION PLACEMENT
+────────────────────────
+
+    Right side of PCB, below ESP32:
+
+    ┌──────────────────────┐
+    │  TP4056 (SOP-8)      │  ← LiPo charger IC
+    │  + Rprog (3kΩ)       │    ~330mA charge rate
+    ├──────────────────────┤
+    │  DW01A (SOT-23-6)    │  ← Battery protection IC
+    │  + FS8205A (SOT-23-6)│    Over-discharge/charge/short
+    ├──────────────────────┤
+    │  ME6211 (SOT-23-5)   │  ← 3.3V LDO
+    │  + C_in, C_out       │    500mA max, 100mV dropout
+    └──────────────────────┘
+
+    Power flows: USB-C → TP4056 → Battery ↔ DW01A
+                 Battery → ME6211 → 3.3V rail
+
+
+COMPONENT SUMMARY
+─────────────────
+
+    Component               Package         Qty   Side
+    ──────────────────────  ──────────────  ────  ──────
+    ESP32-S3-MINI-1         Module          1     Front
+    FPC connector           SMD             1     Front
+    USB-C connector         Mid-mount       1     Bottom edge
+    Tactile switches        6x6mm           4     Front
+    TP4056                  SOP-8           1     Front
+    DW01A                   SOT-23-6        1     Front
+    FS8205A                 SOT-23-6        1     Front
+    ME6211                  SOT-23-5        1     Front
+    AO3400A MOSFET          SOT-23          2     Front
+    JST-PH connector        Through-hole    1     Front/Back
+    LED (green 0603)        0603            1     Front
+    Resistors               0402/0603       ~15   Front
+    Capacitors              0402/0603       ~12   Front
+    1N5819W diode           SOD-323         1     Front
+    M2 mounting holes       2.2mm drill     4     Through

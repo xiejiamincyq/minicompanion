@@ -1,0 +1,105 @@
+{
+  "state": "CAD_AND_STATIC_ARITHMETIC_VERIFIED_PHYSICAL_PENDING",
+  "time_utc": "2026-11-18T17:17:38.374840+00:00",
+  "kicad": "10.0.6",
+  "schematic_refs": 113,
+  "new_refs": 18,
+  "existing_pin_changes": {
+    "TP106.1": [
+      "/mcu/BOOT",
+      "MCU_BOOT"
+    ],
+    "U101.4": [
+      "/mcu/BOOT",
+      "MCU_BOOT"
+    ],
+    "SW7201.3": [
+      "GND",
+      "unconnected-(SW7201-THROW_OFF-Pad3)"
+    ],
+    "U1101.10": [
+      "GND",
+      "USB_DP_CONN"
+    ],
+    "U1101.11": [
+      "GND",
+      "USB_DATA_EN"
+    ],
+    "U1101.13": [
+      "GND",
+      "USB_DM_ISO"
+    ],
+    "U1101.14": [
+      "GND",
+      "USB_DM_CONN"
+    ],
+    "U1101.15": [
+      "GND",
+      "USB_DATA_EN"
+    ],
+    "U1101.9": [
+      "GND",
+      "USB_DP_ISO"
+    ],
+    "J201.A6": [
+      "unconnected-(J201-D+-PadA6)",
+      "USB_DP_CONN"
+    ],
+    "J201.B6": [
+      "unconnected-(J201-D+-PadB6)",
+      "USB_DP_CONN"
+    ],
+    "J201.A7": [
+      "unconnected-(J201-D--PadA7)",
+      "USB_DM_CONN"
+    ],
+    "J201.B7": [
+      "unconnected-(J201-D--PadB7)",
+      "USB_DM_CONN"
+    ],
+    "U101.44": [
+      "unconnected-(U101-IO46-Pad44)",
+      "MCU_STRAP46"
+    ],
+    "U101.24": [
+      "unconnected-(U101-USB_D+-Pad24)",
+      "MCU_USB_DP"
+    ],
+    "U101.23": [
+      "unconnected-(U101-USB_D--Pad23)",
+      "MCU_USB_DM"
+    ]
+  },
+  "unchanged_existing_pins": 322,
+  "erc_violations": 0,
+  "physical_tests_executed": false,
+  "pcb_drc": "owned by PCB integration evidence; not implied here",
+  "sha256": {
+    "project\\ble_backlight.kicad_sch": "58456aced69d7961b02a8540a72f54d15282ef43ff759f42123ccb91ed802792",
+    "project\\ble_charger.kicad_sch": "e8b8d00c5a1f662c93b2fce9c13330ed44b577ce72a8cc71f7f0832e8fbca034",
+    "project\\ble_enable.kicad_sch": "8cb7da84e29bb978e3e372cb31332f9c08342654ff85ad5a28b68fc703536818",
+    "project\\ble_rail.kicad_sch": "6ea1ca7abb6eb5a013b11ef20c3acb9476a8e533f0c6092a2c3783d3dc7950b1",
+    "project\\ble_usb.kicad_sch": "23343a0ca4621e5cb9e97869602b7f1106c4308aecff5bc6c0eafe0e78e5a1d1",
+    "project\\display.kicad_sch": "1ad1f6b66a6a67d380d0a9954cfba75aded9bbab800bbbc654bcb81f89606420",
+    "project\\isolation.kicad_sch": "c3a65013ba67694635c3fb5f3725c877f47189f0fdbb3d02f6e7503216f13541",
+    "project\\mcu.kicad_sch": "4e8bbb3d1e926fcf9f2578a433abefbde5c5d5a0f6be1fd4691381a850884429",
+    "project\\mini_companion_integrated.kicad_sch": "e59ab73764c5fb572c8bc1d205c64e390b50c2101f068cab853755d66e4398ab",
+    "project\\power.kicad_sch": "fe3c181fe09caf814e4e7393569ef54e33d7561f132fa8c813b6d40211fea629",
+    "project\\usb_enable_gate.kicad_sch": "e2ccb282aac5172422f80fb8ec544881d7b3cac419a35fa1524d714043d67b01",
+    "project\\usb_service.kicad_sch": "f7b6c8d9498c60cf4b0a539b1cbb5b2de84de85e75ddfd64f109ab728a8d723a",
+    "project\\user_input.kicad_sch": "09268bbad2a1cea652bdf8fad51206e4504cc9960131e2312416ed1a96b7a28f",
+    "project\\BLE_Reviewed.kicad_sym": "95a578edfdd8c507f283d43a776399bc8e04165e966bf478ab95ef25011bcfba",
+    "project\\IntegrationFPC.kicad_sym": "f03f526b4cb5d127f5a37b8c421ac07d38f22fd989099ab16e315563985ec978",
+    "project\\IntegrationUSB.kicad_sym": "65d25b363dd4b32b3075633270d81d3094925d09864dc9819aa9de7657eb7580",
+    "project\\Isolation.kicad_sym": "18f62e4692f8756962214372a0cd0a37f5169af8417ffd65b70ccc2e079a7f67",
+    "project\\USB_Service.kicad_sym": "2f65a2c2556aa71f460a9a970423c82a24376b586fa21a82e245d6cd1cfb0dab",
+    "project\\sym-lib-table": "680231caf88832e9bb20a6960e85d362cb424ab61de710c95c6be0e815eeb0f2",
+    "project\\fp-lib-table": "92f192b48e0264d77e830dbb56f93db16fd8d7bde4ea1f2c36efa5f647325be2",
+    "verification\\usb_eco.xml": "da4e8ae84ece306601a8ff4597d4ad7769d2e9c40bf1a3c90d90c912e4afc48b",
+    "verification\\usb_erc.json": "8fa1de3f657a60b8e283da103102394618b9aa154ab280c73485f96312f5ad91",
+    "design\\usb_eco_contract.json": "be670cb8513acb947e389f576282dd7fb0c6afbb65942c5b2d663ce8d02f74ac",
+    "verification\\usb_baseline_contract.json": "eaa8003c5d5a9b2e33af96a780567793873a108123ce0ac80592ec4e4fde6609",
+    "verification\\usb_static_bounds.json": "cbfc2aa9e3bbb206771a7b48263266e63ac7a77ce5536ba703ca2733e25f57e8",
+    "design\\verify_usb_eco.py": "480eddb9eba78b75de027265e0c0f51fcec26a12d1c5983e9d97a860957da18f"
+  }
+}

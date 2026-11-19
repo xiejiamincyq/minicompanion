@@ -1,0 +1,46 @@
+{
+  "status": "review_core_netlist_verified_not_manufacturing_release",
+  "nets": 15,
+  "components": 19,
+  "cosmetic_connectivity_preserved": true,
+  "battery_pin_swap_detected": true,
+  "ntc_assumption": "103AT nominal R(0C)/R(40C), each +/-5% procurement envelope; fixed resistors +/-1%; zero TS leakage",
+  "cold_0C_ratio": [
+    0.25931322932631096,
+    0.2753777334154219
+  ],
+  "hot_40C_ratio": [
+    0.10547609222417122,
+    0.1160170396367002
+  ],
+  "ntc_open_ratio": [
+    0.42943609401795624,
+    0.43926367957924545
+  ],
+  "ntc_short_ratio": [
+    0.0,
+    0.0
+  ],
+  "ichg_A_min_typ_max": [
+    0.26840439145955414,
+    0.30272108843537415,
+    0.3349824778396207
+  ],
+  "ilim_A_min_typ_max": [
+    0.37839990895641284,
+    0.43448275862068964,
+    0.4934401486125624
+  ],
+  "timer_h_min_typ_max": [
+    6.944437499999999,
+    8.9375,
+    10.934534722222221
+  ],
+  "limitations": [
+    "USB source authorization unfinished",
+    "post-regulator and physical POWER not integrated",
+    "NTC pack and R-T envelope unconfirmed",
+    "TS leakage and real thermal response unverified",
+    "J1/J3/J4 are review interfaces, not production connectors"
+  ]
+}

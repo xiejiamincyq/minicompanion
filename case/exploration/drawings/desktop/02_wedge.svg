@@ -1,0 +1,377 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; fill: #333; }
+    .title { font-size: 16px; font-weight: bold; fill: #222; }
+    .subtitle { font-size: 11px; fill: #555; }
+    .dim-text { font-size: 10px; fill: #CC0000; }
+    .label { font-size: 10px; fill: #444; }
+    .callout { font-size: 9.5px; fill: #333; }
+    .view-title { font-size: 12px; font-weight: bold; fill: #333; }
+  </style>
+
+  <defs>
+    <!-- Arrowhead for dimension lines -->
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-rev" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#CC0000"/>
+    </marker>
+    <!-- Hatching pattern for cross-section walls -->
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#888" stroke-width="0.5"/>
+    </pattern>
+    <pattern id="hatch-bottom" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#888" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="1200" height="45" fill="#F5F5F5" stroke="#DDD" stroke-width="0.5"/>
+  <text x="600" y="22" text-anchor="middle" class="title">DESIGN 2: WEDGE CONSOLE — Devotchi Desktop Case Concept</text>
+  <text x="600" y="37" text-anchor="middle" class="subtitle">155 x 100 x 40mm (back) / 10mm (front) — Angled ergonomic desktop form factor — 15 deg tilt</text>
+
+  <!-- Border -->
+  <rect x="5" y="5" width="1190" height="890" fill="none" stroke="#BBB" stroke-width="0.5"/>
+
+  <!-- ================================================================== -->
+  <!-- VIEW 1: SIDE PROFILE (top-left)                                    -->
+  <!-- ================================================================== -->
+  <g transform="translate(30, 60)">
+    <text x="200" y="15" text-anchor="middle" class="view-title">Side Profile</text>
+
+    <!-- Wedge body — back=40mm, front=10mm, depth=100mm -->
+    <!-- Scale: ~2.8px per mm for good fit -->
+    <!-- Back edge at x=50, front edge at x=330 (280px = 100mm, scale 2.8) -->
+    <!-- Back height: 40mm = 112px, front height: 10mm = 28px -->
+    <!-- Base at y=300 -->
+    <g transform="translate(50, 40)">
+      <!-- Wedge shape: 4-sided polygon -->
+      <!-- Bottom-left(back), Top-left(back), Top-right(front), Bottom-right(front) -->
+      <polygon points="0,280 0,168 280,252 280,280"
+               fill="#E0E0E0" stroke="#333" stroke-width="0.5"/>
+
+      <!-- Slight rounding suggestion at top surface -->
+      <!-- Top surface line (angled) -->
+      <line x1="0" y1="168" x2="280" y2="252" stroke="#333" stroke-width="0.7"/>
+
+      <!-- Bottom surface -->
+      <line x1="0" y1="280" x2="280" y2="280" stroke="#333" stroke-width="0.7"/>
+
+      <!-- Screen recessed area on top surface (shown as slightly inset line) -->
+      <!-- Screen sits roughly from 30% to 75% of the top surface -->
+      <line x1="56" y1="183" x2="210" y2="224" stroke="#4A90D9" stroke-width="1.5"/>
+      <text x="133" y="196" text-anchor="middle" class="callout" transform="rotate(-17, 133, 196)" fill="#4A90D9">Screen pocket</text>
+
+      <!-- Interior dashed lines for wall thickness -->
+      <!-- Top wall inner (2mm = 5.6px below top surface) -->
+      <line x1="6" y1="174" x2="274" y2="255.6" stroke="#999" stroke-width="0.4" stroke-dasharray="4,3"/>
+      <!-- Bottom wall inner (2mm = 5.6px above bottom) -->
+      <line x1="6" y1="274.4" x2="274" y2="274.4" stroke="#999" stroke-width="0.4" stroke-dasharray="4,3"/>
+
+      <!-- Back edge -->
+      <line x1="0" y1="168" x2="0" y2="280" stroke="#333" stroke-width="0.7"/>
+      <!-- Front edge -->
+      <line x1="280" y1="252" x2="280" y2="280" stroke="#333" stroke-width="0.7"/>
+
+      <!-- ===== DIMENSION LINES ===== -->
+
+      <!-- Back height: 40mm -->
+      <line x1="-30" y1="168" x2="-30" y2="280" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="-5" y1="168" x2="-35" y2="168" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="-5" y1="280" x2="-35" y2="280" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="-35" y="228" text-anchor="end" class="dim-text">40mm</text>
+
+      <!-- Front height: 10mm -->
+      <line x1="310" y1="252" x2="310" y2="280" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="285" y1="252" x2="315" y2="252" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="285" y1="280" x2="315" y2="280" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="325" y="270" class="dim-text">10mm</text>
+
+      <!-- Depth: 100mm -->
+      <line x1="0" y1="300" x2="280" y2="300" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="0" y1="283" x2="0" y2="305" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="280" y1="283" x2="280" y2="305" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="140" y="296" text-anchor="middle" class="dim-text">100mm</text>
+
+      <!-- Angle annotation ~15 deg -->
+      <!-- Arc from horizontal at front edge -->
+      <path d="M 250,280 A 35,35 0 0 0 248.5,271" fill="none" stroke="#CC0000" stroke-width="0.5"/>
+      <text x="230" y="275" text-anchor="end" class="dim-text">~15°</text>
+
+      <!-- Labels -->
+      <text x="-10" y="160" text-anchor="end" class="label">Back edge</text>
+      <text x="290" y="248" class="label">Front edge</text>
+    </g>
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- VIEW 2: TOP VIEW (top-right)                                       -->
+  <!-- ================================================================== -->
+  <g transform="translate(620, 60)">
+    <text x="240" y="15" text-anchor="middle" class="view-title">Top View (Looking Down)</text>
+
+    <g transform="translate(40, 35)">
+      <!-- Scale: ~2.6px per mm -->
+      <!-- 155mm wide = 403px, 100mm deep = 260px -->
+
+      <!-- Outer case outline with slight corner rounding -->
+      <rect x="0" y="0" width="403" height="260" rx="8" ry="8"
+            fill="#E0E0E0" stroke="#333" stroke-width="0.7"/>
+
+      <!-- Screen window: 41.8 x 31.6mm = 108.7 x 82.2px, centered -->
+      <!-- Center: 201.5, 115 (slightly toward back) -->
+      <rect x="147" y="74" width="109" height="82" rx="2" ry="2"
+            fill="#B0D4F1" stroke="#333" stroke-width="0.5"/>
+      <text x="201" y="119" text-anchor="middle" class="label" font-size="9">SCREEN</text>
+
+      <!-- 3 Button positions near front edge (bottom of view) -->
+      <!-- Spaced evenly across width, ~20mm from front edge -->
+      <circle cx="131" cy="220" r="8" fill="#DDD" stroke="#333" stroke-width="0.5"/>
+      <circle cx="201" cy="220" r="8" fill="#DDD" stroke="#333" stroke-width="0.5"/>
+      <circle cx="271" cy="220" r="8" fill="#DDD" stroke="#333" stroke-width="0.5"/>
+      <text x="131" y="243" text-anchor="middle" class="callout">BTN1</text>
+      <text x="201" y="243" text-anchor="middle" class="callout">BTN2</text>
+      <text x="271" y="243" text-anchor="middle" class="callout">BTN3</text>
+
+      <!-- LED hole — small circle near buttons -->
+      <circle cx="340" cy="220" r="4" fill="#FFFFAA" stroke="#333" stroke-width="0.5"/>
+      <text x="340" y="243" text-anchor="middle" class="callout">LED</text>
+
+      <!-- ===== DIMENSION LINES ===== -->
+
+      <!-- Width: 155mm -->
+      <line x1="0" y1="-15" x2="403" y2="-15" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="0" y1="-5" x2="0" y2="-20" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="403" y1="-5" x2="403" y2="-20" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="201" y="-19" text-anchor="middle" class="dim-text">155mm</text>
+
+      <!-- Depth: 100mm -->
+      <line x1="430" y1="0" x2="430" y2="260" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="408" y1="0" x2="435" y2="0" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="408" y1="260" x2="435" y2="260" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="440" y="134" class="dim-text">100mm</text>
+
+      <!-- Screen width: 41.8mm -->
+      <line x1="147" y1="165" x2="256" y2="165" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="201" y="177" text-anchor="middle" class="dim-text">41.8mm</text>
+
+      <!-- Screen height: 31.6mm -->
+      <line x1="265" y1="74" x2="265" y2="156" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="285" y="119" class="dim-text">31.6mm</text>
+
+      <!-- Edge labels -->
+      <text x="201" y="273" text-anchor="middle" class="label" fill="#777">FRONT EDGE</text>
+      <text x="201" y="-28" text-anchor="middle" class="label" fill="#777">BACK EDGE</text>
+    </g>
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- VIEW 3: CROSS-SECTION (bottom-left)                               -->
+  <!-- ================================================================== -->
+  <g transform="translate(30, 470)">
+    <text x="250" y="15" text-anchor="middle" class="view-title">Cross-Section (Center Cut, Looking Left)</text>
+
+    <g transform="translate(40, 35)">
+      <!-- Scale: ~3px per mm, depth (left-right) = 100mm = 300px -->
+      <!-- Back on left, front on right -->
+      <!-- Back height 40mm = 120px, front height 10mm = 30px -->
+      <!-- Base at y=220 -->
+
+      <!-- ===== OUTER SHELL ===== -->
+      <!-- Top shell (2mm wall) — angled surface -->
+      <!-- Outer top: (0,100) to (300,190) -->
+      <!-- Inner top: (6,106) to (294,190.8) — 2mm wall = 6px -->
+      <polygon points="0,100 300,190 300,196 294,196 294,193 6,109 6,106 0,106"
+               fill="#606060" stroke="#333" stroke-width="0.5"/>
+      <rect x="0" y="100" width="300" height="6" fill="url(#hatch)" opacity="0.5"
+            transform="rotate(-17.1, 150, 103)" style="display:none"/>
+      <!-- Hatching on top wall -->
+      <polygon points="0,100 300,190 294,193 6,109" fill="url(#hatch)" opacity="0.4"/>
+
+      <!-- Bottom plate (2mm = 6px) -->
+      <rect x="0" y="220" width="300" height="6" fill="#606060" stroke="#333" stroke-width="0.5"/>
+      <rect x="0" y="220" width="300" height="6" fill="url(#hatch-bottom)" opacity="0.4"/>
+
+      <!-- Back wall (2mm) -->
+      <rect x="0" y="100" width="6" height="126" fill="#606060" stroke="#333" stroke-width="0.5"/>
+      <rect x="0" y="100" width="6" height="126" fill="url(#hatch)" opacity="0.4"/>
+
+      <!-- Front wall (2mm) -->
+      <rect x="294" y="190" width="6" height="36" fill="#606060" stroke="#333" stroke-width="0.5"/>
+      <rect x="294" y="190" width="6" height="36" fill="url(#hatch)" opacity="0.4"/>
+
+      <!-- Interior cavity (light fill) -->
+      <polygon points="6,109 294,193 294,220 6,220"
+               fill="#F8F8F8" stroke="none"/>
+
+      <!-- ===== SCREEN MODULE ===== -->
+      <!-- 4.5mm thick = 13.5px, sits in pocket on angled top surface -->
+      <!-- Positioned roughly center of top surface -->
+      <g>
+        <!-- Screen pocket area: roughly x=70 to x=220 on the angled surface -->
+        <!-- At x=70: outer_y = 100 + 70*(90/300) = 121, inner after 2mm wall: 127 -->
+        <!-- At x=220: outer_y = 100 + 220*(90/300) = 166, inner: 172 -->
+        <polygon points="75,125 225,170 225,183.5 75,138.5"
+                 fill="#B0D4F1" stroke="#333" stroke-width="0.5"/>
+        <text x="150" y="157" text-anchor="middle" class="callout" transform="rotate(-17, 150, 157)" fill="#2266AA">Screen (4.5mm)</text>
+      </g>
+
+      <!-- ===== PCB ===== -->
+      <!-- 1.6mm = 4.8px, mounted on standoffs above bottom plate -->
+      <!-- Standoffs ~5mm = 15px above inner bottom (y=220) -> PCB at y=200 -->
+      <rect x="30" y="200" width="240" height="5" fill="#90C695" stroke="#333" stroke-width="0.5"/>
+      <text x="150" y="198" text-anchor="middle" class="callout" fill="#336633">PCB (1.6mm)</text>
+
+      <!-- Standoffs (small rectangles) -->
+      <rect x="45" y="205" width="4" height="15" fill="#AAA" stroke="#333" stroke-width="0.3"/>
+      <rect x="145" y="205" width="4" height="15" fill="#AAA" stroke="#333" stroke-width="0.3"/>
+      <rect x="250" y="205" width="4" height="15" fill="#AAA" stroke="#333" stroke-width="0.3"/>
+
+      <!-- ===== SPEAKER ===== -->
+      <!-- 28mm = 84px diameter, in bottom rear cavity -->
+      <!-- Center roughly at x=60 (rear area), y=170 -->
+      <circle cx="55" cy="168" r="38" fill="#D4A84B" fill-opacity="0.5" stroke="#333" stroke-width="0.5"/>
+      <circle cx="55" cy="168" r="30" fill="none" stroke="#333" stroke-width="0.3" stroke-dasharray="3,2"/>
+      <text x="55" y="171" text-anchor="middle" class="callout" fill="#8B6914">Speaker</text>
+      <text x="55" y="181" text-anchor="middle" class="callout" fill="#8B6914">(28mm)</text>
+
+      <!-- ===== DIMENSION LINES ===== -->
+
+      <!-- Top wall thickness: 2mm -->
+      <line x1="320" y1="190" x2="320" y2="196" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="330" y="196" class="dim-text">2mm wall</text>
+
+      <!-- Bottom plate: 2mm -->
+      <line x1="320" y1="220" x2="320" y2="226" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="330" y="226" class="dim-text">2mm plate</text>
+
+      <!-- Back height: 40mm -->
+      <line x1="-25" y1="100" x2="-25" y2="226" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="-5" y1="100" x2="-30" y2="100" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="-5" y1="226" x2="-30" y2="226" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="-30" y="166" text-anchor="end" class="dim-text">40mm</text>
+
+      <!-- Front height: 10mm -->
+      <line x1="315" y1="190" x2="315" y2="226" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="330" y="212" class="dim-text">10mm</text>
+
+      <!-- Depth: 100mm -->
+      <line x1="0" y1="242" x2="300" y2="242" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="0" y1="230" x2="0" y2="247" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="300" y1="230" x2="300" y2="247" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="150" y="255" text-anchor="middle" class="dim-text">100mm</text>
+
+      <!-- PCB standoff height -->
+      <line x1="260" y1="205" x2="260" y2="220" stroke="#CC0000" stroke-width="0.4"/>
+      <text x="268" y="215" class="dim-text" font-size="8">5mm</text>
+
+      <!-- Screen thickness -->
+      <line x1="235" y1="170" x2="235" y2="183.5" stroke="#CC0000" stroke-width="0.4"/>
+      <text x="243" y="180" class="dim-text" font-size="8">4.5mm</text>
+
+      <!-- Section cut indicators -->
+      <text x="-10" y="165" text-anchor="end" class="label" font-weight="bold" fill="#666">A</text>
+      <text x="310" y="210" class="label" font-weight="bold" fill="#666">A</text>
+    </g>
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- VIEW 4: BACK EDGE DETAIL (bottom-right)                           -->
+  <!-- ================================================================== -->
+  <g transform="translate(640, 470)">
+    <text x="240" y="15" text-anchor="middle" class="view-title">Back Edge Detail (Rear Face)</text>
+
+    <g transform="translate(60, 40)">
+      <!-- Scale: ~2.8px per mm -->
+      <!-- 155mm wide = 434px, 40mm tall = 112px -->
+
+      <!-- Back face outline -->
+      <rect x="0" y="0" width="434" height="112" rx="4" ry="4"
+            fill="#E0E0E0" stroke="#333" stroke-width="0.7"/>
+
+      <!-- USB-C cutout: 9.5 x 3.5mm = 26.6 x 9.8px, centered horizontally -->
+      <!-- Positioned near bottom (where PCB connects) — roughly at y=75 -->
+      <rect x="204" y="72" width="27" height="10" rx="3" ry="3"
+            fill="white" stroke="#333" stroke-width="0.5"/>
+      <text x="217" y="70" text-anchor="middle" class="callout">USB-C</text>
+
+      <!-- Vent slot pattern — horizontal slots in upper area -->
+      <!-- 6 slots, each ~30mm wide = 84px, spaced across top half -->
+      <rect x="60" y="14" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="140" y="14" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="220" y="14" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="300" y="14" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+
+      <rect x="60" y="22" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="140" y="22" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="220" y="22" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="300" y="22" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+
+      <rect x="60" y="30" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="140" y="30" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="220" y="30" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="300" y="30" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+
+      <rect x="60" y="38" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="140" y="38" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="220" y="38" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+      <rect x="300" y="38" width="70" height="3" rx="1.5" fill="white" stroke="#333" stroke-width="0.3"/>
+
+      <text x="30" y="28" text-anchor="middle" class="callout" fill="#777">Vent</text>
+      <text x="30" y="38" text-anchor="middle" class="callout" fill="#777">slots</text>
+
+      <!-- ===== DIMENSION LINES ===== -->
+
+      <!-- Width: 155mm -->
+      <line x1="0" y1="132" x2="434" y2="132" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="0" y1="116" x2="0" y2="137" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="434" y1="116" x2="434" y2="137" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="217" y="145" text-anchor="middle" class="dim-text">155mm</text>
+
+      <!-- Height: 40mm -->
+      <line x1="460" y1="0" x2="460" y2="112" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <line x1="438" y1="0" x2="465" y2="0" stroke="#CC0000" stroke-width="0.3"/>
+      <line x1="438" y1="112" x2="465" y2="112" stroke="#CC0000" stroke-width="0.3"/>
+      <text x="472" y="60" class="dim-text">40mm</text>
+
+      <!-- USB-C cutout width: 9.5mm -->
+      <line x1="204" y1="92" x2="231" y2="92" stroke="#CC0000" stroke-width="0.5"
+            marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+      <text x="217" y="104" text-anchor="middle" class="dim-text">9.5mm</text>
+
+      <!-- USB-C cutout height: 3.5mm -->
+      <line x1="240" y1="72" x2="240" y2="82" stroke="#CC0000" stroke-width="0.4"/>
+      <text x="250" y="80" class="dim-text" font-size="8.5">3.5mm</text>
+
+      <!-- USB-C center offset dimension -->
+      <line x1="0" y1="88" x2="204" y2="88" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="3,3"/>
+      <line x1="231" y1="88" x2="434" y2="88" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="3,3"/>
+      <text x="102" y="99" text-anchor="middle" class="dim-text" font-size="8">centered</text>
+    </g>
+  </g>
+
+  <!-- ================================================================== -->
+  <!-- Footer / notes                                                     -->
+  <!-- ================================================================== -->
+  <line x1="30" y1="868" x2="1170" y2="868" stroke="#DDD" stroke-width="0.5"/>
+  <text x="30" y="885" class="callout" fill="#999">Devotchi — Desktop Wedge Console Case — All dimensions in mm — Not to scale — Sheet 2 of series</text>
+  <text x="1170" y="885" text-anchor="end" class="callout" fill="#999">v1.0</text>
+</svg>

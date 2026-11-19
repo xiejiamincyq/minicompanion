@@ -1,0 +1,60 @@
+{
+  "status": "integrated_CC_only_review_not_release",
+  "components": 61,
+  "ERC_violations": 0,
+  "existing_pin_changes": {
+    "C11.1": [
+      "USB_3V3",
+      "VBUS_IN"
+    ],
+    "U5.3": [
+      "USB_3V3",
+      "VBUS_IN"
+    ],
+    "U5.6": [
+      "USB_3V3",
+      "VBUS_IN"
+    ]
+  },
+  "imported_core_contract": "pass with EN resistor low terminals moved GND to VBUS",
+  "faults_detected": 3,
+  "steady_state_control": [
+    {
+      "ready": 0,
+      "permission": 0,
+      "EN2": 1,
+      "EN1": 1,
+      "mode": "suspend"
+    },
+    {
+      "ready": 0,
+      "permission": 1,
+      "EN2": 1,
+      "EN1": 1,
+      "mode": "suspend"
+    },
+    {
+      "ready": 1,
+      "permission": 0,
+      "EN2": 1,
+      "EN1": 1,
+      "mode": "suspend"
+    },
+    {
+      "ready": 1,
+      "permission": 1,
+      "EN2": 1,
+      "EN1": 0,
+      "mode": "ILIM"
+    }
+  ],
+  "conditional_EN1_low_V": 0.0013357333333333333,
+  "conditional_READY_high_V": 2.9057395999999995,
+  "Ioff_at_VCC_zero_output_V": 0.47470000000000007,
+  "limitations": [
+    "TS 5V parameter table applies 4.5-5.5V; lower-input transition coverage incomplete",
+    "Supervisor falling delay has no guaranteed max; rapid brownout not validated",
+    "Default USB and BC1.2 not implemented",
+    "No physical safety, thermal, runtime or PCB verification"
+  ]
+}

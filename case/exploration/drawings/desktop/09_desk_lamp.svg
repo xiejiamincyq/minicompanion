@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#CC0000" stroke="none"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="28" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 09: Desk Lamp — 65×55×20mm Head, 150mm Gooseneck, 70mm Base</text>
+
+  <!-- Grid lines -->
+  <line x1="400" y1="0" x2="400" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="800" y1="0" x2="800" y2="900" stroke="#E8E8E8" stroke-width="0.3"/>
+  <line x1="0" y1="450" x2="1200" y2="450" stroke="#E8E8E8" stroke-width="0.3"/>
+
+  <!-- VIEW 1: Front view (top-left) -->
+  <text x="200" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+  <!-- Base -->
+  <ellipse cx="200" cy="400" rx="60" ry="15" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <rect x="140" y="385" width="120" height="15" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <ellipse cx="200" cy="385" rx="60" ry="15" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <!-- Buttons on base -->
+  <circle cx="175" cy="385" r="4" fill="#555" stroke="black" stroke-width="0.3"/>
+  <circle cx="200" cy="385" r="4" fill="#555" stroke="black" stroke-width="0.3"/>
+  <circle cx="225" cy="385" r="4" fill="#555" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="378" text-anchor="middle" font-family="sans-serif" font-size="7">3× buttons</text>
+  <!-- Gooseneck -->
+  <path d="M200,370 C200,300 180,250 175,200 C170,150 185,100 200,90" fill="none" stroke="#888" stroke-width="6" stroke-linecap="round"/>
+  <path d="M200,370 C200,300 180,250 175,200 C170,150 185,100 200,90" fill="none" stroke="#AAA" stroke-width="4" stroke-linecap="round"/>
+  <text x="155" y="240" font-family="sans-serif" font-size="8">gooseneck</text>
+  <text x="155" y="250" font-family="sans-serif" font-size="8">150mm</text>
+  <!-- Screen head -->
+  <rect x="155" y="70" width="90" height="35" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <rect x="162" y="75" width="76" height="25" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="91" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">5.0" screen</text>
+  <!-- Head dimension -->
+  <line x1="155" y1="115" x2="245" y2="115" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="113" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">65mm</text>
+  <!-- Base diameter -->
+  <line x1="140" y1="425" x2="260" y2="425" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="423" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">70mm dia</text>
+  <!-- Total height -->
+  <line x1="280" y1="70" x2="280" y2="400" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="300" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,300,240)">~220mm total</text>
+
+  <!-- VIEW 2: Side profile (top-center) -->
+  <text x="600" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+  <!-- Base side -->
+  <rect x="555" y="385" width="90" height="15" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="395" text-anchor="middle" font-family="sans-serif" font-size="7">base</text>
+  <!-- Gooseneck from side — showing curve/adjustability -->
+  <path d="M600,385 C600,320 610,260 590,200 C575,150 590,110 600,85" fill="none" stroke="#888" stroke-width="6" stroke-linecap="round"/>
+  <path d="M600,385 C600,320 610,260 590,200 C575,150 590,110 600,85" fill="none" stroke="#AAA" stroke-width="4" stroke-linecap="round"/>
+  <!-- Alternate gooseneck position (dashed) -->
+  <path d="M600,385 C600,320 580,260 560,200 C545,150 555,110 565,85" fill="none" stroke="#888" stroke-width="2" stroke-dasharray="5,4" stroke-linecap="round"/>
+  <text x="545" y="170" font-family="sans-serif" font-size="8" fill="#666">adjustable</text>
+  <!-- Screen head from side -->
+  <rect x="575" y="70" width="50" height="20" rx="3" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <rect x="578" y="73" width="44" height="14" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <!-- Head depth -->
+  <line x1="575" y1="62" x2="625" y2="62" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">55mm depth</text>
+  <!-- Head thickness -->
+  <line x1="635" y1="70" x2="635" y2="90" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="660" y="82" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">20mm</text>
+  <!-- Neck length -->
+  <line x1="630" y1="90" x2="630" y2="385" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="652" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000" transform="rotate(-90,652,240)">150mm neck</text>
+
+  <!-- VIEW 3: Back view (top-right) -->
+  <text x="1000" y="58" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+  <!-- Base back -->
+  <ellipse cx="1000" cy="400" rx="60" ry="15" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <rect x="940" y="385" width="120" height="15" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <ellipse cx="1000" cy="385" rx="60" ry="15" fill="#D0D0D0" stroke="black" stroke-width="0.5"/>
+  <!-- USB-C on base back -->
+  <rect x="988" y="395" width="24" height="8" rx="3" fill="#666" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="418" text-anchor="middle" font-family="sans-serif" font-size="8">USB-C 8.94×3.26mm</text>
+  <!-- Gooseneck back view -->
+  <path d="M1000,370 C1000,300 985,250 982,200 C980,150 990,100 1000,90" fill="none" stroke="#888" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1000,370 C1000,300 985,250 982,200 C980,150 990,100 1000,90" fill="none" stroke="#AAA" stroke-width="4" stroke-linecap="round"/>
+  <!-- Screen head back -->
+  <rect x="955" y="70" width="90" height="35" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="91" text-anchor="middle" font-family="sans-serif" font-size="8">back of head</text>
+  <!-- Cable routing indication -->
+  <path d="M1000,385 L1000,370" fill="none" stroke="#CC0000" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="1040" y="375" font-family="sans-serif" font-size="7" fill="#CC0000">cable through neck</text>
+
+  <!-- VIEW 4: Top-down view (bottom-left) -->
+  <text x="200" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+  <!-- Circular base from above -->
+  <circle cx="200" cy="680" r="60" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <circle cx="200" cy="680" r="55" fill="#D0D0D0" stroke="black" stroke-width="0.3"/>
+  <!-- Gooseneck exit point -->
+  <circle cx="200" cy="660" r="6" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="650" text-anchor="middle" font-family="sans-serif" font-size="7">neck exit</text>
+  <!-- Buttons arranged on base -->
+  <circle cx="175" cy="710" r="5" fill="#555" stroke="black" stroke-width="0.3"/>
+  <circle cx="200" cy="715" r="5" fill="#555" stroke="black" stroke-width="0.3"/>
+  <circle cx="225" cy="710" r="5" fill="#555" stroke="black" stroke-width="0.3"/>
+  <text x="200" y="735" text-anchor="middle" font-family="sans-serif" font-size="8">3× 6mm tactile</text>
+  <!-- Anti-slip pads -->
+  <circle cx="160" cy="680" r="4" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="2,1"/>
+  <circle cx="240" cy="680" r="4" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="2,1"/>
+  <circle cx="200" cy="720" r="4" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="2,1"/>
+  <text x="258" y="684" font-family="sans-serif" font-size="7">rubber pads</text>
+  <!-- Diameter dimension -->
+  <line x1="140" y1="760" x2="260" y2="760" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="758" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">70mm dia</text>
+
+  <!-- VIEW 5: Cross-section (bottom-center) -->
+  <text x="600" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (Base + Head)</text>
+  <!-- BASE cross-section -->
+  <text x="530" y="510" font-family="sans-serif" font-size="9" font-weight="bold">Base:</text>
+  <path d="M480,530 L620,530 L620,570 L480,570 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <rect x="484" y="534" width="132" height="32" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Speaker in base -->
+  <ellipse cx="530" cy="554" rx="22" ry="5" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="530" y="557" text-anchor="middle" font-family="sans-serif" font-size="7">speaker 28mm</text>
+  <!-- PCB in base -->
+  <rect x="490" y="542" width="120" height="3" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="546" font-family="sans-serif" font-size="7" fill="#2E7D32">PCB</text>
+  <!-- Gooseneck exit -->
+  <rect x="545" y="520" width="10" height="14" fill="#888" stroke="black" stroke-width="0.3"/>
+  <text x="565" y="525" font-family="sans-serif" font-size="7">neck</text>
+  <!-- Wall -->
+  <line x1="478" y1="550" x2="486" y2="550" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="470" y="548" text-anchor="end" font-family="sans-serif" font-size="7" fill="#CC0000">2mm</text>
+
+  <!-- HEAD cross-section -->
+  <text x="530" y="620" font-family="sans-serif" font-size="9" font-weight="bold">Head:</text>
+  <path d="M480,640 L620,640 L620,670 L480,670 Z" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <rect x="484" y="644" width="132" height="22" fill="white" stroke="black" stroke-width="0.3"/>
+  <!-- Screen in head -->
+  <rect x="490" y="646" width="108" height="7" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="544" y="653" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#4477AA">screen module 4.5mm</text>
+  <!-- Screen driver board -->
+  <rect x="490" y="656" width="100" height="2" fill="#90C695" stroke="black" stroke-width="0.3"/>
+  <!-- Head height -->
+  <line x1="635" y1="640" x2="635" y2="670" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="658" y="658" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">20mm</text>
+  <!-- Gooseneck connection to head -->
+  <rect x="540" y="668" width="10" height="12" fill="#888" stroke="black" stroke-width="0.3"/>
+  <text x="560" y="678" font-family="sans-serif" font-size="7">neck joint</text>
+  <!-- Cable channel -->
+  <line x1="545" y1="670" x2="545" y2="700" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="560" y="698" font-family="sans-serif" font-size="7" fill="#CC0000">cable channel</text>
+
+  <!-- VIEW 6: Detail closeup (bottom-right) -->
+  <text x="1000" y="478" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Gooseneck Joint + Cable</text>
+  <!-- Enlarged gooseneck-to-head joint -->
+  <text x="1000" y="510" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Head-to-Neck Joint</text>
+  <!-- Head housing -->
+  <rect x="900" y="530" width="200" height="50" rx="5" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <rect x="910" y="535" width="180" height="25" fill="#B0D4F1" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="552" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#4477AA">screen</text>
+  <!-- Neck socket -->
+  <rect x="985" y="580" width="30" height="40" rx="3" fill="#888" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="605" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white">neck</text>
+  <!-- Ball joint detail -->
+  <circle cx="1000" cy="580" r="12" fill="#999" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="580" r="6" fill="#777" stroke="black" stroke-width="0.3"/>
+  <text x="1030" y="575" font-family="sans-serif" font-size="8">ball joint</text>
+  <!-- Socket in head -->
+  <path d="M985,570 Q985,575 988,580 Q985,585 985,590" fill="none" stroke="black" stroke-width="0.5"/>
+  <path d="M1015,570 Q1015,575 1012,580 Q1015,585 1015,590" fill="none" stroke="black" stroke-width="0.5"/>
+
+  <!-- Cable routing through neck -->
+  <text x="1000" y="650" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold">Cable Routing</text>
+  <!-- Gooseneck tube cross-section -->
+  <circle cx="1000" cy="710" r="25" fill="#888" stroke="black" stroke-width="0.5"/>
+  <circle cx="1000" cy="710" r="20" fill="white" stroke="black" stroke-width="0.3"/>
+  <text x="1000" y="750" text-anchor="middle" font-family="sans-serif" font-size="8">gooseneck tube section</text>
+  <!-- Cables inside -->
+  <circle cx="992" cy="705" r="3" fill="#CC3333" stroke="black" stroke-width="0.2"/>
+  <circle cx="1002" cy="700" r="3" fill="#333" stroke="black" stroke-width="0.2"/>
+  <circle cx="1008" cy="710" r="3" fill="#33CC33" stroke="black" stroke-width="0.2"/>
+  <circle cx="995" cy="715" r="3" fill="#3333CC" stroke="black" stroke-width="0.2"/>
+  <text x="1040" y="700" font-family="sans-serif" font-size="7">USB data</text>
+  <text x="1040" y="712" font-family="sans-serif" font-size="7">power</text>
+  <text x="1040" y="724" font-family="sans-serif" font-size="7">display cable</text>
+  <!-- Tube diameter -->
+  <line x1="975" y1="740" x2="1025" y2="740" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="1000" y="738" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">~10mm OD</text>
+</svg>

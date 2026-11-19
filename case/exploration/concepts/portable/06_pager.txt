@@ -1,0 +1,283 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 06: PAGER / BEEPER
+================================================================================
+
+  90s pager aesthetic. Portrait orientation with flat top and slight wedge
+  taper (thicker at bottom). Belt clip integrated into back shell.
+  Screen in upper portion, 3 beveled buttons below, recessed side wake button.
+
+  Overall Dimensions: 80mm tall x 55mm wide x 18mm deep (16mm at top, 18mm
+                      at bottom due to wedge taper)
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                          55mm
+          |<------------------------------>|
+
+     ___  +--------------------------------+  ___
+      |   |  (*)                           |   |
+      |   |  LED   ____________________   |   |
+      |   |       |                    |   |   |
+      |   |       |                    |   |   |
+      |   |       |    40.80 x 30.60   |   |   |
+      |   |       |    Active Area     |   |   |
+      |   |       |                    |   |   |
+  80  |   |       |                    |   |   |
+  mm  |   |       |____________________|   |   |
+      |   |                                |   |
+      |   |    .--------. .--------. .--------.|
+      |   |    | SELECT | |   OK   | | CANCEL ||
+      |   |    |  /---\ | |  /---\ | |  /---\ ||
+      |   |    | |     || | |     || | |     | ||
+      |   |    |  \---/ | |  \---/ | |  \---/ ||
+      |   |    '--------' '--------' '--------'|
+      |   |           14mm    14mm             |   |
+     _|_  +--------------------------------+  _|_
+                     [_USB-C_]
+                      9.34mm
+
+  Notes:
+  - LED hole: 2mm dia, top-left corner, 5mm from edges
+  - Screen bezel: 2mm around active area
+  - Display module sits in recessed pocket (51.80 x 36.20mm)
+  - Button caps: 12 x 6mm, beveled edges, 14mm center-to-center
+  - Buttons centered horizontally, ~15mm below screen
+
+================================================================================
+  SIDE PROFILE (RIGHT SIDE)
+================================================================================
+
+                    18mm (bottom)
+               |<--------------->|
+          16mm |                 |
+          |<------------>|       |
+          +---.          |       |
+          |    \  Screen |       |    ___ top
+          |     |  area  |       |
+          |     |........|       |     |
+          |     |        |       |     |
+          |     |        |       |     |
+          |  [W]|        |       |    80mm
+          |     |        |       |     |
+          |     | Buttons|       |     |
+          |     |        |      /      |
+          |     |        |    /        |
+          +-----+--------+--'    ___ bottom
+                   [USB-C]
+
+  [W] = Wake button (recessed, side-mounted)
+      Button cap: 10 x 4.5mm
+      Recessed 0.5mm below shell surface
+      Located at ~40mm from top (midpoint)
+
+  Wedge taper:
+  - Top thickness: 16mm
+  - Bottom thickness: 18mm
+  - Taper angle: ~1.4 degrees
+  - Provides ergonomic forward tilt when reading screen
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                          55mm
+          |<------------------------------>|
+
+          +--------------------------------+
+          |                                |
+          |      ______________________    |
+          |     |                      |   |
+          |     |    Belt Clip         |   |
+          |     |    (spring steel     |   |
+          |     |     or molded)       |   |
+          |     |                      |   |
+          |     |______________________|   |
+          |            |          |        |
+          |            |  Pivot   |        |
+          |            | (hinge)  |        |
+          |            +----------+        |
+          |                                |
+          |         .-------------.        |
+          |         | Battery     |        |
+          |         | access      |        |
+          |         | (no cover   |        |
+          |         |  -- sealed) |        |
+          |         '-------------'        |
+          |                                |
+          |    Slight curved back          |
+          |    for body comfort            |
+          +--------------------------------+
+
+  Belt Clip Detail:
+  - Clip length: ~40mm, width: 20mm
+  - Integrated hinge at top, spring-loaded
+  - Clips over belts up to 5mm thick
+  - Option A: Spring steel insert in molded pocket
+  - Option B: Living hinge with molded clip (less durable)
+  - Clip sits flat against back when not in use
+
+  Back curvature: 2mm convex dome across width
+  (comfortable against hip/body)
+
+================================================================================
+  CROSS-SECTION (Side view, cut through center)
+================================================================================
+
+  Front                                          Back
+  face                                           face
+   |                                              |
+   |  1.5mm   2.5mm    2.5mm   1.6mm 0.5 5.0  1.5mm
+   |<---->|<------->|<------->|<--->|<>|<--->|<---->|
+   |      |         |         |     |  |     |      |
+   | Wall | Display |   Gap   | PCB |G | Bat | Wall |
+   |      | Module  |  (air/  |     |a |tery | +clip|
+   |      | 2.5mm   | ribbon) |1.6mm|p |LiPo |      |
+   |      |         |         |     |  |5.0mm|      |
+   |      |         |         |     |  |     |      |
+   +------+---------+---------+-----+--+-----+------+
+   |<--------------------------------------------------->|
+                     ~15.1mm (top)
+                     ~17.1mm (bottom, with wedge)
+
+  Z-Stack Detail:
+  +-----------+  Front surface
+  |  1.5mm    |  Front wall (polycarbonate/ABS)
+  +-----------+
+  |  2.5mm    |  Display module (TFT + glass + FPC)
+  +-----------+
+  |  2.5mm    |  Gap (FPC routing, foam spacer)
+  +-----------+
+  |  1.6mm    |  PCB (components face back)
+  +-----------+
+  |  0.5mm    |  Air gap / insulation tape
+  +-----------+
+  |  5.0mm    |  LiPo battery (30 x 35mm)
+  +-----------+
+  |  1.5mm    |  Back wall (+ belt clip mount area)
+  +-----------+
+
+  Wedge taper adds ~2mm at bottom via thicker back wall
+  and extended gap between PCB and battery.
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Front Shell:
+  +--------------------------------+
+  |  O  .--------------------.     |   O = LED light pipe
+  |     | Screen window      |     |       (2mm dia hole)
+  |     | (clear/tinted)     |     |
+  |     | 42 x 32mm cutout   |     |
+  |     '--------------------'     |
+  |                                |
+  |     [BTN1]  [BTN2]  [BTN3]    |   Button holes: 13 x 7mm
+  |                                |
+  +----------[USB cutout]----------+   USB: 9.34 x 3.66mm
+
+  Layer 2 - Display Module:
+       .--------------------.
+       | 51.80 x 36.20mm    |
+       | FPC exits bottom   |
+       '--------------------'
+            ||| FPC ribbon
+
+  Layer 3 - PCB:
+       +----------------------+
+       |  [ESP32-S3-MINI-1]   |   15.4 x 20.5mm
+       |  [Vibration Motor]   |   6mm coin, bottom-right
+       |  [LED]  [USB-C conn] |
+       |  [Button contacts]   |   Tactile switches on PCB
+       |  45.0 x 40.0mm       |
+       +----------------------+
+
+  Layer 4 - Battery:
+       .-----------------.
+       | LiPo 30x35x5mm  |
+       | 300-500 mAh      |
+       '-----------------'
+
+  Layer 5 - Back Shell:
+  +--------------------------------+
+  |       [Belt Clip Assembly]     |
+  |       Curved back surface      |
+  |       Screw bosses (x4)       |
+  +--------------------------------+
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Display module sits in a recessed pocket in front shell
+  - Pocket depth: 2.5mm, sized 52.0 x 36.4mm (0.1mm clearance)
+  - Held in place by foam tape on back + PCB standoffs pressing against it
+  - FPC ribbon folds down and connects to PCB below
+
+  PCB Mounting:
+  - 4x M2 screw bosses molded into back shell
+  - PCB has 4 mounting holes at corners
+  - Standoffs: 3.0mm tall (sets PCB-to-display gap)
+  - Screws: M2 x 5mm pan head (from back, through shell into PCB)
+
+  Battery Mounting:
+  - Double-sided foam tape to back shell interior
+  - Wires routed to PCB connector, strain-relieved with adhesive
+
+  Button Mounting:
+  - Tactile switches soldered to PCB
+  - Button caps press-fit into front shell holes
+  - Caps have internal posts that align with switch actuators
+  - Beveled caps: 12 x 6mm top surface, 1mm bevel on all edges
+  - Travel: ~0.5mm
+
+  Wake Button:
+  - Side-mounted tactile switch on PCB edge
+  - Small rocker cap (10 x 4.5mm) press-fit into side cutout
+  - Recessed 0.5mm below surface to prevent accidental activation
+
+  Belt Clip:
+  - Spring steel clip (0.5mm thick, 20mm wide)
+  - Riveted or press-fit into molded pocket on back shell
+  - Clip extends ~30mm from body, springs back to ~5mm gap
+  - Optional: belt clip is removable (2x micro screws)
+
+  Shell Assembly:
+  - Front and back shell snap-fit with 4 internal clips
+  - Additional 2x screws at bottom for security (hidden by rubber feet)
+  - Gasket: thin foam strip around perimeter for rattle-free fit
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Status LED: RGB LED behind 2mm light-pipe hole, top-left of screen
+     - Visible even when device is clipped to belt
+     - Pulses gently for notifications
+
+  2. Belt Clip: Integrated spring-steel clip for belt/pocket mounting
+     - Rotates slightly for angle adjustment
+     - Strong enough for daily carry
+
+  3. Wedge Taper: Bottom is 2mm thicker than top
+     - Natural forward-tilt when held or on desk
+     - Better screen viewing angle
+     - More room at bottom for USB-C connector
+
+  4. Curved Back: 2mm convex dome
+     - Comfortable against hip when belt-clipped
+     - Prevents rocking on flat surfaces (sits on corner edges)
+
+  5. Vibration Motor: 6mm coin motor on PCB
+     - Notification haptics (approval requests, status changes)
+     - Pager-authentic buzz feel
+
+  6. Pager Aesthetic:
+     - Matte black or dark gray shell
+     - Subtle horizontal ridges on sides (grip texture)
+     - Small "DEVOTCHI" text debossed on front, below buttons
+     - Period-appropriate design language (rounded rectangle, no curves)
+
+================================================================================

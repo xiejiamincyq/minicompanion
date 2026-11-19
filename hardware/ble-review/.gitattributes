@@ -1,0 +1,2 @@
+# Preserve the saved bytes used by CAD and quote-package SHA-256 receipts.
+* -text whitespace=trailing-space,space-before-tab,cr-at-eol

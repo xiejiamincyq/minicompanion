@@ -1,0 +1,305 @@
+DESIGN 15: COMMUNICATOR
+=======================
+Star Trek communicator badge shape. Upward-pointing arrowhead/
+chevron/shield form factor. Screen centered in the widest part.
+Buttons as small raised dots on the lower chevron point. Pin clip
+and magnet mount on back for shirt/jacket attachment. Very thin
+profile — custom slim battery. Tap-to-wake via accelerometer.
+Gold/silver two-tone finish. Wearable, iconic, conversation piece.
+
+Overall: 65mm tall x 50mm wide x 12mm deep
+Weight target: ~30g with battery (wearable-light)
+Orientation: Portrait (screen landscape within chevron)
+Shell: 2-piece (front + back), ultrasonic weld seam
+
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+                  ╱╲
+                ╱    ╲
+              ╱   ○    ╲          ← LED indicator (1.5mm)
+            ╱    LED     ╲
+          ╱                ╲
+        ╱  ┌──────────────┐  ╲
+       │   │              │   │
+       │   │   TFT LCD    │   │   ← 51.8 x 36.2mm module
+       │   │   SCREEN     │   │     (40.8x30.6 active)
+       │   │  (40.8x30.6) │   │     centered in widest part
+       │   │              │   │     of chevron shape
+       │   └──────────────┘   │
+        ╲                    ╱     ← Widest point: 50mm
+         ╲                  ╱
+          ╲   ·   ·   ·  ╱       ← 3x raised dot buttons
+           ╲    BUTTONS  ╱          (5mm dia, 1mm proud)
+            ╲           ╱           on lower chevron taper
+             ╲  ┌───┐  ╱
+              ╲ │USB│ ╱           ← USB-C (9.34x3.66mm)
+               ╲└───┘╱              at bottom point
+                ╲   ╱
+                 ╲ ╱
+                  V
+
+       ├──── 50mm ────┤
+       (at widest point)
+
+    Note: The chevron/arrowhead points UP.
+    USB-C is at the bottom point/vertex.
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+       12mm
+      ├──────┤
+      ╭──────╮ ─┬─
+     ╱  scrn  ╲  │
+    │   pcb    │  │
+    │   batt   │  │  65mm
+     ╲        ╱   │  (top to
+      ╲      ╱    │   bottom
+       ╲    ╱     │   point)
+        ╲  ╱      │
+         ╲╱USB   ─┴─
+      ↑         ↑
+     Front    Back
+
+    Profile is a thin wedge — thickest at
+    screen center (12mm), tapering toward
+    all edges. Aerodynamic, badge-like.
+    Back is slightly convex for body comfort.
+
+
+BACK VIEW
+─────────
+
+                  ╱╲
+                ╱    ╲
+              ╱        ╲
+            ╱            ╲
+          ╱                ╲
+        ╱  ┌──────────────┐  ╲
+       │   │  PIN CLIP     │   │  ← Pin clip (25mm long)
+       │   │  ═══════════  │   │    spring-loaded, horizontal
+       │   │              │   │
+       │   │  ◉ MAGNET    │   │  ← Neodymium disc magnet
+       │   │  (10mm dia)  │   │    (10mm x 2mm, N52 grade)
+       │   └──────────────┘   │    centered below pin clip
+        ╲                    ╱
+         ╲  ▪▪▪ VIBE ▪▪▪   ╱     ← Vibration motor (6mm coin)
+          ╲               ╱
+           ╲             ╱
+            ╲           ╱
+             ╲  ┌───┐  ╱
+              ╲ │USB│ ╱
+               ╲└───┘╱
+                ╲   ╱
+                 ╲ ╱
+                  V
+
+    Back is slightly convex (1mm crown) for
+    comfortable wear against chest/shirt.
+    Pin clip + magnet provide dual mounting.
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.0mm front wall           │  1.0mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   1.5mm gap         │ │  │     12mm total
+      │  │   (FPC, reduced)    │ │  │  (slim profile)
+      │  ├── PCB ──────────────┤ │  │
+      │  │   (1.6mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   0.4mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (3.5mm thick)     │ │  │  ← Custom slim LiPo
+      │  │   custom slim cell  │ │  │     (~200-250mAh)
+      ├──┴─────────────────────┴─┤  │
+      │          ◉ magnet          │  ← 2mm thick, inset into
+      │                             │    back wall recess
+      Front face               Back face
+
+    Z-stack (modified for 12mm):
+    1.0 + 2.5 + 1.5 + 1.6 + 0.4 + 3.5 + 1.0 = 11.5mm
+    (+0.5mm convex back crown = 12mm max)
+
+    Note: Thinner walls (1.0mm vs 1.5mm) and slim
+    3.5mm battery to achieve 12mm target. Magnet is
+    inset into a recess in the back wall.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (chevron shape, 1.0mm wall)
+    ├── Screen window cutout (41.8 x 31.6mm)
+    ├── 3x button holes (5.5mm dia, in lower chevron)
+    ├── 1x LED hole (1.5mm dia, upper chevron)
+    ├── Screen retention: 4x clips around window
+    ├── Finish: Gold-tone metallic paint or anodized look
+    └── Ultrasonic weld ridge around perimeter
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Centered in widest part of chevron
+    ├── Landscape orientation within portrait badge
+    ├── FPC exits bottom edge toward PCB
+    └── Held by front shell retention clips
+
+    Layer 3 — 1.5mm AIR GAP (reduced from standard 2.5mm)
+    ├── FPC routing
+    ├── Button plunger extensions
+    └── Accelerometer clearance on PCB top side
+
+    Layer 4 — PCB (custom shape to fit chevron, 1.6mm thick)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── Accelerometer (LIS2DH12, 2x2mm) for tap-to-wake
+    ├── 3x micro tactile switches (face front, lower area)
+    ├── USB-C connector at bottom point
+    ├── Display FPC connector at top
+    ├── Vibration motor pads
+    └── PCB outline follows chevron contour (custom shape)
+
+    Layer 5 — 0.4mm GAP
+    └── Clearance for ESP32 module + accelerometer
+
+    Layer 6 — BATTERY (custom slim LiPo, 3.5mm thick)
+    ├── ~35 x 25mm footprint (fits chevron mid-section)
+    ├── 200-250mAh capacity (slim trade-off)
+    ├── JST connector pigtail to PCB
+    └── Foam pad cushion in back shell cradle
+
+    Layer 7 — BACK SHELL (chevron shape, 1.0mm wall)
+    ├── Slightly convex outer surface (1mm crown)
+    ├── Magnet recess (10mm dia, 2mm deep pocket)
+    ├── Pin clip mounting bosses (2x screw posts)
+    ├── Battery cradle with foam pad
+    ├── USB-C cutout at bottom point
+    ├── Finish: Silver-tone metallic paint
+    └── Ultrasonic weld ridge (mates with front shell)
+
+
+BUTTON LAYOUT DETAIL (lower chevron area)
+──────────────────────────────────────────
+
+           ╲                  ╱
+            ╲                ╱
+             ╲  ·   ·   ·  ╱    ← 3x raised dot buttons
+              ╲ REJ ACT APP╱       5mm diameter, 1mm proud
+               ╲          ╱        hemispherical caps
+                ╲        ╱         tactile bump feel
+                 ╲      ╱
+                  ╲    ╱       Spacing: ~10mm center-to-center
+                   ╲  ╱        (tighter than standard 14mm
+                    ╲╱          due to chevron taper)
+
+    Button mapping:
+    · LEFT  = Reject    (red dot marking)
+    · CENTER = Action   (blue dot marking)
+    · RIGHT = Approve   (green dot marking)
+
+    No separate wake button — tap-to-wake via
+    accelerometer (double-tap gesture on any surface).
+
+
+PIN CLIP + MAGNET MOUNT DETAIL (back)
+──────────────────────────────────────
+
+    Side view of mounting:
+                    ┌─── Pin clip arm
+                    │    (spring steel, 25mm)
+    ┌───────────────┤
+    │  BACK SHELL   ├═══════════╗  ← Clip opens to 8mm gap
+    │               │           ║    fits shirt collar/pocket
+    └───────────────┤           ║
+                    ╚═══════════╝
+
+    Magnet detail:
+    ┌────────────────────┐
+    │     Back shell     │
+    │   ┌──────────┐     │
+    │   │ ◉ N52    │     │  ← 10mm x 2mm neodymium disc
+    │   │  MAGNET  │     │    inset flush with back surface
+    │   └──────────┘     │    holds through fabric to
+    │                    │    companion steel disc (included)
+    └────────────────────┘
+
+    Wearing options:
+    1. Pin clip: Spring clip onto shirt pocket/collar
+    2. Magnet: Place companion steel disc inside shirt,
+       badge magnetically attaches on outside
+    3. Lanyard: Optional small hole at top vertex
+
+
+CHEVRON SHAPE GEOMETRY
+──────────────────────
+
+    Outline coordinates (approximate, origin at center):
+
+                (0, 32.5)          ← Top point
+                  ╱╲
+                ╱    ╲
+     (-25, 8) ╱        ╲ (25, 8)  ← Upper wing tips
+             │            │           (widest: 50mm)
+             │            │
+    (-22,-5) ╲            ╱ (22,-5)
+               ╲        ╱
+                ╲      ╱
+                 ╲    ╱
+                  ╲  ╱
+               (0,-32.5)          ← Bottom point (USB-C)
+
+    The shape is a stylized arrowhead/chevron:
+    - Top vertex angle: ~50 degrees
+    - Side edges curve slightly outward (convex)
+    - Bottom taper is more gradual than top
+    - All edges have 1mm fillet radius
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece chevron (front + back), ultrasonic weld
+- No screws — welded seam for thin, clean profile
+- Seam runs around chevron perimeter at mid-depth
+- Display press-fits into front shell, 4x retention clips
+- PCB is custom chevron-contour shape, press-fits on 3x posts
+- Battery cushioned with foam pad in back shell cradle
+- USB-C cutout at bottom vertex, tight clearance
+- Magnet inset into machined pocket in back wall (flush)
+- Pin clip attached via 2x M1.4 micro screws into bosses
+- Vibration motor foam-taped inside back shell
+- Accelerometer on PCB enables tap-to-wake (no physical wake btn)
+- Assembly: front shell + internals, then ultrasonic weld back
+- Service access: pry tool along weld seam (re-weldable)
+- Companion magnet disc included (15mm steel disc with adhesive)
+
+
+SPECIAL FEATURES
+────────────────
+- Chevron/arrowhead shape: Instantly recognizable Star Trek
+  communicator badge silhouette. Conversation starter.
+- Two-tone finish: Front shell in gold metallic, back shell
+  in silver metallic. Premium look. Can be painted ABS or
+  metallic-filled resin for 3D printing.
+- Tap-to-wake: LIS2DH12 accelerometer on PCB detects double-tap
+  gesture. No physical wake button needed — keeps the thin profile
+  and clean lines. Tap the badge to wake your Devotchi.
+- Pin clip + magnet dual mount: Wear it on a shirt pocket (clip)
+  or magnetically attach through fabric (companion disc inside
+  shirt). Both mounting methods included.
+- Slim 12mm profile: Achieved with thinner 1.0mm walls and
+  custom 3.5mm LiPo cell. Wearable as a badge without bulk.
+- Raised dot buttons: Three hemispherical 5mm buttons on the
+  lower chevron taper. Color-coded dots (red/blue/green).
+  Tactile and findable by touch.
+- Convex back: 1mm crown on back surface for comfortable wear
+  against the body. No sharp edges anywhere.
+- LED at top vertex: Status indicator visible from across a room.
+  Shines through 1.5mm hole in upper chevron area.

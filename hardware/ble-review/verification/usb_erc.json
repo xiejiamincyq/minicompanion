@@ -1,0 +1,80 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-19T01:17:03",
+    "ignored_checks": [],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6",
+            "violations": []
+        },
+        {
+            "path": "/mcu/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/d501dd46-08d9-4743-b831-93de6bd7c7dd",
+            "violations": []
+        },
+        {
+            "path": "/isolation/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/ba08bb9c-27db-4863-93da-d0a8774410f3",
+            "violations": []
+        },
+        {
+            "path": "/display/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/98e7fe21-bddb-41d2-a56f-5f910350d952",
+            "violations": []
+        },
+        {
+            "path": "/usb_interface/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b650cb4c-26d8-4ddd-9a38-ed7407049d46",
+            "violations": []
+        },
+        {
+            "path": "/user_input/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b2236c73-c7ac-47cb-a363-4ec62c6a982a",
+            "violations": []
+        },
+        {
+            "path": "/ble_usb/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/a86c52ba-e972-4659-b017-ab4e304f9539",
+            "violations": []
+        },
+        {
+            "path": "/ble_charger/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/da5e6a86-4c89-47d4-9d42-e42c869d18e0",
+            "violations": []
+        },
+        {
+            "path": "/ble_enable/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/ed0d18dc-9791-4b24-b35c-a4c41b0b99f8",
+            "violations": []
+        },
+        {
+            "path": "/ble_rail/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/a9a21ec2-34ac-4baf-89c6-27e7ac9698ed",
+            "violations": []
+        },
+        {
+            "path": "/ble_backlight/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/ba9fd70b-1a31-4dc5-9a56-64841f09f9ba",
+            "violations": []
+        },
+        {
+            "path": "/usb_service/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/63249bf5-8c44-45df-a5cc-fefd189a006b",
+            "violations": []
+        },
+        {
+            "path": "/usb_enable_gate/",
+            "uuid_path": "/d2bf821d-2b43-48c2-bd9f-23e5d37beff6/b165c0bd-7de4-43ea-a6f1-dd29dd8fa713",
+            "violations": []
+        }
+    ],
+    "source": "mini_companion_integrated.kicad_sch"
+}

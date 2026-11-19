@@ -1,0 +1,329 @@
+DESIGN 24: HOLSTER
+==================
+Belt-mounted quick-draw pod with tactical/military aesthetic.
+Screen on front face always visible when holstered on belt.
+3 buttons on top edge for easy thumb access when reaching down.
+Quick-release tab on one side. Body angled 15deg when worn for
+easy glancing down. MOLLE-compatible belt loop. Drainage hole
+on bottom. Kydex-style rigid holster look.
+
+Overall: 70mm wide x 50mm tall x 16mm deep (device pod)
+Belt loop: 40mm wide x 15mm tall (MOLLE-compatible strap)
+Weight target: ~55g with battery
+Orientation: Portrait (screen on front face)
+Shell: 2-piece (front + back), 2x side screws + quick-release
+
+FRONT VIEW (screen facing outward when holstered)
+──────────────────────────────────────────────────
+
+    Belt loop (MOLLE strap)
+    ┌══════════════════════════════════════┐
+    ║  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  ║ ← 40mm webbing strap
+    ╚══════════════╤═══════════╤══════════╝   (folds over belt)
+                   │           │
+    ┌──────────────┴───────────┴──────────┐ ─┬─
+    │  (●) REJECT  (●) ACTION  (●) APPROV│  │ ← 3x buttons on
+    │──────────────────────────────────────│  │   TOP edge (12x6mm)
+    │  ○ LED                               │  │
+    │  ┌──────────────────────────────┐    │  │
+    │  │                              │    │  │
+    │  │      TFT LCD SCREEN          │    │  │
+    │  │      (40.8 x 30.6mm)        │    │  │  50mm
+    │  │                              │    │  │
+    │  │      Visible when            │    │  │
+    │  │      holstered on belt       │    │  │
+    │  │                              │    │  │
+    │  └──────────────────────────────┘    │  │
+    │                                      │  │
+    │  (·) wake                            │  │
+    │          ┌──USB-C──┐    ◦ drain hole │  │
+    └──────────┤  ○  ○   ├────────────────┘ ─┴─
+               └─────────┘
+    ├──────────── 70mm ──────────────┤
+
+
+SIDE VIEW (right side — quick-release tab side)
+───────────────────────────────────────────────
+
+    Belt
+    ════════════════════════
+         │ strap │
+         │       │
+         ╔═══════╗ ─┬─
+        ╱        ║  │  15deg forward tilt
+       ╱  pod    ║  │  when mounted on belt
+      │          ║  │  50mm
+      │   16mm   ║  │
+      │          ║  │
+      └──┤USB├───╝ ─┴─
+                  ↑
+                Quick-release
+                tab on this side
+
+    Quick-release detail:
+         ╔═══════╗
+         ║       ╠══╗
+         ║  POD  ║QR║ ← Push tab to detach
+         ║       ╠══╝   from belt mount
+         ╚═══════╝
+
+    15deg tilt cross-section:
+
+    Belt line ─────────────────────
+                │ strap │
+                │  ╱    │
+                │╱ 15deg│
+               ╱│       │
+              ╱  pod    │
+             │          │
+             └──────────┘
+    Easy glancing angle when looking down at belt
+
+
+BACK VIEW (belt-facing side)
+────────────────────────────
+
+    ┌──────────────────────────────────────┐
+    │                                      │
+    │   ╔══════════════════════════════╗   │
+    │   ║     BELT LOOP CHANNEL       ║   │ ← Strap threads
+    │   ║     (40mm wide, 5mm gap)    ║   │   through here
+    │   ╚══════════════════════════════╝   │
+    │                                      │
+    │   ┌──────────────────────────┐       │
+    │   │                          │       │
+    │   │    BACK PANEL            │       │
+    │   │    (textured grip)       │       │
+    │   │                          │       │
+    │   └──────────────────────────┘       │
+    │                                      │
+    │   ▪▪▪▪▪▪ ← Vibration motor          │
+    │                                      │
+    └──────────────────────────────────────┘
+
+
+TOP VIEW (looking down at button edge)
+──────────────────────────────────────
+
+         ╱‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾╲
+        │  ┌────┐  ┌────┐  ┌────┐       │
+        │  │ B1 │  │ B2 │  │ B3 │       │ ← Buttons on top
+        │  │RJCT│  │ ACT│  │APRV│       │   edge for thumb
+        │  └────┘  └────┘  └────┘       │   access
+         ╲_____________________________ ╱
+        ├──────── 70mm ─────────────────┤
+        ↑                               ↑
+       Front                          Back
+      (screen)                     (belt side)
+
+    Buttons protrude 2mm above top edge.
+    14mm center-to-center spacing.
+    Easy thumb access when hand reaches down to belt.
+
+
+BOTTOM VIEW (drainage hole visible)
+────────────────────────────────────
+
+    ┌──────────────────────────────────────┐
+    │                                      │
+    │     ┌────USB-C────┐     ◦            │
+    │     └─────────────┘   drain          │ ← 2mm drainage
+    │                       hole           │   hole (weather
+    │                                      │   resistance)
+    └──────────────────────────────────────┘
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front (screen)                Back (belt)
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │  16mm total
+      │  │   (FPC routing)     │ │  │  (15.1mm stack
+      │  ├── PCB ──────────────┤ │  │   + belt loop
+      │  │   (1.6mm thick)     │ │  │   clearance)
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                          ├──┤
+      │                          │belt loop channel
+      │                          │(5mm gap behind back wall)
+      Front face             Back face
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm (pod)
+    + belt loop channel adds ~5mm behind back wall
+    Total front-to-belt: ~20mm including strap channel
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (tactical pod, 1.5mm wall)
+    ├── Screen window cutout (42 x 32mm, portrait)
+    ├── LED hole (2mm dia, above screen)
+    ├── 3x button holes on top edge (12.5 x 6.5mm, top-firing)
+    ├── 1x wake button hole (bottom area, 10.5 x 5.0mm)
+    ├── Screen retention clips (4x)
+    ├── Kydex-style angular edges and raised ridges
+    └── Drainage hole on bottom (2mm dia)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait (rotated)
+    ├── FPC cable exits to PCB connector
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routing
+    └── Top-edge button plunger passages
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 3x tactile switches facing top edge
+    ├── 1x wake switch facing front (bottom area)
+    ├── USB-C connector on bottom edge
+    ├── Display FPC connector
+    └── Vibration motor pads
+
+    Layer 5 — 0.5mm GAP
+    └── ESP32 module clearance
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in pod
+    ├── JST pigtail to PCB
+    └── Held by cradle ribs in back shell
+
+    Layer 7 — BACK SHELL (tactical pod, 1.5mm wall)
+    ├── Battery cradle ribs
+    ├── PCB mounting posts (4x)
+    ├── USB-C cutout alignment
+    ├── Vibration motor recess
+    ├── 2x screw bosses (M2, sides)
+    ├── Quick-release tab mechanism housing (right side)
+    ├── Textured grip surface (molded ridges)
+    └── Integrated belt loop channel
+
+    BELT LOOP ASSEMBLY
+    ├── MOLLE-compatible webbing strap (40mm wide, nylon)
+    ├── Folds over belt, feeds through channel on back
+    ├── Snap or velcro closure at bottom of strap
+    └── Positions pod at 15deg forward tilt
+
+
+QUICK-RELEASE MECHANISM DETAIL
+───────────────────────────────
+
+    Right side of pod:
+
+    ┌──────────────────┐
+    │                  │
+    │      POD         │
+    │                  │      ┌──────┐
+    │              ────╫──────┤ QR   │ ← Spring-loaded tab
+    │              ────╫──────┤ TAB  │   Push inward to release
+    │                  │      └──────┘   from belt mount plate
+    │                  │
+    └──────────────────┘
+
+    Belt mount plate (stays on belt):
+    ┌────────────────┐
+    │   ┌──────────┐ │
+    │   │ SLOT     │ │ ← Pod slides down into slot
+    │   │          │ │   QR tab clicks into detent
+    │   │  ┌──┐   │ │
+    │   │  │◄─│   │ │ ← Detent notch (QR tab engages here)
+    │   │  └──┘   │ │
+    │   └──────────┘ │
+    └────────────────┘
+
+    Operation:
+    1. Slide pod down into belt mount plate
+    2. QR tab clicks into detent — locked
+    3. Push QR tab inward — tab retracts, pod lifts free
+
+
+BUTTON LAYOUT DETAIL (top edge)
+────────────────────────────────
+
+    Looking down at the top edge:
+
+    ┌────────────────────────────────────────────┐
+    │         ┌────┐   ┌────┐   ┌────┐          │
+    │         │ 12 │   │ 12 │   │ 12 │          │ ← 12x6mm caps
+    │         │x 6 │   │x 6 │   │x 6 │          │   protrude 2mm
+    │         └────┘   └────┘   └────┘          │   above edge
+    │         REJECT   ACTION   APPROVE          │
+    │         ├─14mm─┤  ├─14mm─┤                 │
+    │                                            │
+    Front face                         Back face
+
+    Button actuation direction: press DOWN (toward bottom of pod)
+    This maps to thumb pressing down when hand reaches to belt.
+
+
+15-DEGREE TILT MOUNTING DETAIL
+──────────────────────────────
+
+    How the pod sits on the belt:
+
+    Belt line ─────────────────────────
+    │                                  │
+    │    ╔══════════════════════╗      │
+    │    ║   STRAP (behind)    ║      │
+    │    ╚══════╤═══════╤══════╝      │
+    │           │  ╱    │             │
+    │           │╱      │             │
+    │          ╱│ POD   │             │
+    │        ╱  │       │             │
+    │      ╱    │       │             │
+    │    │      │       │             │
+    │    └──────┘       │             │
+    │     USB-C         │             │
+    │                                  │
+    │    15deg forward tilt            │
+    │    Screen faces slightly up      │
+    │    Easy to read looking down     │
+
+    The tilt is achieved by the belt loop attachment
+    point being offset — strap attaches at the upper-back
+    of the pod, causing it to lean forward naturally.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece pod (front + back), 2x M2 side screws
+- Quick-release tab on right side (spring-loaded, push to detach)
+- Belt mount plate is a separate piece that stays on belt
+- Pod slides into mount plate and QR tab locks it
+- 15deg forward tilt from offset strap attachment point
+- Buttons on top edge — thumb-accessible when reaching down
+- Screen always visible when holstered (portrait, facing outward)
+- USB-C on bottom edge — cable hangs down naturally
+- 2mm drainage hole on bottom prevents water/dust accumulation
+- Kydex-style aesthetic: angular edges, raised ridges, matte
+  textured surfaces, minimal radii on corners
+- Vibration motor provides haptic alerts through belt contact
+- MOLLE-compatible strap (40mm) works with tactical belts,
+  standard belts (up to 50mm), and MOLLE webbing
+- Wake button on lower front face, slightly recessed
+
+SPECIAL FEATURES
+────────────────
+- Belt-mounted always-visible display — glanceable status
+- Quick-release mechanism for fast detach/attach
+- 15deg forward tilt for easy downward glancing
+- Top-edge buttons for natural thumb access at belt level
+- MOLLE-compatible strap works with tactical and standard belts
+- Drainage hole for outdoor/weather use
+- Kydex-style tactical/military aesthetic
+- Vibration alerts felt through belt
+- Separate belt mount plate — pod is usable standalone
+- Quick-draw: grab pod, push QR tab, pod is free in hand

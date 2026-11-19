@@ -1,0 +1,376 @@
+================================================================================
+  DEVOTCHI PORTABLE CASE - CONCEPT 09: FIDGET BRICK
+================================================================================
+
+  Chunky, satisfying-to-hold brick. Extra thick for ergonomic comfort with
+  very rounded edges and corners. Feels like a smooth river stone. Textured
+  grip zones on sides. Domed back. Larger battery thanks to extra depth.
+
+  Overall Dimensions: 65mm tall x 50mm wide x 22mm deep
+  Edge Radius:        8mm on ALL edges and corners (heavily rounded)
+
+================================================================================
+  FRONT VIEW
+================================================================================
+
+                        50mm
+          |<--------------------------->|
+
+             .-------------------------.
+     ___   /                             \   ___
+      |   |                               |   |
+      |   |      .____________________.   |   |
+      |   |     |                    |    |   |
+      |   |     |                    |    |   |
+      |   |     |   40.80 x 30.60   |    |   |
+  65  |   |     |   Active Area     |    |  65mm
+  mm  |   |     |                    |    |   |
+      |   |     |                    |    |   |
+      |   |     |____________________|   |   |
+      |   |                               |   |
+      |   |    (BTN1)  (BTN2)  (BTN3)    |   |
+      |   |     dome    dome    dome      |   |
+      |    \                             /    |
+     _|_    '---------[USB-C]---------'      _|_
+
+  Notes:
+  - All corners have 8mm radius (very soft, rounded)
+  - Screen slightly recessed (0.5mm below surface)
+  - Domed button caps (hemisphere, 8mm diameter, 2mm rise)
+  - Buttons feel satisfying to press (high-quality tactile)
+  - 14mm center-to-center button spacing
+  - Overall shape: rounded rectangle, like a bar of soap
+
+================================================================================
+  SIDE PROFILE (RIGHT SIDE)
+================================================================================
+
+                  22mm
+          |<---------------->|
+
+              .----------.
+            /              \         ___ top
+           /                \         |
+          |    Screen        |        |
+          |    (recessed)    |        |
+          |..................|        |
+          |                  |       65mm
+          |    Buttons       |        |
+          |    (domed)       |        |
+           \                /         |
+            \   ________  /          |
+              '/        \'          _|_ bottom
+                [USB-C]
+
+  [W] = Wake button on TOP edge (see top view)
+
+  Side Features:
+  - 8mm radius rounds on all 4 long edges
+  - Textured grip zones on left and right sides
+  - Grip texture: raised dots (1mm dia, 0.3mm tall, 2.5mm spacing)
+    OR: horizontal ridges (0.5mm tall, 1.5mm spacing)
+  - Texture zone: 30mm tall x 15mm wide on each side
+
+  Side Texture Detail (magnified):
+  Dot pattern:              Ridge pattern:
+    . . . . .               _______________
+    . . . . .              |_______________|
+    . . . . .              |_______________|
+    . . . . .              |_______________|
+    . . . . .              |_______________|
+    . . . . .              |_______________|
+
+================================================================================
+  TOP VIEW (looking down)
+================================================================================
+
+                        50mm
+          |<--------------------------->|
+
+              .-------[W]-------.
+            /    Wake button      \
+           |                       |  22mm deep
+            \                     /
+              '-------------------'
+
+  [W] = Wake button centered on top edge
+  - Flush with surface, tactile click
+  - Cap: 10 x 4.5mm, slightly recessed (0.3mm)
+  - Easy thumb access when held in hand
+
+================================================================================
+  BACK VIEW
+================================================================================
+
+                        50mm
+          |<--------------------------->|
+
+             .-------------------------.
+           /                             \
+          |                               |
+          |       ___________________     |
+          |      /                   \    |
+          |     |   Domed back        |   |
+          |     |   (3mm convex rise  |   |
+          |     |    at center)       |   |
+          |      \___________________/    |
+          |                               |
+          |        (o)        (o)         |   (o) = recessed screws
+          |                               |
+           \                             /
+            '-------------------------'
+
+  Back Features:
+  - 3mm convex dome at center (like a river stone)
+  - Dome blends smoothly into rounded edges
+  - Screw holes recessed 1mm with rubber plugs
+  - Smooth surface (no texture on back -- slides in pocket)
+
+  Back Dome Profile (cross-section):
+        ___________________________
+       /            3mm            \
+      /          dome rise          \
+     |_______________________________|
+     |<---------- 50mm ------------->|
+
+================================================================================
+  CROSS-SECTION (Side view, cut through center)
+================================================================================
+
+  Front                                               Back
+   |                                                    |
+   | 1.5   2.5mm   2.5mm   1.6mm 0.5  5.0   1.5+dome  |
+   |<-->|<------->|<----->|<--->|<>|<------>|<-------->|
+   |    |         |       |     |  |        |          |
+   |Wall| Display |  Gap  | PCB |G |Battery | Wall     |
+   |    | Module  |       |     |a |        | + dome   |
+   |    |         |       |     |p | 5.0mm  | (1.5     |
+   |    |         |       |     |  |        |  +3.0mm  |
+   |    |         |       |     |  |        |  dome)   |
+   +----+---------+-------+-----+--+--------+----------+
+   |<---------------------------------------------------->|
+                     15.1mm stack + 3mm dome + margins
+
+  Total Depth Breakdown:
+  - Standard Z-stack: 15.1mm
+  - Extra space: 22mm - 15.1mm = 6.9mm
+  - Back dome: adds ~3mm at center
+  - Extra battery space: ~3.9mm additional
+  - This allows thicker battery OR extra padding
+
+  Battery Options (with extra depth):
+  A) Standard 30x35x5mm + foam padding (300-500mAh)
+  B) Thicker cell: 30x35x8mm (~700-800mAh)  <-- RECOMMENDED
+  C) Two stacked cells: 2x 30x35x4mm (~600mAh)
+
+  With Option B (8mm battery):
+  +------+---------+-------+-----+--+--------+----------+
+  |1.5mm | 2.5mm   | 2.5mm |1.6mm|.5| 8.0mm  | 1.5+dome |
+  | Wall | Display | Gap   | PCB |G | Battery| 4.5mm    |
+  +------+---------+-------+-----+--+--------+----------+
+  = 1.5+2.5+2.5+1.6+0.5+8.0+4.5 = 21.1mm (within 22mm)
+
+================================================================================
+  COMPONENT LAYOUT (Top-down exploded view)
+================================================================================
+
+  Layer 1 - Front Shell:
+         .-------------------------.
+       /                             \
+      |    .-------------------.     |
+      |    | Screen window     |     |    42 x 32mm cutout
+      |    | 0.5mm recessed    |     |    with chamfered edges
+      |    '-------------------'     |
+      |                               |
+      |   (BTN1)  (BTN2)  (BTN3)    |    Domed cap holes: 9mm dia
+       \                             /
+        '-------[USB cutout]-------'
+
+  Layer 2 - Display Module:
+       .--------------------.
+       | 51.80 x 36.20mm    |
+       | Sits in recessed    |
+       | pocket              |
+       '--------------------'
+
+  Layer 3 - Foam Spacer Frame:
+       +--------------------+
+       | 2.5mm thick foam   |
+       | Frame shape        |
+       | (hollow center)    |
+       +--------------------+
+
+  Layer 4 - PCB:
+       +----------------------+
+       | 45.0 x 40.0mm        |
+       | [ESP32-S3-MINI-1]    |
+       | [Vibration Motor]    |    6mm coin motor
+       | [USB-C connector]    |    Bottom edge
+       | [3x tactile sw.]    |    Below screen area
+       | [Wake sw. top edge]  |
+       +----------------------+
+
+  Layer 5 - Battery:
+       .--------------------.
+       | LiPo 30x35x8mm     |
+       | ~700-800 mAh       |
+       | (thicker cell for   |
+       |  extended battery)  |
+       '--------------------'
+
+  Layer 6 - Back Shell:
+         .-------------------------.
+       /          Domed back         \
+      |    Screw bosses (x4)         |
+      |    Battery pocket (deep)      |
+       \                             /
+        '-------------------------'
+
+================================================================================
+  DOMED BUTTON DETAIL
+================================================================================
+
+  Button Cross-Section:
+                 8mm
+            |<-------->|
+            .---__---.
+           /    2mm    \      Dome rise: 2mm
+          |   rise      |     Diameter: 8mm
+          +------+------+     Material: soft-touch plastic
+          |  post |      |    Post: 3mm dia, engages switch
+          |  3mm  |      |
+          +-------+------+
+          | Tactile sw.   |
+          | on PCB        |
+
+  Button Feel:
+  - High-quality Kailh or Alps tactile switches
+  - 160-180gf actuation force (satisfying press)
+  - Audible click feedback
+  - Domed cap has slight soft-touch texture
+  - Total travel: 0.5mm cap + 0.25mm switch = 0.75mm
+
+  Button Spacing:
+      (BTN1)      (BTN2)      (BTN3)
+        |<--14mm-->|<--14mm-->|
+        8mm dia    8mm dia    8mm dia
+
+================================================================================
+  GRIP TEXTURE DETAIL
+================================================================================
+
+  Side View (showing texture zones):
+
+          .----------.
+        /              \
+       |  +---------+  |     ___ texture zone top
+       |  | . . . . |  |      |
+       |  | . . . . |  |      |
+       |  | . . . . |  |     30mm tall
+       |  | . . . . |  |      |
+       |  | . . . . |  |      |
+       |  +---------+  |     _|_ texture zone bottom
+        \              /
+          '----------'
+
+  Texture zones: 30mm tall x 15mm wide, both sides
+  Centered vertically on the device
+
+  Dot Pattern Specs:
+  - Dot diameter: 1.0mm
+  - Dot height: 0.3mm (subtle, not aggressive)
+  - Spacing: 2.5mm center-to-center
+  - Pattern: offset grid (hexagonal packing)
+  - Material: same as shell, molded in
+
+================================================================================
+  MOUNTING & ASSEMBLY DETAILS
+================================================================================
+
+  Display Mounting:
+  - Recessed pocket in front shell: 52.0 x 36.4mm
+  - Pocket is 0.5mm below front surface (screen sits below surface)
+  - Protective lip around screen prevents direct contact with flat surfaces
+  - Thin foam gasket between display and shell (vibration isolation)
+
+  PCB Mounting:
+  - 4x M2 screw bosses in back shell
+  - Brass threaded inserts pressed into bosses (durable)
+  - Standoffs: 3.0mm (sets display-to-PCB gap)
+  - M2 x 6mm screws from back side
+
+  Battery Mounting:
+  - Deep pocket in back shell (8mm + walls)
+  - Battery held by friction fit + foam pad on PCB side
+  - JST PH 2.0mm connector, short pigtail
+  - Kapton tape wrap on battery for insulation
+
+  Button Mounting:
+  - Domed caps sit in counterbored holes in front shell
+  - Cap posts pass through shell to engage tactile switches
+  - Caps retained by small shoulder (snap in, won't fall out)
+  - Smooth dome surface for satisfying finger feel
+
+  Wake Button:
+  - Top edge, centered
+  - Flush cap: 10 x 4.5mm
+  - Slightly recessed (0.3mm) to blend with rounded top
+  - Natural thumb position when holding device
+
+  Shell Assembly:
+  - Front and back shells held by 4x M2 screws (from back)
+  - Screws hidden under rubber plugs (clean look)
+  - No snap clips (screws only -- solid, no rattles)
+  - Thin silicone gasket at shell seam
+
+  Seam Line:
+  - Shell splits along the midplane (11mm from front, 11mm from back)
+  - Seam runs around perimeter, follows rounded edges
+  - Tight tolerance: 0.05mm gap (barely visible)
+
+================================================================================
+  SPECIAL FEATURES
+================================================================================
+
+  1. Fidget-Friendly Design:
+     - Domed buttons invite pressing (satisfying tactile click)
+     - Rounded edges are nice to run fingers along
+     - Grip texture provides sensory feedback
+     - Overall shape is pleasant to hold and fidget with
+     - Weight: ~45-50g (satisfying heft)
+
+  2. River Stone Ergonomics:
+     - 8mm radius on all edges (no sharp corners anywhere)
+     - Back dome fits palm naturally
+     - Can be cupped in hand, rolled between palms
+     - Comfortable in pocket (won't poke or jab)
+
+  3. Extended Battery Life:
+     - Extra depth allows 700-800mAh cell
+     - ~60-70% more capacity than standard design
+     - Full day+ of active use, multiple days standby
+
+  4. Textured Grip Zones:
+     - Raised dot pattern on both sides
+     - Prevents slipping when held
+     - Subtle enough to not snag in pockets
+     - Adds visual interest to the design
+
+  5. Recessed Screen:
+     - Screen sits 0.5mm below front surface
+     - Protective lip prevents screen contact when face-down
+     - Chamfered edge around screen cutout (nice visual detail)
+
+  6. Solid Construction:
+     - Screw-only assembly (no snap clips to break)
+     - Brass inserts for durable threads
+     - Thick walls + rounded geometry = very strong
+     - Drop-resistant design (rounded edges distribute impact)
+
+  7. Premium Feel:
+     - Heavier than needed (deliberate -- feels substantial)
+     - Soft-touch coating option on entire shell
+     - Tight tolerances, minimal seam gap
+     - Quality tactile switches with audible click
+
+================================================================================

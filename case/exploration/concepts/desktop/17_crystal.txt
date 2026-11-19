@@ -1,0 +1,239 @@
+DESIGN 17: CRYSTAL
+==================
+Geometric gem/crystal shape — irregular faceted polyhedron.
+Screen mounted on the largest flat facet, angled ~20° backward.
+Transparent/frosted resin shell with internal RGB LED ambient glow.
+Think "desk geode" or "digital gemstone" aesthetic.
+
+Overall: 80 x 60 x 100mm (W x D x H)
+Screen: 5.0" SSD1963 touch, 120x75mm module, 108x64.8mm active area
+Target user: designer desk, conversation piece
+
+FRONT VIEW (looking at screen facet, angled ~20° back from vertical)
+─────────────────────────────────────────────────────────────────────
+
+              ╱╲
+             ╱  ╲
+            ╱    ╲              ← Top apex, ~100mm high
+           ╱      ╲
+          ╱  upper  ╲
+         ╱  facets   ╲
+        ╱              ╲
+       ┌────────────────────┐
+       │ ┌────────────────┐ │
+       │ │                │ │
+       │ │   TFT LCD      │ │   ← 5.0" SSD1963 screen
+       │ │   SCREEN        │ │     108 x 64.8mm active
+       │ │   (108x64.8)   │ │     in 120 x 75mm module
+       │ │                │ │
+       │ │                │ │
+       │ └────────────────┘ │
+       │                    │
+       ╲                    ╱   ← Lower side facets angle inward
+        ╲  (●)  (●)  (●)  ╱    ← 3x tactile buttons on base facet
+         ╲________________╱       front edge, 6mm each, 14mm spacing
+              80mm
+
+    Screen facet is the largest flat face (~125 x 80mm)
+    tilted 20° backward from vertical.
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+            ╱╲
+           ╱  │           ← Top peak offset slightly back
+          ╱   │
+         ╱    │  100mm
+        ╱     │  total
+       ╱      │  height
+      │screen │
+      │ facet │           ← Screen facet: ~20° from vertical
+      │  20°  │
+       ╲      │
+        ╲─────┤
+        │base │           ← Flat base facet, ~15mm tall
+        └─────┘
+         60mm
+          depth
+
+
+BACK VIEW
+─────────
+
+              ╱╲
+             ╱  ╲
+            ╱    ╲
+           ╱ back ╲
+          ╱ facets ╲          ← Multiple decorative facets
+         ╱  (plain) ╲          catch light, show RGB glow
+        ╱             ╲
+       │               │
+       │   ┌──────┐    │     ← USB-C cutout on lower back facet
+       │   │USB-C │    │       8.94 x 3.26mm
+       │   └──────┘    │
+        ╲             ╱
+         ╲           ╱
+          ╲─────────╱
+
+
+CROSS-SECTION (vertical cut through center, looking from right)
+────────────────────────────────────────────────────────────────
+
+                 ╱│
+                ╱ │
+               ╱  │
+              ╱   │           ← Upper crystal facets
+             ╱    │             (hollow, 2mm wall)
+            ╱     │
+    ┌──────┤      │
+    │screen│      │           ← Screen facet zone
+    │      │      │
+    │  ┌───┤      │
+    │  │TFT│ air  │           Screen module: 4.5mm thick
+    │  │4.5│      │           in 5mm pocket from inner wall
+    │  ├───┤      │
+    │  │gap│      │           3mm air gap
+    │  │3mm│      │
+    │  ├───┤      │
+    │  │PCB│      │           PCB: 110x65x1.6mm
+    │  │1.6│      │           mounted on standoffs
+    │  └───┘      │
+    │      │ RGB  │           ← RGB LED(s) mounted on PCB
+    │      │ LED  │             facing inward, light fills
+    │      │ glow │             hollow cavity
+     ╲     │     ╱
+      ╲────┴────╱             ← Flat base facet
+      └─────────┘
+
+    Front wall:    2mm (frosted resin)
+    Screen pocket: 5mm from inner face
+    Screen:        4.5mm
+    Gap:           3mm
+    PCB:           1.6mm
+    Remaining:     ~44mm hollow cavity for RGB light diffusion
+
+
+COMPONENT LAYOUT (exploded, outside to inside)
+───────────────────────────────────────────────
+
+    Layer 1 — CRYSTAL SHELL (2-piece: upper + base)
+    ├── Upper crystal body
+    │   ├── Screen window cutout (109 x 66mm) on main facet
+    │   ├── Multiple decorative facets (5-7 flat faces)
+    │   ├── Material: clear/frosted resin or translucent PETG
+    │   ├── Wall thickness: 2mm throughout
+    │   └── Internal cavity ~50mm deep for light diffusion
+    ├── Base section
+    │   ├── 3x button holes (6mm dia) on front edge of base facet
+    │   ├── Flat-cut bottom for stability
+    │   ├── 4x M2 standoff bosses (rising from base floor)
+    │   └── USB-C cutout (8.94 x 3.26mm) on back facet, near base
+    └── Join: base screws into upper (4x M2 from bottom)
+
+    Layer 2 — SCREEN MODULE (120 x 75 x 4.5mm)
+    ├── Seated in pocket on main facet inner wall
+    ├── 4x retention clips (L-shaped, 0.5mm overhang)
+    ├── FPC/ribbon cable exits bottom edge
+    └── Touch digitizer faces outward through window
+
+    Layer 3 — 3mm AIR GAP / WIRING ZONE
+    ├── FPC cable routes to PCB connector
+    └── RGB LED wiring
+
+    Layer 4 — PCB (110 x 65 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5 x 2.4mm) faces inward
+    ├── 3x tactile switches on front edge (align with base holes)
+    ├── USB-C connector on back edge
+    ├── 2-4x RGB LEDs (WS2812B or similar) facing into cavity
+    ├── Mounted on 4x M2 standoffs (5mm height)
+    └── SSD1963 display connector (40-pin FPC)
+
+    Layer 5 — INTERNAL CAVITY (behind PCB)
+    └── Hollow space for RGB light to fill and diffuse
+        through translucent shell walls
+
+
+FACET GEOMETRY
+──────────────
+
+    The crystal has approximately 9-11 facets:
+
+    Facet    Purpose          Approx size
+    ─────    ───────          ───────────
+    F1       SCREEN (main)    125 x 80mm (largest, ~20° tilt back)
+    F2       Top-front        ~30 x 40mm (triangular)
+    F3       Top-back         ~35 x 45mm (triangular)
+    F4       Upper-left       ~40 x 50mm (irregular quad)
+    F5       Upper-right      ~40 x 50mm (irregular quad)
+    F6       Lower-left       ~30 x 40mm (triangular)
+    F7       Lower-right      ~30 x 40mm (triangular)
+    F8       Back-upper       ~50 x 40mm (USB-C cutout)
+    F9       Back-lower       ~40 x 35mm
+    F10      BASE (bottom)    ~70 x 55mm (flat, sits on desk)
+
+    All non-screen facets are decorative light-diffusion surfaces.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+
+    Crystal body assembly:
+
+    ┌── Upper crystal ──────────────────┐
+    │   (screen window, decorative      │
+    │    facets, hollow inside)          │
+    │                                   │
+    │   Screen drops in from inside     │
+    │   PCB screws to standoffs         │
+    │   RGB LEDs on PCB face cavity     │
+    │                                   │
+    ├───────────────────────────────────┤ ← Joint line hidden
+    │   Base section                    │   along a facet edge
+    │   (buttons, flat bottom,          │
+    │    USB-C, M2 screw access)        │
+    └───────────────────────────────────┘
+
+    - 2-piece shell split along a natural facet edge
+    - Upper crystal loads screen + PCB from open bottom
+    - Base screws up into upper (4x M2 from underneath)
+    - Joint line follows a facet edge so it's nearly invisible
+    - USB-C cable exits low on back, hidden from front view
+    - No speaker (keeps crystal minimal and sealed for light)
+    - Optional: tiny piezo buzzer on PCB for beep feedback
+
+
+SPECIAL FEATURES
+────────────────
+
+    1. RGB AMBIENT GLOW
+       - 2-4x addressable RGB LEDs on PCB rear face
+       - Light fills hollow cavity behind PCB
+       - Diffuses through translucent/frosted shell walls
+       - Non-screen facets glow with mood color
+       - Can pulse, breathe, or shift hue based on agent state
+       - Mood mapping: happy=green, sad=blue, angry=red,
+         thinking=amber pulse, sleeping=dim purple breathe
+
+    2. FACETED SILHOUETTE
+       - Irregular angles catch desk lamp light differently
+       - Each facet edge creates a highlight line
+       - Crystal shape is recognizable from any viewing angle
+       - Frosted finish scatters light beautifully
+
+    3. MATERIAL OPTIONS
+       - Clear resin: maximum light transmission, see internals
+       - Frosted resin: soft diffused glow, hides internals
+       - Tinted resin: amethyst purple, rose quartz pink, etc.
+       - Opaque with translucent inlay strips along facet edges
+
+    4. FLAT BASE STABILITY
+       - Base facet is deliberately wide (70x55mm)
+       - Low center of gravity despite tall form
+       - Optional adhesive rubber pad on base bottom
+       - Crystal leans slightly back (20°) — naturally stable
+
+    5. TOUCH SCREEN INTERACTION
+       - SSD1963 capacitive touch through screen window
+       - Buttons are backup/secondary controls only
+       - Crystal shape encourages reaching out to touch the face

@@ -1,0 +1,325 @@
+DESIGN 20: CASSETTE DECK
+========================
+Desktop hi-fi rack component form factor. Low-profile landscape slab.
+Screen in VU meter position. Faux cassette door hides USB-C port.
+Transport-style buttons with LED indicators. Brushed aluminum aesthetic.
+Think "1980s stereo component" or "retro hi-fi deck for your desk."
+
+Overall: 170 x 100 x 40mm (W x D x H), landscape, low-profile
+Screen: 5.0" SSD1963 touch, 120x75mm module, 108x64.8mm active area
+Target user: retro audio enthusiast, desk hi-fi stack aesthetic
+
+FRONT VIEW (front faceplate facing viewer)
+──────────────────────────────────────────
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │                                                                  │
+    │   ┌──────────────────────────────────────────────┐    ○ PWR     │
+    │   │                                              │              │
+    │   │           TFT LCD SCREEN                     │    ○ CONN    │
+    │   │           108 x 64.8mm active                │              │
+    │   │           (VU meter position)                │    ○ ACT     │
+    │   │                                              │              │
+    │   └──────────────────────────────────────────────┘              │
+    │                                                                  │
+    │   ╔══════════════════════════╗                                   │
+    │   ║   CASSETTE DOOR PANEL   ║   [⏮]    [⏸]    [⏭]             │
+    │   ║   (hinges down to open) ║  approve  reject  action          │
+    │   ╚══════════════════════════╝    ◦        ◦       ◦            │
+    │                                  LED      LED     LED            │
+    └──────────────────────────────────────────────────────────────────┘
+                                  170mm
+
+    Screen: upper center, landscape orientation
+    LED indicators: 3x on right side (power, connection, activity)
+    Cassette door: lower left, hinged at bottom edge
+    Transport buttons: lower right, recessed wells, 6mm tactile
+    Button LEDs: 3x below buttons (2mm, status indicators)
+
+
+SIDE VIEW (right side)
+──────────────────────
+
+    ┌────────────────────────────────────┐ ─┬─
+    │                                    │  │  40mm
+    │           body                     │  │  tall
+    │                                    │  │
+    └────────────────────────────────────┘ ─┴─
+    ◦                                    ◦
+    ↑ rubber foot                rubber foot ↑
+                   100mm depth
+
+    Clean flat slab. No visible ports on sides.
+    Ventilation slots on top (see top view).
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │   ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐   │
+    │   │  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══     │   │
+    │   │            VENTILATION SLOTS                             │   │
+    │   │  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══  ═══     │   │
+    │   └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘   │
+    │                                                                  │
+    │            ┌─ screen module outline ─┐                           │
+    │            │ (beneath top panel)      │                           │
+    │            └─────────────────────────┘                           │
+    │                                                                  │
+    └──────────────────────────────────────────────────────────────────┘
+                              170mm
+    ↑                                                                  ↑
+    front edge                                              back edge
+                              100mm deep
+
+    Vent slots: 2 rows of parallel slots, 2mm wide x 20mm long
+    Spaced across center area, away from screen zone
+    Decorative + functional (passive cooling)
+
+
+BACK VIEW
+─────────
+
+    ┌──────────────────────────────────────────────────────────────────┐
+    │                                                                  │
+    │   ┌────────┐                                                    │
+    │   │ USB-C  │        REAR PANEL                                  │
+    │   │ 8.94 x │                                                    │
+    │   │ 3.26mm │        (plain, brushed texture)                    │
+    │   └────────┘                                                    │
+    │                                                                  │
+    └──────────────────────────────────────────────────────────────────┘
+                              170mm
+
+    USB-C on back-left, centered vertically.
+    Clean rear panel — cable exits toward desk back.
+    Optional: barrel jack cutout for external 5V power.
+
+
+CROSS-SECTION (vertical cut through center, looking from right side)
+─────────────────────────────────────────────────────────────────────
+
+    ┌──────────────────────────────────────────┐ ─┬─ Top panel (2mm)
+    │  ═══ vent slots ═══                      │  │
+    ├──────────────────────────────────────────┤  │
+    │  ┌─ screen ─────────────────────┐        │  │
+    │  │  module 4.5mm                │        │  │
+    │  ├──────────────────────────────┤        │  │  40mm total
+    │  │  air gap 3mm                 │        │  │
+    │  ├──────────────────────────────┤        │  │
+    │  │  PCB 1.6mm                   │  spkr  │  │
+    │  │  ┌─ESP32─┐                   │  28mm  │  │
+    │  └──┴───────┴───────────────────┘  ○○○○  │  │
+    │                                    grille│  │
+    ├──────────────────────────────────────────┤ ─┴─ Bottom panel (2mm)
+    ◦                                          ◦
+    feet                                      feet
+    ↑ front                              back ↑
+
+    Stack (from top):
+    Top panel:       2mm
+    Screen pocket:   5mm (from inner top surface)
+    Screen module:   4.5mm
+    Air gap:         3mm
+    PCB:             1.6mm
+    Clearance below: ~22mm (speaker, wiring, USB-C connector)
+    Bottom panel:    2mm
+    ────────────────────
+    Total:           ~40mm
+
+    Speaker (28mm dia x 3.5mm) mounted vertically on left inner wall
+    firing through grille on left side of faceplate.
+
+
+CASSETTE DOOR DETAIL
+─────────────────────
+
+    Door closed:
+    ╔═══════════════════════════╗
+    ║   ┌───────────────────┐   ║
+    ║   │  CASSETTE WINDOW  │   ║   ← Transparent/tinted window
+    ║   │  (decorative,     │   ║     showing faux tape reels or
+    ║   │   tinted plastic) │   ║     actual USB-C port visible
+    ║   └───────────────────┘   ║     behind the window
+    ╚═══════════════════════════╝
+     ↑ hinge at bottom edge
+
+    Door open (hinged down):
+    ┌───────────────────────────┐
+    │   ┌────────┐    ┌─────┐  │
+    │   │ USB-C  │    │RESET│  │   ← USB-C port accessible
+    │   │ port   │    │ btn │  │     Reset/program button exposed
+    │   └────────┘    └─────┘  │     (recessed, needs pin to press)
+    └───────────────────────────┘
+    ╚═══════════════════════════╝ ← Door panel hangs open
+
+    Door: ~70 x 20mm panel, piano hinge at bottom.
+    Spring-loaded or friction-held in closed position.
+    Finger notch at top edge to pull open.
+
+
+BUTTON WELL DETAIL
+──────────────────
+
+    Front faceplate button area (zoomed):
+
+    ┌─────────────────────────────────┐
+    │                                 │
+    │   ┌─────┐  ┌─────┐  ┌─────┐   │
+    │   │     │  │     │  │     │   │   ← Recessed button wells
+    │   │ [⏮] │  │ [⏸] │  │ [⏭] │   │     10mm dia x 2mm deep
+    │   │     │  │     │  │     │   │     Button cap: 6mm, raised 0.5mm
+    │   └─────┘  └─────┘  └─────┘   │     from well floor
+    │     ◦        ◦        ◦       │   ← LED indicators (2mm)
+    │    grn      red      amb      │     green/red/amber
+    │                                 │
+    └─────────────────────────────────┘
+
+    Wells prevent accidental presses (need deliberate finger push).
+    Buttons have satisfying tactile click.
+    LEDs glow through 2mm light pipes in faceplate.
+    Button spacing: 20mm center-to-center.
+
+
+SPEAKER GRILLE
+──────────────
+
+    Left side of faceplate:
+
+    ┌───────┐
+    │○○○○○○○│
+    │○○○○○○○│     ← Speaker grille pattern
+    │○○○○○○○│       28mm circular area of 2mm holes
+    │○○○○○○○│       on left faceplate area
+    │○○○○○○○│       Speaker fires forward toward user
+    └───────┘
+
+    Speaker mounted vertically inside, flush against
+    inner faceplate wall with foam gasket.
+
+
+COMPONENT LAYOUT (exploded, top to bottom)
+──────────────────────────────────────────
+
+    Layer 1 — TOP PANEL
+    ├── 2mm thick, flat
+    ├── 2 rows of ventilation slots (decorative + cooling)
+    ├── Brushed/matte finish
+    └── Screws into body from above (4x, countersunk) or snap-fit
+
+    Layer 2 — MAIN BODY (faceplate + sides + back as one piece)
+    ├── FACEPLATE (front face):
+    │   ├── Screen window: 109 x 66mm, upper center
+    │   ├── Cassette door opening: ~72 x 22mm, lower left
+    │   │   └── Door hinge pocket at bottom of opening
+    │   ├── 3x button wells: 10mm dia x 2mm deep, lower right
+    │   ├── 3x button LED holes: 2mm dia, below each well
+    │   ├── 3x status LED holes: 2mm dia, right of screen
+    │   ├── Speaker grille: 28mm dia pattern, left of cassette door
+    │   └── Brushed aluminum look (painted or anodized sheet overlay)
+    ├── SIDE WALLS: 2mm, plain
+    ├── BACK WALL:
+    │   ├── USB-C cutout: 8.94 x 3.26mm, left side, centered vertically
+    │   └── Plain, brushed finish
+    └── BOTTOM: open (closed by bottom panel)
+
+    Layer 3 — SCREEN MODULE (120 x 75 x 4.5mm)
+    ├── Landscape orientation
+    ├── Pocket in faceplate inner face, 5mm deep
+    ├── 4x retention clips
+    └── FPC cable exits bottom, routes to PCB below
+
+    Layer 4 — PCB (110 x 65 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces down
+    ├── SSD1963 40-pin FPC connector (top edge, toward screen)
+    ├── 3x tactile switches on front edge (align with button wells)
+    ├── USB-C connector on back edge (aligns with rear cutout)
+    ├── Speaker connector (JST 2-pin)
+    ├── 6x LED positions (3 button + 3 status, front edge)
+    └── 4x M2 standoff mounting
+
+    Layer 5 — SPEAKER (28mm dia x 3.5mm)
+    ├── Mounted vertically against left inner wall
+    ├── Fires through faceplate grille
+    ├── Foam gasket for seal
+    └── Wire runs to PCB JST connector
+
+    Layer 6 — CASSETTE DOOR (sub-assembly)
+    ├── 70 x 20mm panel, 2mm thick
+    ├── Piano hinge at bottom edge
+    ├── Tinted transparent window (decorative)
+    ├── Finger notch at top edge
+    └── Spring clip or friction detent
+
+    Layer 7 — BOTTOM PANEL
+    ├── 2mm thick, flat
+    ├── 4x rubber feet (10mm dia, 2mm tall) at corners
+    ├── 4x M2 screw access holes (aligned with body standoffs)
+    └── Optional: product label recess
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+
+    Assembly order:
+    1. Install screen in faceplate pocket (clips retain)
+    2. Connect FPC to PCB
+    3. Mount PCB on standoffs inside body (4x M2)
+    4. Install speaker against left wall with foam gasket
+    5. Connect speaker wire to PCB
+    6. Install LED light pipes in faceplate holes
+    7. Install cassette door on piano hinge
+    8. Attach top panel (snap-fit or 4x countersunk screws)
+    9. Attach bottom panel (4x M2 screws from below)
+    10. Apply rubber feet to bottom panel corners
+
+    No wall mount — this is a desk-only design.
+    Designed to stack with other desk items (flat top + rubber feet).
+    USB-C cable exits rear, routes along desk to power.
+
+
+SPECIAL FEATURES
+────────────────
+
+    1. CASSETTE DOOR PANEL
+       - Iconic cassette deck aesthetic element
+       - Functional: hides USB-C and reset behind a door
+       - Tinted window adds retro charm
+       - Hinges down smoothly, friction-held positions
+       - Can display "NOW PLAYING" label behind window
+
+    2. TRANSPORT BUTTON STYLE
+       - ⏮ ⏸ ⏭ icons on button caps (approve/reject/action)
+       - Recessed wells prevent accidental presses
+       - Satisfying tactile feel in deep wells
+       - LED indicators below each button for status feedback
+       - Familiar layout for anyone who used a tape deck
+
+    3. BRUSHED ALUMINUM AESTHETIC
+       - Faceplate: brushed aluminum look (real sheet or painted)
+       - Dark anodized or matte black body
+       - Silver button caps with engraved transport symbols
+       - Period-correct LED colors (green, red, amber)
+
+    4. RACK-MOUNT STACKABLE FORM
+       - Flat top allows stacking other items on top
+       - Low profile (40mm) doesn't dominate desk space
+       - 170mm width matches mini hi-fi components
+       - Rubber feet grip desk surface
+       - Could sit in an actual mini equipment rack
+
+    5. VENTILATION DESIGN
+       - Top panel vent slots for passive cooling
+       - Decorative pattern echoes classic equipment ventilation
+       - Adequate airflow for ESP32 thermal management
+       - Slots too narrow for debris entry (<2mm)
+
+    6. STATUS LED ARRAY
+       - 3 status LEDs right of screen:
+         ○ PWR  — power on (green steady)
+         ○ CONN — broker connected (green) / disconnected (red)
+         ○ ACT  — activity/message flash (amber blink)
+       - 3 button LEDs below transport controls:
+         ○ Approval pending glow / confirmed flash
+       - Adds to "equipment" feel with blinking indicators

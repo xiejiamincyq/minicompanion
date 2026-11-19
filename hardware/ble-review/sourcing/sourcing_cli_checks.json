@@ -1,0 +1,14 @@
+{
+  "date_china": "2026-11-19",
+  "script_sha256": "940a8e81f8865a8eeda714bba5faf5a94880f6be5fa64ee8bc3cba5f5f286437",
+  "no_argument_current_build_pass": true,
+  "historical_overwrite_rejected_without_changes": true,
+  "missing_pcb_rejected_without_fallback_or_changes": true,
+  "vendor_attachments_no_internal_budget_or_absolute_paths": true,
+  "vendor_attachment_count": 11,
+  "final_frozen_xml_hash_matches": true,
+  "cancelled_eco_parts_absent": true,
+  "offboard_precise_ids_and_two_wire_harness_match": true,
+  "orders_or_messages_sent": false,
+  "fab_release": false
+}

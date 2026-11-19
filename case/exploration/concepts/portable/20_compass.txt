@@ -1,0 +1,369 @@
+DESIGN 20: COMPASS (HUNTER-CASE)
+=================================
+Circular brass-aesthetic compass with a hinged hunter-case lid that flips
+open 180 degrees to reveal the TFT screen. Lid exterior features an engraved
+compass rose. Three buttons on the bezel ring. Lanyard ring at 12 o'clock,
+USB-C at 6 o'clock. Lid protects screen when closed. Pocket watch meets
+Tamagotchi — elegant, protective, tactile.
+
+Overall: 60mm diameter x 18mm tall (closed)
+Weight target: ~50g with battery
+Orientation: Portrait (screen in circular frame)
+Shell: 3-piece (base + bezel ring + hinged lid), hinge pin
+
+
+TOP VIEW (lid closed, compass rose facing up)
+─────────────────────────────────────────────
+
+                  ◯  ← lanyard ring (5mm ID)
+              ╭───┴───╮
+           ╭──┘       └──╮
+         ╭─┘      N       └─╮
+        │       ╱   ╲        │
+       │      ╱  ╱╲  ╲       │
+      │    W ────╳──── E     │  ← compass rose engraving
+       │      ╲  ╲╱  ╱       │     on lid exterior
+        │       ╲   ╱        │
+         ╰─╮      S       ╭─╯
+           ╰──╮       ╭──╯
+              ╰───┬───╯
+               ┌──┴──┐
+               │USB-C│  ← USB-C at 6 o'clock
+               └─────┘
+
+         ├──── 60mm dia ────┤
+
+    Hinge at 12 o'clock (behind lanyard ring)
+    Lid edge: 1mm raised lip all around
+
+
+TOP VIEW (lid open 180 degrees, screen revealed)
+────────────────────────────────────────────────
+
+                  ◯  lanyard ring
+              ╭───┴───╮
+           ╭──┘       └──╮            ╭───────────╮
+         ╭─┘              └─╮       ╭─┘  compass   └─╮
+        │  ┌──────────────┐  │     │    rose (back    │
+       │   │              │   │   │    of lid, now     │
+      │(●) │   TFT LCD    │(●)│  │    facing up)      │
+      │ R  │   SCREEN      │ P│  │                     │
+       │   │  51.8x36.2mm │   │   │   Lid flipped     │
+        │  │  (in circular │  │     ╰─╮   180 deg   ╭─╯
+         ╰─╮│   frame)    │╭─╯       ╰──╮       ╭──╯
+           ╰──┐          ┌──╯            ╰───────╯
+              ╰───┬───╯
+              (●) ┌──┴──┐
+               A  │USB-C│
+                  └─────┘
+
+    Buttons on bezel ring:
+    (●) R = Reject  at 9 o'clock
+    (●) A = Action  at 6 o'clock (near USB-C)
+    (●) P = Approve at 3 o'clock
+
+
+FRONT VIEW (side profile, lid closed)
+─────────────────────────────────────
+
+              lanyard ring
+                  ◯
+              ╭───┴───╮
+             ╱ lid 2mm ╲
+    ────────┤══════════├────────  ← hinge line / bezel seam
+             ╲ base    ╱
+              ╰───┬───╯
+               ┌──┴──┐
+               │USB-C│
+               └─────┘
+
+         ├──── 60mm ────┤
+
+              18mm
+           ├────────┤
+           ┌────────┐
+           │lid 2mm │
+           │========│ ← bezel ring (1.5mm)
+           │base    │
+           │ 14.5mm │
+           └────────┘
+
+
+SIDE VIEW (right side, lid closed)
+──────────────────────────────────
+
+              18mm
+           ├────────┤
+     ╭─────────────────╮ ─┬─
+     │    lid (2mm)     │  │
+     │══════════════════│  │  ← bezel ring seam
+     │  screen          │  │
+     │  PCB             │  │  60mm
+     │  battery         │  │  (diameter viewed
+     │                  │  │   from side)
+     ╰─────────────────╯ ─┴─
+     ↑                    ↑
+   Front               Back
+   (hinge side)    (clasp side)
+
+    Lid opens from the bottom (6 o'clock),
+    hinged at top (12 o'clock).
+
+
+SIDE VIEW (lid open 180 degrees)
+────────────────────────────────
+
+    Lid (flipped back)         Base
+    ╭──────────────╮    ╭──────────────╮
+    │  compass rose │    │              │
+    │  (engraving   │    │   screen     │
+    │   now facing  │────│   visible    │
+    │   up/back)    │ ↑  │              │
+    ╰──────────────╯hinge╰──────────────╯
+                          ├──┤
+                         USB-C
+
+
+BACK VIEW (base underside when held)
+─────────────────────────────────────
+
+              ╭───────────╮
+           ╭──┘           └──╮
+         ╭─┘                  └─╮
+        │                        │
+       │    ┌────────────────┐    │
+      │     │                │     │
+      │     │    BATTERY     │     │  ← Battery access
+      │     │    AREA        │     │     (snap-fit door)
+       │    │  30 x 35mm    │    │
+        │   └────────────────┘   │
+         ╰─╮                  ╭─╯
+           ╰──╮           ╭──╯
+              ╰───────────╯
+
+    Back is flat — can sit on desk as a display stand
+    when lid is open and flipped back.
+
+
+CROSS-SECTION (cut through vertical center, lid closed, looking from right)
+───────────────────────────────────────────────────────────────────────────
+
+    Top (lid)                    Bottom (base)
+      │                               │
+      │  1.0mm lid outer wall         │
+      ├──┤                            │
+      │  │  0.5mm air gap (closed)    │
+      │  │  (lid interior to screen)  │
+      ├──┤                         ├──┤
+      │  ├── Display ────────────┐ │  │  ← 1.5mm bezel ring
+      │  │   (2.5mm thick)      │ │  │     sits here
+      │  ├──────────────────────┤ │  │
+      │  │   2.0mm gap          │ │  │  18mm total
+      │  │   (FPC routing)      │ │  │
+      │  ├── PCB ───────────────┤ │  │
+      │  │   (1.6mm thick)      │ │  │
+      │  ├──────────────────────┤ │  │
+      │  │   0.4mm gap          │ │  │
+      │  ├── Battery ───────────┤ │  │
+      │  │   (5.0mm thick)      │ │  │
+      │  │   30 x 35mm LiPo    │ │  │
+      ├──┴──────────────────────┴─┤  │
+      │  1.5mm base wall              │
+      │                               │
+    Lid face                    Base bottom
+
+    Z-stack (closed):
+    1.0 + 0.5 + 2.5 + 2.0 + 1.6 + 0.4 + 5.0 + 1.5 = 14.5mm base
+    + 1.5mm lid overlap on bezel = ~18mm total with lid + bezel ring
+    (Bezel ring 1.5mm tall straddles the seam)
+
+
+COMPONENT LAYOUT (exploded, lid to base bottom)
+────────────────────────────────────────────────
+
+    Layer 1 — HINGED LID (circular, 60mm dia, 2.0mm thick with walls)
+    ├── Outer surface: compass rose engraving (0.3mm deep)
+    ├── Inner surface: smooth, 0.5mm standoff bumps (protects screen)
+    ├── Hinge barrel at 12 o'clock (2mm ID, accepts hinge pin)
+    ├── Snap clasp at 6 o'clock (small leaf spring)
+    ├── 1.0mm outer wall + 1.0mm inner cavity
+    └── Brass-colored finish (anodized aluminum or painted resin)
+
+    Layer 2 — BEZEL RING (circular, 60mm OD, 52mm ID, 1.5mm tall)
+    ├── Sits at seam between lid and base
+    ├── 3x button cutouts at 3, 6, 9 o'clock positions
+    ├── Hinge pin boss at 12 o'clock (also holds lanyard ring)
+    ├── Lid snap clasp receiver at 6 o'clock
+    ├── Press-fits onto base shell
+    └── Brass-colored to match lid
+
+    Layer 3 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted portrait inside circular base cavity
+    ├── Circular mask/bezel hides rectangular corners
+    ├── Active area: ~40mm diameter visible circle
+    ├── FPC cable exits toward 6 o'clock (bottom)
+    └── Held by retention clips in base shell
+
+    Layer 4 — 2.0mm AIR GAP
+    ├── FPC cable routes to PCB connector
+    └── Button plungers route from bezel ring to PCB switches
+
+    Layer 5 — PCB (45 x 40mm x 1.6mm)
+    ├── Trimmed corners to fit within 52mm circular cavity
+    ├── ESP32-S3-MINI-1 faces back (toward base bottom)
+    ├── 3x tactile switches at 3, 6, 9 o'clock (face up toward bezel)
+    ├── 1x wake switch at 6 o'clock (shared with or near Action button)
+    ├── USB-C connector at 6 o'clock edge
+    ├── Display FPC connector at 12 o'clock edge
+    └── Mounted on posts from base shell
+
+    Layer 6 — 0.4mm GAP
+    └── Clearance for ESP32 module height
+
+    Layer 7 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Centered in base cavity
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in base shell
+
+    Layer 8 — BASE SHELL (circular, 60mm dia, 1.5mm wall)
+    ├── 4x PCB mounting posts (trimmed to fit circular interior)
+    ├── Battery cradle ribs
+    ├── Bezel ring press-fit groove at top edge
+    ├── USB-C cutout at 6 o'clock (9.5 x 4.0mm)
+    ├── Hinge pin boss at 12 o'clock
+    └── Flat bottom (can stand on desk)
+
+
+HINGE DETAIL (12 o'clock position)
+──────────────────────────────────
+
+    Top view at hinge:
+              ◯ ← lanyard ring (5mm ID, welded to hinge boss)
+         ╭────┴────╮
+    lid ──┤  ○────○  ├── base
+         ╰─────────╯
+           hinge pin
+           (2mm steel)
+
+    Side view of hinge action:
+         Closed              Open 180 deg
+         ┌───┐               ┌───┐
+    lid →│   │          lid →│   │──────────╮
+         │   ├─○──┐          └───┘    ○     │
+         └───┘    │               ┌───┤     │
+            base →│               │   │  ←base
+                  │               └───┘
+                  └───┘
+
+    Hinge: 2mm steel pin through aligned barrels on lid and base.
+    Spring detent holds lid at 0 deg (closed) and 180 deg (open).
+    Lanyard ring integrated into hinge boss on base side.
+
+
+CLASP DETAIL (6 o'clock position)
+─────────────────────────────────
+
+         lid edge
+         ┌──────┐
+         │  ╱╲  │ ← leaf spring tab on lid
+         │ ╱  ╲ │
+    ═════╧══════╧═════  ← bezel ring
+              ▼
+         ┌──────┐
+         │ notch│ ← receiver notch in bezel ring
+         └──────┘
+
+    Small leaf spring on lid catches notch in bezel ring.
+    Click-open mechanism — press lid edge to release.
+    Positioned just above USB-C cutout.
+
+
+BUTTON LAYOUT DETAIL (bezel ring, top view)
+───────────────────────────────────────────
+
+                   12 o'clock
+                   (hinge + lanyard)
+                      ◯
+                  ╭───┴───╮
+               ╭──┘       └──╮
+             ╭─┘              └─╮
+            │                    │
+    9 o'clock                      3 o'clock
+     (●) REJECT                     APPROVE (●)
+            │                    │
+             ╰─╮              ╭─╯
+               ╰──╮       ╭──╯
+                  ╰───┬───╯
+                  (●) ACTION
+                   6 o'clock
+                  (+ USB-C below)
+
+    Buttons: 8mm diameter circular caps, 1.5mm proud of bezel.
+    Brass-colored button caps match bezel aesthetic.
+    120-degree spacing around the bezel ring.
+    Wake function: double-press Action button (no separate wake button).
+
+
+USB-C PORT DETAIL (6 o'clock, base)
+────────────────────────────────────
+
+              ╰──╮       ╭──╯
+                 ╰───┬───╯
+                  ┌──┴──┐
+                  │     │  ← 9.34 x 3.66mm cutout
+                  │USB-C│     in base shell wall
+                  │     │     below bezel ring
+                  └─────┘
+
+    Port faces straight down (6 o'clock).
+    Recessed 0.5mm from base exterior.
+    Clasp mechanism sits just above port.
+    Cable plugs in from below — compass can stand
+    upright while charging.
+
+
+SCREEN MASKING DETAIL
+─────────────────────
+
+    The rectangular 51.8 x 36.2mm display module sits inside
+    the circular 52mm internal diameter cavity. A circular
+    mask ring hides the rectangular corners:
+
+              ╭─────────────╮
+           ╭──┤             ├──╮
+         ╭─┘  │             │  └─╮
+        │  ╱──┘             └──╲  │
+       │  │  visible area       │  │
+      │   │  ~40mm diameter     │   │
+       │  │  circle             │  │
+        │  ╲──┐             ┌──╱  │
+         ╰─╮  │             │  ╭─╯
+           ╰──┤             ├──╯
+              ╰─────────────╯
+
+    Mask: 0.5mm thick ring, sits between bezel ring and display.
+    Active visible area: ~40mm diameter circle.
+    Rectangular corners hidden behind mask — looks fully circular.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 3-piece (base + bezel ring + hinged lid) + hinge pin
+- Base shell: circular, flat bottom, holds all internals
+- Bezel ring: press-fits onto base shell top edge, holds button plungers
+- Lid: hinged at 12 o'clock, snaps closed at 6 o'clock
+- Hinge: 2mm steel pin through aligned barrels, spring detent at 0/180 deg
+- Display press-fits into base cavity with circular mask overlay
+- PCB has corners trimmed to fit within 52mm circular internal diameter
+- PCB mounts on posts from base shell bottom
+- Battery in cradle ribs within base shell
+- USB-C at 6 o'clock — can charge while standing upright
+- Lanyard ring integrated into hinge boss at 12 o'clock
+- Brass aesthetic: anodized aluminum or brass-painted resin for lid + bezel
+- Compass rose: CNC engraved or molded into lid exterior (0.3mm depth)
+- Lid protects screen when closed — 0.5mm air gap prevents contact
+- Three standoff bumps on lid interior prevent screen touching during shock
+- Flat base bottom allows compass to sit on desk as a display stand
+- When open, lid lies flat behind base — total footprint ~120mm long
+- Wake: double-press Action button (no 4th button needed)
+- Portrait screen orientation inside circular mask frame

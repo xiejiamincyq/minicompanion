@@ -1,0 +1,369 @@
+(footprint "WireLap_1x02_P3.00mm_Pad1.8x3.5_D0.8_Anchor"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "J610 Anchor; +Y is insulated-wire direction; manual assembly only; no paste; retention NOT validated")
+	(tags "wire lap manual solder retention NPTH no-paste prototype")
+	(property "Reference" "J**"
+		(at 0 -6.25 0)
+		(layer "F.SilkS")
+		(uuid "a949a902-293c-4aee-a41f-77266622ae3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "WireLap_1x02_P3.00mm_Pad1.8x3.5_D0.8_Anchor"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78e4263c-f33f-4dba-91b3-baa804d5a129")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bfdffcd3-177c-4de4-b65e-7a88836c8a65")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d460d5aa-4d3f-49d7-a3af-b98f21086ed5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.639999 -1.99)
+		(end -0.36 -1.99)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "78b535c6-5673-4fe6-8be4-a91f4d82af36")
+	)
+	(fp_line
+		(start -2.639999 1.99)
+		(end -2.639999 -1.99)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "c428bb2a-87ef-4cb8-8575-5243a8118d24")
+	)
+	(fp_line
+		(start -0.36 -1.99)
+		(end -0.36 1.99)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "fe3020c6-46bf-4c77-a63c-49fa8080ca10")
+	)
+	(fp_line
+		(start -0.36 1.99)
+		(end -2.639999 1.99)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "87af168c-5a9f-4a10-8ffd-c2cf0b7052c8")
+	)
+	(fp_line
+		(start 0 3.3)
+		(end 0 4.4)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "16c16e3b-9aa2-4763-a457-55e41eb87e76")
+	)
+	(fp_line
+		(start 0 4.4)
+		(end -0.3 4.05)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "284ca6e3-d4aa-4b3e-b79e-5c8ac7c74424")
+	)
+	(fp_line
+		(start 0 4.4)
+		(end 0.3 4.05)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "Dwgs.User")
+		(uuid "ed89674f-8e15-43d9-acbe-adcde0abd2a9")
+	)
+	(fp_line
+		(start -3.5 -2.25)
+		(end 3.5 -2.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "12cc620f-5199-48b2-b51f-4e285271f075")
+	)
+	(fp_line
+		(start -3.5 9.1)
+		(end -3.5 -2.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "d1bb899d-c98c-441a-8f26-4548c999ac47")
+	)
+	(fp_line
+		(start 3.5 -2.25)
+		(end 3.5 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "c3932a0f-7d04-4592-bd92-91e45a725469")
+	)
+	(fp_line
+		(start 3.5 9.1)
+		(end -3.5 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "B.CrtYd")
+		(uuid "932c0dd5-e6d1-45a1-9d0f-a99f373ca43e")
+	)
+	(fp_line
+		(start -3.5 -2.25)
+		(end 3.5 -2.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "70cea8ef-bf8b-4dbd-8ce1-eddf217b0190")
+	)
+	(fp_line
+		(start -3.5 9.1)
+		(end -3.5 -2.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "a8fc154d-c201-4a0f-8edc-47d73b9313b0")
+	)
+	(fp_line
+		(start 3.5 -2.25)
+		(end 3.5 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "872ae632-fd52-4a81-b467-2d15dea07d8b")
+	)
+	(fp_line
+		(start 3.5 9.1)
+		(end -3.5 9.1)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "037b6a29-4b9f-46ca-8b37-069d563f8f26")
+	)
+	(fp_text user "P+"
+		(at -1.5 -4 0)
+		(layer "F.SilkS")
+		(uuid "663ec771-4ef2-4b6a-baf7-1981a53a8a75")
+		(effects
+			(font
+				(size 1 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "1"
+		(at -1.5 -2.7 0)
+		(layer "F.SilkS")
+		(uuid "7b16bd7e-2389-4fc0-b63a-64fac1af2687")
+		(effects
+			(font
+				(size 1 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "P-"
+		(at 1.5 -4 0)
+		(layer "F.SilkS")
+		(uuid "5ffb375c-c6a2-4117-b44b-33b61dba56a0")
+		(effects
+			(font
+				(size 1 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "2"
+		(at 1.5 -2.7 0)
+		(layer "F.SilkS")
+		(uuid "9d2fcbc3-53b5-44d1-901a-06b295488657")
+		(effects
+			(font
+				(size 1 0.8)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "INSULATED WIRE +Y"
+		(at 0 2.699999 0)
+		(layer "Dwgs.User")
+		(uuid "cd575bed-9fed-48dd-a1d8-2cdd38523e55")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "1"
+		(at -1.5 -1.05 0)
+		(layer "F.Fab")
+		(uuid "cbc86ea0-446f-4a9d-9b21-20645aa6a2cb")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "STRAP"
+		(at 0 7 0)
+		(layer "F.Fab")
+		(uuid "7c465fda-b2e1-44a8-b453-0689a3100c3d")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.12)
+			)
+		)
+	)
+	(fp_text user "2"
+		(at 1.5 -1.05 0)
+		(layer "F.Fab")
+		(uuid "5fa830ee-9d7e-4eaf-af51-555a1f114587")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+			)
+		)
+	)
+	(pad "" np_thru_hole oval
+		(at -2.3 7)
+		(size 1.4 3.2)
+		(drill oval 1.4 3.2)
+		(layers "*.Mask")
+		(solder_mask_margin 0)
+		(thermal_bridge_angle 45)
+		(uuid "8468dd3f-c469-4d51-a58b-a6971ddd7bd8")
+	)
+	(pad "" np_thru_hole oval
+		(at 2.3 7)
+		(size 1.4 3.2)
+		(drill oval 1.4 3.2)
+		(layers "*.Mask")
+		(solder_mask_margin 0)
+		(thermal_bridge_angle 45)
+		(uuid "b4d5fd22-66d8-4730-890c-c780d0c2b0c6")
+	)
+	(pad "1" thru_hole oval
+		(at -1.5 0)
+		(size 1.8 3.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(zone_connect 2)
+		(thermal_bridge_angle 45)
+		(uuid "283da1c7-8ef0-4b21-b935-7847ba4af939")
+	)
+	(pad "2" thru_hole oval
+		(at 1.5 0)
+		(size 1.8 3.5)
+		(drill 0.8)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(solder_mask_margin 0.1)
+		(zone_connect 2)
+		(thermal_bridge_angle 45)
+		(uuid "43ecad21-efaa-41b0-9749-abbfa6500883")
+	)
+	(zone
+		(layers "F.Cu" "B.Cu" "In1.Cu" "In2.Cu" "In3.Cu" "In4.Cu" "In5.Cu" "In6.Cu"
+			"In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu" "In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu"
+			"In15.Cu" "In16.Cu" "In17.Cu" "In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu"
+			"In22.Cu" "In23.Cu" "In24.Cu" "In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu"
+			"In29.Cu" "In30.Cu"
+		)
+		(uuid "409dd8af-d48d-411b-b667-51d45740e370")
+		(name "ALL_CU_CLEAR_WIRE_BRIDGE_AND_SLOTS_0.5_MIN")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+			(island_removal_mode 0)
+		)
+		(polygon
+			(pts
+				(xy -3.5 1.750001) (xy 3.5 1.750001) (xy 3.5 9.1) (xy -3.5 9.1)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-rev" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <path d="M8,0 L0,3 L8,6 Z" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="white"/>
+
+  <!-- Title -->
+  <text x="600" y="885" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#333">DESIGN 6: HEX TOWER — Devotchi Desktop Case Concept</text>
+  <line x1="50" y1="865" x2="1150" y2="865" stroke="#999" stroke-width="0.5"/>
+
+  <!-- ======================== TOP VIEW / HEX CROSS-SECTION (top-left) ======================== -->
+  <text x="250" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333">TOP VIEW (hex cross-section)</text>
+
+  <!-- Hex: 80mm flat-to-flat, center at 250,230. Scale ~2.5px/mm -->
+  <!-- Circumradius R = 80/sqrt(3) ≈ 46.2mm → 115px. Vertices at 0°,60°,120°,180°,240°,300° -->
+  <!-- At scale 2.5: flat-to-flat=200px, R=115px -->
+
+  <!-- Outer hex -->
+  <polygon points="250,115 350,172 350,288 250,345 150,288 150,172"
+           fill="#E0E0E0" stroke="#333" stroke-width="1.5"/>
+
+  <!-- Inner hex (2mm wall = 5px inset) -->
+  <polygon points="250,124 344,178 344,282 250,336 156,282 156,178"
+           fill="#F8F8F8" stroke="#999" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+  <!-- Facet labels (face normals at 30°, 90°, 150°, 210°, 270°, 330°) -->
+  <!-- 90° facet = top side of hex (between top-right and top-left vertices) = Screen -->
+  <rect x="195" y="128" width="110" height="30" rx="2" fill="#B0D4F1" stroke="#4682B4" stroke-width="0.75"/>
+  <text x="250" y="147" text-anchor="middle" font-family="sans-serif" font-size="9" font-weight="bold" fill="#336">SCREEN (90°)</text>
+
+  <!-- 30° facet = top-right side = Buttons -->
+  <text x="365" y="195" font-family="sans-serif" font-size="9" font-weight="bold" fill="#CC0000">BUTTONS</text>
+  <text x="365" y="207" font-family="sans-serif" font-size="8" fill="#CC0000">(30°)</text>
+  <circle cx="347" cy="200" r="3" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <circle cx="347" cy="215" r="3" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <circle cx="347" cy="230" r="3" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+
+  <!-- 210° facet = bottom-left side = Speaker -->
+  <text x="90" y="270" font-family="sans-serif" font-size="9" font-weight="bold" fill="#8B6914">SPEAKER</text>
+  <text x="90" y="282" font-family="sans-serif" font-size="8" fill="#8B6914">(210°)</text>
+  <!-- Speaker grille dots -->
+  <circle cx="154" cy="255" r="2" fill="#D4A84B" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="154" cy="263" r="2" fill="#D4A84B" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="154" cy="271" r="2" fill="#D4A84B" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="160" cy="259" r="2" fill="#D4A84B" stroke="#8B6914" stroke-width="0.3"/>
+  <circle cx="160" cy="267" r="2" fill="#D4A84B" stroke="#8B6914" stroke-width="0.3"/>
+
+  <!-- 270° facet = bottom side = USB-C -->
+  <text x="220" y="360" font-family="sans-serif" font-size="9" fill="#666">USB-C (270°)</text>
+  <rect x="237" y="338" width="26" height="8" rx="2" fill="#C0C0C0" stroke="#666" stroke-width="0.5"/>
+
+  <!-- 150° facet = bottom-right = Plain -->
+  <text x="365" y="285" font-family="sans-serif" font-size="8" fill="#999">Plain (150°)</text>
+
+  <!-- 330° facet = top-left = Plain -->
+  <text x="80" y="185" font-family="sans-serif" font-size="8" fill="#999">Plain (330°)</text>
+
+  <!-- Internal: PCB position -->
+  <rect x="200" y="175" width="80" height="60" rx="1" fill="#90C695" stroke="#2E7D32" stroke-width="0.5" opacity="0.5"/>
+  <text x="240" y="210" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#1B5E20">PCB</text>
+
+  <!-- Internal: Speaker position -->
+  <circle cx="195" cy="280" r="25" fill="#D4A84B" stroke="#8B6914" stroke-width="0.5" opacity="0.3"/>
+  <text x="195" y="283" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#8B6914">28mm spkr</text>
+
+  <!-- Dimension: flat-to-flat -->
+  <line x1="145" y1="380" x2="355" y2="380" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="250" y="395" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">80mm flat-to-flat</text>
+
+  <!-- Wall thickness callout -->
+  <line x1="152" y1="175" x2="130" y2="155" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="100" y="152" font-family="sans-serif" font-size="8" fill="#CC0000">2mm wall</text>
+
+  <!-- ======================== FRONT VIEW (top-right) ======================== -->
+  <text x="780" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333">FRONT VIEW (screen facet)</text>
+
+  <!-- Tower body - screen facet is the wide front face, adjacent facets angle back -->
+  <!-- Left angled facet -->
+  <polygon points="620,60 670,40 670,390 620,410" fill="#D8D8D8" stroke="#333" stroke-width="0.75"/>
+  <!-- Screen facet (center) -->
+  <rect x="670" y="40" width="220" height="350" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <!-- Right angled facet -->
+  <polygon points="890,40 940,60 940,410 890,390" fill="#D8D8D8" stroke="#333" stroke-width="0.75"/>
+
+  <!-- Hex cap on top -->
+  <polygon points="620,60 670,40 890,40 940,60" fill="#D0D0D0" stroke="#333" stroke-width="0.75"/>
+  <text x="780" y="55" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">Hex Cap (snap-fit)</text>
+
+  <!-- Screen window on front facet -->
+  <rect x="710" y="80" width="140" height="180" rx="3" fill="#B0D4F1" stroke="#4682B4" stroke-width="1"/>
+  <text x="780" y="170" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#336">TFT LCD</text>
+  <text x="780" y="183" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#336">40.8×30.6mm active</text>
+
+  <!-- LED below screen -->
+  <circle cx="780" cy="275" r="3" fill="#FFD700" stroke="#333" stroke-width="0.5"/>
+  <text x="795" y="278" font-family="sans-serif" font-size="7" fill="#666">LED</text>
+
+  <!-- Bottom edge -->
+  <polygon points="620,410 670,390 890,390 940,410" fill="#D0D0D0" stroke="#333" stroke-width="0.75"/>
+
+  <!-- Rubber feet indicators -->
+  <circle cx="650" cy="415" r="4" fill="#666" stroke="#333" stroke-width="0.5"/>
+  <circle cx="780" cy="418" r="4" fill="#666" stroke="#333" stroke-width="0.5"/>
+  <circle cx="910" cy="415" r="4" fill="#666" stroke="#333" stroke-width="0.5"/>
+  <text x="780" y="435" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#666">6× rubber feet at hex vertices</text>
+
+  <!-- Dimension: height -->
+  <line x1="955" y1="40" x2="955" y2="410" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="975" y="230" font-family="sans-serif" font-size="9" fill="#CC0000">120mm</text>
+
+  <!-- Dimension: facet width -->
+  <line x1="670" y1="30" x2="890" y2="30" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="780" y="25" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">~46mm facet width</text>
+
+  <!-- ======================== VERTICAL CROSS-SECTION (bottom-left) ======================== -->
+  <text x="250" y="445" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333">VERTICAL CROSS-SECTION</text>
+
+  <!-- Outer shell walls -->
+  <rect x="80" y="465" width="15" height="350" fill="url(#hatch)" stroke="#606060" stroke-width="1"/>
+  <rect x="405" y="465" width="15" height="350" fill="url(#hatch)" stroke="#606060" stroke-width="1"/>
+
+  <!-- Cap -->
+  <rect x="80" y="460" width="340" height="12" fill="url(#hatch)" stroke="#606060" stroke-width="1"/>
+  <text x="250" y="470" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#606060">Cap (2mm)</text>
+
+  <!-- Bottom -->
+  <rect x="80" y="808" width="340" height="12" fill="url(#hatch)" stroke="#606060" stroke-width="1"/>
+
+  <!-- UPPER ZONE label -->
+  <rect x="100" y="480" width="300" height="170" fill="none" stroke="#4682B4" stroke-width="0.5" stroke-dasharray="4,2"/>
+  <text x="110" y="495" font-family="sans-serif" font-size="9" font-weight="bold" fill="#4682B4">UPPER ZONE</text>
+
+  <!-- Screen pocket on left wall -->
+  <rect x="95" y="500" width="70" height="110" fill="#B0D4F1" stroke="#4682B4" stroke-width="0.75"/>
+  <text x="130" y="555" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#336">Screen</text>
+  <text x="130" y="567" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#336">module</text>
+
+  <!-- PCB behind screen -->
+  <rect x="175" y="510" width="100" height="85" fill="#90C695" stroke="#2E7D32" stroke-width="0.75"/>
+  <text x="225" y="555" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#1B5E20">PCB</text>
+  <text x="225" y="567" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#1B5E20">45×40mm</text>
+
+  <!-- Standoffs -->
+  <rect x="175" y="595" width="8" height="20" fill="#888" stroke="#333" stroke-width="0.5"/>
+  <rect x="267" y="595" width="8" height="20" fill="#888" stroke="#333" stroke-width="0.5"/>
+  <text x="225" y="625" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#666">standoffs (M2)</text>
+
+  <!-- LOWER ZONE label -->
+  <rect x="100" y="660" width="300" height="140" fill="none" stroke="#8B6914" stroke-width="0.5" stroke-dasharray="4,2"/>
+  <text x="110" y="675" font-family="sans-serif" font-size="9" font-weight="bold" fill="#8B6914">LOWER ZONE</text>
+
+  <!-- Speaker -->
+  <circle cx="200" cy="730" r="35" fill="#D4A84B" stroke="#8B6914" stroke-width="0.75" opacity="0.6"/>
+  <text x="200" y="728" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#8B6914">Speaker</text>
+  <text x="200" y="740" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#8B6914">28mm dia</text>
+
+  <!-- USB-C cutout on right wall -->
+  <rect x="395" y="770" width="20" height="10" rx="2" fill="#C0C0C0" stroke="#666" stroke-width="0.75"/>
+  <line x1="415" y1="775" x2="440" y2="770" stroke="#666" stroke-width="0.5"/>
+  <text x="442" y="773" font-family="sans-serif" font-size="7" fill="#666">USB-C</text>
+
+  <!-- Wiring path -->
+  <path d="M225,595 L225,660 L200,695" stroke="#CC0000" stroke-width="0.5" stroke-dasharray="3,2" fill="none"/>
+  <text x="250" y="645" font-family="sans-serif" font-size="7" fill="#CC0000">wiring</text>
+
+  <!-- Dimension: total height -->
+  <line x1="440" y1="460" x2="440" y2="820" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="460" y="645" font-family="sans-serif" font-size="9" fill="#CC0000">120mm</text>
+
+  <!-- Left wall label -->
+  <text x="55" y="640" font-family="sans-serif" font-size="8" fill="#606060" transform="rotate(-90,55,640)">Screen facet wall</text>
+
+  <!-- ======================== BUTTON FACET DETAIL (bottom-right) ======================== -->
+  <text x="830" y="475" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#333">BUTTON FACET DETAIL (30° face)</text>
+
+  <!-- Adjacent facets -->
+  <polygon points="620,500 680,490 680,780 620,790" fill="#D8D8D8" stroke="#333" stroke-width="0.5"/>
+  <!-- Button facet -->
+  <rect x="680" y="490" width="200" height="290" fill="#E0E0E0" stroke="#333" stroke-width="1"/>
+  <!-- Adjacent facet right -->
+  <polygon points="880,490 940,500 940,790 880,780" fill="#D8D8D8" stroke="#333" stroke-width="0.5"/>
+
+  <!-- 3 button holes -->
+  <circle cx="780" cy="570" r="12" fill="none" stroke="#CC0000" stroke-width="1"/>
+  <circle cx="780" cy="570" r="4" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="810" y="573" font-family="sans-serif" font-size="8" fill="#CC0000">BTN 1</text>
+
+  <circle cx="780" cy="630" r="12" fill="none" stroke="#CC0000" stroke-width="1"/>
+  <circle cx="780" cy="630" r="4" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="810" y="633" font-family="sans-serif" font-size="8" fill="#CC0000">BTN 2</text>
+
+  <circle cx="780" cy="690" r="12" fill="none" stroke="#CC0000" stroke-width="1"/>
+  <circle cx="780" cy="690" r="4" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="810" y="693" font-family="sans-serif" font-size="8" fill="#CC0000">BTN 3</text>
+
+  <!-- Dimension: button spacing -->
+  <line x1="750" y1="570" x2="750" y2="630" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="735" y="603" text-anchor="end" font-family="sans-serif" font-size="8" fill="#CC0000">12mm</text>
+
+  <line x1="750" y1="630" x2="750" y2="690" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-rev)" marker-end="url(#arrow)"/>
+  <text x="735" y="663" text-anchor="end" font-family="sans-serif" font-size="8" fill="#CC0000">12mm</text>
+
+  <!-- Button detail callout -->
+  <text x="780" y="740" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">5mm holes with 8mm cap OD</text>
+  <text x="780" y="752" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">0.3mm radial clearance</text>
+  <text x="780" y="764" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#666">Cap protrudes 1mm above surface</text>
+
+  <!-- Legend -->
+  <rect x="620" y="800" width="12" height="12" fill="#B0D4F1" stroke="#333" stroke-width="0.5"/>
+  <text x="638" y="810" font-family="sans-serif" font-size="8" fill="#333">Screen</text>
+  <rect x="700" y="800" width="12" height="12" fill="#90C695" stroke="#333" stroke-width="0.5"/>
+  <text x="718" y="810" font-family="sans-serif" font-size="8" fill="#333">PCB</text>
+  <circle cx="786" cy="806" r="6" fill="#D4A84B" stroke="#8B6914" stroke-width="0.5"/>
+  <text x="798" y="810" font-family="sans-serif" font-size="8" fill="#333">Speaker</text>
+  <circle cx="866" cy="806" r="5" fill="#FF8888" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="878" y="810" font-family="sans-serif" font-size="8" fill="#333">Buttons</text>
+</svg>

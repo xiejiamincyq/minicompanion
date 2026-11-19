@@ -1,0 +1,30 @@
+﻿Comment,Designator,Footprint,LCSC Part #,Manufacturer,Quantity_Per_Board,Net_Quantity_Two,Purchase_Quantity_With_Process_Loss,Quote_Total_Two_CNY,Status
+0603WAF1002T5E,R7306,Resistor_SMD:R_0603_1608Metric,C25804,UNI-ROYAL,1,2,,,询价BOM；未锁库存；非生产放行
+0603WAF1003T5E,"R7109,R7110,R7112,R7307",Resistor_SMD:R_0603_1608Metric,C25803,UNI-ROYAL,4,8,,,询价BOM；未锁库存；非生产放行
+AO3400A,Q7102,Package_TO_SOT_SMD:SOT-23,C20917,Alpha and Omega Semiconductor,1,2,,,询价BOM；未锁库存；非生产放行
+BQ25170DSGR,U7101,Package_SON:Texas_DSG0008A_WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm,C5208201,Texas Instruments,1,2,,,询价BOM；未锁库存；非生产放行
+CC0603KRX7R9BB104,"C639,C7105,C7106,C7107,C7301",Capacitor_SMD:C_0603_1608Metric,C14663,YAGEO,5,10,,,询价BOM；未锁库存；非生产放行
+CL21A226MAQNNNE,"C604,C606,C607,C637,C638,C640",Capacitor_SMD:C_0805_2012Metric,C45783,Samsung,6,12,,,询价BOM；未锁库存；非生产放行
+CL21B105KBFNNNE,C7102,Capacitor_SMD:C_0805_2012Metric,C28323,Samsung,1,2,,,询价BOM；未锁库存；非生产放行
+CL21B225KBYNNNE,C7101,Capacitor_SMD:C_0805_2012Metric,C2762602,Samsung,1,2,,,询价BOM；未锁库存；非生产放行
+CL21B225KPFNNNE,"C7103,C7104",Capacitor_SMD:C_0805_2012Metric,C107366,Samsung,2,4,,,询价BOM；未锁库存；非生产放行
+HUSB320-BA000-QN12R,U7102,BLE_Candidate:HUSB320_BA000_Derived_RWB,C7471906,Hynetek,1,2,,,询价BOM；未锁库存；非生产放行
+JS202011SCQN,SW7301,BLE_Candidate:CK_JS202011SCQN,C221666,C&K / Littelfuse,1,2,,,询价BOM；未锁库存；非生产放行
+MMBT3904-7-F,Q7103,Package_TO_SOT_SMD:SOT-23,C94514,Diodes Incorporated,1,2,,,询价BOM；未锁库存；非生产放行
+MMBT3906-7-F,Q7101,Package_TO_SOT_SMD:SOT-23,C82762,Diodes Incorporated,1,2,,,询价BOM；未锁库存；非生产放行
+"PESD5V0U2BT,215",D7301,Package_TO_SOT_SMD:SOT-23,C85399,Nexperia,1,2,,,询价BOM；未锁库存；非生产放行
+RC0603FR-0710KL,"R608,R7108,R7111,R7114,R7115",Resistor_SMD:R_0603_1608Metric,C98220,YAGEO,5,10,,,询价BOM；未锁库存；非生产放行
+RC0603FR-071K1L,R7103,Resistor_SMD:R_0603_1608Metric,C137780,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RC0603FR-0736KL,R7101,Resistor_SMD:R_0603_1608Metric,C114619,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RC0603FR-073K9L,R7102,Resistor_SMD:R_0603_1608Metric,C114616,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RC0603FR-074K7L,R7113,Resistor_SMD:R_0603_1608Metric,C99782,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RT0603BRD07100KL,R7304,Resistor_SMD:R_0603_1608Metric,C122538,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RT0603BRD0710KL,R7305,Resistor_SMD:R_0603_1608Metric,C95204,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RT0603BRD07180KL,R607,Resistor_SMD:R_0603_1608Metric,C326731,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+RT0603BRD07953KL,R603,Resistor_SMD:R_0603_1608Metric,,YAGEO,1,2,,,询价BOM；未锁库存；非生产放行
+SRP4020TA-1R5M,L601,BLE_Candidate:Bourns_SRP4020TA,C3233727,Bourns,1,2,,,询价BOM；未锁库存；非生产放行
+TPS3808G01DBVR,U7301,Package_TO_SOT_SMD:SOT-23-6,C19653,Texas Instruments,1,2,,,询价BOM；未锁库存；非生产放行
+TPS3808G33DBVR,U7104,Package_TO_SOT_SMD:SOT-23-6,C43698,Texas Instruments,1,2,,,询价BOM；未锁库存；非生产放行
+TPS63020DSJR,U603,BLE_Candidate:TI_DSJ0014A_TPS63020,C15483,Texas Instruments,1,2,,,询价BOM；未锁库存；非生产放行
+TPS70933DBVR,U7103,Package_TO_SOT_SMD:SOT-23-5,C89347,Texas Instruments,1,2,,,询价BOM；未锁库存；非生产放行
+TS-1187A-B-A-B,"SW101,SW7302",Button_Switch_SMD:SW_Push_1P1T_XKB_TS-1187A,C318884,XKB Connection,2,4,,,询价BOM；未锁库存；非生产放行

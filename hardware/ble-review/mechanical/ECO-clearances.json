@@ -1,0 +1,345 @@
+{
+  "scope": "Nominal static CAD; includes enclosure, screen, battery, other exported assembly references; excludes soft wire routing and manufacturing variation. Unlisted part height bound (2.2 mm) is an engineering test envelope, not a vendor maximum.",
+  "items": [
+    {
+      "ref": "R7309",
+      "side": "F.Cu",
+      "center": [
+        55.25,
+        47.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        54.075,
+        45.175,
+        56.425,
+        49.825
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "C7302",
+      "side": "F.Cu",
+      "center": [
+        48.0,
+        38.5
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        46.475,
+        37.725,
+        49.525,
+        39.275
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "C1102",
+      "side": "F.Cu",
+      "center": [
+        29.7,
+        31.0
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        28.175,
+        30.225,
+        31.225,
+        31.775
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "U7302",
+      "side": "F.Cu",
+      "center": [
+        48.0,
+        40.5
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        46.755,
+        39.435,
+        49.245,
+        41.565
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7311",
+      "side": "F.Cu",
+      "center": [
+        45.3,
+        41.95
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        43.775,
+        41.175,
+        46.825,
+        42.725
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7301",
+      "side": "F.Cu",
+      "center": [
+        52.0,
+        34.0
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        50.475,
+        33.225,
+        53.525,
+        34.775
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R1104",
+      "side": "F.Cu",
+      "center": [
+        36.0,
+        36.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        35.225,
+        34.975,
+        36.775,
+        38.025
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7303",
+      "side": "F.Cu",
+      "center": [
+        41.0,
+        34.5
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        39.475,
+        33.725,
+        42.525,
+        35.275
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7308",
+      "side": "F.Cu",
+      "center": [
+        55.0,
+        28.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        54.225,
+        26.975,
+        55.775,
+        30.025
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7310",
+      "side": "F.Cu",
+      "center": [
+        44.9,
+        39.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        44.125,
+        37.975,
+        45.675,
+        41.025
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7302",
+      "side": "F.Cu",
+      "center": [
+        41.0,
+        36.5
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        39.475,
+        35.725,
+        42.525,
+        37.275
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "D7301",
+      "side": "B.Cu",
+      "center": [
+        34.5,
+        59.1
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        32.525,
+        57.355,
+        36.475,
+        60.845
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7304",
+      "side": "B.Cu",
+      "center": [
+        50.5,
+        49.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        49.725,
+        47.975,
+        51.275,
+        51.025
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "SW7301",
+      "side": "B.Cu",
+      "center": [
+        44.65,
+        24.2
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        40.355,
+        19.405,
+        48.945,
+        28.995
+      ],
+      "screen_height_mm": 5.65,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7305",
+      "side": "B.Cu",
+      "center": [
+        45.3,
+        49.5
+      ],
+      "orient": 90.0,
+      "courtyard": [
+        44.525,
+        47.975,
+        46.075,
+        51.025
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7306",
+      "side": "B.Cu",
+      "center": [
+        37.5,
+        49.7
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        35.975,
+        48.925,
+        39.025,
+        50.475
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "R7307",
+      "side": "B.Cu",
+      "center": [
+        41.5,
+        51.0
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        39.975,
+        50.225,
+        43.025,
+        51.775
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "SW7302",
+      "side": "B.Cu",
+      "center": [
+        53.2,
+        26.0
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        49.405,
+        23.155,
+        56.995,
+        28.845
+      ],
+      "screen_height_mm": 1.7,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "U7301",
+      "side": "B.Cu",
+      "center": [
+        41.7,
+        47.7
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        39.605,
+        45.955,
+        43.795,
+        49.445
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    },
+    {
+      "ref": "C7301",
+      "side": "B.Cu",
+      "center": [
+        37.7,
+        46.8
+      ],
+      "orient": 0.0,
+      "courtyard": [
+        36.175,
+        46.025,
+        39.225,
+        47.575
+      ],
+      "screen_height_mm": 2.2,
+      "solid_intersections_mm3": {}
+    }
+  ]
+}

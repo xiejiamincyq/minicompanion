@@ -1,0 +1,279 @@
+DESIGN 11: WALKMAN
+==================
+80s Sony Walkman cassette player homage. Landscape orientation.
+Faux cassette window area frames the screen — like peering through the
+tape window of a classic portable cassette player. Transport-style
+buttons below. Side slider wake control. Belt clip on back.
+Color: silver/gray body with orange accents (buttons, trim, clip).
+
+Overall: 100mm wide x 65mm tall x 18mm deep
+Weight target: ~55g with battery
+Orientation: Landscape
+Shell: 2-piece (front + back), 4x M2 screws in corners + snap seam
+
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+    ┌──────────────────────────────────────────────┐
+    │  ◎                         W A L K M A N   ◎ │ ← decorative corner rivets
+    │                                                │
+    │   ╔══════════════════════════════════════╗     │
+    │   ║  ┌ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┐  ║     │ ← cassette door frame
+    │   ║  │ ╭─────────────────────────────╮ │  ║     │   (raised 0.5mm ridge)
+    │   ║  │ │                             │ │  ║     │
+    │   ║  │ │       TFT LCD SCREEN        │ │  ║     │ ← 40.8 x 30.6mm active
+    │   ║  │ │      (51.8 x 36.2 module)   │ │  ║     │   in "tape window"
+    │   ║  │ │                             │ │  ║     │
+    │   ║  │ ╰─────────────────────────────╯ │  ║     │
+    │   ║  └ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ┘  ║     │ ← faux tape window border
+    │   ║   ● ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ●   ║     │   (translucent smoke plastic)
+    │   ║    (decorative reel hub graphics)     ║     │ ← printed/embossed reel circles
+    │   ╚══════════════════════════════════════╝     │
+    │                                                │
+    │     ┌────┐    ┌────┐    ┌────┐                │
+    │     │ ⏮ │    │ ✓  │    │ ⏭ │                │ ← 3x main buttons (12x6mm)
+    │     │    │    │    │    │    │                │   transport-button style
+    │     └────┘    └────┘    └────┘                │   14mm center spacing
+    │     REJECT    APPROVE   ACTION                 │
+    │                                                │
+    │   ○ LED                    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒  │ ← decorative EQ bars graphic
+    └──────────────────────────────────────────────┘
+    ├────────────────── 100mm ─────────────────────┤
+
+
+TOP EDGE VIEW
+─────────────
+
+    ┌──────────────────────────────────────────────┐
+    │  ○                                       ○   │ ← decorative headphone jack
+    │  HP                                      ∅   │   hole (3.5mm, blocked inside)
+    └──────────────────────────────────────────────┘   right: lanyard hole (3mm)
+    ├────────────────── 100mm ─────────────────────┤
+
+
+RIGHT SIDE VIEW
+───────────────
+
+          18mm
+        ├──────┤
+        ┌──────┐ ─┬─
+        │      │  │
+        │ ═══  │  │  ← slider track (wake button)
+        │ ▓◄── │  │    15mm travel, spring-return
+        │ ═══  │  │    slides up to wake
+        │      │  │  65mm
+        │      │  │
+        │      │  │
+        │      │  │
+        │      │  │
+        └──┤├──┘ ─┴─  ← USB-C cutout visible at bottom
+        ↑      ↑
+      Front   Back
+
+    Wake slider detail:
+    ┌─────────┐
+    │  ╔═══╗  │ ← 10 x 4.5mm slider cap
+    │  ║ ▓ ║──│── rides in 3mm x 15mm channel
+    │  ╚═══╝  │   spring-loaded return to "off" position
+    │  ┆   ┆  │
+    └─────────┘
+
+
+BACK VIEW
+─────────
+
+    ┌──────────────────────────────────────────────┐
+    │                                                │
+    │   ┌──────────────────────────────────┐        │
+    │   │                                  │        │
+    │   │        BATTERY DOOR              │        │ ← snap-off panel (32 x 37mm)
+    │   │        (labeled area)            │        │
+    │   │                                  │        │
+    │   └──────────────────────────────────┘        │
+    │                                                │
+    │   ╔══════════════════╗                        │
+    │   ║   BELT CLIP      ║                        │ ← spring-loaded belt clip
+    │   ║   ┌──────────┐   ║                        │   40mm wide, folds flat
+    │   ║   │  ╱╱╱╱╱╱  │   ║                        │   pivots at top hinge
+    │   ║   │  ╱╱╱╱╱╱  │←──║── clip jaw (20mm deep) │
+    │   ║   └──────────┘   ║                        │
+    │   ╚══════════════════╝                        │
+    │                                                │
+    │   ▪▪▪ vib motor                               │ ← 6mm coin motor
+    │              ┌──USB──┐                        │
+    └──────────────┤ ○  ○  ├────────────────────────┘
+                   └───────┘
+                 USB-C (9.34 x 3.66mm)
+
+
+CROSS-SECTION (cut through horizontal center, looking from above)
+─────────────────────────────────────────────────────────────────
+
+    Front                         Back
+      │                             │
+      │  1.5mm front wall           │  1.5mm back wall
+      │  │                       │  │
+      ├──┤                       ├──┤
+      │  ├── Display ──────────┐ │  │
+      │  │   (2.5mm thick)     │ │  │
+      │  ├─────────────────────┤ │  │
+      │  │   2.5mm gap         │ │  │  18mm total
+      │  │   (FPC + cassette   │ │  │  (15.1mm Z-stack +
+      │  │    frame structure)  │ │  │   2.9mm extra for
+      │  ├── PCB ──────────────┤ │  │   cassette door frame
+      │  │   (1.6mm thick)     │ │  │   + belt clip recess)
+      │  ├─────────────────────┤ │  │
+      │  │   0.5mm gap         │ │  │
+      │  ├── Battery ──────────┤ │  │
+      │  │   (5.0mm thick)     │ │  │
+      │  │   30 x 35mm LiPo   │ │  │
+      ├──┴─────────────────────┴─┤  │
+      │                             │
+      Front face               Back face
+
+    Z-stack (internal):
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    + 2.9mm for cassette door frame depth and belt clip recess
+    = 18mm total enclosure depth
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (100 x 65mm, 1.5mm wall, silver/gray)
+    ├── Cassette door frame (raised 0.5mm border, 80 x 45mm)
+    ├── Tape window cutout for screen (42.8 x 32.6mm, with 1mm bezel)
+    ├── Faux reel hub circles (printed/embossed, decorative only)
+    ├── 3x transport-button slots (12.5 x 6.5mm, rectangular)
+    ├── 1x headphone jack hole — top edge (3.5mm dia, plugged inside)
+    ├── 1x LED hole (2mm dia, lower-left of button area)
+    ├── 1x lanyard hole (3mm, top-right corner)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── 4x screw bosses (M2, in corners)
+    └── Decorative EQ bar graphic (printed, lower-right)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Mounted landscape (native orientation)
+    ├── Centered in cassette window cutout
+    ├── FPC cable exits right edge toward PCB connector
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC cable routes from display to PCB connector
+    ├── Button plungers pass through (front shell → PCB switches)
+    └── Cassette door frame structure provides internal ribbing
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 (15.4 x 20.5mm) faces back
+    ├── 3x tactile switches face front (transport button area)
+    ├── 1x tactile switch on right edge (wake slider actuates it)
+    ├── USB-C connector on bottom edge (centered)
+    ├── Display FPC connector on right side
+    ├── Vibration motor pads near bottom-left
+    └── Mounted on 4x posts from back shell
+
+    Layer 5 — 0.5mm GAP
+    └── Clearance for ESP32 module (2.4mm, fits within gap + battery area)
+
+    Layer 6 — BATTERY (30 x 35 x 5mm LiPo, 300-500mAh)
+    ├── Positioned in upper-left quadrant
+    ├── JST connector to PCB (short pigtail)
+    └── Held by cradle ribs in back shell
+
+    Layer 7 — BACK SHELL (100 x 65mm, 1.5mm wall, silver/gray)
+    ├── 4x PCB mounting posts (3mm OD, press-fit)
+    ├── Battery cradle ribs (2x, 1mm tall)
+    ├── Battery door (snap-off panel, 32 x 37mm)
+    ├── Belt clip mounting boss (40mm wide, pivoting hinge)
+    ├── Belt clip recess (when folded flat)
+    ├── 4x M2 screw holes (corners, countersunk)
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Vibration motor pocket (7mm dia, 3mm deep, foam tape)
+
+
+WAKE SLIDER MECHANISM DETAIL
+─────────────────────────────
+
+    Right side of enclosure, mid-height:
+
+         ┌───────────────────┐
+         │   ┌─── channel ──┐│
+         │   │  ╔═══════╗   ││ ← slider cap (10 x 4.5mm)
+         │   │  ║ SLIDE ║───││── orange accent color
+         │   │  ║  ▲    ║   ││   (textured grip surface)
+         │   │  ╚═══════╝   ││
+         │   │      │       ││
+         │   │   spring     ││ ← compression spring
+         │   │      │       ││   returns to bottom
+         │   │   ┌──┴──┐    ││
+         │   │   │TACT │    ││ ← actuates wake tactile switch
+         │   │   │SW   │    ││   at top of travel
+         │   └───┴─────┴───┘│
+         └───────────────────┘
+
+    Slider rides in 3mm wide x 15mm tall channel.
+    Spring-loaded return to bottom (sleep) position.
+    Full travel upward clicks wake tactile switch on PCB edge.
+
+
+BELT CLIP DETAIL
+────────────────
+
+    Side profile of belt clip (folded out):
+
+         Back shell
+         ┌────────────────────────┐
+         │                        │
+         │  ╔═══╗ ← pivot hinge  │
+         │  ║   ║                 │
+         │  ║   ╚═══════════╗    │
+         │  ║   clip arm     ║    │  ← 40mm wide, spring steel
+         │  ║               ║    │    insert for tension
+         │  ║   ╔═══════════╝    │
+         │  ║   ║ jaw (20mm)     │
+         │  ╚═══╝                │
+         │                        │
+         └────────────────────────┘
+
+    When folded flat, clip recesses into 1mm pocket in back shell.
+    Orange accent color on clip arm.
+
+
+TRANSPORT BUTTON DETAIL
+───────────────────────
+
+    ┌──────────────────────────────────────────┐
+    │                                            │
+    │     ┌──────┐    ┌──────┐    ┌──────┐     │
+    │     │  ◁◁  │    │  ▶   │    │  ▷▷  │     │ ← button cap labels
+    │     │      │    │      │    │      │     │   (embossed transport icons)
+    │     └──────┘    └──────┘    └──────┘     │
+    │     REJECT      APPROVE     ACTION       │
+    │     12x6mm      12x6mm      12x6mm       │
+    │     ├──14mm──┤  ├──14mm──┤               │
+    │                                            │
+    └──────────────────────────────────────────┘
+
+    Orange button caps on silver/gray body.
+    Slightly concave top surface for tactile feedback.
+    2mm travel with audible click.
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece (front + back), 4x M2 countersunk screws in corners
+- Additional snap-fit alignment tabs along long edges (2 per side)
+- Display press-fits into front shell pocket, held by 4x retention clips
+- PCB press-fits onto 4x posts in back shell
+- Battery sits in cradle ribs, JST pigtail connects to PCB
+- USB-C cutout at bottom center of both shell halves
+- Vibration motor adhered inside back shell with foam tape
+- Belt clip: spring-steel insert in plastic arm, pivots at top hinge
+- Wake slider: rides in channel on right side, spring-return mechanism
+- Headphone jack hole: decorative only, plugged behind front shell
+- Landscape orientation: display used in native landscape mode
+- Orange accents: button caps, slider cap, belt clip arm, trim line
+- Surface finish: matte silver/gray with subtle horizontal brushed texture
+- Cassette door frame: raised border creates the illusion of a hinged door
+- Faux reel hubs: embossed circles flanking the screen inside the frame

@@ -1,0 +1,47 @@
+{
+  "date_china": "2026-11-13",
+  "status": "QUOTED_CONDITIONAL_BUDGET_NOT_FULLY_PROCURABLE_OR_ENGINEERING_APPROVED",
+  "devices": 2,
+  "configuration_retained": [
+    "ESP32-S3-MINI-1-N4R2",
+    "HS20HS072RX",
+    "protected2000mAh",
+    "BLE",
+    "charging_stop_run",
+    "necessary_protections"
+  ],
+  "freight_included": false,
+  "self_assembly": true,
+  "enclosure_assembly_evaluation_excluded_by_user": true,
+  "all_whole_purchase_packages_counted": true,
+  "quoted_new_cash_two_cny": "499.726904",
+  "owned_consumables_assumed_replacement_use_two_cny": "4.031218181818181818181818182",
+  "quoted_project_cash_plus_owned_use_two_cny": "503.7581221818181818181818182",
+  "quoted_project_per_device_cny": "251.8790610909090909090909091",
+  "cash_category_totals_cny": {
+    "electronics": "302.346904",
+    "fabrication": "116.44",
+    "making_or_exclusion": "0",
+    "materials": "80.94",
+    "owned_consumables": "0"
+  },
+  "delta_vs_previous_12_80tape_quote_two_cny": "-4.510000",
+  "NTC_whole_sheet_quote_cny": "8.25",
+  "inductor_channel_delta_cny": "0.04",
+  "complete_unconditional_budget_cny": null,
+  "engineering_approved": false,
+  "unresolved_conditions": [
+    "Mouser1467stock0/backorder;expected replenishment2026-12-29 is not delivery guarantee. Confirm one-sheet acceptance and nonfreight fees before purchase.",
+    "NTC carrier geometry/contact and8810adhesion/insulation/thermal response require validation; no physical tests performed.",
+    "900kC407504stock0/no lead;953kBourns substitution still requires BOM/CAD update. Original exact resistor procurement is not fully resolved.",
+    "MainPCB30uses assistant channel;ordinaryweb100 adds70per two. PCB/probe fabrication remains parametric,not full file review.",
+    "SLA66.30personal fee policy retained;enterprise invoice policy differs. Retail tax/overseas actual tariff conditions remain as preceding budget.",
+    "Other prior material candidates including LCD foam and PU/PI-identity wire anchor have not been fully qualified."
+  ],
+  "CAD_changed": false,
+  "STL_changed": false,
+  "orders_submitted": false,
+  "supplier_messages_sent": false,
+  "physical_tests_executed": 0,
+  "previous_reports_preserved": true
+}

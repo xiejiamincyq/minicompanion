@@ -1,0 +1,54 @@
+{
+  "source_sha256": {
+    "BLE-A0": "9a5667eb991860b95062c8a7ceff00264be82c1c68d4a0834d06fc491ed38ac4",
+    "USB candidate": "35675f68e93142e07def0e88f09073ee1605d7398833b505377b71d052818954"
+  },
+  "unchanged": [
+    "LED_A",
+    "LED_K",
+    "PACK_POS"
+  ],
+  "changes": {
+    "VBUS_RAW": {
+      "from": {
+        "length_mm_by_width": {
+          "0.150": 10.995,
+          "0.200": 3.815,
+          "0.250": 3.465,
+          "0.400": 84.489
+        },
+        "vias": 7
+      },
+      "to": {
+        "length_mm_by_width": {
+          "0.150": 10.995,
+          "0.200": 3.815,
+          "0.250": 3.465,
+          "0.400": 121.113
+        },
+        "vias": 12
+      }
+    },
+    "VLOGIC_SWITCHED": {
+      "from": {
+        "length_mm_by_width": {
+          "0.150": 1.519,
+          "0.200": 6.44,
+          "0.400": 24.583,
+          "0.800": 3.45
+        },
+        "vias": 18
+      },
+      "to": {
+        "length_mm_by_width": {
+          "0.150": 2.719,
+          "0.200": 42.37,
+          "0.400": 23.383,
+          "0.800": 7.762
+        },
+        "vias": 19
+      }
+    }
+  },
+  "scope": "Track centerline lengths by width and via counts; does not calculate impedance, actual current sharing, temperature or contact resistance."
+}

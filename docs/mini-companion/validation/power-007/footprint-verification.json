@@ -1,0 +1,21 @@
+{
+  "source": "TI DLA0010A 4223750/D 03/2019 pp36-37",
+  "copper_pad_count": 10,
+  "numbering_and_geometry": "pass",
+  "pad8_paste_apertures": [
+    [
+      0.175,
+      0.0,
+      0.55,
+      0.25
+    ],
+    [
+      0.925,
+      0.0,
+      0.55,
+      0.25
+    ]
+  ],
+  "pad8_paste_coverage": 0.838484202356394,
+  "scope": "land and paste pattern check; no assembly/thermal release"
+}

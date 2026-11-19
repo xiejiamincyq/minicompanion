@@ -1,0 +1,256 @@
+DESIGN 3: PEBBLE
+================
+Smartwatch-inspired rounded rectangle with an organic, stone-like feel.
+Minimal front face — just the screen, nothing else visible from front.
+All buttons on the sides like a watch crown + pushers.
+Think "Pebble watch" or "river stone" aesthetic.
+
+Overall: 62mm tall x 50mm wide x 16mm deep
+Weight target: ~42g with battery
+Orientation: Portrait
+Corner radius: 10mm (very rounded, almost pill-shaped)
+Shell: 2-piece (front + back), 4x M2 screws
+
+FRONT VIEW (screen facing viewer)
+──────────────────────────────────
+
+         ╭───────────────────╮
+       ╭─╯                   ╰─╮
+      │  ┌───────────────────┐  │
+      │  │                   │  │
+      │  │                   │  │
+      │  │   TFT LCD SCREEN  │  │
+      │  │  (40.8 x 30.6mm) │  │  62mm
+      │  │                   │  │
+      │  │                   │  │
+      │  └───────────────────┘  │
+       ╰─╮                   ╭─╯
+         ╰───────────────────╯
+         ├───── 50mm ────────┤
+
+    Front face is CLEAN — no buttons, no LED visible.
+    Just the screen window and smooth bezel.
+    LED is hidden under a thin translucent strip at top edge.
+
+
+RIGHT SIDE VIEW (3 buttons)
+────────────────────────────
+
+           16mm
+          ├──────┤
+          ╭──────╮ ─┬─
+         ╱        ╲  │
+        │  ═══ B1  │  │  ← Button 1: APPROVE (12x6mm cap)
+        │          │  │    protruding 1.5mm from side
+        │  ═══ B2  │  │  ← Button 2: ACTION (12x6mm cap)
+        │          │  │    14mm spacing center-to-center
+        │  ═══ B3  │  │  ← Button 3: REJECT (12x6mm cap)
+         ╲        ╱  │
+          ╰──────╯ ─┴─
+          ↑      ↑
+        Front  Back
+                         62mm tall
+
+
+LEFT SIDE VIEW (wake button)
+────────────────────────────
+
+          ╭──────╮ ─┬─
+         ╱        ╲  │
+        │          │  │
+        │          │  │
+        │  ═══ W   │  │  ← Wake button (10x4.5mm cap)
+        │          │  │    centered vertically
+        │          │  │
+         ╲        ╱  │
+          ╰──────╯ ─┴─
+
+
+TOP VIEW (looking down)
+───────────────────────
+
+         ╭───────────────────╮
+        ╱                     ╲
+       │                       │ ← 16mm deep
+        ╲                     ╱
+         ╰───────────────────╯
+         ├───── 50mm ────────┤
+
+
+BOTTOM VIEW (USB-C)
+───────────────────
+
+         ╭───────────────────╮
+        ╱                     ╲
+       │       ┌──────┐       │ ← USB-C cutout (9.34x3.66mm)
+        ╲      └──────┘      ╱    centered on bottom edge
+         ╰───────────────────╯
+
+
+BACK VIEW
+─────────
+
+         ╭───────────────────╮
+       ╭─╯                   ╰─╮
+      │                         │
+      │    ●             ●      │ ← 4x M2 screw recesses
+      │                         │   (countersunk, 4mm OD)
+      │     ┌─────────────┐    │
+      │     │  STRAP LOOP │    │ ← Optional: molded strap loop
+      │     │   CHANNEL   │    │   or clip attachment point
+      │     └─────────────┘    │
+      │                         │
+      │    ●             ●      │
+       ╰─╮                   ╭─╯
+         ╰───────────────────╯
+
+    Back options:
+    A) Smooth back (minimal)
+    B) Strap loop channel (wristband attachment)
+    C) Spring clip rail (clip to bag/pocket)
+
+
+CROSS-SECTION (cut through vertical center, looking from right)
+───────────────────────────────────────────────────────────────
+
+    Front                              Back
+      │                                  │
+      │  1.5mm wall                      │  1.5mm wall
+      │  │                            │  │
+      ├──┤                            ├──┤
+      │  ├── Display ───────────────┐ │  │
+      │  │   (2.5mm thick)         │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   2.5mm gap             │ │  │  16mm total
+      │  ├── PCB ──────────────────┤ │  │
+      │  │   (1.6mm thick)        │ │  │
+      │  ├──────────────────────────┤ │  │
+      │  │   0.5mm gap            │ │  │
+      │  ├── Battery ──────────────┤ │  │
+      │  │   (5.0mm thick)        │ │  │
+      ├──┴──────────────────────────┴─┤  │
+      │                                  │
+
+    Z-stack:
+    1.5 + 2.5 + 2.5 + 1.6 + 0.5 + 5.0 + 1.5 = 15.1mm
+    + 0.9mm for boss clearance = 16mm exterior
+
+
+SIDE BUTTON DETAIL (right edge, viewed from front)
+──────────────────────────────────────────────────
+
+    Shell profile (right edge):
+                         ╭── Button cap (12x6mm)
+                         │   protrudes 1.5mm
+         ╱╱╱╱╱╱╱╱╱╱╱╱╱ ═╪═ ╱╱╱╱╱╱╱╱╱
+        │               │ │            │
+        │  plunger ─────┘ │            │
+        │                 │            │
+        │  PCB ──┐  tact  │            │
+        │        │  sw ───┘            │
+        │        │                     │
+         ╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲╲
+
+    The button cap sits in a slot cut into the shell wall.
+    A plunger transfers press force to a right-angle
+    tactile switch soldered to the PCB edge.
+
+    Alternative: use side-mount tactile switches that
+    poke through shell cutouts directly.
+
+
+COMPONENT LAYOUT (exploded, front to back)
+──────────────────────────────────────────
+
+    Layer 1 — FRONT SHELL (1.5mm wall, 10mm corner radius)
+    ├── Screen window cutout (41.8 x 31.6mm, portrait, centered)
+    ├── Translucent LED strip at top edge (8 x 1.5mm)
+    ├── 4x screen retention clips (L-shaped, 0.5mm overhang)
+    ├── NO front-facing button holes (clean face)
+    ├── 3x right-side button slots (13 x 7mm cutouts)
+    ├── 1x left-side button slot (11 x 5mm cutout)
+    └── 4x M2 threaded inserts (heat-set, brass)
+
+    Layer 2 — DISPLAY MODULE (51.8 x 36.2 x 2.5mm)
+    ├── Portrait orientation (rotated 90deg)
+    ├── Centered in front shell pocket
+    ├── FPC exits bottom edge
+    └── Held by front shell retention clips
+
+    Layer 3 — 2.5mm AIR GAP
+    ├── FPC routes to PCB connector
+    └── Side-button plungers route here
+
+    Layer 4 — PCB (45 x 40 x 1.6mm)
+    ├── ESP32-S3-MINI-1 faces back
+    ├── 3x right-angle tactile switches on right edge
+    ├── 1x right-angle tactile switch on left edge
+    ├── USB-C on bottom edge (centered)
+    ├── Display FPC connector on top edge
+    ├── LED on top edge (shines through translucent strip)
+    ├── Vibration motor pads (bottom area)
+    └── Mounted on 4x M2 standoffs
+
+    Layer 5 — 0.5mm GAP + BATTERY (30 x 35 x 5mm LiPo)
+    ├── Centered in back shell
+    ├── JST pigtail to PCB
+    └── Foam tape retention
+
+    Layer 6 — BACK SHELL (1.5mm wall, 10mm corner radius)
+    ├── 4x M2 countersunk screw holes
+    ├── 4x standoff bosses
+    ├── Battery retention area with foam pad
+    ├── USB-C cutout (9.5 x 4.0mm)
+    └── Optional strap loop / clip rail (see variants below)
+
+
+STRAP / CLIP ATTACHMENT OPTIONS
+───────────────────────────────
+
+    Option A: STRAP LOOP (molded into back shell)
+
+         ╭───────────────────╮
+       ╭─╯                   ╰─╮
+      │  ┌───┐         ┌───┐   │
+      │  │   │  LOOP   │   │   │ ← 20mm wide loop
+      │  │   ╰─────────╯   │   │   3mm thick walls
+      │  │                  │   │   5mm internal gap
+      │  └──────────────────┘   │   (fits 22mm watch strap)
+       ╰─╮                   ╭─╯
+         ╰───────────────────╯
+
+    Option B: SPRING CLIP RAIL
+
+         ╭───────────────────╮
+       ╭─╯                   ╰─╮
+      │                         │
+      │    ┌────────────────┐   │
+      │    │  CLIP CHANNEL  │   │ ← Dovetail rail, 25mm long
+      │    │  ═══════════   │   │   Separate spring clip slides on
+      │    └────────────────┘   │
+      │                         │
+       ╰─╮                   ╭─╯
+         ╰───────────────────╯
+
+    Option C: CARABINER HOLE (top edge)
+
+              ┌─○─┐              ← 4mm hole in top edge
+         ╭────┘   └────╮           reinforced boss (6mm OD)
+       ╭─╯              ╰─╮        for keyring / carabiner clip
+      │                     │
+
+
+MOUNTING / ASSEMBLY NOTES
+─────────────────────────
+- Shell: 2-piece rounded rectangle, 4x M2 screws from back
+- 10mm corner radius gives very soft, organic look
+- Front face completely clean — no visible buttons or holes (except screen)
+- All 4 buttons on side edges, using right-angle tactile switches
+- Side button caps are separate pieces that slide into shell slots
+- LED hidden behind translucent plastic strip at top edge
+- PCB requires right-angle switches on both left and right edges
+- USB-C cutout on bottom edge, accessible when worn on wrist
+- Back shell variant system: swap back shells for different
+  attachment methods (strap, clip, plain)
+- Very rounded profile is comfortable in hand, pocket-friendly
+- Display in portrait mode to maximize vertical screen real estate

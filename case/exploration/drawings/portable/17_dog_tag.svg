@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <title>Design 17: Dog Tag — Technical Illustration</title>
+
+  <defs>
+    <marker id="arrow-start" markerWidth="8" markerHeight="6" refX="0" refY="3" orient="auto">
+      <polygon points="8,0 0,3 8,6" fill="#CC0000"/>
+    </marker>
+    <marker id="arrow-end" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0,0 8,3 0,6" fill="#CC0000"/>
+    </marker>
+    <pattern id="hatch" patternUnits="userSpaceOnUse" width="6" height="6" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#606060" stroke-width="0.8"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="900" fill="white"/>
+  <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold">Design 17: Dog Tag — 50×28×10mm Portrait, Military ID Tag</text>
+
+  <!-- ============ VIEW 1: FRONT VIEW (top-left) ============ -->
+  <text x="200" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Front View</text>
+
+  <!-- Dog tag outline with notched corner -->
+  <path d="M130,85 L260,85 Q270,85 270,95 L270,395 Q270,405 260,405 L140,405 Q130,405 130,395 L130,95 Q130,85 140,85 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Notched corner top-right -->
+  <path d="M250,85 L270,85 L270,105 Z" fill="white" stroke="black" stroke-width="0.5"/>
+  <path d="M250,85 L270,105" stroke="black" stroke-width="0.5"/>
+
+  <!-- Chain loop hole at top -->
+  <circle cx="200" cy="95" r="7" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="220" y="93" font-family="sans-serif" font-size="8" fill="#333">Chain hole</text>
+
+  <!-- Display — full-face, minimal bezels -->
+  <rect x="140" y="115" width="120" height="170" rx="2" ry="2" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="200" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Active Area</text>
+  <text x="200" y="212" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">40.80×30.60mm</text>
+
+  <!-- 4 tiny buttons below screen -->
+  <rect x="148" y="300" width="22" height="10" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="175" y="300" width="22" height="10" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="202" y="300" width="22" height="10" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <rect x="229" y="300" width="22" height="10" rx="2" fill="#C8C8C8" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="325" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">4 buttons</text>
+
+  <!-- USB-C at bottom -->
+  <rect x="183" y="400" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="420" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Dimension: width 28mm -->
+  <line x1="130" y1="435" x2="270" y2="435" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="130" y1="425" x2="130" y2="445" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="270" y1="425" x2="270" y2="445" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">28.0mm</text>
+
+  <!-- Dimension: height 50mm -->
+  <line x1="290" y1="85" x2="290" y2="405" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="280" y1="85" x2="300" y2="85" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="280" y1="405" x2="300" y2="405" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="310" y="250" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">50.0mm</text>
+
+  <!-- ============ VIEW 2: SIDE PROFILE (top-center) ============ -->
+  <text x="530" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Side Profile</text>
+
+  <!-- Ultra-thin side -->
+  <rect x="515" y="85" width="30" height="320" rx="4" ry="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Screen edge visible -->
+  <line x1="515" y1="115" x2="515" y2="285" stroke="#4488CC" stroke-width="1.5"/>
+  <text x="508" y="200" text-anchor="end" font-family="sans-serif" font-size="8" fill="#4488CC">Screen</text>
+
+  <!-- Button bumps -->
+  <rect x="511" y="300" width="4" height="10" rx="1" fill="#C8C8C8" stroke="black" stroke-width="0.3"/>
+  <text x="505" y="308" text-anchor="end" font-family="sans-serif" font-size="8" fill="#333">Btns</text>
+
+  <!-- USB-C side -->
+  <rect x="525" y="400" width="9" height="4" rx="1" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="548" y="405" font-family="sans-serif" font-size="8" fill="#333">USB-C</text>
+
+  <!-- Chain hole side -->
+  <ellipse cx="530" cy="92" rx="2" ry="5" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Dimension: depth 10mm -->
+  <line x1="515" y1="430" x2="545" y2="430" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="515" y1="420" x2="515" y2="440" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="545" y1="420" x2="545" y2="440" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="530" y="452" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 3: BACK VIEW (top-right) ============ -->
+  <text x="900" y="65" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Back View</text>
+
+  <!-- Dog tag back outline with notched corner -->
+  <path d="M830,85 L960,85 Q970,85 970,95 L970,395 Q970,405 960,405 L840,405 Q830,405 830,395 L830,95 Q830,85 840,85 Z" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Notch mirrored -->
+  <path d="M830,85 L850,85 L830,105 Z" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Chain hole -->
+  <circle cx="900" cy="95" r="7" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- Brushed metal texture lines -->
+  <line x1="845" y1="140" x2="955" y2="140" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="845" y1="148" x2="955" y2="148" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="845" y1="156" x2="955" y2="156" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="845" y1="164" x2="955" y2="164" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="845" y1="172" x2="955" y2="172" stroke="#BBB" stroke-width="0.3"/>
+  <line x1="845" y1="180" x2="955" y2="180" stroke="#BBB" stroke-width="0.3"/>
+
+  <!-- Engraved text area -->
+  <rect x="850" y="200" width="100" height="120" rx="3" fill="none" stroke="black" stroke-width="0.3" stroke-dasharray="3,2"/>
+  <text x="900" y="240" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#777">DEVOTCHI</text>
+  <text x="900" y="255" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#777">S/N: XXXXXXXX</text>
+  <text x="900" y="270" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#777">FCC ID: XXXXXX</text>
+  <text x="900" y="340" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#555">Engraved text area</text>
+
+  <!-- USB-C at bottom -->
+  <rect x="883" y="400" width="34" height="8" rx="2" fill="white" stroke="black" stroke-width="0.5"/>
+
+  <!-- ============ VIEW 4: TOP-DOWN VIEW (bottom-left) ============ -->
+  <text x="200" y="510" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Top-Down View</text>
+
+  <!-- Top of tag — narrow rectangle -->
+  <rect x="120" y="535" width="160" height="30" rx="4" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+
+  <!-- Ball chain loop hole -->
+  <circle cx="200" cy="540" r="7" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="200" y="536" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">5mm</text>
+
+  <!-- Ball chain illustration -->
+  <circle cx="200" cy="528" r="3" fill="#999" stroke="black" stroke-width="0.3"/>
+  <circle cx="200" cy="520" r="3" fill="#999" stroke="black" stroke-width="0.3"/>
+  <circle cx="200" cy="512" r="3" fill="#999" stroke="black" stroke-width="0.3"/>
+  <text x="220" y="520" font-family="sans-serif" font-size="8" fill="#555">Ball chain</text>
+
+  <!-- Dimension: chain hole 5mm -->
+  <line x1="190" y1="580" x2="210" y2="580" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="200" y="595" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#CC0000">5mm hole</text>
+
+  <!-- Dimension: width 28mm -->
+  <line x1="120" y1="610" x2="280" y2="610" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="120" y1="600" x2="120" y2="620" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="280" y1="600" x2="280" y2="620" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="200" y="628" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#CC0000">28.0mm</text>
+
+  <!-- Dimension: depth 10mm -->
+  <line x1="300" y1="535" x2="300" y2="565" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="290" y1="535" x2="310" y2="535" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="290" y1="565" x2="310" y2="565" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="320" y="553" text-anchor="start" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 5: CROSS-SECTION (bottom-center) ============ -->
+  <text x="600" y="510" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Cross-Section (A-A)</text>
+
+  <!-- Very thin Z-stack — 10mm total -->
+  <!-- Front wall 1.0mm -->
+  <rect x="490" y="535" width="220" height="12" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="545" font-family="sans-serif" font-size="8" fill="#606060">Front wall 1.0mm</text>
+
+  <!-- Gap 0.3mm -->
+  <rect x="490" y="547" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Display module 2.0mm -->
+  <rect x="490" y="551" width="220" height="24" fill="#B0D4F1" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="567" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">Display (2.0mm)</text>
+
+  <!-- Gap 0.3mm -->
+  <rect x="490" y="575" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- PCB 1.6mm -->
+  <rect x="490" y="579" width="220" height="19" fill="#90C695" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="592" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">PCB (1.6mm)</text>
+
+  <!-- Gap 0.3mm -->
+  <rect x="490" y="598" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Battery 3.0mm (thin!) -->
+  <rect x="510" y="602" width="180" height="36" fill="#D4A84B" stroke="black" stroke-width="0.5"/>
+  <text x="600" y="624" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#333">LiPo Battery (3.0mm)</text>
+
+  <!-- Gap 0.3mm -->
+  <rect x="490" y="638" width="220" height="4" fill="white" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+
+  <!-- Back wall 1.0mm -->
+  <rect x="490" y="642" width="220" height="12" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <text x="720" y="652" font-family="sans-serif" font-size="8" fill="#606060">Back wall 1.0mm</text>
+
+  <!-- Total Z-stack dimension -->
+  <line x1="475" y1="535" x2="475" y2="654" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <line x1="465" y1="535" x2="485" y2="535" stroke="#CC0000" stroke-width="0.5"/>
+  <line x1="465" y1="654" x2="485" y2="654" stroke="#CC0000" stroke-width="0.5"/>
+  <text x="460" y="598" text-anchor="end" font-family="sans-serif" font-size="10" fill="#CC0000">10.0mm</text>
+
+  <!-- ============ VIEW 6: DETAIL — Corner Notch and Chain Loop (bottom-right) ============ -->
+  <text x="960" y="510" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold">Detail — Notch + Chain Loop</text>
+
+  <!-- Zoomed corner notch -->
+  <rect x="870" y="535" width="140" height="180" rx="5" fill="#E0E0E0" stroke="black" stroke-width="0.5"/>
+  <!-- Notch cut -->
+  <path d="M970,535 L1010,535 L1010,575 Z" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="1000" y="560" font-family="sans-serif" font-size="9" fill="#333">45° notch</text>
+
+  <!-- Dimension: notch -->
+  <line x1="970" y1="528" x2="1010" y2="528" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="990" y="523" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">8mm</text>
+
+  <!-- Chain loop detail -->
+  <circle cx="940" cy="545" r="14" fill="white" stroke="black" stroke-width="0.5"/>
+  <circle cx="940" cy="545" r="7" fill="white" stroke="black" stroke-width="0.5"/>
+  <text x="940" y="548" text-anchor="middle" font-family="sans-serif" font-size="7" fill="#333">5mm</text>
+
+  <!-- Ball chain in loop -->
+  <circle cx="940" cy="528" r="4" fill="#999" stroke="black" stroke-width="0.3"/>
+  <circle cx="940" cy="518" r="4" fill="#999" stroke="black" stroke-width="0.3"/>
+  <text x="955" y="518" font-family="sans-serif" font-size="8" fill="#555">Ball chain</text>
+  <text x="955" y="528" font-family="sans-serif" font-size="8" fill="#555">2.4mm dia</text>
+
+  <!-- Reinforced loop area callout -->
+  <line x1="920" y1="555" x2="900" y2="580" stroke="#555" stroke-width="0.3"/>
+  <text x="870" y="590" font-family="sans-serif" font-size="8" fill="#555">Reinforced</text>
+  <text x="870" y="600" font-family="sans-serif" font-size="8" fill="#555">loop area</text>
+
+  <!-- Edge profile detail -->
+  <rect x="870" y="640" width="8" height="60" fill="url(#hatch)" stroke="black" stroke-width="0.5"/>
+  <rect x="878" y="640" width="60" height="60" fill="#E0E0E0" stroke="black" stroke-width="0.3" stroke-dasharray="2,2"/>
+  <text x="908" y="675" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">Rounded</text>
+  <text x="908" y="685" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#555">edges R1</text>
+
+  <!-- Wall thickness dimension -->
+  <line x1="870" y1="710" x2="878" y2="710" stroke="#CC0000" stroke-width="0.5" marker-start="url(#arrow-start)" marker-end="url(#arrow-end)"/>
+  <text x="874" y="725" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#CC0000">1.0mm</text>
+</svg>
